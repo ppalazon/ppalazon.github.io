@@ -6,11 +6,11 @@
     <atom:link href="http://ppalazon.github.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>This is my DevOps Logbook, where I tell me how I drummed on some aspects about development and operations</description>
     <language>en-gb</language>
-    <pubDate>Tue, 6 Jan 2015 13:49:24 +0100</pubDate>
-    <lastBuildDate>Tue, 6 Jan 2015 13:49:24 +0100</lastBuildDate>
+    <pubDate>Tue, 6 Jan 2015 13:55:47 +0100</pubDate>
+    <lastBuildDate>Tue, 6 Jan 2015 13:55:47 +0100</lastBuildDate>
 
     <item>
-      <title>Terminal name Guake</title>
+      <title>Tab name on Guake</title>
       <link>http://ppalazon.github.orgblog/2015/guake-tab-name.html</link>
       <pubDate>Sat, 10 Jan 2015 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">blog/2015/guake-tab-name.html</guid>

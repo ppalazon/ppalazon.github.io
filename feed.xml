@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Drum on DevOps</title>
+    <link>http://ppalazon.github.org</link>
+    <atom:link href="http://ppalazon.github.org/feed.xml" rel="self" type="application/rss+xml" />
+    <description>This is my DevOps Logbook, where I tell me how I drummed on some aspects about development and operations</description>
+    <language>en-gb</language>
+    <pubDate>Tue, 6 Jan 2015 12:52:59 +0100</pubDate>
+    <lastBuildDate>Tue, 6 Jan 2015 12:52:59 +0100</lastBuildDate>
+
+    <item>
+      <title>Terminal name Guake</title>
+      <link>http://ppalazon.github.orgblog/2015/guake-tab-name.html</link>
+      <pubDate>Sat, 10 Jan 2015 00:00:00 +0100</pubDate>
+      <guid isPermaLink="false">blog/2015/guake-tab-name.html</guid>
+      	<description>
+	&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you use guake terminal with so many tabs, you will found a problem if guake rename you tab name automatically. Guake terminal rename tab name
+with user@host and directory path&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;img/post/guake-tab-name-automatic.png&quot; alt=&quot;Guake change name automatically&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;You can resolve it, with a gnome configuration property. Open the terminal and write&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;prettyprint highlight&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;gconftool-2 --set /apps/guake/general/use_vte_titles --type boolean false&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Then, guake let fixed the terminal name&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;img/post/guake-tab-name-fixed-name.png&quot; alt=&quot;Guake with fixed terminal names&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://bbs.archlinux.org/viewtopic.php?id=143201&quot;&gt;Reverting Guake terminal tab names back to &apos;Terminal #&apos;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+	</description>
+    </item>
+    <item>
+      <title>Rendering engine missing</title>
+      <link>http://ppalazon.github.orgblog/ideas/second-post.html</link>
+      <pubDate>Tue, 6 Jan 2015 12:52:59 +0100</pubDate>
+      <guid isPermaLink="false">blog/ideas/second-post.html</guid>
+      	<description>
+	The markup engine [org.jbake.parser.MarkdownEngine] for [/home/ppalazon/workspace/documentation/blog/src/jbake/content/blog/ideas/second-post.md] couldn&apos;t be loaded
+	</description>
+    </item>
+    <item>
+      <title>Rendering engine missing</title>
+      <link>http://ppalazon.github.orgblog/2013/2013-01-25-java-app-configuration.html</link>
+      <pubDate>Tue, 6 Jan 2015 12:52:55 +0100</pubDate>
+      <guid isPermaLink="false">blog/2013/2013-01-25-java-app-configuration.html</guid>
+      	<description>
+	The markup engine [org.jbake.parser.MarkdownEngine] for [/home/ppalazon/workspace/documentation/blog/src/jbake/content/blog/2013/2013-01-25-java-app-configuration.md] couldn&apos;t be loaded
+	</description>
+    </item>
+    <item>
+      <title>Rendering engine missing</title>
+      <link>http://ppalazon.github.orgblog/2013/2013-01-24-devops-with-maven-war.html</link>
+      <pubDate>Tue, 6 Jan 2015 12:52:55 +0100</pubDate>
+      <guid isPermaLink="false">blog/2013/2013-01-24-devops-with-maven-war.html</guid>
+      	<description>
+	The markup engine [org.jbake.parser.MarkdownEngine] for [/home/ppalazon/workspace/documentation/blog/src/jbake/content/blog/2013/2013-01-24-devops-with-maven-war.md] couldn&apos;t be loaded
+	</description>
+    </item>
+    <item>
+      <title>Test GraphViz</title>
+      <link>http://ppalazon.github.orgblog/2014/test-graphviz.html</link>
+      <pubDate>Fri, 9 May 2014 00:00:00 +0200</pubDate>
+      <guid isPermaLink="false">blog/2014/test-graphviz.html</guid>
+      	<description>
+	&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;digraph G { rankdir=LR; Graphviz-&amp;gt;AsciiDoc-&amp;gt;HTML}&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+	</description>
+    </item>
+
+  </channel>
+</rss>

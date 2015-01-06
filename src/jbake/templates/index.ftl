@@ -15,7 +15,7 @@
 		                            ${(post.subtitle)!""}
 		                        </h3>
 		                    </a>
-		                    <p class="post-meta">Posted by <a href="about.html">${post.author}</a> on ${post.date?string("MMMM dd, yyyy")}</p>
+		                    <p class="post-meta">Posted by <a href="about.html">${(post.author)!"Pablo Palazón"}</a> on ${post.date?string("MMMM dd, yyyy")}</p>
 		                </div>
 				  	</#if>
 			  	</#list>

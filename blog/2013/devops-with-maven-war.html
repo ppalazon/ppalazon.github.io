@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8"/>
     <base href="/"/>
-    <title>Pablo Palazon</title>
+    <title>Multi-environment maven war generation</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -35,7 +35,7 @@
   </head>
   <body>
     <div id="wrap">
-
+	
 <!-- Navigation -->
     <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container-fluid">
@@ -71,14 +71,14 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/background/home-bg.jpg')">
+    <header class="intro-header" style="background-image: url('img/background/post-bg.jpg')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="site-heading">
-                        <h1>Pablo Palazón</h1>
+                        <h1>Multi-environment maven war generation</h1>
                         <hr class="small">
-                        <span class="subheading">No fight, no future</span>
+                        <span class="subheading">DevOps with Maven on WAR project</span>
                     </div>
                 </div>
             </div>
@@ -89,32 +89,146 @@
     <div class="container">
       <article>
 	<div class="row">
-    	<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-	
-			<!--<ul>-->
-					<h4>January 2015</h4>
-					<ul>
-				
-				<li>10 - <a href="blog/2015/guake-tab-name.html">Terminal name Guake</a></li>
-						</ul>
-						<h4>May 2014</h4>
-						<ul>
-				
-				<li>09 - <a href="blog/2014/test-graphviz.html">Test GraphViz</a></li>
-						</ul>
-						<h4>January 2013</h4>
-						<ul>
-				
-				<li>25 - <a href="blog/2013/java-app-configuration.html">Java configuration pattern</a></li>
-				
-				<li>24 - <a href="blog/2013/devops-with-maven-war.html">Multi-environment maven war generation</a></li>
-			</ul>
-		</div>
-	</div>
+        <div class="col-lg-12 col-md-12">
+        	<p class="post-meta">Posted by <a href="/about.html">Pablo Palazón</a> on January 24, 2013</p>
+            <p>
+            	<div class="paragraph">
+<p>I&#8217;d like to let you an Maven snippet code for configure WAR project for
+different environments. Sometimes, we&#8217;re developing in a dev
+environment, but this project we&#8217;d like to run in another environments
+(cloud, server, etc).</p>
+</div>
+<div class="paragraph">
+<p>This is a configuration profile</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-maven" data-lang="maven">&lt;profile&gt;
+    &lt;id&gt;prog&lt;/id&gt;
+    &lt;activation&gt;
+        &lt;activeByDefault&gt;true&lt;/activeByDefault&gt;
+    &lt;/activation&gt;
+    &lt;properties&gt;
+        &lt;!-- There are 3 availabled (dev,nuvol,nuvolbeta), ie: mvn
+            clean package -Dprofile=nuvol --&gt;
+        &lt;env&gt;dev&lt;/env&gt;
+    &lt;/properties&gt;
+    &lt;build&gt;
+        &lt;resources&gt;
+            &lt;resource&gt;
+                &lt;directory&gt;src/main/resources/common&lt;/directory&gt;
+            &lt;/resource&gt;
+            &lt;resource&gt;
+                &lt;directory&gt;src/main/resources/${env}&lt;/directory&gt;
+            &lt;/resource&gt;
+        &lt;/resources&gt;
+        &lt;plugins&gt;
+            &lt;plugin&gt;
+                &lt;artifactId&gt;maven-war-plugin&lt;/artifactId&gt;
+                &lt;version&gt;2.2&lt;/version&gt;
+                &lt;configuration&gt;
+                    &lt;classifier&gt;${env}&lt;/classifier&gt;
+                    &lt;webResources&gt;
+                        &lt;resource&gt;
+                            &lt;directory&gt;src/main/webinf/common&lt;/directory&gt;
+                            &lt;targetPath&gt;WEB-INF&lt;/targetPath&gt;
+                            &lt;includes&gt;
+                                &lt;include&gt;**/*&lt;/include&gt;
+                            &lt;/includes&gt;
+                        &lt;/resource&gt;
+                        &lt;resource&gt;
+                            &lt;directory&gt;src/main/webinf/${env}&lt;/directory&gt;
+                            &lt;targetPath&gt;WEB-INF&lt;/targetPath&gt;
+                            &lt;includes&gt;
+                                &lt;include&gt;**/*&lt;/include&gt;
+                            &lt;/includes&gt;
+                        &lt;/resource&gt;
+                    &lt;/webResources&gt;
+                &lt;/configuration&gt;
+            &lt;/plugin&gt;
+        &lt;/plugins&gt;
+    &lt;/build&gt;
+&lt;/profile&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Features:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Profile active by default (mvn clean package, will use dev environment)</p>
+</li>
+<li>
+<p>Change environment variable with -Denv=dev (java runtime option)</p>
+</li>
+<li>
+<p>All WEB-INF will be on src/main/webinf/</p>
+<div class="ulist">
+<ul>
+<li>
+<p>common: WEB-INF common files for all environment (DRY) : (Mandatory)</p>
+</li>
+<li>
+<p>dev: WEB-INF files for dev environment : (Mandatory)</p>
+</li>
+<li>
+<p>another_env_name: WEB-INF files for any environment if you want : (Optional)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>All resources files (java resources) on src/main/resources</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Same philosophy than WEB-INF configuration folder</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Caution:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>This will ignore WEB-INF file on webapp/WEB-INF</p>
+</li>
+<li>
+<p>If you want to import this project on Eclipse, you will add WEB-INF by han. (Project Properties&#8594;Deployment Assembly)</p>
+</li>
+</ul>
+</div>
+            </p>
+        </div>
+    </div>
 	
 		</article>    
 
-    
+          <hr/>
+      <h2>Comments</h2>
+      <div class="row">
+          <div class="col-lg-12 col-md-12">
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+              /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+              var disqus_shortname = 'ppalazon'; // required: replace example with your forum shortname
+
+              /* * * DON'T EDIT BELOW THIS LINE * * */
+              (function() {
+                  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+              })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </div>
+      </div>
+
     </div>
 		<hr>
 

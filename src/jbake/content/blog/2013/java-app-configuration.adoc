@@ -1,0 +1,151 @@
+= Java configuration pattern
+Pablo Palazón
+2013-01-25
+:jbake-comments: true
+:jbake-image: post-bg.jpg
+:jbake-subtitle: commons-configuration pattern for java apps
+:jbake-type: post
+:jbake-status: published
+:jbake-tags: devops, java, configuration, commons-configuration, commons, apacher
+:idprefix:
+
+Sometimes, we're developing applications that need some run-time
+configuration. Those configurations depends of run-time environments.
+
+All we need is:
+
+* Properties file (*.properties)
+* http://commons.apache.org/configuration/[commons-configuration-web] dependency
+* A Factory class
+* A Configuration class
+
+== Dev configuration framework
+
+=== Factory Class (Singleton)
+
+[source,java]
+----
+public class ConfigFactory
+{
+    private static ConfigFactory configFactory;
+    private Config defaultConfig;
+
+    private ConfigFactory()
+    {
+        try
+        {
+            // Default configuration with properties files
+            Configuration configuration = new
+                PropertiesConfiguration("configuration.properties");
+            this.defaultConfig = new Config(configuration);
+        }
+        catch (ConfigurationException e)
+        {
+            e.printStackTrace();
+        }
+
+    }
+
+    public static ConfigFactory getInstance()
+    {
+        if (configFactory == null)
+            configFactory = new configFactory();
+        return configFactory;
+    }
+
+    public Config createConfig(Configuration configuration)
+    {
+        return new Config(configuration);
+    }
+
+    public Config getDefaultConfig()
+    {
+        return defaultConfig;
+    }
+
+    public void setDefaultConfig(Config defaultConfig)
+    {
+        this.defaultConfig = defaultConfig;
+    }
+}
+----
+
+=== Config class
+
+[source,java]
+----
+public class Config
+{
+    private Configuration configuration;
+
+    public Config(Configuration configuration)
+    {
+        this.configuration = configuration;
+    }
+
+    public Boolean isActiveFeatureOne()
+    {
+        return this.configuration.getBoolean("feature.one");
+    }
+
+    public String getHostHttpUrl()
+    {
+        return this.configuration.getBoolean("host.http.url");
+    }
+}
+----
+
+=== Properties file (configuration.properties)
+
+Commons-configuration 1.9 search http://commons.apache.org/configuration/userguide/howto_properties.html#Properties_files[property-files] on:
+
+* in the current directory
+* in the user home directory
+* in the classpath
+
+Example file:
+
+[source,properties]
+----
+feature.one=true
+host.http.url=http://www.google.com
+----
+
+== How-to use it
+
+=== Use default configuration
+
+[source,java]
+----
+Config appConfig = ConfigFactory.getInstance().getDefaultConfig();
+if(appConfig.isActiveFeatureOne())
+{
+   ...
+}
+----
+
+=== Create another configuration, with another config file
+
+[source,java]
+----
+XMLConfiguration config = new XMLConfiguration("configuration.xml");
+Config appConfig = ConfigFactory.getInstance().createConfig(config);
+if(appConfig.isActiveFeatureOne())
+{
+   ...
+}
+----
+
+=== Create another configuration, and set-up as default
+
+[source,java]
+----
+XMLConfiguration config = new XMLConfiguration("configuration.xml");
+ConfigFactory.getInstance().setDefaultConfig(config);
+...
+Config appConfig = ConfigFactory.getInstance().getDefaultConfig();
+if(appConfig.isActiveFeatureOne())
+{
+   ...
+}
+----

@@ -1,0 +1,29 @@
+= Terminal name Guake
+Pablo Palazón
+2015-01-10
+:jbake-comments: true
+:jbake-image: post-bg.jpg
+:jbake-subtitle: Don't let you rename terminal name automatically
+:jbake-type: post
+:jbake-status: published
+:jbake-tags: template-tags
+:idprefix:
+
+If you use guake terminal with so many tabs, you will found a problem if guake rename you tab name automatically. Guake terminal rename tab name
+with user@host and directory path
+
+image::img/post/guake-tab-name-automatic.png[Guake change name automatically]
+
+You can resolve it, with a gnome configuration property. Open the terminal and write
+
+[source,bash]
+----
+gconftool-2 --set /apps/guake/general/use_vte_titles --type boolean false
+----
+
+Then, guake let fixed the terminal name
+
+image::img/post/guake-tab-name-fixed-name.png[Guake with fixed terminal names]
+
+== References
+* https://bbs.archlinux.org/viewtopic.php?id=143201[Reverting Guake terminal tab names back to 'Terminal #']

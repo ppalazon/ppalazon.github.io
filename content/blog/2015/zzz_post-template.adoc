@@ -1,0 +1,13 @@
+= Post Template
+Pablo Palazón
+2015-01-10
+:jbake-comments: true
+:jbake-image: post-bg.jpg
+:jbake-subtitle: This is a post template
+:jbake-type: post
+:jbake-status: unpublished
+:jbake-tags: template-tags
+:idprefix:
+
+
+Post Template

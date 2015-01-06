@@ -1,0 +1,15 @@
+= Test GraphViz
+Pablo Palazón
+2014-05-09
+:jbake-comments: true
+:jbake-image: post-bg.jpg
+:jbake-subtitle: Get more for less
+:jbake-type: post
+:jbake-status: published
+:jbake-tags: blog, asciidoc, graphviz
+:idprefix:
+
+[graphviz]
+---------------------------------------------------------------------
+digraph G { rankdir=LR; Graphviz->AsciiDoc->HTML}
+---------------------------------------------------------------------

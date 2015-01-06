@@ -6,8 +6,8 @@
     <atom:link href="http://ppalazon.github.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>This is my DevOps Logbook, where I tell me how I drummed on some aspects about development and operations</description>
     <language>en-gb</language>
-    <pubDate>Tue, 6 Jan 2015 14:21:58 +0100</pubDate>
-    <lastBuildDate>Tue, 6 Jan 2015 14:21:58 +0100</lastBuildDate>
+    <pubDate>Tue, 6 Jan 2015 14:31:05 +0100</pubDate>
+    <lastBuildDate>Tue, 6 Jan 2015 14:31:05 +0100</lastBuildDate>
 
     <item>
       <title>Tab name on Guake</title>

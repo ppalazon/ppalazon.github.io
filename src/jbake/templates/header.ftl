@@ -5,11 +5,11 @@
     <base href="${config.base}"/>
     <title><#if (content.title)??><#escape x as x?xml>${content.title}</#escape><#else><#escape x as x?xml>${config.author}</#escape></#if></title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="uw7QXxk8h88xsi6Tv2LDlrOhxuDuE5zObJPs8NVdmRw" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content="Pablo Palazon personal blog">
     <meta name="author" content="${config.author}">
-    <meta name="keywords" content="">
-    <meta name="generator" content"JBake">
+    <meta name="keywords" content="Pablo Palazón, ppalazon, devops, developer, java, blog, personal blog, software, programming, reactive programming, reactive, systems, electronics, arm">
     <!-- RSS Links -->
     <link href="/${config.feed_file}" rel="alternate" type="application/rss+xml" title="Pablo Palazon Blog - RSS">
     <!-- Le styles -->

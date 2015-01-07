@@ -1,9 +1,9 @@
-= Terminal name Guake
+= Tab name on Guake
 Pablo Palazón
 2015-01-10
 :jbake-comments: true
 :jbake-image: post-bg.jpg
-:jbake-subtitle: Don't let you rename terminal name automatically
+:jbake-subtitle: Don't let guake rename tab name automatically
 :jbake-type: post
 :jbake-status: published
 :jbake-tags: template-tags

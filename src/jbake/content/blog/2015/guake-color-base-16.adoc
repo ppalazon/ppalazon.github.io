@@ -1,0 +1,37 @@
+= Guake Base 16 color
+Pablo Palazón
+2015-01-07
+:jbake-comments: true
+:jbake-image: post-bg.jpg
+:jbake-subtitle: Base 16 colors template on guake terminal
+:jbake-type: post
+:jbake-status: published
+:jbake-tags: color, base 16, guake, terminal, bash, shell
+:idprefix:
+
+Base16 provides carefully chosen syntax highlighting and a default set of sixteen colors suitable for a wide range of applications. Base16 is both a color scheme and a template.
+
+image::https://camo.githubusercontent.com/e265d55a7795c2f3c504842cc7b4e5e67e4db64f/68747470733a2f2f7261772e6769746875622e636f6d2f63687269736b656d70736f6e2f6261736531362f6d61737465722f6261736531362d64656661756c742e706e67[Base 16's default color scheme]
+
+With https://github.com/chriskempson/base16-builder[Base 16 builder] you could create guake template and set-up for it
+
+[source, bash]
+----
+git clone git@github.com:chriskempson/base16-builder.git
+cd base16-builder
+./base16
+chmod +x ./output/guake/*.sh
+----
+
+Apply with prefered template executing any shell script under `./output/guake/`
+
+[source, bash]
+----
+./output/guake/base16-ocean.dark.sh
+----	
+
+image::img/post/guake-base-16-example.png[Guake terminal with Base 16 Ocean Dark template]
+
+== References
+* https://github.com/chriskempson/base16[Base 16]
+* https://github.com/chriskempson/base16-builder[Base 16 Builder]

@@ -1,6 +1,6 @@
 = Post Template
 Pablo Palazón
-2015-01-10
+2015-01-06
 :jbake-comments: true
 :jbake-image: post-bg.jpg
 :jbake-subtitle: This is a post template

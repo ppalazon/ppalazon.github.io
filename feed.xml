@@ -6,58 +6,9 @@
     <atom:link href="http://ppalazon.github.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>This is my DevOps Logbook, where I tell me how I drummed on some aspects about development and operations</description>
     <language>en-gb</language>
-    <pubDate>Wed, 7 Jan 2015 10:29:11 +0100</pubDate>
-    <lastBuildDate>Wed, 7 Jan 2015 10:29:11 +0100</lastBuildDate>
+    <pubDate>Wed, 7 Jan 2015 16:21:59 +0100</pubDate>
+    <lastBuildDate>Wed, 7 Jan 2015 16:21:59 +0100</lastBuildDate>
 
-    <item>
-      <title>Tab name on Guake</title>
-      <link>http://ppalazon.github.orgblog/2015/guake-tab-name.html</link>
-      <pubDate>Sat, 10 Jan 2015 00:00:00 +0100</pubDate>
-      <guid isPermaLink="false">blog/2015/guake-tab-name.html</guid>
-      	<description>
-	&lt;div id=&quot;preamble&quot;&gt;
-&lt;div class=&quot;sectionbody&quot;&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;If you use guake terminal with so many tabs, you will found a problem if guake rename you tab name automatically. Guake terminal rename tab name
-with user@host and directory path&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;imageblock&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;img/post/guake-tab-name-automatic.png&quot; alt=&quot;Guake change name automatically&quot;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;You can resolve it, with a gnome configuration property. Open the terminal and write&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;listingblock&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;pre class=&quot;prettyprint highlight&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;gconftool-2 --set /apps/guake/general/use_vte_titles --type boolean false&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Then, guake let fixed the terminal name&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;imageblock&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;img/post/guake-tab-name-fixed-name.png&quot; alt=&quot;Guake with fixed terminal names&quot;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect1&quot;&gt;
-&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
-&lt;div class=&quot;sectionbody&quot;&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://bbs.archlinux.org/viewtopic.php?id=143201&quot;&gt;Reverting Guake terminal tab names back to &apos;Terminal #&apos;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-	</description>
-    </item>
     <item>
       <title>Guake Base 16 color</title>
       <link>http://ppalazon.github.orgblog/2015/guake-color-base-16.html</link>
@@ -110,6 +61,55 @@ chmod +x ./output/guake/*.sh&lt;/code&gt;&lt;/pre&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/chriskempson/base16-builder&quot;&gt;Base 16 Builder&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+	</description>
+    </item>
+    <item>
+      <title>Tab name on Guake</title>
+      <link>http://ppalazon.github.orgblog/2015/guake-tab-name.html</link>
+      <pubDate>Tue, 6 Jan 2015 00:00:00 +0100</pubDate>
+      <guid isPermaLink="false">blog/2015/guake-tab-name.html</guid>
+      	<description>
+	&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you use guake terminal with so many tabs, you will found a problem if guake rename you tab name automatically. Guake terminal rename tab name
+with user@host and directory path&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;img/post/guake-tab-name-automatic.png&quot; alt=&quot;Guake change name automatically&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;You can resolve it, with a gnome configuration property. Open the terminal and write&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;prettyprint highlight&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;gconftool-2 --set /apps/guake/general/use_vte_titles --type boolean false&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Then, guake let fixed the terminal name&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;img/post/guake-tab-name-fixed-name.png&quot; alt=&quot;Guake with fixed terminal names&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://bbs.archlinux.org/viewtopic.php?id=143201&quot;&gt;Reverting Guake terminal tab names back to &apos;Terminal #&apos;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;

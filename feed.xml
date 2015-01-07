@@ -6,8 +6,8 @@
     <atom:link href="http://ppalazon.github.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>This is my DevOps Logbook, where I tell me how I drummed on some aspects about development and operations</description>
     <language>en-gb</language>
-    <pubDate>Tue, 6 Jan 2015 14:31:05 +0100</pubDate>
-    <lastBuildDate>Tue, 6 Jan 2015 14:31:05 +0100</lastBuildDate>
+    <pubDate>Wed, 7 Jan 2015 10:29:11 +0100</pubDate>
+    <lastBuildDate>Wed, 7 Jan 2015 10:29:11 +0100</lastBuildDate>
 
     <item>
       <title>Tab name on Guake</title>
@@ -51,6 +51,65 @@ with user@host and directory path&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&quot;https://bbs.archlinux.org/viewtopic.php?id=143201&quot;&gt;Reverting Guake terminal tab names back to &apos;Terminal #&apos;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+	</description>
+    </item>
+    <item>
+      <title>Guake Base 16 color</title>
+      <link>http://ppalazon.github.orgblog/2015/guake-color-base-16.html</link>
+      <pubDate>Wed, 7 Jan 2015 00:00:00 +0100</pubDate>
+      <guid isPermaLink="false">blog/2015/guake-color-base-16.html</guid>
+      	<description>
+	&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Base16 provides carefully chosen syntax highlighting and a default set of sixteen colors suitable for a wide range of applications. Base16 is both a color scheme and a template.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;https://camo.githubusercontent.com/e265d55a7795c2f3c504842cc7b4e5e67e4db64f/68747470733a2f2f7261772e6769746875622e636f6d2f63687269736b656d70736f6e2f6261736531362f6d61737465722f6261736531362d64656661756c742e706e67&quot; alt=&quot;Base 16&apos;s default color scheme&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;With &lt;a href=&quot;https://github.com/chriskempson/base16-builder&quot;&gt;Base 16 builder&lt;/a&gt; you could create guake template and set-up for it&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;prettyprint highlight&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;git clone git@github.com:chriskempson/base16-builder.git
+cd base16-builder
+./base16
+chmod +x ./output/guake/*.sh&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Apply with prefered template executing any shell script under &lt;code&gt;./output/guake/&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;prettyprint highlight&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;./output/guake/base16-ocean.dark.sh&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;img/post/guake-base-16-example.png&quot; alt=&quot;Guake terminal with Base 16 Ocean Dark template&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/chriskempson/base16&quot;&gt;Base 16&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/chriskempson/base16-builder&quot;&gt;Base 16 Builder&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;

@@ -28,7 +28,7 @@ Apply with prefered template executing any shell script under `./output/guake/`
 [source, bash]
 ----
 ./output/guake/base16-ocean.dark.sh
-----	
+----
 
 image::img/post/guake-base-16-example.png[Guake terminal with Base 16 Ocean Dark template]
 

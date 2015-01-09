@@ -6,7 +6,7 @@ Pablo Palazón
 :jbake-subtitle: Don't let guake rename tab name automatically
 :jbake-type: post
 :jbake-status: published
-:jbake-tags: template-tags
+:jbake-tags: guake, tab, terminal, gnome, gconftool, gconf
 :idprefix:
 
 If you use guake terminal with so many tabs, you will found a problem if guake rename you tab name automatically. Guake terminal rename tab name

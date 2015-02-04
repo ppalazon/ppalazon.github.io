@@ -24,6 +24,7 @@
                     <li><a href="${config.feed_file}">Subscribe</a></li>
                     <!--<li><a href="contact.html">Contact</a></li>-->
                     <li><a href="${config.archive_file}">Archive</a></li>
+                    <li><a href="search.html">Search</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -47,6 +48,6 @@
         </div>
     </header>
 
-    <!-- Main Content -->    
+    <!-- Main Content -->
     <div class="container">
       <article>

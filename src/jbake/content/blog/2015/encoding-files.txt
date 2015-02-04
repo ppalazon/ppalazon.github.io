@@ -1,0 +1,25 @@
+---
+title: Character encondig files
+author: 'Pablo Palazón'
+layout: blog-post
+tags: [ character, file, encoding, charset, utf-8, iso-8859-1 ]
+--- 
+
+Suppose than native enconding is utf-8
+
+View file encoding with file
+
+     file -bi filename.txt
+
+Change file enconding
+     iconv -f iso-8859-1 -t utf-8 messages_fr.properties > messages_fr_utf-8.properties
+
+Escape utf-8 characters with java application native2ascii
+    native2ascii message_fr_utf8.properties messages_fr_ascii.properties
+
+Rewrite original messages_fr.properties to ascii
+
+--
+References:
+http://en.wikipedia.org/wiki/Iconv
+http://docs.oracle.com/javase/7/docs/technotes/tools/windows/native2ascii.html

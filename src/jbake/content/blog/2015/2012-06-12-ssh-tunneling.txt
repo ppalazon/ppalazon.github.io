@@ -1,0 +1,17 @@
+---
+title: First Post
+author: 'Pablo Palazón'
+layout: blog-post
+tags: [ ssh, tunneling, gstm, linux ]
+--- 
+
+TODO:
+
+- Write about ssh tunneling
+- Why tunneling
+- Don't open ports
+- Secure data
+- Use public certificate as ssh client -> Another post?
+- Persistent ssh tunnel in Hak5 http://hak5.org/episodes/hak5-1113
+
+[debianadmin]: http://www.debianadmin.com/howto-use-ssh-local-and-remote-port-forwarding.html

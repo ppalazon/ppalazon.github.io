@@ -1,0 +1,16 @@
+---
+title: MiniDLNA with MiniSSPSD Server
+author: 'Pablo Palazón'
+layout: blog-post
+tags: [ minidlna, minisspsd, dlna, ssps, server, upnp, xbmc ]
+---
+
+Install on ubuntu minidlna and minisspsd, and configure as (see references)
+
+- Check out resources permissions
+- Firewall port 8200 (http) and 1900 (udp)
+- Use XBMC Media Center with this server
+
+References
+https://help.ubuntu.com/community/MiniDLNA
+http://www.maketecheasier.com/run-fullscreen-games-in-linux-with-dual-monitors/

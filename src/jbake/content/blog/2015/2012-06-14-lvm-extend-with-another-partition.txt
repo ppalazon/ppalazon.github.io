@@ -1,0 +1,11 @@
+---
+title: Expand a logical volume (LVM) with another hard disk partition
+author: Pablo Palazón
+layout: blog-post
+tags: [ linux, lvm, logical volume, hard-disk, extend ]
+--- 
+
+TODO: Expand a logical volume with another partition
+
+http://www.redhat.com/magazine/009jul05/features/lvm2/
+http://usefulubuntu.blogspot.com.es/2009/01/add-extra-storage-on-fly-with-lvm2.html

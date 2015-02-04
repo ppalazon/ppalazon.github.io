@@ -1,0 +1,84 @@
+---
+title: Create docker images on coreos for gefjun
+author: 'Pablo Palazón'
+layout: blog-post
+tags: [ coreos, docker, vagrant, gefjun, etcd, systemd ]
+---
+
+https://coreos.com/docs/running-coreos/platforms/vagrant/
+https://index.docker.io/
+http://blog.docker.io/2013/07/how-to-use-your-own-registry/
+https://github.com/dotcloud/docker-registry/blob/master/README.md
+
+
+---
+Install docker-registry behind nginx
+
+- Install nginx-extra for chunkin module
+https://github.com/dotcloud/docker/issues/1486
+https://github.com/dotcloud/docker-registry/tree/master/contrib
+https://github.com/dotcloud/docker-registry/blob/master/contrib/nginx.conf
+
+```
+server {
+      listen 80;
+      server_name docker-registry.antara.ws;
+
+      client_max_body_size 0;
+
+      chunkin on;
+
+      error_page 411 = @my_411_error;
+      location @my_411_error {
+              chunkin_resume;
+      }
+
+      location /docker_images {
+              alias /usr/share/nginx/html/images;
+      }
+
+      location / {
+              proxy_pass http://127.0.0.1:5000;
+              proxy_set_header        X-Real-IP $remote_addr;
+              proxy_set_header        X-Forwarded-For $proxy_add_x_forwarded_for;
+              proxy_set_header        Host $http_host;
+      }
+}
+
+-- Ubuntu automatic update docker image
+https://pypi.python.org/pypi/virtualenv
+http://www.virtualenv.org/en/latest/virtualenv.html#installation
+https://index.docker.io/u/racker/precise-with-updates/
+https://journal.paul.querna.org/articles/2013/10/15/docker-ubuntu-on-rackspace/
+https://github.com/racker/docker-ubuntu-with-updates
+
+-- CoreOS systemd docker initialization
+https://coreos.com/docs/
+https://coreos.com/docs/launching-containers/launching/getting-started-with-systemd/
+https://coreos.com/docs/launching-containers/launching/overview-of-systemctl/
+http://www.freedesktop.org/software/systemd/man/systemd.unit.html
+http://www.freedesktop.org/software/systemd/man/systemd.service.html
+http://www.freedesktop.org/software/systemd/man/systemd.service.html
+
+Initialize docker gefjun (Need to restart because docker doesn't initialize socket correctly)
+```
+[Unit]
+Description=Gefjun Plough 1
+After=etcd.service
+After=docker.service
+
+[Service]
+Restart=always
+RestartSec=1
+ExecStart=/usr/bin/docker run -name plough-1 ppalazon/gefjun-nuvol /bin/bash -c '/opt/gefjun/bin/plough-loop plough-1.%H.antara.ws'
+ExecStartPost=/usr/bin/etcdctl set /domains/plough-1 running
+ExecStop=/usr/bin/docker stop plough-1
+ExecStopPost=/usr/bin/docker rm plough-1
+ExecStopPost=/usr/bin/etcdctl delete /domains/plough-1
+
+[Install]
+WantedBy=local.target
+
+
+-- Developing CoreOs
+https://coreos.com/docs/sdk-distributors/sdk/modifying-coreos/

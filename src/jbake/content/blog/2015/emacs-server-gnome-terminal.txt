@@ -1,0 +1,25 @@
+TODO: Explain how to run emacs on gnome with startup application (or
+cron), and how to use .bashrc for alias emacs with emacsclient and
+change desktop icon for emacs for call emacsclient -c
+
+TODO: Install emacs24 (For ubuntu)
+TODO: Install prelude
+TODO: Add configurations
+
+- Add emacs start daemon on cron on startup
+
+- Use startup programs on ubuntu (optional if crontab is not selected)
+
+/usr/local/bin/emacs-24.2 --daemon
+
+- How to use emaclient with sudo
+
+on ~/.profile alias sudoemacs="SUDO_EDITOR=\"emacsclient -t\" sudo -e"
+
+- Add alias to ~/.profile
+
+alias emacs='emacsclient -t' //terminal
+
+- Edit emacs.desktop
+
+change emacs commands, for emacsclient -c -F "((fullscreen . maximized))" %F

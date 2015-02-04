@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
+        <loc>http://ppalazon.github.org/search.html</loc>
+        <lastmod>2015-02-04</lastmod>
+    </url>
+    <url>
         <loc>http://ppalazon.github.org/about.html</loc>
         <lastmod>2013-07-24</lastmod>
+    </url>
+    <url>
+        <loc>http://ppalazon.github.org/blog/2015/2013-02-26-JAXB-marsharll-unmarshall.html</loc>
+        <lastmod>2015-02-04</lastmod>
+    </url>
+    <url>
+        <loc>http://ppalazon.github.org/blog/2015/2013-02-20-SNMP-Cacti.html</loc>
+        <lastmod>2015-02-04</lastmod>
     </url>
     <url>
         <loc>http://ppalazon.github.org/blog/2015/guake-color-base-16.html</loc>

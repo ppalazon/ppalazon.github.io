@@ -6,27 +6,9 @@
     <atom:link href="http://ppalazon.github.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>This is my DevOps Logbook, where I tell me how I drummed on some aspects about development and operations</description>
     <language>en-gb</language>
-    <pubDate>Wed, 4 Feb 2015 16:32:55 +0100</pubDate>
-    <lastBuildDate>Wed, 4 Feb 2015 16:32:55 +0100</lastBuildDate>
+    <pubDate>Wed, 4 Feb 2015 16:35:08 +0100</pubDate>
+    <lastBuildDate>Wed, 4 Feb 2015 16:35:08 +0100</lastBuildDate>
 
-    <item>
-      <title>Rendering engine missing</title>
-      <link>http://ppalazon.github.orgblog/2015/2013-02-26-JAXB-marsharll-unmarshall.html</link>
-      <pubDate>Wed, 4 Feb 2015 16:32:55 +0100</pubDate>
-      <guid isPermaLink="false">blog/2015/2013-02-26-JAXB-marsharll-unmarshall.html</guid>
-      	<description>
-	The markup engine [org.jbake.parser.MarkdownEngine] for [/home/ppalazon/workspace/documentation/blog/src/jbake/content/blog/2015/2013-02-26-JAXB-marsharll-unmarshall.md] couldn&apos;t be loaded
-	</description>
-    </item>
-    <item>
-      <title>Rendering engine missing</title>
-      <link>http://ppalazon.github.orgblog/2015/2013-02-20-SNMP-Cacti.html</link>
-      <pubDate>Wed, 4 Feb 2015 16:32:55 +0100</pubDate>
-      <guid isPermaLink="false">blog/2015/2013-02-20-SNMP-Cacti.html</guid>
-      	<description>
-	The markup engine [org.jbake.parser.MarkdownEngine] for [/home/ppalazon/workspace/documentation/blog/src/jbake/content/blog/2015/2013-02-20-SNMP-Cacti.md] couldn&apos;t be loaded
-	</description>
-    </item>
     <item>
       <title>Guake Base 16 color</title>
       <link>http://ppalazon.github.orgblog/2015/guake-color-base-16.html</link>

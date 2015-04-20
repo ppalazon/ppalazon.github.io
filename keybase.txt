@@ -1,0 +1,62 @@
+==================================================================
+https://keybase.io/ppalazon
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://ppalazon.github.io
+  * I am ppalazon (https://keybase.io/ppalazon) on keybase.
+  * I have a public key with fingerprint 550C E6D2 A6F8 1953 5E53  C9E7 B518 80A4 3740 9E79
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "550ce6d2a6f819535e53c9e7b51880a437409e79",
+            "host": "keybase.io",
+            "key_id": "b51880a437409e79",
+            "kid": "0111c6a509350d51878133ef451729151992461cdc72bf58ab82340173494d51278c0a",
+            "uid": "7c40dbab04db82db8a2d3a8f26ece000",
+            "username": "ppalazon"
+        },
+        "service": {
+            "hostname": "ppalazon.github.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1429518063,
+    "expire_in": 157680000,
+    "prev": "17ff2e1543df0b34767d47044ae06e1f7f0c7a908e7bdabc3590e187d65675a7",
+    "seqno": 13,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1
+
+owFtkj1oFEEUxzd+5g4FExCsRAYb8QgzO1+7i6AgFhYWFqJF8JivvRvvsrvZ3Ts9
+jwuWKe0Ei1Ria5V0NlaCnRZptDCNnJWgdiK+PbURi2F47/3e/8178x6fPBwsr+ye
+efRMXtmZLL2Z6+AW2/s2RTq3E5RM0cAtrtRnPVcWpc9qlCDOsXHChkqkEYk55Y5T
+EzupOYkirBiVDIMZow7q51WTATJaVW7N5+ADo+steP/DDxYBTAgxQnEcU44tUDIi
+lLqUcSLDmHASxyETxFgjQ53ySOkopAwTSVnMgA9lZLACudFCThqGrVYaMwsgHBVa
+qqI0FM44jHEDVq7M1IYDuijUUD3MMzTrIPCOvXHNCJpO/iHWer7uj/Tvrooyr3OT
+DyHer+uiSpr8elI0Cfed7v6R6mqfWZgmZIxdWXmokxAgTe0bbcLCGPrFgnaQe1D4
+0nV9Q3ApIngpbuq4MUgSmaahI5xRm2JNmRTSMokZUw4LR1KZYiNVjCP4Fqu0oTzG
+DgZpBReSK4ma5jazHLShVK16oFn5XitT9ah0aNbevnskWFkOjh091GxE0G6d+rsm
+X54EP1rnn19cf33z+sfVyfDD9/2Xl68ezDffbt179XnaXtq7vRv8FPs7n87N2lsX
+DgZf50/LjUvb124cj84mJ+68GJx+/279Fw==
+=dRRn
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/ppalazon
+
+==================================================================
+

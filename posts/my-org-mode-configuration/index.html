@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> My org mode configuration &middot; ppalazon </title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.37-DEV" />
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/vec.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="/favicon.ico">
+
+
+<link href="" rel="alternate" type="application/rss+xml" title="ppalazon" />
+
+  
+<meta property="og:title" content="My org mode configuration" />
+<meta property="og:description"
+      content="&amp;lt;p&amp;gt;This is my personal list with most used commands on &amp;lt;code&amp;gt;org-mode&amp;lt;/code&amp;gt;. It&amp;amp;rsquo;s contains snippets, shortcuts and configurations.&amp;lt;/p&amp;gt;  Personal org-mode configuration (require &#39;package) (add-to-list &#39;package-archives &#39;(&amp;quot;org&amp;quot; . &amp;quot;https://orgmode.org/elpa/&amp;quot;) t) (require &#39;org) ;; Enabled … " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ppalazon.github.io/posts/my-org-mode-configuration/" />
+
+
+    
+        <meta property="article:published_time" content="2018-04-11T00:00:00&#43;02:00"/>
+    
+    
+        <meta property="article:modified_time" content="2018-04-11T00:00:00&#43;02:00"/>
+    
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="My org mode configuration"/>
+<meta name="twitter:description" content="&amp;lt;p&amp;gt;This is my personal list with most used commands on &amp;lt;code&amp;gt;org-mode&amp;lt;/code&amp;gt;. It&amp;amp;rsquo;s contains snippets, shortcuts and configurations.&amp;lt;/p&amp;gt;  Personal org-mode configuration (require &#39;package) (add-to-list &#39;package-archives &#39;(&amp;quot;org&amp;quot; . &amp;quot;https://orgmode.org/elpa/&amp;quot;) t) (require &#39;org) ;; Enabled … "/>
+
+</head>
+
+<body>
+  <header>
+  <nav>
+    <ul>
+      
+      
+      <li class="pull-left ">
+        <a href="https://ppalazon.github.io">/home/ppalazon</a>
+      </li>
+      
+      
+      <li class="pull-left ">
+        <a href="/categories">~/categories</a>
+      </li>
+      
+      
+      <li class="pull-left ">
+        <a href="/tags">~/tags</a>
+      </li>
+      
+      
+      <li class="pull-left current">
+        <a href="/posts">~/posts</a>
+      </li>
+      
+      
+      <li class="pull-left ">
+        <a href="/about/me/">~/about</a>
+      </li>
+      
+  
+      <li class="pull-right"><a href=""><i class="fa fa-rss"></i></a></li>
+    </ul>
+  </nav>
+</header>
+  <div class="content">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#table-of-contents">Table of Contents</a></li>
+<li><a href="#personal-org-mode-configuration">Personal <code>org-mode</code> configuration</a></li>
+</ul></li>
+</ul>
+</nav>
+    
+    <section class="post">
+      <h1 class="post-title"><a href="https://ppalazon.github.io/posts/my-org-mode-configuration/">My org mode configuration</a></h1>
+      <span class="post-date">Apr 11, 2018 </span>
+      <div class="post-content">
+        
+
+<div class="ox-hugo-toc toc">
+<div></div>
+
+<h2 id="table-of-contents">Table of Contents</h2>
+
+<ul>
+<li><a href="#personal-org-mode-configuration">Personal <code>org-mode</code> configuration</a></li>
+</ul>
+
+<p></div>
+<!--endtoc--></p>
+
+<p>This is my personal list with most used commands on <code>org-mode</code>. It&rsquo;s contains snippets, shortcuts and configurations.</p>
+
+<h2 id="personal-org-mode-configuration">Personal <code>org-mode</code> configuration</h2>
+
+<pre><code class="language-emacs-lisp">(require 'package)
+(add-to-list 'package-archives '(&quot;org&quot; . &quot;https://orgmode.org/elpa/&quot;) t)
+
+(require 'org)
+
+;; Enabled ox-hugo
+(with-eval-after-load 'ox
+  (require 'ox-hugo))
+
+;; Configuration of org-mode
+(setq org-startup-indented t)
+(setq org-startup-folded &quot;showall&quot;)
+(setq org-directory &quot;~/org&quot;)
+(setq org-capture-directory (concat org-directory &quot;/capture&quot;))
+(setq org-publish-directory (concat org-directory &quot;/publish&quot;))
+(setq org-ref-directory (concat org-directory &quot;/ref&quot;))
+(setq org-default-notes-file (concat org-capture-directory &quot;/notes.org&quot;))
+
+;; http://www.howardism.org/Technical/Emacs/journaling-org.html
+(setq org-journal-dir (concat org-directory &quot;/journal&quot;))
+(defun get-journal-file-today ()
+  &quot;Return filename for today's journal entry.&quot;
+  (let ((daily-name (format-time-string &quot;%Y%m%d&quot;)))
+    (expand-file-name (concat org-journal-dir (concat &quot;/&quot; daily-name)))))
+
+(defun journal-file-today ()
+  &quot;Create and load a journal file based on today's date.&quot;
+  (interactive)
+  (find-file (get-journal-file-today)))
+
+(add-to-list 'auto-mode-alist '(&quot;.*/[0-9]*$&quot; . org-mode))
+
+(defun journal-file-insert ()
+  &quot;Insert's the journal heading based on the file's name.&quot;
+  (interactive)
+  (when (string-match &quot;\\(20[0-9][0-9]\\)\\([0-9][0-9]\\)\\([0-9][0-9]\\)&quot;
+                      (buffer-name))
+    (let ((year (string-to-number (match-string 1 (buffer-name))))
+          (month (string-to-number (match-string 2 (buffer-name))))
+          (day (string-to-number (match-string 3 (buffer-name))))
+          (datim nil))
+      (setq datim (encode-time 0 0 0 day month year))
+      (insert (format-time-string
+               &quot;#+TITLE: Journal Entry - %Y-%b-%d (%A)\n\n&quot; datim))))
+  )
+
+(require 'autoinsert)
+(add-hook 'find-file-hook 'auto-insert)
+(add-to-list 'auto-insert-alist '(&quot;.*/journal/[0-9]*$&quot; . journal-file-insert))
+
+(setq org-agenda-files (list org-capture-directory org-journal-dir org-ref-directory))
+(setq org-agenda-files-regexp &quot;\\`[^.].*\\.org'\\|[0-9]+$&quot;)
+(setq org-capture-templates
+      '((&quot;t&quot; &quot;Todo&quot; entry (file+headline (concat org-capture-directory &quot;/gtd.org&quot;) &quot;Tasks&quot;)
+         &quot;* TODO %?\n  %i\n  %a&quot;)
+        (&quot;i&quot; &quot;Idea&quot; entry (file+headline (concat org-capture-directory &quot;/notes.org&quot;) &quot;Ideas&quot;)
+         &quot;* %?\n  %i&quot;
+         :empty-lines 1)
+        (&quot;o&quot; &quot;Order&quot; entry (file+headline (concat org-capture-directory &quot;/notes.org&quot;) &quot;Orders&quot;)
+         &quot;* %?\n  %i&quot;
+         :empty-lines 1)
+        (&quot;b&quot; &quot;Blog Idea&quot; entry (file+headline (concat org-capture-directory &quot;/notes.org&quot;) &quot;Blog Ideas&quot;)
+         &quot;* %?\n  %i&quot;
+         :empty-lines 1)
+        (&quot;j&quot; &quot;Journal&quot; entry (file (get-journal-file-today))
+         &quot;* %&lt;%H:%M&gt;: %?\nEntered on %U\n%i\nFrom: %a&quot;
+         :empty-lines 1)))
+(setq org-agenda-include-diary t)
+(setq org-publish-project-alist
+      '((&quot;personal-blog&quot;
+         :base-directory &quot;~/org/personal-blog&quot;
+         :base-extension &quot;org&quot;
+         :publishing-directory &quot;~/org/publish/personal-blog&quot;
+         :recursive t
+         :publishing-function org-html-publish-to-html
+         :headline-levels 4
+         :html-extension &quot;html&quot;
+         :body-only t)))
+
+(setq org-latex-pdf-process
+      '(&quot;xelatex -interaction nonstopmode %f&quot;
+        &quot;xelatex -interaction nonstopmode %f&quot;))
+
+(setq org-latex-logfiles-extensions
+      (quote (&quot;lof&quot; &quot;lot&quot; &quot;tex&quot; &quot;tex~&quot; &quot;aux&quot; &quot;idx&quot;
+              &quot;log&quot; &quot;out&quot; &quot;toc&quot; &quot;nav&quot; &quot;snm&quot; &quot;vrb&quot;
+              &quot;dvi&quot; &quot;fdb_latexmk&quot; &quot;blg&quot; &quot;brf&quot; &quot;fls&quot;
+              &quot;entoc&quot; &quot;ps&quot; &quot;spl&quot; &quot;bbl&quot;)))
+
+(setq org-src-fontify-natively t)
+(setq org-export-coding-system 'utf-8)
+
+(require 'org-download)
+(setq-default org-download-image-dir (concat org-directory &quot;/pictures&quot;))
+(setq org-image-actual-width nil)
+</code></pre>
+
+      </div>
+    </section>
+    
+    <section class="pagination clearfix">
+      
+      <a class="btn previous " href="https://ppalazon.github.io/posts/character-encoding-files/"> Character encoding files </a> 
+       
+      
+      <a class="btn next " href="https://ppalazon.github.io/posts/guake-base-16-color/"> Guake Base 16 Color </a> 
+      
+    </section>
+    
+    
+<section id="disqus_thread" class='disqus'></section>
+<script>
+  var disqus_config = function () {
+    this.page.url = "https://ppalazon.github.io/posts/my-org-mode-configuration/";
+    
+  };
+  (function() {
+    var d = document, s = d.createElement('script');
+    s.src = '//ppalazon.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+  </div>
+  
+  </script>
+<footer>
+  <div class="footer-info">
+    <p>
+      Written by Pablo Palazon
+      {
+          
+          <a href="https://twitter.com/ppalazon" title="Twitter"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+          
+          
+          
+          
+          <a href="https://github.com/ppalazon" title="GitHub"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+          
+          
+          <a href="http://linkedin.com/in/ppalazon" title="LinkedIn"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+          
+      }
+      
+      <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/" title="CC BY-NC-ND 3.0">CC BY-NC-ND 3.0</a>
+    </p>
+  </div>
+</footer>
+
+  
+  <script src="https://ppalazon.github.io/js/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-33966209-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+
+  <script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+     displayAlign: "center",
+     displayIndent: "0em",
+
+     "HTML-CSS": { scale: 100,
+                   linebreaks: { automatic: "false" },
+                   webFont: "TeX"
+     },
+     SVG: {scale: 100,
+           linebreaks: { automatic: "false" },
+           font: "TeX"},
+     NativeMML: {scale: 100},
+     TeX: { equationNumbers: {autoNumber: "AMS"},
+            MultLineWidth: "85%",
+            TagSide: "right",
+            TagIndent: ".8em"
+     }
+ });
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Emacs on ppalazon</title>
+    <link>https://ppalazon.github.io/categories/emacs/</link>
+    <description>Recent content in Emacs on ppalazon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 11 Apr 2018 00:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://ppalazon.github.io/categories/emacs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>First post from ox-hugo</title>
+      <link>https://ppalazon.github.io/posts/first-post-from-ox-hugo/</link>
+      <pubDate>Wed, 11 Apr 2018 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/posts/first-post-from-ox-hugo/</guid>
+      <description>This is my first export from ox-hugo
+I&amp;rsquo;m using One post per Org subtree for posts with org-mode.
+   Figure 1: One post per Org subtree snapshot   Reference Please visit ox-hugo github page or ox-hugo website. There is a ox-hugo test website where you can learn how to configure your documents</description>
+    </item>
+    
+    <item>
+      <title>My org mode configuration</title>
+      <link>https://ppalazon.github.io/posts/my-org-mode-configuration/</link>
+      <pubDate>Wed, 11 Apr 2018 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/posts/my-org-mode-configuration/</guid>
+      <description>Table of Contents  Personal org-mode configuration   
+This is my personal list with most used commands on org-mode. It&amp;rsquo;s contains snippets, shortcuts and configurations.
+Personal org-mode configuration (require &#39;package) (add-to-list &#39;package-archives &#39;(&amp;quot;org&amp;quot; . &amp;quot;https://orgmode.org/elpa/&amp;quot;) t) (require &#39;org) ;; Enabled ox-hugo (with-eval-after-load &#39;ox (require &#39;ox-hugo)) ;; Configuration of org-mode (setq org-startup-indented t) (setq org-startup-folded &amp;quot;showall&amp;quot;) (setq org-directory &amp;quot;~/org&amp;quot;) (setq org-capture-directory (concat org-directory &amp;quot;/capture&amp;quot;)) (setq org-publish-directory (concat org-directory &amp;quot;/publish&amp;quot;)) (setq org-ref-directory (concat org-directory &amp;quot;/ref&amp;quot;)) (setq org-default-notes-file (concat org-capture-directory &amp;quot;/notes.</description>
+    </item>
+    
+    <item>
+      <title>Testing ox-hugo</title>
+      <link>https://ppalazon.github.io/posts/testing-ox-hugo/</link>
+      <pubDate>Wed, 11 Apr 2018 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/posts/testing-ox-hugo/</guid>
+      <description>This is a test for ox-hugo exports
+LaTeX formatted equation: \( E = -J \sum_{i=1}^N s_i s_{i+1} \)
+If \(a^2=b\) and \( b=2 \), then the solution must be either \[ a=+\sqrt{2} \] or \[ a=-\sqrt{2} \]
+\begin{equation} \label{eq:1} C = W\log_{2} (1+\mathrm{SNR}) \end{equation}
+sudo apt-get update sudo apt-get dist-upgrade  (require &#39;org)  </description>
+    </item>
+    
+  </channel>
+</rss>

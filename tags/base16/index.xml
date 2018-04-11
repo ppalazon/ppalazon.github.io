@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Base16 on ppalazon</title>
+    <link>https://ppalazon.github.io/tags/base16/</link>
+    <description>Recent content in Base16 on ppalazon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 Jul 2015 00:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://ppalazon.github.io/tags/base16/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Guake Base 16 Color</title>
+      <link>https://ppalazon.github.io/posts/guake-base-16-color/</link>
+      <pubDate>Wed, 15 Jul 2015 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/posts/guake-base-16-color/</guid>
+      <description>Figure 1: Base 16 color on guake terminal   Base16 provides carefully chosen syntax highlighting and a default set of sixteen colors suitable for a wide range of applications. Base16 is both a color scheme and a template.
+With Base 16 builder you could create guake template and set-up for it
+git clone git@github.com:chriskempson/base16-builder.git cd base16-builder ./base16 chmod +x ./output/guake/*.sh  Apply with prefered template executing any shell script under .</description>
+    </item>
+    
+  </channel>
+</rss>

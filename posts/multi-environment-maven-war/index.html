@@ -9,7 +9,7 @@
 <meta name="generator" content="Hugo 0.37-DEV" />
 
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
 <link rel="stylesheet" href="https://ppalazon.github.io/css/vec.css">
 
 
@@ -19,42 +19,55 @@
 
 <link href="" rel="alternate" type="application/rss+xml" title="ppalazon" />
 
-  
 <meta property="og:title" content="Multi-environment maven war generation" />
-<meta property="og:description"
-      content="I&amp;rsquo;d like to let you an Maven snippet code for configure WAR project for different environments. Sometimes, we&amp;rsquo;re developing in a dev environment, but this project we&amp;rsquo;d like to run in another environments (cloud, server, etc).
+  <meta property="og:description" content="I&rsquo;d like to let you an Maven snippet code for configure WAR project for different environments. Sometimes, we&rsquo;re developing in a dev environment, but this project we&rsquo;d like to run in another environments (cloud, server, etc).
 This is a configuration profile
-&amp;lt;profile&amp;gt; &amp;lt;id&amp;gt;prog&amp;lt;/id&amp;gt; &amp;lt;activation&amp;gt; &amp;lt;activeByDefault&amp;gt;true&amp;lt;/activeByDefault&amp;gt; &amp;lt;/activation&amp;gt; &amp;lt;properties&amp;gt; &amp;lt;!-- There are 3 availabled (dev,nuvol,nuvolbeta), ie: mvn clean package -Dprofile=nuvol --&amp;gt; &amp;lt;env&amp;gt;dev&amp;lt;/env&amp;gt; &amp;lt;/properties&amp;gt; &amp;lt;build&amp;gt; &amp;lt;resources&amp;gt; &amp;lt;resource&amp;gt; &amp;lt;directory&amp;gt;src/main/resources/common&amp;lt;/directory&amp;gt; &amp;lt;/resource&amp;gt; &amp;lt;resource&amp;gt; &amp;lt;directory&amp;gt;src/main/resources/${env}&amp;lt;/directory&amp;gt; &amp;lt;/resource&amp;gt; &amp;lt;/resources&amp;gt; &amp;lt;plugins&amp;gt; &amp;lt;plugin&amp;gt; &amp;lt;artifactId&amp;gt;maven-war-plugin&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;2." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://ppalazon.github.io/posts/multi-environment-maven-war/" />
-
-
+&lt;profile&gt; &lt;id&gt;prog&lt;/id&gt; &lt;activation&gt; &lt;activeByDefault&gt;true&lt;/activeByDefault&gt; &lt;/activation&gt; &lt;properties&gt; &lt;!-- There are 3 availabled (dev,nuvol,nuvolbeta), ie: mvn clean package -Dprofile=nuvol --&gt; &lt;env&gt;dev&lt;/env&gt; &lt;/properties&gt; &lt;build&gt; &lt;resources&gt; &lt;resource&gt; &lt;directory&gt;src/main/resources/common&lt;/directory&gt; &lt;/resource&gt; &lt;resource&gt; &lt;directory&gt;src/main/resources/${env}&lt;/directory&gt; &lt;/resource&gt; &lt;/resources&gt; &lt;plugins&gt; &lt;plugin&gt; &lt;artifactId&gt;maven-war-plugin&lt;/artifactId&gt; &lt;version&gt;2." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://ppalazon.github.io/posts/multi-environment-maven-war/" />
+  
     
-        <meta property="article:published_time" content="2013-01-24T00:00:00&#43;01:00"/>
+  
+  
+    <meta property="og:updated_time" content="2013-01-24T00:00:00&#43;01:00"/>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+      
     
     
-        <meta property="article:modified_time" content="2013-01-24T00:00:00&#43;01:00"/>
+    
     
 
 
 
+<meta itemprop="name" content="Multi-environment maven war generation">
+<meta itemprop="description" content="I&rsquo;d like to let you an Maven snippet code for configure WAR project for different environments. Sometimes, we&rsquo;re developing in a dev environment, but this project we&rsquo;d like to run in another environments (cloud, server, etc).
+This is a configuration profile
+&lt;profile&gt; &lt;id&gt;prog&lt;/id&gt; &lt;activation&gt; &lt;activeByDefault&gt;true&lt;/activeByDefault&gt; &lt;/activation&gt; &lt;properties&gt; &lt;!-- There are 3 availabled (dev,nuvol,nuvolbeta), ie: mvn clean package -Dprofile=nuvol --&gt; &lt;env&gt;dev&lt;/env&gt; &lt;/properties&gt; &lt;build&gt; &lt;resources&gt; &lt;resource&gt; &lt;directory&gt;src/main/resources/common&lt;/directory&gt; &lt;/resource&gt; &lt;resource&gt; &lt;directory&gt;src/main/resources/${env}&lt;/directory&gt; &lt;/resource&gt; &lt;/resources&gt; &lt;plugins&gt; &lt;plugin&gt; &lt;artifactId&gt;maven-war-plugin&lt;/artifactId&gt; &lt;version&gt;2.">
+
+
+<meta itemprop="datePublished" content="2013-01-24T00:00:00&#43;01:00" />
+<meta itemprop="dateModified" content="2013-01-24T00:00:00&#43;01:00" />
+<meta itemprop="wordCount" content="191">
 
 
 
+<meta itemprop="keywords" content="maven,java," />
 
-
-
-
-    
-
-
-
-
-  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Multi-environment maven war generation"/>
-<meta name="twitter:description" content="I&amp;rsquo;d like to let you an Maven snippet code for configure WAR project for different environments. Sometimes, we&amp;rsquo;re developing in a dev environment, but this project we&amp;rsquo;d like to run in another environments (cloud, server, etc).
+<meta name="twitter:description" content="I&rsquo;d like to let you an Maven snippet code for configure WAR project for different environments. Sometimes, we&rsquo;re developing in a dev environment, but this project we&rsquo;d like to run in another environments (cloud, server, etc).
 This is a configuration profile
-&amp;lt;profile&amp;gt; &amp;lt;id&amp;gt;prog&amp;lt;/id&amp;gt; &amp;lt;activation&amp;gt; &amp;lt;activeByDefault&amp;gt;true&amp;lt;/activeByDefault&amp;gt; &amp;lt;/activation&amp;gt; &amp;lt;properties&amp;gt; &amp;lt;!-- There are 3 availabled (dev,nuvol,nuvolbeta), ie: mvn clean package -Dprofile=nuvol --&amp;gt; &amp;lt;env&amp;gt;dev&amp;lt;/env&amp;gt; &amp;lt;/properties&amp;gt; &amp;lt;build&amp;gt; &amp;lt;resources&amp;gt; &amp;lt;resource&amp;gt; &amp;lt;directory&amp;gt;src/main/resources/common&amp;lt;/directory&amp;gt; &amp;lt;/resource&amp;gt; &amp;lt;resource&amp;gt; &amp;lt;directory&amp;gt;src/main/resources/${env}&amp;lt;/directory&amp;gt; &amp;lt;/resource&amp;gt; &amp;lt;/resources&amp;gt; &amp;lt;plugins&amp;gt; &amp;lt;plugin&amp;gt; &amp;lt;artifactId&amp;gt;maven-war-plugin&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;2."/>
+&lt;profile&gt; &lt;id&gt;prog&lt;/id&gt; &lt;activation&gt; &lt;activeByDefault&gt;true&lt;/activeByDefault&gt; &lt;/activation&gt; &lt;properties&gt; &lt;!-- There are 3 availabled (dev,nuvol,nuvolbeta), ie: mvn clean package -Dprofile=nuvol --&gt; &lt;env&gt;dev&lt;/env&gt; &lt;/properties&gt; &lt;build&gt; &lt;resources&gt; &lt;resource&gt; &lt;directory&gt;src/main/resources/common&lt;/directory&gt; &lt;/resource&gt; &lt;resource&gt; &lt;directory&gt;src/main/resources/${env}&lt;/directory&gt; &lt;/resource&gt; &lt;/resources&gt; &lt;plugins&gt; &lt;plugin&gt; &lt;artifactId&gt;maven-war-plugin&lt;/artifactId&gt; &lt;version&gt;2."/>
+
 
 </head>
 
@@ -90,6 +103,18 @@ This is a configuration profile
     <section class="post">
       <h1 class="post-title"><a href="https://ppalazon.github.io/posts/multi-environment-maven-war/">Multi-environment maven war generation</a></h1>
       <span class="post-date">Jan 24, 2013 </span>
+      <span class="post-categories">
+        
+        <strong>Category:</strong>
+        <a href="/categories/devops">devops</a>
+        
+      </span>
+      <span class="post-tags">
+        
+        <strong>Tags:</strong>
+        <a href="/tags/maven">maven</a>, <a href="/tags/java">java</a>
+        
+      </span>
       <div class="post-content">
         <p>I&rsquo;d like to let you an Maven snippet code for configure WAR project for different environments. Sometimes, we&rsquo;re developing in a dev environment, but this project we&rsquo;d like to run in another environments (cloud, server, etc).</p>
 
@@ -171,7 +196,7 @@ This is a configuration profile
 
       </div>
     </section>
-    
+
     <section class="pagination clearfix">
       
       <a class="btn previous " href="https://ppalazon.github.io/posts/first-post-from-ox-hugo/"> First post from ox-hugo </a> 
@@ -257,9 +282,9 @@ ga('send', 'pageview');
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+
+
 
 </body>
 

@@ -9,7 +9,7 @@
 <meta name="generator" content="Hugo 0.37-DEV" />
 
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
 <link rel="stylesheet" href="https://ppalazon.github.io/css/vec.css">
 
 
@@ -19,38 +19,55 @@
 
 <link href="" rel="alternate" type="application/rss+xml" title="ppalazon" />
 
-  
 <meta property="og:title" content="My org mode configuration" />
-<meta property="og:description"
-      content="&amp;lt;p&amp;gt;This is my personal list with most used commands on &amp;lt;code&amp;gt;org-mode&amp;lt;/code&amp;gt;. It&amp;amp;rsquo;s contains snippets, shortcuts and configurations.&amp;lt;/p&amp;gt;  Personal org-mode configuration (require &#39;package) (add-to-list &#39;package-archives &#39;(&amp;quot;org&amp;quot; . &amp;quot;https://orgmode.org/elpa/&amp;quot;) t) (require &#39;org) ;; Enabled … " />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://ppalazon.github.io/posts/my-org-mode-configuration/" />
-
-
+  <meta property="og:description" content="Table of Contents  Personal org-mode configuration   
+This is my personal list with most used commands on org-mode. It&rsquo;s contains snippets, shortcuts and configurations.
+Personal org-mode configuration (require &#39;package) (add-to-list &#39;package-archives &#39;(&quot;org&quot; . &quot;https://orgmode.org/elpa/&quot;) t) (require &#39;org) ;; Enabled ox-hugo (with-eval-after-load &#39;ox (require &#39;ox-hugo)) ;; Configuration of org-mode (setq org-startup-indented t) (setq org-startup-folded &quot;showall&quot;) (setq org-directory &quot;~/org&quot;) (setq org-capture-directory (concat org-directory &quot;/capture&quot;)) (setq org-publish-directory (concat org-directory &quot;/publish&quot;)) (setq org-ref-directory (concat org-directory &quot;/ref&quot;)) (setq org-default-notes-file (concat org-capture-directory &quot;/notes." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://ppalazon.github.io/posts/my-org-mode-configuration/" />
+  
     
-        <meta property="article:published_time" content="2018-04-11T00:00:00&#43;02:00"/>
+  
+  
+    <meta property="og:updated_time" content="2018-04-11T00:00:00&#43;02:00"/>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+      
     
     
-        <meta property="article:modified_time" content="2018-04-11T00:00:00&#43;02:00"/>
+    
     
 
 
 
+<meta itemprop="name" content="My org mode configuration">
+<meta itemprop="description" content="Table of Contents  Personal org-mode configuration   
+This is my personal list with most used commands on org-mode. It&rsquo;s contains snippets, shortcuts and configurations.
+Personal org-mode configuration (require &#39;package) (add-to-list &#39;package-archives &#39;(&quot;org&quot; . &quot;https://orgmode.org/elpa/&quot;) t) (require &#39;org) ;; Enabled ox-hugo (with-eval-after-load &#39;ox (require &#39;ox-hugo)) ;; Configuration of org-mode (setq org-startup-indented t) (setq org-startup-folded &quot;showall&quot;) (setq org-directory &quot;~/org&quot;) (setq org-capture-directory (concat org-directory &quot;/capture&quot;)) (setq org-publish-directory (concat org-directory &quot;/publish&quot;)) (setq org-ref-directory (concat org-directory &quot;/ref&quot;)) (setq org-default-notes-file (concat org-capture-directory &quot;/notes.">
+
+
+<meta itemprop="datePublished" content="2018-04-11T00:00:00&#43;02:00" />
+<meta itemprop="dateModified" content="2018-04-11T00:00:00&#43;02:00" />
+<meta itemprop="wordCount" content="337">
 
 
 
+<meta itemprop="keywords" content="org," />
 
-
-
-
-    
-
-
-
-
-  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="My org mode configuration"/>
-<meta name="twitter:description" content="&amp;lt;p&amp;gt;This is my personal list with most used commands on &amp;lt;code&amp;gt;org-mode&amp;lt;/code&amp;gt;. It&amp;amp;rsquo;s contains snippets, shortcuts and configurations.&amp;lt;/p&amp;gt;  Personal org-mode configuration (require &#39;package) (add-to-list &#39;package-archives &#39;(&amp;quot;org&amp;quot; . &amp;quot;https://orgmode.org/elpa/&amp;quot;) t) (require &#39;org) ;; Enabled … "/>
+<meta name="twitter:description" content="Table of Contents  Personal org-mode configuration   
+This is my personal list with most used commands on org-mode. It&rsquo;s contains snippets, shortcuts and configurations.
+Personal org-mode configuration (require &#39;package) (add-to-list &#39;package-archives &#39;(&quot;org&quot; . &quot;https://orgmode.org/elpa/&quot;) t) (require &#39;org) ;; Enabled ox-hugo (with-eval-after-load &#39;ox (require &#39;ox-hugo)) ;; Configuration of org-mode (setq org-startup-indented t) (setq org-startup-folded &quot;showall&quot;) (setq org-directory &quot;~/org&quot;) (setq org-capture-directory (concat org-directory &quot;/capture&quot;)) (setq org-publish-directory (concat org-directory &quot;/publish&quot;)) (setq org-ref-directory (concat org-directory &quot;/ref&quot;)) (setq org-default-notes-file (concat org-capture-directory &quot;/notes."/>
+
 
 </head>
 
@@ -94,6 +111,18 @@
     <section class="post">
       <h1 class="post-title"><a href="https://ppalazon.github.io/posts/my-org-mode-configuration/">My org mode configuration</a></h1>
       <span class="post-date">Apr 11, 2018 </span>
+      <span class="post-categories">
+        
+        <strong>Category:</strong>
+        <a href="/categories/emacs">emacs</a>
+        
+      </span>
+      <span class="post-tags">
+        
+        <strong>Tag:</strong>
+        <a href="/tags/org">org</a>
+        
+      </span>
       <div class="post-content">
         
 
@@ -212,7 +241,7 @@
 
       </div>
     </section>
-    
+
     <section class="pagination clearfix">
       
       <a class="btn previous " href="https://ppalazon.github.io/posts/character-encoding-files/"> Character encoding files </a> 
@@ -313,9 +342,9 @@ ga('send', 'pageview');
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+
+
 
 </body>
 

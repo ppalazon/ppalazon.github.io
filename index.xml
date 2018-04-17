@@ -46,6 +46,16 @@ This is a configuration profile
     </item>
     
     <item>
+      <title>Starting rust programming on Emacs</title>
+      <link>https://ppalazon.github.io/posts/starting-rust-programming-on-emacs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ppalazon.github.io/posts/starting-rust-programming-on-emacs/</guid>
+      <description>cargo install racer rustup component add rust-src rustup component add rustfmt-preview  Enable rust module in prelude in ~/.emacs.d/prelude-modules.el
+Use cargo Emacs commands: Emacs minor mode for Cargo</description>
+    </item>
+    
+    <item>
       <title>First post from ox-hugo</title>
       <link>https://ppalazon.github.io/posts/first-post-from-ox-hugo/</link>
       <pubDate>Wed, 11 Apr 2018 00:00:00 +0200</pubDate>
@@ -75,7 +85,7 @@ git clone git@github.com:chriskempson/base16-builder.git cd base16-builder ./bas
       <guid>https://ppalazon.github.io/posts/my-org-mode-configuration/</guid>
       <description>Table of Contents  Personal org-mode configuration   
 This is my personal list with most used commands on org-mode. It&amp;rsquo;s contains snippets, shortcuts and configurations.
-Personal org-mode configuration (require &#39;package) (add-to-list &#39;package-archives &#39;(&amp;quot;org&amp;quot; . &amp;quot;https://orgmode.org/elpa/&amp;quot;) t) (require &#39;org) ;; Enabled ox-hugo (with-eval-after-load &#39;ox (require &#39;ox-hugo)) ;; Configuration of org-mode (setq org-startup-indented t) (setq org-startup-folded &amp;quot;showall&amp;quot;) (setq org-directory &amp;quot;~/org&amp;quot;) (setq org-capture-directory (concat org-directory &amp;quot;/capture&amp;quot;)) (setq org-publish-directory (concat org-directory &amp;quot;/publish&amp;quot;)) (setq org-ref-directory (concat org-directory &amp;quot;/ref&amp;quot;)) (setq org-default-notes-file (concat org-capture-directory &amp;quot;/notes.</description>
+Personal org-mode configuration (require &#39;package) (add-to-list &#39;package-archives &#39;(&amp;quot;org&amp;quot; . &amp;quot;https://orgmode.org/elpa/&amp;quot;) t) (require &#39;org) ;; Enabled ox-hugo (with-eval-after-load &#39;ox (require &#39;ox-hugo)) ;; Configuration of org-mode (setq org-startup-indented t) (setq org-startup-folded &amp;quot;overview&amp;quot;) (setq org-agenda-inhibit-startup t) (setq org-directory &amp;quot;~/org&amp;quot;) (setq org-capture-directory (concat org-directory &amp;quot;/capture&amp;quot;)) (setq org-publish-directory (concat org-directory &amp;quot;/publish&amp;quot;)) (setq org-ref-directory (concat org-directory &amp;quot;/ref&amp;quot;)) (setq org-default-notes-file (concat org-capture-directory &amp;quot;/notes.</description>
     </item>
     
     <item>

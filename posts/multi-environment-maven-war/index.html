@@ -33,6 +33,8 @@ This is a configuration profile
   
   
   
+    <meta property="og:locale" content="en_US" />
+  
   
   
   
@@ -116,7 +118,10 @@ This is a configuration profile
         
       </span>
       <div class="post-content">
-        <p>I&rsquo;d like to let you an Maven snippet code for configure WAR project for different environments. Sometimes, we&rsquo;re developing in a dev environment, but this project we&rsquo;d like to run in another environments (cloud, server, etc).</p>
+        <p>I&rsquo;d like to let you an Maven snippet code for configure WAR project
+for different environments. Sometimes, we&rsquo;re developing in a dev
+environment, but this project we&rsquo;d like to run in another environments
+(cloud, server, etc).</p>
 
 <p>This is a configuration profile</p>
 
@@ -171,14 +176,17 @@ This is a configuration profile
 <p>Features:</p>
 
 <ul>
-<li>Profile active by default (mvn clean package, will use dev environment)</li>
+<li>Profile active by default (mvn clean package, will use dev
+environment)</li>
 <li>Change environment variable with -Denv=dev (java runtime option)</li>
 <li>All WEB-INF will be on src/main/webinf/
 
 <ul>
-<li>common: WEB-INF common files for all environment (DRY) : (Mandatory)</li>
+<li>common: WEB-INF common files for all environment (DRY) :
+(Mandatory)</li>
 <li>dev: WEB-INF files for dev environment : (Mandatory)</li>
-<li>another_env_name: WEB-INF files for any environment if you want : (Optional)</li>
+<li>another_env_name: WEB-INF files for any environment if you want :
+(Optional)</li>
 </ul></li>
 <li>All resources files (java resources) on src/main/resources
 
@@ -191,7 +199,8 @@ This is a configuration profile
 
 <ul>
 <li>This will ignore WEB-INF file on webapp/WEB-INF</li>
-<li>If you want to import this project on Eclipse, you will add WEB-INF by han. (Project Properties-&gt;Deployment Assembly)</li>
+<li>If you want to import this project on Eclipse, you will add WEB-INF
+by han. (Project Properties-&gt;Deployment Assembly)</li>
 </ul>
 
       </div>
@@ -199,7 +208,7 @@ This is a configuration profile
 
     <section class="pagination clearfix">
       
-      <a class="btn previous " href="https://ppalazon.github.io/posts/first-post-from-ox-hugo/"> First post from ox-hugo </a> 
+      <a class="btn previous " href="https://ppalazon.github.io/posts/starting-rust-programming-on-emacs/"> Starting rust programming on Emacs </a> 
        
       
       <a class="btn next " href="https://ppalazon.github.io/posts/testing-ox-hugo/"> Testing ox-hugo </a> 
@@ -207,6 +216,21 @@ This is a configuration profile
     </section>
     
     
+<section id="disqus_thread" class='disqus'></section>
+<script>
+  var disqus_config = function () {
+    this.page.url = "https://ppalazon.github.io/posts/multi-environment-maven-war/";
+    
+  };
+  (function() {
+    var d = document, s = d.createElement('script');
+    s.src = '//ppalazon.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
   </div>
   
   </script>

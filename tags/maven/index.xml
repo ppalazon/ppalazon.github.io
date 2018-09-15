@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Maven on ppalazon</title>
+    <title>Maven on Sobremesa en Milliways</title>
     <link>https://ppalazon.github.io/tags/maven/</link>
-    <description>Recent content in Maven on ppalazon</description>
+    <description>Recent content in Maven on Sobremesa en Milliways</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <managingEditor>pablo.palazon@gmail.com (Pablo Palazon)</managingEditor>
+    <webMaster>pablo.palazon@gmail.com (Pablo Palazon)</webMaster>
+    <copyright>CC BY-NC-ND 3.0</copyright>
     <lastBuildDate>Thu, 24 Jan 2013 00:00:00 +0100</lastBuildDate>
     
 	<atom:link href="https://ppalazon.github.io/tags/maven/index.xml" rel="self" type="application/rss+xml" />
@@ -13,10 +16,10 @@
     
     <item>
       <title>Multi-environment maven war generation</title>
-      <link>https://ppalazon.github.io/posts/multi-environment-maven-war/</link>
+      <link>https://ppalazon.github.io/2013/01/24/multi-environment-maven-war-generation/</link>
       <pubDate>Thu, 24 Jan 2013 00:00:00 +0100</pubDate>
-      
-      <guid>https://ppalazon.github.io/posts/multi-environment-maven-war/</guid>
+      <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
+      <guid>https://ppalazon.github.io/2013/01/24/multi-environment-maven-war-generation/</guid>
       <description>I&amp;rsquo;d like to let you an Maven snippet code for configure WAR project for different environments. Sometimes, we&amp;rsquo;re developing in a dev environment, but this project we&amp;rsquo;d like to run in another environments (cloud, server, etc).
 This is a configuration profile
 &amp;lt;profile&amp;gt; &amp;lt;id&amp;gt;prog&amp;lt;/id&amp;gt; &amp;lt;activation&amp;gt; &amp;lt;activeByDefault&amp;gt;true&amp;lt;/activeByDefault&amp;gt; &amp;lt;/activation&amp;gt; &amp;lt;properties&amp;gt; &amp;lt;!-- There are 3 availabled (dev,nuvol,nuvolbeta), ie: mvn clean package -Dprofile=nuvol --&amp;gt; &amp;lt;env&amp;gt;dev&amp;lt;/env&amp;gt; &amp;lt;/properties&amp;gt; &amp;lt;build&amp;gt; &amp;lt;resources&amp;gt; &amp;lt;resource&amp;gt; &amp;lt;directory&amp;gt;src/main/resources/common&amp;lt;/directory&amp;gt; &amp;lt;/resource&amp;gt; &amp;lt;resource&amp;gt; &amp;lt;directory&amp;gt;src/main/resources/${env}&amp;lt;/directory&amp;gt; &amp;lt;/resource&amp;gt; &amp;lt;/resources&amp;gt; &amp;lt;plugins&amp;gt; &amp;lt;plugin&amp;gt; &amp;lt;artifactId&amp;gt;maven-war-plugin&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;2.</description>

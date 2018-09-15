@@ -6,6 +6,8 @@
     <description>Recent content in Devops on ppalazon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <managingEditor>pablo.palazon@gmail.com (Pablo Palazon)</managingEditor>
+    <webMaster>pablo.palazon@gmail.com (Pablo Palazon)</webMaster>
     <lastBuildDate>Thu, 24 Jan 2013 00:00:00 +0100</lastBuildDate>
     
 	<atom:link href="https://ppalazon.github.io/categories/devops/index.xml" rel="self" type="application/rss+xml" />
@@ -15,7 +17,7 @@
       <title>Multi-environment maven war generation</title>
       <link>https://ppalazon.github.io/posts/multi-environment-maven-war/</link>
       <pubDate>Thu, 24 Jan 2013 00:00:00 +0100</pubDate>
-      
+      <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
       <guid>https://ppalazon.github.io/posts/multi-environment-maven-war/</guid>
       <description>I&amp;rsquo;d like to let you an Maven snippet code for configure WAR project for different environments. Sometimes, we&amp;rsquo;re developing in a dev environment, but this project we&amp;rsquo;d like to run in another environments (cloud, server, etc).
 This is a configuration profile
@@ -26,7 +28,7 @@ This is a configuration profile
       <title>Guake Base 16 Color</title>
       <link>https://ppalazon.github.io/posts/guake-base-16-color/</link>
       <pubDate>Wed, 15 Jul 2015 00:00:00 +0200</pubDate>
-      
+      <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
       <guid>https://ppalazon.github.io/posts/guake-base-16-color/</guid>
       <description>Figure 1: Base 16 color on guake terminal   Base16 provides carefully chosen syntax highlighting and a default set of sixteen colors suitable for a wide range of applications. Base16 is both a color scheme and a template.
 With Base 16 builder you could create guake template and set-up for it
@@ -37,7 +39,7 @@ git clone git@github.com:chriskempson/base16-builder.git cd base16-builder ./bas
       <title>Character encoding files</title>
       <link>https://ppalazon.github.io/posts/character-encoding-files/</link>
       <pubDate>Wed, 04 Feb 2015 00:00:00 +0100</pubDate>
-      
+      <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
       <guid>https://ppalazon.github.io/posts/character-encoding-files/</guid>
       <description> Suppose than native enconding is utf-8
 View file encoding with file

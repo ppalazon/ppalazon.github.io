@@ -6,6 +6,8 @@
     <description>Recent content in Posts on ppalazon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <managingEditor>pablo.palazon@gmail.com (Pablo Palazon)</managingEditor>
+    <webMaster>pablo.palazon@gmail.com (Pablo Palazon)</webMaster>
     <lastBuildDate>Wed, 11 Apr 2018 00:00:00 +0200</lastBuildDate>
     
 	<atom:link href="https://ppalazon.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
@@ -15,7 +17,7 @@
       <title>Testing ox-hugo</title>
       <link>https://ppalazon.github.io/posts/testing-ox-hugo/</link>
       <pubDate>Wed, 11 Apr 2018 00:00:00 +0200</pubDate>
-      
+      <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
       <guid>https://ppalazon.github.io/posts/testing-ox-hugo/</guid>
       <description>This is a test for ox-hugo exports
 LaTeX formatted equation: \( E = -J \sum_{i=1}^N s_i s_{i+1} \)
@@ -28,7 +30,7 @@ sudo apt-get update sudo apt-get dist-upgrade  (require &#39;org)  </description
       <title>Multi-environment maven war generation</title>
       <link>https://ppalazon.github.io/posts/multi-environment-maven-war/</link>
       <pubDate>Thu, 24 Jan 2013 00:00:00 +0100</pubDate>
-      
+      <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
       <guid>https://ppalazon.github.io/posts/multi-environment-maven-war/</guid>
       <description>I&amp;rsquo;d like to let you an Maven snippet code for configure WAR project for different environments. Sometimes, we&amp;rsquo;re developing in a dev environment, but this project we&amp;rsquo;d like to run in another environments (cloud, server, etc).
 This is a configuration profile
@@ -39,7 +41,11 @@ This is a configuration profile
       <title>Starting rust programming on Emacs</title>
       <link>https://ppalazon.github.io/posts/starting-rust-programming-on-emacs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+<<<<<<< HEAD
       
+=======
+      <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
+>>>>>>> tmp
       <guid>https://ppalazon.github.io/posts/starting-rust-programming-on-emacs/</guid>
       <description>cargo install racer rustup component add rust-src rustup component add rustfmt-preview  Enable rust module in prelude in ~/.emacs.d/prelude-modules.el
 Use cargo Emacs commands: Emacs minor mode for Cargo</description>
@@ -49,7 +55,7 @@ Use cargo Emacs commands: Emacs minor mode for Cargo</description>
       <title>First post from ox-hugo</title>
       <link>https://ppalazon.github.io/posts/first-post-from-ox-hugo/</link>
       <pubDate>Wed, 11 Apr 2018 00:00:00 +0200</pubDate>
-      
+      <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
       <guid>https://ppalazon.github.io/posts/first-post-from-ox-hugo/</guid>
       <description>This is my first export from ox-hugo
 I&amp;rsquo;m using One post per Org subtree for posts with org-mode.
@@ -60,7 +66,7 @@ I&amp;rsquo;m using One post per Org subtree for posts with org-mode.
       <title>Guake Base 16 Color</title>
       <link>https://ppalazon.github.io/posts/guake-base-16-color/</link>
       <pubDate>Wed, 15 Jul 2015 00:00:00 +0200</pubDate>
-      
+      <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
       <guid>https://ppalazon.github.io/posts/guake-base-16-color/</guid>
       <description>Figure 1: Base 16 color on guake terminal   Base16 provides carefully chosen syntax highlighting and a default set of sixteen colors suitable for a wide range of applications. Base16 is both a color scheme and a template.
 With Base 16 builder you could create guake template and set-up for it
@@ -71,18 +77,22 @@ git clone git@github.com:chriskempson/base16-builder.git cd base16-builder ./bas
       <title>My org mode configuration</title>
       <link>https://ppalazon.github.io/posts/my-org-mode-configuration/</link>
       <pubDate>Wed, 11 Apr 2018 00:00:00 +0200</pubDate>
-      
+      <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
       <guid>https://ppalazon.github.io/posts/my-org-mode-configuration/</guid>
       <description>Table of Contents  Personal org-mode configuration   
 This is my personal list with most used commands on org-mode. It&amp;rsquo;s contains snippets, shortcuts and configurations.
+<<<<<<< HEAD
 Personal org-mode configuration (require &#39;package) (add-to-list &#39;package-archives &#39;(&amp;quot;org&amp;quot; . &amp;quot;https://orgmode.org/elpa/&amp;quot;) t) (require &#39;org) ;; Enabled ox-hugo (with-eval-after-load &#39;ox (require &#39;ox-hugo)) ;; Configuration of org-mode (setq org-startup-indented t) (setq org-startup-folded &amp;quot;overview&amp;quot;) (setq org-agenda-inhibit-startup t) (setq org-directory &amp;quot;~/org&amp;quot;) (setq org-capture-directory (concat org-directory &amp;quot;/capture&amp;quot;)) (setq org-publish-directory (concat org-directory &amp;quot;/publish&amp;quot;)) (setq org-ref-directory (concat org-directory &amp;quot;/ref&amp;quot;)) (setq org-default-notes-file (concat org-capture-directory &amp;quot;/notes.</description>
+=======
+Personal org-mode configuration (global-set-key (kbd &amp;quot;&amp;lt;f12&amp;gt;&amp;quot;) &#39;org-agenda) (global-set-key (kbd &amp;quot;&amp;lt;f5&amp;gt;&amp;quot;) &#39;bh/org-todo) (global-set-key (kbd &amp;quot;&amp;lt;S-f5&amp;gt;&amp;quot;) &#39;bh/widen) (global-set-key (kbd &amp;quot;&amp;lt;f7&amp;gt;&amp;quot;) &#39;bh/set-truncate-lines) ;; &amp;lt;f8&amp;gt; is for neotree-toggle ;;(global-set-key (kbd &amp;quot;&amp;lt;f8&amp;gt;&amp;quot;) &#39;org-cycle-agenda-files) (global-set-key (kbd &amp;quot;&amp;lt;f9&amp;gt; &amp;lt;f9&amp;gt;&amp;quot;) &#39;bh/show-org-agenda) (global-set-key (kbd &amp;quot;&amp;lt;f9&amp;gt; b&amp;quot;) &#39;bbdb) (global-set-key (kbd &amp;quot;&amp;lt;f9&amp;gt; c&amp;quot;) &#39;calendar) (global-set-key (kbd &amp;quot;&amp;lt;f9&amp;gt; f&amp;quot;) &#39;boxquote-insert-file) (global-set-key (kbd &amp;quot;&amp;lt;f9&amp;gt; g&amp;quot;) &#39;gnus) (global-set-key (kbd &amp;quot;&amp;lt;f9&amp;gt; h&amp;quot;) &#39;bh/hide-other) (global-set-key (kbd &amp;quot;&amp;lt;f9&amp;gt; n&amp;quot;) &#39;bh/toggle-next-task-display) (global-set-key (kbd &amp;quot;&amp;lt;f9&amp;gt; I&amp;quot;) &#39;bh/punch-in) (global-set-key (kbd &amp;quot;&amp;lt;f9&amp;gt; O&amp;quot;) &#39;bh/punch-out) (global-set-key (kbd &amp;quot;&amp;lt;f9&amp;gt; o&amp;quot;) &#39;bh/make-org-scratch) (global-set-key (kbd &amp;quot;&amp;lt;f9&amp;gt; r&amp;quot;) &#39;boxquote-region) (global-set-key (kbd &amp;quot;&amp;lt;f9&amp;gt; s&amp;quot;) &#39;bh/switch-to-scratch) (global-set-key (kbd &amp;quot;&amp;lt;f9&amp;gt; t&amp;quot;) &#39;bh/insert-inactive-timestamp) (global-set-key (kbd &amp;quot;&amp;lt;f9&amp;gt; T&amp;quot;) &#39;bh/toggle-insert-inactive-timestamp) (global-set-key (kbd &amp;quot;&amp;lt;f9&amp;gt; v&amp;quot;) &#39;visible-mode) (global-set-key (kbd &amp;quot;&amp;lt;f9&amp;gt; l&amp;quot;) &#39;org-toggle-link-display) (global-set-key (kbd &amp;quot;&amp;lt;f9&amp;gt; SPC&amp;quot;) &#39;bh/clock-in-last-task) (global-set-key (kbd &amp;quot;C-&amp;lt;f9&amp;gt;&amp;quot;) &#39;previous-buffer) (global-set-key (kbd &amp;quot;M-&amp;lt;f9&amp;gt;&amp;quot;) &#39;org-toggle-inline-images) (global-set-key (kbd &amp;quot;C-x n r&amp;quot;) &#39;narrow-to-region) (global-set-key (kbd &amp;quot;C-&amp;lt;f10&amp;gt;&amp;quot;) &#39;next-buffer) (global-set-key (kbd &amp;quot;&amp;lt;f11&amp;gt;&amp;quot;) &#39;org-clock-goto) (global-set-key (kbd &amp;quot;C-&amp;lt;f11&amp;gt;&amp;quot;) &#39;org-clock-in) (global-set-key (kbd &amp;quot;C-s-&amp;lt;f12&amp;gt;&amp;quot;) &#39;bh/save-then-publish) (global-set-key (kbd &amp;quot;C-c c&amp;quot;) &#39;org-capture) (global-set-key (kbd &amp;quot;C-c 0&amp;quot;) (lambda () (interactive) (find-file &amp;quot;~/org/capture/refile.</description>
+>>>>>>> tmp
     </item>
     
     <item>
       <title>Character encoding files</title>
       <link>https://ppalazon.github.io/posts/character-encoding-files/</link>
       <pubDate>Wed, 04 Feb 2015 00:00:00 +0100</pubDate>
-      
+      <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
       <guid>https://ppalazon.github.io/posts/character-encoding-files/</guid>
       <description> Suppose than native enconding is utf-8
 View file encoding with file

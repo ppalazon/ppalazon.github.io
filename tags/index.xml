@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on ppalazon</title>
+    <title>Tags on Sobremesa en Milliways</title>
     <link>https://ppalazon.github.io/tags/</link>
-    <description>Recent content in Tags on ppalazon</description>
+    <description>Recent content in Tags on Sobremesa en Milliways</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <managingEditor>pablo.palazon@gmail.com (Pablo Palazon)</managingEditor>
+    <webMaster>pablo.palazon@gmail.com (Pablo Palazon)</webMaster>
+    <copyright>CC BY-NC-ND 3.0</copyright>
     <lastBuildDate>Wed, 15 Jul 2015 00:00:00 +0200</lastBuildDate>
     
 	<atom:link href="https://ppalazon.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
@@ -15,7 +18,7 @@
       <title>Base16</title>
       <link>https://ppalazon.github.io/tags/base16/</link>
       <pubDate>Wed, 15 Jul 2015 00:00:00 +0200</pubDate>
-      
+      <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
       <guid>https://ppalazon.github.io/tags/base16/</guid>
       <description></description>
     </item>
@@ -24,7 +27,7 @@
       <title>Encoding</title>
       <link>https://ppalazon.github.io/tags/encoding/</link>
       <pubDate>Wed, 04 Feb 2015 00:00:00 +0100</pubDate>
-      
+      <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
       <guid>https://ppalazon.github.io/tags/encoding/</guid>
       <description></description>
     </item>
@@ -33,7 +36,7 @@
       <title>Guake</title>
       <link>https://ppalazon.github.io/tags/guake/</link>
       <pubDate>Wed, 15 Jul 2015 00:00:00 +0200</pubDate>
-      
+      <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
       <guid>https://ppalazon.github.io/tags/guake/</guid>
       <description></description>
     </item>
@@ -42,7 +45,7 @@
       <title>Hugo</title>
       <link>https://ppalazon.github.io/tags/hugo/</link>
       <pubDate>Wed, 11 Apr 2018 00:00:00 +0200</pubDate>
-      
+      <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
       <guid>https://ppalazon.github.io/tags/hugo/</guid>
       <description></description>
     </item>
@@ -51,7 +54,7 @@
       <title>Java</title>
       <link>https://ppalazon.github.io/tags/java/</link>
       <pubDate>Thu, 24 Jan 2013 00:00:00 +0100</pubDate>
-      
+      <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
       <guid>https://ppalazon.github.io/tags/java/</guid>
       <description></description>
     </item>
@@ -60,7 +63,7 @@
       <title>Maven</title>
       <link>https://ppalazon.github.io/tags/maven/</link>
       <pubDate>Thu, 24 Jan 2013 00:00:00 +0100</pubDate>
-      
+      <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
       <guid>https://ppalazon.github.io/tags/maven/</guid>
       <description></description>
     </item>
@@ -69,7 +72,7 @@
       <title>Me</title>
       <link>https://ppalazon.github.io/tags/me/</link>
       <pubDate>Wed, 11 Apr 2018 00:00:00 +0200</pubDate>
-      
+      <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
       <guid>https://ppalazon.github.io/tags/me/</guid>
       <description></description>
     </item>
@@ -78,7 +81,7 @@
       <title>Org</title>
       <link>https://ppalazon.github.io/tags/org/</link>
       <pubDate>Wed, 11 Apr 2018 00:00:00 +0200</pubDate>
-      
+      <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
       <guid>https://ppalazon.github.io/tags/org/</guid>
       <description></description>
     </item>
@@ -87,7 +90,7 @@
       <title>Ppalazon</title>
       <link>https://ppalazon.github.io/tags/ppalazon/</link>
       <pubDate>Wed, 11 Apr 2018 00:00:00 +0200</pubDate>
-      
+      <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
       <guid>https://ppalazon.github.io/tags/ppalazon/</guid>
       <description></description>
     </item>
@@ -96,7 +99,11 @@
       <title>Rust</title>
       <link>https://ppalazon.github.io/tags/rust/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+<<<<<<< HEAD
       
+=======
+      <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
+>>>>>>> tmp
       <guid>https://ppalazon.github.io/tags/rust/</guid>
       <description></description>
     </item>

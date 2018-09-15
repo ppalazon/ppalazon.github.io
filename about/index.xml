@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Abouts on ppalazon</title>
+    <title>Abouts on Sobremesa en Milliways</title>
     <link>https://ppalazon.github.io/about/</link>
-    <description>Recent content in Abouts on ppalazon</description>
+    <description>Recent content in Abouts on Sobremesa en Milliways</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <managingEditor>pablo.palazon@gmail.com (Pablo Palazon)</managingEditor>
+    <webMaster>pablo.palazon@gmail.com (Pablo Palazon)</webMaster>
+    <copyright>CC BY-NC-ND 3.0</copyright>
     <lastBuildDate>Wed, 11 Apr 2018 00:00:00 +0200</lastBuildDate>
     
 	<atom:link href="https://ppalazon.github.io/about/index.xml" rel="self" type="application/rss+xml" />
@@ -15,7 +18,7 @@
       <title>About</title>
       <link>https://ppalazon.github.io/about/me/</link>
       <pubDate>Wed, 11 Apr 2018 00:00:00 +0200</pubDate>
-      
+      <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
       <guid>https://ppalazon.github.io/about/me/</guid>
       <description>I&amp;rsquo;m Pablo Palazon. And this is my personal website.
 Why do I write on my own website?. I&amp;rsquo;d like to write several articles and essays in English to improve my skills. I like STEM affairs such as space, technology, physics and computer science. I&amp;rsquo;m not an expert or guru on STEM, but it&amp;rsquo;s a good idea to write about something that you want to learn. So that, if you find out any mistake or something is misunderstand, please contact me or comment.</description>

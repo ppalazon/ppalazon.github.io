@@ -18,19 +18,11 @@
   </url>
   
   <url>
-<<<<<<< HEAD
-    <loc>https://ppalazon.github.io/posts/starting-rust-programming-on-emacs/</loc>
-  </url>
-  
-  <url>
-    <loc>https://ppalazon.github.io/posts/first-post-from-ox-hugo/</loc>
-=======
     <loc>https://ppalazon.github.io/1/01/01/starting-rust-programming-on-emacs/</loc>
   </url>
   
   <url>
     <loc>https://ppalazon.github.io/2018/04/11/first-post-from-ox-hugo/</loc>
->>>>>>> tmp
     <lastmod>2018-04-11T00:00:00+02:00</lastmod>
   </url>
   
@@ -80,11 +72,6 @@
   </url>
   
   <url>
-    <loc>https://ppalazon.github.io/categories/ideas/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://ppalazon.github.io/tags/java/</loc>
     <lastmod>2013-01-24T00:00:00+01:00</lastmod>
     <priority>0</priority>
@@ -122,15 +109,6 @@
   
   <url>
     <loc>https://ppalazon.github.io/tags/rust/</loc>
-<<<<<<< HEAD
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ppalazon.github.io/tags/</loc>
-    <lastmod>2015-07-15T00:00:00+02:00</lastmod>
-=======
->>>>>>> tmp
     <priority>0</priority>
   </url>
   

@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-<<<<<<< HEAD
-    <title>Rust on ppalazon</title>
-    <link>https://ppalazon.github.io/tags/rust/</link>
-    <description>Recent content in Rust on ppalazon</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-=======
     <title>Rust on Sobremesa en Milliways</title>
     <link>https://ppalazon.github.io/tags/rust/</link>
     <description>Recent content in Rust on Sobremesa en Milliways</description>
@@ -16,24 +9,16 @@
     <managingEditor>pablo.palazon@gmail.com (Pablo Palazon)</managingEditor>
     <webMaster>pablo.palazon@gmail.com (Pablo Palazon)</webMaster>
     <copyright>CC BY-NC-ND 3.0</copyright>
->>>>>>> tmp
     
 	<atom:link href="https://ppalazon.github.io/tags/rust/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Starting rust programming on Emacs</title>
-<<<<<<< HEAD
-      <link>https://ppalazon.github.io/posts/starting-rust-programming-on-emacs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ppalazon.github.io/posts/starting-rust-programming-on-emacs/</guid>
-=======
       <link>https://ppalazon.github.io/1/01/01/starting-rust-programming-on-emacs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
       <guid>https://ppalazon.github.io/1/01/01/starting-rust-programming-on-emacs/</guid>
->>>>>>> tmp
       <description>cargo install racer rustup component add rust-src rustup component add rustfmt-preview  Enable rust module in prelude in ~/.emacs.d/prelude-modules.el
 Use cargo Emacs commands: Emacs minor mode for Cargo</description>
     </item>

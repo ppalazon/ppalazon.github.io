@@ -56,7 +56,7 @@
     },
     "datePublished": "2018-04-11",
     "description": "",
-    "wordCount": 2798
+    "wordCount": 2800
   }
 </script>
   
@@ -172,7 +172,7 @@
     &middot; by [Pablo Palazón]
   
   &middot; Read in about 14 min
-  &middot; (2798 words)
+  &middot; (2800 words)
   &middot; 
 <span class="share-box">Share this on:
     <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f2018%2f04%2f11%2fmy-org-mode-configuration%2f" onclick="window.open(this.href, 'mywin',
@@ -315,10 +315,10 @@ contains snippets, shortcuts and configurations.</p>
              &quot;* %? :NOTE:\n%U\n%a\n&quot; :clock-in t :clock-resume t)
             (&quot;j&quot; &quot;Journal&quot; entry (file+datetree &quot;~/org/capture/journal.org&quot;)
              &quot;* %? \nEntered on %U\n&quot; :clock-in t :clock-resume t)
-            (&quot;p&quot; &quot;Protocol&quot; entry (file &quot;~/org/capture/refile.org&quot;)
-             &quot;* %^{Title}\nSource: %u, %c\n #+BEGIN_QUOTE\n%i\n#+END_QUOTE\n\n%?&quot;)
+            (&quot;P&quot; &quot;Protocol&quot; entry (file &quot;~/org/capture/refile.org&quot;)
+             &quot;* %(transform-square-brackets-to-round-ones \&quot;%:description\&quot;)\nCaptured On: %U\nSource: [[%:link][%(transform-square-brackets-to-round-ones \&quot;%:description\&quot;)]]\n\n#+BEGIN_QUOTE\n%i\n#+END_QUOTE\n\n%?&quot;)
             (&quot;L&quot; &quot;Protocol Link&quot; entry (file &quot;~/org/capture/refile.org&quot;)
-             &quot;* %? [[%:link][%(transform-square-brackets-to-round-ones \&quot;%:description\&quot;)]] \nCaptured On: %U&quot;)
+             &quot;* %(transform-square-brackets-to-round-ones \&quot;%:description\&quot;)\nCaptured On: %U\nSource: [[%:link][%(transform-square-brackets-to-round-ones \&quot;%:description\&quot;)]]\n\n%?&quot;)
             (&quot;m&quot; &quot;Meeting&quot; entry (file &quot;~/org/capture/refile.org&quot;)
              &quot;* MEETING %u about %? :MEETING:\n%U\nwith: &quot; :clock-in t :clock-resume t)
             (&quot;p&quot; &quot;Phone call&quot; entry (file &quot;~/org/capture/refile.org&quot;)
@@ -1201,15 +1201,15 @@ Skip project and sub-project tasks, habits, and loose non-project tasks.&quot;
         <ul>
         
           <li>
+          <a href="https://ppalazon.github.io/2018/07/28/starting-rust-programming-on-emacs/">Starting rust programming on Emacs</a>
+          </li>
+        
+          <li>
           <a href="https://ppalazon.github.io/2018/04/11/testing-ox-hugo/">Testing ox-hugo</a>
           </li>
         
           <li>
           <a href="https://ppalazon.github.io/2013/01/24/multi-environment-maven-war-generation/">Multi-environment maven war generation</a>
-          </li>
-        
-          <li>
-          <a href="https://ppalazon.github.io/1/01/01/starting-rust-programming-on-emacs/">Starting rust programming on Emacs</a>
           </li>
         
           <li>

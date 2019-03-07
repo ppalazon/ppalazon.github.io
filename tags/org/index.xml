@@ -22,7 +22,8 @@
       <guid>https://ppalazon.github.io/2018/04/11/first-post-from-ox-hugo/</guid>
       <description>This is my first export from ox-hugo
 I&amp;rsquo;m using One post per Org subtree for posts with org-mode.
-   Figure 1: One post per Org subtree snapshot   Reference Please visit ox-hugo github page or ox-hugo website. There is a ox-hugo test website where you can learn how to configure your documents</description>
+  Figure 1: One post per Org subtree snapshot
+  Reference Please visit ox-hugo github page or ox-hugo website. There is a ox-hugo test website where you can learn how to configure your documents</description>
     </item>
     
     <item>
@@ -34,6 +35,19 @@ I&amp;rsquo;m using One post per Org subtree for posts with org-mode.
       <description>Table of Contents  Personal org-mode configuration   
 This is my personal list with most used commands on org-mode. It&amp;rsquo;s contains snippets, shortcuts and configurations.
 Personal org-mode configuration (global-set-key (kbd &amp;quot;&amp;lt;f12&amp;gt;&amp;quot;) &#39;org-agenda) (global-set-key (kbd &amp;quot;&amp;lt;f5&amp;gt;&amp;quot;) &#39;bh/org-todo) (global-set-key (kbd &amp;quot;&amp;lt;S-f5&amp;gt;&amp;quot;) &#39;bh/widen) (global-set-key (kbd &amp;quot;&amp;lt;f7&amp;gt;&amp;quot;) &#39;bh/set-truncate-lines) ;; &amp;lt;f8&amp;gt; is for neotree-toggle ;;(global-set-key (kbd &amp;quot;&amp;lt;f8&amp;gt;&amp;quot;) &#39;org-cycle-agenda-files) (global-set-key (kbd &amp;quot;&amp;lt;f9&amp;gt; &amp;lt;f9&amp;gt;&amp;quot;) &#39;bh/show-org-agenda) (global-set-key (kbd &amp;quot;&amp;lt;f9&amp;gt; b&amp;quot;) &#39;bbdb) (global-set-key (kbd &amp;quot;&amp;lt;f9&amp;gt; c&amp;quot;) &#39;calendar) (global-set-key (kbd &amp;quot;&amp;lt;f9&amp;gt; f&amp;quot;) &#39;boxquote-insert-file) (global-set-key (kbd &amp;quot;&amp;lt;f9&amp;gt; g&amp;quot;) &#39;gnus) (global-set-key (kbd &amp;quot;&amp;lt;f9&amp;gt; h&amp;quot;) &#39;bh/hide-other) (global-set-key (kbd &amp;quot;&amp;lt;f9&amp;gt; n&amp;quot;) &#39;bh/toggle-next-task-display) (global-set-key (kbd &amp;quot;&amp;lt;f9&amp;gt; I&amp;quot;) &#39;bh/punch-in) (global-set-key (kbd &amp;quot;&amp;lt;f9&amp;gt; O&amp;quot;) &#39;bh/punch-out) (global-set-key (kbd &amp;quot;&amp;lt;f9&amp;gt; o&amp;quot;) &#39;bh/make-org-scratch) (global-set-key (kbd &amp;quot;&amp;lt;f9&amp;gt; r&amp;quot;) &#39;boxquote-region) (global-set-key (kbd &amp;quot;&amp;lt;f9&amp;gt; s&amp;quot;) &#39;bh/switch-to-scratch) (global-set-key (kbd &amp;quot;&amp;lt;f9&amp;gt; t&amp;quot;) &#39;bh/insert-inactive-timestamp) (global-set-key (kbd &amp;quot;&amp;lt;f9&amp;gt; T&amp;quot;) &#39;bh/toggle-insert-inactive-timestamp) (global-set-key (kbd &amp;quot;&amp;lt;f9&amp;gt; v&amp;quot;) &#39;visible-mode) (global-set-key (kbd &amp;quot;&amp;lt;f9&amp;gt; l&amp;quot;) &#39;org-toggle-link-display) (global-set-key (kbd &amp;quot;&amp;lt;f9&amp;gt; SPC&amp;quot;) &#39;bh/clock-in-last-task) (global-set-key (kbd &amp;quot;C-&amp;lt;f9&amp;gt;&amp;quot;) &#39;previous-buffer) (global-set-key (kbd &amp;quot;M-&amp;lt;f9&amp;gt;&amp;quot;) &#39;org-toggle-inline-images) (global-set-key (kbd &amp;quot;C-x n r&amp;quot;) &#39;narrow-to-region) (global-set-key (kbd &amp;quot;C-&amp;lt;f10&amp;gt;&amp;quot;) &#39;next-buffer) (global-set-key (kbd &amp;quot;&amp;lt;f11&amp;gt;&amp;quot;) &#39;org-clock-goto) (global-set-key (kbd &amp;quot;C-&amp;lt;f11&amp;gt;&amp;quot;) &#39;org-clock-in) (global-set-key (kbd &amp;quot;C-s-&amp;lt;f12&amp;gt;&amp;quot;) &#39;bh/save-then-publish) (global-set-key (kbd &amp;quot;C-c c&amp;quot;) &#39;org-capture) (global-set-key (kbd &amp;quot;C-c 0&amp;quot;) (lambda () (interactive) (find-file &amp;quot;~/org/capture/refile.</description>
+    </item>
+    
+    <item>
+      <title>Testing ox-hugo</title>
+      <link>https://ppalazon.github.io/2018/04/11/testing-ox-hugo/</link>
+      <pubDate>Wed, 11 Apr 2018 00:00:00 +0200</pubDate>
+      <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
+      <guid>https://ppalazon.github.io/2018/04/11/testing-ox-hugo/</guid>
+      <description>This is a test for ox-hugo exports
+LaTeX formatted equation: \( E = -J \sum_{i=1}^N s_i s_{i+1} \)
+If \(a^2=b\) and \( b=2 \), then the solution must be either \[ a=+\sqrt{2} \] or \[ a=-\sqrt{2} \]
+\begin{equation} \label{eq:1} C = W\log_{2} (1+\mathrm{SNR}) \end{equation}
+sudo apt-get update sudo apt-get dist-upgrade  (require &#39;org)  </description>
     </item>
     
   </channel>

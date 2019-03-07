@@ -43,7 +43,7 @@ sudo apt-get update sudo apt-get dist-upgrade  (require &#39;org)  </description
       <pubDate>Thu, 24 Jan 2013 00:00:00 +0100</pubDate>
       <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
       <guid>https://ppalazon.github.io/2013/01/24/multi-environment-maven-war-generation/</guid>
-      <description>I&amp;rsquo;d like to let you an Maven snippet code for configure WAR project for different environments. Sometimes, we&amp;rsquo;re developing in a dev environment, but this project we&amp;rsquo;d like to run in another environments (cloud, server, etc).
+      <description>Summary  I&amp;rsquo;d like to let you an Maven snippet code for configure WAR project for different environments. Sometimes, we&amp;rsquo;re developing in a dev environment, but this project we&amp;rsquo;d like to run in another environments (cloud, server, etc). 
 Maven configuration profile &amp;lt;profile&amp;gt; &amp;lt;id&amp;gt;prog&amp;lt;/id&amp;gt; &amp;lt;activation&amp;gt; &amp;lt;activeByDefault&amp;gt;true&amp;lt;/activeByDefault&amp;gt; &amp;lt;/activation&amp;gt; &amp;lt;properties&amp;gt; &amp;lt;!-- There are 3 availabled (dev,nuvol,nuvolbeta), ie: mvn clean package -Dprofile=nuvol --&amp;gt; &amp;lt;env&amp;gt;dev&amp;lt;/env&amp;gt; &amp;lt;/properties&amp;gt; &amp;lt;build&amp;gt; &amp;lt;resources&amp;gt; &amp;lt;resource&amp;gt; &amp;lt;directory&amp;gt;src/main/resources/common&amp;lt;/directory&amp;gt; &amp;lt;/resource&amp;gt; &amp;lt;resource&amp;gt; &amp;lt;directory&amp;gt;src/main/resources/${env}&amp;lt;/directory&amp;gt; &amp;lt;/resource&amp;gt; &amp;lt;/resources&amp;gt; &amp;lt;plugins&amp;gt; &amp;lt;plugin&amp;gt; &amp;lt;artifactId&amp;gt;maven-war-plugin&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;2.</description>
     </item>
     
@@ -55,7 +55,8 @@ Maven configuration profile &amp;lt;profile&amp;gt; &amp;lt;id&amp;gt;prog&amp;l
       <guid>https://ppalazon.github.io/2018/04/11/first-post-from-ox-hugo/</guid>
       <description>This is my first export from ox-hugo
 I&amp;rsquo;m using One post per Org subtree for posts with org-mode.
-   Figure 1: One post per Org subtree snapshot   Reference Please visit ox-hugo github page or ox-hugo website. There is a ox-hugo test website where you can learn how to configure your documents</description>
+  Figure 1: One post per Org subtree snapshot
+  Reference Please visit ox-hugo github page or ox-hugo website. There is a ox-hugo test website where you can learn how to configure your documents</description>
     </item>
     
     <item>
@@ -64,7 +65,8 @@ I&amp;rsquo;m using One post per Org subtree for posts with org-mode.
       <pubDate>Wed, 15 Jul 2015 00:00:00 +0200</pubDate>
       <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
       <guid>https://ppalazon.github.io/2015/07/15/guake-base-16-color/</guid>
-      <description>Figure 1: Base 16 color on guake terminal   Base16 provides carefully chosen syntax highlighting and a default set of sixteen colors suitable for a wide range of applications. Base16 is both a color scheme and a template.
+      <description>Figure 1: Base 16 color on guake terminal
+  Base16 provides carefully chosen syntax highlighting and a default set of sixteen colors suitable for a wide range of applications. Base16 is both a color scheme and a template.
 With Base 16 builder you could create guake template and set-up for it
 git clone git@github.com:chriskempson/base16-builder.git cd base16-builder ./base16 chmod +x ./output/guake/*.sh  Apply with prefered template executing any shell script under .</description>
     </item>

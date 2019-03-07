@@ -20,7 +20,8 @@
       <pubDate>Wed, 15 Jul 2015 00:00:00 +0200</pubDate>
       <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
       <guid>https://ppalazon.github.io/2015/07/15/guake-base-16-color/</guid>
-      <description>Figure 1: Base 16 color on guake terminal   Base16 provides carefully chosen syntax highlighting and a default set of sixteen colors suitable for a wide range of applications. Base16 is both a color scheme and a template.
+      <description>Figure 1: Base 16 color on guake terminal
+  Base16 provides carefully chosen syntax highlighting and a default set of sixteen colors suitable for a wide range of applications. Base16 is both a color scheme and a template.
 With Base 16 builder you could create guake template and set-up for it
 git clone git@github.com:chriskempson/base16-builder.git cd base16-builder ./base16 chmod +x ./output/guake/*.sh  Apply with prefered template executing any shell script under .</description>
     </item>

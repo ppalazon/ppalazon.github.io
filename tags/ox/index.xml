@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo on Sobremesa en Milliways</title>
-    <link>https://ppalazon.github.io/tags/hugo/</link>
-    <description>Recent content in Hugo on Sobremesa en Milliways</description>
+    <title>Ox on Sobremesa en Milliways</title>
+    <link>https://ppalazon.github.io/tags/ox/</link>
+    <description>Recent content in Ox on Sobremesa en Milliways</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>pablo.palazon@gmail.com (Pablo Palazon)</managingEditor>
@@ -11,20 +11,8 @@
     <copyright>CC BY-NC-ND 3.0</copyright>
     <lastBuildDate>Wed, 11 Apr 2018 00:00:00 +0200</lastBuildDate>
     
-	<atom:link href="https://ppalazon.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ppalazon.github.io/tags/ox/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>First post from ox-hugo</title>
-      <link>https://ppalazon.github.io/2018/04/11/first-post-from-ox-hugo/</link>
-      <pubDate>Wed, 11 Apr 2018 00:00:00 +0200</pubDate>
-      <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
-      <guid>https://ppalazon.github.io/2018/04/11/first-post-from-ox-hugo/</guid>
-      <description>This is my first export from ox-hugo
-I&amp;rsquo;m using One post per Org subtree for posts with org-mode.
-  Figure 1: One post per Org subtree snapshot
-  Reference Please visit ox-hugo github page or ox-hugo website. There is a ox-hugo test website where you can learn how to configure your documents</description>
-    </item>
     
     <item>
       <title>Testing ox-hugo</title>

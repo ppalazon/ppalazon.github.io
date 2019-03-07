@@ -20,8 +20,7 @@
       <pubDate>Sat, 28 Jul 2018 00:00:00 +0200</pubDate>
       <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
       <guid>https://ppalazon.github.io/2018/07/28/starting-rust-programming-on-emacs/</guid>
-      <description>cargo install racer rustup component add rust-src rustup component add rustfmt-preview  Enable rust module in prelude in ~/.emacs.d/prelude-modules.el
-Use cargo Emacs commands: Emacs minor mode for Cargo</description>
+      <description>&lt;p&gt;How we can start using rust?&lt;/p&gt;</description>
     </item>
     
   </channel>

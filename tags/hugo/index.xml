@@ -20,10 +20,9 @@
       <pubDate>Wed, 11 Apr 2018 00:00:00 +0200</pubDate>
       <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
       <guid>https://ppalazon.github.io/2018/04/11/first-post-from-ox-hugo/</guid>
-      <description>This is my first export from ox-hugo
-I&amp;rsquo;m using One post per Org subtree for posts with org-mode.
-  Figure 1: One post per Org subtree snapshot
-  Reference Please visit ox-hugo github page or ox-hugo website. There is a ox-hugo test website where you can learn how to configure your documents</description>
+      <description>&lt;p&gt;This is my first export from &lt;code&gt;ox-hugo&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m using &lt;strong&gt;One post per Org subtree&lt;/strong&gt; for posts with org-mode.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -32,11 +31,17 @@ I&amp;rsquo;m using One post per Org subtree for posts with org-mode.
       <pubDate>Wed, 11 Apr 2018 00:00:00 +0200</pubDate>
       <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
       <guid>https://ppalazon.github.io/2018/04/11/testing-ox-hugo/</guid>
-      <description>This is a test for ox-hugo exports
-LaTeX formatted equation: \( E = -J \sum_{i=1}^N s_i s_{i+1} \)
-If \(a^2=b\) and \( b=2 \), then the solution must be either \[ a=+\sqrt{2} \] or \[ a=-\sqrt{2} \]
-\begin{equation} \label{eq:1} C = W\log_{2} (1+\mathrm{SNR}) \end{equation}
-sudo apt-get update sudo apt-get dist-upgrade  (require &#39;org)  </description>
+      <description>&lt;p&gt;This is a test for ox-hugo exports&lt;/p&gt;
+
+&lt;p&gt;LaTeX formatted equation: \( E = -J \sum_{i=1}^N s_i s_{i+1} \)&lt;/p&gt;
+
+&lt;p&gt;If \(a^2=b\) and \( b=2 \), then the solution must be either
+\[ a=+\sqrt{2} \] or \[ a=-\sqrt{2} \]&lt;/p&gt;
+
+&lt;p&gt;\begin{equation}
+\label{eq:1}
+C = W\log_{2} (1+\mathrm{SNR})
+\end{equation}&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -20,12 +20,7 @@
       <pubDate>Wed, 04 Feb 2015 00:00:00 +0100</pubDate>
       <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
       <guid>https://ppalazon.github.io/2015/02/04/character-encoding-files/</guid>
-      <description> Suppose than native enconding is utf-8
-View file encoding with file
-file -bi filename.txt  Change file enconding
-iconv -f iso-8859-1 -t utf-8 messages_fr.properties &amp;gt; messages_fr_utf-8.properties  Escape utf-8 characters with java application native2ascii
-native2ascii message_fr_utf8.properties messages_fr_ascii.properties  Rewrite original messages_fr.properties to ascii
-References:  http://en.wikipedia.org/wiki/Iconv http://docs.oracle.com/javase/7/docs/technotes/tools/windows/native2ascii.html  </description>
+      <description>&lt;p&gt;Suppose than native enconding is utf-8&lt;/p&gt;</description>
     </item>
     
   </channel>

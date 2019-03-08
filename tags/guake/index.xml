@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Guake on Sobremesa en Milliways</title>
-    <link>https://ppalazon.github.io/tags/guake/</link>
+    <link>//ppalazon.github.io/tags/guake/</link>
     <description>Recent content in Guake on Sobremesa en Milliways</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,15 +11,15 @@
     <copyright>CC BY-NC-ND 3.0</copyright>
     <lastBuildDate>Wed, 15 Jul 2015 00:00:00 +0200</lastBuildDate>
     
-	<atom:link href="https://ppalazon.github.io/tags/guake/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//ppalazon.github.io/tags/guake/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Guake Base 16 Color</title>
-      <link>https://ppalazon.github.io/2015/07/15/guake-base-16-color/</link>
+      <link>//ppalazon.github.io/2015/07/15/guake-base-16-color/</link>
       <pubDate>Wed, 15 Jul 2015 00:00:00 +0200</pubDate>
       <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
-      <guid>https://ppalazon.github.io/2015/07/15/guake-base-16-color/</guid>
+      <guid>//ppalazon.github.io/2015/07/15/guake-base-16-color/</guid>
       <description>&lt;p&gt;Base16 provides carefully chosen syntax highlighting and a default set
 of sixteen colors suitable for a wide range of applications. Base16 is
 both a color scheme and a template.&lt;/p&gt;</description>

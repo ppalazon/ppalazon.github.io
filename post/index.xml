@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Sobremesa en Milliways</title>
-    <link>https://ppalazon.github.io/post/</link>
+    <link>//ppalazon.github.io/post/</link>
     <description>Recent content in Posts on Sobremesa en Milliways</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,24 +11,24 @@
     <copyright>CC BY-NC-ND 3.0</copyright>
     <lastBuildDate>Sat, 28 Jul 2018 00:00:00 +0200</lastBuildDate>
     
-	<atom:link href="https://ppalazon.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//ppalazon.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Starting rust programming on Emacs</title>
-      <link>https://ppalazon.github.io/2018/07/28/starting-rust-programming-on-emacs/</link>
+      <link>//ppalazon.github.io/2018/07/28/starting-rust-programming-on-emacs/</link>
       <pubDate>Sat, 28 Jul 2018 00:00:00 +0200</pubDate>
       <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
-      <guid>https://ppalazon.github.io/2018/07/28/starting-rust-programming-on-emacs/</guid>
+      <guid>//ppalazon.github.io/2018/07/28/starting-rust-programming-on-emacs/</guid>
       <description>&lt;p&gt;How we can start using rust?&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Testing ox-hugo</title>
-      <link>https://ppalazon.github.io/2018/04/11/testing-ox-hugo/</link>
+      <link>//ppalazon.github.io/2018/04/11/testing-ox-hugo/</link>
       <pubDate>Wed, 11 Apr 2018 00:00:00 +0200</pubDate>
       <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
-      <guid>https://ppalazon.github.io/2018/04/11/testing-ox-hugo/</guid>
+      <guid>//ppalazon.github.io/2018/04/11/testing-ox-hugo/</guid>
       <description>&lt;p&gt;This is a test for ox-hugo exports&lt;/p&gt;
 
 &lt;p&gt;LaTeX formatted equation: \( E = -J \sum_{i=1}^N s_i s_{i+1} \)&lt;/p&gt;
@@ -44,10 +44,10 @@ C = W\log_{2} (1+\mathrm{SNR})
     
     <item>
       <title>Multi-environment maven war generation</title>
-      <link>https://ppalazon.github.io/2013/01/24/multi-environment-maven-war-generation/</link>
+      <link>//ppalazon.github.io/2013/01/24/multi-environment-maven-war-generation/</link>
       <pubDate>Thu, 24 Jan 2013 00:00:00 +0100</pubDate>
       <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
-      <guid>https://ppalazon.github.io/2013/01/24/multi-environment-maven-war-generation/</guid>
+      <guid>//ppalazon.github.io/2013/01/24/multi-environment-maven-war-generation/</guid>
       <description>&lt;p&gt;I&amp;rsquo;d like to let you an Maven snippet code for configure WAR project
 for different environments. Sometimes, we&amp;rsquo;re developing in a dev
 environment, but this project we&amp;rsquo;d like to run in another environments
@@ -56,10 +56,10 @@ environment, but this project we&amp;rsquo;d like to run in another environments
     
     <item>
       <title>First post from ox-hugo</title>
-      <link>https://ppalazon.github.io/2018/04/11/first-post-from-ox-hugo/</link>
+      <link>//ppalazon.github.io/2018/04/11/first-post-from-ox-hugo/</link>
       <pubDate>Wed, 11 Apr 2018 00:00:00 +0200</pubDate>
       <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
-      <guid>https://ppalazon.github.io/2018/04/11/first-post-from-ox-hugo/</guid>
+      <guid>//ppalazon.github.io/2018/04/11/first-post-from-ox-hugo/</guid>
       <description>&lt;p&gt;This is my first export from &lt;code&gt;ox-hugo&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;m using &lt;strong&gt;One post per Org subtree&lt;/strong&gt; for posts with org-mode.&lt;/p&gt;</description>
@@ -67,10 +67,10 @@ environment, but this project we&amp;rsquo;d like to run in another environments
     
     <item>
       <title>Guake Base 16 Color</title>
-      <link>https://ppalazon.github.io/2015/07/15/guake-base-16-color/</link>
+      <link>//ppalazon.github.io/2015/07/15/guake-base-16-color/</link>
       <pubDate>Wed, 15 Jul 2015 00:00:00 +0200</pubDate>
       <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
-      <guid>https://ppalazon.github.io/2015/07/15/guake-base-16-color/</guid>
+      <guid>//ppalazon.github.io/2015/07/15/guake-base-16-color/</guid>
       <description>&lt;p&gt;Base16 provides carefully chosen syntax highlighting and a default set
 of sixteen colors suitable for a wide range of applications. Base16 is
 both a color scheme and a template.&lt;/p&gt;</description>
@@ -78,20 +78,20 @@ both a color scheme and a template.&lt;/p&gt;</description>
     
     <item>
       <title>My org mode configuration</title>
-      <link>https://ppalazon.github.io/2018/04/11/my-org-mode-configuration/</link>
+      <link>//ppalazon.github.io/2018/04/11/my-org-mode-configuration/</link>
       <pubDate>Wed, 11 Apr 2018 00:00:00 +0200</pubDate>
       <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
-      <guid>https://ppalazon.github.io/2018/04/11/my-org-mode-configuration/</guid>
+      <guid>//ppalazon.github.io/2018/04/11/my-org-mode-configuration/</guid>
       <description>&lt;p&gt;This is my personal list with most used commands on &lt;code&gt;org-mode&lt;/code&gt;. It&amp;rsquo;s
 contains snippets, shortcuts and configurations.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Character encoding files</title>
-      <link>https://ppalazon.github.io/2015/02/04/character-encoding-files/</link>
+      <link>//ppalazon.github.io/2015/02/04/character-encoding-files/</link>
       <pubDate>Wed, 04 Feb 2015 00:00:00 +0100</pubDate>
       <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
-      <guid>https://ppalazon.github.io/2015/02/04/character-encoding-files/</guid>
+      <guid>//ppalazon.github.io/2015/02/04/character-encoding-files/</guid>
       <description>&lt;p&gt;Suppose than native enconding is utf-8&lt;/p&gt;</description>
     </item>
     

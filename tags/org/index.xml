@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Org on Sobremesa en Milliways</title>
-    <link>//ppalazon.github.io/tags/org/</link>
+    <link>ppalazon.github.io/tags/org/</link>
     <description>Recent content in Org on Sobremesa en Milliways</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,15 +11,15 @@
     <copyright>CC BY-NC-ND 3.0</copyright>
     <lastBuildDate>Wed, 11 Apr 2018 00:00:00 +0200</lastBuildDate>
     
-	<atom:link href="//ppalazon.github.io/tags/org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="ppalazon.github.io/tags/org/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>First post from ox-hugo</title>
-      <link>//ppalazon.github.io/2018/04/11/first-post-from-ox-hugo/</link>
+      <link>ppalazon.github.io/2018/04/11/first-post-from-ox-hugo/</link>
       <pubDate>Wed, 11 Apr 2018 00:00:00 +0200</pubDate>
       <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
-      <guid>//ppalazon.github.io/2018/04/11/first-post-from-ox-hugo/</guid>
+      <guid>ppalazon.github.io/2018/04/11/first-post-from-ox-hugo/</guid>
       <description>&lt;p&gt;This is my first export from &lt;code&gt;ox-hugo&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;m using &lt;strong&gt;One post per Org subtree&lt;/strong&gt; for posts with org-mode.&lt;/p&gt;</description>
@@ -27,20 +27,20 @@
     
     <item>
       <title>My org mode configuration</title>
-      <link>//ppalazon.github.io/2018/04/11/my-org-mode-configuration/</link>
+      <link>ppalazon.github.io/2018/04/11/my-org-mode-configuration/</link>
       <pubDate>Wed, 11 Apr 2018 00:00:00 +0200</pubDate>
       <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
-      <guid>//ppalazon.github.io/2018/04/11/my-org-mode-configuration/</guid>
+      <guid>ppalazon.github.io/2018/04/11/my-org-mode-configuration/</guid>
       <description>&lt;p&gt;This is my personal list with most used commands on &lt;code&gt;org-mode&lt;/code&gt;. It&amp;rsquo;s
 contains snippets, shortcuts and configurations.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Testing ox-hugo</title>
-      <link>//ppalazon.github.io/2018/04/11/testing-ox-hugo/</link>
+      <link>ppalazon.github.io/2018/04/11/testing-ox-hugo/</link>
       <pubDate>Wed, 11 Apr 2018 00:00:00 +0200</pubDate>
       <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
-      <guid>//ppalazon.github.io/2018/04/11/testing-ox-hugo/</guid>
+      <guid>ppalazon.github.io/2018/04/11/testing-ox-hugo/</guid>
       <description>&lt;p&gt;This is a test for ox-hugo exports&lt;/p&gt;
 
 &lt;p&gt;LaTeX formatted equation: \( E = -J \sum_{i=1}^N s_i s_{i+1} \)&lt;/p&gt;

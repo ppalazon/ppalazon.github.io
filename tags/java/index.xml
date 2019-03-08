@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Java on Sobremesa en Milliways</title>
-    <link>//ppalazon.github.io/tags/java/</link>
+    <link>ppalazon.github.io/tags/java/</link>
     <description>Recent content in Java on Sobremesa en Milliways</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,15 +11,15 @@
     <copyright>CC BY-NC-ND 3.0</copyright>
     <lastBuildDate>Thu, 24 Jan 2013 00:00:00 +0100</lastBuildDate>
     
-	<atom:link href="//ppalazon.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="ppalazon.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Multi-environment maven war generation</title>
-      <link>//ppalazon.github.io/2013/01/24/multi-environment-maven-war-generation/</link>
+      <link>ppalazon.github.io/2013/01/24/multi-environment-maven-war-generation/</link>
       <pubDate>Thu, 24 Jan 2013 00:00:00 +0100</pubDate>
       <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
-      <guid>//ppalazon.github.io/2013/01/24/multi-environment-maven-war-generation/</guid>
+      <guid>ppalazon.github.io/2013/01/24/multi-environment-maven-war-generation/</guid>
       <description>&lt;p&gt;I&amp;rsquo;d like to let you an Maven snippet code for configure WAR project
 for different environments. Sometimes, we&amp;rsquo;re developing in a dev
 environment, but this project we&amp;rsquo;d like to run in another environments

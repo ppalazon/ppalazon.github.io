@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rust on Sobremesa en Milliways</title>
-    <link>//ppalazon.github.io/tags/rust/</link>
+    <link>ppalazon.github.io/tags/rust/</link>
     <description>Recent content in Rust on Sobremesa en Milliways</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,15 +11,15 @@
     <copyright>CC BY-NC-ND 3.0</copyright>
     <lastBuildDate>Sat, 28 Jul 2018 00:00:00 +0200</lastBuildDate>
     
-	<atom:link href="//ppalazon.github.io/tags/rust/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="ppalazon.github.io/tags/rust/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Starting rust programming on Emacs</title>
-      <link>//ppalazon.github.io/2018/07/28/starting-rust-programming-on-emacs/</link>
+      <link>ppalazon.github.io/2018/07/28/starting-rust-programming-on-emacs/</link>
       <pubDate>Sat, 28 Jul 2018 00:00:00 +0200</pubDate>
       <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
-      <guid>//ppalazon.github.io/2018/07/28/starting-rust-programming-on-emacs/</guid>
+      <guid>ppalazon.github.io/2018/07/28/starting-rust-programming-on-emacs/</guid>
       <description>&lt;p&gt;How we can start using rust?&lt;/p&gt;</description>
     </item>
     

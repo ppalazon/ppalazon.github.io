@@ -6,67 +6,53 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <title>My org mode configuration  &middot; Sobremesa en Milliways</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-<meta name="description" content="" />
-
-<meta name="keywords" content="org, ">
-
-
-<meta property="og:title" content="My org mode configuration  &middot; Sobremesa en Milliways ">
-<meta property="og:site_name" content="Sobremesa en Milliways"/>
-<meta property="og:url" content="https://ppalazon.github.io/2018/04/11/my-org-mode-configuration/" />
-<meta property="og:locale" content="en-us">
-
-
-<meta property="og:type" content="article" />
-<meta property="og:description" content=""/>
-<meta property="og:article:published_time" content="2018-04-11T00:00:00&#43;02:00" />
-<meta property="og:article:modified_time" content="2018-04-11T00:00:00&#43;02:00" />
-
-  
-    
-<meta property="og:article:tag" content="org">
-    
-  
-
-  
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@ppalazon" />
-<meta name="twitter:creator" content="@ppalazon" />
-<meta name="twitter:title" content="My org mode configuration" />
-<meta name="twitter:description" content="" />
-<meta name="twitter:url" content="https://ppalazon.github.io/2018/04/11/my-org-mode-configuration/" />
-<meta name="twitter:domain" content="https://ppalazon.github.io">
-  
-
-  
-<script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "Article",
-    "headline": "My org mode configuration",
-    "author": {
-      "@type": "Person",
-      "name": "http://profiles.google.com/+?rel=author"
-    },
-    "datePublished": "2018-04-11",
-    "description": "",
-    "wordCount": 3333
-  }
-</script>
-  
-
-
-
-<link rel="canonical" href="https://ppalazon.github.io/2018/04/11/my-org-mode-configuration/" />
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://ppalazon.github.io/touch-icon-144-precomposed.png">
-<link rel="icon" href="https://ppalazon.github.io/favicon.png">
-<meta name="generator" content="Hugo 0.54.0" />
+  <header id="main-header">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+                <a class="navbar-brand" href="https://ppalazon.github.io/">
+                    Sobremesa en Milliways
+                    
+                    
+                    </a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    
+                    <li class="">
+                        
+		                <a href="https://ppalazon.github.io/post/"  title="Blog">
+                            
+                            Blog
+                        </a>
+                        
+                    </li>
+                    
+                    <li class="">
+                        
+		                <a href="https://ppalazon.github.io/about/me/"  title="About">
+                            
+                            About
+                        </a>
+                        
+                    </li>
+                    
+                    
+                    
+                </ul>
+            </div>
+            
+        </div>
+    </nav>
+</header>
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
@@ -96,7 +82,7 @@
 
 
 
-<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.5b84009f6784ea0971a85ebb013e5ef3b80dc3e82ba22b7a1c1ad5307c2592e73423e5875abaebd0e8057a4cc8bef3d14c6d4f6c6c5d3af223579d7dcbe0269a.css" integrity="sha512-W4QAn2eE6glxqF67AT5e87gNw&#43;groit6HBrVMHwlkuc0I&#43;WHWrrr0OgFekzIvvPRTG1PbGxdOvIjV519y&#43;Ammg==">
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.54e79f5dd0740fc953813ae6745bbfd4c9b484dfebd444406494398a6dcf5740d8ca3b59abb11f29eed78b4bbc36f79855eac6e6b9bc58a5ed4fc3e3d1de332d.css" >
 
 </head>
 <body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
@@ -123,7 +109,7 @@
             
             <li class="">
               
-                <a href="https://ppalazon.github.io/post/" >
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
                   
                   Blog
                 </a>
@@ -132,7 +118,7 @@
             
             <li class="">
               
-                <a href="https://ppalazon.github.io/about/me/" >
+		<a href="https://ppalazon.github.io/about/me/"  title="About">
                   
                   About
                 </a>
@@ -214,981 +200,979 @@
 
 
       <div class="content">
-  <p>This is my personal list with most used commands on <code>org-mode</code>. It&rsquo;s
+  <p>This is my personal list with most used commands on <code>org-mode</code>. It's
 contains snippets, shortcuts and configurations.</p>
-
 <h2 id="personal-org-mode-configuration">Personal <code>org-mode</code> configuration</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lisp" data-lang="lisp"><span style="color:#75715e">;;; org-mode-26.el --- Personal configuration of org-mode</span>
 
-<pre><code class="language-lisp">;;; org-mode-26.el --- Personal configuration of org-mode
+<span style="color:#75715e">;;; Commentary:</span>
+<span style="color:#75715e">;; This is my personal configuration for org-mode</span>
 
-;;; Commentary:
-;; This is my personal configuration for org-mode
+<span style="color:#75715e">;;; Code:</span>
 
-;;; Code:
+(global-set-key (kbd <span style="color:#e6db74">&#34;&lt;f12&gt;&#34;</span>) <span style="color:#e6db74">&#39;org-agenda</span>)
+<span style="color:#75715e">;;(global-set-key (kbd &#34;&lt;f5&gt;&#34;) &#39;bh/org-todo)</span>
+(global-set-key (kbd <span style="color:#e6db74">&#34;&lt;S-f5&gt;&#34;</span>) <span style="color:#e6db74">&#39;bh/widen</span>)
+(global-set-key (kbd <span style="color:#e6db74">&#34;&lt;f7&gt;&#34;</span>) <span style="color:#e6db74">&#39;bh/set-truncate-lines</span>)
+<span style="color:#75715e">;; &lt;f8&gt; is for neotree-toggle</span>
+<span style="color:#75715e">;;(global-set-key (kbd &#34;&lt;f8&gt;&#34;) &#39;org-cycle-agenda-files)</span>
+(global-set-key (kbd <span style="color:#e6db74">&#34;&lt;f9&gt; &lt;f9&gt;&#34;</span>) <span style="color:#e6db74">&#39;bh/show-org-agenda</span>)
+(global-set-key (kbd <span style="color:#e6db74">&#34;&lt;f9&gt; b&#34;</span>) <span style="color:#e6db74">&#39;bbdb</span>)
+(global-set-key (kbd <span style="color:#e6db74">&#34;&lt;f9&gt; c&#34;</span>) <span style="color:#e6db74">&#39;calendar</span>)
+(global-set-key (kbd <span style="color:#e6db74">&#34;&lt;f9&gt; f&#34;</span>) <span style="color:#e6db74">&#39;boxquote-insert-file</span>)
+(global-set-key (kbd <span style="color:#e6db74">&#34;&lt;f9&gt; g&#34;</span>) <span style="color:#e6db74">&#39;gnus</span>)
+(global-set-key (kbd <span style="color:#e6db74">&#34;&lt;f9&gt; h&#34;</span>) <span style="color:#e6db74">&#39;bh/hide-other</span>)
+(global-set-key (kbd <span style="color:#e6db74">&#34;&lt;f9&gt; n&#34;</span>) <span style="color:#e6db74">&#39;bh/toggle-next-task-display</span>)
 
-(global-set-key (kbd &quot;&lt;f12&gt;&quot;) 'org-agenda)
-;;(global-set-key (kbd &quot;&lt;f5&gt;&quot;) 'bh/org-todo)
-(global-set-key (kbd &quot;&lt;S-f5&gt;&quot;) 'bh/widen)
-(global-set-key (kbd &quot;&lt;f7&gt;&quot;) 'bh/set-truncate-lines)
-;; &lt;f8&gt; is for neotree-toggle
-;;(global-set-key (kbd &quot;&lt;f8&gt;&quot;) 'org-cycle-agenda-files)
-(global-set-key (kbd &quot;&lt;f9&gt; &lt;f9&gt;&quot;) 'bh/show-org-agenda)
-(global-set-key (kbd &quot;&lt;f9&gt; b&quot;) 'bbdb)
-(global-set-key (kbd &quot;&lt;f9&gt; c&quot;) 'calendar)
-(global-set-key (kbd &quot;&lt;f9&gt; f&quot;) 'boxquote-insert-file)
-(global-set-key (kbd &quot;&lt;f9&gt; g&quot;) 'gnus)
-(global-set-key (kbd &quot;&lt;f9&gt; h&quot;) 'bh/hide-other)
-(global-set-key (kbd &quot;&lt;f9&gt; n&quot;) 'bh/toggle-next-task-display)
+(global-set-key (kbd <span style="color:#e6db74">&#34;&lt;f9&gt; I&#34;</span>) <span style="color:#e6db74">&#39;bh/punch-in</span>)
+(global-set-key (kbd <span style="color:#e6db74">&#34;&lt;f9&gt; O&#34;</span>) <span style="color:#e6db74">&#39;bh/punch-out</span>)
 
-(global-set-key (kbd &quot;&lt;f9&gt; I&quot;) 'bh/punch-in)
-(global-set-key (kbd &quot;&lt;f9&gt; O&quot;) 'bh/punch-out)
+(global-set-key (kbd <span style="color:#e6db74">&#34;&lt;f9&gt; o&#34;</span>) <span style="color:#e6db74">&#39;bh/make-org-scratch</span>)
 
-(global-set-key (kbd &quot;&lt;f9&gt; o&quot;) 'bh/make-org-scratch)
+(global-set-key (kbd <span style="color:#e6db74">&#34;&lt;f9&gt; r&#34;</span>) <span style="color:#e6db74">&#39;boxquote-region</span>)
+(global-set-key (kbd <span style="color:#e6db74">&#34;&lt;f9&gt; s&#34;</span>) <span style="color:#e6db74">&#39;bh/switch-to-scratch</span>)
 
-(global-set-key (kbd &quot;&lt;f9&gt; r&quot;) 'boxquote-region)
-(global-set-key (kbd &quot;&lt;f9&gt; s&quot;) 'bh/switch-to-scratch)
+(global-set-key (kbd <span style="color:#e6db74">&#34;&lt;f9&gt; t&#34;</span>) <span style="color:#e6db74">&#39;bh/insert-inactive-timestamp</span>)
+(global-set-key (kbd <span style="color:#e6db74">&#34;&lt;f9&gt; T&#34;</span>) <span style="color:#e6db74">&#39;bh/toggle-insert-inactive-timestamp</span>)
 
-(global-set-key (kbd &quot;&lt;f9&gt; t&quot;) 'bh/insert-inactive-timestamp)
-(global-set-key (kbd &quot;&lt;f9&gt; T&quot;) 'bh/toggle-insert-inactive-timestamp)
+(global-set-key (kbd <span style="color:#e6db74">&#34;&lt;f9&gt; v&#34;</span>) <span style="color:#e6db74">&#39;visible-mode</span>)
+(global-set-key (kbd <span style="color:#e6db74">&#34;&lt;f9&gt; l&#34;</span>) <span style="color:#e6db74">&#39;org-toggle-link-display</span>)
+(global-set-key (kbd <span style="color:#e6db74">&#34;&lt;f9&gt; SPC&#34;</span>) <span style="color:#e6db74">&#39;bh/clock-in-last-task</span>)
+(global-set-key (kbd <span style="color:#e6db74">&#34;C-&lt;f9&gt;&#34;</span>) <span style="color:#e6db74">&#39;previous-buffer</span>)
+(global-set-key (kbd <span style="color:#e6db74">&#34;M-&lt;f9&gt;&#34;</span>) <span style="color:#e6db74">&#39;org-toggle-inline-images</span>)
+(global-set-key (kbd <span style="color:#e6db74">&#34;C-x n r&#34;</span>) <span style="color:#e6db74">&#39;narrow-to-region</span>)
+(global-set-key (kbd <span style="color:#e6db74">&#34;C-&lt;f10&gt;&#34;</span>) <span style="color:#e6db74">&#39;next-buffer</span>)
+(global-set-key (kbd <span style="color:#e6db74">&#34;&lt;f11&gt;&#34;</span>) <span style="color:#e6db74">&#39;org-clock-goto</span>)
+(global-set-key (kbd <span style="color:#e6db74">&#34;C-&lt;f11&gt;&#34;</span>) <span style="color:#e6db74">&#39;org-clock-in</span>)
+(global-set-key (kbd <span style="color:#e6db74">&#34;C-s-&lt;f12&gt;&#34;</span>) <span style="color:#e6db74">&#39;bh/save-then-publish</span>)
+(global-set-key (kbd <span style="color:#e6db74">&#34;C-c c&#34;</span>) <span style="color:#e6db74">&#39;org-capture</span>)
 
-(global-set-key (kbd &quot;&lt;f9&gt; v&quot;) 'visible-mode)
-(global-set-key (kbd &quot;&lt;f9&gt; l&quot;) 'org-toggle-link-display)
-(global-set-key (kbd &quot;&lt;f9&gt; SPC&quot;) 'bh/clock-in-last-task)
-(global-set-key (kbd &quot;C-&lt;f9&gt;&quot;) 'previous-buffer)
-(global-set-key (kbd &quot;M-&lt;f9&gt;&quot;) 'org-toggle-inline-images)
-(global-set-key (kbd &quot;C-x n r&quot;) 'narrow-to-region)
-(global-set-key (kbd &quot;C-&lt;f10&gt;&quot;) 'next-buffer)
-(global-set-key (kbd &quot;&lt;f11&gt;&quot;) 'org-clock-goto)
-(global-set-key (kbd &quot;C-&lt;f11&gt;&quot;) 'org-clock-in)
-(global-set-key (kbd &quot;C-s-&lt;f12&gt;&quot;) 'bh/save-then-publish)
-(global-set-key (kbd &quot;C-c c&quot;) 'org-capture)
+(global-set-key (kbd <span style="color:#e6db74">&#34;C-c 0&#34;</span>) (lambda () (interactive) (find-file <span style="color:#e6db74">&#34;~/org/capture/refile.org&#34;</span>)))
+(global-set-key (kbd <span style="color:#e6db74">&#34;C-c 9&#34;</span>) (lambda () (interactive) (find-file <span style="color:#e6db74">&#34;~/org/capture/notes.org&#34;</span>)))
+(global-set-key (kbd <span style="color:#e6db74">&#34;C-c 8&#34;</span>) (lambda () (interactive) (find-file <span style="color:#e6db74">&#34;~/org/capture/gtd.org&#34;</span>)))
 
-(global-set-key (kbd &quot;C-c 0&quot;) (lambda () (interactive) (find-file &quot;~/org/capture/refile.org&quot;)))
-(global-set-key (kbd &quot;C-c 9&quot;) (lambda () (interactive) (find-file &quot;~/org/capture/notes.org&quot;)))
-(global-set-key (kbd &quot;C-c 8&quot;) (lambda () (interactive) (find-file &quot;~/org/capture/gtd.org&quot;)))
+(<span style="color:#a6e22e">use-package</span> org
+  <span style="color:#e6db74">:ensure</span> <span style="color:#66d9ef">t</span>
+  <span style="color:#e6db74">:mode</span> (<span style="color:#e6db74">&#34;\\.org\\&#39;&#34;</span> <span style="color:#f92672">.</span> org-mode)
+  <span style="color:#e6db74">:bind</span> ((<span style="color:#e6db74">&#34;C-c l&#34;</span> <span style="color:#f92672">.</span> org-store-link)
+         (<span style="color:#e6db74">&#34;C-c c&#34;</span> <span style="color:#f92672">.</span> org-capture)
+         (<span style="color:#e6db74">&#34;C-c a&#34;</span> <span style="color:#f92672">.</span> org-agenda)
+         (<span style="color:#e6db74">&#34;&lt;f7&gt;&#34;</span> <span style="color:#f92672">.</span> org-agenda)
+         (<span style="color:#e6db74">&#34;C-c b&#34;</span> <span style="color:#f92672">.</span> org-iswitchb)
+         (<span style="color:#e6db74">&#34;C-c C-w&#34;</span> <span style="color:#f92672">.</span> org-refile)
+         (<span style="color:#e6db74">&#34;C-c j&#34;</span> <span style="color:#f92672">.</span> org-clock-goto)
+         (<span style="color:#e6db74">&#34;C-c C-x C-o&#34;</span> <span style="color:#f92672">.</span> org-clock-out)
+         (<span style="color:#e6db74">&#34;M-&lt;f9&gt;&#34;</span> <span style="color:#f92672">.</span> org-toggle-inline-images))
+  <span style="color:#e6db74">:config</span>
+  (<span style="color:#66d9ef">progn</span>
+    <span style="color:#75715e">;; org-habit</span>
+    (<span style="color:#a6e22e">require</span> <span style="color:#e6db74">&#39;org</span>)
+    (<span style="color:#a6e22e">require</span> <span style="color:#e6db74">&#39;org-habit</span>)
+    (<span style="color:#a6e22e">require</span> <span style="color:#e6db74">&#39;org-agenda</span>)
+    (<span style="color:#a6e22e">require</span> <span style="color:#e6db74">&#39;org-protocol</span>)
+    (<span style="color:#a6e22e">require</span> <span style="color:#e6db74">&#39;org-capture</span>)
+    (<span style="color:#a6e22e">require</span> <span style="color:#e6db74">&#39;org-id</span>)
+    (<span style="color:#a6e22e">require</span> <span style="color:#e6db74">&#39;org-clock</span>)
+    (<span style="color:#a6e22e">require</span> <span style="color:#e6db74">&#39;ox-latex</span>)
+    (<span style="color:#a6e22e">require</span> <span style="color:#e6db74">&#39;org-checklist</span>)
+    (<span style="color:#a6e22e">require</span> <span style="color:#e6db74">&#39;ob-tangle</span>)
+    (<span style="color:#a6e22e">require</span> <span style="color:#e6db74">&#39;ox-beamer</span>)
 
-(use-package org
-  :ensure t
-  :mode (&quot;\\.org\\'&quot; . org-mode)
-  :bind ((&quot;C-c l&quot; . org-store-link)
-         (&quot;C-c c&quot; . org-capture)
-         (&quot;C-c a&quot; . org-agenda)
-         (&quot;&lt;f7&gt;&quot; . org-agenda)
-         (&quot;C-c b&quot; . org-iswitchb)
-         (&quot;C-c C-w&quot; . org-refile)
-         (&quot;C-c j&quot; . org-clock-goto)
-         (&quot;C-c C-x C-o&quot; . org-clock-out)
-         (&quot;M-&lt;f9&gt;&quot; . org-toggle-inline-images))
-  :config
-  (progn
-    ;; org-habit
-    (require 'org)
-    (require 'org-habit)
-    (require 'org-agenda)
-    (require 'org-protocol)
-    (require 'org-capture)
-    (require 'org-id)
-    (require 'org-clock)
-    (require 'ox-latex)
-    (require 'org-checklist)
-    (require 'ob-tangle)
-    (require 'ox-beamer)
+    <span style="color:#75715e">;; The GTD part of this config is heavily inspired by</span>
+    <span style="color:#75715e">;; https://emacs.cafe/emacs/orgmode/gtd/2017/06/30/orgmode-gtd.html</span>
+    <span style="color:#75715e">;; http://doc.norang.ca/org-mode.html</span>
+    (<span style="color:#66d9ef">setq</span> org-directory <span style="color:#e6db74">&#34;~/org&#34;</span>)
+    (<span style="color:#66d9ef">setq</span> org-startup-indented <span style="color:#66d9ef">t</span>)
+    (<span style="color:#66d9ef">setq</span> org-startup-folded <span style="color:#e6db74">&#39;content</span>)
+    (<span style="color:#66d9ef">setq</span> org-agenda-files (<span style="color:#66d9ef">quote</span> (<span style="color:#e6db74">&#34;~/org/capture&#34;</span>
+                                   <span style="color:#e6db74">&#34;~/org/work&#34;</span>
+                                   <span style="color:#e6db74">&#34;~/org/notes&#34;</span>
+                                   <span style="color:#e6db74">&#34;~/org/study&#34;</span>)))
+    (<span style="color:#66d9ef">setq</span> org-log-done <span style="color:#e6db74">&#39;time</span>)
+    (sp-with-modes <span style="color:#f92672">&#39;</span>(org-mode) (sp-local-pair <span style="color:#e6db74">&#34;*&#34;</span> <span style="color:#e6db74">&#34;*&#34;</span>))
 
-    ;; The GTD part of this config is heavily inspired by
-    ;; https://emacs.cafe/emacs/orgmode/gtd/2017/06/30/orgmode-gtd.html
-    ;; http://doc.norang.ca/org-mode.html
-    (setq org-directory &quot;~/org&quot;)
-    (setq org-startup-indented t)
-    (setq org-startup-folded 'content)
-    (setq org-agenda-files (quote (&quot;~/org/capture&quot;
-                                   &quot;~/org/work&quot;
-                                   &quot;~/org/notes&quot;
-                                   &quot;~/org/study&quot;)))
-    (setq org-log-done 'time)
-    (sp-with-modes '(org-mode) (sp-local-pair &quot;*&quot; &quot;*&quot;))
+    (<span style="color:#66d9ef">setq</span> org-use-speed-commands <span style="color:#66d9ef">t</span>)
 
-    (setq org-use-speed-commands t)
-
-    (setq org-capture-templates
-          '((&quot;a&quot; &quot;Appointment&quot; entry (file  &quot;~/org/capture/schedule.org&quot; )
-             &quot;* %?\n\n%^T\n\n:PROPERTIES:\n\n:END:\n\n&quot;)
-            (&quot;t&quot; &quot;Todo&quot; entry (file &quot;~/org/capture/refile.org&quot;)
-             &quot;* TODO %?\n%U\n%a\n&quot; :clock-in t :clock-resume t)
-            (&quot;h&quot; &quot;Hugo post&quot; entry (file+olp &quot;~/org/hugo/personal-blog.org&quot; &quot;Blog Ideas&quot;)
-             (function org-hugo-new-subtree-post-capture-template)
-             :date &quot;%U&quot;)
-            (&quot;n&quot; &quot;note&quot; entry (file &quot;~/org/capture/refile.org&quot;)
-             &quot;* %? :NOTE:\n%U\n%a\n&quot; :clock-in t :clock-resume t)
-            (&quot;j&quot; &quot;Journal&quot; entry (file+datetree &quot;~/org/capture/journal.org&quot;)
-             &quot;* %? \nEntered on %U\n&quot; :clock-in t :clock-resume t)
-            (&quot;P&quot; &quot;Protocol&quot; entry (file &quot;~/org/capture/refile.org&quot;)
-             &quot;* %(capture-text-fix \&quot;%:description\&quot;)\nCaptured On: %U\nSource: [[%(org-link-unescape \&quot;%:link\&quot;)][%(capture-text-fix \&quot;%:description\&quot;)]]\n\n#+BEGIN_QUOTE\n%(org-link-unescape \&quot;%i\&quot;)\n#+END_QUOTE\n\n%?&quot;)
-            (&quot;L&quot; &quot;Protocol Link&quot; entry (file &quot;~/org/capture/refile.org&quot;)
-             &quot;* %(capture-text-fix \&quot;%:description\&quot;)\nCaptured On: %U\nSource:[[%(org-link-unescape \&quot;%:link\&quot;)][%(capture-text-fix \&quot;%:description\&quot;)]]\n\n%?&quot;)
-            (&quot;m&quot; &quot;Meeting&quot; entry (file &quot;~/org/capture/refile.org&quot;)
-             &quot;* MEETING %u about %? :MEETING:\n%U\nwith: &quot; :clock-in t :clock-resume t)
-            (&quot;p&quot; &quot;Phone call&quot; entry (file &quot;~/org/capture/refile.org&quot;)
-             &quot;* PHONE %? :PHONE:\n%U&quot; :clock-in t :clock-resume t)
-            (&quot;a&quot; &quot;Habit&quot; entry (file &quot;~/org/capture/refile.org&quot;)
-             &quot;* NEXT %?\n%U\n%a\nSCHEDULED: %(format-time-string \&quot;%&lt;&lt;%Y-%m-%d %a .+1d/3d&gt;&gt;\&quot;)\n:PROPERTIES:\n:STYLE: habit\n:REPEAT_TO_STATE: NEXT\n:END:\n&quot;)
+    (<span style="color:#66d9ef">setq</span> org-capture-templates
+          <span style="color:#f92672">&#39;</span>((<span style="color:#e6db74">&#34;a&#34;</span> <span style="color:#e6db74">&#34;Appointment&#34;</span> entry (file  <span style="color:#e6db74">&#34;~/org/capture/schedule.org&#34;</span> )
+             <span style="color:#e6db74">&#34;* %?\n\n%^T\n\n:PROPERTIES:\n\n:END:\n\n&#34;</span>)
+            (<span style="color:#e6db74">&#34;t&#34;</span> <span style="color:#e6db74">&#34;Todo&#34;</span> entry (file <span style="color:#e6db74">&#34;~/org/capture/refile.org&#34;</span>)
+             <span style="color:#e6db74">&#34;* TODO %?\n%U\n%a\n&#34;</span> <span style="color:#e6db74">:clock-in</span> <span style="color:#66d9ef">t</span> <span style="color:#e6db74">:clock-resume</span> <span style="color:#66d9ef">t</span>)
+            (<span style="color:#e6db74">&#34;h&#34;</span> <span style="color:#e6db74">&#34;Hugo post&#34;</span> entry (file+olp <span style="color:#e6db74">&#34;~/org/hugo/personal-blog.org&#34;</span> <span style="color:#e6db74">&#34;Blog Ideas&#34;</span>)
+             (<span style="color:#a6e22e">function</span> org-hugo-new-subtree-post-capture-template)
+             <span style="color:#e6db74">:date</span> <span style="color:#e6db74">&#34;%U&#34;</span>)
+            (<span style="color:#e6db74">&#34;n&#34;</span> <span style="color:#e6db74">&#34;note&#34;</span> entry (file <span style="color:#e6db74">&#34;~/org/capture/refile.org&#34;</span>)
+             <span style="color:#e6db74">&#34;* %? :NOTE:\n%U\n%a\n&#34;</span> <span style="color:#e6db74">:clock-in</span> <span style="color:#66d9ef">t</span> <span style="color:#e6db74">:clock-resume</span> <span style="color:#66d9ef">t</span>)
+            (<span style="color:#e6db74">&#34;j&#34;</span> <span style="color:#e6db74">&#34;Journal&#34;</span> entry (file+datetree <span style="color:#e6db74">&#34;~/org/capture/journal.org&#34;</span>)
+             <span style="color:#e6db74">&#34;* %? \nEntered on %U\n&#34;</span> <span style="color:#e6db74">:clock-in</span> <span style="color:#66d9ef">t</span> <span style="color:#e6db74">:clock-resume</span> <span style="color:#66d9ef">t</span>)
+            (<span style="color:#e6db74">&#34;P&#34;</span> <span style="color:#e6db74">&#34;Protocol&#34;</span> entry (file <span style="color:#e6db74">&#34;~/org/capture/refile.org&#34;</span>)
+             <span style="color:#e6db74">&#34;* %(capture-text-fix \&#34;%:description\&#34;)\nCaptured On: %U\nSource: [[%(org-link-unescape \&#34;%:link\&#34;)][%(capture-text-fix \&#34;%:description\&#34;)]]\n\n#+BEGIN_QUOTE\n%(org-link-unescape \&#34;%i\&#34;)\n#+END_QUOTE\n\n%?&#34;</span>)
+            (<span style="color:#e6db74">&#34;L&#34;</span> <span style="color:#e6db74">&#34;Protocol Link&#34;</span> entry (file <span style="color:#e6db74">&#34;~/org/capture/refile.org&#34;</span>)
+             <span style="color:#e6db74">&#34;* %(capture-text-fix \&#34;%:description\&#34;)\nCaptured On: %U\nSource:[[%(org-link-unescape \&#34;%:link\&#34;)][%(capture-text-fix \&#34;%:description\&#34;)]]\n\n%?&#34;</span>)
+            (<span style="color:#e6db74">&#34;m&#34;</span> <span style="color:#e6db74">&#34;Meeting&#34;</span> entry (file <span style="color:#e6db74">&#34;~/org/capture/refile.org&#34;</span>)
+             <span style="color:#e6db74">&#34;* MEETING %u about %? :MEETING:\n%U\nwith: &#34;</span> <span style="color:#e6db74">:clock-in</span> <span style="color:#66d9ef">t</span> <span style="color:#e6db74">:clock-resume</span> <span style="color:#66d9ef">t</span>)
+            (<span style="color:#e6db74">&#34;p&#34;</span> <span style="color:#e6db74">&#34;Phone call&#34;</span> entry (file <span style="color:#e6db74">&#34;~/org/capture/refile.org&#34;</span>)
+             <span style="color:#e6db74">&#34;* PHONE %? :PHONE:\n%U&#34;</span> <span style="color:#e6db74">:clock-in</span> <span style="color:#66d9ef">t</span> <span style="color:#e6db74">:clock-resume</span> <span style="color:#66d9ef">t</span>)
+            (<span style="color:#e6db74">&#34;a&#34;</span> <span style="color:#e6db74">&#34;Habit&#34;</span> entry (file <span style="color:#e6db74">&#34;~/org/capture/refile.org&#34;</span>)
+             <span style="color:#e6db74">&#34;* NEXT %?\n%U\n%a\nSCHEDULED: %(format-time-string \&#34;%&lt;&lt;%Y-%m-%d %a .+1d/3d&gt;&gt;\&#34;)\n:PROPERTIES:\n:STYLE: habit\n:REPEAT_TO_STATE: NEXT\n:END:\n&#34;</span>)
             ))
 
-    (setq org-refile-targets
-          (quote ((nil :maxlevel . 1)
-                  (org-agenda-files :maxlevel . 1))))
-    ;; (setq org-todo-keywords '((sequence &quot;TODO(t)&quot; &quot;WAITING(w)&quot; &quot;|&quot; &quot;DONE(d)&quot; &quot;CANCELLED(c)&quot;)))
-    (setq org-clock-persist t)
+    (<span style="color:#66d9ef">setq</span> org-refile-targets
+          (<span style="color:#66d9ef">quote</span> ((<span style="color:#66d9ef">nil</span> <span style="color:#e6db74">:maxlevel</span> <span style="color:#f92672">.</span> <span style="color:#ae81ff">1</span>)
+                  (org-agenda-files <span style="color:#e6db74">:maxlevel</span> <span style="color:#f92672">.</span> <span style="color:#ae81ff">1</span>))))
+    <span style="color:#75715e">;; (setq org-todo-keywords &#39;((sequence &#34;TODO(t)&#34; &#34;WAITING(w)&#34; &#34;|&#34; &#34;DONE(d)&#34; &#34;CANCELLED(c)&#34;)))</span>
+    (<span style="color:#66d9ef">setq</span> org-clock-persist <span style="color:#66d9ef">t</span>)
     (org-clock-persistence-insinuate)
-    (setq org-time-clocksum-format
-          '(:hours &quot;%d&quot; :require-hours t :minutes &quot;:%02d&quot; :require-minutes t))
+    (<span style="color:#66d9ef">setq</span> org-time-clocksum-format
+          <span style="color:#f92672">&#39;</span>(<span style="color:#e6db74">:hours</span> <span style="color:#e6db74">&#34;%d&#34;</span> <span style="color:#e6db74">:require-hours</span> <span style="color:#66d9ef">t</span> <span style="color:#e6db74">:minutes</span> <span style="color:#e6db74">&#34;:%02d&#34;</span> <span style="color:#e6db74">:require-minutes</span> <span style="color:#66d9ef">t</span>))
 
-    ;; (setq org-file-apps (quote ((auto-mode . emacs)
-    ;;                              (&quot;\\.mm\\'&quot; . default)
-    ;;                              (&quot;\\.x?html?\\'&quot; . &quot;/usr/bin/firefox %s&quot;)
-    ;;                              (&quot;\\.pdf\\'&quot; . &quot;/usr/bin/evince %s&quot;))))
+    <span style="color:#75715e">;; (setq org-file-apps (quote ((auto-mode . emacs)</span>
+    <span style="color:#75715e">;;                              (&#34;\\.mm\\&#39;&#34; . default)</span>
+    <span style="color:#75715e">;;                              (&#34;\\.x?html?\\&#39;&#34; . &#34;/usr/bin/firefox %s&#34;)</span>
+    <span style="color:#75715e">;;                              (&#34;\\.pdf\\&#39;&#34; . &#34;/usr/bin/evince %s&#34;))))</span>
 
-    (setq org-todo-keywords
-          (quote ((sequence &quot;TODO(t)&quot; &quot;NEXT(n)&quot; &quot;|&quot; &quot;DONE(d)&quot;)
-                  (sequence &quot;WAITING(w@/!)&quot; &quot;HOLD(h@/!)&quot; &quot;|&quot; &quot;CANCELLED(c@/!)&quot; &quot;PHONE&quot; &quot;MEETING&quot;))))
+    (<span style="color:#66d9ef">setq</span> org-todo-keywords
+          (<span style="color:#66d9ef">quote</span> ((<span style="color:#a6e22e">sequence</span> <span style="color:#e6db74">&#34;TODO(t)&#34;</span> <span style="color:#e6db74">&#34;NEXT(n)&#34;</span> <span style="color:#e6db74">&#34;|&#34;</span> <span style="color:#e6db74">&#34;DONE(d)&#34;</span>)
+                  (<span style="color:#a6e22e">sequence</span> <span style="color:#e6db74">&#34;WAITING(w@/!)&#34;</span> <span style="color:#e6db74">&#34;HOLD(h@/!)&#34;</span> <span style="color:#e6db74">&#34;|&#34;</span> <span style="color:#e6db74">&#34;CANCELLED(c@/!)&#34;</span> <span style="color:#e6db74">&#34;PHONE&#34;</span> <span style="color:#e6db74">&#34;MEETING&#34;</span>))))
 
-    (setq org-todo-keyword-faces
-          (quote ((&quot;TODO&quot; :foreground &quot;red&quot; :weight bold)
-                  (&quot;NEXT&quot; :foreground &quot;yellow&quot; :weight bold)
-                  (&quot;DONE&quot; :foreground &quot;forest green&quot; :weight bold)
-                  (&quot;WAITING&quot; :foreground &quot;orange&quot; :weight bold)
-                  (&quot;HOLD&quot; :foreground &quot;magenta&quot; :weight bold)
-                  (&quot;CANCELLED&quot; :foreground &quot;forest green&quot; :weight bold)
-                  (&quot;MEETING&quot; :foreground &quot;forest green&quot; :weight bold)
-                  (&quot;PHONE&quot; :foreground &quot;forest green&quot; :weight bold))))
+    (<span style="color:#66d9ef">setq</span> org-todo-keyword-faces
+          (<span style="color:#66d9ef">quote</span> ((<span style="color:#e6db74">&#34;TODO&#34;</span> <span style="color:#e6db74">:foreground</span> <span style="color:#e6db74">&#34;red&#34;</span> <span style="color:#e6db74">:weight</span> bold)
+                  (<span style="color:#e6db74">&#34;NEXT&#34;</span> <span style="color:#e6db74">:foreground</span> <span style="color:#e6db74">&#34;yellow&#34;</span> <span style="color:#e6db74">:weight</span> bold)
+                  (<span style="color:#e6db74">&#34;DONE&#34;</span> <span style="color:#e6db74">:foreground</span> <span style="color:#e6db74">&#34;forest green&#34;</span> <span style="color:#e6db74">:weight</span> bold)
+                  (<span style="color:#e6db74">&#34;WAITING&#34;</span> <span style="color:#e6db74">:foreground</span> <span style="color:#e6db74">&#34;orange&#34;</span> <span style="color:#e6db74">:weight</span> bold)
+                  (<span style="color:#e6db74">&#34;HOLD&#34;</span> <span style="color:#e6db74">:foreground</span> <span style="color:#e6db74">&#34;magenta&#34;</span> <span style="color:#e6db74">:weight</span> bold)
+                  (<span style="color:#e6db74">&#34;CANCELLED&#34;</span> <span style="color:#e6db74">:foreground</span> <span style="color:#e6db74">&#34;forest green&#34;</span> <span style="color:#e6db74">:weight</span> bold)
+                  (<span style="color:#e6db74">&#34;MEETING&#34;</span> <span style="color:#e6db74">:foreground</span> <span style="color:#e6db74">&#34;forest green&#34;</span> <span style="color:#e6db74">:weight</span> bold)
+                  (<span style="color:#e6db74">&#34;PHONE&#34;</span> <span style="color:#e6db74">:foreground</span> <span style="color:#e6db74">&#34;forest green&#34;</span> <span style="color:#e6db74">:weight</span> bold))))
 
-    (setq org-use-fast-todo-selection t)
-    (setq org-treat-S-cursor-todo-selection-as-state-change nil)
+    (<span style="color:#66d9ef">setq</span> org-use-fast-todo-selection <span style="color:#66d9ef">t</span>)
+    (<span style="color:#66d9ef">setq</span> org-treat-S-cursor-todo-selection-as-state-change <span style="color:#66d9ef">nil</span>)
 
-    ;; Show org-symbols (C-c C-x \)
-    ;; (setq org-pretty-entities t)
+    <span style="color:#75715e">;; Show org-symbols (C-c C-x \)</span>
+    <span style="color:#75715e">;; (setq org-pretty-entities t)</span>
 
-    (setq org-todo-state-tags-triggers
-          (quote ((&quot;CANCELLED&quot; (&quot;CANCELLED&quot; . t))
-                  (&quot;WAITING&quot; (&quot;WAITING&quot; . t))
-                  (&quot;HOLD&quot; (&quot;WAITING&quot;) (&quot;HOLD&quot; . t))
-                  (done (&quot;WAITING&quot;) (&quot;HOLD&quot;))
-                  (&quot;TODO&quot; (&quot;WAITING&quot;) (&quot;CANCELLED&quot;) (&quot;HOLD&quot;))
-                  (&quot;NEXT&quot; (&quot;WAITING&quot;) (&quot;CANCELLED&quot;) (&quot;HOLD&quot;))
-                  (&quot;DONE&quot; (&quot;WAITING&quot;) (&quot;CANCELLED&quot;) (&quot;HOLD&quot;)))))
+    (<span style="color:#66d9ef">setq</span> org-todo-state-tags-triggers
+          (<span style="color:#66d9ef">quote</span> ((<span style="color:#e6db74">&#34;CANCELLED&#34;</span> (<span style="color:#e6db74">&#34;CANCELLED&#34;</span> <span style="color:#f92672">.</span> <span style="color:#66d9ef">t</span>))
+                  (<span style="color:#e6db74">&#34;WAITING&#34;</span> (<span style="color:#e6db74">&#34;WAITING&#34;</span> <span style="color:#f92672">.</span> <span style="color:#66d9ef">t</span>))
+                  (<span style="color:#e6db74">&#34;HOLD&#34;</span> (<span style="color:#e6db74">&#34;WAITING&#34;</span>) (<span style="color:#e6db74">&#34;HOLD&#34;</span> <span style="color:#f92672">.</span> <span style="color:#66d9ef">t</span>))
+                  (done (<span style="color:#e6db74">&#34;WAITING&#34;</span>) (<span style="color:#e6db74">&#34;HOLD&#34;</span>))
+                  (<span style="color:#e6db74">&#34;TODO&#34;</span> (<span style="color:#e6db74">&#34;WAITING&#34;</span>) (<span style="color:#e6db74">&#34;CANCELLED&#34;</span>) (<span style="color:#e6db74">&#34;HOLD&#34;</span>))
+                  (<span style="color:#e6db74">&#34;NEXT&#34;</span> (<span style="color:#e6db74">&#34;WAITING&#34;</span>) (<span style="color:#e6db74">&#34;CANCELLED&#34;</span>) (<span style="color:#e6db74">&#34;HOLD&#34;</span>))
+                  (<span style="color:#e6db74">&#34;DONE&#34;</span> (<span style="color:#e6db74">&#34;WAITING&#34;</span>) (<span style="color:#e6db74">&#34;CANCELLED&#34;</span>) (<span style="color:#e6db74">&#34;HOLD&#34;</span>)))))
 
-    ;; Do not dim blocked tasks
-    (setq org-agenda-dim-blocked-tasks nil)
+    <span style="color:#75715e">;; Do not dim blocked tasks</span>
+    (<span style="color:#66d9ef">setq</span> org-agenda-dim-blocked-tasks <span style="color:#66d9ef">nil</span>)
 
-    ;; Compact the block agenda view
-    (setq org-agenda-compact-blocks t)
+    <span style="color:#75715e">;; Compact the block agenda view</span>
+    (<span style="color:#66d9ef">setq</span> org-agenda-compact-blocks <span style="color:#66d9ef">t</span>)
 
-    ;; Custom agenda command definitions
-    ;; (setq org-agenda-custom-commands nil)
-    (setq org-agenda-custom-commands
-          (quote
-           ((&quot; &quot; &quot;Agenda&quot;
-             ((agenda &quot;&quot; nil)
-              (tags &quot;REFILE&quot;
-                    ((org-agenda-overriding-header &quot;Tasks to Refile&quot;)
-                     (org-tags-match-list-sublevels nil)))
-              (tags-todo &quot;-CANCELLED/!&quot;
-                         ((org-agenda-overriding-header &quot;Stuck Projects&quot;)
-                          (org-agenda-skip-function 'bh/skip-non-stuck-projects)
+    <span style="color:#75715e">;; Custom agenda command definitions</span>
+    <span style="color:#75715e">;; (setq org-agenda-custom-commands nil)</span>
+    (<span style="color:#66d9ef">setq</span> org-agenda-custom-commands
+          (<span style="color:#66d9ef">quote</span>
+           ((<span style="color:#e6db74">&#34; &#34;</span> <span style="color:#e6db74">&#34;Agenda&#34;</span>
+             ((agenda <span style="color:#e6db74">&#34;&#34;</span> <span style="color:#66d9ef">nil</span>)
+              (tags <span style="color:#e6db74">&#34;REFILE&#34;</span>
+                    ((org-agenda-overriding-header <span style="color:#e6db74">&#34;Tasks to Refile&#34;</span>)
+                     (org-tags-match-list-sublevels <span style="color:#66d9ef">nil</span>)))
+              (tags-todo <span style="color:#e6db74">&#34;-CANCELLED/!&#34;</span>
+                         ((org-agenda-overriding-header <span style="color:#e6db74">&#34;Stuck Projects&#34;</span>)
+                          (org-agenda-skip-function <span style="color:#e6db74">&#39;bh/skip-non-stuck-projects</span>)
                           (org-agenda-sorting-strategy
-                           '(category-keep))))
-              (tags-todo &quot;-HOLD-CANCELLED/!&quot;
-                         ((org-agenda-overriding-header &quot;Projects&quot;)
-                          (org-agenda-skip-function 'bh/skip-non-projects)
-                          (org-tags-match-list-sublevels 'indented)
+                           <span style="color:#f92672">&#39;</span>(category-keep))))
+              (tags-todo <span style="color:#e6db74">&#34;-HOLD-CANCELLED/!&#34;</span>
+                         ((org-agenda-overriding-header <span style="color:#e6db74">&#34;Projects&#34;</span>)
+                          (org-agenda-skip-function <span style="color:#e6db74">&#39;bh/skip-non-projects</span>)
+                          (org-tags-match-list-sublevels <span style="color:#e6db74">&#39;indented</span>)
                           (org-agenda-sorting-strategy
-                           '(category-keep))))
-              (tags-todo &quot;-CANCELLED/!NEXT&quot;
+                           <span style="color:#f92672">&#39;</span>(category-keep))))
+              (tags-todo <span style="color:#e6db74">&#34;-CANCELLED/!NEXT&#34;</span>
                          ((org-agenda-overriding-header
-                           (concat &quot;Project Next Tasks&quot;
-                                   (if bh/hide-sche-and-wait-next-tasks
-                                       &quot;&quot;
-                                     &quot; (including WAITING and SCHEDULED tasks)&quot;)))
-                          (org-agenda-skip-function 'bh/skip-projects-and-habits-and-single-tasks)
-                          (org-tags-match-list-sublevels t)
+                           (concat <span style="color:#e6db74">&#34;Project Next Tasks&#34;</span>
+                                   (<span style="color:#66d9ef">if</span> bh/hide-sche-and-wait-next-tasks
+                                       <span style="color:#e6db74">&#34;&#34;</span>
+                                     <span style="color:#e6db74">&#34; (including WAITING and SCHEDULED tasks)&#34;</span>)))
+                          (org-agenda-skip-function <span style="color:#e6db74">&#39;bh/skip-projects-and-habits-and-single-tasks</span>)
+                          (org-tags-match-list-sublevels <span style="color:#66d9ef">t</span>)
                           (org-agenda-todo-ignore-scheduled bh/hide-sche-and-wait-next-tasks)
                           (org-agenda-todo-ignore-deadlines bh/hide-sche-and-wait-next-tasks)
                           (org-agenda-todo-ignore-with-date bh/hide-sche-and-wait-next-tasks)
                           (org-agenda-sorting-strategy
-                           '(todo-state-down effort-up category-keep))))
-              (tags-todo &quot;-REFILE-CANCELLED-WAITING-HOLD/!&quot;
+                           <span style="color:#f92672">&#39;</span>(todo-state-down effort-up category-keep))))
+              (tags-todo <span style="color:#e6db74">&#34;-REFILE-CANCELLED-WAITING-HOLD/!&#34;</span>
                          ((org-agenda-overriding-header
-                           (concat &quot;Project Subtasks&quot;
-                                   (if bh/hide-sche-and-wait-next-tasks
-                                       &quot;&quot;
-                                     &quot; (including WAITING and SCHEDULED tasks)&quot;)))
-                          (org-agenda-skip-function 'bh/skip-non-project-tasks)
+                           (concat <span style="color:#e6db74">&#34;Project Subtasks&#34;</span>
+                                   (<span style="color:#66d9ef">if</span> bh/hide-sche-and-wait-next-tasks
+                                       <span style="color:#e6db74">&#34;&#34;</span>
+                                     <span style="color:#e6db74">&#34; (including WAITING and SCHEDULED tasks)&#34;</span>)))
+                          (org-agenda-skip-function <span style="color:#e6db74">&#39;bh/skip-non-project-tasks</span>)
                           (org-agenda-todo-ignore-scheduled bh/hide-sche-and-wait-next-tasks)
                           (org-agenda-todo-ignore-deadlines bh/hide-sche-and-wait-next-tasks)
                           (org-agenda-todo-ignore-with-date bh/hide-sche-and-wait-next-tasks)
                           (org-agenda-sorting-strategy
-                           '(category-keep))))
-              (tags-todo &quot;-REFILE-CANCELLED-WAITING-HOLD/!&quot;
+                           <span style="color:#f92672">&#39;</span>(category-keep))))
+              (tags-todo <span style="color:#e6db74">&#34;-REFILE-CANCELLED-WAITING-HOLD/!&#34;</span>
                          ((org-agenda-overriding-header
-                           (concat &quot;Standalone Tasks&quot;
-                                   (if bh/hide-sche-and-wait-next-tasks
-                                       &quot;&quot;
-                                     &quot; (including WAITING and SCHEDULED tasks)&quot;)))
-                          (org-agenda-skip-function 'bh/skip-project-tasks)
+                           (concat <span style="color:#e6db74">&#34;Standalone Tasks&#34;</span>
+                                   (<span style="color:#66d9ef">if</span> bh/hide-sche-and-wait-next-tasks
+                                       <span style="color:#e6db74">&#34;&#34;</span>
+                                     <span style="color:#e6db74">&#34; (including WAITING and SCHEDULED tasks)&#34;</span>)))
+                          (org-agenda-skip-function <span style="color:#e6db74">&#39;bh/skip-project-tasks</span>)
                           (org-agenda-todo-ignore-scheduled bh/hide-sche-and-wait-next-tasks)
                           (org-agenda-todo-ignore-deadlines bh/hide-sche-and-wait-next-tasks)
                           (org-agenda-todo-ignore-with-date bh/hide-sche-and-wait-next-tasks)
                           (org-agenda-sorting-strategy
-                           '(category-keep))))
-              (tags-todo &quot;-CANCELLED+WAITING|HOLD/!&quot;
+                           <span style="color:#f92672">&#39;</span>(category-keep))))
+              (tags-todo <span style="color:#e6db74">&#34;-CANCELLED+WAITING|HOLD/!&#34;</span>
                          ((org-agenda-overriding-header
-                           (concat &quot;Waiting and Postponed Tasks&quot;
-                                   (if bh/hide-sche-and-wait-next-tasks
-                                       &quot;&quot;
-                                     &quot; (including WAITING and SCHEDULED tasks)&quot;)))
-                          (org-agenda-skip-function 'bh/skip-non-tasks)
-                          (org-tags-match-list-sublevels nil)
+                           (concat <span style="color:#e6db74">&#34;Waiting and Postponed Tasks&#34;</span>
+                                   (<span style="color:#66d9ef">if</span> bh/hide-sche-and-wait-next-tasks
+                                       <span style="color:#e6db74">&#34;&#34;</span>
+                                     <span style="color:#e6db74">&#34; (including WAITING and SCHEDULED tasks)&#34;</span>)))
+                          (org-agenda-skip-function <span style="color:#e6db74">&#39;bh/skip-non-tasks</span>)
+                          (org-tags-match-list-sublevels <span style="color:#66d9ef">nil</span>)
                           (org-agenda-todo-ignore-scheduled bh/hide-sche-and-wait-next-tasks)
                           (org-agenda-todo-ignore-deadlines bh/hide-sche-and-wait-next-tasks)))
-              (tags &quot;-REFILE/&quot;
-                    ((org-agenda-overriding-header &quot;Tasks to Archive&quot;)
-                     (org-agenda-skip-function 'bh/skip-non-archivable-tasks)
-                     (org-tags-match-list-sublevels nil))))
-             nil))))
+              (tags <span style="color:#e6db74">&#34;-REFILE/&#34;</span>
+                    ((org-agenda-overriding-header <span style="color:#e6db74">&#34;Tasks to Archive&#34;</span>)
+                     (org-agenda-skip-function <span style="color:#e6db74">&#39;bh/skip-non-archivable-tasks</span>)
+                     (org-tags-match-list-sublevels <span style="color:#66d9ef">nil</span>))))
+             <span style="color:#66d9ef">nil</span>))))
 
-    ;; Resume clocking task when emacs is restarted
+    <span style="color:#75715e">;; Resume clocking task when emacs is restarted</span>
     (org-clock-persistence-insinuate)
-    ;;
-    ;; Show lot of clocking history so it's easy to pick items off the C-F11 list
-    (setq org-clock-history-length 23)
-    ;; Resume clocking task on clock-in if the clock is open
-    (setq org-clock-in-resume t)
-    ;; Change tasks to NEXT when clocking in
-    (setq org-clock-in-switch-to-state 'bh/clock-in-to-next)
-    ;; Separate drawers for clocking and logs
-    (setq org-drawers (quote (&quot;PROPERTIES&quot; &quot;LOGBOOK&quot;)))
-    ;; Save clock data and state changes and notes in the LOGBOOK drawer
-    (setq org-clock-into-drawer t)
-    ;; Sometimes I change tasks I'm clocking quickly - this removes clocked tasks with 0:00 duration
-    (setq org-clock-out-remove-zero-time-clocks t)
-    ;; Clock out when moving task to a done state
-    (setq org-clock-out-when-done t)
-    ;; Save the running clock and all clock history when exiting Emacs, load it on startup
-    (setq org-clock-persist t)
-    ;; Do not prompt to resume an active clock
-    (setq org-clock-persist-query-resume nil)
-    ;; Enable auto clock resolution for finding open clocks
-    (setq org-clock-auto-clock-resolution (quote when-no-clock-is-running))
-    ;; Include current clocking task in clock reports
-    (setq org-clock-report-include-clocking-task t)
-    ;; Sometimes I change tasks I'm clocking quickly - this removes clocked tasks with 0:00 duration
-    (setq org-clock-out-remove-zero-time-clocks t)
+    <span style="color:#75715e">;;</span>
+    <span style="color:#75715e">;; Show lot of clocking history so it&#39;s easy to pick items off the C-F11 list</span>
+    (<span style="color:#66d9ef">setq</span> org-clock-history-length <span style="color:#ae81ff">23</span>)
+    <span style="color:#75715e">;; Resume clocking task on clock-in if the clock is open</span>
+    (<span style="color:#66d9ef">setq</span> org-clock-in-resume <span style="color:#66d9ef">t</span>)
+    <span style="color:#75715e">;; Change tasks to NEXT when clocking in</span>
+    (<span style="color:#66d9ef">setq</span> org-clock-in-switch-to-state <span style="color:#e6db74">&#39;bh/clock-in-to-next</span>)
+    <span style="color:#75715e">;; Separate drawers for clocking and logs</span>
+    (<span style="color:#66d9ef">setq</span> org-drawers (<span style="color:#66d9ef">quote</span> (<span style="color:#e6db74">&#34;PROPERTIES&#34;</span> <span style="color:#e6db74">&#34;LOGBOOK&#34;</span>)))
+    <span style="color:#75715e">;; Save clock data and state changes and notes in the LOGBOOK drawer</span>
+    (<span style="color:#66d9ef">setq</span> org-clock-into-drawer <span style="color:#66d9ef">t</span>)
+    <span style="color:#75715e">;; Sometimes I change tasks I&#39;m clocking quickly - this removes clocked tasks with 0:00 duration</span>
+    (<span style="color:#66d9ef">setq</span> org-clock-out-remove-zero-time-clocks <span style="color:#66d9ef">t</span>)
+    <span style="color:#75715e">;; Clock out when moving task to a done state</span>
+    (<span style="color:#66d9ef">setq</span> org-clock-out-when-done <span style="color:#66d9ef">t</span>)
+    <span style="color:#75715e">;; Save the running clock and all clock history when exiting Emacs, load it on startup</span>
+    (<span style="color:#66d9ef">setq</span> org-clock-persist <span style="color:#66d9ef">t</span>)
+    <span style="color:#75715e">;; Do not prompt to resume an active clock</span>
+    (<span style="color:#66d9ef">setq</span> org-clock-persist-query-resume <span style="color:#66d9ef">nil</span>)
+    <span style="color:#75715e">;; Enable auto clock resolution for finding open clocks</span>
+    (<span style="color:#66d9ef">setq</span> org-clock-auto-clock-resolution (<span style="color:#66d9ef">quote</span> when-no-clock-is-running))
+    <span style="color:#75715e">;; Include current clocking task in clock reports</span>
+    (<span style="color:#66d9ef">setq</span> org-clock-report-include-clocking-task <span style="color:#66d9ef">t</span>)
+    <span style="color:#75715e">;; Sometimes I change tasks I&#39;m clocking quickly - this removes clocked tasks with 0:00 duration</span>
+    (<span style="color:#66d9ef">setq</span> org-clock-out-remove-zero-time-clocks <span style="color:#66d9ef">t</span>)
 
-    (setq bh/keep-clock-running nil)
+    (<span style="color:#66d9ef">setq</span> bh/keep-clock-running <span style="color:#66d9ef">nil</span>)
 
-    (defvar bh/organization-task-id &quot;23a80a21-516d-4c98-b9bb-528fdb0c2080&quot;)
-    (add-hook 'org-clock-out-hook 'bh/clock-out-maybe 'append)
-    (add-hook 'org-clock-out-hook 'bh/remove-empty-drawer-on-clock-out 'append)
+    (defvar bh/organization-task-id <span style="color:#e6db74">&#34;23a80a21-516d-4c98-b9bb-528fdb0c2080&#34;</span>)
+    (add-hook <span style="color:#e6db74">&#39;org-clock-out-hook</span> <span style="color:#e6db74">&#39;bh/clock-out-maybe</span> <span style="color:#e6db74">&#39;append</span>)
+    (add-hook <span style="color:#e6db74">&#39;org-clock-out-hook</span> <span style="color:#e6db74">&#39;bh/remove-empty-drawer-on-clock-out</span> <span style="color:#e6db74">&#39;append</span>)
 
-    (setq org-time-stamp-rounding-minutes (quote (1 1)))
-    (setq org-agenda-clock-consistency-checks
-          (quote (:max-duration &quot;4:00&quot;
-                                :min-duration 0
-                                :max-gap 0
-                                :gap-ok-around (&quot;4:00&quot;))))
+    (<span style="color:#66d9ef">setq</span> org-time-stamp-rounding-minutes (<span style="color:#66d9ef">quote</span> (<span style="color:#ae81ff">1</span> <span style="color:#ae81ff">1</span>)))
+    (<span style="color:#66d9ef">setq</span> org-agenda-clock-consistency-checks
+          (<span style="color:#66d9ef">quote</span> (<span style="color:#e6db74">:max-duration</span> <span style="color:#e6db74">&#34;4:00&#34;</span>
+                                <span style="color:#e6db74">:min-duration</span> <span style="color:#ae81ff">0</span>
+                                <span style="color:#e6db74">:max-gap</span> <span style="color:#ae81ff">0</span>
+                                <span style="color:#e6db74">:gap-ok-around</span> (<span style="color:#e6db74">&#34;4:00&#34;</span>))))
 
-    ;; Agenda clock report parameters
-    (setq org-agenda-clockreport-parameter-plist
-          (quote (:link t :maxlevel 5 :fileskip0 t :compact t :narrow 80)))
+    <span style="color:#75715e">;; Agenda clock report parameters</span>
+    (<span style="color:#66d9ef">setq</span> org-agenda-clockreport-parameter-plist
+          (<span style="color:#66d9ef">quote</span> (<span style="color:#e6db74">:link</span> <span style="color:#66d9ef">t</span> <span style="color:#e6db74">:maxlevel</span> <span style="color:#ae81ff">5</span> <span style="color:#e6db74">:fileskip0</span> <span style="color:#66d9ef">t</span> <span style="color:#e6db74">:compact</span> <span style="color:#66d9ef">t</span> <span style="color:#e6db74">:narrow</span> <span style="color:#ae81ff">80</span>)))
 
-    ;; Set default column view headings: Task Effort Clock_Summary
-    (setq org-columns-default-format &quot;%80ITEM(Task) %10Effort(Effort){:} %10CLOCKSUM&quot;)
+    <span style="color:#75715e">;; Set default column view headings: Task Effort Clock_Summary</span>
+    (<span style="color:#66d9ef">setq</span> org-columns-default-format <span style="color:#e6db74">&#34;%80ITEM(Task) %10Effort(Effort){:} %10CLOCKSUM&#34;</span>)
 
-    ;; global Effort estimate values
-    ;; global STYLE property values for completion
-    (setq org-global-properties
-          (quote ((&quot;Effort_ALL&quot; . &quot;0:15 0:30 0:45 1:00 2:00 3:00 4:00 5:00 6:00 0:00&quot;)
-                  (&quot;STYLE_ALL&quot; . &quot;habit&quot;))))
+    <span style="color:#75715e">;; global Effort estimate values</span>
+    <span style="color:#75715e">;; global STYLE property values for completion</span>
+    (<span style="color:#66d9ef">setq</span> org-global-properties
+          (<span style="color:#66d9ef">quote</span> ((<span style="color:#e6db74">&#34;Effort_ALL&#34;</span> <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;0:15 0:30 0:45 1:00 2:00 3:00 4:00 5:00 6:00 0:00&#34;</span>)
+                  (<span style="color:#e6db74">&#34;STYLE_ALL&#34;</span> <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;habit&#34;</span>))))
 
-    ;; Agenda log mode items to display (closed and state changes by default)
-    (setq org-agenda-log-mode-items (quote (closed state)))
+    <span style="color:#75715e">;; Agenda log mode items to display (closed and state changes by default)</span>
+    (<span style="color:#66d9ef">setq</span> org-agenda-log-mode-items (<span style="color:#66d9ef">quote</span> (closed state)))
 
-    (setq org-agenda-span 'day)
+    (<span style="color:#66d9ef">setq</span> org-agenda-span <span style="color:#e6db74">&#39;day</span>)
 
-    ;; Disable default org-mode stuck project agenda
-    (setq org-stuck-projects (quote (&quot;&quot; nil nil &quot;&quot;)))
+    <span style="color:#75715e">;; Disable default org-mode stuck project agenda</span>
+    (<span style="color:#66d9ef">setq</span> org-stuck-projects (<span style="color:#66d9ef">quote</span> (<span style="color:#e6db74">&#34;&#34;</span> <span style="color:#66d9ef">nil</span> <span style="color:#66d9ef">nil</span> <span style="color:#e6db74">&#34;&#34;</span>)))
 
-    ;; Archive anything on * Archived Tasks
-    (setq org-archive-mark-done nil)
-    (setq org-archive-location &quot;%s_archive::* Archived Tasks&quot;)
+    <span style="color:#75715e">;; Archive anything on * Archived Tasks</span>
+    (<span style="color:#66d9ef">setq</span> org-archive-mark-done <span style="color:#66d9ef">nil</span>)
+    (<span style="color:#66d9ef">setq</span> org-archive-location <span style="color:#e6db74">&#34;%s_archive::* Archived Tasks&#34;</span>)
 
-    (setq org-link-abbrev-alist
-          '((&quot;gmane&quot; . &quot;http://thread.gmane.org/%s&quot;)
-            (&quot;google&quot; . &quot;https://www.google.com/search?q=%s&quot;)
-            (&quot;arxiv&quot; . &quot;http://arxiv.org/abs/%s&quot;)
-            (&quot;cds&quot; . &quot;https://cds.cern.ch/record/%s&quot;)
-            (&quot;doi&quot; . &quot;http://dx.doi.org/%s&quot;)))
+    (<span style="color:#66d9ef">setq</span> org-link-abbrev-alist
+          <span style="color:#f92672">&#39;</span>((<span style="color:#e6db74">&#34;gmane&#34;</span> <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;http://thread.gmane.org/%s&#34;</span>)
+            (<span style="color:#e6db74">&#34;google&#34;</span> <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;https://www.google.com/search?q=%s&#34;</span>)
+            (<span style="color:#e6db74">&#34;arxiv&#34;</span> <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;http://arxiv.org/abs/%s&#34;</span>)
+            (<span style="color:#e6db74">&#34;cds&#34;</span> <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;https://cds.cern.ch/record/%s&#34;</span>)
+            (<span style="color:#e6db74">&#34;doi&#34;</span> <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;http://dx.doi.org/%s&#34;</span>)))
 
-    (setq org-publish-project-alist
-          '((&quot;org-notes&quot;
-             :base-directory &quot;~/org/&quot;
-             :base-extension &quot;org&quot;
-             :publishing-directory &quot;~/public_html/&quot;
-             :recursive t
-             :makeindex t
-             :auto-sitemap t
-             :sitemap-filename &quot;index.org&quot;
-             :sitemap-title &quot;Org Notes Sitemap&quot;
-             :publishing-function org-html-publish-to-html
-             :headline-levels 4             ; Just the default for this project.
-             :auto-preamble t
+    (<span style="color:#66d9ef">setq</span> org-publish-project-alist
+          <span style="color:#f92672">&#39;</span>((<span style="color:#e6db74">&#34;org-notes&#34;</span>
+             <span style="color:#e6db74">:base-directory</span> <span style="color:#e6db74">&#34;~/org/&#34;</span>
+             <span style="color:#e6db74">:base-extension</span> <span style="color:#e6db74">&#34;org&#34;</span>
+             <span style="color:#e6db74">:publishing-directory</span> <span style="color:#e6db74">&#34;~/public_html/&#34;</span>
+             <span style="color:#e6db74">:recursive</span> <span style="color:#66d9ef">t</span>
+             <span style="color:#e6db74">:makeindex</span> <span style="color:#66d9ef">t</span>
+             <span style="color:#e6db74">:auto-sitemap</span> <span style="color:#66d9ef">t</span>
+             <span style="color:#e6db74">:sitemap-filename</span> <span style="color:#e6db74">&#34;index.org&#34;</span>
+             <span style="color:#e6db74">:sitemap-title</span> <span style="color:#e6db74">&#34;Org Notes Sitemap&#34;</span>
+             <span style="color:#e6db74">:publishing-function</span> org-html-publish-to-html
+             <span style="color:#e6db74">:headline-levels</span> <span style="color:#ae81ff">4</span>             <span style="color:#75715e">; Just the default for this project.</span>
+             <span style="color:#e6db74">:auto-preamble</span> <span style="color:#66d9ef">t</span>
              )
-            (&quot;org-static&quot;
-             :base-directory &quot;~/org/&quot;
-             :base-extension &quot;css\\|js\\|png\\|jpg\\|gif\\|pdf\\|mp3\\|ogg\\|swf&quot;
-             :publishing-directory &quot;~/public_html/&quot;
-             :recursive t
-             :publishing-function org-publish-attachment
+            (<span style="color:#e6db74">&#34;org-static&#34;</span>
+             <span style="color:#e6db74">:base-directory</span> <span style="color:#e6db74">&#34;~/org/&#34;</span>
+             <span style="color:#e6db74">:base-extension</span> <span style="color:#e6db74">&#34;css\\|js\\|png\\|jpg\\|gif\\|pdf\\|mp3\\|ogg\\|swf&#34;</span>
+             <span style="color:#e6db74">:publishing-directory</span> <span style="color:#e6db74">&#34;~/public_html/&#34;</span>
+             <span style="color:#e6db74">:recursive</span> <span style="color:#66d9ef">t</span>
+             <span style="color:#e6db74">:publishing-function</span> org-publish-attachment
              )
-            (&quot;org&quot; :components (&quot;org-notes&quot; &quot;org-static&quot;))))
+            (<span style="color:#e6db74">&#34;org&#34;</span> <span style="color:#e6db74">:components</span> (<span style="color:#e6db74">&#34;org-notes&#34;</span> <span style="color:#e6db74">&#34;org-static&#34;</span>))))
 
-    ;; Latex configuration
-    ;; (setq org-latex-pdf-process
-    ;;       '(&quot;xelatex -shell-escape %f&quot;
-    ;;         &quot;xelatex -shell-escape %f&quot;
-    ;;         &quot;xelatex -shell-escape %f&quot;))
-    (setq org-latex-pdf-process
-          (list &quot;latexmk -shell-escape -bibtex -f -pdf %f -outdir=%o&quot;))
+    <span style="color:#75715e">;; Latex configuration</span>
+    <span style="color:#75715e">;; (setq org-latex-pdf-process</span>
+    <span style="color:#75715e">;;       &#39;(&#34;xelatex -shell-escape %f&#34;</span>
+    <span style="color:#75715e">;;         &#34;xelatex -shell-escape %f&#34;</span>
+    <span style="color:#75715e">;;         &#34;xelatex -shell-escape %f&#34;))</span>
+    (<span style="color:#66d9ef">setq</span> org-latex-pdf-process
+          (<span style="color:#a6e22e">list</span> <span style="color:#e6db74">&#34;latexmk -shell-escape -bibtex -f -pdf %f -outdir=%o&#34;</span>))
 
-    ;; Let org-mode manage internal labels
-    (setq org-latex-prefer-user-labels nil)
+    <span style="color:#75715e">;; Let org-mode manage internal labels</span>
+    (<span style="color:#66d9ef">setq</span> org-latex-prefer-user-labels <span style="color:#66d9ef">nil</span>)
 
-    (setq org-latex-logfiles-extensions
-          (quote
-           (&quot;lof&quot; &quot;lot&quot; &quot;tex~&quot; &quot;aux&quot; &quot;idx&quot; &quot;log&quot; &quot;out&quot;
-            &quot;toc&quot; &quot;nav&quot; &quot;synctex.gz&quot; &quot;el&quot; &quot;w18&quot; &quot;snm&quot;
-            &quot;vrb&quot; &quot;dvi&quot; &quot;fdb_latexmk&quot; &quot;blg&quot; &quot;brf&quot;
-            &quot;fls&quot; &quot;entoc&quot; &quot;ps&quot; &quot;spl&quot; &quot;bbl&quot;)))
+    (<span style="color:#66d9ef">setq</span> org-latex-logfiles-extensions
+          (<span style="color:#66d9ef">quote</span>
+           (<span style="color:#e6db74">&#34;lof&#34;</span> <span style="color:#e6db74">&#34;lot&#34;</span> <span style="color:#e6db74">&#34;tex~&#34;</span> <span style="color:#e6db74">&#34;aux&#34;</span> <span style="color:#e6db74">&#34;idx&#34;</span> <span style="color:#e6db74">&#34;log&#34;</span> <span style="color:#e6db74">&#34;out&#34;</span>
+            <span style="color:#e6db74">&#34;toc&#34;</span> <span style="color:#e6db74">&#34;nav&#34;</span> <span style="color:#e6db74">&#34;synctex.gz&#34;</span> <span style="color:#e6db74">&#34;el&#34;</span> <span style="color:#e6db74">&#34;w18&#34;</span> <span style="color:#e6db74">&#34;snm&#34;</span>
+            <span style="color:#e6db74">&#34;vrb&#34;</span> <span style="color:#e6db74">&#34;dvi&#34;</span> <span style="color:#e6db74">&#34;fdb_latexmk&#34;</span> <span style="color:#e6db74">&#34;blg&#34;</span> <span style="color:#e6db74">&#34;brf&#34;</span>
+            <span style="color:#e6db74">&#34;fls&#34;</span> <span style="color:#e6db74">&#34;entoc&#34;</span> <span style="color:#e6db74">&#34;ps&#34;</span> <span style="color:#e6db74">&#34;spl&#34;</span> <span style="color:#e6db74">&#34;bbl&#34;</span>)))
 
-    ;; https://orgmode.org/manual/CDLaTeX-mode.html#CDLaTeX-mode
-    (add-hook 'org-mode-hook 'turn-on-org-cdlatex)
+    <span style="color:#75715e">;; https://orgmode.org/manual/CDLaTeX-mode.html#CDLaTeX-mode</span>
+    (add-hook <span style="color:#e6db74">&#39;org-mode-hook</span> <span style="color:#e6db74">&#39;turn-on-org-cdlatex</span>)
 
-    (setq org-src-fontify-natively t)
-    (setq org-src-tab-acts-natively t)
+    (<span style="color:#66d9ef">setq</span> org-src-fontify-natively <span style="color:#66d9ef">t</span>)
+    (<span style="color:#66d9ef">setq</span> org-src-tab-acts-natively <span style="color:#66d9ef">t</span>)
 
-    (setq org-latex-listings t)
-    (setq org-export-coding-system 'utf-8)
+    (<span style="color:#66d9ef">setq</span> org-latex-listings <span style="color:#66d9ef">t</span>)
+    (<span style="color:#66d9ef">setq</span> org-export-coding-system <span style="color:#e6db74">&#39;utf-8</span>)
 
     (defun get-string-from-file (filePath)
-      &quot;Return filePath's file content.&quot;
+      <span style="color:#e6db74">&#34;Return filePath&#39;s file content.&#34;</span>
       (with-temp-buffer
         (insert-file-contents filePath)
         (buffer-string)))
 
-    ;; ebooks using memoir
-    (with-eval-after-load 'ox-latex
-      (let ((template &quot;\\documentclass{memoir}&quot;))
-        (add-to-list 'org-latex-classes
-                     (list &quot;memoir&quot;
+    <span style="color:#75715e">;; ebooks using memoir</span>
+    (with-eval-after-load <span style="color:#e6db74">&#39;ox-latex</span>
+      (<span style="color:#66d9ef">let</span> ((template <span style="color:#e6db74">&#34;\\documentclass{memoir}&#34;</span>))
+        (add-to-list <span style="color:#e6db74">&#39;org-latex-classes</span>
+                     (<span style="color:#a6e22e">list</span> <span style="color:#e6db74">&#34;memoir&#34;</span>
                            template
-                           '(&quot;\\chapter{%s}&quot; . &quot;\\chapter*{%s}&quot;)
-                           '(&quot;\\section{%s}&quot; . &quot;\\section*{%s}&quot;)
-                           '(&quot;\\subsection{%s}&quot; . &quot;\\subsection*{%s}&quot;)))
-        (add-to-list 'org-latex-classes
-                     (list &quot;notes-article&quot;
-                           (get-string-from-file &quot;~/org/templates/latex-notes-article.tex&quot;)
-                           '(&quot;\\section{%s}&quot; . &quot;\\section*{%s}&quot;)
-                           '(&quot;\\subsection{%s}&quot; . &quot;\\subsection*{%s}&quot;)
-                           '(&quot;\\subsubsection{%s}&quot; . &quot;\\subsubsection*{%s}&quot;)
-                           '(&quot;\\paragraph{%s}&quot; . &quot;\\paragraph*{%s}&quot;)
-                           '(&quot;\\subparagraph{%s}&quot; . &quot;\\subparagraph*{%s}&quot;)))
-        (add-to-list 'org-latex-classes
-                     '(&quot;snemo-article&quot;
-                       &quot;\\documentclass{scrartcl}
-                        \\setkomafont{disposition}{\\normalfont\\bfseries}
-                        [PACKAGES]
-                        \\usepackage{org-preamble}
-                        \\usepackage{supernemo-article-style}
-                        [NO-DEFAULT-PACKAGES]&quot;
-                       (&quot;\\section{%s}&quot; . &quot;\\section*{%s}&quot;)
-                       (&quot;\\subsection{%s}&quot; . &quot;\\subsection*{%s}&quot;)
-                       (&quot;\\subsubsection{%s}&quot; . &quot;\\subsubsection*{%s}&quot;)
-                       (&quot;\\paragraph{%s}&quot; . &quot;\\paragraph*{%s}&quot;)
-                       (&quot;\\subparagraph{%s}&quot; . &quot;\\subparagraph*{%s}&quot;)))
-        (add-to-list 'org-latex-classes
-                     '(&quot;report&quot;
-                       &quot;\\documentclass{report}&quot;
-                       (&quot;\\chapter{%s}&quot; . &quot;\\chapter*{%s}&quot;)
-                       (&quot;\\section{%s}&quot; . &quot;\\section*{%s}&quot;)
-                       (&quot;\\subsection{%s}&quot; . &quot;\\subsection*{%s}&quot;)
-                       (&quot;\\subsubsection{%s}&quot; . &quot;\\subsubsection*{%s}&quot;))))))
+                           <span style="color:#f92672">&#39;</span>(<span style="color:#e6db74">&#34;\\chapter{%s}&#34;</span> <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;\\chapter*{%s}&#34;</span>)
+                           <span style="color:#f92672">&#39;</span>(<span style="color:#e6db74">&#34;\\section{%s}&#34;</span> <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;\\section*{%s}&#34;</span>)
+                           <span style="color:#f92672">&#39;</span>(<span style="color:#e6db74">&#34;\\subsection{%s}&#34;</span> <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;\\subsection*{%s}&#34;</span>)))
+        (add-to-list <span style="color:#e6db74">&#39;org-latex-classes</span>
+                     (<span style="color:#a6e22e">list</span> <span style="color:#e6db74">&#34;notes-article&#34;</span>
+                           (get-string-from-file <span style="color:#e6db74">&#34;~/org/templates/latex-notes-article.tex&#34;</span>)
+                           <span style="color:#f92672">&#39;</span>(<span style="color:#e6db74">&#34;\\section{%s}&#34;</span> <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;\\section*{%s}&#34;</span>)
+                           <span style="color:#f92672">&#39;</span>(<span style="color:#e6db74">&#34;\\subsection{%s}&#34;</span> <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;\\subsection*{%s}&#34;</span>)
+                           <span style="color:#f92672">&#39;</span>(<span style="color:#e6db74">&#34;\\subsubsection{%s}&#34;</span> <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;\\subsubsection*{%s}&#34;</span>)
+                           <span style="color:#f92672">&#39;</span>(<span style="color:#e6db74">&#34;\\paragraph{%s}&#34;</span> <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;\\paragraph*{%s}&#34;</span>)
+                           <span style="color:#f92672">&#39;</span>(<span style="color:#e6db74">&#34;\\subparagraph{%s}&#34;</span> <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;\\subparagraph*{%s}&#34;</span>)))
+        (add-to-list <span style="color:#e6db74">&#39;org-latex-classes</span>
+                     <span style="color:#f92672">&#39;</span>(<span style="color:#e6db74">&#34;snemo-article&#34;</span>
+                       <span style="color:#e6db74">&#34;\\documentclass{scrartcl}
+</span><span style="color:#e6db74">                        \\setkomafont{disposition}{\\normalfont\\bfseries}
+</span><span style="color:#e6db74">                        [PACKAGES]
+</span><span style="color:#e6db74">                        \\usepackage{org-preamble}
+</span><span style="color:#e6db74">                        \\usepackage{supernemo-article-style}
+</span><span style="color:#e6db74">                        [NO-DEFAULT-PACKAGES]&#34;</span>
+                       (<span style="color:#e6db74">&#34;\\section{%s}&#34;</span> <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;\\section*{%s}&#34;</span>)
+                       (<span style="color:#e6db74">&#34;\\subsection{%s}&#34;</span> <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;\\subsection*{%s}&#34;</span>)
+                       (<span style="color:#e6db74">&#34;\\subsubsection{%s}&#34;</span> <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;\\subsubsection*{%s}&#34;</span>)
+                       (<span style="color:#e6db74">&#34;\\paragraph{%s}&#34;</span> <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;\\paragraph*{%s}&#34;</span>)
+                       (<span style="color:#e6db74">&#34;\\subparagraph{%s}&#34;</span> <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;\\subparagraph*{%s}&#34;</span>)))
+        (add-to-list <span style="color:#e6db74">&#39;org-latex-classes</span>
+                     <span style="color:#f92672">&#39;</span>(<span style="color:#e6db74">&#34;report&#34;</span>
+                       <span style="color:#e6db74">&#34;\\documentclass{report}&#34;</span>
+                       (<span style="color:#e6db74">&#34;\\chapter{%s}&#34;</span> <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;\\chapter*{%s}&#34;</span>)
+                       (<span style="color:#e6db74">&#34;\\section{%s}&#34;</span> <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;\\section*{%s}&#34;</span>)
+                       (<span style="color:#e6db74">&#34;\\subsection{%s}&#34;</span> <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;\\subsection*{%s}&#34;</span>)
+                       (<span style="color:#e6db74">&#34;\\subsubsection{%s}&#34;</span> <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;\\subsubsection*{%s}&#34;</span>))))))
 
-    (setq org-latex-listings 'minted)
-    (setq org-latex-minted-options
-          '(;;(&quot;frame&quot; &quot;lines&quot;)
-            (&quot;fontsize&quot; &quot;\\footnotesize&quot;)
-            (&quot;mathescape&quot; &quot;&quot;)
-            (&quot;samepage&quot; &quot;&quot;)
-            (&quot;xrightmargin&quot; &quot;0.5cm&quot;)
-            (&quot;xleftmargin&quot;  &quot;0.5cm&quot;)
+    (<span style="color:#66d9ef">setq</span> org-latex-listings <span style="color:#e6db74">&#39;minted</span>)
+    (<span style="color:#66d9ef">setq</span> org-latex-minted-options
+          <span style="color:#f92672">&#39;</span>(<span style="color:#75715e">;;(&#34;frame&#34; &#34;lines&#34;)</span>
+            (<span style="color:#e6db74">&#34;fontsize&#34;</span> <span style="color:#e6db74">&#34;\\footnotesize&#34;</span>)
+            (<span style="color:#e6db74">&#34;mathescape&#34;</span> <span style="color:#e6db74">&#34;&#34;</span>)
+            (<span style="color:#e6db74">&#34;samepage&#34;</span> <span style="color:#e6db74">&#34;&#34;</span>)
+            (<span style="color:#e6db74">&#34;xrightmargin&#34;</span> <span style="color:#e6db74">&#34;0.5cm&#34;</span>)
+            (<span style="color:#e6db74">&#34;xleftmargin&#34;</span>  <span style="color:#e6db74">&#34;0.5cm&#34;</span>)
             ))
-    (add-to-list 'org-latex-packages-alist '(&quot;&quot; &quot;minted&quot;))
-    (add-to-list 'org-latex-packages-alist '(&quot;&quot; &quot;listings&quot;))
-    (add-to-list 'org-latex-packages-alist '(&quot;&quot; &quot;color&quot;))
+    (add-to-list <span style="color:#e6db74">&#39;org-latex-packages-alist</span> <span style="color:#f92672">&#39;</span>(<span style="color:#e6db74">&#34;&#34;</span> <span style="color:#e6db74">&#34;minted&#34;</span>))
+    (add-to-list <span style="color:#e6db74">&#39;org-latex-packages-alist</span> <span style="color:#f92672">&#39;</span>(<span style="color:#e6db74">&#34;&#34;</span> <span style="color:#e6db74">&#34;listings&#34;</span>))
+    (add-to-list <span style="color:#e6db74">&#39;org-latex-packages-alist</span> <span style="color:#f92672">&#39;</span>(<span style="color:#e6db74">&#34;&#34;</span> <span style="color:#e6db74">&#34;color&#34;</span>))
 
-    ;; Change emphasis face for strike-through
-    (require 'cl)
-    (setq org-emphasis-alist
-          (cons '(&quot;+&quot; '(:inherit org-warning :inherit bold))
-                (delete* &quot;+&quot; org-emphasis-alist :key 'car :test 'equal)))
+    <span style="color:#75715e">;; Change emphasis face for strike-through</span>
+    (<span style="color:#a6e22e">require</span> <span style="color:#e6db74">&#39;cl</span>)
+    (<span style="color:#66d9ef">setq</span> org-emphasis-alist
+          (<span style="color:#a6e22e">cons</span> <span style="color:#f92672">&#39;</span>(<span style="color:#e6db74">&#34;+&#34;</span> <span style="color:#f92672">&#39;</span>(<span style="color:#e6db74">:inherit</span> org-warning <span style="color:#e6db74">:inherit</span> bold))
+                (delete* <span style="color:#e6db74">&#34;+&#34;</span> org-emphasis-alist <span style="color:#e6db74">:key</span> <span style="color:#e6db74">&#39;car</span> <span style="color:#e6db74">:test</span> <span style="color:#e6db74">&#39;equal</span>)))
 
-    ;; Change environment ox-beamer
+    <span style="color:#75715e">;; Change environment ox-beamer</span>
     (defun sk-beamer-bold (contents backend info)
-      (when (eq backend 'beamer)
-        (replace-regexp-in-string &quot;\\`\\\\[A-Za-z0-9]+&quot; &quot;\\\\structure&quot; contents)))
+      (when (<span style="color:#a6e22e">eq</span> backend <span style="color:#e6db74">&#39;beamer</span>)
+        (replace-regexp-in-string <span style="color:#e6db74">&#34;\\`\\\\[A-Za-z0-9]+&#34;</span> <span style="color:#e6db74">&#34;\\\\structure&#34;</span> contents)))
     (defun sk-beamer-underline (contents backend info)
-      (when (eq backend 'beamer)
-        (replace-regexp-in-string &quot;\\`\\\\[A-Za-z0-9]+&quot; &quot;\\\\textbf&quot; contents)))
+      (when (<span style="color:#a6e22e">eq</span> backend <span style="color:#e6db74">&#39;beamer</span>)
+        (replace-regexp-in-string <span style="color:#e6db74">&#34;\\`\\\\[A-Za-z0-9]+&#34;</span> <span style="color:#e6db74">&#34;\\\\textbf&#34;</span> contents)))
     (defun sk-beamer-strike (contents backend info)
-      (when (eq backend 'beamer)
-        (replace-regexp-in-string &quot;\\`\\\\[A-Za-z0-9]+&quot; &quot;\\\\alert&quot; contents)))
+      (when (<span style="color:#a6e22e">eq</span> backend <span style="color:#e6db74">&#39;beamer</span>)
+        (replace-regexp-in-string <span style="color:#e6db74">&#34;\\`\\\\[A-Za-z0-9]+&#34;</span> <span style="color:#e6db74">&#34;\\\\alert&#34;</span> contents)))
     (defun sk-beamer-footnote (contents backend info)
-      (when (eq backend 'beamer)
-        (replace-regexp-in-string &quot;\\`\\\\[A-Za-z0-9]+&quot; &quot;\\\\footnote[frame]&quot; contents)))
+      (when (<span style="color:#a6e22e">eq</span> backend <span style="color:#e6db74">&#39;beamer</span>)
+        (replace-regexp-in-string <span style="color:#e6db74">&#34;\\`\\\\[A-Za-z0-9]+&#34;</span> <span style="color:#e6db74">&#34;\\\\footnote[frame]&#34;</span> contents)))
     (defun sk-beamer-email (options backend)
-      &quot;Insert EMAIL as \email{EMAIL} in the latex backend when EMAIL is present.&quot;
-      (when (and (org-export-derived-backend-p backend 'latex)
-                 (plist-get options :with-email))
-        (plist-put options :latex-header
-                   (mapconcat 'identity
-                              (remove nil
-                                      (list
-                                       (plist-get options :latex-header)
-                                       (format &quot;\\email{%s}&quot;
-                                               (plist-get options :email))))
-                              &quot;\n&quot;))
-        ;; don't insert email in \thanks{.}
-        (plist-put options :with-email nil))
+      <span style="color:#e6db74">&#34;Insert EMAIL as \email{EMAIL} in the latex backend when EMAIL is present.&#34;</span>
+      (when (and (org-export-derived-backend-p backend <span style="color:#e6db74">&#39;latex</span>)
+                 (plist-get options <span style="color:#e6db74">:with-email</span>))
+        (plist-put options <span style="color:#e6db74">:latex-header</span>
+                   (mapconcat <span style="color:#e6db74">&#39;identity</span>
+                              (<span style="color:#a6e22e">remove</span> <span style="color:#66d9ef">nil</span>
+                                      (<span style="color:#a6e22e">list</span>
+                                       (plist-get options <span style="color:#e6db74">:latex-header</span>)
+                                       (<span style="color:#a6e22e">format</span> <span style="color:#e6db74">&#34;\\email{%s}&#34;</span>
+                                               (plist-get options <span style="color:#e6db74">:email</span>))))
+                              <span style="color:#e6db74">&#34;\n&#34;</span>))
+        <span style="color:#75715e">;; don&#39;t insert email in \thanks{.}</span>
+        (plist-put options <span style="color:#e6db74">:with-email</span> <span style="color:#66d9ef">nil</span>))
       options)
 
-    (add-to-list 'org-export-filter-bold-functions 'sk-beamer-bold)
-    (add-to-list 'org-export-filter-underline-functions 'sk-beamer-underline)
-    (add-to-list 'org-export-filter-strike-through-functions 'sk-beamer-strike)
-    (add-to-list 'org-export-filter-footnote-reference-functions 'sk-beamer-footnote)
-    (add-to-list 'org-beamer-environments-extra
-                 '(&quot;cbox&quot; &quot;c&quot; &quot;\\begin{cbox}%o(%h)&quot; &quot;\\end{cbox}&quot;))
-    (add-to-list 'org-export-filter-options-functions 'sk-beamer-email)
+    (add-to-list <span style="color:#e6db74">&#39;org-export-filter-bold-functions</span> <span style="color:#e6db74">&#39;sk-beamer-bold</span>)
+    (add-to-list <span style="color:#e6db74">&#39;org-export-filter-underline-functions</span> <span style="color:#e6db74">&#39;sk-beamer-underline</span>)
+    (add-to-list <span style="color:#e6db74">&#39;org-export-filter-strike-through-functions</span> <span style="color:#e6db74">&#39;sk-beamer-strike</span>)
+    (add-to-list <span style="color:#e6db74">&#39;org-export-filter-footnote-reference-functions</span> <span style="color:#e6db74">&#39;sk-beamer-footnote</span>)
+    (add-to-list <span style="color:#e6db74">&#39;org-beamer-environments-extra</span>
+                 <span style="color:#f92672">&#39;</span>(<span style="color:#e6db74">&#34;cbox&#34;</span> <span style="color:#e6db74">&#34;c&#34;</span> <span style="color:#e6db74">&#34;\\begin{cbox}%o(%h)&#34;</span> <span style="color:#e6db74">&#34;\\end{cbox}&#34;</span>))
+    (add-to-list <span style="color:#e6db74">&#39;org-export-filter-options-functions</span> <span style="color:#e6db74">&#39;sk-beamer-email</span>)
 
-    (setq org-latex-create-formula-image-program 'imagemagick)
-    (setq org-latex-preview-ltxpng-directory &quot;ltxpng/&quot;)
+    (<span style="color:#66d9ef">setq</span> org-latex-create-formula-image-program <span style="color:#e6db74">&#39;imagemagick</span>)
+    (<span style="color:#66d9ef">setq</span> org-latex-preview-ltxpng-directory <span style="color:#e6db74">&#34;ltxpng/&#34;</span>)
 
-    (setq org-ellipsis &quot;…&quot;
-          org-columns-ellipses &quot;…&quot;)
+    (<span style="color:#66d9ef">setq</span> org-ellipsis <span style="color:#e6db74">&#34;…&#34;</span>
+          org-columns-ellipses <span style="color:#e6db74">&#34;…&#34;</span>)
 
     (defface my/highlight-face
-      '((t (:weight normal :slant normal :box '(:line-width 1 :color &quot;#CC0000&quot;)
-                    :foreground &quot;#CC0000&quot; :background &quot;#FFFF88&quot;)))
-      &quot;Face for making FIXME and other warnings stand out.&quot;)
+      <span style="color:#f92672">&#39;</span>((<span style="color:#66d9ef">t</span> (<span style="color:#e6db74">:weight</span> normal <span style="color:#e6db74">:slant</span> normal <span style="color:#e6db74">:box</span> <span style="color:#f92672">&#39;</span>(<span style="color:#e6db74">:line-width</span> <span style="color:#ae81ff">1</span> <span style="color:#e6db74">:color</span> <span style="color:#e6db74">&#34;#CC0000&#34;</span>)
+                    <span style="color:#e6db74">:foreground</span> <span style="color:#e6db74">&#34;#CC0000&#34;</span> <span style="color:#e6db74">:background</span> <span style="color:#e6db74">&#34;#FFFF88&#34;</span>)))
+      <span style="color:#e6db74">&#34;Face for making FIXME and other warnings stand out.&#34;</span>)
 
     (defvar my/highlight-org-regexps
-      &quot;\\(FIXME\\|BUG\\|XXX\\|[Ee]rror\\|[Ww]arning\\|WARNING\\)&quot;
-      &quot;Patterns to highlight (for Org mode only, to ensure no conflict with the
-  Org mode TODO keyword).&quot;)
+      <span style="color:#e6db74">&#34;\\(FIXME\\|BUG\\|XXX\\|[Ee]rror\\|[Ww]arning\\|WARNING\\)&#34;</span>
+      <span style="color:#e6db74">&#34;Patterns to highlight (for Org mode only, to ensure no conflict with the
+</span><span style="color:#e6db74">  Org mode TODO keyword).&#34;</span>)
 
-    ;; set up highlighting of special patterns for Org mode only
-    (dolist (mode '(org-mode
+    <span style="color:#75715e">;; set up highlighting of special patterns for Org mode only</span>
+    (dolist (mode <span style="color:#f92672">&#39;</span>(org-mode
                     orgtbl-mode))
       (font-lock-add-keywords mode
-                              `((,my/highlight-org-regexps 1 'my/highlight-face
+                              <span style="color:#f92672">`</span>((<span style="color:#f92672">,</span>my/highlight-org-regexps <span style="color:#ae81ff">1</span> <span style="color:#e6db74">&#39;my/highlight-face</span>
                                                            prepend))))
 
-    (setq org-ditaa-jar-path &quot;/opt/javatools/ditaa/ditaa0_9.jar&quot;)
-    (setq org-plantuml-jar-path &quot;/opt/javatools/plantuml/plantuml.1.2018.7.jar&quot;)
+    (<span style="color:#66d9ef">setq</span> org-ditaa-jar-path <span style="color:#e6db74">&#34;/opt/javatools/ditaa/ditaa0_9.jar&#34;</span>)
+    (<span style="color:#66d9ef">setq</span> org-plantuml-jar-path <span style="color:#e6db74">&#34;/opt/javatools/plantuml/plantuml.1.2018.7.jar&#34;</span>)
 
-    (add-hook 'org-babel-after-execute-hook 'bh/display-inline-images 'append)
+    (add-hook <span style="color:#e6db74">&#39;org-babel-after-execute-hook</span> <span style="color:#e6db74">&#39;bh/display-inline-images</span> <span style="color:#e6db74">&#39;append</span>)
 
-    ; Make babel results blocks lowercase
-    (setq org-babel-results-keyword &quot;results&quot;)
+    <span style="color:#75715e">; Make babel results blocks lowercase</span>
+    (<span style="color:#66d9ef">setq</span> org-babel-results-keyword <span style="color:#e6db74">&#34;results&#34;</span>)
 
-    ;; Org-babel configuration
+    <span style="color:#75715e">;; Org-babel configuration</span>
     (org-babel-do-load-languages
-     'org-babel-load-languages
-     '((R . t)
-       (org . t)
-       (ditaa . t)
-       (plantuml . t)
-       (latex . t)
-       (dot . t)
-       (emacs-lisp . t)
-       (gnuplot . t)
-       (screen . nil)
-       (shell . t)
-       (sql . nil)
-       (sqlite . t)
-       (maxima . t)
-       (octave . t)
-       (cypher . t)))
-    (setq org-confirm-babel-evaluate nil)
-    (add-to-list 'org-src-lang-modes (quote (&quot;plantuml&quot; . fundamental)))
+     <span style="color:#e6db74">&#39;org-babel-load-languages</span>
+     <span style="color:#f92672">&#39;</span>((R <span style="color:#f92672">.</span> <span style="color:#66d9ef">t</span>)
+       (org <span style="color:#f92672">.</span> <span style="color:#66d9ef">t</span>)
+       (ditaa <span style="color:#f92672">.</span> <span style="color:#66d9ef">t</span>)
+       (plantuml <span style="color:#f92672">.</span> <span style="color:#66d9ef">t</span>)
+       (latex <span style="color:#f92672">.</span> <span style="color:#66d9ef">t</span>)
+       (dot <span style="color:#f92672">.</span> <span style="color:#66d9ef">t</span>)
+       (emacs-lisp <span style="color:#f92672">.</span> <span style="color:#66d9ef">t</span>)
+       (gnuplot <span style="color:#f92672">.</span> <span style="color:#66d9ef">t</span>)
+       (screen <span style="color:#f92672">.</span> <span style="color:#66d9ef">nil</span>)
+       (shell <span style="color:#f92672">.</span> <span style="color:#66d9ef">t</span>)
+       (sql <span style="color:#f92672">.</span> <span style="color:#66d9ef">nil</span>)
+       (sqlite <span style="color:#f92672">.</span> <span style="color:#66d9ef">t</span>)
+       (maxima <span style="color:#f92672">.</span> <span style="color:#66d9ef">t</span>)
+       (octave <span style="color:#f92672">.</span> <span style="color:#66d9ef">t</span>)
+       (cypher <span style="color:#f92672">.</span> <span style="color:#66d9ef">t</span>)))
+    (<span style="color:#66d9ef">setq</span> org-confirm-babel-evaluate <span style="color:#66d9ef">nil</span>)
+    (add-to-list <span style="color:#e6db74">&#39;org-src-lang-modes</span> (<span style="color:#66d9ef">quote</span> (<span style="color:#e6db74">&#34;plantuml&#34;</span> <span style="color:#f92672">.</span> fundamental)))
 
-    ;; Load tufte-org-mode
-    (add-to-list 'load-path &quot;/opt/emacs/tufte-org-mode/&quot;)
+    <span style="color:#75715e">;; Load tufte-org-mode</span>
+    (add-to-list <span style="color:#e6db74">&#39;load-path</span> <span style="color:#e6db74">&#34;/opt/emacs/tufte-org-mode/&#34;</span>)
 
-    (setq org-footnote-auto-adjust t)
-    (setq org-footnote-auto-label 'random)
+    (<span style="color:#66d9ef">setq</span> org-footnote-auto-adjust <span style="color:#66d9ef">t</span>)
+    (<span style="color:#66d9ef">setq</span> org-footnote-auto-label <span style="color:#e6db74">&#39;random</span>)
 
     )
 
 (defun wrap-displaystyle ()
-  &quot;Wrap latex maths equation with display style.&quot;
+  <span style="color:#e6db74">&#34;Wrap latex maths equation with display style.&#34;</span>
   (interactive)
   (save-excursion
-    (let ((finish nil)
-          (start nil))
-      (setq finish (- (search-forward &quot;$&quot;) 1))
-      (setq start (+ (search-backward &quot;$&quot; nil nil 2) 1))
+    (<span style="color:#66d9ef">let</span> ((finish <span style="color:#66d9ef">nil</span>)
+          (start <span style="color:#66d9ef">nil</span>))
+      (<span style="color:#66d9ef">setq</span> finish (<span style="color:#a6e22e">-</span> (search-forward <span style="color:#e6db74">&#34;$&#34;</span>) <span style="color:#ae81ff">1</span>))
+      (<span style="color:#66d9ef">setq</span> start (<span style="color:#a6e22e">+</span> (search-backward <span style="color:#e6db74">&#34;$&#34;</span> <span style="color:#66d9ef">nil</span> <span style="color:#66d9ef">nil</span> <span style="color:#ae81ff">2</span>) <span style="color:#ae81ff">1</span>))
       (kill-region start finish)
       (goto-char start)
-      (insert &quot;\\displaystyle{}&quot;)
-      (goto-char (- (search-forward &quot;$&quot;) 2))
+      (insert <span style="color:#e6db74">&#34;\\displaystyle{}&#34;</span>)
+      (goto-char (<span style="color:#a6e22e">-</span> (search-forward <span style="color:#e6db74">&#34;$&#34;</span>) <span style="color:#ae81ff">2</span>))
       (yank)
       (fill-paragraph)
       )))
 
-(global-set-key (kbd &quot;C-c 6&quot;) 'wrap-displaystyle)
+(global-set-key (kbd <span style="color:#e6db74">&#34;C-c 6&#34;</span>) <span style="color:#e6db74">&#39;wrap-displaystyle</span>)
 
-(use-package ebib
-  :ensure t
-  :config
+(<span style="color:#a6e22e">use-package</span> ebib
+  <span style="color:#e6db74">:ensure</span> <span style="color:#66d9ef">t</span>
+  <span style="color:#e6db74">:config</span>
 
-  (require 'ebib))
+  (<span style="color:#a6e22e">require</span> <span style="color:#e6db74">&#39;ebib</span>))
 
-(use-package ox-gfm
-  :ensure t
-  :config
-  (require 'ox-gfm))
+(<span style="color:#a6e22e">use-package</span> ox-gfm
+  <span style="color:#e6db74">:ensure</span> <span style="color:#66d9ef">t</span>
+  <span style="color:#e6db74">:config</span>
+  (<span style="color:#a6e22e">require</span> <span style="color:#e6db74">&#39;ox-gfm</span>))
 
-(use-package org-ref
-  :ensure t
-  :config
-  (require 'org-ref)
-  (setq org-ref-bibliography-notes &quot;~/org/bibliography/notes.org&quot;
-        org-ref-default-bibliography '(&quot;~/org/bibliography/references.bib&quot;)
-        org-ref-pdf-directory &quot;~/org/static/bibtex-pdfs/&quot;)
-  (setq org-ref-show-broken-links nil)
-  (setq org-ref-show-citation-on-enter nil))
+(<span style="color:#a6e22e">use-package</span> org-ref
+  <span style="color:#e6db74">:ensure</span> <span style="color:#66d9ef">t</span>
+  <span style="color:#e6db74">:config</span>
+  (<span style="color:#a6e22e">require</span> <span style="color:#e6db74">&#39;org-ref</span>)
+  (<span style="color:#66d9ef">setq</span> org-ref-bibliography-notes <span style="color:#e6db74">&#34;~/org/bibliography/notes.org&#34;</span>
+        org-ref-default-bibliography <span style="color:#f92672">&#39;</span>(<span style="color:#e6db74">&#34;~/org/bibliography/references.bib&#34;</span>)
+        org-ref-pdf-directory <span style="color:#e6db74">&#34;~/org/static/bibtex-pdfs/&#34;</span>)
+  (<span style="color:#66d9ef">setq</span> org-ref-show-broken-links <span style="color:#66d9ef">nil</span>)
+  (<span style="color:#66d9ef">setq</span> org-ref-show-citation-on-enter <span style="color:#66d9ef">nil</span>))
 
-;; org-noter
-(use-package org-noter
-  :ensure t
-  :config
-  (require 'org-noter)
+<span style="color:#75715e">;; org-noter</span>
+(<span style="color:#a6e22e">use-package</span> org-noter
+  <span style="color:#e6db74">:ensure</span> <span style="color:#66d9ef">t</span>
+  <span style="color:#e6db74">:config</span>
+  (<span style="color:#a6e22e">require</span> <span style="color:#e6db74">&#39;org-noter</span>)
 
-  (setq org-noter-auto-save-last-location t)
-  (setq org-noter-always-create-frame nil)
-  (setq org-noter-doc-split-fraction '(0.63 . 0.5)))
+  (<span style="color:#66d9ef">setq</span> org-noter-auto-save-last-location <span style="color:#66d9ef">t</span>)
+  (<span style="color:#66d9ef">setq</span> org-noter-always-create-frame <span style="color:#66d9ef">nil</span>)
+  (<span style="color:#66d9ef">setq</span> org-noter-doc-split-fraction <span style="color:#f92672">&#39;</span>(<span style="color:#ae81ff">0.63</span> <span style="color:#f92672">.</span> <span style="color:#ae81ff">0.5</span>)))
 
-;; Inline images
-(use-package org-download
-  :ensure t
-  :config
-  (require 'org-download)
-  (setq-default org-download-image-dir (concat org-directory &quot;/img&quot;))
-  (setq org-image-actual-width nil)
+<span style="color:#75715e">;; Inline images</span>
+(<span style="color:#a6e22e">use-package</span> org-download
+  <span style="color:#e6db74">:ensure</span> <span style="color:#66d9ef">t</span>
+  <span style="color:#e6db74">:config</span>
+  (<span style="color:#a6e22e">require</span> <span style="color:#e6db74">&#39;org-download</span>)
+  (setq-default org-download-image-dir (concat org-directory <span style="color:#e6db74">&#34;/img&#34;</span>))
+  (<span style="color:#66d9ef">setq</span> org-image-actual-width <span style="color:#66d9ef">nil</span>)
 
   (defun do-org-show-all-inline-images ()
     (interactive)
-    (org-display-inline-images t t))
-  (global-set-key (kbd &quot;C-c C-x C v&quot;)
-                  'do-org-show-all-inline-images))
+    (org-display-inline-images <span style="color:#66d9ef">t</span> <span style="color:#66d9ef">t</span>))
+  (global-set-key (kbd <span style="color:#e6db74">&#34;C-c C-x C v&#34;</span>)
+                  <span style="color:#e6db74">&#39;do-org-show-all-inline-images</span>))
 
-;; Use htmlize
-(use-package htmlize
-  :ensure t
-  :config
-  (require 'htmlize))
+<span style="color:#75715e">;; Use htmlize</span>
+(<span style="color:#a6e22e">use-package</span> htmlize
+  <span style="color:#e6db74">:ensure</span> <span style="color:#66d9ef">t</span>
+  <span style="color:#e6db74">:config</span>
+  (<span style="color:#a6e22e">require</span> <span style="color:#e6db74">&#39;htmlize</span>))
 
-(use-package org-inlinetask
-  :bind (:map org-mode-map
-              (&quot;C-c C-x t&quot; . org-inlinetask-insert-task))
-  :after (org)
-  :commands (org-inlinetask-insert-task))
-(use-package org-bullets
-  :ensure t
-  :commands (org-bullets-mode)
-  :init (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
+(<span style="color:#a6e22e">use-package</span> org-inlinetask
+  <span style="color:#e6db74">:bind</span> (<span style="color:#e6db74">:map</span> org-mode-map
+              (<span style="color:#e6db74">&#34;C-c C-x t&#34;</span> <span style="color:#f92672">.</span> org-inlinetask-insert-task))
+  <span style="color:#e6db74">:after</span> (org)
+  <span style="color:#e6db74">:commands</span> (org-inlinetask-insert-task))
+(<span style="color:#a6e22e">use-package</span> org-bullets
+  <span style="color:#e6db74">:ensure</span> <span style="color:#66d9ef">t</span>
+  <span style="color:#e6db74">:commands</span> (org-bullets-mode)
+  <span style="color:#e6db74">:init</span> (add-hook <span style="color:#e6db74">&#39;org-mode-hook</span> (lambda () (org-bullets-mode <span style="color:#ae81ff">1</span>))))
 
-(use-package ox-hugo
-  :ensure t            ;Auto-install the package from Melpa (optional)
-  :after ox)
-;; (use-package ox-hugo-auto-export) ;If you want the auto-exporting on file saves
+(<span style="color:#a6e22e">use-package</span> ox-hugo
+  <span style="color:#e6db74">:ensure</span> <span style="color:#66d9ef">t</span>            <span style="color:#75715e">;Auto-install the package from Melpa (optional)</span>
+  <span style="color:#e6db74">:after</span> ox)
+<span style="color:#75715e">;; (use-package ox-hugo-auto-export) ;If you want the auto-exporting on file saves</span>
 
-;; Org mode
+<span style="color:#75715e">;; Org mode</span>
 (defun capture-text-fix(string-to-transform)
-  &quot;Transforms [ into ( and ] into ), other chars left unchanged.
-Argument STRING-TO-TRANSFORM .&quot;
+  <span style="color:#e6db74">&#34;Transforms [ into ( and ] into ), other chars left unchanged.
+</span><span style="color:#e6db74">Argument STRING-TO-TRANSFORM .&#34;</span>
   (org-link-unescape
-   (concat (mapcar #'(lambda (c) (if (equal c ?\[) ?\( (if (equal c ?\]) ?\) c)))
+   (concat (<span style="color:#a6e22e">mapcar</span> <span style="color:#a6e22e">#&#39;</span>(lambda (c) (<span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">equal</span> c ?\[) ?\( (<span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">equal</span> c ?\]) ?\) c)))
                    string-to-transform)))
   )
 
 (defun org-hugo-new-subtree-post-capture-template ()
-  &quot;Return `org-capture' template string for new Hugo post.  See `org-capture-templates' for more information.&quot;
-  (let* ((title (read-from-minibuffer &quot;Post Title: &quot;)) ;Prompt to enter the post title
+  <span style="color:#e6db74">&#34;Return `org-capture&#39; template string for new Hugo post.  See `org-capture-templates&#39; for more information.&#34;</span>
+  (<span style="color:#66d9ef">let*</span> ((title (read-from-minibuffer <span style="color:#e6db74">&#34;Post Title: &#34;</span>)) <span style="color:#75715e">;Prompt to enter the post title</span>
          (fname (org-hugo-slug title))
-         (date (plist-get org-capture-plist :date)))
-    (mapconcat #'identity
-               `(
-                 ,(concat &quot;* TODO &quot; title)
-                 &quot;:PROPERTIES:&quot;
-                 ,(concat &quot;:EXPORT_FILE_NAME: &quot; fname)
-                 ,(concat &quot;:EXPORT_DATE: &quot; date)
-                 &quot;:EXPORT_HUGO_DRAFT: true&quot;
-                 &quot;:END:&quot;
-                 &quot;%?\n&quot;)          ;Place the cursor here finally
-               &quot;\n&quot;)))
+         (date (plist-get org-capture-plist <span style="color:#e6db74">:date</span>)))
+    (mapconcat <span style="color:#a6e22e">#&#39;</span><span style="color:#a6e22e">identity</span>
+               <span style="color:#f92672">`</span>(
+                 <span style="color:#f92672">,</span>(concat <span style="color:#e6db74">&#34;* TODO &#34;</span> title)
+                 <span style="color:#e6db74">&#34;:PROPERTIES:&#34;</span>
+                 <span style="color:#f92672">,</span>(concat <span style="color:#e6db74">&#34;:EXPORT_FILE_NAME: &#34;</span> fname)
+                 <span style="color:#f92672">,</span>(concat <span style="color:#e6db74">&#34;:EXPORT_DATE: &#34;</span> date)
+                 <span style="color:#e6db74">&#34;:EXPORT_HUGO_DRAFT: true&#34;</span>
+                 <span style="color:#e6db74">&#34;:END:&#34;</span>
+                 <span style="color:#e6db74">&#34;%?\n&#34;</span>)          <span style="color:#75715e">;Place the cursor here finally</span>
+               <span style="color:#e6db74">&#34;\n&#34;</span>)))
 
 (defun bh/remove-empty-drawer-on-clock-out ()
-  &quot;Remove empty drawer.&quot;
+  <span style="color:#e6db74">&#34;Remove empty drawer.&#34;</span>
   (interactive)
   (save-excursion
-    (beginning-of-line 0)
+    (beginning-of-line <span style="color:#ae81ff">0</span>)
     (org-remove-empty-drawer-at (point))))
 
 (defun bh/hide-other ()
-  &quot;Hide other headings.&quot;
+  <span style="color:#e6db74">&#34;Hide other headings.&#34;</span>
   (interactive)
   (save-excursion
-    (org-back-to-heading 'invisible-ok)
+    (org-back-to-heading <span style="color:#e6db74">&#39;invisible-ok</span>)
     (outline-hide-other)
     (org-cycle)
     (org-cycle)
     (org-cycle)))
 
 (defun bh/set-truncate-lines ()
-  &quot;Toggle value of ‘truncate-lines’ and refresh window display.&quot;
+  <span style="color:#e6db74">&#34;Toggle value of ‘truncate-lines’ and refresh window display.&#34;</span>
   (interactive)
-  (setq truncate-lines (not truncate-lines))
-  ;; now refresh window display (an idiom from simple.el):
+  (<span style="color:#66d9ef">setq</span> truncate-lines (<span style="color:#a6e22e">not</span> truncate-lines))
+  <span style="color:#75715e">;; now refresh window display (an idiom from simple.el):</span>
   (save-excursion
     (set-window-start (selected-window)
                       (window-start (selected-window)))))
 
 (defun bh/make-org-scratch ()
-  &quot;Make scratch org file.&quot;
+  <span style="color:#e6db74">&#34;Make scratch org file.&#34;</span>
   (interactive)
-  (find-file &quot;/tmp/publish/scratch.org&quot;)
-  (gnus-make-directory &quot;/tmp/publish&quot;))
+  (find-file <span style="color:#e6db74">&#34;/tmp/publish/scratch.org&#34;</span>)
+  (gnus-make-directory <span style="color:#e6db74">&#34;/tmp/publish&#34;</span>))
 
 (defun bh/switch-to-scratch ()
-  &quot;Switch to scratch.&quot;
+  <span style="color:#e6db74">&#34;Switch to scratch.&#34;</span>
   (interactive)
-  (switch-to-buffer &quot;*scratch*&quot;))
+  (switch-to-buffer <span style="color:#e6db74">&#34;*scratch*&#34;</span>))
 
 (defun bh/clock-in-to-next (kw)
-  &quot;Switch a task from TODO to NEXT when clocking in.
-Skips capture tasks, projects, and subprojects.
-Switch projects and subprojects from NEXT back to TODO
-Argument KW .&quot;
-  (when (not (and (boundp 'org-capture-mode) org-capture-mode))
+  <span style="color:#e6db74">&#34;Switch a task from TODO to NEXT when clocking in.
+</span><span style="color:#e6db74">Skips capture tasks, projects, and subprojects.
+</span><span style="color:#e6db74">Switch projects and subprojects from NEXT back to TODO
+</span><span style="color:#e6db74">Argument KW .&#34;</span>
+  (when (<span style="color:#a6e22e">not</span> (and (<span style="color:#a6e22e">boundp</span> <span style="color:#e6db74">&#39;org-capture-mode</span>) org-capture-mode))
     (cond
-     ((and (member (org-get-todo-state) (list &quot;TODO&quot;))
+     ((and (<span style="color:#a6e22e">member</span> (org-get-todo-state) (<span style="color:#a6e22e">list</span> <span style="color:#e6db74">&#34;TODO&#34;</span>))
            (bh/is-task-p))
-      &quot;NEXT&quot;)
-     ((and (member (org-get-todo-state) (list &quot;NEXT&quot;))
+      <span style="color:#e6db74">&#34;NEXT&#34;</span>)
+     ((and (<span style="color:#a6e22e">member</span> (org-get-todo-state) (<span style="color:#a6e22e">list</span> <span style="color:#e6db74">&#34;NEXT&#34;</span>))
            (bh/is-project-p))
-      &quot;TODO&quot;))))
+      <span style="color:#e6db74">&#34;TODO&#34;</span>))))
 
 (defun bh/find-project-task ()
-  &quot;Move point to the parent (project) task if any.&quot;
+  <span style="color:#e6db74">&#34;Move point to the parent (project) task if any.&#34;</span>
   (save-restriction
     (widen)
-    (let ((parent-task (save-excursion (org-back-to-heading 'invisible-ok) (point))))
+    (<span style="color:#66d9ef">let</span> ((parent-task (save-excursion (org-back-to-heading <span style="color:#e6db74">&#39;invisible-ok</span>) (point))))
       (while (org-up-heading-safe)
-        (when (member (nth 2 (org-heading-components)) org-todo-keywords-1)
-          (setq parent-task (point))))
+        (when (<span style="color:#a6e22e">member</span> (<span style="color:#a6e22e">nth</span> <span style="color:#ae81ff">2</span> (org-heading-components)) org-todo-keywords-1)
+          (<span style="color:#66d9ef">setq</span> parent-task (point))))
       (goto-char parent-task)
       parent-task)))
 
 (defun bh/punch-in (arg)
-  &quot;Start continuous clocking and set the default task to the selected task.
-If no task is selected set the Organization task
-as the default task.
-Argument ARG .&quot;
-  (interactive &quot;p&quot;)
-  (setq bh/keep-clock-running t)
-  (if (equal major-mode 'org-agenda-mode)
-      ;;
-      ;; We're in the agenda
-      ;;
-      (let* ((marker (org-get-at-bol 'org-hd-marker))
+  <span style="color:#e6db74">&#34;Start continuous clocking and set the default task to the selected task.
+</span><span style="color:#e6db74">If no task is selected set the Organization task
+</span><span style="color:#e6db74">as the default task.
+</span><span style="color:#e6db74">Argument ARG .&#34;</span>
+  (interactive <span style="color:#e6db74">&#34;p&#34;</span>)
+  (<span style="color:#66d9ef">setq</span> bh/keep-clock-running <span style="color:#66d9ef">t</span>)
+  (<span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">equal</span> major-mode <span style="color:#e6db74">&#39;org-agenda-mode</span>)
+      <span style="color:#75715e">;;</span>
+      <span style="color:#75715e">;; We&#39;re in the agenda</span>
+      <span style="color:#75715e">;;</span>
+      (<span style="color:#66d9ef">let*</span> ((marker (org-get-at-bol <span style="color:#e6db74">&#39;org-hd-marker</span>))
              (tags (org-with-point-at marker (org-get-tags-at))))
-        (if (and (eq arg 4) tags)
-            (org-agenda-clock-in '(16))
+        (<span style="color:#66d9ef">if</span> (and (<span style="color:#a6e22e">eq</span> arg <span style="color:#ae81ff">4</span>) tags)
+            (org-agenda-clock-in <span style="color:#f92672">&#39;</span>(<span style="color:#ae81ff">16</span>))
           (bh/clock-in-organization-task-as-default)))
-    ;;
-    ;; We are not in the agenda
-    ;;
+    <span style="color:#75715e">;;</span>
+    <span style="color:#75715e">;; We are not in the agenda</span>
+    <span style="color:#75715e">;;</span>
     (save-restriction
       (widen)
-                                        ; Find the tags on the current task
-      (if (and (equal major-mode 'org-mode) (not (org-before-first-heading-p)) (eq arg 4))
-          (org-clock-in '(16))
+                                        <span style="color:#75715e">; Find the tags on the current task</span>
+      (<span style="color:#66d9ef">if</span> (and (<span style="color:#a6e22e">equal</span> major-mode <span style="color:#e6db74">&#39;org-mode</span>) (<span style="color:#a6e22e">not</span> (org-before-first-heading-p)) (<span style="color:#a6e22e">eq</span> arg <span style="color:#ae81ff">4</span>))
+          (org-clock-in <span style="color:#f92672">&#39;</span>(<span style="color:#ae81ff">16</span>))
         (bh/clock-in-organization-task-as-default)))))
 
 (defun bh/punch-out ()
-  &quot;Puch out.&quot;
+  <span style="color:#e6db74">&#34;Puch out.&#34;</span>
   (interactive)
-  (setq bh/keep-clock-running nil)
+  (<span style="color:#66d9ef">setq</span> bh/keep-clock-running <span style="color:#66d9ef">nil</span>)
   (when (org-clock-is-active)
     (org-clock-out))
   (org-agenda-remove-restriction-lock))
 
 (defun bh/clock-in-default-task ()
-  &quot;Clock in default task.&quot;
+  <span style="color:#e6db74">&#34;Clock in default task.&#34;</span>
   (save-excursion
     (org-with-point-at org-clock-default-task
       (org-clock-in))))
 
 (defun bh/clock-in-parent-task ()
-  &quot;Move point to the parent (project) task if any and clock in.&quot;
-  (let ((parent-task))
+  <span style="color:#e6db74">&#34;Move point to the parent (project) task if any and clock in.&#34;</span>
+  (<span style="color:#66d9ef">let</span> ((parent-task))
     (save-excursion
       (save-restriction
         (widen)
-        (while (and (not parent-task) (org-up-heading-safe))
-          (when (member (nth 2 (org-heading-components)) org-todo-keywords-1)
-            (setq parent-task (point))))
-        (if parent-task
+        (while (and (<span style="color:#a6e22e">not</span> parent-task) (org-up-heading-safe))
+          (when (<span style="color:#a6e22e">member</span> (<span style="color:#a6e22e">nth</span> <span style="color:#ae81ff">2</span> (org-heading-components)) org-todo-keywords-1)
+            (<span style="color:#66d9ef">setq</span> parent-task (point))))
+        (<span style="color:#66d9ef">if</span> parent-task
             (org-with-point-at parent-task
               (org-clock-in))
           (when bh/keep-clock-running
             (bh/clock-in-default-task)))))))
 
 (defun bh/clock-in-organization-task-as-default ()
-  &quot;Clock in organization task as default.&quot;
+  <span style="color:#e6db74">&#34;Clock in organization task as default.&#34;</span>
   (interactive)
-  (org-with-point-at (org-id-find bh/organization-task-id 'marker)
-    (org-clock-in '(16))))
+  (org-with-point-at (org-id-find bh/organization-task-id <span style="color:#e6db74">&#39;marker</span>)
+    (org-clock-in <span style="color:#f92672">&#39;</span>(<span style="color:#ae81ff">16</span>))))
 
 (defun bh/clock-out-maybe ()
-  &quot;Maybe clock out.&quot;
+  <span style="color:#e6db74">&#34;Maybe clock out.&#34;</span>
   (when (and bh/keep-clock-running
-             (not org-clock-clocking-in)
+             (<span style="color:#a6e22e">not</span> org-clock-clocking-in)
              (marker-buffer org-clock-default-task)
-             (not org-clock-resolving-clocks-due-to-idleness))
+             (<span style="color:#a6e22e">not</span> org-clock-resolving-clocks-due-to-idleness))
     (bh/clock-in-parent-task)))
 
 (defun bh/clock-in-task-by-id (id)
-  &quot;Clock in a task by ID.&quot;
-  (org-with-point-at (org-id-find id 'marker)
-    (org-clock-in nil)))
+  <span style="color:#e6db74">&#34;Clock in a task by ID.&#34;</span>
+  (org-with-point-at (org-id-find id <span style="color:#e6db74">&#39;marker</span>)
+    (org-clock-in <span style="color:#66d9ef">nil</span>)))
 
 (defun bh/clock-in-last-task (arg)
-  &quot;Clock in the interrupted task if there is one.
-Skip the default task and get the next one.
-A prefix ARG forces clock in of the default task.&quot;
-  (interactive &quot;p&quot;)
-  (let ((clock-in-to-task
+  <span style="color:#e6db74">&#34;Clock in the interrupted task if there is one.
+</span><span style="color:#e6db74">Skip the default task and get the next one.
+</span><span style="color:#e6db74">A prefix ARG forces clock in of the default task.&#34;</span>
+  (interactive <span style="color:#e6db74">&#34;p&#34;</span>)
+  (<span style="color:#66d9ef">let</span> ((clock-in-to-task
          (cond
-          ((eq arg 4) org-clock-default-task)
+          ((<span style="color:#a6e22e">eq</span> arg <span style="color:#ae81ff">4</span>) org-clock-default-task)
           ((and (org-clock-is-active)
-                (equal org-clock-default-task (cadr org-clock-history)))
-           (caddr org-clock-history))
-          ((org-clock-is-active) (cadr org-clock-history))
-          ((equal org-clock-default-task (car org-clock-history)) (cadr org-clock-history))
-          (t (car org-clock-history)))))
+                (<span style="color:#a6e22e">equal</span> org-clock-default-task (<span style="color:#a6e22e">cadr</span> org-clock-history)))
+           (<span style="color:#a6e22e">caddr</span> org-clock-history))
+          ((org-clock-is-active) (<span style="color:#a6e22e">cadr</span> org-clock-history))
+          ((<span style="color:#a6e22e">equal</span> org-clock-default-task (<span style="color:#a6e22e">car</span> org-clock-history)) (<span style="color:#a6e22e">cadr</span> org-clock-history))
+          (<span style="color:#66d9ef">t</span> (<span style="color:#a6e22e">car</span> org-clock-history)))))
     (widen)
     (org-with-point-at clock-in-to-task
-      (org-clock-in nil))))
+      (org-clock-in <span style="color:#66d9ef">nil</span>))))
 
 (defun bh/is-project-p ()
-  &quot;Any task with a todo keyword subtask.&quot;
+  <span style="color:#e6db74">&#34;Any task with a todo keyword subtask.&#34;</span>
   (save-restriction
     (widen)
-    (let ((has-subtask)
-          (subtree-end (save-excursion (org-end-of-subtree t)))
-          (is-a-task (member (nth 2 (org-heading-components)) org-todo-keywords-1)))
+    (<span style="color:#66d9ef">let</span> ((has-subtask)
+          (subtree-end (save-excursion (org-end-of-subtree <span style="color:#66d9ef">t</span>)))
+          (is-a-task (<span style="color:#a6e22e">member</span> (<span style="color:#a6e22e">nth</span> <span style="color:#ae81ff">2</span> (org-heading-components)) org-todo-keywords-1)))
       (save-excursion
-        (forward-line 1)
-        (while (and (not has-subtask)
-                    (&lt; (point) subtree-end)
-                    (re-search-forward &quot;^\*+ &quot; subtree-end t))
-          (when (member (org-get-todo-state) org-todo-keywords-1)
-            (setq has-subtask t))))
+        (forward-line <span style="color:#ae81ff">1</span>)
+        (while (and (<span style="color:#a6e22e">not</span> has-subtask)
+                    (<span style="color:#a6e22e">&lt;</span> (point) subtree-end)
+                    (re-search-forward <span style="color:#e6db74">&#34;^\*+ &#34;</span> subtree-end <span style="color:#66d9ef">t</span>))
+          (when (<span style="color:#a6e22e">member</span> (org-get-todo-state) org-todo-keywords-1)
+            (<span style="color:#66d9ef">setq</span> has-subtask <span style="color:#66d9ef">t</span>))))
       (and is-a-task has-subtask))))
 
 (defun bh/is-project-subtree-p ()
-  &quot;Any task with a todo keyword that is in a project subtree.
-Callers of this function already widen the buffer view.&quot;
-  (let ((task (save-excursion (org-back-to-heading 'invisible-ok)
+  <span style="color:#e6db74">&#34;Any task with a todo keyword that is in a project subtree.
+</span><span style="color:#e6db74">Callers of this function already widen the buffer view.&#34;</span>
+  (<span style="color:#66d9ef">let</span> ((task (save-excursion (org-back-to-heading <span style="color:#e6db74">&#39;invisible-ok</span>)
                               (point))))
     (save-excursion
       (bh/find-project-task)
-      (if (equal (point) task)
-          nil
-        t))))
+      (<span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">equal</span> (point) task)
+          <span style="color:#66d9ef">nil</span>
+        <span style="color:#66d9ef">t</span>))))
 
 (defun bh/is-task-p ()
-  &quot;Any task with a todo keyword and no subtask.&quot;
+  <span style="color:#e6db74">&#34;Any task with a todo keyword and no subtask.&#34;</span>
   (save-restriction
     (widen)
-    (let ((has-subtask)
-          (subtree-end (save-excursion (org-end-of-subtree t)))
-          (is-a-task (member (nth 2 (org-heading-components)) org-todo-keywords-1)))
+    (<span style="color:#66d9ef">let</span> ((has-subtask)
+          (subtree-end (save-excursion (org-end-of-subtree <span style="color:#66d9ef">t</span>)))
+          (is-a-task (<span style="color:#a6e22e">member</span> (<span style="color:#a6e22e">nth</span> <span style="color:#ae81ff">2</span> (org-heading-components)) org-todo-keywords-1)))
       (save-excursion
-        (forward-line 1)
-        (while (and (not has-subtask)
-                    (&lt; (point) subtree-end)
-                    (re-search-forward &quot;^\*+ &quot; subtree-end t))
-          (when (member (org-get-todo-state) org-todo-keywords-1)
-            (setq has-subtask t))))
-      (and is-a-task (not has-subtask)))))
+        (forward-line <span style="color:#ae81ff">1</span>)
+        (while (and (<span style="color:#a6e22e">not</span> has-subtask)
+                    (<span style="color:#a6e22e">&lt;</span> (point) subtree-end)
+                    (re-search-forward <span style="color:#e6db74">&#34;^\*+ &#34;</span> subtree-end <span style="color:#66d9ef">t</span>))
+          (when (<span style="color:#a6e22e">member</span> (org-get-todo-state) org-todo-keywords-1)
+            (<span style="color:#66d9ef">setq</span> has-subtask <span style="color:#66d9ef">t</span>))))
+      (and is-a-task (<span style="color:#a6e22e">not</span> has-subtask)))))
 
 (defun bh/is-subproject-p ()
-  &quot;Any task which is a subtask of another project.&quot;
-  (let ((is-subproject)
-        (is-a-task (member (nth 2 (org-heading-components)) org-todo-keywords-1)))
+  <span style="color:#e6db74">&#34;Any task which is a subtask of another project.&#34;</span>
+  (<span style="color:#66d9ef">let</span> ((is-subproject)
+        (is-a-task (<span style="color:#a6e22e">member</span> (<span style="color:#a6e22e">nth</span> <span style="color:#ae81ff">2</span> (org-heading-components)) org-todo-keywords-1)))
     (save-excursion
-      (while (and (not is-subproject) (org-up-heading-safe))
-        (when (member (nth 2 (org-heading-components)) org-todo-keywords-1)
-          (setq is-subproject t))))
+      (while (and (<span style="color:#a6e22e">not</span> is-subproject) (org-up-heading-safe))
+        (when (<span style="color:#a6e22e">member</span> (<span style="color:#a6e22e">nth</span> <span style="color:#ae81ff">2</span> (org-heading-components)) org-todo-keywords-1)
+          (<span style="color:#66d9ef">setq</span> is-subproject <span style="color:#66d9ef">t</span>))))
     (and is-a-task is-subproject)))
 
 (defun bh/list-sublevels-for-projects-indented ()
-  &quot;List sublevels for a project.
-Set ‘org-tags-match-list-sublevels’ so when restricted
-to a subtree we list all subtasks.  This is normally used
-by skipping functions where this variable is already local to the agenda.&quot;
-  (if (marker-buffer org-agenda-restrict-begin)
-      (setq org-tags-match-list-sublevels 'indented)
-    (setq org-tags-match-list-sublevels nil))
-  nil)
+  <span style="color:#e6db74">&#34;List sublevels for a project.
+</span><span style="color:#e6db74">Set ‘org-tags-match-list-sublevels’ so when restricted
+</span><span style="color:#e6db74">to a subtree we list all subtasks.  This is normally used
+</span><span style="color:#e6db74">by skipping functions where this variable is already local to the agenda.&#34;</span>
+  (<span style="color:#66d9ef">if</span> (marker-buffer org-agenda-restrict-begin)
+      (<span style="color:#66d9ef">setq</span> org-tags-match-list-sublevels <span style="color:#e6db74">&#39;indented</span>)
+    (<span style="color:#66d9ef">setq</span> org-tags-match-list-sublevels <span style="color:#66d9ef">nil</span>))
+  <span style="color:#66d9ef">nil</span>)
 
 (defun bh/list-sublevels-for-projects ()
-  &quot;List sublevels for all projects.
-Set ‘org-tags-match-list-sublevels’ so when restricted
-to a subtree we list all subtasks.  This is normally used
-by skipping functions where this variable is already local to the agenda.&quot;
-  (if (marker-buffer org-agenda-restrict-begin)
-      (setq org-tags-match-list-sublevels t)
-    (setq org-tags-match-list-sublevels nil))
-  nil)
+  <span style="color:#e6db74">&#34;List sublevels for all projects.
+</span><span style="color:#e6db74">Set ‘org-tags-match-list-sublevels’ so when restricted
+</span><span style="color:#e6db74">to a subtree we list all subtasks.  This is normally used
+</span><span style="color:#e6db74">by skipping functions where this variable is already local to the agenda.&#34;</span>
+  (<span style="color:#66d9ef">if</span> (marker-buffer org-agenda-restrict-begin)
+      (<span style="color:#66d9ef">setq</span> org-tags-match-list-sublevels <span style="color:#66d9ef">t</span>)
+    (<span style="color:#66d9ef">setq</span> org-tags-match-list-sublevels <span style="color:#66d9ef">nil</span>))
+  <span style="color:#66d9ef">nil</span>)
 
-(defvar bh/hide-sche-and-wait-next-tasks t)
+(defvar bh/hide-sche-and-wait-next-tasks <span style="color:#66d9ef">t</span>)
 
 (defun bh/toggle-next-task-display ()
-  &quot;Toggle next task display.&quot;
+  <span style="color:#e6db74">&#34;Toggle next task display.&#34;</span>
   (interactive)
-  (setq bh/hide-sche-and-wait-next-tasks (not bh/hide-sche-and-wait-next-tasks))
-  (when  (equal major-mode 'org-agenda-mode)
+  (<span style="color:#66d9ef">setq</span> bh/hide-sche-and-wait-next-tasks (<span style="color:#a6e22e">not</span> bh/hide-sche-and-wait-next-tasks))
+  (when  (<span style="color:#a6e22e">equal</span> major-mode <span style="color:#e6db74">&#39;org-agenda-mode</span>)
     (org-agenda-redo))
-  (message &quot;%s WAITING and SCHEDULED NEXT Tasks&quot; (if bh/hide-sche-and-wait-next-tasks &quot;Hide&quot; &quot;Show&quot;)))
+  (message <span style="color:#e6db74">&#34;%s WAITING and SCHEDULED NEXT Tasks&#34;</span> (<span style="color:#66d9ef">if</span> bh/hide-sche-and-wait-next-tasks <span style="color:#e6db74">&#34;Hide&#34;</span> <span style="color:#e6db74">&#34;Show&#34;</span>)))
 
 (defun bh/skip-stuck-projects ()
-  &quot;Skip trees that are not stuck projects.&quot;
+  <span style="color:#e6db74">&#34;Skip trees that are not stuck projects.&#34;</span>
   (save-restriction
     (widen)
-    (let ((next-headline (save-excursion (or (outline-next-heading) (point-max)))))
-      (if (bh/is-project-p)
-          (let* ((subtree-end (save-excursion (org-end-of-subtree t)))
+    (<span style="color:#66d9ef">let</span> ((next-headline (save-excursion (or (outline-next-heading) (point-max)))))
+      (<span style="color:#66d9ef">if</span> (bh/is-project-p)
+          (<span style="color:#66d9ef">let*</span> ((subtree-end (save-excursion (org-end-of-subtree <span style="color:#66d9ef">t</span>)))
                  (has-next ))
             (save-excursion
-              (forward-line 1)
-              (while (and (not has-next) (&lt; (point) subtree-end) (re-search-forward &quot;^\\*+ NEXT &quot; subtree-end t))
-                (unless (member &quot;WAITING&quot; (org-get-tags-at))
-                  (setq has-next t))))
-            (if has-next
-                nil
-              next-headline)) ; a stuck project, has subtasks but no next task
-        nil))))
+              (forward-line <span style="color:#ae81ff">1</span>)
+              (while (and (<span style="color:#a6e22e">not</span> has-next) (<span style="color:#a6e22e">&lt;</span> (point) subtree-end) (re-search-forward <span style="color:#e6db74">&#34;^\\*+ NEXT &#34;</span> subtree-end <span style="color:#66d9ef">t</span>))
+                (unless (<span style="color:#a6e22e">member</span> <span style="color:#e6db74">&#34;WAITING&#34;</span> (org-get-tags-at))
+                  (<span style="color:#66d9ef">setq</span> has-next <span style="color:#66d9ef">t</span>))))
+            (<span style="color:#66d9ef">if</span> has-next
+                <span style="color:#66d9ef">nil</span>
+              next-headline)) <span style="color:#75715e">; a stuck project, has subtasks but no next task</span>
+        <span style="color:#66d9ef">nil</span>))))
 
 (defun bh/skip-non-stuck-projects ()
-  &quot;Skip trees that are not stuck projects.&quot;
-  ;; (bh/list-sublevels-for-projects-indented)
+  <span style="color:#e6db74">&#34;Skip trees that are not stuck projects.&#34;</span>
+  <span style="color:#75715e">;; (bh/list-sublevels-for-projects-indented)</span>
   (save-restriction
     (widen)
-    (let ((next-headline (save-excursion (or (outline-next-heading) (point-max)))))
-      (if (bh/is-project-p)
-          (let* ((subtree-end (save-excursion (org-end-of-subtree t)))
+    (<span style="color:#66d9ef">let</span> ((next-headline (save-excursion (or (outline-next-heading) (point-max)))))
+      (<span style="color:#66d9ef">if</span> (bh/is-project-p)
+          (<span style="color:#66d9ef">let*</span> ((subtree-end (save-excursion (org-end-of-subtree <span style="color:#66d9ef">t</span>)))
                  (has-next ))
             (save-excursion
-              (forward-line 1)
-              (while (and (not has-next) (&lt; (point) subtree-end) (re-search-forward &quot;^\\*+ NEXT &quot; subtree-end t))
-                (unless (member &quot;WAITING&quot; (org-get-tags-at))
-                  (setq has-next t))))
-            (if has-next
+              (forward-line <span style="color:#ae81ff">1</span>)
+              (while (and (<span style="color:#a6e22e">not</span> has-next) (<span style="color:#a6e22e">&lt;</span> (point) subtree-end) (re-search-forward <span style="color:#e6db74">&#34;^\\*+ NEXT &#34;</span> subtree-end <span style="color:#66d9ef">t</span>))
+                (unless (<span style="color:#a6e22e">member</span> <span style="color:#e6db74">&#34;WAITING&#34;</span> (org-get-tags-at))
+                  (<span style="color:#66d9ef">setq</span> has-next <span style="color:#66d9ef">t</span>))))
+            (<span style="color:#66d9ef">if</span> has-next
                 next-headline
-              nil)) ; a stuck project, has subtasks but no next task
+              <span style="color:#66d9ef">nil</span>)) <span style="color:#75715e">; a stuck project, has subtasks but no next task</span>
         next-headline))))
 
 (defun bh/skip-non-projects ()
-  &quot;Skip trees that are not projects.&quot;
-  ;; (bh/list-sublevels-for-projects-indented)
-  (if (save-excursion (bh/skip-non-stuck-projects))
+  <span style="color:#e6db74">&#34;Skip trees that are not projects.&#34;</span>
+  <span style="color:#75715e">;; (bh/list-sublevels-for-projects-indented)</span>
+  (<span style="color:#66d9ef">if</span> (save-excursion (bh/skip-non-stuck-projects))
       (save-restriction
         (widen)
-        (let ((subtree-end (save-excursion (org-end-of-subtree t))))
+        (<span style="color:#66d9ef">let</span> ((subtree-end (save-excursion (org-end-of-subtree <span style="color:#66d9ef">t</span>))))
           (cond
            ((bh/is-project-p)
-            nil)
-           ((and (bh/is-project-subtree-p) (not (bh/is-task-p)))
-            nil)
-           (t
+            <span style="color:#66d9ef">nil</span>)
+           ((and (bh/is-project-subtree-p) (<span style="color:#a6e22e">not</span> (bh/is-task-p)))
+            <span style="color:#66d9ef">nil</span>)
+           (<span style="color:#66d9ef">t</span>
             subtree-end))))
-    (save-excursion (org-end-of-subtree t))))
+    (save-excursion (org-end-of-subtree <span style="color:#66d9ef">t</span>))))
 
 (defun bh/skip-non-tasks ()
-  &quot;Show non-project tasks.
-Skip project and sub-project tasks, habits, and project related tasks.&quot;
+  <span style="color:#e6db74">&#34;Show non-project tasks.
+</span><span style="color:#e6db74">Skip project and sub-project tasks, habits, and project related tasks.&#34;</span>
   (save-restriction
     (widen)
-    (let ((next-headline (save-excursion (or (outline-next-heading) (point-max)))))
+    (<span style="color:#66d9ef">let</span> ((next-headline (save-excursion (or (outline-next-heading) (point-max)))))
       (cond
        ((bh/is-task-p)
-        nil)
-       (t
+        <span style="color:#66d9ef">nil</span>)
+       (<span style="color:#66d9ef">t</span>
         next-headline)))))
 
 (defun bh/skip-project-trees-and-habits ()
-  &quot;Skip trees that are projects.&quot;
+  <span style="color:#e6db74">&#34;Skip trees that are projects.&#34;</span>
   (save-restriction
     (widen)
-    (let ((subtree-end (save-excursion (org-end-of-subtree t))))
+    (<span style="color:#66d9ef">let</span> ((subtree-end (save-excursion (org-end-of-subtree <span style="color:#66d9ef">t</span>))))
       (cond
        ((bh/is-project-p)
         subtree-end)
        ((org-is-habit-p)
         subtree-end)
-       (t
-        nil)))))
+       (<span style="color:#66d9ef">t</span>
+        <span style="color:#66d9ef">nil</span>)))))
 
 (defun bh/skip-projects-and-habits-and-single-tasks ()
-  &quot;Skip trees that are projects, tasks that are habits, single non-project tasks.&quot;
+  <span style="color:#e6db74">&#34;Skip trees that are projects, tasks that are habits, single non-project tasks.&#34;</span>
   (save-restriction
     (widen)
-    (let ((next-headline (save-excursion (or (outline-next-heading) (point-max)))))
+    (<span style="color:#66d9ef">let</span> ((next-headline (save-excursion (or (outline-next-heading) (point-max)))))
       (cond
        ((org-is-habit-p)
         next-headline)
        ((and bh/hide-sche-and-wait-next-tasks
-             (member &quot;WAITING&quot; (org-get-tags-at)))
+             (<span style="color:#a6e22e">member</span> <span style="color:#e6db74">&#34;WAITING&#34;</span> (org-get-tags-at)))
         next-headline)
        ((bh/is-project-p)
         next-headline)
-       ((and (bh/is-task-p) (not (bh/is-project-subtree-p)))
+       ((and (bh/is-task-p) (<span style="color:#a6e22e">not</span> (bh/is-project-subtree-p)))
         next-headline)
-       (t
-        nil)))))
+       (<span style="color:#66d9ef">t</span>
+        <span style="color:#66d9ef">nil</span>)))))
 
 (defun bh/skip-project-tasks-maybe ()
-  &quot;Show tasks related to the current restriction.
-When restricted to a project, skip project and
-sub project tasks, habits, NEXT tasks, and loose tasks.
-When not restricted, skip project and sub-project
-tasks, habits, and project related tasks.&quot;
+  <span style="color:#e6db74">&#34;Show tasks related to the current restriction.
+</span><span style="color:#e6db74">When restricted to a project, skip project and
+</span><span style="color:#e6db74">sub project tasks, habits, NEXT tasks, and loose tasks.
+</span><span style="color:#e6db74">When not restricted, skip project and sub-project
+</span><span style="color:#e6db74">tasks, habits, and project related tasks.&#34;</span>
   (save-restriction
     (widen)
-    (let* ((subtree-end (save-excursion (org-end-of-subtree t)))
+    (<span style="color:#66d9ef">let*</span> ((subtree-end (save-excursion (org-end-of-subtree <span style="color:#66d9ef">t</span>)))
            (next-headline (save-excursion (or (outline-next-heading) (point-max))))
            (limit-to-project (marker-buffer org-agenda-restrict-begin)))
       (cond
@@ -1196,22 +1180,22 @@ tasks, habits, and project related tasks.&quot;
         next-headline)
        ((org-is-habit-p)
         subtree-end)
-       ((and (not limit-to-project)
+       ((and (<span style="color:#a6e22e">not</span> limit-to-project)
              (bh/is-project-subtree-p))
         subtree-end)
        ((and limit-to-project
              (bh/is-project-subtree-p)
-             (member (org-get-todo-state) (list &quot;NEXT&quot;)))
+             (<span style="color:#a6e22e">member</span> (org-get-todo-state) (<span style="color:#a6e22e">list</span> <span style="color:#e6db74">&#34;NEXT&#34;</span>)))
         subtree-end)
-       (t
-        nil)))))
+       (<span style="color:#66d9ef">t</span>
+        <span style="color:#66d9ef">nil</span>)))))
 
 (defun bh/skip-project-tasks ()
-  &quot;Show non-project tasks.
-Skip project and sub-project tasks, habits, and project related tasks.&quot;
+  <span style="color:#e6db74">&#34;Show non-project tasks.
+</span><span style="color:#e6db74">Skip project and sub-project tasks, habits, and project related tasks.&#34;</span>
   (save-restriction
     (widen)
-    (let* ((subtree-end (save-excursion (org-end-of-subtree t))))
+    (<span style="color:#66d9ef">let*</span> ((subtree-end (save-excursion (org-end-of-subtree <span style="color:#66d9ef">t</span>))))
       (cond
        ((bh/is-project-p)
         subtree-end)
@@ -1219,15 +1203,15 @@ Skip project and sub-project tasks, habits, and project related tasks.&quot;
         subtree-end)
        ((bh/is-project-subtree-p)
         subtree-end)
-       (t
-        nil)))))
+       (<span style="color:#66d9ef">t</span>
+        <span style="color:#66d9ef">nil</span>)))))
 
 (defun bh/skip-non-project-tasks ()
-  &quot;Show project tasks.
-Skip project and sub-project tasks, habits, and loose non-project tasks.&quot;
+  <span style="color:#e6db74">&#34;Show project tasks.
+</span><span style="color:#e6db74">Skip project and sub-project tasks, habits, and loose non-project tasks.&#34;</span>
   (save-restriction
     (widen)
-    (let* ((subtree-end (save-excursion (org-end-of-subtree t)))
+    (<span style="color:#66d9ef">let*</span> ((subtree-end (save-excursion (org-end-of-subtree <span style="color:#66d9ef">t</span>)))
            (next-headline (save-excursion (or (outline-next-heading) (point-max)))))
       (cond
        ((bh/is-project-p)
@@ -1235,66 +1219,66 @@ Skip project and sub-project tasks, habits, and loose non-project tasks.&quot;
        ((org-is-habit-p)
         subtree-end)
        ((and (bh/is-project-subtree-p)
-             (member (org-get-todo-state) (list &quot;NEXT&quot;)))
+             (<span style="color:#a6e22e">member</span> (org-get-todo-state) (<span style="color:#a6e22e">list</span> <span style="color:#e6db74">&#34;NEXT&#34;</span>)))
         subtree-end)
-       ((not (bh/is-project-subtree-p))
+       ((<span style="color:#a6e22e">not</span> (bh/is-project-subtree-p))
         subtree-end)
-       (t
-        nil)))))
+       (<span style="color:#66d9ef">t</span>
+        <span style="color:#66d9ef">nil</span>)))))
 
 (defun bh/skip-projects-and-habits ()
-  &quot;Skip trees that are projects and tasks that are habits.&quot;
+  <span style="color:#e6db74">&#34;Skip trees that are projects and tasks that are habits.&#34;</span>
   (save-restriction
     (widen)
-    (let ((subtree-end (save-excursion (org-end-of-subtree t))))
+    (<span style="color:#66d9ef">let</span> ((subtree-end (save-excursion (org-end-of-subtree <span style="color:#66d9ef">t</span>))))
       (cond
        ((bh/is-project-p)
         subtree-end)
        ((org-is-habit-p)
         subtree-end)
-       (t
-        nil)))))
+       (<span style="color:#66d9ef">t</span>
+        <span style="color:#66d9ef">nil</span>)))))
 
 (defun bh/skip-non-subprojects ()
-  &quot;Skip trees that are not projects.&quot;
-  (let ((next-headline (save-excursion (outline-next-heading))))
-    (if (bh/is-subproject-p)
-        nil
+  <span style="color:#e6db74">&#34;Skip trees that are not projects.&#34;</span>
+  (<span style="color:#66d9ef">let</span> ((next-headline (save-excursion (outline-next-heading))))
+    (<span style="color:#66d9ef">if</span> (bh/is-subproject-p)
+        <span style="color:#66d9ef">nil</span>
       next-headline)))
 
 (defun bh/skip-non-archivable-tasks ()
-  &quot;Skip trees that are not available for archiving.&quot;
+  <span style="color:#e6db74">&#34;Skip trees that are not available for archiving.&#34;</span>
   (save-restriction
     (widen)
-    ;; Consider only tasks with done todo headings as archivable candidates
-    (let ((next-headline (save-excursion (or (outline-next-heading) (point-max))))
-          (subtree-end (save-excursion (org-end-of-subtree t))))
-      (if (member (org-get-todo-state) org-todo-keywords-1)
-          (if (member (org-get-todo-state) org-done-keywords)
-              (let* ((daynr (string-to-number (format-time-string &quot;%d&quot; (current-time))))
-                     (a-month-ago (* 60 60 24 (+ daynr 1)))
-                     (last-month (format-time-string &quot;%Y-%m-&quot; (time-subtract (current-time) (seconds-to-time a-month-ago))))
-                     (this-month (format-time-string &quot;%Y-%m-&quot; (current-time)))
+    <span style="color:#75715e">;; Consider only tasks with done todo headings as archivable candidates</span>
+    (<span style="color:#66d9ef">let</span> ((next-headline (save-excursion (or (outline-next-heading) (point-max))))
+          (subtree-end (save-excursion (org-end-of-subtree <span style="color:#66d9ef">t</span>))))
+      (<span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">member</span> (org-get-todo-state) org-todo-keywords-1)
+          (<span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">member</span> (org-get-todo-state) org-done-keywords)
+              (<span style="color:#66d9ef">let*</span> ((daynr (string-to-number (format-time-string <span style="color:#e6db74">&#34;%d&#34;</span> (current-time))))
+                     (a-month-ago (<span style="color:#a6e22e">*</span> <span style="color:#ae81ff">60</span> <span style="color:#ae81ff">60</span> <span style="color:#ae81ff">24</span> (<span style="color:#a6e22e">+</span> daynr <span style="color:#ae81ff">1</span>)))
+                     (last-month (format-time-string <span style="color:#e6db74">&#34;%Y-%m-&#34;</span> (time-subtract (current-time) (seconds-to-time a-month-ago))))
+                     (this-month (format-time-string <span style="color:#e6db74">&#34;%Y-%m-&#34;</span> (current-time)))
                      (subtree-is-current (save-excursion
-                                           (forward-line 1)
-                                           (and (&lt; (point) subtree-end)
-                                                (re-search-forward (concat last-month &quot;\\|&quot; this-month) subtree-end t)))))
-                (if subtree-is-current
-                    subtree-end ; Has a date in this month or last month, skip it
-                  nil))  ; available to archive
+                                           (forward-line <span style="color:#ae81ff">1</span>)
+                                           (and (<span style="color:#a6e22e">&lt;</span> (point) subtree-end)
+                                                (re-search-forward (concat last-month <span style="color:#e6db74">&#34;\\|&#34;</span> this-month) subtree-end <span style="color:#66d9ef">t</span>)))))
+                (<span style="color:#66d9ef">if</span> subtree-is-current
+                    subtree-end <span style="color:#75715e">; Has a date in this month or last month, skip it</span>
+                  <span style="color:#66d9ef">nil</span>))  <span style="color:#75715e">; available to archive</span>
             (or subtree-end (point-max)))
         next-headline))))
 
 (defun bh/display-inline-images ()
-  &quot;Display inline images.&quot;
-  (condition-case nil
+  <span style="color:#e6db74">&#34;Display inline images.&#34;</span>
+  (condition-case <span style="color:#66d9ef">nil</span>
       (org-display-inline-images)
-    (error nil)))
+    (<span style="color:#66d9ef">error</span> <span style="color:#66d9ef">nil</span>)))
 
-(provide 'org-mode-26)
+(<span style="color:#a6e22e">provide</span> <span style="color:#e6db74">&#39;org-mode-26</span>)
 
-;;; org-mode-26.el ends here
-</code></pre>
+<span style="color:#75715e">;;; org-mode-26.el ends here</span>
+</code></pre></div>
 </div>
 
 
@@ -1370,83 +1354,80 @@ Skip project and sub-project tasks, habits, and loose non-project tasks.&quot;
     
       <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
         <div>
-  
+    
     <div class="section">
-      <header><div class="title">Table Of Contents</div></header>
-      <div class="list-default"><nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#personal-org-mode-configuration">Personal <code>org-mode</code> configuration</a></li>
-</ul></li>
-</ul>
+        <header><div class="title">Table Of Contents</div></header>
+        <div class="list-default"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#personal-org-mode-configuration">Personal org-mode configuration</a></li>
+  </ul>
 </nav></div>
     </div>
     
 
     <div class="section">
-      <header><div class="title"><b>Latest Posts</b></div></header>
-      <div class="content">
-        <ul>
-        
-          <li>
-          <a href="https://ppalazon.github.io/2018/07/28/starting-rust-programming-on-emacs/">Starting rust programming on Emacs</a>
-          </li>
-        
-          <li>
-          <a href="https://ppalazon.github.io/2018/04/11/testing-ox-hugo/">Testing ox-hugo</a>
-          </li>
-        
-          <li>
-          <a href="https://ppalazon.github.io/2013/01/24/multi-environment-maven-war-generation/">Multi-environment maven war generation</a>
-          </li>
-        
-          <li>
-          <a href="https://ppalazon.github.io/2018/04/11/first-post-from-ox-hugo/">First post from ox-hugo</a>
-          </li>
-        
-          <li>
-          <a href="https://ppalazon.github.io/2015/07/15/guake-base-16-color/">Guake Base 16 Color</a>
-          </li>
-        
-          <li>
-          <a href="https://ppalazon.github.io/2018/04/11/my-org-mode-configuration/">My org mode configuration</a>
-          </li>
-        
-          <li>
-          <a href="https://ppalazon.github.io/2015/02/04/character-encoding-files/">Character encoding files</a>
-          </li>
-        
-        </ul>
-      </div>
+        <header><div class="title"><b>Latest Posts</b></div></header>
+        <div class="content">
+            <ul>
+                
+                <li>
+                    <a href="https://ppalazon.github.io/2018/07/28/starting-rust-programming-on-emacs/">Starting rust programming on Emacs</a>
+                </li>
+                
+                <li>
+                    <a href="https://ppalazon.github.io/2018/04/11/testing-ox-hugo/">Testing ox-hugo</a>
+                </li>
+                
+                <li>
+                    <a href="https://ppalazon.github.io/2013/01/24/multi-environment-maven-war-generation/">Multi-environment maven war generation</a>
+                </li>
+                
+                <li>
+                    <a href="https://ppalazon.github.io/2018/04/11/first-post-from-ox-hugo/">First post from ox-hugo</a>
+                </li>
+                
+                <li>
+                    <a href="https://ppalazon.github.io/2015/07/15/guake-base-16-color/">Guake Base 16 Color</a>
+                </li>
+                
+                <li>
+                    <a href="https://ppalazon.github.io/2018/04/11/my-org-mode-configuration/">My org mode configuration</a>
+                </li>
+                
+                <li>
+                    <a href="https://ppalazon.github.io/2015/02/04/character-encoding-files/">Character encoding files</a>
+                </li>
+                
+            </ul>
+        </div>
     </div>
 
     
-      
-      
-      <div class="section taxonomies">
+    
+    
+    <div class="section taxonomies">
         <header><div class="title"><b>category</b></div></header>
 
         <div class="content">
-          <ul>
-            <li><a href="https://ppalazon.github.io/categories/devops">devops</a></li><li><a href="https://ppalazon.github.io/categories/emacs">emacs</a></li><li><a href="https://ppalazon.github.io/categories/about">about</a></li><li><a href="https://ppalazon.github.io/categories/ideas">ideas</a></li>
-          </ul>
+            <ul>
+                <li><a href="https://ppalazon.github.io/categories/devops">devops</a></li><li><a href="https://ppalazon.github.io/categories/emacs">emacs</a></li><li><a href="https://ppalazon.github.io/categories/about">about</a></li><li><a href="https://ppalazon.github.io/categories/ideas">ideas</a></li>
+            </ul>
         </div>
-      </div>
-      
+    </div>
     
-      
-      
-      <div class="section taxonomies">
+    
+    
+    
+    <div class="section taxonomies">
         <header><div class="title"><b>tag</b></div></header>
 
         <div class="content">
-          <ul>
-            <li><a href="https://ppalazon.github.io/tags/org">org</a></li><li><a href="https://ppalazon.github.io/tags/hugo">hugo</a></li><li><a href="https://ppalazon.github.io/tags/base16">base16</a></li><li><a href="https://ppalazon.github.io/tags/encoding">encoding</a></li><li><a href="https://ppalazon.github.io/tags/guake">guake</a></li><li><a href="https://ppalazon.github.io/tags/java">java</a></li><li><a href="https://ppalazon.github.io/tags/maven">maven</a></li><li><a href="https://ppalazon.github.io/tags/me">me</a></li><li><a href="https://ppalazon.github.io/tags/ox">ox</a></li><li><a href="https://ppalazon.github.io/tags/ppalazon">ppalazon</a></li>
-          </ul>
+            <ul>
+                <li><a href="https://ppalazon.github.io/tags/org">org</a></li><li><a href="https://ppalazon.github.io/tags/hugo">hugo</a></li><li><a href="https://ppalazon.github.io/tags/base16">base16</a></li><li><a href="https://ppalazon.github.io/tags/encoding">encoding</a></li><li><a href="https://ppalazon.github.io/tags/guake">guake</a></li><li><a href="https://ppalazon.github.io/tags/java">java</a></li><li><a href="https://ppalazon.github.io/tags/maven">maven</a></li><li><a href="https://ppalazon.github.io/tags/me">me</a></li><li><a href="https://ppalazon.github.io/tags/ox">ox</a></li><li><a href="https://ppalazon.github.io/tags/ppalazon">ppalazon</a></li>
+            </ul>
         </div>
-      </div>
-      
+    </div>
+    
     
 
 </div>
@@ -1477,7 +1458,7 @@ Skip project and sub-project tasks, habits, and loose non-project tasks.&quot;
     
 <div class="container footline">
     <small>
-  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+  code with <!-- raw HTML omitted --><!-- raw HTML omitted --> and a lot of <!-- raw HTML omitted --><!-- raw HTML omitted -->
 
 </small>
 </div>
@@ -1542,7 +1523,7 @@ CONTENTLANGUAGE =  null ;
 
 
 
-<script  src="https://ppalazon.github.io/js/bundle.min.7a5df2cb4f9ae4f6c0cc3e75f72da5b82165b84922fc8499a25b1e7f48502f0a9b2f4db1d81621bd8e847966c59e26d5c5c1c08f0c62cf90ae1a81bf1b80ac72.js" integrity="sha512-el3yy0&#43;a5PbAzD519y2luCFluEki/ISZolsef0hQLwqbL02x2BYhvY6EeWbFnibVxcHAjwxiz5CuGoG/G4Cscg=="></script>
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
 
 
 

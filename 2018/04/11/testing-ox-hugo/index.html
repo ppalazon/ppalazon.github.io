@@ -38,7 +38,7 @@
                     
                     <li class="">
                         
-		                <a href="https://ppalazon.github.io/about/me/"  title="About">
+		                <a href="https://ppalazon.github.io/about/"  title="About">
                             
                             About
                         </a>
@@ -82,7 +82,7 @@
 
 
 
-<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.54e79f5dd0740fc953813ae6745bbfd4c9b484dfebd444406494398a6dcf5740d8ca3b59abb11f29eed78b4bbc36f79855eac6e6b9bc58a5ed4fc3e3d1de332d.css" >
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.f349f99413d5fcebe3ddfeae137019dc76af99eb4531191769a49440615c8cf1ad4f614a771e816dd24410a3c9de4495183d0d9e3129d94abfdc7ab504880f4d.css" >
 
 </head>
 <body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
@@ -118,7 +118,7 @@
             
             <li class="">
               
-		<a href="https://ppalazon.github.io/about/me/"  title="About">
+		<a href="https://ppalazon.github.io/about/"  title="About">
                   
                   About
                 </a>
@@ -138,12 +138,30 @@
 
 
 
-<div class="container">
-  <div class="row">
-    <div class="col-sm-9">
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: 400px;
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: -400px;
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
 
-
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
   <div class="title-metas text-center">
 
     <h1>Testing ox-hugo
@@ -157,7 +175,7 @@
 
 
   <small>
-    &middot; by [Pablo Palazón]
+    &middot; by [Pablo Palazon]
   
   &middot; Read in about 1 min
   &middot; (52 words)
@@ -202,8 +220,16 @@
   </div>
 </div>
 
+        </div>
+    </div>
+</div>
 
-      <div class="content">
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+
+            
+            <div class="content">
   <p>This is a test for ox-hugo exports</p>
 <p>LaTeX formatted equation: \( E = -J \sum_{i=1}^N s_i s_{i+1} \)</p>
 <p>If \(a^2=b\) and \( b=2 \), then the solution must be either
@@ -212,14 +238,14 @@
 \label{eq:1}
 C = W\log_{2} (1+\mathrm{SNR})
 \end{equation}</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-get update
-sudo apt-get dist-upgrade
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lisp" data-lang="lisp">(<span style="color:#a6e22e">require</span> <span style="color:#e6db74">&#39;org</span>)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  sudo apt-get update
+  sudo apt-get dist-upgrade
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lisp" data-lang="lisp">  (<span style="color:#a6e22e">require</span> <span style="color:#e6db74">&#39;org</span>)
 </code></pre></div>
 </div>
 
 
-      <footer>
+            <footer>
   
 <span class="share-box">Share this on:
     <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f2018%2f04%2f11%2ftesting-ox-hugo%2f" onclick="window.open(this.href, 'mywin',
@@ -245,16 +271,10 @@ sudo apt-get dist-upgrade
   
     <nav><ul class="pager">
     
-        <li class="previous">
-          <a href="https://ppalazon.github.io/2013/01/24/multi-environment-maven-war-generation/" title="Multi-environment maven war generation">
-            <span aria-hidden="true">&larr;</span>Previous
-          </a>
-        </li>
-    
 
     
       <li class="next">
-        <a href="https://ppalazon.github.io/2018/07/28/starting-rust-programming-on-emacs/" title="Starting rust programming on Emacs">
+        <a href="https://ppalazon.github.io/2015/02/04/character-encoding-files/" title="Character encoding files">
             Next <span aria-hidden="true">&rarr;</span>
         </a>
       </li>
@@ -287,10 +307,10 @@ sudo apt-get dist-upgrade
 
 </footer>
 
-    </div>
-    
-      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-        <div>
+        </div>
+        
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+            <div>
     
     <div class="section">
         <header><div class="title">Table Of Contents</div></header>
@@ -305,10 +325,6 @@ sudo apt-get dist-upgrade
                 
                 <li>
                     <a href="https://ppalazon.github.io/2018/07/28/starting-rust-programming-on-emacs/">Starting rust programming on Emacs</a>
-                </li>
-                
-                <li>
-                    <a href="https://ppalazon.github.io/2018/04/11/testing-ox-hugo/">Testing ox-hugo</a>
                 </li>
                 
                 <li>
@@ -329,6 +345,10 @@ sudo apt-get dist-upgrade
                 
                 <li>
                     <a href="https://ppalazon.github.io/2015/02/04/character-encoding-files/">Character encoding files</a>
+                </li>
+                
+                <li>
+                    <a href="https://ppalazon.github.io/2018/04/11/testing-ox-hugo/">Testing ox-hugo</a>
                 </li>
                 
             </ul>
@@ -365,9 +385,9 @@ sudo apt-get dist-upgrade
 
 </div>
 
-      </div>
-    
-  </div>
+        </div>
+        
+    </div>
 </div>
     
 <footer class="footer hidden-print">
@@ -375,7 +395,7 @@ sudo apt-get dist-upgrade
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
            <div class="pull-left">
-  <a class="toplink" href="javascript:" id="return-to-top">back to top</a>
+  <a class="toplink" href="javascript:" id="return-to-top">Back To Top</a>
 </div>
 <div class="pull-right">
 

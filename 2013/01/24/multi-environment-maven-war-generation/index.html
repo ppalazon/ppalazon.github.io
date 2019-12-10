@@ -38,7 +38,7 @@
                     
                     <li class="">
                         
-		                <a href="https://ppalazon.github.io/about/me/"  title="About">
+		                <a href="https://ppalazon.github.io/about/"  title="About">
                             
                             About
                         </a>
@@ -82,7 +82,7 @@
 
 
 
-<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.54e79f5dd0740fc953813ae6745bbfd4c9b484dfebd444406494398a6dcf5740d8ca3b59abb11f29eed78b4bbc36f79855eac6e6b9bc58a5ed4fc3e3d1de332d.css" >
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.f349f99413d5fcebe3ddfeae137019dc76af99eb4531191769a49440615c8cf1ad4f614a771e816dd24410a3c9de4495183d0d9e3129d94abfdc7ab504880f4d.css" >
 
 </head>
 <body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
@@ -118,7 +118,7 @@
             
             <li class="">
               
-		<a href="https://ppalazon.github.io/about/me/"  title="About">
+		<a href="https://ppalazon.github.io/about/"  title="About">
                   
                   About
                 </a>
@@ -138,12 +138,30 @@
 
 
 
-<div class="container">
-  <div class="row">
-    <div class="col-sm-9">
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: 400px;
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: -400px;
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
 
-
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
   <div class="title-metas text-center">
 
     <h1>Multi-environment maven war generation
@@ -200,8 +218,16 @@
   </div>
 </div>
 
+        </div>
+    </div>
+</div>
 
-      <div class="content">
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+
+            
+            <div class="content">
   <p>I'd like to let you an Maven snippet code for configure WAR project
 for different environments. Sometimes, we're developing in a dev
 environment, but this project we'd like to run in another environments
@@ -282,7 +308,7 @@ by hand. (Project Properties-&gt;Deployment Assembly)</li>
 </div>
 
 
-      <footer>
+            <footer>
   
 <span class="share-box">Share this on:
     <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f2013%2f01%2f24%2fmulti-environment-maven-war-generation%2f" onclick="window.open(this.href, 'mywin',
@@ -317,7 +343,7 @@ by hand. (Project Properties-&gt;Deployment Assembly)</li>
 
     
       <li class="next">
-        <a href="https://ppalazon.github.io/2018/04/11/testing-ox-hugo/" title="Testing ox-hugo">
+        <a href="https://ppalazon.github.io/2018/07/28/starting-rust-programming-on-emacs/" title="Starting rust programming on Emacs">
             Next <span aria-hidden="true">&rarr;</span>
         </a>
       </li>
@@ -350,10 +376,10 @@ by hand. (Project Properties-&gt;Deployment Assembly)</li>
 
 </footer>
 
-    </div>
-    
-      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-        <div>
+        </div>
+        
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+            <div>
     
     <div class="section">
         <header><div class="title">Table Of Contents</div></header>
@@ -377,10 +403,6 @@ by hand. (Project Properties-&gt;Deployment Assembly)</li>
                 </li>
                 
                 <li>
-                    <a href="https://ppalazon.github.io/2018/04/11/testing-ox-hugo/">Testing ox-hugo</a>
-                </li>
-                
-                <li>
                     <a href="https://ppalazon.github.io/2013/01/24/multi-environment-maven-war-generation/">Multi-environment maven war generation</a>
                 </li>
                 
@@ -398,6 +420,10 @@ by hand. (Project Properties-&gt;Deployment Assembly)</li>
                 
                 <li>
                     <a href="https://ppalazon.github.io/2015/02/04/character-encoding-files/">Character encoding files</a>
+                </li>
+                
+                <li>
+                    <a href="https://ppalazon.github.io/2018/04/11/testing-ox-hugo/">Testing ox-hugo</a>
                 </li>
                 
             </ul>
@@ -434,9 +460,9 @@ by hand. (Project Properties-&gt;Deployment Assembly)</li>
 
 </div>
 
-      </div>
-    
-  </div>
+        </div>
+        
+    </div>
 </div>
     
 <footer class="footer hidden-print">
@@ -444,7 +470,7 @@ by hand. (Project Properties-&gt;Deployment Assembly)</li>
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
            <div class="pull-left">
-  <a class="toplink" href="javascript:" id="return-to-top">back to top</a>
+  <a class="toplink" href="javascript:" id="return-to-top">Back To Top</a>
 </div>
 <div class="pull-right">
 

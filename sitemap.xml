@@ -3,77 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://ppalazon.github.io/2018/07/28/starting-rust-programming-on-emacs/</loc>
-    <lastmod>2018-07-28T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ppalazon.github.io/about/me/</loc>
-    <lastmod>2018-04-11T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ppalazon.github.io/2018/04/11/testing-ox-hugo/</loc>
-    <lastmod>2018-04-11T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ppalazon.github.io/2013/01/24/multi-environment-maven-war-generation/</loc>
-    <lastmod>2013-01-24T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ppalazon.github.io/2018/04/11/first-post-from-ox-hugo/</loc>
-    <lastmod>2018-04-11T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ppalazon.github.io/2015/07/15/guake-base-16-color/</loc>
-    <lastmod>2015-07-15T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ppalazon.github.io/2018/04/11/my-org-mode-configuration/</loc>
-    <lastmod>2018-04-11T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ppalazon.github.io/2015/02/04/character-encoding-files/</loc>
-    <lastmod>2015-02-04T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ppalazon.github.io/categories/</loc>
-    <lastmod>2018-07-28T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ppalazon.github.io/categories/ideas/</loc>
-    <lastmod>2018-07-28T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ppalazon.github.io/post/</loc>
-    <lastmod>2018-07-28T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ppalazon.github.io/tags/rust/</loc>
-    <lastmod>2018-07-28T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ppalazon.github.io/</loc>
-    <lastmod>2018-07-28T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ppalazon.github.io/tags/</loc>
-    <lastmod>2018-07-28T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ppalazon.github.io/categories/about/</loc>
     <lastmod>2018-04-11T00:00:00+02:00</lastmod>
   </url>
   
@@ -83,12 +13,17 @@
   </url>
   
   <url>
-    <loc>https://ppalazon.github.io/categories/emacs/</loc>
+    <loc>https://ppalazon.github.io/post/</loc>
     <lastmod>2018-04-11T00:00:00+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ppalazon.github.io/tags/hugo/</loc>
+    <loc>https://ppalazon.github.io/categories/about/</loc>
+    <lastmod>2018-04-11T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ppalazon.github.io/categories/</loc>
     <lastmod>2018-04-11T00:00:00+02:00</lastmod>
   </url>
   
@@ -98,48 +33,13 @@
   </url>
   
   <url>
-    <loc>https://ppalazon.github.io/tags/org/</loc>
-    <lastmod>2018-04-11T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ppalazon.github.io/tags/ox/</loc>
-    <lastmod>2018-04-11T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ppalazon.github.io/tags/ppalazon/</loc>
     <lastmod>2018-04-11T00:00:00+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ppalazon.github.io/tags/base16/</loc>
-    <lastmod>2015-07-15T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ppalazon.github.io/categories/devops/</loc>
-    <lastmod>2015-07-15T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ppalazon.github.io/tags/guake/</loc>
-    <lastmod>2015-07-15T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ppalazon.github.io/tags/encoding/</loc>
-    <lastmod>2015-02-04T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ppalazon.github.io/tags/java/</loc>
-    <lastmod>2013-01-24T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ppalazon.github.io/tags/maven/</loc>
-    <lastmod>2013-01-24T00:00:00+01:00</lastmod>
+    <loc>https://ppalazon.github.io/tags/</loc>
+    <lastmod>2018-04-11T00:00:00+02:00</lastmod>
   </url>
   
 </urlset>

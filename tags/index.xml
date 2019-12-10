@@ -9,28 +9,10 @@
     <managingEditor>pablo.palazon@gmail.com (Pablo Palazon)</managingEditor>
     <webMaster>pablo.palazon@gmail.com (Pablo Palazon)</webMaster>
     <copyright>CC BY-NC-ND 3.0</copyright>
-    <lastBuildDate>Sat, 28 Jul 2018 00:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 11 Apr 2018 00:00:00 +0200</lastBuildDate>
     
 	<atom:link href="https://ppalazon.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>rust</title>
-      <link>https://ppalazon.github.io/tags/rust/</link>
-      <pubDate>Sat, 28 Jul 2018 00:00:00 +0200</pubDate>
-      <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
-      <guid>https://ppalazon.github.io/tags/rust/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hugo</title>
-      <link>https://ppalazon.github.io/tags/hugo/</link>
-      <pubDate>Wed, 11 Apr 2018 00:00:00 +0200</pubDate>
-      <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
-      <guid>https://ppalazon.github.io/tags/hugo/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>me</title>
@@ -42,74 +24,11 @@
     </item>
     
     <item>
-      <title>org</title>
-      <link>https://ppalazon.github.io/tags/org/</link>
-      <pubDate>Wed, 11 Apr 2018 00:00:00 +0200</pubDate>
-      <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
-      <guid>https://ppalazon.github.io/tags/org/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ox</title>
-      <link>https://ppalazon.github.io/tags/ox/</link>
-      <pubDate>Wed, 11 Apr 2018 00:00:00 +0200</pubDate>
-      <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
-      <guid>https://ppalazon.github.io/tags/ox/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>ppalazon</title>
       <link>https://ppalazon.github.io/tags/ppalazon/</link>
       <pubDate>Wed, 11 Apr 2018 00:00:00 +0200</pubDate>
       <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
       <guid>https://ppalazon.github.io/tags/ppalazon/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>base16</title>
-      <link>https://ppalazon.github.io/tags/base16/</link>
-      <pubDate>Wed, 15 Jul 2015 00:00:00 +0200</pubDate>
-      <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
-      <guid>https://ppalazon.github.io/tags/base16/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>guake</title>
-      <link>https://ppalazon.github.io/tags/guake/</link>
-      <pubDate>Wed, 15 Jul 2015 00:00:00 +0200</pubDate>
-      <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
-      <guid>https://ppalazon.github.io/tags/guake/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>encoding</title>
-      <link>https://ppalazon.github.io/tags/encoding/</link>
-      <pubDate>Wed, 04 Feb 2015 00:00:00 +0100</pubDate>
-      <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
-      <guid>https://ppalazon.github.io/tags/encoding/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>java</title>
-      <link>https://ppalazon.github.io/tags/java/</link>
-      <pubDate>Thu, 24 Jan 2013 00:00:00 +0100</pubDate>
-      <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
-      <guid>https://ppalazon.github.io/tags/java/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>maven</title>
-      <link>https://ppalazon.github.io/tags/maven/</link>
-      <pubDate>Thu, 24 Jan 2013 00:00:00 +0100</pubDate>
-      <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
-      <guid>https://ppalazon.github.io/tags/maven/</guid>
       <description></description>
     </item>
     

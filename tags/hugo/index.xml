@@ -15,6 +15,16 @@
     
     
     <item>
+      <title>First post from ox-hugo</title>
+      <link>https://ppalazon.github.io/2018/04/11/first-post-from-ox-hugo/</link>
+      <pubDate>Wed, 11 Apr 2018 00:00:00 +0200</pubDate>
+      <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
+      <guid>https://ppalazon.github.io/2018/04/11/first-post-from-ox-hugo/</guid>
+      <description>&lt;p&gt;This is my first export from &lt;code&gt;ox-hugo&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;I&#39;m using &lt;strong&gt;One post per Org subtree&lt;/strong&gt; for posts with org-mode.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Testing ox-hugo</title>
       <link>https://ppalazon.github.io/2018/04/11/testing-ox-hugo/</link>
       <pubDate>Wed, 11 Apr 2018 00:00:00 +0200</pubDate>
@@ -28,16 +38,6 @@
 \label{eq:1}
 C = W\log_{2} (1+\mathrm{SNR})
 \end{equation}&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>First post from ox-hugo</title>
-      <link>https://ppalazon.github.io/2018/04/11/first-post-from-ox-hugo/</link>
-      <pubDate>Wed, 11 Apr 2018 00:00:00 +0200</pubDate>
-      <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
-      <guid>https://ppalazon.github.io/2018/04/11/first-post-from-ox-hugo/</guid>
-      <description>&lt;p&gt;This is my first export from &lt;code&gt;ox-hugo&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;I&#39;m using &lt;strong&gt;One post per Org subtree&lt;/strong&gt; for posts with org-mode.&lt;/p&gt;</description>
     </item>
     
   </channel>

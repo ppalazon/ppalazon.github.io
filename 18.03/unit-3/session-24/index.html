@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Step and Delta Functions: Integrals and Generalized Derivatives  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="ode, maths, ">
+
+
+<meta property="og:title" content="Step and Delta Functions: Integrals and Generalized Derivatives  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.03/unit-3/session-24/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="content-source" content="18.03/unit-3/session-24.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Captured On [2019-12-06 Fri 14:05] Source Step and Delta Functions: Integrals and Generalized Derivatives | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  This session looks closely at discontinuous functions and introduces the notion of an impulse or delta function. The goal is to use these functions as the input to differential equations. Step functions and delta functions are not differentiable in the usual sense, but they do have what we will call generalized derivatives, which are suitable for use in DE&amp;rsquo;s."/>
+<meta property="og:article:published_time" content="2019-11-26T00:00:00&#43;01:00" />
+<meta property="og:article:modified_time" content="2019-11-26T00:00:00&#43;01:00" />
+
+
+
+<meta property="og:article:tag" content="ode">
+
+<meta property="og:article:tag" content="maths">
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ppalazon" />
+<meta name="twitter:creator" content="@ppalazon" />
+<meta name="twitter:title" content="Step and Delta Functions: Integrals and Generalized Derivatives" />
+<meta name="twitter:description" content="Captured On [2019-12-06 Fri 14:05] Source Step and Delta Functions: Integrals and Generalized Derivatives | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  This session looks closely at discontinuous functions and introduces the notion of an impulse or delta function. The goal is to use these functions as the input to differential equations. Step functions and delta functions are not differentiable in the usual sense, but they do have what we will call generalized derivatives, which are suitable for use in DE&amp;rsquo;s."/>
+<meta name="twitter:url" content="https://ppalazon.github.io/18.03/unit-3/session-24/" />
+<meta name="twitter:domain" content="https://ppalazon.github.io">
+
+
+
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+     "@type": "Article",
+     "headline": "Step and Delta Functions: Integrals and Generalized Derivatives",
+     "author": {
+         "@type": "Person",
+         "name": "http://profiles.google.com/+?rel=author"
+     },
+     "datePublished": "2019-11-26",
+     "description": "",
+     "wordCount":  2418 
+ }
+</script>
+
+
+
+<link rel="canonical" href="https://ppalazon.github.io/18.03/unit-3/session-24/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+ }
+ .hero {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: calc(200px + (450 - 200) * ((100vw - 300px) / (1600 - 300)));
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: calc(-1 * (200px + (450 - 200) * ((100vw - 300px) / (1600 - 300))));
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+    <header class="container hat">
+        <h1>Step and Delta Functions: Integrals and Generalized Derivatives
+</h1>
+
+        
+
+
+<span class="author">by
+    
+    MIT OCW, Pablo Palazon
+    
+</span>
+
+
+    </header>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            
+            <div class="content">
+  <dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2019-12-06 Fri 14:05]</span></span></dd>
+<dt>Source</dt>
+<dd><a href="https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-iii-fourier-series-and-laplace-transform/step-and-delta-functions-integrals-and-generalized-derivatives/index.htm">Step and Delta Functions: Integrals and Generalized Derivatives |
+Unit III: Fourier Series and Laplace Transform | Differential Equations |
+Mathematics | MIT OpenCourseWare</a></dd>
+</dl>
+<p>This session looks closely at discontinuous functions and introduces the notion
+of an impulse or delta function. The goal is to use these functions as the input
+to differential equations. Step functions and delta functions are not
+differentiable in the usual sense, but they do have what we will call
+generalized derivatives, which are suitable for use in DE&rsquo;s.</p>
+<h2 id="what-is-a-delta-function-write-an-example-with-forces"><span class="section-num">1</span> What is a delta function? Write an example with forces</h2>
+<h3 id="front"><span class="section-num">1.1</span> Front</h3>
+<p><b>What is a delta function? Write an example with forces</b></p>
+<h3 id="back"><span class="section-num">1.2</span> Back</h3>
+<p>A delta function represents an idealized input that acts all at once. If a
+finite force pushes on a mass it changes the momentum of the mass over time.</p>
+<p>We can achieve the same change in momentum with a small force acting over a long
+time or a large force acting over a short time.</p>
+<p>If the force acts over a very shorts time we call it an impulse.</p>
+<h2 id="what-is-the-unit-delta-function--deltat"><span class="section-num">2</span> What is the unit delta function \(\delta(t)\)?</h2>
+<h3 id="front"><span class="section-num">2.1</span> Front</h3>
+<p><b>What is the unit delta function $\delta(t)$?</b></p>
+<h3 id="back"><span class="section-num">2.2</span> Back</h3>
+<p>Models an idealized impulse, which can be through of as an infinite force acting
+over an infinitesimal amount of time and causes a unit change in the momentum of
+the mass.</p>
+<p>It&rsquo;s also called unit impulse function</p>
+<figure>
+    <img src="https://ppalazon.github.io/91/d7ac9a-56d0-449b-820d-ec16e4ac8962/_20200916_220957W3mnKXF.png"/> 
+</figure>
+
+<h2 id="what-is-the-heaviside-unit-step-function"><span class="section-num">3</span> What is the Heaviside unit step function?</h2>
+<h3 id="front"><span class="section-num">3.1</span> Front</h3>
+<p><b>What is the Heaviside unit step function?</b></p>
+<h3 id="back"><span class="section-num">3.2</span> Back</h3>
+<p>The unit function is defined by</p>
+<p>\({\displaystyle u(t) =\begin{cases} 0 &amp;\text{for } t \lt 0 \1 &amp; \text{for
+} t \gt 0\end{cases}}\)</p>
+<h2 id="how-is-the-graph-of-this-heaviside-unit-step-function"><span class="section-num">4</span> How is the graph of this Heaviside unit step function?</h2>
+<h3 id="front"><span class="section-num">4.1</span> Front</h3>
+<p><b>How is the graph of this Heaviside unit step function?</b></p>
+<p>\({\displaystyle u(t - a) =\begin{cases} 0 &amp;\text{for } t \lt a \1 &amp;
+\text{for } t \gt a\end{cases}}\)</p>
+<h3 id="back"><span class="section-num">4.2</span> Back</h3>
+<p>It&rsquo;s the function \(u(t)\) shifted to the right</p>
+<figure>
+    <img src="https://ppalazon.github.io/91/d7ac9a-56d0-449b-820d-ec16e4ac8962/_20200916_221005islMISt.png"/> 
+</figure>
+
+<h2 id="what-happens-to-the-heaviside-function--ut---at--t-0"><span class="section-num">5</span> What happens to the Heaviside function \(u(t)\) at \(t=0\)?</h2>
+<h3 id="front"><span class="section-num">5.1</span> Front</h3>
+<p><b>What happens to the Heaviside function $u(t)$ at $t=0$?</b></p>
+<h3 id="back"><span class="section-num">5.2</span> Back</h3>
+<p>\(u(t)\) is not defined at \(t=0\), there is a jump discontinuity in this point</p>
+<p>The graph shows that \(u(0^-) = 0\) and \(u(0^+) = 1\)</p>
+<h2 id="how-can-we-model-an-on-off-process-what-is-really-happens"><span class="section-num">6</span> How can we model an on / off process? What is really happens?</h2>
+<h3 id="front"><span class="section-num">6.1</span> Front</h3>
+<p><b>How can we model an on / off process? What is really happens?</b></p>
+<h3 id="back"><span class="section-num">6.2</span> Back</h3>
+<p>We can use the Heaviside function \(u(t)\) as a basic model. But in reality, the
+light doesn&rsquo;t reach its steady state instantaneously; it takes a small amount of
+time.</p>
+<p>It might move up smoothly; it might overshoot; it might move up and fits and
+starts as different elements come on line.</p>
+<figure>
+    <img src="https://ppalazon.github.io/91/d7ac9a-56d0-449b-820d-ec16e4ac8962/_20200916_221013seRCori.png"/> 
+</figure>
+
+<h2 id="how-can-we-model-switch-on-off-on-again"><span class="section-num">7</span> How can we model switch on / off / on again?</h2>
+<h3 id="front"><span class="section-num">7.1</span> Front</h3>
+<p><b>How can we model switch on / off / on again?</b></p>
+<p>To be general, let&rsquo;s assume the light goes on a time \(a\) and off at time \(b\)</p>
+<h3 id="back"><span class="section-num">7.2</span> Back</h3>
+<p>\({\displaystyle u_{ab}(t) = \begin{cases} 0 &amp;\text{for } t \lt a \ 1
+&amp;\text{for } a \lt t \lt b \ 0 &amp;\text{for } t \lt a
+\end{cases}}\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/91/d7ac9a-56d0-449b-820d-ec16e4ac8962/_20200916_221021ZPwjFqY.png"/> 
+</figure>
+
+<p>This is called a box function. You can reach the same function with</p>
+<p>\({\displaystyle u_{ab}(t) = u(t - a) - u(t - b)}\)</p>
+<h2 id="write-this-box-function-in-terms-of-heaviside-function"><span class="section-num">8</span> Write this box function in terms of Heaviside function?</h2>
+<h3 id="front"><span class="section-num">8.1</span> Front</h3>
+<p><b>Write this box function in terms of Heaviside function?</b></p>
+<figure>
+    <img src="https://ppalazon.github.io/91/d7ac9a-56d0-449b-820d-ec16e4ac8962/_20200916_221030ZPwjFqY.png"/> 
+</figure>
+
+<h3 id="back"><span class="section-num">8.2</span> Back</h3>
+<p>\({\displaystyle u_{ab}(t) = u(t - a) - u(t - b)}\)</p>
+<h2 id="how-can-we-switch-on-off-any-function--ft"><span class="section-num">9</span> How can we switch on / off any function \(f(t)\)?</h2>
+<h3 id="front"><span class="section-num">9.1</span> Front</h3>
+<p><b>How can we switch on / off any function $f(t)$?</b></p>
+<h3 id="back"><span class="section-num">9.2</span> Back</h3>
+<p>Multiplying \(f(t)\) with a Heaviside function \(u(t)\)</p>
+<h2 id="which-is-the-graph-of-switching-on--ft---at--t-a"><span class="section-num">10</span> Which is the graph of switching on \(f(t)\) at \(t = a\)?</h2>
+<h3 id="front"><span class="section-num">10.1</span> Front</h3>
+<p><b>Which is the graph of switching on $f(t)$ at $t = a$?</b></p>
+<figure>
+    <img src="https://ppalazon.github.io/91/d7ac9a-56d0-449b-820d-ec16e4ac8962/_20200916_221040I6zOzMh.png"/> 
+</figure>
+
+<p>Write also its equation</p>
+<h3 id="back"><span class="section-num">10.2</span> Back</h3>
+<p>Multiplying \(u(t-a) f(t)\), where is \(0\) for \(t \lt a\) and agrees with \(f(t)\) for \(t
+\gt a\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/91/d7ac9a-56d0-449b-820d-ec16e4ac8962/_20200916_221048vCGZBeg.png"/> 
+</figure>
+
+<h2 id="how-is-the-graph-and-equation-switching-on--ft"><span class="section-num">11</span> How is the graph and equation switching on \(f(t)\)</h2>
+<h3 id="front"><span class="section-num">11.1</span> Front</h3>
+<p><b>How is the graph and equation switching on $f(t)$</b></p>
+<p>for \(a \lt t \lt b\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/91/d7ac9a-56d0-449b-820d-ec16e4ac8962/_20200916_221109I6zOzMh.png"/> 
+</figure>
+
+<h3 id="back"><span class="section-num">11.2</span> Back</h3>
+<p>Multiply by the box function, so its equation is \([u(t-a) - u(t-b)] f(t)\). Where
+\(f(t)\) is on in the window \(a \lt t \lt b\), and off outside.</p>
+<figure>
+    <img src="https://ppalazon.github.io/91/d7ac9a-56d0-449b-820d-ec16e4ac8962/_20200916_2211190eWmJvR.png"/> 
+</figure>
+
+<h2 id="express--ft---in-both--u--and-cases-format"><span class="section-num">12</span> Express \(f(t)\) in both \(u\) and cases format</h2>
+<h3 id="front"><span class="section-num">12.1</span> Front</h3>
+<p><b>Express $f(t)$ in both $u$ and cases format</b></p>
+<p>Suppose \(f(t)\) is \(0\) for \(t \lt 0\), \(t\) for \(0 \lt t \lt 1\),
+\(t^2\) for \(1 \lt t \lt 2\) and \(2t\) for \(t \gt 2\)</p>
+<h3 id="back"><span class="section-num">12.2</span> Back</h3>
+<p>\({\displaystyle f(t) = \begin{cases} 0 &amp;\text{for } t \lt 0 \ t
+&amp;\text{for } 0 \lt t \lt 1 \ t^2 &amp;\text{for } 1 \lt t
+\lt 2 \ 2t &amp;\text{for } 2 \lt t \end{cases}}\)</p>
+<p>Using \(u-\text{format}\) uses step and box functions to turn on and off
+expressions</p>
+<p>\({\displaystyle f(t) = (u(t) - u(t-1))t + (u(t-1) - u(t-2))t^2 + u(t-2)2t}\)</p>
+<h2 id="write-this-function-in-cases-format"><span class="section-num">13</span> Write this function in cases format</h2>
+<h3 id="front"><span class="section-num">13.1</span> Front</h3>
+<p><b>Write this function in cases format</b></p>
+<p>\({\displaystyle f(t) = u(t)4t + u(t-2)t^2 + u(t-4)t^3/4}\)</p>
+<h3 id="back"><span class="section-num">13.2</span> Back</h3>
+<p>\({\displaystyle f(t) = \begin{cases} 0 &amp;\text{for } t \lt 0 \ 4t
+&amp;\text{for } 0 \lt t \lt 2 \ 4t + t^2 &amp;\text{for } 2 \lt t
+\lt 4 \ 4t + t^2 + t^3/4 &amp;\text{for } 4 \lt t \end{cases}}\)</p>
+<h2 id="what-is-the-model-when-a-radioactive-material-is-dumped-in-a-container"><span class="section-num">14</span> What is the model when a radioactive material is dumped in a container?</h2>
+<h3 id="front"><span class="section-num">14.1</span> Front</h3>
+<p><b>What is the model when a radioactive material is dumped in a container?</b></p>
+<p>Write the equation of the amount of material in the tank</p>
+<p>Assume 1 kg of material dumped</p>
+<p>Explain the complete process to reach the equation</p>
+<h3 id="back"><span class="section-num">14.2</span> Back</h3>
+<p>\({\displaystyle \dot{x} + kx = q(t)}\)</p>
+<ul>
+<li>\(x(t)\) is the amount of radioactive material (in kg)</li>
+<li>\(k\) is the decay rate of the material \(\text{year}^{-1}\)</li>
+<li>\(q(t)\) is the rate at which material is being added to the dump (kg / year)</li>
+</ul>
+<p>The total of amount dumped into the container from time \(0\) to time \(t\)</p>
+<p>\({\displaystyle Q(t) = \int_0^t q(u) du}\), so \({\displaystyle \dot{Q}(t) =
+q(t)}\)</p>
+<p>Assume that \(q(t)\) is only nonzero for a short amount of time and \(Q(t) =
+\SI{1}{kg}\)</p>
+<p>There are multiples possibilities of throw the material, where the amount of
+dumped material is \(\SI{1}{kg}\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/91/d7ac9a-56d0-449b-820d-ec16e4ac8962/_20200916_221130LwhPtyW.png"/> 
+</figure>
+
+<p>Now, let \(q_h(t)\) be a box of width \(h\) and height \(1/h\). As \(h \to 0\), the
+width of the box becomes \(0\), the graph looks more and more like a spike, yet it
+still has area \(1\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/91/d7ac9a-56d0-449b-820d-ec16e4ac8962/_20200916_221135bWRv2D9.png"/> 
+</figure>
+
+<p>So, its model is</p>
+<p>\({\displaystyle \dot{x} + kx = q(t) = \delta(t)}\)</p>
+<h2 id="what-is-the-value-of--deltat---at--t-0"><span class="section-num">15</span> What is the value of \(\delta(t)\) at \(t=0\)?</h2>
+<h3 id="front"><span class="section-num">15.1</span> Front</h3>
+<p><b>What is the value of $\delta(t)$ at $t=0$?</b></p>
+<p>\(\delta(0)\)</p>
+<h3 id="back"><span class="section-num">15.2</span> Back</h3>
+<p>\(\infty\)</p>
+<h2 id="what-is-the-value-of--deltat---when--t-neq-0"><span class="section-num">16</span> What is the value of \(\delta(t)\) when \(t \neq 0\)?</h2>
+<h3 id="front"><span class="section-num">16.1</span> Front</h3>
+<p><b>What is the value of $\delta(t)$ when $t \neq 0$?</b></p>
+<h3 id="back"><span class="section-num">16.2</span> Back</h3>
+<p>\(0\)</p>
+<h2 id="write-the--deltat---function-in-cases-format"><span class="section-num">17</span> Write the \(\delta(t)\) function in cases format</h2>
+<h3 id="front"><span class="section-num">17.1</span> Front</h3>
+<p><b>Write the $\delta(t)$ function in cases format</b></p>
+<p>\(\delta(t)\)</p>
+<h3 id="back"><span class="section-num">17.2</span> Back</h3>
+<p>\({\displaystyle \delta(t) = \begin{cases}
+0 &amp; \text{if } t\neq0\\\<br>
+\infty &amp;\text{if } t=0
+\end{cases}}\)</p>
+<h2 id="what-is-the-formal-definition-of-delta-function--deltat"><span class="section-num">18</span> What is the formal definition of delta function \(\delta(t)\)?</h2>
+<h3 id="front"><span class="section-num">18.1</span> Front</h3>
+<p><b>What is the formal definition of delta function $\delta(t)$?</b></p>
+<h3 id="back"><span class="section-num">18.2</span> Back</h3>
+<p>Define the box function \({\displaystyle q_h(t) = \begin{cases} 0 &amp;\text{for } t
+\lt 0 \ 1/h &amp;\text{for } 0 \lt t \lt h \ 0 &amp;\text{for } h \lt t \end{cases} }\)</p>
+<p>Where \(q_h(t)\) is a box function of width \(h\) and height \(1/h\).</p>
+<p>\({\displaystyle \delta(t) = \lim_{h \to 0} q_h(t) = \delta(t)}\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/91/d7ac9a-56d0-449b-820d-ec16e4ac8962/_20200916_221144ue0qTjT.png"/> 
+</figure>
+
+<h2 id="what-represent-the-delta-function--deltat---as-input-function"><span class="section-num">19</span> What represent the delta function \(\delta(t)\) as input function?</h2>
+<h3 id="front"><span class="section-num">19.1</span> Front</h3>
+<p><b>What represent the delta function $\delta(t)$ as input function?</b></p>
+<p>Suppose that is material</p>
+<h3 id="back"><span class="section-num">19.2</span> Back</h3>
+<p>It represents the ideal case where 1 unit of material is dumped in all at once
+at time \(t=0\)</p>
+<h2 id="what-is-the-value-of-this-integral"><span class="section-num">20</span> What is the value of this integral?</h2>
+<h3 id="front"><span class="section-num">20.1</span> Front</h3>
+<p><b>What is the value of this integral?</b></p>
+<p>\({\displaystyle \int_c^d \delta(t) \dd{t}}\)</p>
+<h3 id="back"><span class="section-num">20.2</span> Back</h3>
+<p>As \(\delta(t)\) is the limit of graphs of area \(1\), the area under its graph is 1</p>
+<p>\({\displaystyle \int_c^d \delta(t) \dd{t} = \begin{cases}
+1 &amp; \text{if } c \lt 0 \lt d \\\<br>
+0 &amp; \text{otherwise}
+\end{cases}
+}\)</p>
+<h2 id="what-is-the-value-of--ft--delta--t---for-any-continuous--ft"><span class="section-num">21</span> What is the value of \(f(t)\delta(t)\) for any continuous \(f(t)\)?</h2>
+<h3 id="front"><span class="section-num">21.1</span> Front</h3>
+<p><b>What is the value of $f(t)\delta(t)$ for any continuous $f(t)$?</b></p>
+<h3 id="back"><span class="section-num">21.2</span> Back</h3>
+<p>\(f(t)\delta(t) = f(0) \delta(t)\)</p>
+<h2 id="what-is-the-value-of-this-integral"><span class="section-num">22</span> What is the value of this integral?</h2>
+<h3 id="front"><span class="section-num">22.1</span> Front</h3>
+<p><b>What is the value of this integral?</b></p>
+<p>\({\displaystyle \int_c^d f(t) \delta(t) \dd{t}}\)</p>
+<h3 id="back"><span class="section-num">22.2</span> Back</h3>
+<p>\({\displaystyle \int_c^d f(t) \delta(t) \dd{t} = \begin{cases}
+f(0) &amp; \text{if } c \lt 0 \lt d \\\<br>
+0 &amp; \text{otherwise}
+\end{cases}
+}\)</p>
+<p>As \(f(t)\delta(t) = f(0) \delta(t)\)</p>
+<h2 id="what-is-the-value-of-this-expression"><span class="section-num">23</span> What is the value of this expression?</h2>
+<h3 id="front"><span class="section-num">23.1</span> Front</h3>
+<p><b>What is the value of this expression?</b></p>
+<p>\(f(t)\delta(t-a)\)</p>
+<h3 id="back"><span class="section-num">23.2</span> Back</h3>
+<p>\(f(t)\delta(t-a) = f(a) \delta (t-a)\)</p>
+<h2 id="what-is-the-value-of-this-integral"><span class="section-num">24</span> What is the value of this integral?</h2>
+<h3 id="front"><span class="section-num">24.1</span> Front</h3>
+<p><b>What is the value of this integral?</b></p>
+<p>\({\displaystyle \int_c^d f(t)\delta(t-a) \dd{t}}\)</p>
+<h3 id="back"><span class="section-num">24.2</span> Back</h3>
+<p>\({\displaystyle \int_c^d f(t)\delta(t-a) \dd{t} = \begin{cases}
+f(a) &amp; \text{if } c \lt a \lt d \\\<br>
+0 &amp; \text{otherwise}
+\end{cases}
+}\)</p>
+<h2 id="are-there-any-relationship-between-delta-function-and-heaviside-function"><span class="section-num">25</span> Are there any relationship between delta function and Heaviside function?</h2>
+<h3 id="front"><span class="section-num">25.1</span> Front</h3>
+<p><b>Are there any relationship between delta function and Heaviside function?</b></p>
+<p>What&rsquo;s the relationship?</p>
+<h3 id="back"><span class="section-num">25.2</span> Back</h3>
+<p>\({\displaystyle \delta(t) = \dd{u}(t)}\)</p>
+<p>Because \(u(t)\) has a jump at \(0\), \(\delta(t)\) is not a derivative in the usual
+sense, but it called a <em>generalized derivative</em></p>
+<h2 id="describe-by-words-what-is-the-delta-function--deltat"><span class="section-num">26</span> Describe by words what is the delta function \(\delta(t)\)</h2>
+<h3 id="front"><span class="section-num">26.1</span> Front</h3>
+<p><b>Describe by words what is the delta function $\delta(t)$</b></p>
+<h3 id="back"><span class="section-num">26.2</span> Back</h3>
+<p>It&rsquo;s defined as a limit of a sequence of box functions, all with unit area and
+which, in the limit \(h \to 0\), become a infinite spike over \(t = 0\)</p>
+<p>You should think of \(\delta(t)\) as any function of unit area, concentrated very
+near \(t = 0\)</p>
+<p>Also, \(\delta(t)\) is not a really function. We call it a <em>generalized function</em></p>
+<h2 id="what-is-the-value-of-this-integral"><span class="section-num">27</span> What is the value of this integral?</h2>
+<h3 id="front"><span class="section-num">27.1</span> Front</h3>
+<p><b>What is the value of this integral?</b></p>
+<p>\({\displaystyle \int_{-5}^5 7 e^{t^2} \cos(t) \delta(t) \dd{t}}\)</p>
+<h3 id="back"><span class="section-num">27.2</span> Back</h3>
+<p>\({\displaystyle \int_{-5}^5 7 e^{t^2} \cos(t) \delta(t) \dd{t} = 7}\)</p>
+<p>All we had to do was evaluate the integrand at \(t=0\)</p>
+<h2 id="what-is-the-value-of-this-integral"><span class="section-num">28</span> What is the value of this integral?</h2>
+<h3 id="front"><span class="section-num">28.1</span> Front</h3>
+<p><b>What is the value of this integral?</b></p>
+<p>\({\displaystyle \int_{-5}^5 7 e^{t^2} \cos(t) \delta(t - 2) \dd{t}}\)</p>
+<h3 id="back"><span class="section-num">28.2</span> Back</h3>
+<p>\({\displaystyle \int_{-5}^5 7 e^{t^2} \cos(t) \delta(t - 2) \dd{t} = 7 e^4 \cos(2)}\)</p>
+<p>All we had to do was evaluate the integrand at \(t=2\)</p>
+<h2 id="what-is-the-value-of-this-integral"><span class="section-num">29</span> What is the value of this integral?</h2>
+<h3 id="front"><span class="section-num">29.1</span> Front</h3>
+<p><b>What is the value of this integral?</b></p>
+<p>\({\displaystyle \int_{-5}^1 7 e^{t^2} \cos(t) \delta(t-2) \dd{t}}\)</p>
+<h3 id="back"><span class="section-num">29.2</span> Back</h3>
+<p>\({\displaystyle \int_{-5}^1 7 e^{t^2} \cos(t) \delta(t-2) \dd{t} = 0}\)</p>
+<p>Since \(t=2\) is not in the interval of integration, the integrand is 0 on the
+entire interval</p>
+<h2 id="what-is-the-value-of-this-integral"><span class="section-num">30</span> What is the value of this integral?</h2>
+<h3 id="front"><span class="section-num">30.1</span> Front</h3>
+<p><b>What is the value of this integral?</b></p>
+<p>\({\displaystyle \int_{0^-}^{\infty} \delta(t) \dd{t}}\)</p>
+<h3 id="back"><span class="section-num">30.2</span> Back</h3>
+<p>\({\displaystyle \int_{0^-}^{\infty} \delta(t) \dd{t} = 1}\)</p>
+<p>As \(0\) is in the interval \([0^-, \infty)\)</p>
+<h2 id="what-is-the-value-of-this-integral"><span class="section-num">31</span> What is the value of this integral?</h2>
+<h3 id="front"><span class="section-num">31.1</span> Front</h3>
+<p><b>What is the value of this integral?</b></p>
+<p>\({\displaystyle \int_{0^+}^{\infty} \delta(t) \dd{t}}\)</p>
+<h3 id="back"><span class="section-num">31.2</span> Back</h3>
+<p>\({\displaystyle \int_{0^+}^{\infty} \delta(t) \dd{t} = 0}\)</p>
+<p>As \(0\) is not in the interval \([0^+, \infty)\)</p>
+<h2 id="what-is-the-value-of-this-integral"><span class="section-num">32</span> What is the value of this integral?</h2>
+<h3 id="front"><span class="section-num">32.1</span> Front</h3>
+<p><b>What is the value of this integral?</b></p>
+<p>\({\displaystyle \int_{0^-}^{0^+} \delta(t) \dd{t}}\)</p>
+<h3 id="back"><span class="section-num">32.2</span> Back</h3>
+<p>\({\displaystyle \int_{0^-}^{0^+} \delta(t) \dd{t} = 1}\)</p>
+<p>As \(0\), is in the interval \([0^-, 0^+]\). The total area of the box is
+concentrated at \(0\)</p>
+<h2 id="what-does-really-mean-that--deltat--u--t"><span class="section-num">33</span> What does really mean that \(\delta(t) = u'(t)\)?</h2>
+<h3 id="front"><span class="section-num">33.1</span> Front</h3>
+<p><b>What does really mean that $\delta(t) = u'(t)$?</b></p>
+<h3 id="back"><span class="section-num">33.2</span> Back</h3>
+<p>\(u(t)\) has a slope of \(0\) except at \(t=0\) that its slope is \(\infty\)</p>
+<p>So, it&rsquo;s derivative is \({\displaystyle u'(t) = \begin{cases}
+0 &amp; \text{if } t \neq 0 \\\<br>
+\infty &amp; \text{if } t = 0
+\end{cases}
+}\)</p>
+<p>This functions shows a spike at \(t=0\), but this derivative does not exits in the
+calculus sense because of \(u(t)\) is not defined at \(t=0\). So we call this
+derivative a <em>generalized derivative</em></p>
+<p>You can look at the anti-derivative of \(\delta(t)\)</p>
+<p>\({\displaystyle f(t) = \int_{-\infty}^t \delta(\tau) \dd{\tau}}\)</p>
+<p>Using the fundamental theorem of calculus leads us to say that \(f'(t) =
+\delta(t)\) (Also, this is only in a generalized sense since technically the
+fundamental theorem of calculus requires the integrand to be continuous)</p>
+<p>\({\displaystyle f(t) = \begin{cases}
+0 &amp; \text{if } t \lt 0 \\\<br>
+1 &amp; \text{if } t \gt 0
+\end{cases}
+}\)</p>
+<p>That is, \(f(t) = u(t)\), so \(u(t)\) is the antiderivative of \(\delta(t)\)</p>
+<h2 id="get--f-t---of-this-function"><span class="section-num">34</span> Get \(f'(t)\) of this function</h2>
+<h3 id="front"><span class="section-num">34.1</span> Front</h3>
+<p><b>Get $f'(t)$ of this function</b></p>
+<figure>
+    <img src="https://ppalazon.github.io/91/d7ac9a-56d0-449b-820d-ec16e4ac8962/_20200916_221152CRZ2FdM.png"/> 
+</figure>
+
+<p>Explain the process to get its derivative. Also draw its graph</p>
+<h3 id="back"><span class="section-num">34.2</span> Back</h3>
+<ul>
+<li>At smooth parts, it&rsquo;s derivative is getting as usual</li>
+<li>Each jump discontinuity add a delta scaled by the size of the jump to \(f'(t)\)</li>
+</ul>
+<p>\({\displaystyle f'(t) = 2\delta(t) - 3\delta(t-2) + \begin{cases}
+2t &amp;\text{if } t \lt 0 \\\<br>
+0 &amp;\text{if } 0 \lt t \lt 2 \\\<br>
+3 &amp;\text{if } 2 \lt t
+\end{cases}
+}\)</p>
+<p>In the graph for \(f'(t)\) we represent the delta function as spikes with the
+magnitude written next to the spike. The sign is indicated by the direction of
+the spike. The rest of the \(f'(t)\) is plotted normally</p>
+<figure>
+    <img src="https://ppalazon.github.io/91/d7ac9a-56d0-449b-820d-ec16e4ac8962/_20200916_221202NYcSRhS.png"/> 
+</figure>
+
+<h2 id="what-does-mean-that--f-t---is-a-generalized-function"><span class="section-num">35</span> What does mean that \(f'(t)\) is a generalized function?</h2>
+<h3 id="front"><span class="section-num">35.1</span> Front</h3>
+<p><b>What does mean that $f'(t)$ is a generalized function?</b></p>
+<p>Explain with words for 18.03 unit</p>
+<h3 id="back"><span class="section-num">35.2</span> Back</h3>
+<p>It&rsquo;s a sum of a regular function and a linear combination of delta function.</p>
+<p>There are 2 parts:</p>
+<dl>
+<dt>Singular part</dt>
+<dd>Delta function pieces</dd>
+<dt>Regular part</dt>
+<dd>The remainder of the generalized function</dd>
+</dl>
+<p>If the singular part contains a multiple of \(\delta(t - a)\) we will say the
+function <em>contains</em> \(\delta(t - a)\)</p>
+<h2 id="describe-the-parts-of-this-generalized-function"><span class="section-num">36</span> Describe the parts of this generalized function?</h2>
+<h3 id="front"><span class="section-num">36.1</span> Front</h3>
+<p><b>Describe the parts of this generalized function?</b></p>
+<p>\({\displaystyle f(t) = u(t) + \delta(t) + e^{-t} + 3\delta(t-2)}\)</p>
+<h3 id="back"><span class="section-num">36.2</span> Back</h3>
+<ul>
+<li>Regular part: \(u(t) + e^{-t}\)</li>
+<li>Singular part: \(\delta(t) + 3\delta(t-2)\)</li>
+<li>The function \(f(t)\) <em>contains</em> \(\delta(t)\) and \(\delta(t-2)\). It does not
+contain \(\delta(t-1)\)</li>
+</ul>
+<h2 id="what-is-the-derivative-of-this-expression"><span class="section-num">37</span> What is the derivative of this expression?</h2>
+<h3 id="front"><span class="section-num">37.1</span> Front</h3>
+<p><b>What is the derivative of this expression?</b></p>
+<p>\(Q(t) = (2t - 2)u(t-1) + u(t-2) + (5 - 2t +1)u(t-3)\)</p>
+<h3 id="back"><span class="section-num">37.2</span> Back</h3>
+<p>\begin{align*}
+q(t) &amp;= Q'(t) \\\<br>
+&amp;= 2u(t-1) + (2 -2)\delta(t-1) + \delta(t-2) + (-2)u(t-3) + (5 - 6 + 1)\delta(t-3)\\\<br>
+&amp;= 2(u(t-1) - u(t-3)) + \delta (t-2)
+\end{align*}</p>
+
+</div>
+
+
+            <footer>
+    
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-24%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Step%20and%20Delta%20Functions%3a%20Integrals%20and%20Generalized%20Derivatives&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-24%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-24%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-24%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-24%2f&amp;title=Step%20and%20Delta%20Functions%3a%20Integrals%20and%20Generalized%20Derivatives" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Step%20and%20Delta%20Functions%3a%20Integrals%20and%20Generalized%20Derivatives&amp;body=Check out this site https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-24%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+
+<nav>
+    <ul class="pager">
+    
+    <li class="previous">
+        <a href="https://ppalazon.github.io/18.03/unit-3/session-23/" title="ODE&#39;s with Periodic Input, Resonance">
+            <span aria-hidden="true">&larr;</span>ODE&#39;s with Periodic Input, Resonance
+        </a>
+    </li>
+    
+
+    
+    <li class="next">
+        <a href="https://ppalazon.github.io/18.03/unit-3/session-25/" title="Unit Step and Unit Impulse Response">
+            Unit Step and Unit Impulse Response <span aria-hidden="true">&rarr;</span>
+        </a>
+    </li>
+    
+    </ul>
+</nav>
+
+
+
+</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//ppalazon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+        </div>
+    </div>
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/">18.03 Differential Equations</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/unit-3/">3: Fourier Series and Laplace Transform</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.03/unit-3/session-24/">Step and Delta Functions: Integrals and Generalized Derivatives</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>First Order Constant Coefficient Linear ODE&#39;s  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="ode, maths, ">
+
+
+<meta property="og:title" content="First Order Constant Coefficient Linear ODE&#39;s  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.03/unit-1/session-8/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="content-source" content="18.03/unit-1/session-8.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Captured On [2019-09-27 Fri 19:04] Source First Order Constant Coefficient Linear ODE&amp;rsquo;s | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is a constant coefficient First ODE? 1.1 Front What is a constant coefficient First ODE?
+1.2 Back \(\dot{y} &#43; ky = q(t)\), where \(k\) is a constant
+2 What is the solution of a constant coefficient First ODE? 2.1 Front What is the solution of a constant coefficient First ODE?"/>
+<meta property="og:article:published_time" content="2019-10-01T12:22:00&#43;02:00" />
+<meta property="og:article:modified_time" content="2019-10-01T12:22:00&#43;02:00" />
+
+
+
+<meta property="og:article:tag" content="ode">
+
+<meta property="og:article:tag" content="maths">
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ppalazon" />
+<meta name="twitter:creator" content="@ppalazon" />
+<meta name="twitter:title" content="First Order Constant Coefficient Linear ODE&#39;s" />
+<meta name="twitter:description" content="Captured On [2019-09-27 Fri 19:04] Source First Order Constant Coefficient Linear ODE&amp;rsquo;s | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is a constant coefficient First ODE? 1.1 Front What is a constant coefficient First ODE?
+1.2 Back \(\dot{y} &#43; ky = q(t)\), where \(k\) is a constant
+2 What is the solution of a constant coefficient First ODE? 2.1 Front What is the solution of a constant coefficient First ODE?"/>
+<meta name="twitter:url" content="https://ppalazon.github.io/18.03/unit-1/session-8/" />
+<meta name="twitter:domain" content="https://ppalazon.github.io">
+
+
+
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+     "@type": "Article",
+     "headline": "First Order Constant Coefficient Linear ODE\u0027s",
+     "author": {
+         "@type": "Person",
+         "name": "http://profiles.google.com/+?rel=author"
+     },
+     "datePublished": "2019-10-01",
+     "description": "",
+     "wordCount":  373 
+ }
+</script>
+
+
+
+<link rel="canonical" href="https://ppalazon.github.io/18.03/unit-1/session-8/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+ }
+ .hero {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: calc(200px + (450 - 200) * ((100vw - 300px) / (1600 - 300)));
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: calc(-1 * (200px + (450 - 200) * ((100vw - 300px) / (1600 - 300))));
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+    <header class="container hat">
+        <h1>First Order Constant Coefficient Linear ODE&#39;s
+</h1>
+
+        
+
+
+<span class="author">by
+    
+    MIT OCW, Pablo Palazon
+    
+</span>
+
+
+    </header>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            
+            <div class="content">
+  <dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2019-09-27 Fri 19:04]</span></span></dd>
+<dt>Source</dt>
+<dd><a href="https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-i-first-order-differential-equations/first-order-constant-coefficient-linear-odes/index.htm">First Order Constant Coefficient Linear ODE&rsquo;s | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare</a></dd>
+</dl>
+<h2 id="what-is-a-constant-coefficient-first-ode"><span class="section-num">1</span> What is a constant coefficient First ODE?</h2>
+<h3 id="front"><span class="section-num">1.1</span> Front</h3>
+<p><strong>What is a constant coefficient First ODE?</strong></p>
+<h3 id="back"><span class="section-num">1.2</span> Back</h3>
+<p>\(\dot{y} + ky = q(t)\), where \(k\) is a constant</p>
+<h2 id="what-is-the-solution-of-a-constant-coefficient-first-ode"><span class="section-num">2</span> What is the solution of a constant coefficient First ODE?</h2>
+<h3 id="front"><span class="section-num">2.1</span> Front</h3>
+<p><strong>What is the solution of a constant coefficient First ODE?</strong></p>
+<p>\(\dot{y} + ky = q(t)\), where \(k\) is a constant</p>
+<h3 id="back"><span class="section-num">2.2</span> Back</h3>
+<p>\({\displaystyle y(t) = e^{-kt} \biggl( \int e^{kt} q(t) \dd{t} + c
+\biggr) = e^{-kt} \int e^{kt} q(t) \dd{t} + ce^{-kt}}\)</p>
+<p>The general solution is \(y(t) = y_p(t) + cy_h(t)\)</p>
+<h2 id="what-is-the-particular-solution-of-a-constant-coefficient-first-ode"><span class="section-num">3</span> What is the particular solution of a constant coefficient first ODE?</h2>
+<h3 id="front"><span class="section-num">3.1</span> Front</h3>
+<p><strong>What is the particular solution of a constant coefficient first ODE?</strong></p>
+<p>\(\dot{y} + ky = q(t)\), where \(k\) is a constant</p>
+<h3 id="back"><span class="section-num">3.2</span> Back</h3>
+<p>\(y_p(t) = e^{-kt} \int e^{kt} q(t) \dd{t}\)</p>
+<h2 id="what-is-the-homogeneous-solution-of-a-constant-coefficient-first-ode"><span class="section-num">4</span> What is the homogeneous solution of a constant coefficient first ODE?</h2>
+<h3 id="front"><span class="section-num">4.1</span> Front</h3>
+<p><strong>What is the homogeneous solution of a constant coefficient first ODE?</strong></p>
+<p>\(\dot{y} + ky = q(t)\), where \(k\) is a constant</p>
+<h3 id="back"><span class="section-num">4.2</span> Back</h3>
+<p>\(y_h(t) = ce^{-kt}\)</p>
+<h2 id="explain-what-happens-when--k-0--in-a-constant-coefficient-first-ode"><span class="section-num">5</span> Explain what happens when \(k&gt;0\) in a constant coefficient first ODE?</h2>
+<h3 id="front"><span class="section-num">5.1</span> Front</h3>
+<p><strong>Explain what happens when \(k&gt;0\) in a constant coefficient first ODE?</strong></p>
+<p>\(\dot{y} + ky = q(t)\), where \(k\) is a constant</p>
+<h3 id="back"><span class="section-num">5.2</span> Back</h3>
+<p>It models exponential decay, when the input is \(0\) the system response
+is \(y(t) = ce^{-kt}\), which decays exponentially to \(0\) as \(t \to
+\infty\)</p>
+<p>In the general solution, the term \(ce^{-kt}\) is called <strong>transient</strong>
+because it goes to \(0\). And the term \({\displaystyle e^{-kt} \int
+e^{kt}q(t) \dd{t}}\) is called the <strong>steady-state</strong> or <strong>long term</strong>
+solution.</p>
+<p>The value of \(c\) is determined by the initial value of \(y(0)\). The
+initial value only affects the transient term and not the long-term
+behaviour. So, every solution goes asymptotically to the steady-state
+as \(t \to \infty\)</p>
+<h2 id="draw-a-graph-with-the-solutions-of-a-constant-coefficient-first-ode"><span class="section-num">6</span> Draw a graph with the solutions of a constant coefficient first ODE?</h2>
+<h3 id="front"><span class="section-num">6.1</span> Front</h3>
+<p><strong>Draw a graph with the solutions of a constant coefficient first ODE?</strong></p>
+<p>\(\dot{y} + ky = q(t)\), where \(k&gt;0\) is a constant</p>
+<h3 id="back"><span class="section-num">6.2</span> Back</h3>
+<figure>
+    <img src="https://ppalazon.github.io/c0/1e6097-bd8f-48f6-b5f6-e7b7f1dcdb63/_20200916_195128Fwz3BoI.png"/> 
+</figure>
+
+
+</div>
+
+
+            <footer>
+    
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-1%2fsession-8%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=First%20Order%20Constant%20Coefficient%20Linear%20ODE%27s&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-1%2fsession-8%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-1%2fsession-8%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-1%2fsession-8%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-1%2fsession-8%2f&amp;title=First%20Order%20Constant%20Coefficient%20Linear%20ODE%27s" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=First%20Order%20Constant%20Coefficient%20Linear%20ODE%27s&amp;body=Check out this site https%3a%2f%2fppalazon.github.io%2f18.03%2funit-1%2fsession-8%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+
+<nav>
+    <ul class="pager">
+    
+    <li class="previous">
+        <a href="https://ppalazon.github.io/18.03/unit-1/session-7/" title="Sinusoidal Functions">
+            <span aria-hidden="true">&larr;</span>Sinusoidal Functions
+        </a>
+    </li>
+    
+
+    
+    <li class="next">
+        <a href="https://ppalazon.github.io/18.03/unit-1/session-9/" title="Exponential Input; Gain and Phase Lag">
+            Exponential Input; Gain and Phase Lag <span aria-hidden="true">&rarr;</span>
+        </a>
+    </li>
+    
+    </ul>
+</nav>
+
+
+
+</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//ppalazon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+        </div>
+    </div>
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/">18.03 Differential Equations</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/unit-1/">1: First Order Differential Equations</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.03/unit-1/session-8/">First Order Constant Coefficient Linear ODE&#39;s</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

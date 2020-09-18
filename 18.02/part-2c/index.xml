@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2C: Lagrange Multipliers and Constrained Differentials on Pablo Palazon&#39;s Website</title>
+    <link>https://ppalazon.github.io/18.02/part-2c/</link>
+    <description>Recent content in 2C: Lagrange Multipliers and Constrained Differentials on Pablo Palazon&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>CC BY-NC-ND 4.0</copyright>
+    <lastBuildDate>Thu, 18 Apr 2019 00:00:00 +0200</lastBuildDate><atom:link href="https://ppalazon.github.io/18.02/part-2c/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Session 39: Statement of Lagrange Multipliers and Example</title>
+      <link>https://ppalazon.github.io/18.02/part-2c/session-39/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-2c/session-39/</guid>
+      <description>Captured On [2020-02-06 Thu 12:56] Source Session 39: Statement of Lagrange Multipliers and Example | Part C: Lagrange Multipliers and Constrained Differentials | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Lagrange multipliers
+  
+  Figure 2: Example of using lagrange multipliers
+  
+  Figure 3: Subject to the constraint</description>
+    </item>
+    
+    <item>
+      <title>Session 40: Proof of Lagrange Multipliers</title>
+      <link>https://ppalazon.github.io/18.02/part-2c/session-40/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-2c/session-40/</guid>
+      <description>Captured On [2020-02-06 Thu 12:57] Source Session 40: Proof of Lagrange Multipliers | Part C: Lagrange Multipliers and Constrained Differentials | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Why this method is valid?
+  
+  Figure 2: Tangent to contrained level curve
+  
+  Figure 3: Both gradient vector are parallel</description>
+    </item>
+    
+    <item>
+      <title>Session 41: Advanced Example</title>
+      <link>https://ppalazon.github.io/18.02/part-2c/session-41/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-2c/session-41/</guid>
+      <description>Captured On [2020-02-06 Thu 12:57] Source Session 41: Advanced Example | Part C: Lagrange Multipliers and Constrained Differentials | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Build pyramid
+  
+  Figure 2: First draft, can&amp;rsquo;t solve
+  
+  Figure 3: Another approximation to the solution
+  
+  Figure 4: Function to minimize and constrain</description>
+    </item>
+    
+    <item>
+      <title>Session 42: Constrained Differentials</title>
+      <link>https://ppalazon.github.io/18.02/part-2c/session-42/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-2c/session-42/</guid>
+      <description>Captured On [2020-02-06 Thu 12:57] Source Session 42: Constrained Differentials | Part C: Lagrange Multipliers and Constrained Differentials | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Non-independent variables
+  
+  Figure 2: \(z\) as a function of \(x\) and \(y\)
+  
+  Figure 3: Take differential
+  
+  Figure 4: Partial derivatives</description>
+    </item>
+    
+    <item>
+      <title>Session 43: Clearer Notation</title>
+      <link>https://ppalazon.github.io/18.02/part-2c/session-43/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-2c/session-43/</guid>
+      <description>Captured On [2020-02-06 Thu 12:59] Source Session 43: Clearer Notation | Part C: Lagrange Multipliers and Constrained Differentials | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Introduction to confussion
+  
+  Figure 2: Equals variable but different partial derivatives
+  
+  Figure 3: Need clearer notation
+  2 What differences are there between formal and actual partial derivatives?</description>
+    </item>
+    
+    <item>
+      <title>Session 44: Example</title>
+      <link>https://ppalazon.github.io/18.02/part-2c/session-44/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-2c/session-44/</guid>
+      <description>Captured On [2020-02-06 Thu 12:59] Source Session 44: Example | Part C: Lagrange Multipliers and Constrained Differentials | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Area of triangle
+  
+  Figure 2: Rate of change of area wrt \(\theta\)
+  
+  Figure 3: Keeping the right triangle
+  
+  Figure 4: Keeping the right triangle (2)</description>
+    </item>
+    
+  </channel>
+</rss>

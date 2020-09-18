@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Session 38: Directional Derivatives  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="calculus, maths, ">
+
+
+<meta property="og:title" content="Session 38: Directional Derivatives  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.02/part-2b/session-38/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="content-source" content="18.02/part-2b/session-38.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Captured On [2020-02-06 Thu 12:29] Source Session 38: Directional Derivatives | Part B: Chain Rule, Gradient and Directional Derivatives | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare 1 Chalkboard Figure 1: Directional derivatives Figure 2: Straight line trayectory
+Figure 3: Directional derivative in direction of (\vu{u})
+Figure 4: Slope of a slice
+"/>
+<meta property="og:article:published_time" content="2019-04-18T00:00:00&#43;02:00" />
+<meta property="og:article:modified_time" content="2019-04-18T00:00:00&#43;02:00" />
+
+
+
+<meta property="og:article:tag" content="calculus">
+
+<meta property="og:article:tag" content="maths">
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ppalazon" />
+<meta name="twitter:creator" content="@ppalazon" />
+<meta name="twitter:title" content="Session 38: Directional Derivatives" />
+<meta name="twitter:description" content="Captured On [2020-02-06 Thu 12:29] Source Session 38: Directional Derivatives | Part B: Chain Rule, Gradient and Directional Derivatives | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare 1 Chalkboard Figure 1: Directional derivatives Figure 2: Straight line trayectory
+Figure 3: Directional derivative in direction of (\vu{u})
+Figure 4: Slope of a slice
+"/>
+<meta name="twitter:url" content="https://ppalazon.github.io/18.02/part-2b/session-38/" />
+<meta name="twitter:domain" content="https://ppalazon.github.io">
+
+
+
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+     "@type": "Article",
+     "headline": "Session 38: Directional Derivatives",
+     "author": {
+         "@type": "Person",
+         "name": "http://profiles.google.com/+?rel=author"
+     },
+     "datePublished": "2019-04-18",
+     "description": "",
+     "wordCount":  433 
+ }
+</script>
+
+
+
+<link rel="canonical" href="https://ppalazon.github.io/18.02/part-2b/session-38/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+ }
+ .hero {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: calc(200px + (450 - 200) * ((100vw - 300px) / (1600 - 300)));
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: calc(-1 * (200px + (450 - 200) * ((100vw - 300px) / (1600 - 300))));
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+    <header class="container hat">
+        <h1>Session 38: Directional Derivatives
+</h1>
+
+        
+
+
+<span class="author">by
+    
+    MIT OCW, Pablo Palazon
+    
+</span>
+
+
+    </header>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            
+            <div class="content">
+  <dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2020-02-06 Thu 12:29]</span></span></dd>
+<dt>Source</dt>
+<dd><a href="https://ocw.mit.edu/courses/mathematics/18-02sc-multivariable-calculus-fall-2010/2.-partial-derivatives/part-b-chain-rule-gradient-and-directional-derivatives/session-38-directional-derivatives/index.htm">Session 38: Directional Derivatives | Part B: Chain Rule, Gradient and Directional Derivatives | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare</a></dd>
+</dl>
+<h2 id="chalkboard"><span class="section-num">1</span> Chalkboard</h2>
+<p><a id="org2c663d3"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/71/1b0e4c-864e-4b66-a409-ec4357741720/_20200206_125217MIT18_02SC_L12Brds_14.png"
+         alt="Figure 1: Directional derivatives" width="80%"/> <figcaption>
+            <p>Figure 1: Directional derivatives</p>
+        </figcaption>
+</figure>
+
+<p><a id="org1bae23f"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/71/1b0e4c-864e-4b66-a409-ec4357741720/_20200206_125222MIT18_02SC_L12Brds_15.png"
+         alt="Figure 2: Straight line trayectory" width="80%"/> <figcaption>
+            <p>Figure 2: Straight line trayectory</p>
+        </figcaption>
+</figure>
+
+<p><a id="org6c43c47"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/71/1b0e4c-864e-4b66-a409-ec4357741720/_20200206_125228MIT18_02SC_L12Brds_16.png"
+         alt="Figure 3: Directional derivative in direction of \(\vu{u}\)" width="80%"/> <figcaption>
+            <p>Figure 3: Directional derivative in direction of \(\vu{u}\)</p>
+        </figcaption>
+</figure>
+
+<p><a id="org2008430"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/71/1b0e4c-864e-4b66-a409-ec4357741720/_20200206_125233MIT18_02SC_L12Brds_17.png"
+         alt="Figure 4: Slope of a slice" width="80%"/> <figcaption>
+            <p>Figure 4: Slope of a slice</p>
+        </figcaption>
+</figure>
+
+<p><a id="org7ce79a1"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/71/1b0e4c-864e-4b66-a409-ec4357741720/_20200206_125239MIT18_02SC_L12Brds_18.png"
+         alt="Figure 5: Directional derivative as a components of gradient" width="80%"/> <figcaption>
+            <p>Figure 5: Directional derivative as a components of gradient</p>
+        </figcaption>
+</figure>
+
+<p><a id="org45e76b6"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/71/1b0e4c-864e-4b66-a409-ec4357741720/_20200206_125244MIT18_02SC_L12Brds_19.png"
+         alt="Figure 6: Geometrically" width="80%"/> <figcaption>
+            <p>Figure 6: Geometrically</p>
+        </figcaption>
+</figure>
+
+<p><a id="org99926d4"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/71/1b0e4c-864e-4b66-a409-ec4357741720/_20200206_125249MIT18_02SC_L12Brds_20.png"
+         alt="Figure 7: Fastest increase of \(w\)" width="80%"/> <figcaption>
+            <p>Figure 7: Fastest increase of \(w\)</p>
+        </figcaption>
+</figure>
+
+<p><a id="org4467d38"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/71/1b0e4c-864e-4b66-a409-ec4357741720/_20200206_125257MIT18_02SC_L12Brds_21.png"
+         alt="Figure 8: Minimal increase of \(w\) and no increase of w (level curve)" width="80%"/> <figcaption>
+            <p>Figure 8: Minimal increase of \(w\) and no increase of w (level curve)</p>
+        </figcaption>
+</figure>
+
+<h2 id="what-is-a-directional-derivative"><span class="section-num">2</span> What is a directional derivative?</h2>
+<h3 id="front"><span class="section-num">2.1</span> Front</h3>
+<p><b>What is a directional derivative?</b></p>
+<p>Surface \(w\), direction \(\vu{u}\). Explain how to get it, with \(\Delta\) notation</p>
+<h3 id="back"><span class="section-num">2.2</span> Back</h3>
+<p>It&rsquo;s the ratio of change of \(w\) with length at the direction of
+\(\vu{u}\)</p>
+<p>The directional derivative of \(w\) at \(P_0\) in the direction \(\vu{u}\)
+is defined as</p>
+<p>\({\displaystyle \dv{w}{s}\bigg|_{P_0,\vu{u}} = \lim_{\Delta s \to 0}
+\frac{\Delta w}{\Delta s} = \grad{w}(P_0) \vdot \vu{u}}\)</p>
+<ul>
+<li>\(\Delta w\) is the change in \(w\) by a step of length \(\Delta s\) in
+the direction of \(\vu{u}\)</li>
+</ul>
+<p>For example, if \(w = f(x,y)\), \((\Delta s)^2 = (\Delta x)^2 + (\Delta
+y)^2\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/71/1b0e4c-864e-4b66-a409-ec4357741720/_20200917_12185043Pun3Q.png"/> 
+</figure>
+
+<h2 id="how-can-you-proof-that-directional-derivative-is-the-component-of-gradient-a-direction--vu-u"><span class="section-num">3</span> How can you proof that directional derivative is the component of gradient a direction \(\vu{u}\)?</h2>
+<h3 id="front"><span class="section-num">3.1</span> Front</h3>
+<p><strong>How can you proof that directional derivative is the component of
+gradient a direction \(\vu{u}\)?</strong></p>
+<p>Directional derivative of \(w = f(x,y)\) at point $P<sub>0</sub></p>
+<figure>
+    <img src="https://ppalazon.github.io/71/1b0e4c-864e-4b66-a409-ec4357741720/_20200917_12185743Pun3Q.png"/> 
+</figure>
+
+<h3 id="back"><span class="section-num">3.2</span> Back</h3>
+<p><strong>How can you proof that directional derivative is the component of
+gradient a direction \(\vu{u}\)?</strong></p>
+<ul>
+<li>\(\vu{u} = \ev{\frac{\Delta x}{\Delta s}, \frac{\Delta y}{\Delta
+s}}\), where \((\Delta s)^2 = (\Delta x)^2 + (\Delta y)^2\)</li>
+<li>Tangent plane approximation at \(P_0\)
+<ul>
+<li>\({\displaystyle \Delta w \approx \pdv{w}{x}\bigg|_{P_0} \Delta x +
+\pdv{w}{y}\bigg|_{P_0} \Delta y}\)</li>
+</ul>
+</li>
+<li>Dividing by \(\Delta s\)
+<ul>
+<li>\({\displaystyle \frac{\Delta w}{\Delta s} \approx
+\pdv{w}{x}\bigg|_{P_0} \frac{\Delta x}{\Delta s} +
+\pdv{w}{y}\bigg|_{P_0} \frac{\Delta y}{\Delta s}}\)</li>
+</ul>
+</li>
+<li>Write as dot product
+<ul>
+<li>\({\displaystyle \frac{\Delta w}{\Delta s} \approx
+\ev{\pdv{w}{x}\bigg|_{P_0}, \pdv{w}{y}\bigg|_{P_0}} \vdot
+\ev{\frac{\Delta x}{\Delta s}, \frac{\Delta y}{\Delta s}}}\)</li>
+<li>\({\displaystyle \frac{\Delta w}{\Delta s} \approx
+\grad{w}|_{P_0} \vdot \vu{u}}\)</li>
+</ul>
+</li>
+<li>As \(\Delta s \to 0\)
+<ul>
+<li>\({\displaystyle \dv{w}{s} = \grad{w}|_{P_0} \vdot \vu{u}}\)</li>
+</ul>
+</li>
+</ul>
+<p>As \(\vu{u}\) it&rsquo;s a unit vector, directional derivative is a component
+of \(\grad{w}\) at \(\vu{u}\) direction</p>
+<h2 id="which-is-the-direction-of-maximum-change-of--w"><span class="section-num">4</span> Which is the direction of maximum change of \(w\)</h2>
+<h3 id="front"><span class="section-num">4.1</span> Front</h3>
+<p><b>Which is the direction of maximum change of $w$</b></p>
+<p>\(w = f(x,y)\)</p>
+<p>Show up</p>
+<h3 id="back"><span class="section-num">4.2</span> Back</h3>
+<p>Is in the same direction as \(\grad{w}\), where \(\theta\) be the angle
+between \(\grad{w}\) and direction of change \(\vu{u}\)</p>
+<p>\({\displaystyle \dv{w}{s}\bigg|_{\vu{u}} = \grad{w} \vdot \vu{u} =
+\abs{\grad{w}} \abs{\vu{u}} \cos \theta = \abs{\grad{w}} \cos \theta}\)</p>
+<p>It&rsquo;s obvious that this is greatest when \(\theta = 0\), so \(\grad{w}\)
+and \(\vu{u}\) are in the same direction</p>
+
+</div>
+
+
+            <footer>
+    
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-2b%2fsession-38%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Session%2038%3a%20Directional%20Derivatives&amp;url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-2b%2fsession-38%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-2b%2fsession-38%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-2b%2fsession-38%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-2b%2fsession-38%2f&amp;title=Session%2038%3a%20Directional%20Derivatives" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Session%2038%3a%20Directional%20Derivatives&amp;body=Check out this site https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-2b%2fsession-38%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+
+<nav>
+    <ul class="pager">
+    
+    <li class="previous">
+        <a href="https://ppalazon.github.io/18.02/part-2b/session-37/" title="Session 37: Example">
+            <span aria-hidden="true">&larr;</span>Session 37: Example
+        </a>
+    </li>
+    
+
+    
+    </ul>
+</nav>
+
+
+
+</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//ppalazon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+        </div>
+    </div>
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.02/">18.02 Multivariable Calculus</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.02/part-2b/">2B: Chain Rule, Gradient and Directional Derivatives</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.02/part-2b/session-38/">Session 38: Directional Derivatives</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

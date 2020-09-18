@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Operations on Fourier Series  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="ode, maths, ">
+
+
+<meta property="og:title" content="Operations on Fourier Series  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.03/unit-3/session-22/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="content-source" content="18.03/unit-3/session-22.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Captured On [2019-11-23 Sat 18:11] Source Operations on Fourier Series | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is an even function? 1.1 Front What is an even function?
+Let \(f(t)\) be a function, and write examples
+1.2 Back \(f(t)\) is even if \(f(-t) = f(t)\) for all \(t\)
+ \(t^2, t^4, t^6, \dots\), any even power of \(t\) \(\cos(at)\)  power series for \(\cos(at)\) has only even powers of \(t\)   A constant function  2 What is the integral of even function on a &amp;lsquo;balanced&amp;rsquo; interval?"/>
+<meta property="og:article:published_time" content="2019-11-26T00:00:00&#43;01:00" />
+<meta property="og:article:modified_time" content="2019-11-26T00:00:00&#43;01:00" />
+
+
+
+<meta property="og:article:tag" content="ode">
+
+<meta property="og:article:tag" content="maths">
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ppalazon" />
+<meta name="twitter:creator" content="@ppalazon" />
+<meta name="twitter:title" content="Operations on Fourier Series" />
+<meta name="twitter:description" content="Captured On [2019-11-23 Sat 18:11] Source Operations on Fourier Series | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is an even function? 1.1 Front What is an even function?
+Let \(f(t)\) be a function, and write examples
+1.2 Back \(f(t)\) is even if \(f(-t) = f(t)\) for all \(t\)
+ \(t^2, t^4, t^6, \dots\), any even power of \(t\) \(\cos(at)\)  power series for \(\cos(at)\) has only even powers of \(t\)   A constant function  2 What is the integral of even function on a &amp;lsquo;balanced&amp;rsquo; interval?"/>
+<meta name="twitter:url" content="https://ppalazon.github.io/18.03/unit-3/session-22/" />
+<meta name="twitter:domain" content="https://ppalazon.github.io">
+
+
+
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+     "@type": "Article",
+     "headline": "Operations on Fourier Series",
+     "author": {
+         "@type": "Person",
+         "name": "http://profiles.google.com/+?rel=author"
+     },
+     "datePublished": "2019-11-26",
+     "description": "",
+     "wordCount":  2217 
+ }
+</script>
+
+
+
+<link rel="canonical" href="https://ppalazon.github.io/18.03/unit-3/session-22/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+ }
+ .hero {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: calc(200px + (450 - 200) * ((100vw - 300px) / (1600 - 300)));
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: calc(-1 * (200px + (450 - 200) * ((100vw - 300px) / (1600 - 300))));
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+    <header class="container hat">
+        <h1>Operations on Fourier Series
+</h1>
+
+        
+
+
+<span class="author">by
+    
+    MIT OCW, Pablo Palazon
+    
+</span>
+
+
+    </header>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            
+            <div class="content">
+  <dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2019-11-23 Sat 18:11]</span></span></dd>
+<dt>Source</dt>
+<dd><a href="https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-iii-fourier-series-and-laplace-transform/operations-on-fourier-series/index.htm">Operations on Fourier Series | Unit III: Fourier Series and Laplace
+Transform | Differential Equations | Mathematics | MIT OpenCourseWare</a></dd>
+</dl>
+<h2 id="what-is-an-even-function"><span class="section-num">1</span> What is an even function?</h2>
+<h3 id="front"><span class="section-num">1.1</span> Front</h3>
+<p><b>What is an even function?</b></p>
+<p>Let \(f(t)\) be a function, and write examples</p>
+<h3 id="back"><span class="section-num">1.2</span> Back</h3>
+<p>\(f(t)\) is even if \(f(-t) = f(t)\) for all \(t\)</p>
+<ul>
+<li>\(t^2, t^4, t^6, \dots\), any <code>even</code> power of \(t\)</li>
+<li>\(\cos(at)\)
+<ul>
+<li>power series for \(\cos(at)\) has only <code>even</code> powers of \(t\)</li>
+</ul>
+</li>
+<li>A constant function</li>
+</ul>
+<h2 id="what-is-the-integral-of-even-function-on-a-balanced-interval"><span class="section-num">2</span> What is the integral of even function on a &lsquo;balanced&rsquo; interval?</h2>
+<h3 id="front"><span class="section-num">2.1</span> Front</h3>
+<p><b>What is the integral of even function on a &lsquo;balanced&rsquo; interval?</b></p>
+<p>Let \(f(t)\) an even function, and \([-L, L]\) the interval</p>
+<p>\({\displaystyle \int_{-L}^L f(t) \dd{t}}\)</p>
+<h3 id="back"><span class="section-num">2.2</span> Back</h3>
+<p>\({\displaystyle 2 \int_0^L f(t) \dd{t}}\)</p>
+<h2 id="this-function-is-even-or-odd"><span class="section-num">3</span> This function is even or odd?</h2>
+<h3 id="front"><span class="section-num">3.1</span> Front</h3>
+<p><b>This function is even or odd?</b></p>
+<figure>
+    <img src="https://ppalazon.github.io/7f/ebe1ee-64ff-4500-9773-6d737311636a/_20200916_213754RtFfe32.png"/> 
+</figure>
+
+<h3 id="back"><span class="section-num">3.2</span> Back</h3>
+<p>Even function</p>
+<h2 id="what-is-an-odd-function"><span class="section-num">4</span> What is an odd function?</h2>
+<h3 id="front"><span class="section-num">4.1</span> Front</h3>
+<p><b>What is an odd function?</b></p>
+<p>Let \(f(t)\) be a function, and write examples</p>
+<h3 id="back"><span class="section-num">4.2</span> Back</h3>
+<p>\(f(t)\) is odd if \(f(-t) = -f(t)\) for all \(t\)</p>
+<ul>
+<li>\(t, t^3, t^5, \dots\) any <code>odd</code> powers of \(t\)</li>
+<li>\(\sin(at)\)
+<ul>
+<li>Power series of \(\sin(at)\) has only <code>odd</code> powers of \(t\)</li>
+</ul>
+</li>
+</ul>
+<h2 id="what-is-the-integral-of-odd-function-on-a-balanced-interval"><span class="section-num">5</span> What is the integral of odd function on a &lsquo;balanced&rsquo; interval?</h2>
+<h3 id="front"><span class="section-num">5.1</span> Front</h3>
+<p><b>What is the integral of odd function on a &lsquo;balanced&rsquo; interval?</b></p>
+<p>Let \(f(t)\) be an odd function, and \([-L, L]\) the interval</p>
+<p>\({\displaystyle \int_{-L}^L f(t) \dd{t}}\)</p>
+<h3 id="back"><span class="section-num">5.2</span> Back</h3>
+<p>\(0\)</p>
+<h2 id="how-is-the-outcome-function-after-multiplicate-these-functions"><span class="section-num">6</span> How is the outcome function after multiplicate these functions?</h2>
+<h3 id="front"><span class="section-num">6.1</span> Front</h3>
+<p><b>How is the outcome function after multiplicate these functions?</b></p>
+<p>\(\text{even} \cross \text{even}\)</p>
+<h3 id="back"><span class="section-num">6.2</span> Back</h3>
+<p>\(\text{even} \cross \text{even} = \text{even}\)</p>
+<p>Thinks in terms of multiply <code>even</code> or <code>odd</code> powers of \(t\)</p>
+<h2 id="how-is-the-outcome-function-after-multiplicate-these-functions"><span class="section-num">7</span> How is the outcome function after multiplicate these functions?</h2>
+<h3 id="front"><span class="section-num">7.1</span> Front</h3>
+<p><b>How is the outcome function after multiplicate these functions?</b></p>
+<p>\(\text{odd} \cross \text{odd}\)</p>
+<h3 id="back"><span class="section-num">7.2</span> Back</h3>
+<p>\(\text{odd} \cross \text{odd} = \text{even}\)</p>
+<p>Thinks in terms of multiply <code>even</code> or <code>odd</code> powers of \(t\)</p>
+<h2 id="how-is-the-outcome-function-after-multiplicate-these-functions"><span class="section-num">8</span> How is the outcome function after multiplicate these functions?</h2>
+<h3 id="front"><span class="section-num">8.1</span> Front</h3>
+<p><b>How is the outcome function after multiplicate these functions?</b></p>
+<p>\(\text{odd} \cross \text{even}\)</p>
+<h3 id="back"><span class="section-num">8.2</span> Back</h3>
+<p>\(\text{odd} \cross \text{even} = \text{odd}\)</p>
+<p>Thinks in terms of multiply <code>even</code> or <code>odd</code> powers of \(t\)</p>
+<h2 id="how-are-the-fourier-coefficients-when--ft---is-even"><span class="section-num">9</span> How are the Fourier coefficients when \(f(t)\) is even?</h2>
+<h3 id="front"><span class="section-num">9.1</span> Front</h3>
+<p><b>How are the Fourier coefficients when $f(t)$ is even?</b></p>
+<p>Let \(f(t)\) be an even function</p>
+<h3 id="back"><span class="section-num">9.2</span> Back</h3>
+<p>\(b_n = 0\), multiplying and even and odd function, the integrand is odd, so the
+integral is \(0\)</p>
+<p>\({\displaystyle a_n = \frac{2}{L} \int_0^L f(t) \cos(n \frac{\pi}{L} t) \dd{t}}\)</p>
+<p>Multiplying 2 even functions, the integrand is even.</p>
+<h2 id="how-are-the-fourier-coefficients-when--ft---is-odd"><span class="section-num">10</span> How are the Fourier coefficients when \(f(t)\) is odd?</h2>
+<h3 id="front"><span class="section-num">10.1</span> Front</h3>
+<p><b>How are the Fourier coefficients when $f(t)$ is odd?</b></p>
+<p>Let \(f(t)\) be an odd function</p>
+<h3 id="back"><span class="section-num">10.2</span> Back</h3>
+<p>\(a_n = 0\), because of the integrand is odd, so the integral is \(0\)</p>
+<p>\({\displaystyle b_n = \frac{2}{L} \int_0^L f(t) \sin(n \frac{\pi}{L} t) \dd{t}}\)</p>
+<p>The integrand is <code>even</code> after multiply 2 <code>odd</code> functions</p>
+<h2 id="shift-vertically-this-odd-function-by-1-upwards-unit"><span class="section-num">11</span> Shift vertically this odd function by 1 upwards unit?</h2>
+<h3 id="front"><span class="section-num">11.1</span> Front</h3>
+<p><b>Shift vertically this odd function by 1 upwards unit?</b></p>
+<figure>
+    <img src="https://ppalazon.github.io/52/d674ca-64b6-49e2-af00-1e4c24cdf64e/_20200916_213802apvDBmE.png"/> 
+</figure>
+
+<p>Where \({\displaystyle sq(t) = \frac{4}{\pi} \sum_{n \text{odd}}^{\infty}
+\frac{\sin(nt)}{n}}\)</p>
+<h3 id="back"><span class="section-num">11.2</span> Back</h3>
+<figure>
+    <img src="https://ppalazon.github.io/8f/f5c173-afb5-4eb5-91b0-973f7565b870/_20200916_2138102rFhQjq.png"/> 
+</figure>
+
+<p>\({\displaystyle f_1 (t) = 1 + sq(t) = 1 + \frac{4}{\pi} \sum_{n
+\text{odd}}^{\infty} \frac{\sin(nt)}{n}}\)</p>
+<h2 id="scale-vertically-this-odd-function-by-2-upwards-units"><span class="section-num">12</span> Scale vertically this odd function by 2 upwards units?</h2>
+<h3 id="front"><span class="section-num">12.1</span> Front</h3>
+<p><b>Scale vertically this odd function by 2 upwards units?</b></p>
+<figure>
+    <img src="https://ppalazon.github.io/25/20b07e-88ef-4779-a680-29d5b7ef53a0/_20200916_220726apvDBmE.png"/> 
+</figure>
+
+<p>Where \({\displaystyle sq(t) = \frac{4}{\pi} \sum_{n \text{odd}}^{\infty}
+\frac{\sin(nt)}{n}}\)</p>
+<h3 id="back"><span class="section-num">12.2</span> Back</h3>
+<figure>
+    <img src="https://ppalazon.github.io/25/20b07e-88ef-4779-a680-29d5b7ef53a0/_20200916_220735Feyv7yY.png"/> 
+</figure>
+
+<p>\({\displaystyle f_2(t) = 2 sq(t) = \frac{8}{\pi} \sum_{n \text{odd}}^{\infty}
+\frac{\sin(nt)}{n}}\)</p>
+<h2 id="shift-by--1--and-scale-by--1-2--vertically-this-function"><span class="section-num">13</span> Shift by \(1\) and scale by \(1/2\) vertically this function</h2>
+<h3 id="front"><span class="section-num">13.1</span> Front</h3>
+<p><b>Shift by $1$ and scale by $1/2$ vertically this function</b></p>
+<figure>
+    <img src="https://ppalazon.github.io/25/20b07e-88ef-4779-a680-29d5b7ef53a0/_20200916_220743apvDBmE.png"/> 
+</figure>
+
+<p>Where \({\displaystyle sq(t) = \frac{4}{\pi} \sum_{n \text{odd}}^{\infty}
+\frac{\sin(nt)}{n}}\)</p>
+<h3 id="back"><span class="section-num">13.2</span> Back</h3>
+<figure>
+    <img src="https://ppalazon.github.io/25/20b07e-88ef-4779-a680-29d5b7ef53a0/_20200916_220755uXUTgAx.png"/> 
+</figure>
+
+<p>\({\displaystyle f_3(t) = \frac{1}{2} \biggl(1 + sq(t) \biggr) = \frac{1}{2} +
+\frac{2}{\pi} \sum_{n \text{odd}}^{\infty} \frac{\sin(nt)}{n}}\)</p>
+<h2 id="scale-in-time-this-function"><span class="section-num">14</span> Scale in time this function</h2>
+<h3 id="front"><span class="section-num">14.1</span> Front</h3>
+<p><b>Scale in time this function</b></p>
+<figure>
+    <img src="https://ppalazon.github.io/25/20b07e-88ef-4779-a680-29d5b7ef53a0/_20200916_220803apvDBmE.png"/> 
+</figure>
+
+<p>Where \({\displaystyle sq(t) = \frac{4}{\pi} \sum_{n \text{odd}}^{\infty}
+\frac{\sin(nt)}{n}}\)</p>
+<p>In the new function \(\pi \to 1\) in time axis</p>
+<h3 id="back"><span class="section-num">14.2</span> Back</h3>
+<figure>
+    <img src="https://ppalazon.github.io/25/20b07e-88ef-4779-a680-29d5b7ef53a0/_20200916_220815RUS9Rdh.png"/> 
+</figure>
+
+<p>\({\displaystyle f_4 (t) = sq(\pi t) = \frac{4}{\pi} \sum_{n \text{odd}}^{\infty}
+\frac{\sin(\pi n t)}{n}}\)</p>
+<h2 id="shift-in-time-by--pi-2--to-the-left-this-function"><span class="section-num">15</span> Shift in time by \(\pi/2\) to the left this function</h2>
+<h3 id="front"><span class="section-num">15.1</span> Front</h3>
+<p><b>Shift in time by $\pi/2$ to the left this function</b></p>
+<figure>
+    <img src="https://ppalazon.github.io/25/20b07e-88ef-4779-a680-29d5b7ef53a0/_20200916_220827apvDBmE.png"/> 
+</figure>
+
+<p>Where \({\displaystyle sq(t) = \frac{4}{\pi} \sum_{n \text{odd}}^{\infty}
+\frac{\sin(nt)}{n}}\)</p>
+<h3 id="back"><span class="section-num">15.2</span> Back</h3>
+<figure>
+    <img src="https://ppalazon.github.io/25/20b07e-88ef-4779-a680-29d5b7ef53a0/_20200916_220837Nl8ZNJV.png"/> 
+</figure>
+
+<p>\({\displaystyle f_5(t) = sq(t + \pi/2) = \frac{4}{\pi} \biggl(\sin(t + \pi/2) +
+\frac{\sin(3t + 3\pi/2)}{3} + \cdots \biggr) = \frac{4}{\pi} \biggl(\cos(t) -
+\frac{\cos(3t)}{3} + \cdots \biggr)}\)</p>
+<p>\(f_5(t)\) is an even function, so you must have only cosine terms in its series</p>
+<h2 id="how-can-you-integrate-a-fourier-series"><span class="section-num">16</span> How can you integrate a Fourier series</h2>
+<h3 id="front"><span class="section-num">16.1</span> Front</h3>
+<p><b>How can you integrate a Fourier series</b></p>
+<p>Let \(f(t)\) be a Fourier series</p>
+<p>Will it be a periodic function?</p>
+<h3 id="back"><span class="section-num">16.2</span> Back</h3>
+<p>Term by terms, but the outcome isn&rsquo;t a Fourier series (it&rsquo;s not periodic),
+because of the \(t\) term</p>
+<h2 id="how-can-you-differentiate-a-fourier-series"><span class="section-num">17</span> How can you differentiate a Fourier Series?</h2>
+<h3 id="front"><span class="section-num">17.1</span> Front</h3>
+<p><b>How can you differentiate a Fourier Series?</b></p>
+<p>Let \(f(t)\) be a Fourier series</p>
+<h3 id="back"><span class="section-num">17.2</span> Back</h3>
+<p>Term by term</p>
+<h2 id="what-is-the-result-of-derivative-a-triangle-wave-function"><span class="section-num">18</span> What is the result of derivative a triangle wave function?</h2>
+<h3 id="front"><span class="section-num">18.1</span> Front</h3>
+<p><b>What is the result of derivative a triangle wave function?</b></p>
+<p>Let \(f(t)\) be the period of \(2\pi\) triangle wave (continuous sawtooth) given on
+the interval \([-\pi, \pi]\) by \(f(t) = \abs{t}\)</p>
+<p>\({\displaystyle f(t) = \frac{\pi}{2} - \frac{4}{\pi} \biggl(\cos(t) +
+\frac{\cos(3t)}{3^2} + \frac{\cos(5t)}{5^2} + \cdots \biggr)}\)</p>
+<h3 id="back"><span class="section-num">18.2</span> Back</h3>
+<p>The derivative terms by terms of this function, give us a square wave.</p>
+<p>\({\displaystyle f'(t) = \frac{4}{\pi} \biggl(\sin(t) + \frac{\sin(3t)}{3} +
+\frac{\sin(5t)}{5} + \cdots \biggr)}\)</p>
+<h2 id="what-does-mean-to-differentiate-a-square-wave-functions"><span class="section-num">19</span> What does mean to differentiate a square wave functions?</h2>
+<h3 id="front"><span class="section-num">19.1</span> Front</h3>
+<p><b>What does mean to differentiate a square wave functions?</b></p>
+<p>\({\displaystyle sq(t) = \frac{4}{\pi} \biggl(\sin(t) + \frac{\sin(3t)}{3} +
+\frac{\sin(5t)}{5} + \cdots \biggr)}\)</p>
+<h3 id="back"><span class="section-num">19.2</span> Back</h3>
+<p>You can differentiate this function term-by-terms, but as \(sq(t)\) consists of
+horizontal segments its derivative at most places is 0. However we can&rsquo;t ignore
+the &lsquo;vertical&rsquo; segments where the function has <em>jump discontinuity</em></p>
+<p>You need <em>delta functions</em> and <em>generalized derivatives</em></p>
+<h2 id="what-is-a-piecewise-smooth-function"><span class="section-num">20</span> What is a piecewise smooth function?</h2>
+<h3 id="front"><span class="section-num">20.1</span> Front</h3>
+<p><b>What is a piecewise smooth function?</b></p>
+<p>Let \(f(t)\) be a \(2L\) periodic function</p>
+<h3 id="back"><span class="section-num">20.2</span> Back</h3>
+<p>\(f(t)\) is called <strong>piecewise smooth</strong></p>
+<ul>
+<li>if there are a only finite number of points \(0 \leq t_1 \lt t_2
+\lt \dots \lt t_n \leq 2L\) where \(f(t)\) is not differentiable, and</li>
+<li>if at each of these points the left and ther righ-hand limits \({\displaystyle
+\lim_{t \to t_i^-} f'(t)}\) and \({\displaystyle \lim_{t \to t_i^+} f'(t)}\)
+exist (although they might not be equal)</li>
+</ul>
+<p>Example:</p>
+<figure>
+    <img src="https://ppalazon.github.io/25/20b07e-88ef-4779-a680-29d5b7ef53a0/_20200916_220845kFhDZlk.png"/> 
+</figure>
+
+<h2 id="are-the-functions-and-its-fourier-series-exactly-the-same-function"><span class="section-num">21</span> Are the functions and its Fourier series exactly the same function?</h2>
+<h3 id="front"><span class="section-num">21.1</span> Front</h3>
+<p><b>Are the functions and its Fourier series exactly the same function?</b></p>
+<p>Put examples</p>
+<h3 id="back"><span class="section-num">21.2</span> Back</h3>
+<p>Not, it&rsquo;s not, it really quite similar but isn&rsquo;t the same</p>
+<figure>
+    <img src="https://ppalazon.github.io/25/20b07e-88ef-4779-a680-29d5b7ef53a0/_20200916_220853HmPP0Eo.png"/> 
+</figure>
+
+<figure>
+    <img src="https://ppalazon.github.io/25/20b07e-88ef-4779-a680-29d5b7ef53a0/_20200916_22085832Ex9O6.png"/> 
+</figure>
+
+<h2 id="how-converges-a-fouries-series-of--ft"><span class="section-num">22</span> How converges a Fouries series of \(f(t)\)</h2>
+<h3 id="front"><span class="section-num">22.1</span> Front</h3>
+<p><b>How converges a Fouries series of $f(t)$</b></p>
+<p>Let \(f(t)\) be the a function</p>
+<h3 id="back"><span class="section-num">22.2</span> Back</h3>
+<p>\(f(t)\) must be a periodic piecewise smooth function, then its Fourier series:</p>
+<ul>
+<li>converges to \(f(t)\) at values of \(t\) where \(f\) is continuous</li>
+<li>converges to the average of \(f(t^-)\) and \(f(t^+)\) where it has a jump
+discontinuity</li>
+</ul>
+<figure>
+    <img src="https://ppalazon.github.io/25/20b07e-88ef-4779-a680-29d5b7ef53a0/_20200916_220912HmPP0Eo.png"/> 
+</figure>
+
+<figure>
+    <img src="https://ppalazon.github.io/25/20b07e-88ef-4779-a680-29d5b7ef53a0/_20200916_22092032Ex9O6.png"/> 
+</figure>
+
+<h2 id="what-is-the-fourier-analysis"><span class="section-num">23</span> What is the Fourier Analysis?</h2>
+<h3 id="front"><span class="section-num">23.1</span> Front</h3>
+<p><b>What is the Fourier Analysis?</b></p>
+<h3 id="back"><span class="section-num">23.2</span> Back</h3>
+<p>It&rsquo;s the decomposition of a function \(f(t)\) into the sum of its sinusoidal
+harmonics, which are also called its Fourier components</p>
+<p>For example, the ear is a fourier analyzer</p>
+<h2 id="what-is-the-fourier-synthesis"><span class="section-num">24</span> What is the Fourier Synthesis?</h2>
+<h3 id="front"><span class="section-num">24.1</span> Front</h3>
+<p><b>What is the Fourier Synthesis?</b></p>
+<h3 id="back"><span class="section-num">24.2</span> Back</h3>
+<p>It&rsquo;s the building up of a function \(f(t)\) by adding up its successive Fourier
+components, that is, the reconstruction of a function \(f(t)\) from its Fourier
+components.</p>
+<p>For example, the brain is a Fourier synthesizer</p>
+<h2 id="why-there-is-an-overshoot-near-the-discontinity-on-a-fourier-series"><span class="section-num">25</span> Why there is an overshoot near the discontinity on a Fourier series?</h2>
+<h3 id="front"><span class="section-num">25.1</span> Front</h3>
+<p><b>Why there is an overshoot near the discontinity on a Fourier series?</b></p>
+<figure>
+    <img src="https://ppalazon.github.io/25/20b07e-88ef-4779-a680-29d5b7ef53a0/_20200916_2209345eSeb59.png"/> 
+</figure>
+
+<p>In this picture, the overshoot is about \(0.18\)</p>
+<h3 id="back"><span class="section-num">25.2</span> Back</h3>
+<p>It&rsquo;s called Gibbs' phenomenon, and doesn&rsquo;t matter how many terms are include in
+the Fourier series. The overshoot always be about \(9%\) of the size of the jump.</p>
+<p>In this case, the overshoot is \(0.18\) that it&rsquo;s the \(9%\) of the jump of \(2\)</p>
+<h2 id="given-this-fourier-series-what-is-the-value-of-this-formula"><span class="section-num">26</span> Given this Fourier Series, what is the value of this formula?</h2>
+<h3 id="front"><span class="section-num">26.1</span> Front</h3>
+<p><b>Given this Fourier Series, what is the value of this formula?</b></p>
+<p>Let \({\displaystyle f(t) = \frac{\pi^2}{3} - 2 \sum_{n=1}^{\infty}
+\frac{\cos(nt)}{n^2}}\) be the Fouries series of \({\displaystyle f(t) = t
+\biggl(\pi - \frac{t}{2}\biggr)}\) on \([0, 2\pi]\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/25/20b07e-88ef-4779-a680-29d5b7ef53a0/_20200916_220941LL9mls1.png"/> 
+</figure>
+
+<p>Formula: \({\displaystyle \sum_{n=1}^{\infty} \frac{1}{n^2}}\)</p>
+<h3 id="back"><span class="section-num">26.2</span> Back</h3>
+<p>Since the function \(f(t)\) is continuous, the series converges to \(f(t)\) for all
+\(t\). Pluggin in \(t = 0\), we get</p>
+<p>\({\displaystyle f(0) = 0 = \frac{\pi^2}{3} - \sum_{n=1}^{\infty} \frac{2}{n^2}}\)</p>
+<p>so, \({\displaystyle \sum_{n=1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6}}\)</p>
+<h2 id="what-is-the-fourier-series-for-this-function"><span class="section-num">27</span> What is the Fourier series for this function?</h2>
+<h3 id="front"><span class="section-num">27.1</span> Front</h3>
+<p><b>What is the Fourier series for this function?</b></p>
+<p>\({\displaystyle f(t) = \cos(2t - \frac{\pi}{4})}\)</p>
+<h3 id="back"><span class="section-num">27.2</span> Back</h3>
+<p>This function is a trigonmetric function, which could be decomposing using the
+trigonometric identity \(\cos(A - B) = \cos(A) \cos(B) + \sin(A) \sin(B)\)</p>
+<p>\({\displaystyle f(t) = \cos(2t) \cos(\frac{\pi}{4}) + \sin(2t)
+\sin(\frac{\pi}{4}) = \frac{1}{\sqrt{2}} \biggl(\cos(2t) + \sin(2t) \biggr)}\)</p>
+<h2 id="given-this-fourier-series-compute--ft---fourier-series"><span class="section-num">28</span> Given this Fourier series compute \(f(t)\) Fourier series?</h2>
+<h3 id="front"><span class="section-num">28.1</span> Front</h3>
+<p><b>Given this Fourier series compute $f(t)$ Fourier series?</b></p>
+<p>\({\displaystyle sq(t) = \begin{cases} -1 &amp; -\pi \lt t \lt 0 \ 1 &amp; 0
+\lt t \lt \pi \end{cases} = \frac{4}{\pi} \sum_{n
+\text{odd}}^{\infty} \frac{\sin(nt)}{n}}\)</p>
+<p>\({\displaystyle f(t) = \abs{t}}\) on \(-\pi \lt t \lt \pi\) with period
+\(2\pi\)</p>
+<h3 id="back"><span class="section-num">28.2</span> Back</h3>
+<p>We can see that \(f'(t) = sq(t)\) on the interval, so \(f(t) = \int sq(t) \dd{t}\)</p>
+<p>\({\displaystyle f(t) = \int \frac{4}{\pi} \sum_{n \text{odd}}^{\infty}
+\frac{\sin(nt)}{n} \dd{t} = C + \frac{4}{\pi} \sum_{n \text{odd}}^{\infty} -
+\frac{\cos(nt)}{n^2}}\)</p>
+<p>The constant \(C\) could be get using Fourier coefficients</p>
+<p>\({\displaystyle C = \frac{1}{2\pi} \int_{-\pi}^{\pi} \abs{t} \dd{t} =
+\frac{1}{\pi} \int_0^{\pi} t \dd{t} = \frac{1}{\pi} \frac{\pi^2}{2} =
+\frac{\pi}{2}}\)</p>
+<h2 id="how-could-we-get-a-fourier-series-from-square-wave-fouries-series"><span class="section-num">29</span> How could we get a Fourier series from square wave Fouries series?</h2>
+<h3 id="front"><span class="section-num">29.1</span> Front</h3>
+<p><b>How could we get a Fourier series from square wave Fouries series?</b></p>
+<p>Square wave: \(sq(t) = 1\) for \(0 \lt t \lt \pi\), it&rsquo;s a \(2\pi\) period
+odd function, which Fourier series is \({\displaystyle \frac{4}{\pi} \sum_{n
+\text{ odd}}^{\infty} \frac{\sin(nt)}{n}}\)</p>
+<p>Find Fourier Series for \(h(t)\) which is a odd and periodic of period \(2\pi\) and
+such that \(h(t) = t\) for \({\displaystyle 0 \lt t \lt \frac{\pi}{2}}\)
+and \(h(t) = \pi - t\) for \({\displaystyle \frac{\pi}{2} \lt t \lt
+\pi}\)</p>
+<h3 id="back"><span class="section-num">29.2</span> Back</h3>
+<p>We can see that \(sq(t)\) could be the derivative of \(h(t)\) but first we need to
+resize it on time axis from \(\pi\) to \(\pi / 2\)</p>
+<p>\begin{align*}
+h'(x) &amp;= sq(t + \pi/2) \\\<br>
+&amp;= \frac{4}{\pi} \sum_{n \text{ odd}}^{\infty} \frac{\sin(n (t + \pi / 2))}{n} \\\<br>
+&amp;= 1 + \frac{4}{\pi} \cos(t) - \frac{4}{3 \pi} \cos(3t) + \frac{4}{5\pi} \cos(5t) + \cdots
+\end{align*}</p>
+<p>So, the Fourier Series of \(h(t)\) is</p>
+<p>\begin{align*}
+h(x) &amp;= \int sq(t + \pi / 2) \dd{t} \\\<br>
+&amp;= \int 1 + \frac{4}{\pi} \cos(t) - \frac{4}{3 \pi} \cos(3t) + \frac{4}{5\pi} \cos(5t) + \cdots \dd{t} \\\<br>
+&amp;= \frac{4}{\pi} \sin(t) - \frac{4}{9\pi} \sin(3t) + \frac{4}{25\pi} \sin(5t) + \cdots
+\end{align*}</p>
+<p>\(h(t)\) doesn&rsquo;t have constant  because it&rsquo;s a odd function</p>
+<h2 id="what-is-the-fourier-series-for-this-function"><span class="section-num">30</span> What is the Fourier Series for this function?</h2>
+<h3 id="front"><span class="section-num">30.1</span> Front</h3>
+<p><b>What is the Fourier Series for this function?</b></p>
+<p>\(\sin^2(t)\)</p>
+<h3 id="back"><span class="section-num">30.2</span> Back</h3>
+<p>Using trigonometric identity of double angle formula \(\cos(2t) = 1 - 2
+\sin^2(t)\)</p>
+<p>\({\displaystyle \sin^2(t) = \frac{1}{2} - \frac{1}{2} \cos(2t)}\)</p>
+<ul>
+<li>As \(\sin^2(t)\) it&rsquo;s an even function, there is no \(b_n\) coefficients</li>
+<li>This function has a base period of \(\pi\)</li>
+</ul>
+<h2 id="why-any-function--fx---is-a-sum-of-an-even-function-an-an-odd-function"><span class="section-num">31</span> Why any function \(F(x)\) is a sum of an even function an an odd function?</h2>
+<h3 id="front"><span class="section-num">31.1</span> Front</h3>
+<p><b>Why any function $F(x)$ is a sum of an even function an an odd function?</b></p>
+<p>So, that the decomposition is unique</p>
+<h3 id="back"><span class="section-num">31.2</span> Back</h3>
+<ul>
+<li>Even function from \(F(x)\): \(F(x) + F(-x)\)
+<ul>
+<li>\(h(x) = f(x) + f(-x)\)</li>
+<li>\(h(-x) = f(-x) + f(x)\)</li>
+<li>\(h(x) = h(-x)\), that is an even function</li>
+</ul>
+</li>
+<li>Odd function from \(F(x)\): \(F(x) - F(-x)\)
+<ul>
+<li>\(h(x) = f(x) - f(-x)\)</li>
+<li>\(h(-x) = f(-x) - f(-x)\)</li>
+<li>\(-h(x) = h(-x)\), that is an odd function</li>
+</ul>
+</li>
+</ul>
+<p>Adding both functions: \(F(x) + F(-x) + F(x) - F(-x) = 2 F(x)\), so</p>
+<p>\({\displaystyle F(x) = \frac{F(x) + F(-x)}{2} + \frac{F(x) - F(-x)}{2}}\)</p>
+<p>To show that this decomposition is unique, we suppose we have another
+decomposition \({\displaystyle F_{\text{even}}(x) + F_{\text{odd}}(x) = F(x) =
+\frac{F(x) + F(-x)}{2} + \frac{F(x) - F(-x)}{2}}\)</p>
+<p>Rearranging terms, this means that</p>
+<p>\({\displaystyle f_{\text{even}}(t) - \frac{F(x) + F(-x)}{2} =
+-F_{\text{odd}}(x) + \frac{F(x) - F(-x)}{2}}\)</p>
+<p>This sum of the LHS must be even, and the sum of the RHS must be odd. But then
+each side is simultaneously both even and odd, and has to be zero.</p>
+<p>Thus: \({\displaystyle F_{\text{even}} = \frac{F(x) + F(-x)}{2}}\) and
+\({\displaystyle F_{\text{odd}} = \frac{F(x) - F(-x)}{2}}\)</p>
+<h2 id="what-is-the-even-part-of--e-x"><span class="section-num">32</span> What is the even part of \(e^{x}?\)</h2>
+<h3 id="front"><span class="section-num">32.1</span> Front</h3>
+<p><b>What is the even part of $e^{x}$?</b></p>
+<h3 id="back"><span class="section-num">32.2</span> Back</h3>
+<p>\({\displaystyle \frac{e^x + e^{-x}}{2} = \cosh x}\)</p>
+<h2 id="what-is-the-odd-part-of--e-x"><span class="section-num">33</span> What is the odd part of \(e^{x}\)?</h2>
+<h3 id="front"><span class="section-num">33.1</span> Front</h3>
+<p><b>What is the odd part of $e^{x}$?</b></p>
+<h3 id="back"><span class="section-num">33.2</span> Back</h3>
+<p>\({\displaystyle \frac{e^x - e^{-x}}{2} = \sinh x}\)</p>
+<h2 id="compute-the-fourier-series-for-this-function"><span class="section-num">34</span> Compute the Fourier Series for this function?</h2>
+<h3 id="front"><span class="section-num">34.1</span> Front</h3>
+<p><b>Compute the Fourier Series for this function?</b></p>
+<p>\(2 \sin(t - \frac{\pi}{3})\)</p>
+<h3 id="back"><span class="section-num">34.2</span> Back</h3>
+<p>\({\displaystyle 2 \sin(t - \frac{\pi}{3}) = 2 \biggl(
+\cos(\frac{\pi}{3})\sin(t) - \sin(\frac{\pi}{3}) \cos(t) \biggr) = \sin(t) -
+\sqrt{3} \cos(t)}\)</p>
+<h2 id="is-this-relationship-equals"><span class="section-num">35</span> Is this relationship equals?</h2>
+<h3 id="front"><span class="section-num">35.1</span> Front</h3>
+<p><b>Is this relationship equals?</b></p>
+<p>\(\sin(2\pi t) = \sin(t)\)</p>
+<h3 id="back"><span class="section-num">35.2</span> Back</h3>
+<p>Not, it isn&rsquo;t the same</p>
+
+</div>
+
+
+            <footer>
+    
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-22%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Operations%20on%20Fourier%20Series&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-22%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-22%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-22%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-22%2f&amp;title=Operations%20on%20Fourier%20Series" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Operations%20on%20Fourier%20Series&amp;body=Check out this site https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-22%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+
+<nav>
+    <ul class="pager">
+    
+    <li class="previous">
+        <a href="https://ppalazon.github.io/18.03/unit-3/session-21/" title="Fourier Series: Basics">
+            <span aria-hidden="true">&larr;</span>Fourier Series: Basics
+        </a>
+    </li>
+    
+
+    
+    <li class="next">
+        <a href="https://ppalazon.github.io/18.03/unit-3/session-23/" title="ODE&#39;s with Periodic Input, Resonance">
+            ODE&#39;s with Periodic Input, Resonance <span aria-hidden="true">&rarr;</span>
+        </a>
+    </li>
+    
+    </ul>
+</nav>
+
+
+
+</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//ppalazon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+        </div>
+    </div>
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/">18.03 Differential Equations</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/unit-3/">3: Fourier Series and Laplace Transform</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.03/unit-3/session-22/">Operations on Fourier Series</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ode on Pablo Palazon&#39;s Website</title>
+    <link>https://ppalazon.github.io/tags/ode/</link>
+    <description>Recent content in ode on Pablo Palazon&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>CC BY-NC-ND 4.0</copyright>
+    <lastBuildDate>Sat, 18 Jan 2020 00:00:00 +0100</lastBuildDate><atom:link href="https://ppalazon.github.io/tags/ode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1: First Order Differential Equations</title>
+      <link>https://ppalazon.github.io/18.03/unit-1/</link>
+      <pubDate>Tue, 17 Sep 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-1/</guid>
+      <description>&lt;p&gt;In Unit I, we will study ordinary differential equations (ODE&amp;rsquo;s) involving only
+the first derivative.&lt;/p&gt;
+&lt;p&gt;\(y&#39; = F(x, y)\)&lt;/p&gt;
+&lt;p&gt;The first session covers some of the conventions and prerequisites for the
+course. After that we will focus on first order differential equations. We&amp;rsquo;ll
+start by defining differential equations and seeing a few well known ones from
+science and engineering. Very quickly we will learn about the three main ways of
+approaching ODE&amp;rsquo;s: Analytic (in symbols), geometric (with pictures and graphs),
+and numerical (with the computer).&lt;/p&gt;
+&lt;p&gt;A large part of this unit (and this course) will be spent on linear ODE&amp;rsquo;s. These
+are fundamental to the understanding of all ODE&amp;rsquo;s and among the most tractable.&lt;/p&gt;
+&lt;p&gt;Last Modification: &lt;strong&gt;2020-09-16 Wed 19:55&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Basic DE&#39;s and Separable Equations</title>
+      <link>https://ppalazon.github.io/18.03/unit-1/session-1/</link>
+      <pubDate>Tue, 17 Sep 2019 16:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-1/session-1/</guid>
+      <description>Captured On [2019-09-17 Tue 16:00] Source Basic DE&amp;rsquo;s and Separable Equations | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 Can be \(e^{at}=0\)? 1.1 Front Can be \(e^{at}=0\)?
+1.2 Back Never
+2 Write a sketch of the graph 2.1 Front Write a sketch of the graph
+\(y=e^t\)
+2.2 Back   3 Write a sketch of the graph 3.1 Front Write a sketch of the graph</description>
+    </item>
+    
+    <item>
+      <title>Geometric Methods</title>
+      <link>https://ppalazon.github.io/18.03/unit-1/session-2/</link>
+      <pubDate>Tue, 17 Sep 2019 16:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-1/session-2/</guid>
+      <description>Captured On [2019-09-17 Tue 16:00] Source Geometric Methods | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is a direction field 1.1 Front What is a direction field
+for the equation \(y&#39; = f(x,y)\)
+1.2 Back For each point \((x,y)\) of the plane is drawn a little segment whose slope is \(f(x,y)\)
+For example: \({\displaystyle \dv{y}{x} = 2x}\)
+  2 How can we draw a direction field by hand?</description>
+    </item>
+    
+    <item>
+      <title>First Order Linear ODE&#39;s</title>
+      <link>https://ppalazon.github.io/18.03/unit-1/session-4/</link>
+      <pubDate>Thu, 12 Sep 2019 13:40:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-1/session-4/</guid>
+      <description>Captured On [2019-09-11 Wed 20:32] Source First Order Linear ODE&amp;rsquo;s | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is a first order linear ODE? 1.1 Front What is a first order linear ODE?
+Write the standard form
+1.2 Back In the unknown function \(x = x(t)\)
+\({\displaystyle A(t) \dv{x}{t} + B(t) x(t) = C(t)}\)
+As \(A(t) \neq 0\), we can simplify the equation by dividing by \(A(t)\)</description>
+    </item>
+    
+    <item>
+      <title>Complex Arithmetic and Exponentials</title>
+      <link>https://ppalazon.github.io/18.03/unit-1/session-6/</link>
+      <pubDate>Thu, 26 Sep 2019 15:47:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-1/session-6/</guid>
+      <description>Captured On [2019-09-17 Tue 15:58] Source Complex Arithmetic and Exponentials | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is a complex number? 1.1 Front What is a complex number?
+1.2 Back A complex number is an expression of the form \(a + ib\)
+2 When can we say that 2 complex number are equals? 2.1 Front When can we say that 2 complex number are equals?</description>
+    </item>
+    
+    <item>
+      <title>Sinusoidal Functions</title>
+      <link>https://ppalazon.github.io/18.03/unit-1/session-7/</link>
+      <pubDate>Fri, 27 Sep 2019 18:57:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-1/session-7/</guid>
+      <description>Captured On [2019-09-26 Thu 15:47] Source Sinusoidal Functions | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is a sinusoidal function equation? 1.1 Front What is a sinusoidal function equation?
+1.2 Back \(f(t) = A \cos(\omega t - \phi)\)
+2 What is the sinusoidal oscillation equation? 2.1 Front What is the sinusoidal oscillation equation?
+2.2 Back \(f(t) = A \cos(\omega t - \phi)\)</description>
+    </item>
+    
+    <item>
+      <title>First Order Constant Coefficient Linear ODE&#39;s</title>
+      <link>https://ppalazon.github.io/18.03/unit-1/session-8/</link>
+      <pubDate>Tue, 01 Oct 2019 12:22:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-1/session-8/</guid>
+      <description>Captured On [2019-09-27 Fri 19:04] Source First Order Constant Coefficient Linear ODE&amp;rsquo;s | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is a constant coefficient First ODE? 1.1 Front What is a constant coefficient First ODE?
+1.2 Back \(\dot{y} + ky = q(t)\), where \(k\) is a constant
+2 What is the solution of a constant coefficient First ODE? 2.1 Front What is the solution of a constant coefficient First ODE?</description>
+    </item>
+    
+    <item>
+      <title>Exponential Input; Gain and Phase Lag</title>
+      <link>https://ppalazon.github.io/18.03/unit-1/session-9/</link>
+      <pubDate>Wed, 02 Oct 2019 13:05:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-1/session-9/</guid>
+      <description>Captured On [2019-10-01 Tue 12:22] Source Exponential Input; Gain and Phase Lag | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 Explain the method of optimism to solve this first order ODE 1.1 Front Explain the method of optimism to solve this first order ODE
+\(\dot{x} + 2x = 4e^{3t}\)
+1.2 Back The inspiration is based on the fact that \(\dv{t} e^{rt} = re^{rt}\).</description>
+    </item>
+    
+    <item>
+      <title>First Order Autonomous Differential Equations</title>
+      <link>https://ppalazon.github.io/18.03/unit-1/session-10/</link>
+      <pubDate>Sat, 05 Oct 2019 18:18:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-1/session-10/</guid>
+      <description>Captured On [2019-10-02 Wed 13:06] Source First Order Autonomous Differential Equations | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is an autonomous first order differential equation? 1.1 Front What is an autonomous first order differential equation?
+1.2 Back There are (in general) nonlinear equations of the form \(\dot{x} = f(x)\)
+The word autonomous means self governing and indicates that the rate of change of \(x\) is governed by \(x\) itself and it not dependent of time.</description>
+    </item>
+    
+    <item>
+      <title>Linear vs. Nonlinear</title>
+      <link>https://ppalazon.github.io/18.03/unit-1/session-11/</link>
+      <pubDate>Tue, 08 Oct 2019 09:24:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-1/session-11/</guid>
+      <description> Captured On [2019-10-07 Mon 13:29] Source Linear vs. Nonlinear | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  </description>
+    </item>
+    
+    <item>
+      <title>2: Second Order Constant Coefficient Linear Equations</title>
+      <link>https://ppalazon.github.io/18.03/unit-2/</link>
+      <pubDate>Fri, 11 Oct 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-2/</guid>
+      <description>&lt;p&gt;In this unit we learn how to solve constant coefficient second order linear
+differential equations, and also how to interpret these solutions when the DE is
+modeling a physical system. The language and ideas we introduced for first order
+linear constant coefficient DE&amp;rsquo;s carry forward to the second order case—in
+particular, the breakdown into the homogeneous and inhomogeneous cases; the
+input-response language for the inhomogeneous case; and the general form of
+solutions as&lt;/p&gt;
+&lt;p&gt;\(x = x_h + x_p\)&lt;/p&gt;
+&lt;p&gt;where \(x_h\) is the general solution to the homogeneous equation, and xp is any
+particular solution to the inhomogeneous equation.&lt;/p&gt;
+&lt;p&gt;We first learn how to solve the homogeneous equation&lt;/p&gt;
+&lt;p&gt;\(ax&#39;&#39; + bx&#39; + cx = 0\)&lt;/p&gt;
+&lt;p&gt;As in the first order case, the solutions will be exponential functions. In the
+second order case, however, the exponential functions can be either real or
+complex, so that we need to use the complex arithmetic and complex exponentials
+we developed in the last unit.&lt;/p&gt;
+&lt;p&gt;For the second order inhomogeneous DE&lt;/p&gt;
+&lt;p&gt;\(ax&#39;&#39; + bx&#39; + cx = f(t)\)&lt;/p&gt;
+&lt;p&gt;we will concentrate much of our attention on the important case of a sinusoidal
+signal \(f(t) = B \cos(\omega t)\), and again see how we can simplify the
+calculations and achieve a better understanding of the solution methods and the
+solutions themselves by using complex exponentials and arithmetic.&lt;/p&gt;
+&lt;p&gt;We will run an interpretation of the results as the behavior of a physical
+system in parallel with the mathematical methods and formulas, in order to have
+a concrete way to understand and visualize what these results mean. We will use
+a spring-mass mechanical system for the most part, since it is easy to picture.
+At the end of the unit we will also explore the application of this theory to
+electrical circuits, which is another very important use of these mathematical
+methods.&lt;/p&gt;
+&lt;p&gt;Last Modification: &lt;strong&gt;2020-09-16 Wed 21:03&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Modes and the Characteristic Equation</title>
+      <link>https://ppalazon.github.io/18.03/unit-2/session-12/</link>
+      <pubDate>Fri, 11 Oct 2019 16:58:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-2/session-12/</guid>
+      <description>Captured On [2019-10-08 Tue 11:29] Source Modes and the Characteristic Equation | Unit II: Second Order Constant Coefficient Linear Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 In this system, when is the equilibrium point and what does it mean? 1.1 Front In this system, when is the equilibrium point and what does it mean?
+  1.2 Back It&amp;rsquo;s at \(x=0\), and it&amp;rsquo;s the point where the spring is relaxed, which means that it is exerting no force.</description>
+    </item>
+    
+    <item>
+      <title>Damped Harmonic Oscillators</title>
+      <link>https://ppalazon.github.io/18.03/unit-2/session-13/</link>
+      <pubDate>Wed, 16 Oct 2019 11:34:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-2/session-13/</guid>
+      <description>Captured On [2019-10-11 Fri 17:46] Source [[https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-ii-second-order-constant-coefficient-linear-equations/damped-harmonic-oscillators/index.htm][Damped Harmonic Oscillators | Unit II: Second Order Constant Coefficient  Linear Equations | Differential Equations | Mathematics | MIT OpenCourseWare]]
+1 What is a damped sinusoid equation? 1.1 Front What is a damped sinusoid equation?
+Write the general form
+1.2 Back \(y(t) = A e^{- \lambda t} \cos(\omega t - \phi)\)
+  2 What is the basic solutions of DE is we get \(z(t)\) with complex exponential?</description>
+    </item>
+    
+    <item>
+      <title>Exponential Response</title>
+      <link>https://ppalazon.github.io/18.03/unit-2/session-14/</link>
+      <pubDate>Fri, 11 Oct 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-2/session-14/</guid>
+      <description>Captured On [2019-10-16 Wed 13:53] Source Exponential Resonse  1 Can we use the superposition principle for second order equation? 1.1 Front Can we use the superposition principle for second order equation?
+i.e. \(m\ddot{x} + b\dot{x} + kx = F_{ext}\)
+1.2 Back Yes, you can. Suppose \(x_p\) is any solution to this equation, and \(x_h\) is the solution of the homogeneous second order equation (\(m\ddot{x} + b\dot{x} + kx = 0\))</description>
+    </item>
+    
+    <item>
+      <title>Gain and Phase Lag</title>
+      <link>https://ppalazon.github.io/18.03/unit-2/session-15/</link>
+      <pubDate>Fri, 11 Oct 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-2/session-15/</guid>
+      <description>Captured On [2019-10-25 Fri 12:58] Source Gain and Phase Lag | Unit II: Second Order Constant Coefficient Linear Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 When can we say that a system is stable? 1.1 Front When can we say that a system is /stable/?
+1.2 Back If the systems&amp;rsquo;s long-term behaviour does not depend significantly on the initial conditions.
+2 Give an example of stable system in mechanics?</description>
+    </item>
+    
+    <item>
+      <title>Undetermined Coefficients</title>
+      <link>https://ppalazon.github.io/18.03/unit-2/session-16/</link>
+      <pubDate>Fri, 11 Oct 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-2/session-16/</guid>
+      <description>Captured On [2019-10-28 Mon 13:23] Source Undetermined Coefficients | Unit II: Second Order Constant Coefficient Linear Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the undetermined coefficients theorem? 1.1 Front What is the undetermined coefficients theorem?
+Let \(p(D)y = q(x)\), where \(q(x)\) is a polynomial
+1.2 Back \(q(x)\) is a polynomial with the form \(q(x) = a_nx^n + a_{n-1}x^{n-1} + \dots + a_0\), where the largest \(k\) is the degree of polynomial which \(a_k \neq 0\)</description>
+    </item>
+    
+    <item>
+      <title>Linear Operators, Linear Time Invariance</title>
+      <link>https://ppalazon.github.io/18.03/unit-2/session-17/</link>
+      <pubDate>Fri, 11 Oct 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-2/session-17/</guid>
+      <description>Captured On [2019-10-29 Tue 13:41] Source Linear Operators, Linear Time Invariance | Unit II: Second Order Constant Coefficient Linear Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the name of this symbol \(p(D)\)? 1.1 Front What is the name of this symbol $p(D)$?
+Where \(D\) is a differential operator
+1.2 Back \(p(D)\) is a polynomial operator
+2 What is a polynomial differential operator with constant coefficients?</description>
+    </item>
+    
+    <item>
+      <title>Pure Resonance</title>
+      <link>https://ppalazon.github.io/18.03/unit-2/session-18/</link>
+      <pubDate>Fri, 11 Oct 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-2/session-18/</guid>
+      <description> Captured On [2019-10-31 Thu 13:31] Source Pure Resonance | Unit II: Second Order Constant Coefficient Linear Equations | Differential Equations | Mathematics | MIT OpenCourseWare  </description>
+    </item>
+    
+    <item>
+      <title>Frequency Response and Practical Resonance</title>
+      <link>https://ppalazon.github.io/18.03/unit-2/session-19/</link>
+      <pubDate>Fri, 11 Oct 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-2/session-19/</guid>
+      <description>Captured On [2019-11-11 Mon 12:39] Source Frequency Response and Practical Resonance | Unit II: Second Order Constant Coefficient Linear Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the amplitude response of the system? 1.1 Front What is the amplitude response of the system?
+1.2 Back It&amp;rsquo;s called to the gain of the system in terms of input angular frequency
+2 What is the phase response of the system?</description>
+    </item>
+    
+    <item>
+      <title>Applications: LR Circuits</title>
+      <link>https://ppalazon.github.io/18.03/unit-2/session-20/</link>
+      <pubDate>Fri, 11 Oct 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-2/session-20/</guid>
+      <description> Captured On [2019-11-14 Thu 13:11] Source Applications: LRC Circuits | Unit II: Second Order Constant Coefficient Linear Equations | Differential Equations | Mathematics | MIT OpenCourseWare  </description>
+    </item>
+    
+    <item>
+      <title>3: Fourier Series and Laplace Transform</title>
+      <link>https://ppalazon.github.io/18.03/unit-3/</link>
+      <pubDate>Tue, 26 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-3/</guid>
+      <description>&lt;p&gt;In this unit we will learn two new ways to represent certain types of functions,
+and these will help us solve linear time invariant (LTI) DE&amp;rsquo;s with these
+functions as inputs.&lt;/p&gt;
+&lt;p&gt;We start with Fourier series, which are a way to write periodic functions as
+sums of sinusoids. In Unit Two we learned how to solve a constant coefficient
+linear ODE with sinusoidal input. Now using Fourier series and the superposition
+principle we will be able to solve these equations with any periodic input.&lt;/p&gt;
+&lt;p&gt;Next we will study the Laplace transform. This operation transforms a given
+function to a new function in a different independent variable. For example, the
+Laplace transform of \(f(t) = \cos(3t)\) is \(F(s) = s/ (s^2 + 9)\). If we think of
+$f(t)$$ as an input signal, then the key fact is that its Laplace transform
+\(F(s)\) represents the same signal viewed in a different way. The Laplace
+transform converts a DE for the function \(x(t)\) into an algebraic equation for
+its Laplace transform \(X(s)\). Then, once we solve for \(X(s)\) we can recover
+\(x(t)\).&lt;/p&gt;
+&lt;p&gt;In the course of this unit, two important ideas will be introduced. The first is
+the convolution product of two functions. At first meeting this operation may
+seem a bit strange. Nonetheless, as we will see, it arises naturally, and the
+Laplace transform will allow us to work easily with it.&lt;/p&gt;
+&lt;p&gt;The second important idea is the delta function. Up to now all inputs to our
+systems have caused small changes in a small amount of time. An impulse is an
+input that causes a sudden jump in the system. For example, a sharp blow to a
+mass will cause its momentum to jump. The delta function is a mathematical
+idealization of an impulse and one which allows us to handle DE&amp;rsquo;s with these
+types of inputs.&lt;/p&gt;
+&lt;p&gt;Last Modification: &lt;strong&gt;2020-09-16 Wed 22:56&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Fourier Series: Basics</title>
+      <link>https://ppalazon.github.io/18.03/unit-3/session-21/</link>
+      <pubDate>Tue, 26 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-3/session-21/</guid>
+      <description>Captured On [2019-11-15 Fri 13:49] Source Fourier Series: Basics | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 Which is the minimum period of a constant function? 1.1 Front Which is the minimum period of a constant function?
+1.2 Back There is no minimal period, we don&amp;rsquo;t allow \(P = 0\) to be periodic.
+Also, for any \(P\) value is a period, but no minimal</description>
+    </item>
+    
+    <item>
+      <title>Operations on Fourier Series</title>
+      <link>https://ppalazon.github.io/18.03/unit-3/session-22/</link>
+      <pubDate>Tue, 26 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-3/session-22/</guid>
+      <description>Captured On [2019-11-23 Sat 18:11] Source Operations on Fourier Series | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is an even function? 1.1 Front What is an even function?
+Let \(f(t)\) be a function, and write examples
+1.2 Back \(f(t)\) is even if \(f(-t) = f(t)\) for all \(t\)
+ \(t^2, t^4, t^6, \dots\), any even power of \(t\) \(\cos(at)\)  power series for \(\cos(at)\) has only even powers of \(t\)   A constant function  2 What is the integral of even function on a &amp;lsquo;balanced&amp;rsquo; interval?</description>
+    </item>
+    
+    <item>
+      <title>ODE&#39;s with Periodic Input, Resonance</title>
+      <link>https://ppalazon.github.io/18.03/unit-3/session-23/</link>
+      <pubDate>Tue, 26 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-3/session-23/</guid>
+      <description>Captured On [2019-11-29 Fri 13:34] Source [[https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-iii-fourier-series-and-laplace-transform/odes-with-periodic-input-resonance/index.htm][ODE&amp;rsquo;s with Periodic Input, Resonance | Unit III: Fourier Series and  Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare]]
+1 How can we solve this ODE? 1.1 Front How can we solve this ODE?
+\(\ddot{x} + 9.1 x = f(t)\), where \(f(t)\) is a odd square wave of period \(2\pi\) with \(f(t) = 1\) for \(0 \lt t \lt \pi\)</description>
+    </item>
+    
+    <item>
+      <title>Step and Delta Functions: Integrals and Generalized Derivatives</title>
+      <link>https://ppalazon.github.io/18.03/unit-3/session-24/</link>
+      <pubDate>Tue, 26 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-3/session-24/</guid>
+      <description>Captured On [2019-12-06 Fri 14:05] Source Step and Delta Functions: Integrals and Generalized Derivatives | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  This session looks closely at discontinuous functions and introduces the notion of an impulse or delta function. The goal is to use these functions as the input to differential equations. Step functions and delta functions are not differentiable in the usual sense, but they do have what we will call generalized derivatives, which are suitable for use in DE&amp;rsquo;s.</description>
+    </item>
+    
+    <item>
+      <title>Unit Step and Unit Impulse Response</title>
+      <link>https://ppalazon.github.io/18.03/unit-3/session-25/</link>
+      <pubDate>Tue, 26 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-3/session-25/</guid>
+      <description>Captured On [2019-12-17 Tue 13:01] Source Unit Step and Unit Impulse Response | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  In this session we study differential equations with step or delta functions as input. For physical systems, this means that we are looking at discontinuous or impulsive inputs to the system.
+1 When happens the pre-initial conditions in a DE? 1.</description>
+    </item>
+    
+    <item>
+      <title>Convolution</title>
+      <link>https://ppalazon.github.io/18.03/unit-3/session-26/</link>
+      <pubDate>Tue, 26 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-3/session-26/</guid>
+      <description>Captured On [2019-12-27 Fri 13:46] Source Convolution | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the definition of the convolution of 2 functions? 1.1 Front What is the definition of the convolution of 2 functions?
+One-sided convolution
+1.2 Back It&amp;rsquo;s a function defined by this integral
+\({\displaystyle (f * g)(t) = \int_{0^-}^{t^+} f(\tau) g(t - \tau) \dd{\tau}}\) for \(t \gt 0\)</description>
+    </item>
+    
+    <item>
+      <title>Laplace Transform: Basics</title>
+      <link>https://ppalazon.github.io/18.03/unit-3/session-27/</link>
+      <pubDate>Tue, 26 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-3/session-27/</guid>
+      <description>Captured On [2019-12-30 Mon 17:43] Source Laplace Transform: Basics | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the definition of Laplace Transform? 1.1 Front What is the definition of Laplace Transform?
+1.2 Back The Laplace transform of a function \(f(t)\) of a real variable \(t\) is another function depending on a new variable \(s\), which is in general complex.</description>
+    </item>
+    
+    <item>
+      <title>Partial Fractions and Inverse Laplace Transform</title>
+      <link>https://ppalazon.github.io/18.03/unit-3/session-28/</link>
+      <pubDate>Tue, 26 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-3/session-28/</guid>
+      <description>Captured On [2020-01-02 Thu 18:40] Source Partial Fractions and Inverse Laplace Transform | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is a rational function? 1.1 Front What is a rational function?
+1.2 Back Is a function that is the ratio of two polynomials
+\({\displaystyle \frac{s + }{s^2 + 7s + 9}}\)
+2 When can we say that a rational function is proper?</description>
+    </item>
+    
+    <item>
+      <title>Laplace Transform: Solving Initial Value Problems</title>
+      <link>https://ppalazon.github.io/18.03/unit-3/session-29/</link>
+      <pubDate>Tue, 26 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-3/session-29/</guid>
+      <description>Captured On [2020-01-06 Mon 19:03] Source Laplace Transform: Solving Initial Value Problems | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 Compute with the definition the Laplace transform of \(f&#39;\) 1.1 Front Compute with the definition the Laplace transform of $f&#39;$
+\({\displaystyle \mathcal{L}(f&#39;)(s)}\)
+Don&amp;rsquo;t do by heart
+1.2 Back \({\displaystyle \mathcal{L}(f&#39;) = \int_{0^-}^{\infty} f&#39;(t) e^{-st} \dd{t}}\)
+Integrating by parts
+ \(u = e^{-st}\), \(\dd{u} = -s e^{-st} \dd{t}\) \(\dd{v} = f&#39;(t) \dd{t}\), \(v = f(t)\)  \({\displaystyle f(t) e^{-st} \bigg|_{0^-}^{\infty} + s \int_{0^-}^{\infty} f(t) e^{-st} \dd{t} = -f(0^-) + s F(s)}\)</description>
+    </item>
+    
+    <item>
+      <title>Transfer (System) and Weight Functions, Green&#39;s Formula</title>
+      <link>https://ppalazon.github.io/18.03/unit-3/session-30/</link>
+      <pubDate>Tue, 26 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-3/session-30/</guid>
+      <description>Captured On [2020-01-10 Fri 13:16] Source Transfer (System) and Weight Functions, Green&amp;rsquo;s Formula | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the transfer function for any LTI? 1.1 Front What is the transfer function for any LTI?
+In terms of unit impulse response
+1.2 Back \({\displaystyle W(s) = \mathcal{L}(w(t))}\)
+where \(w(t)\) is the unit impulse response
+2 What is the system function?</description>
+    </item>
+    
+    <item>
+      <title>Poles, Amplitude Response, Connection to ERF</title>
+      <link>https://ppalazon.github.io/18.03/unit-3/session-31/</link>
+      <pubDate>Tue, 26 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-3/session-31/</guid>
+      <description>Captured On [2020-01-11 Sat 17:01] Source Poles, Amplitude Response, Connection to ERF | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 When can we say that a rational function is in reduced form? 1.1 Front When can we say that a rational function is in reduced form?
+1.2 Back If the numerator \(q(s)\) and the denominator \(p(s)\) have no roots in common, then \(q(s)/p(s)\) is in reduced form</description>
+    </item>
+    
+    <item>
+      <title>4: First-order Systems</title>
+      <link>https://ppalazon.github.io/18.03/unit-4/</link>
+      <pubDate>Sat, 18 Jan 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-4/</guid>
+      <description>&lt;p&gt;In this unit we study systems of differential equations. A system of ODE&amp;rsquo;s means
+a DE with one independent variable but more than one dependent variable, for
+example:&lt;/p&gt;
+&lt;p&gt;\({\displaystyle x&#39; = x + y}\), \({\displaystyle y&#39; = x^2 - y - t}\)&lt;/p&gt;
+&lt;p&gt;is a 2x2 system of DE&amp;rsquo;s for the two functions \(x = x(t)\) and \(y = y(t)\).&lt;/p&gt;
+&lt;p&gt;As usual, we start with the linear case. Even for linear systems, though, it
+turns out that efficient solution methods require some new techniques, namely
+the machinery of matrix-vector algebra. A small investment in this background
+material yields an excellent return, giving both the linear theory in the
+general case and also the explicit computational methods for the solutions in
+the constant-coefficient case.&lt;/p&gt;
+&lt;p&gt;We finish this unit by showing some of the qualitative theory of DE&amp;rsquo;s for
+systems, linear and non-linear. Qualitative theory means finding out information
+about the solutions directly from the DE without actually having to solve it. We
+start with the linear case, and then show how we can use the results for linear
+constant-coefficient systems to gain information about certain non-linear
+systems using a technique called linearization.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linear Systems</title>
+      <link>https://ppalazon.github.io/18.03/unit-4/session-32/</link>
+      <pubDate>Sat, 18 Jan 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-4/session-32/</guid>
+      <description>Captured On [2020-01-21 Tue 13:07] Source Linear Systems | Unit IV First-order Systems | Differential Equations | Mathematics | MIT OpenCourseWare  1 Can we solve a linear system of ODE&amp;rsquo;s with constant coefficients by eliminating variables? 1.1 Front Can we solve a linear system of ODE&amp;rsquo;s with constant coefficients by eliminating variables?
+1.2 Back No, it&amp;rsquo;s a naive way to solve it. You need to use techniques of constant coefficient ODE methods.</description>
+    </item>
+    
+    <item>
+      <title>Matrix Methods: Eigenvalues and Normal Modes</title>
+      <link>https://ppalazon.github.io/18.03/unit-4/session-33/</link>
+      <pubDate>Sat, 18 Jan 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-4/session-33/</guid>
+      <description>Captured On [2020-02-01 Sat 12:35] Source Matrix Methods: Eigenvalues and Normal Modes | Unit IV: First-order Systems | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the trace of a square matrix? 1.1 Front What is the trace of a square matrix?
+For example, \({\displaystyle \operatorname{tr}\begin{pmatrix}a &amp;amp; b \\ c &amp;amp; d\end{pmatrix}}\)
+1.2 Back It&amp;rsquo;s the sum of the elements on the main diagonal; it&amp;rsquo;s denoted \(\operatorname{tr}(A)\):</description>
+    </item>
+    
+    <item>
+      <title>Qualitative Behavior: Phase Portraits</title>
+      <link>https://ppalazon.github.io/18.03/unit-4/session-34/</link>
+      <pubDate>Sat, 18 Jan 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-4/session-34/</guid>
+      <description>Captured On [2020-02-13 Thu 17:57] Source Qualitative Behavior: Phase Portraits | Unit IV: First-order Systems | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the phase plane for this system? 1.1 Front What is the phase plane for this system?
+\({\displaystyle \dot{\vb{x}} = A \vb{x}}\), where \({\displaystyle A = \begin{pmatrix}a &amp;amp; b \\ c &amp;amp; d\end{pmatrix}}\)
+1.2 Back It&amp;rsquo;s the \(xy\text{-plane}\) itself, where you can draw the trajectory of a solution with an arrow to indicate the direction of increasing time.</description>
+    </item>
+    
+    <item>
+      <title>Matrix Exponential</title>
+      <link>https://ppalazon.github.io/18.03/unit-4/session-35/</link>
+      <pubDate>Sat, 18 Jan 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-4/session-35/</guid>
+      <description>Captured On [2020-02-20 Thu 21:51] Source Matrix Exponentials | Unit IV: First-order Systems | Differential Equations | Mathematics | MIT OpenCourseWare  1 For this linear system, how many solutions are there? 1.1 Front For this linear system, how many solutions are there?
+\({\displaystyle \dot{\vb{x}} = A \vb{x}}\), where \(A\) is a \(n \cross n\) matrix
+1.2 Back There are \(n\) linearly independent solutions for the system
+2 How is the linear system when the coefficients are functions of the independent variable t?</description>
+    </item>
+    
+    <item>
+      <title>Nonlinear Systems</title>
+      <link>https://ppalazon.github.io/18.03/unit-4/session-36/</link>
+      <pubDate>Sat, 18 Jan 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-4/session-36/</guid>
+      <description>Captured On [2020-03-06 Fri 14:04] Source Nonlinear Systems | Unit IV: First-order Systems | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is an autonomous system? 1.1 Front What is an autonomous system?
+General First Order Autonomous Systems
+1.2 Back The word autonomous means self regulating. These systems are self regulating in the sense that their rate of change (e.g. derivatives) depends only on the state of the system (values of \(x\) and \(y\)) and not on the time \(t\)</description>
+    </item>
+    
+    <item>
+      <title>Linearization Near Critical Points</title>
+      <link>https://ppalazon.github.io/18.03/unit-4/session-37/</link>
+      <pubDate>Sat, 18 Jan 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-4/session-37/</guid>
+      <description>Captured On [2020-03-09 Mon 12:02] Source Linearization Near Critical Points | Unit IV: First-order Systems | Differential Equations | Mathematics | MIT OpenCourseWare  1 How can we get information about the trajectories of autonomous linear system without… 1.1 Front How can we get information about the trajectories of autonomous linear system without&amp;hellip;
+determining them analytically or using a computer to plot them
+1.2 Back Analyzing what happens near critical points.</description>
+    </item>
+    
+    <item>
+      <title>Limitations of the Linear: Limit Cycles and Chaos</title>
+      <link>https://ppalazon.github.io/18.03/unit-4/session-38/</link>
+      <pubDate>Sat, 18 Jan 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-4/session-38/</guid>
+      <description>Captured On [2020-03-16 Mon 19:13] Source Limitations of the Linear: Limit Cycles and Chaos | Unit IV: First-order Systems | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the form of the solutions that trace out a closed curve? 1.1 Front What is the form of the solutions that trace out a closed curve?
+In a non-linear system
+1.2 Back The solution \(\vb{x}(t)\) will be geometrically realized by a point which goes round and round the curve \(C\) with a certain period \(T\)</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Session 29: Least Squares  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="calculus, maths, ">
+
+
+<meta property="og:title" content="Session 29: Least Squares  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.02/part-2a/session-29/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="content-source" content="18.02/part-2a/session-29.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Captured On [2020-02-06 Thu 10:32] Source Session 29: Least Squares | Part A: Functions of Two Variables, Tangent Approximation and Optimization | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare 1 Chalkboard Figure 1: Least squares interpolation Figure 2: Find best “a” and “b”
+Figure 3: Partial derivatives “a” and “b”
+"/>
+<meta property="og:article:published_time" content="2019-04-18T00:00:00&#43;02:00" />
+<meta property="og:article:modified_time" content="2019-04-18T00:00:00&#43;02:00" />
+
+
+
+<meta property="og:article:tag" content="calculus">
+
+<meta property="og:article:tag" content="maths">
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ppalazon" />
+<meta name="twitter:creator" content="@ppalazon" />
+<meta name="twitter:title" content="Session 29: Least Squares" />
+<meta name="twitter:description" content="Captured On [2020-02-06 Thu 10:32] Source Session 29: Least Squares | Part A: Functions of Two Variables, Tangent Approximation and Optimization | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare 1 Chalkboard Figure 1: Least squares interpolation Figure 2: Find best “a” and “b”
+Figure 3: Partial derivatives “a” and “b”
+"/>
+<meta name="twitter:url" content="https://ppalazon.github.io/18.02/part-2a/session-29/" />
+<meta name="twitter:domain" content="https://ppalazon.github.io">
+
+
+
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+     "@type": "Article",
+     "headline": "Session 29: Least Squares",
+     "author": {
+         "@type": "Person",
+         "name": "http://profiles.google.com/+?rel=author"
+     },
+     "datePublished": "2019-04-18",
+     "description": "",
+     "wordCount":  822 
+ }
+</script>
+
+
+
+<link rel="canonical" href="https://ppalazon.github.io/18.02/part-2a/session-29/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+ }
+ .hero {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: calc(200px + (450 - 200) * ((100vw - 300px) / (1600 - 300)));
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: calc(-1 * (200px + (450 - 200) * ((100vw - 300px) / (1600 - 300))));
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+    <header class="container hat">
+        <h1>Session 29: Least Squares
+</h1>
+
+        
+
+
+<span class="author">by
+    
+    MIT OCW, Pablo Palazon
+    
+</span>
+
+
+    </header>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            
+            <div class="content">
+  <dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2020-02-06 Thu 10:32]</span></span></dd>
+<dt>Source</dt>
+<dd><a href="https://ocw.mit.edu/courses/mathematics/18-02sc-multivariable-calculus-fall-2010/2.-partial-derivatives/part-a-functions-of-two-variables-tangent-approximation-and-optimization/session-29-least-squares/index.htm">Session 29: Least Squares | Part A: Functions of Two Variables, Tangent Approximation and Optimization | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare</a></dd>
+</dl>
+<h2 id="chalkboard"><span class="section-num">1</span> Chalkboard</h2>
+<p><a id="org27669cd"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/9d/8ba560-4b04-4c66-96e3-06a03fc464a0/_20200206_113055MIT18_02SC_L9Brds_12.png"
+         alt="Figure 1: Least squares interpolation" width="80%"/> <figcaption>
+            <p>Figure 1: Least squares interpolation</p>
+        </figcaption>
+</figure>
+
+<p><a id="org3f1246c"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/9d/8ba560-4b04-4c66-96e3-06a03fc464a0/_20200206_113100MIT18_02SC_L9Brds_13.png"
+         alt="Figure 2: Find best &amp;ldquo;a&amp;rdquo; and &amp;ldquo;b&amp;rdquo;" width="80%"/> <figcaption>
+            <p>Figure 2: Find best &ldquo;a&rdquo; and &ldquo;b&rdquo;</p>
+        </figcaption>
+</figure>
+
+<p><a id="org755109d"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/9d/8ba560-4b04-4c66-96e3-06a03fc464a0/_20200206_113106MIT18_02SC_L9Brds_14.png"
+         alt="Figure 3: Partial derivatives &amp;ldquo;a&amp;rdquo; and &amp;ldquo;b&amp;rdquo;" width="80%"/> <figcaption>
+            <p>Figure 3: Partial derivatives &ldquo;a&rdquo; and &ldquo;b&rdquo;</p>
+        </figcaption>
+</figure>
+
+<p><a id="org105cc90"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/9d/8ba560-4b04-4c66-96e3-06a03fc464a0/_20200206_113111MIT18_02SC_L9Brds_15.png"
+         alt="Figure 4: Simply minimization of partial derivatives" width="80%"/> <figcaption>
+            <p>Figure 4: Simply minimization of partial derivatives</p>
+        </figcaption>
+</figure>
+
+<p><a id="orge65c5c5"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/9d/8ba560-4b04-4c66-96e3-06a03fc464a0/_20200206_113116MIT18_02SC_L9Brds_16.png"
+         alt="Figure 5: 2x2 Linear system" width="80%"/> <figcaption>
+            <p>Figure 5: 2x2 Linear system</p>
+        </figcaption>
+</figure>
+
+<p><a id="orgb5ac3ab"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/9d/8ba560-4b04-4c66-96e3-06a03fc464a0/_20200206_113123MIT18_02SC_L9Brds_17.png"
+         alt="Figure 6: Least square for exponential data" width="80%"/> <figcaption>
+            <p>Figure 6: Least square for exponential data</p>
+        </figcaption>
+</figure>
+
+<p><a id="org37078db"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/9d/8ba560-4b04-4c66-96e3-06a03fc464a0/_20200206_113132MIT18_02SC_L9Brds_18.png"
+         alt="Figure 7: Least squares for quadratic law" width="80%"/> <figcaption>
+            <p>Figure 7: Least squares for quadratic law</p>
+        </figcaption>
+</figure>
+
+<h2 id="what-is-the-least-squares-curve"><span class="section-num">2</span> What is the least-squares curve?</h2>
+<h3 id="front"><span class="section-num">2.1</span> Front</h3>
+<p><b>What is the least-squares curve?</b></p>
+<h3 id="back"><span class="section-num">2.2</span> Back</h3>
+<p>It&rsquo;s a simple curve like a line, parabola or exponential which goes
+approximately through the points, rather than a high-degree polynomial
+which exactly through them.</p>
+<h2 id="what-is-the-lagrange-interpolation-formula"><span class="section-num">3</span> What is the Lagrange interpolation formula?</h2>
+<h3 id="front"><span class="section-num">3.1</span> Front</h3>
+<p><b>What is the Lagrange interpolation formula?</b></p>
+<p>For \(n\) points</p>
+<h3 id="back"><span class="section-num">3.2</span> Back</h3>
+<p>It&rsquo;s a curve that pass through all of \(n\) points, using \(n-1\)
+polynomial degree curve.</p>
+<p>It&rsquo;s really complex formula</p>
+<h2 id="how-can-we-find-a-line-which-goes-approximately-through-a-set-of-data-points"><span class="section-num">4</span> How can we find a line which goes approximately through a set of data points?</h2>
+<h3 id="front"><span class="section-num">4.1</span> Front</h3>
+<p><b>How can we find a line which goes approximately through a set of data points?</b></p>
+<p>Data points: \((x_1, y_1), (x_2, y_2), \dots, (x_n,y_n)\)</p>
+<p>Assume: Errors in measurement are distributed randomly in a Gaussian
+distribution</p>
+<h3 id="back"><span class="section-num">4.2</span> Back</h3>
+<figure>
+    <img src="https://ppalazon.github.io/9d/8ba560-4b04-4c66-96e3-06a03fc464a0/_20200917_121647LmctOsT.png"/> 
+</figure>
+
+<p>Line: \(y = ac + b\)</p>
+<p>Minimizing the sum of deviation: \(D = \sum_{i=1}^n (y_i - (ax_i +
+b))^2\)</p>
+<p>Calculate \(a\) and \(b\) which make \(D\) a minimum, using partial
+derivatives. Don&rsquo;t expand the square before differentiate, use chain
+rule</p>
+<ul>
+<li>\({\displaystyle \frac{\partial D}{\partial a} = \sum_{i=1}^n 2(y_i -
+ax_i -b)(-x_i) = 0}\)</li>
+<li>\({\displaystyle \frac{\partial D}{\partial b} = \sum_{i=1}^n 2(y_i -
+ax_i -b)(-1) = 0}\)</li>
+</ul>
+<p>Resulting a pair of linear equations</p>
+<ul>
+<li>\({\displaystyle \biggl(\sum x_i^2 \biggr) a + \biggl(\sum x_i
+\biggr) b = \sum x_i y_i}\)</li>
+<li>\({\displaystyle \biggl(\sum x_i \biggr) a + nb = \sum y_i}\)</li>
+</ul>
+<h2 id="what-is-the-regression-line"><span class="section-num">5</span> What is the regression line?</h2>
+<h3 id="front"><span class="section-num">5.1</span> Front</h3>
+<p><b>What is the regression line?</b></p>
+<h3 id="back"><span class="section-num">5.2</span> Back</h3>
+<p>It&rsquo;s a line of minimizing the sum of square deviation between
+estimated line and experimented result.</p>
+<p>It&rsquo;s the line as result of method of least squares. It&rsquo;s also called
+leas-squares line.</p>
+<figure>
+    <img src="https://ppalazon.github.io/9d/8ba560-4b04-4c66-96e3-06a03fc464a0/_20200917_121655LmctOsT.png"/> 
+</figure>
+
+<h2 id="what-is-a-deviations-for-least-squares-line"><span class="section-num">6</span> What is a deviations for least-squares line?</h2>
+<h3 id="front"><span class="section-num">6.1</span> Front</h3>
+<p><b>What is a deviations for least-squares line?</b></p>
+<h3 id="back"><span class="section-num">6.2</span> Back</h3>
+<p>It&rsquo;s the difference between the observed value \(y_i\) and the estimate
+value from \(y = ax +b\) regression line</p>
+<h2 id="why-the-deviation-of-least-squares-line-are-squared"><span class="section-num">7</span> Why the deviation of least-squares line are squared?</h2>
+<h3 id="front"><span class="section-num">7.1</span> Front</h3>
+<p><b>Why the deviation of least-squares line are squared?</b></p>
+<h3 id="back"><span class="section-num">7.2</span> Back</h3>
+<p>The reasons are connected with the assumed Gaussian error
+distribution. So this method ensure that the sum only positive
+quantities and deviation of opposite sign don&rsquo;t cancel each other.</p>
+<p>It also weights more heavily the larger deviation, keeping
+experimenters honest, sine they tend to ignore large deviations.</p>
+<h2 id="what-is-the-sum-of-the-squares-of-the-deviation-for-a-quadratic-law"><span class="section-num">8</span> What is the sum of the squares of the deviation for a quadratic law?</h2>
+<h3 id="front"><span class="section-num">8.1</span> Front</h3>
+<p><b>What is the sum of the squares of the deviation for a quadratic law?</b></p>
+<h3 id="back"><span class="section-num">8.2</span> Back</h3>
+<p>\({\displaystyle D = \sum_{i=1}^n (y_i - (a_0 + a_1 x_i + a_2 x_i^2))^2}\)</p>
+<h2 id="how-many-variables-do-you-have-for-a-least-square-line"><span class="section-num">9</span> How many variables do you have for a least-square line?</h2>
+<h3 id="front"><span class="section-num">9.1</span> Front</h3>
+<p><b>How many variables do you have for a least-square line?</b></p>
+<h3 id="back"><span class="section-num">9.2</span> Back</h3>
+<p>2, \(a\) and \(b\)</p>
+<p>Estimated line: \(y = ax + b\)</p>
+<p>Solving a 2x2 linear system</p>
+<h2 id="how-many-variables-do-you-have-for-a-second-degree-least-squared-curve"><span class="section-num">10</span> How many variables do you have for a second-degree least-squared curve?</h2>
+<h3 id="front"><span class="section-num">10.1</span> Front</h3>
+<p><b>How many variables do you have for a second-degree least-squared curve?</b></p>
+<h3 id="back"><span class="section-num">10.2</span> Back</h3>
+<p>3, \(a_0\), \(a_1\) and \(a_2\)</p>
+<p>\(y = a_0 + a_1 x + a_2 x^2\)</p>
+<p>Solving a 3x3 linear system</p>
+<h2 id="what-is-the-linear-combination-of-the-function--f-i-x"><span class="section-num">11</span> What is the linear combination of the function \(f_{i}(x)\)</h2>
+<h3 id="front"><span class="section-num">11.1</span> Front</h3>
+<p><b>What is the linear combination of the function $f_{i}(x)$</b></p>
+<p>Where \(f_i(x)\) are given functions</p>
+<h3 id="back"><span class="section-num">11.2</span> Back</h3>
+<p>\(y = a_0 f_0(x) + a_1 f_1(x) + \dots + a_r f_r(x)\)</p>
+<p>You can use this linear combination for get a least-square
+curve. Solving \(a_0, \dots, a_r\) in a square inhomogeneous system of
+linear equations.</p>
+<h2 id="how-can-we-use-least-squares-interpolation-for-fitting--ce-kx"><span class="section-num">12</span> How can we use least-squares interpolation for fitting \(ce^{kx}\)?</h2>
+<h3 id="front"><span class="section-num">12.1</span> Front</h3>
+<p><b>How can we use least-squares interpolation for fitting $ce^{kx}$?</b></p>
+<h3 id="back"><span class="section-num">12.2</span> Back</h3>
+<p>You can fitting using the \(\ln\) of data, and calculate the deviation
+to the line \(\ln(y) = \ln( c) + kx\)</p>
+<h2 id="how-can-you-find-a-least-squared-interpolation-for--x-y-z"><span class="section-num">13</span> How can you find a least-squared interpolation for \((x, y, z)\)?</h2>
+<h3 id="front"><span class="section-num">13.1</span> Front</h3>
+<p><b>How can you find a least-squared interpolation for $(x, y, z)$?</b></p>
+<p>\(x\) and \(y\) are independent variables and \(z\) is a dependent variable</p>
+<h3 id="back"><span class="section-num">13.2</span> Back</h3>
+<p>\(z = a_1 + a_2 x + a_3y\)</p>
+<p>Applying the least-square method, you get a 3x3 linear system for
+variables \(a_1, a_2, a_3\)</p>
+<h2 id="which-is-the-system-of-equations-for-least-square-line"><span class="section-num">14</span> Which is the system of equations for least-square line?</h2>
+<h3 id="front"><span class="section-num">14.1</span> Front</h3>
+<p><b>Which is the system of equations for least-square line?</b></p>
+<p>Which solving \(a\) and \(b\), for \(y = ax + b\) and \(n\) points of data</p>
+<h3 id="back"><span class="section-num">14.2</span> Back</h3>
+<ul>
+<li>\({\displaystyle a \sum_{i=1}^n x_i^2 + b \sum_{i=1}^n x_i =
+\sum_{i=1}^n x_i y_i}\)</li>
+<li>\({\displaystyle a \sum_{i=1}^n x_i + b n = \sum_{i=1}^n y_i}\)</li>
+</ul>
+
+</div>
+
+
+            <footer>
+    
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-2a%2fsession-29%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Session%2029%3a%20Least%20Squares&amp;url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-2a%2fsession-29%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-2a%2fsession-29%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-2a%2fsession-29%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-2a%2fsession-29%2f&amp;title=Session%2029%3a%20Least%20Squares" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Session%2029%3a%20Least%20Squares&amp;body=Check out this site https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-2a%2fsession-29%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+
+<nav>
+    <ul class="pager">
+    
+    <li class="previous">
+        <a href="https://ppalazon.github.io/18.02/part-2a/session-28/" title="Session 28: Optimization Problems">
+            <span aria-hidden="true">&larr;</span>Session 28: Optimization Problems
+        </a>
+    </li>
+    
+
+    
+    <li class="next">
+        <a href="https://ppalazon.github.io/18.02/part-2a/session-30/" title="Session 30: Second Derivative Test">
+            Session 30: Second Derivative Test <span aria-hidden="true">&rarr;</span>
+        </a>
+    </li>
+    
+    </ul>
+</nav>
+
+
+
+</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//ppalazon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+        </div>
+    </div>
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.02/">18.02 Multivariable Calculus</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.02/part-2a/">2A: Functions of Two Variables, Tangent Approximation and Optimization</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.02/part-2a/session-29/">Session 29: Least Squares</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

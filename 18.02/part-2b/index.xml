@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2B: Chain Rule, Gradient and Directional Derivatives on Pablo Palazon&#39;s Website</title>
+    <link>https://ppalazon.github.io/18.02/part-2b/</link>
+    <description>Recent content in 2B: Chain Rule, Gradient and Directional Derivatives on Pablo Palazon&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>CC BY-NC-ND 4.0</copyright>
+    <lastBuildDate>Thu, 18 Apr 2019 00:00:00 +0200</lastBuildDate><atom:link href="https://ppalazon.github.io/18.02/part-2b/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Session 32: Total Differentials and the Chain Rule</title>
+      <link>https://ppalazon.github.io/18.02/part-2b/session-32/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-2b/session-32/</guid>
+      <description>Captured On [2020-02-06 Thu 12:28] Source Session 32: Total Differentials and the Chain Rule | Part B: Chain Rule, Gradient and Directional Derivatives | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Differentials and implicit differentiation
+  
+  Figure 2: Example of implicit differentiation
+  
+  Figure 3: Total differential</description>
+    </item>
+    
+    <item>
+      <title>Session 34: The Chain Rule with More Variables</title>
+      <link>https://ppalazon.github.io/18.02/part-2b/session-34/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-2b/session-34/</guid>
+      <description>Captured On [2020-02-06 Thu 12:28] Source Session 34: The Chain Rule with More Variables | Part B: Chain Rule, Gradient and Directional Derivatives | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Chain rule with more variables
+  
+  Figure 2: Expansion of chain rule
+  
+  Figure 3: Partial derivative with more variables</description>
+    </item>
+    
+    <item>
+      <title>Session 35: Gradient: Definition, Perpendicular to Level Curves</title>
+      <link>https://ppalazon.github.io/18.02/part-2b/session-35/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-2b/session-35/</guid>
+      <description>Captured On [2020-02-06 Thu 12:28] Source Session 35: Gradient: Definition, Perpendicular to Level Curves | Part B: Chain Rule, Gradient and Directional Derivatives | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Recall chain rule
+  
+  Figure 2: Definition of gradient
+  
+  Figure 3: Gradient is perpendicular to level surface</description>
+    </item>
+    
+    <item>
+      <title>Session 36: Proof</title>
+      <link>https://ppalazon.github.io/18.02/part-2b/session-36/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-2b/session-36/</guid>
+      <description>Captured On [2020-02-06 Thu 12:29] Source Session 36: Proof | Part B: Chain Rule, Gradient and Directional Derivatives | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Curve that stays on the level \(w=c\)
+  
+  Figure 2: Chain rule
+  
+  Figure 3: Gradient perpendicular to tangent vector</description>
+    </item>
+    
+    <item>
+      <title>Session 37: Example</title>
+      <link>https://ppalazon.github.io/18.02/part-2b/session-37/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-2b/session-37/</guid>
+      <description>Captured On [2020-02-06 Thu 12:29] Source Session 37: Example | Part B: Chain Rule, Gradient and Directional Derivatives | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Find tangent plane to surface
+  
+  Figure 2: Gradient is the normal vector of tangent plane
+  
+  Figure 3: Another way throught linear approximation</description>
+    </item>
+    
+    <item>
+      <title>Session 38: Directional Derivatives</title>
+      <link>https://ppalazon.github.io/18.02/part-2b/session-38/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-2b/session-38/</guid>
+      <description>Captured On [2020-02-06 Thu 12:29] Source Session 38: Directional Derivatives | Part B: Chain Rule, Gradient and Directional Derivatives | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Directional derivatives
+  
+  Figure 2: Straight line trayectory
+  
+  Figure 3: Directional derivative in direction of \(\vu{u}\)
+  
+  Figure 4: Slope of a slice</description>
+    </item>
+    
+  </channel>
+</rss>

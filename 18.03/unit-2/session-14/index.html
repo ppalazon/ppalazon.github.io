@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Exponential Response  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="ode, ">
+
+
+<meta property="og:title" content="Exponential Response  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.03/unit-2/session-14/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="content-source" content="18.03/unit-2/session-14.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Captured On [2019-10-16 Wed 13:53] Source Exponential Resonse  1 Can we use the superposition principle for second order equation? 1.1 Front Can we use the superposition principle for second order equation?
+i.e. \(m\ddot{x} &#43; b\dot{x} &#43; kx = F_{ext}\)
+1.2 Back Yes, you can. Suppose \(x_p\) is any solution to this equation, and \(x_h\) is the solution of the homogeneous second order equation (\(m\ddot{x} &#43; b\dot{x} &#43; kx = 0\))"/>
+<meta property="og:article:published_time" content="2019-10-11T00:00:00&#43;02:00" />
+<meta property="og:article:modified_time" content="2019-10-11T00:00:00&#43;02:00" />
+
+
+
+<meta property="og:article:tag" content="ode">
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ppalazon" />
+<meta name="twitter:creator" content="@ppalazon" />
+<meta name="twitter:title" content="Exponential Response" />
+<meta name="twitter:description" content="Captured On [2019-10-16 Wed 13:53] Source Exponential Resonse  1 Can we use the superposition principle for second order equation? 1.1 Front Can we use the superposition principle for second order equation?
+i.e. \(m\ddot{x} &#43; b\dot{x} &#43; kx = F_{ext}\)
+1.2 Back Yes, you can. Suppose \(x_p\) is any solution to this equation, and \(x_h\) is the solution of the homogeneous second order equation (\(m\ddot{x} &#43; b\dot{x} &#43; kx = 0\))"/>
+<meta name="twitter:url" content="https://ppalazon.github.io/18.03/unit-2/session-14/" />
+<meta name="twitter:domain" content="https://ppalazon.github.io">
+
+
+
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+     "@type": "Article",
+     "headline": "Exponential Response",
+     "author": {
+         "@type": "Person",
+         "name": "http://profiles.google.com/+?rel=author"
+     },
+     "datePublished": "2019-10-11",
+     "description": "",
+     "wordCount":  1173 
+ }
+</script>
+
+
+
+<link rel="canonical" href="https://ppalazon.github.io/18.03/unit-2/session-14/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+ }
+ .hero {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: calc(200px + (450 - 200) * ((100vw - 300px) / (1600 - 300)));
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: calc(-1 * (200px + (450 - 200) * ((100vw - 300px) / (1600 - 300))));
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+    <header class="container hat">
+        <h1>Exponential Response
+</h1>
+
+        
+
+
+<span class="author">by
+    
+    Pablo Palazon
+    
+</span>
+
+
+    </header>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            
+            <div class="content">
+  <dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2019-10-16 Wed 13:53]</span></span></dd>
+<dt>Source</dt>
+<dd><a href="https://ppalazon.github.io/data/documents/study/mit-ocw/18-03sc-fall-2011/contents/unit-ii-second-order-constant-coefficient-linear-equations/exponential-response/index.htm">Exponential Resonse</a></dd>
+</dl>
+<h2 id="can-we-use-the-superposition-principle-for-second-order-equation"><span class="section-num">1</span> Can we use the superposition principle for second order equation?</h2>
+<h3 id="front"><span class="section-num">1.1</span> Front</h3>
+<p><b>Can we use the superposition principle for second order equation?</b></p>
+<p>i.e. \(m\ddot{x} + b\dot{x} + kx = F_{ext}\)</p>
+<h3 id="back"><span class="section-num">1.2</span> Back</h3>
+<p>Yes, you can. Suppose \(x_p\) is any solution to this equation, and
+\(x_h\) is the solution of the homogeneous second order equation
+(\(m\ddot{x} + b\dot{x} + kx = 0\))</p>
+<p>Then \(x = x_p + x_h\) is a solution</p>
+<h2 id="how-can-we-proof-the-superposition-principle-for-second-order-equation"><span class="section-num">2</span> How can we proof the superposition principle for second order equation?</h2>
+<h3 id="front"><span class="section-num">2.1</span> Front</h3>
+<p><b>How can we proof the superposition principle for second order equation?</b></p>
+<p>\(m\ddot{x} + b\dot{x} + kx = F_{ext}\)</p>
+<h3 id="back"><span class="section-num">2.2</span> Back</h3>
+<p>\begin{align*}
+m\ddot{x} + b\dot{x} + kx &amp;= m\ddot{(x_h + x_p)} + b\dot{(x_h + x_p)} + k(x_h + x_p) \\\<br>
+&amp;= (m \ddot{x_h} + m\ddot{x_p}) + (b\dot{x_h} + b\dot{x_p}) + (kx_h + kx_p)\\\<br>
+&amp;= (m \ddot{x_h} + b \dot{x_h} + k x_h) + (m \ddot{x_p} + b \dot{x_p} + k x_p) \\\<br>
+&amp;= 0 + F_{ext}
+\end{align*}</p>
+<h2 id="can-we-use-the-superposition-principle-for-linear-equations-of-any-order"><span class="section-num">3</span> Can we use the superposition principle for linear equations of any order?</h2>
+<h3 id="front"><span class="section-num">3.1</span> Front</h3>
+<p><b>Can we use the superposition principle for linear equations of any order?</b></p>
+<h3 id="back"><span class="section-num">3.2</span> Back</h3>
+<p>Yes, you can. We saw it as a consequence of the method of integrating
+factors for first order equations</p>
+<h2 id="write-a-solution-guess-for-this-second-order-ode"><span class="section-num">4</span> Write a solution guess for this second order ODE?</h2>
+<h3 id="front"><span class="section-num">4.1</span> Front</h3>
+<p><b>Write a solution guess for this second order ODE?</b></p>
+<p>\(\ddot{x} + 8 \dot{x} + 7 x = 9e^{2t}\)</p>
+<h3 id="back"><span class="section-num">4.2</span> Back</h3>
+<p>\({\displaystyle x(t) = Ae^{2t}}\)</p>
+<h2 id="what-is-the-exponential-response-formula--erf--of-the-second-order-equation"><span class="section-num">5</span> What is the Exponential Response Formula (ERF) of the second order equation?</h2>
+<h3 id="front"><span class="section-num">5.1</span> Front</h3>
+<p><b>What is the Exponential Response Formula (ERF) of the second order equation?</b></p>
+<p>\(mx'' + kx' +bx = Be^{at}\)</p>
+<h3 id="back"><span class="section-num">5.2</span> Back</h3>
+<p>Let \(p( r) = mr^2 + kr + b\) be its characteristic polynomial</p>
+<p>\({\displaystyle x_p(t) = \frac{B}{p(a)} e^{at}}\), as \(p(a) \neq 0\)</p>
+<h2 id="what-is-the-form-of-a-general-solution-for-this-second-order-equation"><span class="section-num">6</span> What is the form of a general solution for this second order equation?</h2>
+<h3 id="front"><span class="section-num">6.1</span> Front</h3>
+<p><b>What is the form of a general solution for this second order equation?</b></p>
+<p>\(mx'' + kx' +bx = Be^{at}\)</p>
+<h3 id="back"><span class="section-num">6.2</span> Back</h3>
+<p>Let \(p( r) = mr^2 + kr + b\) be its characteristic polynomial</p>
+<p>\({\displaystyle x(t) = x_h(t) + x_p(t) = c_1 e^{r_1 t} + c_2 e^{r_2 t} +
+\frac{B}{p(a)}e^{at}}\)</p>
+<p>Where \(r_1\) and \(r_2\) are root of the characteristic polynomial</p>
+<h2 id="what-is-the-exponential-response-formula--erf--of-this-ode"><span class="section-num">7</span> What is the Exponential Response Formula (ERF) of this ODE?</h2>
+<h3 id="front"><span class="section-num">7.1</span> Front</h3>
+<p><b>What is the Exponential Response Formula (ERF) of this ODE?</b></p>
+<p>\({\displaystyle m\ddot{x} + b \dot{x} + kx = B \cos(\omega t)}\)</p>
+<h3 id="back"><span class="section-num">7.2</span> Back</h3>
+<p>\(z_p(t) = \frac{B}{p(i\omega)} e^{i\omega t}\)</p>
+<h2 id="what-is-the-output-amplitude-knowing-gain-and-input-amplitude"><span class="section-num">8</span> What is the output amplitude knowing gain and input amplitude?</h2>
+<h3 id="front"><span class="section-num">8.1</span> Front</h3>
+<p><b>What is the output amplitude knowing gain and input amplitude?</b></p>
+<h3 id="back"><span class="section-num">8.2</span> Back</h3>
+<p>\(\text{output amplitude} = \text{gain} \cross \text{input amplitude}\)</p>
+<h2 id="what-is-the-gain-from-this-second-order-ode"><span class="section-num">9</span> What is the gain from this second order ODE?</h2>
+<h3 id="front"><span class="section-num">9.1</span> Front</h3>
+<p><b>What is the gain from this second order ODE?</b></p>
+<p>\(m \ddot{x} + b\dot{x} + kx = B \cos (\omega t)\)</p>
+<p>Give input and output amplitude also</p>
+<h3 id="back"><span class="section-num">9.2</span> Back</h3>
+<ul>
+<li>Input amplitude: \(B\)</li>
+<li>Output amplitude: \(\frac{B}{p(i \omega)}\)</li>
+<li>Gain: \(\frac{1}{\abs{p(i \omega)}}\)</li>
+</ul>
+<h2 id="what-is-the-general-solution-of-simple-harmonic-oscillator-with-sinusoidal-input"><span class="section-num">10</span> What is the general solution of simple harmonic oscillator with sinusoidal input?</h2>
+<h3 id="front"><span class="section-num">10.1</span> Front</h3>
+<p><b>What is the general solution of simple harmonic oscillator with sinusoidal input?</b></p>
+<p>\(m \ddot{x} + kx = Be^{i \omega t}\)</p>
+<p>Use the natural frequency</p>
+<h3 id="back"><span class="section-num">10.2</span> Back</h3>
+<p>Natural frequency \(\omega_n = \sqrt{k/m}\)</p>
+<p>Rewrite the equation: \(m(\ddot{x} + \omega_n^2 x) = Be^{i \omega t}\), which
+complex particular solution is</p>
+<p>\({\displaystyle z_p(t) = \frac{B}{p(i \omega)} e^{i \omega t} =
+\frac{B}{m(\omega_n^2 - \omega)} e^{i\omega t}}\)</p>
+<p>Takin the real part: \({\displaystyle \operatorname{Re} (z_p) =
+\frac{B}{m(\omega_n^2 - \omega^2)} \cos(\omega t)}\)</p>
+<p>Using the homogeneous solution of the simple harmonic oscillator</p>
+<p>\({\displaystyle x(t) = c_1 \cos(\omega_n t) + c_2 \sin(\omega_n t) +
+\frac{B}{m(\omega_n^2 - \omega^2)} \cos(\omega t)}\)</p>
+<h2 id="what-happens-when--omega--approaches-to--omega-n--on-simple-harmonic-oscillator"><span class="section-num">11</span> What happens when \(\omega\) approaches to \(\omega_{n}\) on simple harmonic oscillator?</h2>
+<h3 id="front"><span class="section-num">11.1</span> Front</h3>
+<p><b>What happens when $\omega$ approaches to $\omega_{n}$ on simple harmonic oscillator?</b></p>
+<p>\(m \ddot{x} + kx = Be^{i \omega t}\)</p>
+<h3 id="back"><span class="section-num">11.2</span> Back</h3>
+<p>Where \(\omega_n = \sqrt{k/m}\), the particular solution \(x_p(t) =
+\frac{B}{m(\omega_n^2 - \omega^2)} \cos(\omega t)\) will break down.</p>
+<p>It&rsquo;s called pure resonance, and this happens when \(p(a) = 0\)</p>
+<h2 id="what-is-the-resonant-response-formula--rrf--of-this-second-order-ode"><span class="section-num">12</span> What is the Resonant Response Formula (RRF) of this second order ODE?</h2>
+<h3 id="front"><span class="section-num">12.1</span> Front</h3>
+<p><b>What is the Resonant Response Formula (RRF) of this second order ODE?</b></p>
+<p>\(m \ddot{x} + b \dot{x} + kx = Be^{a t}\)</p>
+<h3 id="back"><span class="section-num">12.2</span> Back</h3>
+<p>When \(p(a) = 0\), and \(p'(a) \neq 0\)</p>
+<p>Resonant Response Formula is: \(x(t) = \frac{B}{p'(a)}t e^{a t}\)</p>
+<h2 id="what-is-the-generalized-exponential-response-formula"><span class="section-num">13</span> What is the Generalized Exponential Response Formula?</h2>
+<h3 id="front"><span class="section-num">13.1</span> Front</h3>
+<p><b>What is the Generalized Exponential Response Formula?</b></p>
+<p>Let \(p(D)\) be a polynomial operator</p>
+<h3 id="back"><span class="section-num">13.2</span> Back</h3>
+<p>\(p(D)\) must be a polynomial operator with constant coefficient, and \(p^{(s)}\)
+its s-th derivative. Then</p>
+<p>\({\displaystyle p(D)x = Be^{at}}\), where \(a\) is real or complex</p>
+<p>has the particular solution</p>
+<ul>
+<li>\({\displaystyle x_p(t) = \frac{Be^{at}}{p(a)}}\) if \(p(a) \neq 0\)</li>
+<li>\({\displaystyle x_p(t) = \frac{Bte^{at}}{p'(a)}}\) if \(p(a) = 0\) and \(p'(a) \neq
+0\) (Resonant Response Formula)</li>
+<li>\({\displaystyle x_p(t) = \frac{Bt^2e^{at}}{p''(a)}}\) if \(p(a) = p'(a) = 0\) and
+\(p''(a) \neq 0\)</li>
+<li>\(\cdots\)</li>
+<li>\({\displaystyle x_p(t) = \frac{Bt^se^{at}}{p^{(s)}(a)}}\) if \(a\) is an
+\(s\text{-fold}\) zero</li>
+</ul>
+<h2 id="what-is-the-difference-between-damping-and-natural-angular-frequency"><span class="section-num">14</span> What is the difference between damping and natural angular frequency?</h2>
+<h3 id="front"><span class="section-num">14.1</span> Front</h3>
+<p><b>What is the difference between damping and natural angular frequency?</b></p>
+<p>Let \(m \ddot{x} + b \dot{x} + kx = Be^{at}\)</p>
+<h3 id="back"><span class="section-num">14.2</span> Back</h3>
+<ul>
+<li>Natural angular frequency: \(\omega_n = \sqrt{k/m}\)
+<ul>
+<li>It&rsquo;s as the system oscillate without disturbance</li>
+</ul>
+</li>
+<li>Damping angular frequency: it&rsquo;s from characteristic polynomial
+<ul>
+<li>\({\displaystyle \omega_d = \frac{\sqrt{\abs{b^2 - 4mk}}}{2m}}\)</li>
+<li>It&rsquo;s a <strong>pseudo-frequency</strong>, but you need to be careful to call it because
+only periodic functions has frequency</li>
+</ul>
+</li>
+</ul>
+<h2 id="find--a--so-that--a-sin3t---is-a-solution-of-and-x2026"><span class="section-num">15</span> Find \(A\) so that \(A\sin(3t)\) is a solution of…</h2>
+<h3 id="front"><span class="section-num">15.1</span> Front</h3>
+<p><b>Find $A$ so that $A\sin(3t)$ is a solution of&hellip;</b></p>
+<p>\(\ddot{x} + 4x = \sin(3t)\)</p>
+<h3 id="back"><span class="section-num">15.2</span> Back</h3>
+<p>Plug the desired solution into the differential equation to solve \(A\)</p>
+<p>\({\displaystyle -9A \sin(3t) + 4A \sin(3t) = -5A \sin(3t) = \sin(3t) \implies A
+= \frac{-1}{5}}\)</p>
+<h2 id="give-the-general-solution-to-this-4th-order-equation"><span class="section-num">16</span> Give the general solution to this 4th order equation?</h2>
+<h3 id="front"><span class="section-num">16.1</span> Front</h3>
+<p><b>Give the general solution to this 4th order equation?</b></p>
+<p>\({\displaystyle \dv[4]{x}{t} -x = \cos(2t)}\)</p>
+<h3 id="back"><span class="section-num">16.2</span> Back</h3>
+<p>This is a constant coefficient linear equation, where the characteristic
+polynomial \(p(s) = s^4 - 1\), where \(p(i2) = 15 \neq 0\)</p>
+<p>So using ERF, the particular solution with sinusoidal input is</p>
+<p>\({\displaystyle x_p(t) = \frac{1}{15} \cos(2t)}\)</p>
+<p>The roots of \(p(s)\) are \(\pm 1, \pm i\), so the associated homogeneous solution
+is</p>
+<p>\({\displaystyle x_h(t) = c_1 e^t + c_2 e^{-t} + c_3 \cos(t) + c_4 \sin(t)}\)</p>
+<p>\({\displaystyle x(t) = x_p(t) + x_h(t)}\)</p>
+<h2 id="how-could-be-find-a-particular-solution-for-this-ode"><span class="section-num">17</span> How could be find a particular solution for this ODE?</h2>
+<h3 id="front"><span class="section-num">17.1</span> Front</h3>
+<p><b>How could be find a particular solution for this ODE?</b></p>
+<p>\({\displaystyle \ddot{y} - 4y = \frac{1}{2} (e^{2x} + e^{-2x})}\)</p>
+<h3 id="back"><span class="section-num">17.2</span> Back</h3>
+<p>Using superposition, \(y_p = y_{p1} + y_{p2}\), where</p>
+<ul>
+<li>\(p(D)y_{p1} = \frac{1}{2} e^{2x}\)</li>
+<li>\(p(D)y_{p2} = \frac{1}{2} e^{-2x}\)</li>
+</ul>
+<p>Characteristic equation: \(p(s) = s^2 - 4\)</p>
+<p>Using the ERF, \(p(\pm 2) = 0\), but \(p'(\pm 2) = \pm 4\)</p>
+<ul>
+<li>\(y_{p1} = \frac{1/2}{4} x e^{2x} = \frac{1}{8} x e^{2x}\)</li>
+<li>\(y_{p2} = \frac{1/2}{-4} x e^{-2x} = - \frac{1}{8} x e^{-2x}\)</li>
+</ul>
+<p>\({\displaystyle y_p(t) = \frac{x}{8} (e^{2x} - e^{-2x})}\)</p>
+
+</div>
+
+
+            <footer>
+    
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-2%2fsession-14%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Exponential%20Response&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-2%2fsession-14%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-2%2fsession-14%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-2%2fsession-14%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-2%2fsession-14%2f&amp;title=Exponential%20Response" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Exponential%20Response&amp;body=Check out this site https%3a%2f%2fppalazon.github.io%2f18.03%2funit-2%2fsession-14%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+
+<nav>
+    <ul class="pager">
+    
+    <li class="previous">
+        <a href="https://ppalazon.github.io/18.03/unit-2/session-13/" title="Damped Harmonic Oscillators">
+            <span aria-hidden="true">&larr;</span>Damped Harmonic Oscillators
+        </a>
+    </li>
+    
+
+    
+    <li class="next">
+        <a href="https://ppalazon.github.io/18.03/unit-2/session-15/" title="Gain and Phase Lag">
+            Gain and Phase Lag <span aria-hidden="true">&rarr;</span>
+        </a>
+    </li>
+    
+    </ul>
+</nav>
+
+
+
+</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//ppalazon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+        </div>
+    </div>
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/">18.03 Differential Equations</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/unit-2/">2: Second Order Constant Coefficient Linear Equations</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.03/unit-2/session-14/">Exponential Response</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

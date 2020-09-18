@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Session 10: Meaning of Matrix Multiplication  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="calculus, maths, ">
+
+
+<meta property="og:title" content="Session 10: Meaning of Matrix Multiplication  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.02/part-1b/session-10/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="content-source" content="18.02/part-1b/session-10.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Captured On [2020-02-05 Wed 21:18] Source Session 10: Meaning of Matrix Multiplication | Part B: Matrices and Systems of Equations | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare 1 Chalkboard Figure 1: What represent matrix multiplication Figure 2: Matrix identity and plane rotation by matrix multiplication
+Figure 3: Continuous apply of rotation by matrix multiplication
+"/>
+<meta property="og:article:published_time" content="2019-04-18T00:00:00&#43;02:00" />
+<meta property="og:article:modified_time" content="2019-04-18T00:00:00&#43;02:00" />
+
+
+
+<meta property="og:article:tag" content="calculus">
+
+<meta property="og:article:tag" content="maths">
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ppalazon" />
+<meta name="twitter:creator" content="@ppalazon" />
+<meta name="twitter:title" content="Session 10: Meaning of Matrix Multiplication" />
+<meta name="twitter:description" content="Captured On [2020-02-05 Wed 21:18] Source Session 10: Meaning of Matrix Multiplication | Part B: Matrices and Systems of Equations | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare 1 Chalkboard Figure 1: What represent matrix multiplication Figure 2: Matrix identity and plane rotation by matrix multiplication
+Figure 3: Continuous apply of rotation by matrix multiplication
+"/>
+<meta name="twitter:url" content="https://ppalazon.github.io/18.02/part-1b/session-10/" />
+<meta name="twitter:domain" content="https://ppalazon.github.io">
+
+
+
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+     "@type": "Article",
+     "headline": "Session 10: Meaning of Matrix Multiplication",
+     "author": {
+         "@type": "Person",
+         "name": "http://profiles.google.com/+?rel=author"
+     },
+     "datePublished": "2019-04-18",
+     "description": "",
+     "wordCount":  457 
+ }
+</script>
+
+
+
+<link rel="canonical" href="https://ppalazon.github.io/18.02/part-1b/session-10/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+ }
+ .hero {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: calc(200px + (450 - 200) * ((100vw - 300px) / (1600 - 300)));
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: calc(-1 * (200px + (450 - 200) * ((100vw - 300px) / (1600 - 300))));
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+    <header class="container hat">
+        <h1>Session 10: Meaning of Matrix Multiplication
+</h1>
+
+        
+
+
+<span class="author">by
+    
+    MIT OCW, Pablo Palazon
+    
+</span>
+
+
+    </header>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            
+            <div class="content">
+  <dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2020-02-05 Wed 21:18]</span></span></dd>
+<dt>Source</dt>
+<dd><a href="https://ocw.mit.edu/courses/mathematics/18-02sc-multivariable-calculus-fall-2010/1.-vectors-and-matrices/part-b-matrices-and-systems-of-equations/session-10-meaning-of-matrix-multiplication/index.htm">Session 10: Meaning of Matrix Multiplication | Part B: Matrices and Systems of Equations | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare</a></dd>
+</dl>
+<h2 id="chalkboard"><span class="section-num">1</span> Chalkboard</h2>
+<p><a id="org5aa7102"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/dd/7069b5-6d21-4cad-8941-7b9494f0b404/_20200205_211853MIT18_02SC_L3Brds_9.png"
+         alt="Figure 1: What represent matrix multiplication" width="80%"/> <figcaption>
+            <p>Figure 1: What represent matrix multiplication</p>
+        </figcaption>
+</figure>
+
+<p><a id="org44d78c6"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/dd/7069b5-6d21-4cad-8941-7b9494f0b404/_20200205_211859MIT18_02SC_L3Brds_10.png"
+         alt="Figure 2: Matrix identity and plane rotation by matrix multiplication" width="80%"/> <figcaption>
+            <p>Figure 2: Matrix identity and plane rotation by matrix multiplication</p>
+        </figcaption>
+</figure>
+
+<p><a id="orge7a6218"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/dd/7069b5-6d21-4cad-8941-7b9494f0b404/_20200205_211905MIT18_02SC_L3Brds_11.png"
+         alt="Figure 3: Continuous apply of rotation by matrix multiplication" width="80%"/> <figcaption>
+            <p>Figure 3: Continuous apply of rotation by matrix multiplication</p>
+        </figcaption>
+</figure>
+
+<h2 id="can-we-use-the-distributive-law-with-matrix-multiplication"><span class="section-num">2</span> Can we use the distributive law with matrix multiplication?</h2>
+<h3 id="front"><span class="section-num">2.1</span> Front</h3>
+<p><b>Can we use the distributive law with matrix multiplication?</b></p>
+<p>\(A(B + C) = AB + AC\)</p>
+<h3 id="back"><span class="section-num">2.2</span> Back</h3>
+<ul>
+<li>Yes, it&rsquo;s valid</li>
+</ul>
+<h2 id="can-we-use-the-associative-law-with-matrix-multiplication"><span class="section-num">3</span> Can we use the associative law with matrix multiplication?</h2>
+<h3 id="front"><span class="section-num">3.1</span> Front</h3>
+<p><b>Can we use the associative law with matrix multiplication?</b></p>
+<p>\((AB)C = A(BC)\)</p>
+<h3 id="back"><span class="section-num">3.2</span> Back</h3>
+<ul>
+<li>Yes</li>
+</ul>
+<h2 id="which-is-the-identity-matrix-of-order-3"><span class="section-num">4</span> Which is the identity matrix of order 3?</h2>
+<h3 id="front"><span class="section-num">4.1</span> Front</h3>
+<p><b>Which is the identity matrix of order 3?</b></p>
+<h3 id="back"><span class="section-num">4.2</span> Back</h3>
+<ul>
+<li>\(IA = AI = A\)</li>
+</ul>
+<figure>
+    <img src="https://ppalazon.github.io/dd/7069b5-6d21-4cad-8941-7b9494f0b404/_20200917_114539dqDRYSS.png"/> 
+</figure>
+
+<h2 id="can-we-use-the-commutative-law-with-matrix-multiplication"><span class="section-num">5</span> Can we use the commutative law with matrix multiplication?</h2>
+<h3 id="front"><span class="section-num">5.1</span> Front</h3>
+<p><b>Can we use the commutative law with matrix multiplication?</b></p>
+<p>\(AB = BA\)</p>
+<h3 id="back"><span class="section-num">5.2</span> Back</h3>
+<p>No, we can&rsquo;t. The order it&rsquo;s very important</p>
+<ul>
+<li>\(AB \neq BA\)</li>
+<li><strong>Exception:</strong> when we are multiply be identity matrix
+<ul>
+<li>\(AI = AI = A\)</li>
+</ul>
+</li>
+</ul>
+<h2 id="which-is-the-determinant-of-the-result-of-a-matrix-multiplication"><span class="section-num">6</span> Which is the determinant of the result of a matrix multiplication?</h2>
+<h3 id="front"><span class="section-num">6.1</span> Front</h3>
+<p><b>Which is the determinant of the result of a matrix multiplication?</b></p>
+<ul>
+<li>\(|AB|\)</li>
+<li>\(\det(AB)\)</li>
+</ul>
+<h3 id="back"><span class="section-num">6.2</span> Back</h3>
+<ul>
+<li>\(|AB| = |A||B|\)</li>
+<li>\(\det(AB) = \det(A) \det(B)\)</li>
+</ul>
+<p>It&rsquo;s difficult to proof with \(n \times n\) matrices</p>
+<h2 id="how-we-can-get-an-specific-row-or-column-of-a-matrix"><span class="section-num">7</span> How we can get an specific row or column of a matrix?</h2>
+<h3 id="front"><span class="section-num">7.1</span> Front</h3>
+<p><b>How we can get an specific row or column of a matrix?</b></p>
+<p>Tip: Using matrix multiplication</p>
+<h3 id="back"><span class="section-num">7.2</span> Back</h3>
+<figure>
+    <img src="https://ppalazon.github.io/dd/7069b5-6d21-4cad-8941-7b9494f0b404/_20200917_1145478VaVAgs.png"/> 
+</figure>
+
+<h2 id="what-are-the-laws-and-properties-of-matrix-multiplication"><span class="section-num">8</span> What are the laws and properties of matrix multiplication?</h2>
+<h3 id="front"><span class="section-num">8.1</span> Front</h3>
+<p><b>What are the laws and properties of matrix multiplication?</b></p>
+<p>Enumerate all laws and properties</p>
+<h3 id="back"><span class="section-num">8.2</span> Back</h3>
+<ul>
+<li>Distributive law
+<ul>
+<li>\(A(B + C) = AB + AC\)</li>
+</ul>
+</li>
+<li>Associative law
+<ul>
+<li>\((AB)C = A(BC)\)</li>
+</ul>
+</li>
+<li>Identity matrix
+<ul>
+<li>Diagonal of matrix is \(1\)</li>
+</ul>
+</li>
+<li><strong>No</strong> commutative law
+<ul>
+<li>\(AB \neq BA\)</li>
+<li>Exception: \(IA = AI = A\)</li>
+</ul>
+</li>
+<li>Determinant law
+<ul>
+<li>\(|AB| = |A||B|\)</li>
+<li>\(\det(AB) = \det(A)\det(B)\)</li>
+</ul>
+</li>
+<li>Extract one column or row</li>
+</ul>
+<figure>
+    <img src="https://ppalazon.github.io/dd/7069b5-6d21-4cad-8941-7b9494f0b404/_20200917_114556dqDRYSS.png"/> 
+</figure>
+
+<figure>
+    <img src="https://ppalazon.github.io/dd/7069b5-6d21-4cad-8941-7b9494f0b404/_20200917_1146028VaVAgs.png"/> 
+</figure>
+
+<h2 id="what-are-the-matrix-operations"><span class="section-num">9</span> What are the matrix operations?</h2>
+<h3 id="front"><span class="section-num">9.1</span> Front</h3>
+<p><b>What are the matrix operations?</b></p>
+<p>Enumerate all matrix operations</p>
+<h3 id="back"><span class="section-num">9.2</span> Back</h3>
+<ul>
+<li>Scalar multiplication</li>
+<li>Matrix addition</li>
+<li>Transposition</li>
+<li>Matrix multiplication</li>
+</ul>
+<h2 id="how-can-we-show-that-one-vector-counterclockwise-from-another"><span class="section-num">10</span> How can we show that one vector counterclockwise from another?</h2>
+<h3 id="front"><span class="section-num">10.1</span> Front</h3>
+<p><b>How can we show that one vector counterclockwise from another?</b></p>
+<p>It&rsquo;s \(\vb{v_1}\) counterclockwise from \(\vb{v_2}\)</p>
+<h3 id="back"><span class="section-num">10.2</span> Back</h3>
+<ul>
+<li>Using cross product</li>
+<li>\(\vb{v_2} \cross \vb{v_1}\)
+<ul>
+<li>If it&rsquo;s positive, \(\vb{v_2}\) counterclockwise from \(\vb{v_1}\)</li>
+<li>If it&rsquo;s negative, \(\vb{v_2}\) clockwise from \(\vb{v_2}\)</li>
+</ul>
+</li>
+</ul>
+<h2 id="what-represent-a-matrix-multiplication"><span class="section-num">11</span> What represent a matrix multiplication?</h2>
+<h3 id="front"><span class="section-num">11.1</span> Front</h3>
+<p><b>What represent a matrix multiplication?</b></p>
+<p>\(AB\)</p>
+<h3 id="back"><span class="section-num">11.2</span> Back</h3>
+<ul>
+<li>Do transformation B, <em>then</em> transformation A</li>
+<li>Transformation is produced from right to left</li>
+<li>Similar to function composition</li>
+</ul>
+
+</div>
+
+
+            <footer>
+    
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-1b%2fsession-10%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Session%2010%3a%20Meaning%20of%20Matrix%20Multiplication&amp;url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-1b%2fsession-10%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-1b%2fsession-10%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-1b%2fsession-10%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-1b%2fsession-10%2f&amp;title=Session%2010%3a%20Meaning%20of%20Matrix%20Multiplication" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Session%2010%3a%20Meaning%20of%20Matrix%20Multiplication&amp;body=Check out this site https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-1b%2fsession-10%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+
+<nav>
+    <ul class="pager">
+    
+
+    
+    <li class="next">
+        <a href="https://ppalazon.github.io/18.02/part-1b/session-11/" title="Session 11: Matrix Inverses">
+            Session 11: Matrix Inverses <span aria-hidden="true">&rarr;</span>
+        </a>
+    </li>
+    
+    </ul>
+</nav>
+
+
+
+</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//ppalazon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+        </div>
+    </div>
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.02/">18.02 Multivariable Calculus</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.02/part-1b/">1B: Vectors and Matrices - Matrices and Systems of Equations</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.02/part-1b/session-10/">Session 10: Meaning of Matrix Multiplication</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

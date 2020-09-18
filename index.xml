@@ -1,27 +1,1816 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home Page on Sobremesa en Milliways</title>
+    <title>Human being living on Earth on Pablo Palazon&#39;s Website</title>
     <link>https://ppalazon.github.io/</link>
-    <description>Recent content in Home Page on Sobremesa en Milliways</description>
+    <description>Recent content in Human being living on Earth on Pablo Palazon&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <managingEditor>pablo.palazon@gmail.com (Pablo Palazon)</managingEditor>
-    <webMaster>pablo.palazon@gmail.com (Pablo Palazon)</webMaster>
-    <copyright>CC BY-NC-ND 3.0</copyright>
-    <lastBuildDate>Wed, 11 Apr 2018 00:00:00 +0200</lastBuildDate>
+    <copyright>CC BY-NC-ND 4.0</copyright>
+    <lastBuildDate>Wed, 11 Apr 2018 00:00:00 +0200</lastBuildDate><atom:link href="https://ppalazon.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Basic DE&#39;s and Separable Equations</title>
+      <link>https://ppalazon.github.io/18.03/unit-1/session-1/</link>
+      <pubDate>Tue, 17 Sep 2019 16:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-1/session-1/</guid>
+      <description>Captured On [2019-09-17 Tue 16:00] Source Basic DE&amp;rsquo;s and Separable Equations | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 Can be \(e^{at}=0\)? 1.1 Front Can be \(e^{at}=0\)?
+1.2 Back Never
+2 Write a sketch of the graph 2.1 Front Write a sketch of the graph
+\(y=e^t\)
+2.2 Back   3 Write a sketch of the graph 3.1 Front Write a sketch of the graph</description>
+    </item>
     
-	<atom:link href="https://ppalazon.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Geometric Methods</title>
+      <link>https://ppalazon.github.io/18.03/unit-1/session-2/</link>
+      <pubDate>Tue, 17 Sep 2019 16:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-1/session-2/</guid>
+      <description>Captured On [2019-09-17 Tue 16:00] Source Geometric Methods | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is a direction field 1.1 Front What is a direction field
+for the equation \(y&#39; = f(x,y)\)
+1.2 Back For each point \((x,y)\) of the plane is drawn a little segment whose slope is \(f(x,y)\)
+For example: \({\displaystyle \dv{y}{x} = 2x}\)
+  2 How can we draw a direction field by hand?</description>
+    </item>
     
+    <item>
+      <title>First Order Linear ODE&#39;s</title>
+      <link>https://ppalazon.github.io/18.03/unit-1/session-4/</link>
+      <pubDate>Thu, 12 Sep 2019 13:40:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-1/session-4/</guid>
+      <description>Captured On [2019-09-11 Wed 20:32] Source First Order Linear ODE&amp;rsquo;s | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is a first order linear ODE? 1.1 Front What is a first order linear ODE?
+Write the standard form
+1.2 Back In the unknown function \(x = x(t)\)
+\({\displaystyle A(t) \dv{x}{t} + B(t) x(t) = C(t)}\)
+As \(A(t) \neq 0\), we can simplify the equation by dividing by \(A(t)\)</description>
+    </item>
+    
+    <item>
+      <title>Complex Arithmetic and Exponentials</title>
+      <link>https://ppalazon.github.io/18.03/unit-1/session-6/</link>
+      <pubDate>Thu, 26 Sep 2019 15:47:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-1/session-6/</guid>
+      <description>Captured On [2019-09-17 Tue 15:58] Source Complex Arithmetic and Exponentials | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is a complex number? 1.1 Front What is a complex number?
+1.2 Back A complex number is an expression of the form \(a + ib\)
+2 When can we say that 2 complex number are equals? 2.1 Front When can we say that 2 complex number are equals?</description>
+    </item>
+    
+    <item>
+      <title>Sinusoidal Functions</title>
+      <link>https://ppalazon.github.io/18.03/unit-1/session-7/</link>
+      <pubDate>Fri, 27 Sep 2019 18:57:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-1/session-7/</guid>
+      <description>Captured On [2019-09-26 Thu 15:47] Source Sinusoidal Functions | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is a sinusoidal function equation? 1.1 Front What is a sinusoidal function equation?
+1.2 Back \(f(t) = A \cos(\omega t - \phi)\)
+2 What is the sinusoidal oscillation equation? 2.1 Front What is the sinusoidal oscillation equation?
+2.2 Back \(f(t) = A \cos(\omega t - \phi)\)</description>
+    </item>
+    
+    <item>
+      <title>First Order Constant Coefficient Linear ODE&#39;s</title>
+      <link>https://ppalazon.github.io/18.03/unit-1/session-8/</link>
+      <pubDate>Tue, 01 Oct 2019 12:22:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-1/session-8/</guid>
+      <description>Captured On [2019-09-27 Fri 19:04] Source First Order Constant Coefficient Linear ODE&amp;rsquo;s | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is a constant coefficient First ODE? 1.1 Front What is a constant coefficient First ODE?
+1.2 Back \(\dot{y} + ky = q(t)\), where \(k\) is a constant
+2 What is the solution of a constant coefficient First ODE? 2.1 Front What is the solution of a constant coefficient First ODE?</description>
+    </item>
+    
+    <item>
+      <title>Exponential Input; Gain and Phase Lag</title>
+      <link>https://ppalazon.github.io/18.03/unit-1/session-9/</link>
+      <pubDate>Wed, 02 Oct 2019 13:05:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-1/session-9/</guid>
+      <description>Captured On [2019-10-01 Tue 12:22] Source Exponential Input; Gain and Phase Lag | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 Explain the method of optimism to solve this first order ODE 1.1 Front Explain the method of optimism to solve this first order ODE
+\(\dot{x} + 2x = 4e^{3t}\)
+1.2 Back The inspiration is based on the fact that \(\dv{t} e^{rt} = re^{rt}\).</description>
+    </item>
+    
+    <item>
+      <title>First Order Autonomous Differential Equations</title>
+      <link>https://ppalazon.github.io/18.03/unit-1/session-10/</link>
+      <pubDate>Sat, 05 Oct 2019 18:18:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-1/session-10/</guid>
+      <description>Captured On [2019-10-02 Wed 13:06] Source First Order Autonomous Differential Equations | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is an autonomous first order differential equation? 1.1 Front What is an autonomous first order differential equation?
+1.2 Back There are (in general) nonlinear equations of the form \(\dot{x} = f(x)\)
+The word autonomous means self governing and indicates that the rate of change of \(x\) is governed by \(x\) itself and it not dependent of time.</description>
+    </item>
+    
+    <item>
+      <title>Linear vs. Nonlinear</title>
+      <link>https://ppalazon.github.io/18.03/unit-1/session-11/</link>
+      <pubDate>Tue, 08 Oct 2019 09:24:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-1/session-11/</guid>
+      <description> Captured On [2019-10-07 Mon 13:29] Source Linear vs. Nonlinear | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  </description>
+    </item>
+    
+    <item>
+      <title>Modes and the Characteristic Equation</title>
+      <link>https://ppalazon.github.io/18.03/unit-2/session-12/</link>
+      <pubDate>Fri, 11 Oct 2019 16:58:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-2/session-12/</guid>
+      <description>Captured On [2019-10-08 Tue 11:29] Source Modes and the Characteristic Equation | Unit II: Second Order Constant Coefficient Linear Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 In this system, when is the equilibrium point and what does it mean? 1.1 Front In this system, when is the equilibrium point and what does it mean?
+  1.2 Back It&amp;rsquo;s at \(x=0\), and it&amp;rsquo;s the point where the spring is relaxed, which means that it is exerting no force.</description>
+    </item>
+    
+    <item>
+      <title>Damped Harmonic Oscillators</title>
+      <link>https://ppalazon.github.io/18.03/unit-2/session-13/</link>
+      <pubDate>Wed, 16 Oct 2019 11:34:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-2/session-13/</guid>
+      <description>Captured On [2019-10-11 Fri 17:46] Source [[https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-ii-second-order-constant-coefficient-linear-equations/damped-harmonic-oscillators/index.htm][Damped Harmonic Oscillators | Unit II: Second Order Constant Coefficient  Linear Equations | Differential Equations | Mathematics | MIT OpenCourseWare]]
+1 What is a damped sinusoid equation? 1.1 Front What is a damped sinusoid equation?
+Write the general form
+1.2 Back \(y(t) = A e^{- \lambda t} \cos(\omega t - \phi)\)
+  2 What is the basic solutions of DE is we get \(z(t)\) with complex exponential?</description>
+    </item>
+    
+    <item>
+      <title>Exponential Response</title>
+      <link>https://ppalazon.github.io/18.03/unit-2/session-14/</link>
+      <pubDate>Fri, 11 Oct 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-2/session-14/</guid>
+      <description>Captured On [2019-10-16 Wed 13:53] Source Exponential Resonse  1 Can we use the superposition principle for second order equation? 1.1 Front Can we use the superposition principle for second order equation?
+i.e. \(m\ddot{x} + b\dot{x} + kx = F_{ext}\)
+1.2 Back Yes, you can. Suppose \(x_p\) is any solution to this equation, and \(x_h\) is the solution of the homogeneous second order equation (\(m\ddot{x} + b\dot{x} + kx = 0\))</description>
+    </item>
+    
+    <item>
+      <title>Gain and Phase Lag</title>
+      <link>https://ppalazon.github.io/18.03/unit-2/session-15/</link>
+      <pubDate>Fri, 11 Oct 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-2/session-15/</guid>
+      <description>Captured On [2019-10-25 Fri 12:58] Source Gain and Phase Lag | Unit II: Second Order Constant Coefficient Linear Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 When can we say that a system is stable? 1.1 Front When can we say that a system is /stable/?
+1.2 Back If the systems&amp;rsquo;s long-term behaviour does not depend significantly on the initial conditions.
+2 Give an example of stable system in mechanics?</description>
+    </item>
+    
+    <item>
+      <title>Undetermined Coefficients</title>
+      <link>https://ppalazon.github.io/18.03/unit-2/session-16/</link>
+      <pubDate>Fri, 11 Oct 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-2/session-16/</guid>
+      <description>Captured On [2019-10-28 Mon 13:23] Source Undetermined Coefficients | Unit II: Second Order Constant Coefficient Linear Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the undetermined coefficients theorem? 1.1 Front What is the undetermined coefficients theorem?
+Let \(p(D)y = q(x)\), where \(q(x)\) is a polynomial
+1.2 Back \(q(x)\) is a polynomial with the form \(q(x) = a_nx^n + a_{n-1}x^{n-1} + \dots + a_0\), where the largest \(k\) is the degree of polynomial which \(a_k \neq 0\)</description>
+    </item>
+    
+    <item>
+      <title>Linear Operators, Linear Time Invariance</title>
+      <link>https://ppalazon.github.io/18.03/unit-2/session-17/</link>
+      <pubDate>Fri, 11 Oct 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-2/session-17/</guid>
+      <description>Captured On [2019-10-29 Tue 13:41] Source Linear Operators, Linear Time Invariance | Unit II: Second Order Constant Coefficient Linear Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the name of this symbol \(p(D)\)? 1.1 Front What is the name of this symbol $p(D)$?
+Where \(D\) is a differential operator
+1.2 Back \(p(D)\) is a polynomial operator
+2 What is a polynomial differential operator with constant coefficients?</description>
+    </item>
+    
+    <item>
+      <title>Pure Resonance</title>
+      <link>https://ppalazon.github.io/18.03/unit-2/session-18/</link>
+      <pubDate>Fri, 11 Oct 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-2/session-18/</guid>
+      <description> Captured On [2019-10-31 Thu 13:31] Source Pure Resonance | Unit II: Second Order Constant Coefficient Linear Equations | Differential Equations | Mathematics | MIT OpenCourseWare  </description>
+    </item>
+    
+    <item>
+      <title>Frequency Response and Practical Resonance</title>
+      <link>https://ppalazon.github.io/18.03/unit-2/session-19/</link>
+      <pubDate>Fri, 11 Oct 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-2/session-19/</guid>
+      <description>Captured On [2019-11-11 Mon 12:39] Source Frequency Response and Practical Resonance | Unit II: Second Order Constant Coefficient Linear Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the amplitude response of the system? 1.1 Front What is the amplitude response of the system?
+1.2 Back It&amp;rsquo;s called to the gain of the system in terms of input angular frequency
+2 What is the phase response of the system?</description>
+    </item>
+    
+    <item>
+      <title>Applications: LR Circuits</title>
+      <link>https://ppalazon.github.io/18.03/unit-2/session-20/</link>
+      <pubDate>Fri, 11 Oct 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-2/session-20/</guid>
+      <description> Captured On [2019-11-14 Thu 13:11] Source Applications: LRC Circuits | Unit II: Second Order Constant Coefficient Linear Equations | Differential Equations | Mathematics | MIT OpenCourseWare  </description>
+    </item>
+    
+    <item>
+      <title>Fourier Series: Basics</title>
+      <link>https://ppalazon.github.io/18.03/unit-3/session-21/</link>
+      <pubDate>Tue, 26 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-3/session-21/</guid>
+      <description>Captured On [2019-11-15 Fri 13:49] Source Fourier Series: Basics | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 Which is the minimum period of a constant function? 1.1 Front Which is the minimum period of a constant function?
+1.2 Back There is no minimal period, we don&amp;rsquo;t allow \(P = 0\) to be periodic.
+Also, for any \(P\) value is a period, but no minimal</description>
+    </item>
+    
+    <item>
+      <title>Operations on Fourier Series</title>
+      <link>https://ppalazon.github.io/18.03/unit-3/session-22/</link>
+      <pubDate>Tue, 26 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-3/session-22/</guid>
+      <description>Captured On [2019-11-23 Sat 18:11] Source Operations on Fourier Series | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is an even function? 1.1 Front What is an even function?
+Let \(f(t)\) be a function, and write examples
+1.2 Back \(f(t)\) is even if \(f(-t) = f(t)\) for all \(t\)
+ \(t^2, t^4, t^6, \dots\), any even power of \(t\) \(\cos(at)\)  power series for \(\cos(at)\) has only even powers of \(t\)   A constant function  2 What is the integral of even function on a &amp;lsquo;balanced&amp;rsquo; interval?</description>
+    </item>
+    
+    <item>
+      <title>ODE&#39;s with Periodic Input, Resonance</title>
+      <link>https://ppalazon.github.io/18.03/unit-3/session-23/</link>
+      <pubDate>Tue, 26 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-3/session-23/</guid>
+      <description>Captured On [2019-11-29 Fri 13:34] Source [[https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-iii-fourier-series-and-laplace-transform/odes-with-periodic-input-resonance/index.htm][ODE&amp;rsquo;s with Periodic Input, Resonance | Unit III: Fourier Series and  Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare]]
+1 How can we solve this ODE? 1.1 Front How can we solve this ODE?
+\(\ddot{x} + 9.1 x = f(t)\), where \(f(t)\) is a odd square wave of period \(2\pi\) with \(f(t) = 1\) for \(0 \lt t \lt \pi\)</description>
+    </item>
+    
+    <item>
+      <title>Step and Delta Functions: Integrals and Generalized Derivatives</title>
+      <link>https://ppalazon.github.io/18.03/unit-3/session-24/</link>
+      <pubDate>Tue, 26 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-3/session-24/</guid>
+      <description>Captured On [2019-12-06 Fri 14:05] Source Step and Delta Functions: Integrals and Generalized Derivatives | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  This session looks closely at discontinuous functions and introduces the notion of an impulse or delta function. The goal is to use these functions as the input to differential equations. Step functions and delta functions are not differentiable in the usual sense, but they do have what we will call generalized derivatives, which are suitable for use in DE&amp;rsquo;s.</description>
+    </item>
+    
+    <item>
+      <title>Unit Step and Unit Impulse Response</title>
+      <link>https://ppalazon.github.io/18.03/unit-3/session-25/</link>
+      <pubDate>Tue, 26 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-3/session-25/</guid>
+      <description>Captured On [2019-12-17 Tue 13:01] Source Unit Step and Unit Impulse Response | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  In this session we study differential equations with step or delta functions as input. For physical systems, this means that we are looking at discontinuous or impulsive inputs to the system.
+1 When happens the pre-initial conditions in a DE? 1.</description>
+    </item>
+    
+    <item>
+      <title>Convolution</title>
+      <link>https://ppalazon.github.io/18.03/unit-3/session-26/</link>
+      <pubDate>Tue, 26 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-3/session-26/</guid>
+      <description>Captured On [2019-12-27 Fri 13:46] Source Convolution | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the definition of the convolution of 2 functions? 1.1 Front What is the definition of the convolution of 2 functions?
+One-sided convolution
+1.2 Back It&amp;rsquo;s a function defined by this integral
+\({\displaystyle (f * g)(t) = \int_{0^-}^{t^+} f(\tau) g(t - \tau) \dd{\tau}}\) for \(t \gt 0\)</description>
+    </item>
+    
+    <item>
+      <title>Laplace Transform: Basics</title>
+      <link>https://ppalazon.github.io/18.03/unit-3/session-27/</link>
+      <pubDate>Tue, 26 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-3/session-27/</guid>
+      <description>Captured On [2019-12-30 Mon 17:43] Source Laplace Transform: Basics | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the definition of Laplace Transform? 1.1 Front What is the definition of Laplace Transform?
+1.2 Back The Laplace transform of a function \(f(t)\) of a real variable \(t\) is another function depending on a new variable \(s\), which is in general complex.</description>
+    </item>
+    
+    <item>
+      <title>Partial Fractions and Inverse Laplace Transform</title>
+      <link>https://ppalazon.github.io/18.03/unit-3/session-28/</link>
+      <pubDate>Tue, 26 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-3/session-28/</guid>
+      <description>Captured On [2020-01-02 Thu 18:40] Source Partial Fractions and Inverse Laplace Transform | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is a rational function? 1.1 Front What is a rational function?
+1.2 Back Is a function that is the ratio of two polynomials
+\({\displaystyle \frac{s + }{s^2 + 7s + 9}}\)
+2 When can we say that a rational function is proper?</description>
+    </item>
+    
+    <item>
+      <title>Laplace Transform: Solving Initial Value Problems</title>
+      <link>https://ppalazon.github.io/18.03/unit-3/session-29/</link>
+      <pubDate>Tue, 26 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-3/session-29/</guid>
+      <description>Captured On [2020-01-06 Mon 19:03] Source Laplace Transform: Solving Initial Value Problems | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 Compute with the definition the Laplace transform of \(f&#39;\) 1.1 Front Compute with the definition the Laplace transform of $f&#39;$
+\({\displaystyle \mathcal{L}(f&#39;)(s)}\)
+Don&amp;rsquo;t do by heart
+1.2 Back \({\displaystyle \mathcal{L}(f&#39;) = \int_{0^-}^{\infty} f&#39;(t) e^{-st} \dd{t}}\)
+Integrating by parts
+ \(u = e^{-st}\), \(\dd{u} = -s e^{-st} \dd{t}\) \(\dd{v} = f&#39;(t) \dd{t}\), \(v = f(t)\)  \({\displaystyle f(t) e^{-st} \bigg|_{0^-}^{\infty} + s \int_{0^-}^{\infty} f(t) e^{-st} \dd{t} = -f(0^-) + s F(s)}\)</description>
+    </item>
+    
+    <item>
+      <title>Transfer (System) and Weight Functions, Green&#39;s Formula</title>
+      <link>https://ppalazon.github.io/18.03/unit-3/session-30/</link>
+      <pubDate>Tue, 26 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-3/session-30/</guid>
+      <description>Captured On [2020-01-10 Fri 13:16] Source Transfer (System) and Weight Functions, Green&amp;rsquo;s Formula | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the transfer function for any LTI? 1.1 Front What is the transfer function for any LTI?
+In terms of unit impulse response
+1.2 Back \({\displaystyle W(s) = \mathcal{L}(w(t))}\)
+where \(w(t)\) is the unit impulse response
+2 What is the system function?</description>
+    </item>
+    
+    <item>
+      <title>Poles, Amplitude Response, Connection to ERF</title>
+      <link>https://ppalazon.github.io/18.03/unit-3/session-31/</link>
+      <pubDate>Tue, 26 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-3/session-31/</guid>
+      <description>Captured On [2020-01-11 Sat 17:01] Source Poles, Amplitude Response, Connection to ERF | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 When can we say that a rational function is in reduced form? 1.1 Front When can we say that a rational function is in reduced form?
+1.2 Back If the numerator \(q(s)\) and the denominator \(p(s)\) have no roots in common, then \(q(s)/p(s)\) is in reduced form</description>
+    </item>
+    
+    <item>
+      <title>Linear Systems</title>
+      <link>https://ppalazon.github.io/18.03/unit-4/session-32/</link>
+      <pubDate>Sat, 18 Jan 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-4/session-32/</guid>
+      <description>Captured On [2020-01-21 Tue 13:07] Source Linear Systems | Unit IV First-order Systems | Differential Equations | Mathematics | MIT OpenCourseWare  1 Can we solve a linear system of ODE&amp;rsquo;s with constant coefficients by eliminating variables? 1.1 Front Can we solve a linear system of ODE&amp;rsquo;s with constant coefficients by eliminating variables?
+1.2 Back No, it&amp;rsquo;s a naive way to solve it. You need to use techniques of constant coefficient ODE methods.</description>
+    </item>
+    
+    <item>
+      <title>Matrix Methods: Eigenvalues and Normal Modes</title>
+      <link>https://ppalazon.github.io/18.03/unit-4/session-33/</link>
+      <pubDate>Sat, 18 Jan 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-4/session-33/</guid>
+      <description>Captured On [2020-02-01 Sat 12:35] Source Matrix Methods: Eigenvalues and Normal Modes | Unit IV: First-order Systems | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the trace of a square matrix? 1.1 Front What is the trace of a square matrix?
+For example, \({\displaystyle \operatorname{tr}\begin{pmatrix}a &amp;amp; b \\ c &amp;amp; d\end{pmatrix}}\)
+1.2 Back It&amp;rsquo;s the sum of the elements on the main diagonal; it&amp;rsquo;s denoted \(\operatorname{tr}(A)\):</description>
+    </item>
+    
+    <item>
+      <title>Qualitative Behavior: Phase Portraits</title>
+      <link>https://ppalazon.github.io/18.03/unit-4/session-34/</link>
+      <pubDate>Sat, 18 Jan 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-4/session-34/</guid>
+      <description>Captured On [2020-02-13 Thu 17:57] Source Qualitative Behavior: Phase Portraits | Unit IV: First-order Systems | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the phase plane for this system? 1.1 Front What is the phase plane for this system?
+\({\displaystyle \dot{\vb{x}} = A \vb{x}}\), where \({\displaystyle A = \begin{pmatrix}a &amp;amp; b \\ c &amp;amp; d\end{pmatrix}}\)
+1.2 Back It&amp;rsquo;s the \(xy\text{-plane}\) itself, where you can draw the trajectory of a solution with an arrow to indicate the direction of increasing time.</description>
+    </item>
+    
+    <item>
+      <title>Matrix Exponential</title>
+      <link>https://ppalazon.github.io/18.03/unit-4/session-35/</link>
+      <pubDate>Sat, 18 Jan 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-4/session-35/</guid>
+      <description>Captured On [2020-02-20 Thu 21:51] Source Matrix Exponentials | Unit IV: First-order Systems | Differential Equations | Mathematics | MIT OpenCourseWare  1 For this linear system, how many solutions are there? 1.1 Front For this linear system, how many solutions are there?
+\({\displaystyle \dot{\vb{x}} = A \vb{x}}\), where \(A\) is a \(n \cross n\) matrix
+1.2 Back There are \(n\) linearly independent solutions for the system
+2 How is the linear system when the coefficients are functions of the independent variable t?</description>
+    </item>
+    
+    <item>
+      <title>Nonlinear Systems</title>
+      <link>https://ppalazon.github.io/18.03/unit-4/session-36/</link>
+      <pubDate>Sat, 18 Jan 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-4/session-36/</guid>
+      <description>Captured On [2020-03-06 Fri 14:04] Source Nonlinear Systems | Unit IV: First-order Systems | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is an autonomous system? 1.1 Front What is an autonomous system?
+General First Order Autonomous Systems
+1.2 Back The word autonomous means self regulating. These systems are self regulating in the sense that their rate of change (e.g. derivatives) depends only on the state of the system (values of \(x\) and \(y\)) and not on the time \(t\)</description>
+    </item>
+    
+    <item>
+      <title>Linearization Near Critical Points</title>
+      <link>https://ppalazon.github.io/18.03/unit-4/session-37/</link>
+      <pubDate>Sat, 18 Jan 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-4/session-37/</guid>
+      <description>Captured On [2020-03-09 Mon 12:02] Source Linearization Near Critical Points | Unit IV: First-order Systems | Differential Equations | Mathematics | MIT OpenCourseWare  1 How can we get information about the trajectories of autonomous linear system without… 1.1 Front How can we get information about the trajectories of autonomous linear system without&amp;hellip;
+determining them analytically or using a computer to plot them
+1.2 Back Analyzing what happens near critical points.</description>
+    </item>
+    
+    <item>
+      <title>Limitations of the Linear: Limit Cycles and Chaos</title>
+      <link>https://ppalazon.github.io/18.03/unit-4/session-38/</link>
+      <pubDate>Sat, 18 Jan 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-4/session-38/</guid>
+      <description>Captured On [2020-03-16 Mon 19:13] Source Limitations of the Linear: Limit Cycles and Chaos | Unit IV: First-order Systems | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the form of the solutions that trace out a closed curve? 1.1 Front What is the form of the solutions that trace out a closed curve?
+In a non-linear system
+1.2 Back The solution \(\vb{x}(t)\) will be geometrically realized by a point which goes round and round the curve \(C\) with a certain period \(T\)</description>
+    </item>
+    
+    <item>
+      <title>How much time did I spend in this course?</title>
+      <link>https://ppalazon.github.io/18.03/working-table/</link>
+      <pubDate>Thu, 17 Sep 2020 11:18:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/working-table/</guid>
+      <description>&lt;p&gt;In this article I show how much time I spend at each session of this course,
+this is automatic system marked with timestamp with all hours&lt;/p&gt;
+&lt;p&gt;This timetables includes understanding the concepts and creating anki cards&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>About</title>
       <link>https://ppalazon.github.io/about/</link>
       <pubDate>Wed, 11 Apr 2018 00:00:00 +0200</pubDate>
-      <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
+      
       <guid>https://ppalazon.github.io/about/</guid>
-      <description>I&#39;m Pablo Palazon. And this is my personal website.
-Why do I write on my own website?. I&#39;d like to write several articles and essays in English to improve my skills. I like STEM affairs such as space, technology, physics and computer science. I&#39;m not an expert or guru on STEM, but it&#39;s a good idea to write about something that you want to learn. So that, if you find out any mistake or something is misunderstand, please contact me or comment.</description>
+      <description>I&amp;rsquo;m Pablo Palazon, and I&amp;rsquo;m an human being living on Earth.
+This is my personal website. Why do I write on my own website?. I&amp;rsquo;d like to write several articles and essays in English to improve my skills. I like STEM affairs such as space, technology, physics and computer science. I&amp;rsquo;m not an expert or guru on STEM, but it&amp;rsquo;s a good idea to write about something that you want to learn.</description>
+    </item>
+    
+    <item>
+      <title>Significant Figures</title>
+      <link>https://ppalazon.github.io/zk/20200421183300-significant_figures/</link>
+      <pubDate>Thu, 23 Apr 2020 13:36:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/zk/20200421183300-significant_figures/</guid>
+      <description>tags R:Scientific Notation  This is an important concept for measurements and limits of experimental uncertainty.
+It&amp;rsquo;s important to keep in mind the rules of R:Rounding
+Anki Cards What does significant digits mean? Front What does significant digits mean?
+Back The number of accurate digits is called the number of significant digits
+The counting of significant digits begins from the first nonzero digit from the left and can include digits before the decimal point.</description>
+    </item>
+    
+    <item>
+      <title>2A: Functions of Two Variables, Tangent Approximation and Optimization</title>
+      <link>https://ppalazon.github.io/18.02/part-2a/_index_/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-2a/_index_/</guid>
+      <description>&lt;p&gt;We start this unit by learning to visualize functions of several variables using
+graphs and level curves. Following this we will study partial derivatives. These
+will be used in the tangent approximation formula, which is one of the keys to
+multivariable calculus. It ties together the geometric and algebraic sides of
+the subject and is the higher dimensional analog of the equation for the tangent
+line found in single variable calculus. We will use it in part B to develop the
+chain rule.&lt;/p&gt;
+&lt;p&gt;We will apply our understanding of partial derivatives to solving unconstrained
+optimization problems. (In part C we will solve constrained optimization
+problems.)&lt;/p&gt;
+&lt;p&gt;Last Modification: &lt;strong&gt;2020-02-07 Fri 16:44&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Session 10: Meaning of Matrix Multiplication</title>
+      <link>https://ppalazon.github.io/18.02/part-1b/session-10/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-1b/session-10/</guid>
+      <description>Captured On [2020-02-05 Wed 21:18] Source Session 10: Meaning of Matrix Multiplication | Part B: Matrices and Systems of Equations | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: What represent matrix multiplication
+  
+  Figure 2: Matrix identity and plane rotation by matrix multiplication
+  
+  Figure 3: Continuous apply of rotation by matrix multiplication</description>
+    </item>
+    
+    <item>
+      <title>Session 11: Matrix Inverses</title>
+      <link>https://ppalazon.github.io/18.02/part-1b/session-11/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-1b/session-11/</guid>
+      <description>Captured On [2020-02-05 Wed 21:19] Source Session 11: Matrix Inverses | Part B: Matrices and Systems of Equations | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Inverse Matrix
+  
+  Figure 2: Inverse Matrix formula
+  
+  Figure 3: Inverse Matrix Formula: Minors and cofactors
+  
+  Figure 4: Inverse Matrix Formula: Transpose and Divide by \(\det(A)\)</description>
+    </item>
+    
+    <item>
+      <title>Session 12: Equations of Planes II</title>
+      <link>https://ppalazon.github.io/18.02/part-1b/session-12/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-1b/session-12/</guid>
+      <description>Captured On [2020-02-05 Wed 21:20] Source Session 12: Equations of Planes II | Part B: Matrices and Systems of Equations | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Equations of Planes
+  
+  Figure 2: Point in the plane
+  
+  Figure 3: Normal vector and vectors on the plane</description>
+    </item>
+    
+    <item>
+      <title>Session 13: Linear Systems and Planes</title>
+      <link>https://ppalazon.github.io/18.02/part-1b/session-13/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-1b/session-13/</guid>
+      <description>Captured On [2020-02-05 Wed 21:21] Source Session 13: Linear Systems and Planes | Part B: Matrices and Systems of Equations | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: 3x3 Linear System
+  
+  Figure 2: Possible solutions to linear systems (2)
+  2 How many solutions we can get from a linear system?</description>
+    </item>
+    
+    <item>
+      <title>Session 14: Solutions to Square Systems</title>
+      <link>https://ppalazon.github.io/18.02/part-1b/session-14/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-1b/session-14/</guid>
+      <description>Captured On [2020-02-05 Wed 21:22] Source Session 14: Solutions to Square Systems | Part B: Matrices and Systems of Equations | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Trivial solution and inverse of a matrix
+  
+  Figure 2: Solutions of homogeneous linear system
+  
+  Figure 3: Coplanar normal vectors</description>
+    </item>
+    
+    <item>
+      <title>Session 15: Equations of Lines</title>
+      <link>https://ppalazon.github.io/18.02/part-1c/session-15/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-1c/session-15/</guid>
+      <description>Captured On [2020-02-05 Wed 21:25] Source Session 15: Equations of Lines | Part C: Parametric Equations for Curves | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Equations of lines
+  
+  Figure 2: Example of line through 2 points
+  
+  Figure 3: Position at time \(t\)</description>
+    </item>
+    
+    <item>
+      <title>Session 16: Intersection of a Line and a Plane</title>
+      <link>https://ppalazon.github.io/18.02/part-1c/session-16/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-1c/session-16/</guid>
+      <description>Captured On [2020-02-05 Wed 21:25] Source Session 16: Intersection of a Line and a Plane | Part C: Parametric Equations for Curves | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Application: Intersection with a plane
+  
+  Figure 2: Where are the points respect to the plane?
+  
+  Figure 3: When will be an intersection to the plane?</description>
+    </item>
+    
+    <item>
+      <title>Session 17: General Parametric Equations; the Cycloid</title>
+      <link>https://ppalazon.github.io/18.02/part-1c/session-17/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-1c/session-17/</guid>
+      <description>Captured On [2020-02-05 Wed 21:25] Source Session 17: General Parametric Equations; the Cycloid | Part C: Parametric Equations for Curves | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Parametric equations for arbitrary motion (plane/space)
+  
+  Figure 2: Cycloid path movement
+  
+  Figure 3: Which is the position \((x(\theta), y (\theta))\)</description>
+    </item>
+    
+    <item>
+      <title>Session 18: Point (Cusp) on Cycloid</title>
+      <link>https://ppalazon.github.io/18.02/part-1c/session-18/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-1c/session-18/</guid>
+      <description>Captured On [2020-02-05 Wed 21:26] Source Session 18: Point (Cusp) on Cycloid | Part C: Parametric Equations for Curves | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: What happens near bottom?
+  
+  Figure 2: Get an approximation for \(\theta\) small
+  
+  Figure 3: Taylor approximations for \(\sin\) and \(\cos\) when \(\theta\) is small</description>
+    </item>
+    
+    <item>
+      <title>Session 19: Velocity and Acceleration</title>
+      <link>https://ppalazon.github.io/18.02/part-1c/session-19/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-1c/session-19/</guid>
+      <description>Captured On [2020-02-05 Wed 21:26] Source Session 19: Velocity and Acceleration | Part C: Parametric Equations for Curves | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Review parametric equations and position vector
+  
+  Figure 2: Velocity in a cycloid
+  
+  Figure 3: Calculating module of speed</description>
+    </item>
+    
+    <item>
+      <title>Session 1: Vectors</title>
+      <link>https://ppalazon.github.io/18.02/part-1a/session-1/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-1a/session-1/</guid>
+      <description>Captured On [2020-02-05 Wed 19:40] Source Session 1: Vectors | Part A: Vectors, Determinants and Planes | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Definition of vectors
+  
+  Figure 2: Length of a vector
+  
+  Figure 3: Modules and addition
+  
+  Figure 4: Multiplying by scalars</description>
+    </item>
+    
+    <item>
+      <title>Session 20: Velocity and Arc Length</title>
+      <link>https://ppalazon.github.io/18.02/part-1c/session-20/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-1c/session-20/</guid>
+      <description>Captured On [2020-02-05 Wed 21:28] Source Session 20: Velocity and Arc Length | Part C: Parametric Equations for Curves | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Arc lenght
+  
+  Figure 2: Lenght of an arch of cycloid
+  
+  Figure 3: Velocity vector
+  
+  Figure 4: Limit as \(\Delta t \to 0\)</description>
+    </item>
+    
+    <item>
+      <title>Session 21: Kepler&#39;s Second Law</title>
+      <link>https://ppalazon.github.io/18.02/part-1c/session-21/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-1c/session-21/</guid>
+      <description>Captured On [2020-02-05 Wed 21:29] Source Session 21: Kepler&amp;rsquo;s Second Law | Part C: Parametric Equations for Curves | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Description of kepler&amp;rsquo;s second law
+  
+  Figure 2: Kepler&amp;rsquo;s law in terms of vectors?
+  
+  Figure 3: Area for second law</description>
+    </item>
+    
+    <item>
+      <title>Session 22: Review of Topics</title>
+      <link>https://ppalazon.github.io/18.02/review/session-22/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/review/session-22/</guid>
+      <description> Captured On [2020-02-06 Thu 17:47] Source Session 22: Review of Topics | Exam 1 | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  
+  Figure 1: Review 1
+  
+  Figure 2: Review 2
+  
+  Figure 3: Review 3
+  
+  Figure 4: Review 4
+  </description>
+    </item>
+    
+    <item>
+      <title>Session 24: Functions of Two Variables: Graphs</title>
+      <link>https://ppalazon.github.io/18.02/part-2a/session-24/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-2a/session-24/</guid>
+      <description>Captured On [2020-02-05 Wed 22:39] Source Session 24: Functions of Two Variables: Graphs | Part A: Functions of Two Variables, Tangent Approximation and Optimization | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Function of 1 variable
+  
+  Figure 2: Example of multivariable functions
+  
+  Figure 3: For simplicity, functions based on 2 or 3 variables</description>
+    </item>
+    
+    <item>
+      <title>Session 25: Level Curves and Contour Plots</title>
+      <link>https://ppalazon.github.io/18.02/part-2a/session-25/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-2a/session-25/</guid>
+      <description>Captured On [2020-02-05 Wed 22:40] Source Session 25: Level Curves and Contour Plots | Part A: Functions of Two Variables, Tangent Approximation and Optimization | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Contour plot definition
+  
+  Figure 2: Level of contour plot
+  
+  Figure 3: Contour plot examples</description>
+    </item>
+    
+    <item>
+      <title>Session 26: Partial Derivatives</title>
+      <link>https://ppalazon.github.io/18.02/part-2a/session-26/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-2a/session-26/</guid>
+      <description>Captured On [2020-02-05 Wed 22:40] Source Session 26: Partial Derivatives | Part A: Functions of Two Variables, Tangent Approximation and Optimization | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Derivative of a function of 1 variable
+  
+  Figure 2: Approximation formula
+  
+  Figure 3: Partial derivative definition</description>
+    </item>
+    
+    <item>
+      <title>Session 27: Approximation Formula</title>
+      <link>https://ppalazon.github.io/18.02/part-2a/session-27/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-2a/session-27/</guid>
+      <description>Captured On [2020-02-06 Thu 10:31] Source Session 27: Approximation Formula | Part A: Functions of Two Variables, Tangent Approximation and Optimization | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Review partial derivatives
+  
+  Figure 2: Approximation formula
+  
+  Figure 3: Justify approximation formula
+  
+  Figure 4: Tangent line to the same point</description>
+    </item>
+    
+    <item>
+      <title>Session 28: Optimization Problems</title>
+      <link>https://ppalazon.github.io/18.02/part-2a/session-28/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-2a/session-28/</guid>
+      <description>Captured On [2020-02-06 Thu 10:32] Source Session 28: Optimization Problems | Part A: Functions of Two Variables, Tangent Approximation and Optimization | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Applications of Partial Derivatives
+  
+  Figure 2: At local min or max
+  
+  Figure 3: Definition of critical point</description>
+    </item>
+    
+    <item>
+      <title>Session 29: Least Squares</title>
+      <link>https://ppalazon.github.io/18.02/part-2a/session-29/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-2a/session-29/</guid>
+      <description>Captured On [2020-02-06 Thu 10:32] Source Session 29: Least Squares | Part A: Functions of Two Variables, Tangent Approximation and Optimization | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Least squares interpolation
+  
+  Figure 2: Find best &amp;ldquo;a&amp;rdquo; and &amp;ldquo;b&amp;rdquo;
+  
+  Figure 3: Partial derivatives &amp;ldquo;a&amp;rdquo; and &amp;ldquo;b&amp;rdquo;</description>
+    </item>
+    
+    <item>
+      <title>Session 2: Dot Products</title>
+      <link>https://ppalazon.github.io/18.02/part-1a/session-2/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-1a/session-2/</guid>
+      <description>Captured On [2020-02-05 Wed 19:41] Source Session 2: Dot Products | Part A: Vectors, Determinants and Planes | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Dot Product Definition
+  
+  Figure 2: What does geometic definition mean?
+  
+  Figure 3: Dot product of combined vectors
+  2 What is the dot product of 2 vectors?</description>
+    </item>
+    
+    <item>
+      <title>Session 30: Second Derivative Test</title>
+      <link>https://ppalazon.github.io/18.02/part-2a/session-30/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-2a/session-30/</guid>
+      <description>Captured On [2020-02-06 Thu 10:32] Source Session 30: Second Derivative Test | Part A: Functions of Two Variables, Tangent Approximation and Optimization | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Recall critical points
+  
+  Figure 2: How do we find global min/man?
+  
+  Figure 3: Second derivative test</description>
+    </item>
+    
+    <item>
+      <title>Session 32: Total Differentials and the Chain Rule</title>
+      <link>https://ppalazon.github.io/18.02/part-2b/session-32/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-2b/session-32/</guid>
+      <description>Captured On [2020-02-06 Thu 12:28] Source Session 32: Total Differentials and the Chain Rule | Part B: Chain Rule, Gradient and Directional Derivatives | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Differentials and implicit differentiation
+  
+  Figure 2: Example of implicit differentiation
+  
+  Figure 3: Total differential</description>
+    </item>
+    
+    <item>
+      <title>Session 34: The Chain Rule with More Variables</title>
+      <link>https://ppalazon.github.io/18.02/part-2b/session-34/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-2b/session-34/</guid>
+      <description>Captured On [2020-02-06 Thu 12:28] Source Session 34: The Chain Rule with More Variables | Part B: Chain Rule, Gradient and Directional Derivatives | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Chain rule with more variables
+  
+  Figure 2: Expansion of chain rule
+  
+  Figure 3: Partial derivative with more variables</description>
+    </item>
+    
+    <item>
+      <title>Session 35: Gradient: Definition, Perpendicular to Level Curves</title>
+      <link>https://ppalazon.github.io/18.02/part-2b/session-35/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-2b/session-35/</guid>
+      <description>Captured On [2020-02-06 Thu 12:28] Source Session 35: Gradient: Definition, Perpendicular to Level Curves | Part B: Chain Rule, Gradient and Directional Derivatives | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Recall chain rule
+  
+  Figure 2: Definition of gradient
+  
+  Figure 3: Gradient is perpendicular to level surface</description>
+    </item>
+    
+    <item>
+      <title>Session 36: Proof</title>
+      <link>https://ppalazon.github.io/18.02/part-2b/session-36/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-2b/session-36/</guid>
+      <description>Captured On [2020-02-06 Thu 12:29] Source Session 36: Proof | Part B: Chain Rule, Gradient and Directional Derivatives | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Curve that stays on the level \(w=c\)
+  
+  Figure 2: Chain rule
+  
+  Figure 3: Gradient perpendicular to tangent vector</description>
+    </item>
+    
+    <item>
+      <title>Session 37: Example</title>
+      <link>https://ppalazon.github.io/18.02/part-2b/session-37/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-2b/session-37/</guid>
+      <description>Captured On [2020-02-06 Thu 12:29] Source Session 37: Example | Part B: Chain Rule, Gradient and Directional Derivatives | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Find tangent plane to surface
+  
+  Figure 2: Gradient is the normal vector of tangent plane
+  
+  Figure 3: Another way throught linear approximation</description>
+    </item>
+    
+    <item>
+      <title>Session 38: Directional Derivatives</title>
+      <link>https://ppalazon.github.io/18.02/part-2b/session-38/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-2b/session-38/</guid>
+      <description>Captured On [2020-02-06 Thu 12:29] Source Session 38: Directional Derivatives | Part B: Chain Rule, Gradient and Directional Derivatives | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Directional derivatives
+  
+  Figure 2: Straight line trayectory
+  
+  Figure 3: Directional derivative in direction of \(\vu{u}\)
+  
+  Figure 4: Slope of a slice</description>
+    </item>
+    
+    <item>
+      <title>Session 39: Statement of Lagrange Multipliers and Example</title>
+      <link>https://ppalazon.github.io/18.02/part-2c/session-39/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-2c/session-39/</guid>
+      <description>Captured On [2020-02-06 Thu 12:56] Source Session 39: Statement of Lagrange Multipliers and Example | Part C: Lagrange Multipliers and Constrained Differentials | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Lagrange multipliers
+  
+  Figure 2: Example of using lagrange multipliers
+  
+  Figure 3: Subject to the constraint</description>
+    </item>
+    
+    <item>
+      <title>Session 3: Uses of the Dot Product: Lengths and Angles</title>
+      <link>https://ppalazon.github.io/18.02/part-1a/session-3/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-1a/session-3/</guid>
+      <description>Captured On [2020-02-05 Wed 19:43] Source Session 3: Uses of the Dot Product: Lengths and Angles | Part A: Vectors, Determinants and Planes | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Computing lengths and angles
+  
+  Figure 2: Resolution of computing an angle
+  
+  Figure 3: Meaning of sign of a dot product</description>
+    </item>
+    
+    <item>
+      <title>Session 40: Proof of Lagrange Multipliers</title>
+      <link>https://ppalazon.github.io/18.02/part-2c/session-40/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-2c/session-40/</guid>
+      <description>Captured On [2020-02-06 Thu 12:57] Source Session 40: Proof of Lagrange Multipliers | Part C: Lagrange Multipliers and Constrained Differentials | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Why this method is valid?
+  
+  Figure 2: Tangent to contrained level curve
+  
+  Figure 3: Both gradient vector are parallel</description>
+    </item>
+    
+    <item>
+      <title>Session 41: Advanced Example</title>
+      <link>https://ppalazon.github.io/18.02/part-2c/session-41/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-2c/session-41/</guid>
+      <description>Captured On [2020-02-06 Thu 12:57] Source Session 41: Advanced Example | Part C: Lagrange Multipliers and Constrained Differentials | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Build pyramid
+  
+  Figure 2: First draft, can&amp;rsquo;t solve
+  
+  Figure 3: Another approximation to the solution
+  
+  Figure 4: Function to minimize and constrain</description>
+    </item>
+    
+    <item>
+      <title>Session 42: Constrained Differentials</title>
+      <link>https://ppalazon.github.io/18.02/part-2c/session-42/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-2c/session-42/</guid>
+      <description>Captured On [2020-02-06 Thu 12:57] Source Session 42: Constrained Differentials | Part C: Lagrange Multipliers and Constrained Differentials | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Non-independent variables
+  
+  Figure 2: \(z\) as a function of \(x\) and \(y\)
+  
+  Figure 3: Take differential
+  
+  Figure 4: Partial derivatives</description>
+    </item>
+    
+    <item>
+      <title>Session 43: Clearer Notation</title>
+      <link>https://ppalazon.github.io/18.02/part-2c/session-43/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-2c/session-43/</guid>
+      <description>Captured On [2020-02-06 Thu 12:59] Source Session 43: Clearer Notation | Part C: Lagrange Multipliers and Constrained Differentials | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Introduction to confussion
+  
+  Figure 2: Equals variable but different partial derivatives
+  
+  Figure 3: Need clearer notation
+  2 What differences are there between formal and actual partial derivatives?</description>
+    </item>
+    
+    <item>
+      <title>Session 44: Example</title>
+      <link>https://ppalazon.github.io/18.02/part-2c/session-44/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-2c/session-44/</guid>
+      <description>Captured On [2020-02-06 Thu 12:59] Source Session 44: Example | Part C: Lagrange Multipliers and Constrained Differentials | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Area of triangle
+  
+  Figure 2: Rate of change of area wrt \(\theta\)
+  
+  Figure 3: Keeping the right triangle
+  
+  Figure 4: Keeping the right triangle (2)</description>
+    </item>
+    
+    <item>
+      <title>Session 45: Review of Partial Derivatives</title>
+      <link>https://ppalazon.github.io/18.02/review/session-45/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/review/session-45/</guid>
+      <description>Captured On [2020-02-06 Thu 18:02] Source Session 45: Review of Topics | Exam 2 | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare  
+  Figure 1: Review 1
+  
+  Figure 2: Review 2
+  
+  Figure 3: Review 3
+  
+  Figure 4: Review 4
+  
+  Figure 5: Review 5</description>
+    </item>
+    
+    <item>
+      <title>Session 47: Definition of Double Integration</title>
+      <link>https://ppalazon.github.io/18.02/part-3a/session-47/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3a/session-47/</guid>
+      <description>Captured On [2020-02-06 Thu 13:14] Source Session 47: Definition of Double Integration | Part A: Double Integrals | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Recall integrals of 1 variable function
+  
+  Figure 2: Meaning of double integral
+  
+  Figure 3: Small pieces of area</description>
+    </item>
+    
+    <item>
+      <title>Session 48: Examples of Double Integration</title>
+      <link>https://ppalazon.github.io/18.02/part-3a/session-48/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3a/session-48/</guid>
+      <description>Captured On [2020-02-06 Thu 13:14] Source Session 48: Examples of Double Integration | Part A: Double Integrals | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Example of iterated integral
+  
+  Figure 2: Inner integral
+  
+  Figure 3: Outer integral
+  
+  Figure 4: Same function, other region</description>
+    </item>
+    
+    <item>
+      <title>Session 49: Exchanging the Order of Integration</title>
+      <link>https://ppalazon.github.io/18.02/part-3a/session-49/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3a/session-49/</guid>
+      <description>Captured On [2020-02-06 Thu 13:14] Source Session 49: Exchanging the Order of Integration | Part A: Double Integrals | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Exchanging order of integration
+  
+  Figure 2: Example of exchanging order of integration
+  
+  Figure 3: Example conclusion</description>
+    </item>
+    
+    <item>
+      <title>Session 4: Vector Components</title>
+      <link>https://ppalazon.github.io/18.02/part-1a/session-4/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-1a/session-4/</guid>
+      <description>Captured On [2020-02-05 Wed 19:46] Source Session 4: Vector Components | Part A: Vectors, Determinants and Planes | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Review of dot product
+  
+  Figure 2: Components of \(\vec{A}\) along direction \(\vec{u}\)
+  
+  Figure 3: Pendulum problem with projections
+  2 Which is it the angle between 2 vectors?</description>
+    </item>
+    
+    <item>
+      <title>Session 50: Double Integrals in Polar Coordinates</title>
+      <link>https://ppalazon.github.io/18.02/part-3a/session-50/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3a/session-50/</guid>
+      <description>Captured On [2020-02-06 Thu 13:15] Source Session 50: Double Integrals in Polar Coordinates | Part A: Double Integrals | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Double integral as interated integral \(\dd{y}\dd{x}\)
+  
+  Figure 2: Function in polar coordinates
+  
+  Figure 3: Setting up interated integrals on polar coordinates (1)</description>
+    </item>
+    
+    <item>
+      <title>Session 51: Applications: Mass and Average Value</title>
+      <link>https://ppalazon.github.io/18.02/part-3a/session-51/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3a/session-51/</guid>
+      <description>Captured On [2020-02-06 Thu 13:15] Source Session 51: Applications: Mass and Average Value | Part A: Double Integrals | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Area of a region \(R\)
+  
+  Figure 2: Mass of a flat object with density \(\delta\)
+  
+  Figure 3: Average value of \(f\)</description>
+    </item>
+    
+    <item>
+      <title>Session 52: Applications: Moment of Inertia</title>
+      <link>https://ppalazon.github.io/18.02/part-3a/session-52/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3a/session-52/</guid>
+      <description>Captured On [2020-02-06 Thu 13:15] Source Session 52: Applications: Moment of Inertia | Part A: Double Integrals | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Moment of inertia
+  
+  Figure 2: Kinetic energy
+  
+  Figure 3: Moment of inertia for each \(\Delta A\)</description>
+    </item>
+    
+    <item>
+      <title>Session 53: Change of Variables</title>
+      <link>https://ppalazon.github.io/18.02/part-3a/session-53/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3a/session-53/</guid>
+      <description>Captured On [2020-02-06 Thu 13:16] Source Session 53: Change of Variables | Part A: Double Integrals | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Change variable in double integral
+  
+  Figure 2: Basic example
+  
+  Figure 3: Basic example continuation</description>
+    </item>
+    
+    <item>
+      <title>Session 54: Example: Polar Coordinates</title>
+      <link>https://ppalazon.github.io/18.02/part-3a/session-54/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3a/session-54/</guid>
+      <description>Captured On [2020-02-06 Thu 13:16] Source Session 54: Example: Polar Coordinates | Part A: Double Integrals | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Polar coordinates
+  
+  Figure 2: Scaling factor
+  
+  Figure 3: Recall reciprocal rule for partial derivatives
+  2 Proof \(dA\) in polar coordinates with the Jacobian 2.</description>
+    </item>
+    
+    <item>
+      <title>Session 55: Example</title>
+      <link>https://ppalazon.github.io/18.02/part-3a/session-55/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3a/session-55/</guid>
+      <description>Captured On [2020-02-06 Thu 13:16] Source Session 55: Example | Part A: Double Integrals | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Area element
+  
+  Figure 2: Integrand in terms of \(u,v\)
+  
+  Figure 3: Bounds
+  
+  Figure 4: Bounds switching to \(uv\) picture</description>
+    </item>
+    
+    <item>
+      <title>Session 56: Vector Fields</title>
+      <link>https://ppalazon.github.io/18.02/part-3b/session-56/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3b/session-56/</guid>
+      <description>Captured On [2020-02-06 Thu 13:29] Source Session 56: Vector Fields | Part B: Vector Fields and Line Integrals | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Vector fields meaning
+  
+  Figure 2: Examples of vector fields (1)
+  
+  Figure 3: Examples of vector fields (2)</description>
+    </item>
+    
+    <item>
+      <title>Session 57: Work and Line Integrals</title>
+      <link>https://ppalazon.github.io/18.02/part-3b/session-57/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3b/session-57/</guid>
+      <description>Captured On [2020-02-06 Thu 13:30] Source Session 57: Work and Line Integrals | Part B: Vector Fields and Line Integrals | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Work and line integrals
+  
+  Figure 2: Work as integral
+  
+  Figure 3: Example of work</description>
+    </item>
+    
+    <item>
+      <title>Session 58: Geometric Approach</title>
+      <link>https://ppalazon.github.io/18.02/part-3b/session-58/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3b/session-58/</guid>
+      <description>Captured On [2020-02-06 Thu 13:31] Source Session 58: Geometric Approach | Part B: Vector Fields and Line Integrals | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Geometric approach
+  
+  Figure 2: Example \(C\) circle of radius \(a\), and force radially away
+  
+  Figure 3: Same \(c\), but force are tanget to the circle</description>
+    </item>
+    
+    <item>
+      <title>Session 59: Example: Line Integrals for Work</title>
+      <link>https://ppalazon.github.io/18.02/part-3b/session-59/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3b/session-59/</guid>
+      <description>Captured On [2020-02-06 Thu 13:32] Source Session 59: Example: Line Integrals for Work | Part B: Vector Fields and Line Integrals | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Line integrals for work
+  
+  Figure 2: Example of line integrals for work
+  
+  Figure 3: First trajectory</description>
+    </item>
+    
+    <item>
+      <title>Session 5: Area and Determinants in 2D</title>
+      <link>https://ppalazon.github.io/18.02/part-1a/session-5/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-1a/session-5/</guid>
+      <description>Captured On [2020-02-05 Wed 19:47] Source Session 5: Area and Determinants in 2D | Part A: Vectors, Determinants and Planes | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Area within 2 vectors
+  
+  Figure 2: Rotated vector \(\vec{A}\)
+  
+  Figure 3: Area as determinant of 2 vectors</description>
+    </item>
+    
+    <item>
+      <title>Session 60: Fundamental Theorem for Line Integrals</title>
+      <link>https://ppalazon.github.io/18.02/part-3b/session-60/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3b/session-60/</guid>
+      <description>Captured On [2020-02-06 Thu 13:32] Source Session 60: Fundamental Theorem for Line Integrals | Part B: Vector Fields and Line Integrals | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Special case where vector field is gradient field
+  
+  Figure 2: Fundamental Theorem of Calculus for Line Integrals</description>
+    </item>
+    
+    <item>
+      <title>Session 61: Conservative Fields, Path Independence, Exact Differentials</title>
+      <link>https://ppalazon.github.io/18.02/part-3b/session-61/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3b/session-61/</guid>
+      <description>Captured On [2020-02-06 Thu 13:33] Source Session 61: Conservative Fields, Path Independence, Exact Differentials | Part B: Vector Fields and Line Integrals | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Gradient fields in physics
+  
+  Figure 2: Meaning of conservativeness
+  
+  Figure 3: Equivalent properties I</description>
+    </item>
+    
+    <item>
+      <title>Session 62: Gradient Fields</title>
+      <link>https://ppalazon.github.io/18.02/part-3b/session-62/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3b/session-62/</guid>
+      <description>Captured On [2020-02-06 Thu 13:33] Source Session 62: Gradient Fields | Part B: Vector Fields and Line Integrals | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Recall FCT for line integral with gradient fields
+  
+  Figure 2: Meaning of conservative field
+  
+  Figure 3: How to know if vector fields is a gradient field</description>
+    </item>
+    
+    <item>
+      <title>Session 63: Potential Functions</title>
+      <link>https://ppalazon.github.io/18.02/part-3b/session-63/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3b/session-63/</guid>
+      <description>Captured On [2020-02-06 Thu 13:34] Source Session 63: Potential Functions | Part B: Vector Fields and Line Integrals | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Finding the potential
+  
+  Figure 2: Choosing a path
+  
+  Figure 3: Choosing a easiest path</description>
+    </item>
+    
+    <item>
+      <title>Session 64: Curl</title>
+      <link>https://ppalazon.github.io/18.02/part-3b/session-64/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3b/session-64/</guid>
+      <description>Captured On [2020-02-06 Thu 13:34] Source Session 64: Curl | Part B: Vector Fields and Line Integrals | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Recall \(\vb{F}\) using curl
+  
+  Figure 2: Definition of curl
+  
+  Figure 3: Curl for velocity field</description>
+    </item>
+    
+    <item>
+      <title>Session 65: Green&#39;s Theorem</title>
+      <link>https://ppalazon.github.io/18.02/part-3c/session-65/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3c/session-65/</guid>
+      <description>Captured On [2020-02-06 Thu 13:53] Source Session 65: Green&amp;rsquo;s Theorem | Part C: Green&amp;rsquo;s Theorem | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Line integral for closed path
+  
+  Figure 2: Green&amp;rsquo;s Theorem
+  
+  Figure 3: Green&amp;rsquo;s Theorem (II)
+  
+  Figure 4: Warning and example</description>
+    </item>
+    
+    <item>
+      <title>Session 66: Curl(F) = 0 Implies Conservative</title>
+      <link>https://ppalazon.github.io/18.02/part-3c/session-66/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3c/session-66/</guid>
+      <description>Captured On [2020-02-06 Thu 16:29] Source Session 66: Curl(F) = 0 Implies Conservative | Part C: Green&amp;rsquo;s Theorem | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Special case of Green Theorem
+  
+  Figure 2: Proof of \(\vb{F}\) conservative when curl \(\vb{F}\) is \(0\)
+  
+  Figure 3: Consequence of \(\text{curl} \vb{F} = 0\)</description>
+    </item>
+    
+    <item>
+      <title>Session 67: Proof of Green&#39;s Theorem</title>
+      <link>https://ppalazon.github.io/18.02/part-3c/session-67/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3c/session-67/</guid>
+      <description>Captured On [2020-02-06 Thu 16:31] Source Session 67: Proof of Green&amp;rsquo;s Theorem | Part C: Green&amp;rsquo;s Theorem | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Proof of Green&amp;rsquo;s Theorem
+  
+  Figure 2: 2 observations
+  
+  Figure 3: Proof of one part</description>
+    </item>
+    
+    <item>
+      <title>Session 68: Planimeter: Green&#39;s Theorem and Area</title>
+      <link>https://ppalazon.github.io/18.02/part-3c/session-68/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3c/session-68/</guid>
+      <description>Captured On [2020-02-06 Thu 16:32] Source Session 68: Planimeter: Green&amp;rsquo;s Theorem and Area | Part C: Green&amp;rsquo;s Theorem | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Planimeter
+  2 What is a planimeter? 2.1 Front What is a planimeter?
+Define it, and write its equation
+2.2 Back It&amp;rsquo;s an instruments for measuring areas through closing perimeters.</description>
+    </item>
+    
+    <item>
+      <title>Session 69: Flux in 2D</title>
+      <link>https://ppalazon.github.io/18.02/part-3c/session-69/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3c/session-69/</guid>
+      <description>Captured On [2020-02-06 Thu 16:33] Source Session 69: Flux in 2D | Part C: Green&amp;rsquo;s Theorem | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Flux presentation
+  
+  Figure 2: \(\vu{n}\) as clockwise from \(\vu{T}\)
+  
+  Figure 3: Flux and Work comparison</description>
+    </item>
+    
+    <item>
+      <title>Session 6: Volumes and Determinants in Space</title>
+      <link>https://ppalazon.github.io/18.02/part-1a/session-6/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-1a/session-6/</guid>
+      <description>Captured On [2020-02-05 Wed 19:49] Source Session 6: Volumes and Determinants in Space | Part A: Vectors, Determinants and Planes | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Determinant in space
+  
+  Figure 2: Volume of parallelepiped
+  2 What is the volume between 3 vectors? 2.1 Front What is the volume between 3 vectors?</description>
+    </item>
+    
+    <item>
+      <title>Session 70: Normal Form of Green&#39;s Theorem</title>
+      <link>https://ppalazon.github.io/18.02/part-3c/session-70/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3c/session-70/</guid>
+      <description>Captured On [2020-02-06 Thu 16:34] Source Session 70: Normal Form of Green&amp;rsquo;s Theorem | Part C: Green&amp;rsquo;s Theorem | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: What is the Green&amp;rsquo;s Theorem for flux
+  
+  Figure 2: Green&amp;rsquo;s Theorem for flux
+  
+  Figure 3: Green&amp;rsquo;s Theorem in normal form vs tangential form</description>
+    </item>
+    
+    <item>
+      <title>Session 71: Extended Green&#39;s Theorem: Boundaries with Multiple Pieces</title>
+      <link>https://ppalazon.github.io/18.02/part-3c/session-71/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3c/session-71/</guid>
+      <description>Captured On [2020-02-06 Thu 16:35] Source Session 71: Extended Green&amp;rsquo;s Theorem: Boundaries with Multiple Pieces | Part C: Green&amp;rsquo;s Theorem | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: More about validity of Green&amp;rsquo;s Theorem
+  
+  Figure 2: \(\vb{F}\) defined everywhere in \(R\)
+  
+  Figure 3: Use of Green&amp;rsquo;s Theorem</description>
+    </item>
+    
+    <item>
+      <title>Session 72: Simply Connected Regions and Conservative Fields</title>
+      <link>https://ppalazon.github.io/18.02/part-3c/session-72/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3c/session-72/</guid>
+      <description>Captured On [2020-02-06 Thu 16:36] Source Session 72: Simply Connected Regions and Conservative Fields | Part C: Green&amp;rsquo;s Theorem | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Connected region in the plane
+  
+  Figure 2: Where can I apply Green&amp;rsquo;s Theorem?
+  
+  Figure 3: Correct definition of \(\vb{F}\) conservative</description>
+    </item>
+    
+    <item>
+      <title>Session 73: Review Double Integrals and Line Integrals in the Plane</title>
+      <link>https://ppalazon.github.io/18.02/review/session-73/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/review/session-73/</guid>
+      <description>Captured On [2020-02-06 Thu 18:03] Source Session 73: Exam Review | Exam 3 | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  
+  Figure 1: Review 1
+  
+  Figure 2: Review 2
+  
+  Figure 3: Review 3
+  
+  Figure 4: Review 4</description>
+    </item>
+    
+    <item>
+      <title>Session 74: Triple Integrals: Rectangular and Cylindrical Coordinates</title>
+      <link>https://ppalazon.github.io/18.02/part-4a/session-74/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4a/session-74/</guid>
+      <description>Captured On [2020-02-06 Thu 16:38] Source Session 74: Triple Integrals: Rectangular and Cylindrical Coordinates | Part A: Triple Integrals | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Triple integrals
+  
+  Figure 2: Example of triple integral
+  
+  Figure 3: Setting up interated integral for triple integral</description>
+    </item>
+    
+    <item>
+      <title>Session 75: Applications and Examples</title>
+      <link>https://ppalazon.github.io/18.02/part-4a/session-75/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4a/session-75/</guid>
+      <description>Captured On [2020-02-06 Thu 17:02] Source Session 75: Applications and Examples | Part A: Triple Integrals | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Mass on triple integral
+  
+  Figure 2: Average value on triple integral
+  
+  Figure 3: Center of mass on triple integral</description>
+    </item>
+    
+    <item>
+      <title>Session 76: Spherical Coordinates</title>
+      <link>https://ppalazon.github.io/18.02/part-4a/session-76/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4a/session-76/</guid>
+      <description>Captured On [2020-02-06 Thu 17:03] Source Session 76: Spherical Coordinates | Part A: Triple Integrals | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Spherical coordinates
+  
+  Figure 2: On a sphere \(\rho = a\)
+  
+  Figure 3: Transform from cylindrical to spherical coordinates</description>
+    </item>
+    
+    <item>
+      <title>Session 77: Triple Integrals in Spherical Coordinates</title>
+      <link>https://ppalazon.github.io/18.02/part-4a/session-77/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4a/session-77/</guid>
+      <description>Captured On [2020-02-06 Thu 17:04] Source Session 77: Triple Integrals in Spherical Coordinates | Part A: Triple Integrals | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Triple integral in spherical coordinates
+  
+  Figure 2: Surface area on sphere of radius \(a\)
+  
+  Figure 3: Surface element</description>
+    </item>
+    
+    <item>
+      <title>Session 78: Applications: Gravitational Attraction</title>
+      <link>https://ppalazon.github.io/18.02/part-4a/session-78/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4a/session-78/</guid>
+      <description>Captured On [2020-02-06 Thu 17:05] Source Session 78: Applications: Gravitational Attraction | Part A: Triple Integrals | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Graviational force exerted by \(\Delta M\)
+  
+  Figure 2: Gravitational force vector
+  
+  Figure 3: Setting up triple integral on an axis of symmetry</description>
+    </item>
+    
+    <item>
+      <title>Session 79: Vector Fields in Space</title>
+      <link>https://ppalazon.github.io/18.02/part-4b/session-79/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4b/session-79/</guid>
+      <description>Captured On [2020-02-06 Thu 17:08] Source Session 79: Vector Fields in Space | Part B: Flux and the Divergence Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Vector fields in space
+  
+  Figure 2: Force fields
+  
+  Figure 3: Graviational field equation and more examples</description>
+    </item>
+    
+    <item>
+      <title>Session 7: Cross Products</title>
+      <link>https://ppalazon.github.io/18.02/part-1a/session-7/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-1a/session-7/</guid>
+      <description>Captured On [2020-02-05 Wed 19:50] Source Session 7: Cross Products | Part A: Vectors, Determinants and Planes | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Cross product of 2 vectors in 3-space
+  
+  Figure 2: Area of parallelogram with cross product
+  
+  Figure 3: Right hand method for direction of cross product</description>
+    </item>
+    
+    <item>
+      <title>Session 80: Flux Through a Surface</title>
+      <link>https://ppalazon.github.io/18.02/part-4b/session-80/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4b/session-80/</guid>
+      <description>Captured On [2020-02-06 Thu 17:11] Source Session 80: Flux Through a Surface | Part B: Flux and the Divergence Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Recall flux in 2D
+  
+  Figure 2: Flux of \(\vb{F}\) across \(\Delta S\)
+  
+  Figure 3: Flux of \(\vb{F}\) across the surface</description>
+    </item>
+    
+    <item>
+      <title>Session 81: Calculating Flux; Finding ndS</title>
+      <link>https://ppalazon.github.io/18.02/part-4b/session-81/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4b/session-81/</guid>
+      <description>Captured On [2020-02-06 Thu 17:12] Source Session 81: Calculating Flux; Finding ndS | Part B: Flux and the Divergence Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Flux on not constant \(\vb{F} \cdot \vu{n}\)
+  
+  Figure 2: \(\dd{S}\) in spherical coordinates
+  
+  Figure 3: Computing flux</description>
+    </item>
+    
+    <item>
+      <title>Session 82: ndS for a Surface z = f(x, y)</title>
+      <link>https://ppalazon.github.io/18.02/part-4b/session-82/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4b/session-82/</guid>
+      <description>Captured On [2020-02-06 Thu 17:14] Source Session 82: ndS for a Surface z = f(x, y) | Part B: Flux and the Divergence Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Flux of \(\vb{F}\) through surface \(S\)
+  
+  Figure 2: Normal unit vector and surface element</description>
+    </item>
+    
+    <item>
+      <title>Session 83: Other Ways to Find ndS</title>
+      <link>https://ppalazon.github.io/18.02/part-4b/session-83/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4b/session-83/</guid>
+      <description>Captured On [2020-02-06 Thu 17:15] Source Session 83: Other Ways to Find ndS | Part B: Flux and the Divergence Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Generic description of \(S\)
+  
+  Figure 2: Sides of surface
+  
+  Figure 3: Knowing the normal vector of the surface</description>
+    </item>
+    
+    <item>
+      <title>Session 84: Divergence Theorem</title>
+      <link>https://ppalazon.github.io/18.02/part-4b/session-84/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4b/session-84/</guid>
+      <description>Captured On [2020-02-06 Thu 17:16] Source Session 84: Divergence Theorem | Part B: Flux and the Divergence Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Divergence theorem
+  
+  Figure 2: Equation of divergence theorem
+  
+  Figure 3: Example of divergence theorem
+  2 Which is the divergence of \(\vb{F}\)?</description>
+    </item>
+    
+    <item>
+      <title>Session 85: Physical Meaning of Flux; Del Notation</title>
+      <link>https://ppalazon.github.io/18.02/part-4b/session_85/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4b/session_85/</guid>
+      <description>Captured On [2020-02-06 Thu 17:17] Source Session 85: Physical Meaning of Flux; Del Notation | Part B: Flux and the Divergence Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Recall divergence theorem
+  
+  Figure 2: &amp;ldquo;Del&amp;rdquo; notation
+  
+  Figure 3: Physical interpretation of divergence</description>
+    </item>
+    
+    <item>
+      <title>Session 86: Proof of the Divergence Theorem</title>
+      <link>https://ppalazon.github.io/18.02/part-4b/session-86/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4b/session-86/</guid>
+      <description>Captured On [2020-02-06 Thu 17:18] Source Session 86: Proof of the Divergence Theorem | Part B: Flux and the Divergence Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Proof of divergence theorem
+  
+  Figure 2: \(D\) is vertically simple
+  
+  Figure 3: Checking both sides has same outcome</description>
+    </item>
+    
+    <item>
+      <title>Session 87: Diffusion Equation</title>
+      <link>https://ppalazon.github.io/18.02/part-4b/session-87/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4b/session-87/</guid>
+      <description>Captured On [2020-02-06 Thu 17:19] Source Session 87: Diffusion Equation | Part B: Flux and the Divergence Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Introduction to Diffusion Equation
+  
+  Figure 2: Heat equation
+  
+  Figure 3: How relate \(\vb{F}\) with \(\pdv{u}{t}\)</description>
+    </item>
+    
+    <item>
+      <title>Session 88: Line Integrals in Space</title>
+      <link>https://ppalazon.github.io/18.02/part-4c/session-88/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4c/session-88/</guid>
+      <description>Captured On [2020-02-06 Thu 17:22] Source Session 88: Line Integrals in Space | Part C: Line Integrals and Stokes&#39; Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Line Integrals in Space
+  
+  Figure 2: Evaluation of Line Integrals
+  
+  Figure 3: Example of Line Integrals</description>
+    </item>
+    
+    <item>
+      <title>Session 89: Gradient Fields and Potential Functions</title>
+      <link>https://ppalazon.github.io/18.02/part-4c/session-89/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4c/session-89/</guid>
+      <description>Captured On [2020-02-06 Thu 17:39] Source Session 89: Gradient Fields and Potential Functions | Part C: Line Integrals and Stokes&#39; Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Test for Gradient Fields
+  
+  Figure 2: Criterion for Gradient Field
+  
+  Figure 3: Example for criterion gradient field</description>
+    </item>
+    
+    <item>
+      <title>Session 8: Equations of Planes</title>
+      <link>https://ppalazon.github.io/18.02/part-1a/session-8/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-1a/session-8/</guid>
+      <description>Captured On [2020-02-05 Wed 19:52] Source Session 8: Equations of Planes | Part A: Vectors, Determinants and Planes | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Equation of plane
+  
+  Figure 2: Another solution equation of plane
+  2 How can we find the equation of the plane containing 3 points? 2.</description>
+    </item>
+    
+    <item>
+      <title>Session 90: Curl in 3D</title>
+      <link>https://ppalazon.github.io/18.02/part-4c/session-90/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4c/session-90/</guid>
+      <description>Captured On [2020-02-06 Thu 17:41] Source Session 90: Curl in 3D | Part C: Line Integrals and Stokes&#39; Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Curl in 3D
+  
+  Figure 2: \(\vb{F}\) in simply-connected region
+  
+  Figure 3: Del notation</description>
+    </item>
+    
+    <item>
+      <title>Session 91: Stokes&#39; Theorem</title>
+      <link>https://ppalazon.github.io/18.02/part-4c/session-91/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4c/session-91/</guid>
+      <description>Captured On [2020-02-06 Thu 17:42] Source Session 91: Stokes&#39; Theorem | Part C: Line Integrals and Stokes&#39; Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Recall \(\text{curl}\vb{F}\)
+  
+  Figure 2: Curl examples
+  
+  Figure 3: Stokes&#39; Theorem
+  
+  Figure 4: Orientation of \(S\) and \(C\)</description>
+    </item>
+    
+    <item>
+      <title>Session 92: Proof of Stokes&#39; Theorem</title>
+      <link>https://ppalazon.github.io/18.02/part-4c/session-92/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4c/session-92/</guid>
+      <description>Captured On [2020-02-06 Thu 17:43] Source Session 92: Proof of Stokes&#39; Theorem | Part C: Line Integrals and Stokes&#39; Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Why Stokes is true?
+  
+  Figure 2: Strategy for proofing Stokes&#39; Theorem
+  2 Why Stokes is true? 2.1 Front Why Stokes is true?</description>
+    </item>
+    
+    <item>
+      <title>Session 93: Example</title>
+      <link>https://ppalazon.github.io/18.02/part-4c/session-93/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4c/session-93/</guid>
+      <description>Captured On [2020-02-06 Thu 17:43] Source Session 93: Example | Part C: Line Integrals and Stokes&#39; Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Example of Stokes&#39; Theorem
+  
+  Figure 2: Computing the surface integral
+  
+  Figure 3: Same result with Stokes&#39; Theorem</description>
+    </item>
+    
+    <item>
+      <title>Session 94: Simply Connected Regions; Topology</title>
+      <link>https://ppalazon.github.io/18.02/part-4c/session-94/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4c/session-94/</guid>
+      <description>Captured On [2020-02-06 Thu 17:44] Source Session 94: Simply Connected Regions; Topology | Part C: Line Integrals and Stokes&#39; Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Stokes and Path Independence
+  
+  Figure 2: Examples of simply-connected spaces
+  
+  Figure 3: Theorem for path independence of line integrals</description>
+    </item>
+    
+    <item>
+      <title>Session 95: Stokes&#39; Theorem and Surface Independence</title>
+      <link>https://ppalazon.github.io/18.02/part-4c/session-95/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4c/session-95/</guid>
+      <description>Captured On [2020-02-06 Thu 17:45] Source Session 95: Stokes&#39; Theorem and Surface Independence | Part C: Line Integrals and Stokes&#39; Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Stokes and surface independence
+  
+  Figure 2: Check with divergence theorem
+  
+  Figure 3: Divergence of curl of vector fiels is 0</description>
+    </item>
+    
+    <item>
+      <title>Session 96: Summary of Multiple Integration</title>
+      <link>https://ppalazon.github.io/18.02/review/session-96/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/review/session-96/</guid>
+      <description>Captured On [2020-02-06 Thu 18:05] Source Session 96: Summary of Multiple Integration | Part C: Line Integrals and Stokes&#39; Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  
+  Figure 1: Different multiple integrals
+  
+  Figure 2: Applications of multiple integrals
+  
+  Figure 3: Different surfaces</description>
+    </item>
+    
+    <item>
+      <title>Session 97: Curl and Physics</title>
+      <link>https://ppalazon.github.io/18.02/physics/session-97/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/physics/session-97/</guid>
+      <description>Captured On [2020-02-06 Thu 18:16] Source Session 97: Curl and Physics | Physics Applications | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  
+  Figure 1: Recall what measures curl of velocity field
+  
+  Figure 2: Curl of velocity field
+  
+  Figure 3: Curl on force field</description>
+    </item>
+    
+    <item>
+      <title>Session 98: Maxwell&#39;s Equations</title>
+      <link>https://ppalazon.github.io/18.02/physics/session-98/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/physics/session-98/</guid>
+      <description> Captured On [2020-02-06 Thu 18:18] Source Session 98: Maxwell&amp;rsquo;s Equations | Physics Applications | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  
+  Figure 1: Maxwell&amp;rsquo;s Equations
+  
+  Figure 2: Gauss-Coulumb Law
+  
+  Figure 3: Faraday&amp;rsquo;s Law
+  
+  Figure 4: Remark
+  </description>
+    </item>
+    
+    <item>
+      <title>Session 9: Matrix Multiplication</title>
+      <link>https://ppalazon.github.io/18.02/part-1b/session-9/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-1b/session-9/</guid>
+      <description>Captured On [2020-02-05 Wed 21:13] Source .Session 9: Matrix Multiplication | Part B: Matrices and Systems of Equations | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: What is a matrix?
+  
+  Figure 2: Change coordinate systems
+  
+  Figure 3: Entries in matrix multiplication
+  
+  Figure 4: Nmemotecnic rule for matrix multiplication</description>
     </item>
     
   </channel>

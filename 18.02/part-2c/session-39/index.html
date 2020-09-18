@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Session 39: Statement of Lagrange Multipliers and Example  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="calculus, maths, ">
+
+
+<meta property="og:title" content="Session 39: Statement of Lagrange Multipliers and Example  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.02/part-2c/session-39/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="content-source" content="18.02/part-2c/session-39.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Captured On [2020-02-06 Thu 12:56] Source Session 39: Statement of Lagrange Multipliers and Example | Part C: Lagrange Multipliers and Constrained Differentials | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare 1 Chalkboard Figure 1: Lagrange multipliers Figure 2: Example of using lagrange multipliers
+Figure 3: Subject to the constraint
+"/>
+<meta property="og:article:published_time" content="2019-04-18T00:00:00&#43;02:00" />
+<meta property="og:article:modified_time" content="2019-04-18T00:00:00&#43;02:00" />
+
+
+
+<meta property="og:article:tag" content="calculus">
+
+<meta property="og:article:tag" content="maths">
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ppalazon" />
+<meta name="twitter:creator" content="@ppalazon" />
+<meta name="twitter:title" content="Session 39: Statement of Lagrange Multipliers and Example" />
+<meta name="twitter:description" content="Captured On [2020-02-06 Thu 12:56] Source Session 39: Statement of Lagrange Multipliers and Example | Part C: Lagrange Multipliers and Constrained Differentials | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare 1 Chalkboard Figure 1: Lagrange multipliers Figure 2: Example of using lagrange multipliers
+Figure 3: Subject to the constraint
+"/>
+<meta name="twitter:url" content="https://ppalazon.github.io/18.02/part-2c/session-39/" />
+<meta name="twitter:domain" content="https://ppalazon.github.io">
+
+
+
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+     "@type": "Article",
+     "headline": "Session 39: Statement of Lagrange Multipliers and Example",
+     "author": {
+         "@type": "Person",
+         "name": "http://profiles.google.com/+?rel=author"
+     },
+     "datePublished": "2019-04-18",
+     "description": "",
+     "wordCount":  551 
+ }
+</script>
+
+
+
+<link rel="canonical" href="https://ppalazon.github.io/18.02/part-2c/session-39/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+ }
+ .hero {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: calc(200px + (450 - 200) * ((100vw - 300px) / (1600 - 300)));
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: calc(-1 * (200px + (450 - 200) * ((100vw - 300px) / (1600 - 300))));
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+    <header class="container hat">
+        <h1>Session 39: Statement of Lagrange Multipliers and Example
+</h1>
+
+        
+
+
+<span class="author">by
+    
+    MIT OCW, Pablo Palazon
+    
+</span>
+
+
+    </header>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            
+            <div class="content">
+  <dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2020-02-06 Thu 12:56]</span></span></dd>
+<dt>Source</dt>
+<dd><a href="https://ocw.mit.edu/courses/mathematics/18-02sc-multivariable-calculus-fall-2010/2.-partial-derivatives/part-c-lagrange-multipliers-and-constrained-differentials/session-39-statement-of-lagrange-multipliers-and-example/index.htm">Session 39: Statement of Lagrange Multipliers and Example | Part C: Lagrange Multipliers and Constrained Differentials | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare</a></dd>
+</dl>
+<h2 id="chalkboard"><span class="section-num">1</span> Chalkboard</h2>
+<p><a id="org33792ad"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/10/3f3c1b-446f-4728-9d33-6e020d494334/_20200206_130357MIT18_02SC_L13Brds_1.png"
+         alt="Figure 1: Lagrange multipliers" width="80%"/> <figcaption>
+            <p>Figure 1: Lagrange multipliers</p>
+        </figcaption>
+</figure>
+
+<p><a id="orgefd0bb8"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/10/3f3c1b-446f-4728-9d33-6e020d494334/_20200206_130403MIT18_02SC_L13Brds_2.png"
+         alt="Figure 2: Example of using lagrange multipliers" width="80%"/> <figcaption>
+            <p>Figure 2: Example of using lagrange multipliers</p>
+        </figcaption>
+</figure>
+
+<p><a id="org1831618"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/10/3f3c1b-446f-4728-9d33-6e020d494334/_20200206_130408MIT18_02SC_L13Brds_3.png"
+         alt="Figure 3: Subject to the constraint" width="80%"/> <figcaption>
+            <p>Figure 3: Subject to the constraint</p>
+        </figcaption>
+</figure>
+
+<p><a id="org430830a"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/10/3f3c1b-446f-4728-9d33-6e020d494334/_20200206_130414MIT18_02SC_L13Brds_4.png"
+         alt="Figure 4: Both gradient vectors are parallel at level curves" width="80%"/> <figcaption>
+            <p>Figure 4: Both gradient vectors are parallel at level curves</p>
+        </figcaption>
+</figure>
+
+<p><a id="orgd53009b"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/10/3f3c1b-446f-4728-9d33-6e020d494334/_20200206_130419MIT18_02SC_L13Brds_5.png"
+         alt="Figure 5: System of equations" width="80%"/> <figcaption>
+            <p>Figure 5: System of equations</p>
+        </figcaption>
+</figure>
+
+<p><a id="orgb8cb4a1"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/10/3f3c1b-446f-4728-9d33-6e020d494334/_20200206_130425MIT18_02SC_L13Brds_6.png"
+         alt="Figure 6: 2 gradiant vector and constraint" width="80%"/> <figcaption>
+            <p>Figure 6: 2 gradiant vector and constraint</p>
+        </figcaption>
+</figure>
+
+<p><a id="orgbbbe06e"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/10/3f3c1b-446f-4728-9d33-6e020d494334/_20200206_130431MIT18_02SC_L13Brds_7.png"
+         alt="Figure 7: Solution of lagrante multiplier" width="80%"/> <figcaption>
+            <p>Figure 7: Solution of lagrante multiplier</p>
+        </figcaption>
+</figure>
+
+<p><a id="org17845ae"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/10/3f3c1b-446f-4728-9d33-6e020d494334/_20200206_130436MIT18_02SC_L13Brds_8.png"
+         alt="Figure 8: Values of \(x\) and \(y\)" width="80%"/> <figcaption>
+            <p>Figure 8: Values of \(x\) and \(y\)</p>
+        </figcaption>
+</figure>
+
+<h2 id="why-are-useful-lagrange-multipliers"><span class="section-num">2</span> Why are useful Lagrange multipliers?</h2>
+<h3 id="front"><span class="section-num">2.1</span> Front</h3>
+<p><b>Why are useful Lagrange multipliers?</b></p>
+<h3 id="back"><span class="section-num">2.2</span> Back</h3>
+<p>They are used to solve constrained optimization problems. You have a
+function, \(f(x,y)\) for which you want to find the maximum and minimum
+values, but you don&rsquo;t look all values of \(x,y\). Instead of that, you
+have another function that constraint \(x\) and \(y\) values. For example
+\(g(x,y) = c\), where \(c\) is a constant.</p>
+<h2 id="how-are-the-lagrange-multipliers-problem"><span class="section-num">3</span> How are the Lagrange multipliers problem?</h2>
+<h3 id="front"><span class="section-num">3.1</span> Front</h3>
+<p><b>How are the Lagrange multipliers problem?</b></p>
+<h3 id="back"><span class="section-num">3.2</span> Back</h3>
+<p>Minimize (or maximize) \(w = f(x,y,z)\) constrained by \(g(x,y,z) = c\)</p>
+<h2 id="how-are-the-lagrange-multipliers-solution"><span class="section-num">4</span> How are the Lagrange multipliers solution?</h2>
+<h3 id="front"><span class="section-num">4.1</span> Front</h3>
+<p><b>How are the Lagrange multipliers solution?</b></p>
+<h3 id="back"><span class="section-num">4.2</span> Back</h3>
+<p>Local minima (or maxima) must occur at a <strong>critical point</strong>. This point
+where \(\grad{f} = \lambda \grad{g}\) and \(g(x,y,z) = c\)</p>
+<h2 id="how-are-defined-the-critical-point-for-a-function-constrained-by-a-level-curve"><span class="section-num">5</span> How are defined the critical point for a function constrained by a level curve?</h2>
+<h3 id="front"><span class="section-num">5.1</span> Front</h3>
+<p><strong>How are defined the critical point for a function constrained by a
+level curve?</strong></p>
+<p>\(w = f(x,y,z)\), constrained by \(g(x,y,z) = c\) (\(c\) constant)</p>
+<h3 id="back"><span class="section-num">5.2</span> Back</h3>
+<p><strong>How are defined the critical point for a function constrained by a
+level curve?</strong></p>
+<p>By Lagrange multipliers</p>
+<p>\(\grad{f}(x,y,z) = \lambda \grad{g}(x,y,z)\) and \(g(x,y,z) = c\)</p>
+<h2 id="why-on-lagrange-multipliers-both--grad--are-parallel"><span class="section-num">6</span> Why on Lagrange multipliers both \(\grad\) are parallel?</h2>
+<h3 id="front"><span class="section-num">6.1</span> Front</h3>
+<p><b>Why on Lagrange multipliers both $\grad$ are parallel?</b></p>
+<p>\(\grad{f} = \lambda \grad{g}\)</p>
+<h3 id="back"><span class="section-num">6.2</span> Back</h3>
+<p>This is because of both level curves are tangent. If we get the
+directional differential on the direction on tangent vector,
+\({\displaystyle \dv{f}{s}\bigg|_{\vu{u}} = \dv{g}{s}\bigg|_{\vu{u}} =
+0}\) (there is no change through level curve).</p>
+<p>At the same point, the gradient are perpendicular to tangent vector
+(which is the same on both level curves)</p>
+<figure>
+    <img src="https://ppalazon.github.io/10/3f3c1b-446f-4728-9d33-6e020d494334/_20200917_121941z9ih2bN.png"/> 
+</figure>
+
+<h2 id="how-many-possible-solution-are-there"><span class="section-num">7</span> How many possible solution are there?</h2>
+<h3 id="front"><span class="section-num">7.1</span> Front</h3>
+<p><b>How many possible solution are there?</b></p>
+<ul>
+<li>\(2x + 1 = \lambda 2x\)</li>
+<li>\(4y = \lambda 2y\)</li>
+<li>\(6z = \lambda 2z\)</li>
+<li>\(x^2 + y^2 + z^2 = 1\)</li>
+</ul>
+<p>Only cases for solution</p>
+<h3 id="back"><span class="section-num">7.2</span> Back</h3>
+<ul>
+<li>From 2nd eq: \(y=0\) or \(\lambda = 2\)</li>
+<li>From 3nd eq: \(z=0\) or \(\lambda = 3\)</li>
+</ul>
+<p>There are 3 cases</p>
+<ul>
+<li>\(y=z=0\)</li>
+<li>\(\lambda = 3\) and \(y=0\)</li>
+<li>\(\lambda = 2\) and \(z=0\)</li>
+</ul>
+<p>No boundaries for the sphere equations (not edges)</p>
+<h2 id="how-can-we-find-partial-derivatives-on-non-independent-variable-functions"><span class="section-num">8</span> How can we find partial derivatives on non-independent variable functions?</h2>
+<h3 id="front"><span class="section-num">8.1</span> Front</h3>
+<p><b>How can we find partial derivatives on non-independent variable functions?</b></p>
+<p>\(g(x,y,z) = c\), then \(z = z(x,y)\). Find \(\pdv{z}{x}\) and \(\pdv{z}{y}\)</p>
+<h3 id="back"><span class="section-num">8.2</span> Back</h3>
+<ul>
+<li>\(\dd{g} = g_x \dd{x} + g_y \dd{y} + g_z \dd{z} = 0\)</li>
+<li>\(\dd{z} = - \frac{g_x}{g_z} \dd{x} - \frac{g_y}{g_z} \dd{y}\)</li>
+<li>For \({\displaystyle \pdv{z}{x}}\)
+<ul>
+<li>Set \(y\) as constant \(\implies \dd{y} = 0\)</li>
+<li>\({\displaystyle dz = - \frac{g_x}{g_z} \dd{x} \implies \pdv{z}{x}
+= - \frac{g_x}{g_z}}\)</li>
+</ul>
+</li>
+<li>For \({\displaystyle \pdv{z}{y}}\)
+<ul>
+<li>Set \(x\) as constant \(\implies \dd{x} = 0\)</li>
+<li>\({\displaystyle dz = - \frac{g_y}{g_z} \dd{y} \implies \pdv{z}{y}
+= - \frac{g_y}{g_z}}\)</li>
+</ul>
+</li>
+</ul>
+
+</div>
+
+
+            <footer>
+    
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-2c%2fsession-39%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Session%2039%3a%20Statement%20of%20Lagrange%20Multipliers%20and%20Example&amp;url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-2c%2fsession-39%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-2c%2fsession-39%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-2c%2fsession-39%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-2c%2fsession-39%2f&amp;title=Session%2039%3a%20Statement%20of%20Lagrange%20Multipliers%20and%20Example" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Session%2039%3a%20Statement%20of%20Lagrange%20Multipliers%20and%20Example&amp;body=Check out this site https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-2c%2fsession-39%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+
+<nav>
+    <ul class="pager">
+    
+
+    
+    <li class="next">
+        <a href="https://ppalazon.github.io/18.02/part-2c/session-40/" title="Session 40: Proof of Lagrange Multipliers">
+            Session 40: Proof of Lagrange Multipliers <span aria-hidden="true">&rarr;</span>
+        </a>
+    </li>
+    
+    </ul>
+</nav>
+
+
+
+</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//ppalazon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+        </div>
+    </div>
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.02/">18.02 Multivariable Calculus</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.02/part-2c/">2C: Lagrange Multipliers and Constrained Differentials</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.02/part-2c/session-39/">Session 39: Statement of Lagrange Multipliers and Example</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

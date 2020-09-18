@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>1: First Order Differential Equations  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="ode, maths, ">
+
+
+<meta property="og:title" content="1: First Order Differential Equations  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.03/unit-1/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="og:type" content="website" />
+
+
+<link rel="alternate" type="application/rss+xml" href="https://ppalazon.github.io/18.03/unit-1/index.xml" title="Pablo Palazon's Website" />
+<link rel="canonical" href="https://ppalazon.github.io/18.03/unit-1/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+<div id="main-content" class="container">
+    <header>
+        <h1>1: First Order Differential Equations
+</h1>
+
+    </header>
+    <p>In Unit I, we will study ordinary differential equations (ODE&rsquo;s) involving only
+the first derivative.</p>
+<p>\(y' = F(x, y)\)</p>
+<p>The first session covers some of the conventions and prerequisites for the
+course. After that we will focus on first order differential equations. We&rsquo;ll
+start by defining differential equations and seeing a few well known ones from
+science and engineering. Very quickly we will learn about the three main ways of
+approaching ODE&rsquo;s: Analytic (in symbols), geometric (with pictures and graphs),
+and numerical (with the computer).</p>
+<p>A large part of this unit (and this course) will be spent on linear ODE&rsquo;s. These
+are fundamental to the understanding of all ODE&rsquo;s and among the most tractable.</p>
+<p>Last Modification: <strong>2020-09-16 Wed 19:55</strong></p>
+<dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2019-09-17 Tue 16:00]</span></span></dd>
+<dt>Source</dt>
+<dd><a href="https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-i-first-order-differential-equations/">Unit I: First Order Differential Equations | Differential
+Equations | Mathematics | MIT OpenCourseWare</a></dd>
+</dl>
+
+    
+
+    
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>
+  <a href="https://ppalazon.github.io/18.03/unit-1/session-1/">Basic DE&#39;s and Separable Equations</a>
+</h3>
+
+        <p>Captured On [2019-09-17 Tue 16:00] Source Basic DE&rsquo;s and Separable Equations | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 Can be \(e^{at}=0\)? 1.1 Front Can be \(e^{at}=0\)?
+1.2 Back Never
+2 Write a sketch of the graph 2.1 Front Write a sketch of the graph
+\(y=e^t\)
+2.2 Back   3 Write a sketch of the graph 3.1 Front Write a sketch of the graph</p>
+        
+    </div>
+</div>
+
+    
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>
+  <a href="https://ppalazon.github.io/18.03/unit-1/session-2/">Geometric Methods</a>
+</h3>
+
+        <p>Captured On [2019-09-17 Tue 16:00] Source Geometric Methods | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is a direction field 1.1 Front What is a direction field
+for the equation \(y' = f(x,y)\)
+1.2 Back For each point \((x,y)\) of the plane is drawn a little segment whose slope is \(f(x,y)\)
+For example: \({\displaystyle \dv{y}{x} = 2x}\)
+  2 How can we draw a direction field by hand?</p>
+        
+    </div>
+</div>
+
+    
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>
+  <a href="https://ppalazon.github.io/18.03/unit-1/session-4/">First Order Linear ODE&#39;s</a>
+</h3>
+
+        <p>Captured On [2019-09-11 Wed 20:32] Source First Order Linear ODE&rsquo;s | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is a first order linear ODE? 1.1 Front What is a first order linear ODE?
+Write the standard form
+1.2 Back In the unknown function \(x = x(t)\)
+\({\displaystyle A(t) \dv{x}{t} + B(t) x(t) = C(t)}\)
+As \(A(t) \neq 0\), we can simplify the equation by dividing by \(A(t)\)</p>
+        
+    </div>
+</div>
+
+    
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>
+  <a href="https://ppalazon.github.io/18.03/unit-1/session-6/">Complex Arithmetic and Exponentials</a>
+</h3>
+
+        <p>Captured On [2019-09-17 Tue 15:58] Source Complex Arithmetic and Exponentials | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is a complex number? 1.1 Front What is a complex number?
+1.2 Back A complex number is an expression of the form \(a + ib\)
+2 When can we say that 2 complex number are equals? 2.1 Front When can we say that 2 complex number are equals?</p>
+        
+    </div>
+</div>
+
+    
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>
+  <a href="https://ppalazon.github.io/18.03/unit-1/session-7/">Sinusoidal Functions</a>
+</h3>
+
+        <p>Captured On [2019-09-26 Thu 15:47] Source Sinusoidal Functions | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is a sinusoidal function equation? 1.1 Front What is a sinusoidal function equation?
+1.2 Back \(f(t) = A \cos(\omega t - \phi)\)
+2 What is the sinusoidal oscillation equation? 2.1 Front What is the sinusoidal oscillation equation?
+2.2 Back \(f(t) = A \cos(\omega t - \phi)\)</p>
+        
+    </div>
+</div>
+
+    
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>
+  <a href="https://ppalazon.github.io/18.03/unit-1/session-8/">First Order Constant Coefficient Linear ODE&#39;s</a>
+</h3>
+
+        <p>Captured On [2019-09-27 Fri 19:04] Source First Order Constant Coefficient Linear ODE&rsquo;s | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is a constant coefficient First ODE? 1.1 Front What is a constant coefficient First ODE?
+1.2 Back \(\dot{y} + ky = q(t)\), where \(k\) is a constant
+2 What is the solution of a constant coefficient First ODE? 2.1 Front What is the solution of a constant coefficient First ODE?</p>
+        
+    </div>
+</div>
+
+    
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>
+  <a href="https://ppalazon.github.io/18.03/unit-1/session-9/">Exponential Input; Gain and Phase Lag</a>
+</h3>
+
+        <p>Captured On [2019-10-01 Tue 12:22] Source Exponential Input; Gain and Phase Lag | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 Explain the method of optimism to solve this first order ODE 1.1 Front Explain the method of optimism to solve this first order ODE
+\(\dot{x} + 2x = 4e^{3t}\)
+1.2 Back The inspiration is based on the fact that \(\dv{t} e^{rt} = re^{rt}\).</p>
+        
+    </div>
+</div>
+
+    
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>
+  <a href="https://ppalazon.github.io/18.03/unit-1/session-10/">First Order Autonomous Differential Equations</a>
+</h3>
+
+        <p>Captured On [2019-10-02 Wed 13:06] Source First Order Autonomous Differential Equations | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is an autonomous first order differential equation? 1.1 Front What is an autonomous first order differential equation?
+1.2 Back There are (in general) nonlinear equations of the form \(\dot{x} = f(x)\)
+The word autonomous means self governing and indicates that the rate of change of \(x\) is governed by \(x\) itself and it not dependent of time.</p>
+        
+    </div>
+</div>
+
+    
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>
+  <a href="https://ppalazon.github.io/18.03/unit-1/session-11/">Linear vs. Nonlinear</a>
+</h3>
+
+        <p> Captured On [2019-10-07 Mon 13:29] Source Linear vs. Nonlinear | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  </p>
+        
+    </div>
+</div>
+
+    
+    
+
+
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/">18.03 Differential Equations</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.03/unit-1/">1: First Order Differential Equations</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="https://ppalazon.github.io/18.03/unit-1/index.xml" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

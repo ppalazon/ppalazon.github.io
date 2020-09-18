@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>4A: Triple Integrals on Pablo Palazon&#39;s Website</title>
+    <link>https://ppalazon.github.io/18.02/part-4a/</link>
+    <description>Recent content in 4A: Triple Integrals on Pablo Palazon&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>CC BY-NC-ND 4.0</copyright>
+    <lastBuildDate>Thu, 18 Apr 2019 00:00:00 +0200</lastBuildDate><atom:link href="https://ppalazon.github.io/18.02/part-4a/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Session 74: Triple Integrals: Rectangular and Cylindrical Coordinates</title>
+      <link>https://ppalazon.github.io/18.02/part-4a/session-74/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4a/session-74/</guid>
+      <description>Captured On [2020-02-06 Thu 16:38] Source Session 74: Triple Integrals: Rectangular and Cylindrical Coordinates | Part A: Triple Integrals | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Triple integrals
+  
+  Figure 2: Example of triple integral
+  
+  Figure 3: Setting up interated integral for triple integral</description>
+    </item>
+    
+    <item>
+      <title>Session 75: Applications and Examples</title>
+      <link>https://ppalazon.github.io/18.02/part-4a/session-75/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4a/session-75/</guid>
+      <description>Captured On [2020-02-06 Thu 17:02] Source Session 75: Applications and Examples | Part A: Triple Integrals | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Mass on triple integral
+  
+  Figure 2: Average value on triple integral
+  
+  Figure 3: Center of mass on triple integral</description>
+    </item>
+    
+    <item>
+      <title>Session 76: Spherical Coordinates</title>
+      <link>https://ppalazon.github.io/18.02/part-4a/session-76/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4a/session-76/</guid>
+      <description>Captured On [2020-02-06 Thu 17:03] Source Session 76: Spherical Coordinates | Part A: Triple Integrals | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Spherical coordinates
+  
+  Figure 2: On a sphere \(\rho = a\)
+  
+  Figure 3: Transform from cylindrical to spherical coordinates</description>
+    </item>
+    
+    <item>
+      <title>Session 77: Triple Integrals in Spherical Coordinates</title>
+      <link>https://ppalazon.github.io/18.02/part-4a/session-77/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4a/session-77/</guid>
+      <description>Captured On [2020-02-06 Thu 17:04] Source Session 77: Triple Integrals in Spherical Coordinates | Part A: Triple Integrals | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Triple integral in spherical coordinates
+  
+  Figure 2: Surface area on sphere of radius \(a\)
+  
+  Figure 3: Surface element</description>
+    </item>
+    
+    <item>
+      <title>Session 78: Applications: Gravitational Attraction</title>
+      <link>https://ppalazon.github.io/18.02/part-4a/session-78/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4a/session-78/</guid>
+      <description>Captured On [2020-02-06 Thu 17:05] Source Session 78: Applications: Gravitational Attraction | Part A: Triple Integrals | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Graviational force exerted by \(\Delta M\)
+  
+  Figure 2: Gravitational force vector
+  
+  Figure 3: Setting up triple integral on an axis of symmetry</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>1A: Vectors and Matrices - Vectors, determinants and planes  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="calculus, maths, ATTACH, ">
+
+
+<meta property="og:title" content="1A: Vectors and Matrices - Vectors, determinants and planes  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.02/part-1a/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="og:type" content="website" />
+
+
+<link rel="alternate" type="application/rss+xml" href="https://ppalazon.github.io/18.02/part-1a/index.xml" title="Pablo Palazon's Website" />
+<link rel="canonical" href="https://ppalazon.github.io/18.02/part-1a/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+<div id="main-content" class="container">
+    <header>
+        <h1>1A: Vectors and Matrices - Vectors, determinants and planes
+</h1>
+
+    </header>
+    <p>Vectors are basic to this course. We will learn to manipulate them algebraically
+and geometrically. They will help us simplify the statements of problems and
+theorems and to find solutions and proofs.</p>
+<p>Determinants measure volumes and areas. They will also be important in part B
+when we use matrices to solve systems of equations.</p>
+<p>Last Modification: <strong>2020-09-17 Thu 11:44</strong></p>
+<blockquote>
+<p>You can <a href="https://ppalazon.github.io/a9/a5452d-6c21-4136-804f-ea0d4419c352/calculus-II-1a.pdf">download the whole section in pdf</a></p>
+</blockquote>
+<dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2020-01-18 Sat]</span></span></dd>
+<dt>Source</dt>
+<dd><a href="https://ocw.mit.edu/courses/mathematics/18-02sc-multivariable-calculus-fall-2010/1.-vectors-and-matrices/part-a-vectors-determinants-and-planes">Part A: Vectors, Determinants and Planes | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare</a></dd>
+</dl>
+
+    
+
+    
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>
+  <a href="https://ppalazon.github.io/18.02/part-1a/session-1/">Session 1: Vectors</a>
+</h3>
+
+        <p>Captured On [2020-02-05 Wed 19:40] Source Session 1: Vectors | Part A: Vectors, Determinants and Planes | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Definition of vectors
+  
+  Figure 2: Length of a vector
+  
+  Figure 3: Modules and addition
+  
+  Figure 4: Multiplying by scalars</p>
+        
+    </div>
+</div>
+
+    
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>
+  <a href="https://ppalazon.github.io/18.02/part-1a/session-2/">Session 2: Dot Products</a>
+</h3>
+
+        <p>Captured On [2020-02-05 Wed 19:41] Source Session 2: Dot Products | Part A: Vectors, Determinants and Planes | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Dot Product Definition
+  
+  Figure 2: What does geometic definition mean?
+  
+  Figure 3: Dot product of combined vectors
+  2 What is the dot product of 2 vectors?</p>
+        
+    </div>
+</div>
+
+    
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>
+  <a href="https://ppalazon.github.io/18.02/part-1a/session-3/">Session 3: Uses of the Dot Product: Lengths and Angles</a>
+</h3>
+
+        <p>Captured On [2020-02-05 Wed 19:43] Source Session 3: Uses of the Dot Product: Lengths and Angles | Part A: Vectors, Determinants and Planes | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Computing lengths and angles
+  
+  Figure 2: Resolution of computing an angle
+  
+  Figure 3: Meaning of sign of a dot product</p>
+        
+    </div>
+</div>
+
+    
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>
+  <a href="https://ppalazon.github.io/18.02/part-1a/session-4/">Session 4: Vector Components</a>
+</h3>
+
+        <p>Captured On [2020-02-05 Wed 19:46] Source Session 4: Vector Components | Part A: Vectors, Determinants and Planes | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Review of dot product
+  
+  Figure 2: Components of \(\vec{A}\) along direction \(\vec{u}\)
+  
+  Figure 3: Pendulum problem with projections
+  2 Which is it the angle between 2 vectors?</p>
+        
+    </div>
+</div>
+
+    
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>
+  <a href="https://ppalazon.github.io/18.02/part-1a/session-5/">Session 5: Area and Determinants in 2D</a>
+</h3>
+
+        <p>Captured On [2020-02-05 Wed 19:47] Source Session 5: Area and Determinants in 2D | Part A: Vectors, Determinants and Planes | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Area within 2 vectors
+  
+  Figure 2: Rotated vector \(\vec{A}\)
+  
+  Figure 3: Area as determinant of 2 vectors</p>
+        
+    </div>
+</div>
+
+    
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>
+  <a href="https://ppalazon.github.io/18.02/part-1a/session-6/">Session 6: Volumes and Determinants in Space</a>
+</h3>
+
+        <p>Captured On [2020-02-05 Wed 19:49] Source Session 6: Volumes and Determinants in Space | Part A: Vectors, Determinants and Planes | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Determinant in space
+  
+  Figure 2: Volume of parallelepiped
+  2 What is the volume between 3 vectors? 2.1 Front What is the volume between 3 vectors?</p>
+        
+    </div>
+</div>
+
+    
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>
+  <a href="https://ppalazon.github.io/18.02/part-1a/session-7/">Session 7: Cross Products</a>
+</h3>
+
+        <p>Captured On [2020-02-05 Wed 19:50] Source Session 7: Cross Products | Part A: Vectors, Determinants and Planes | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Cross product of 2 vectors in 3-space
+  
+  Figure 2: Area of parallelogram with cross product
+  
+  Figure 3: Right hand method for direction of cross product</p>
+        
+    </div>
+</div>
+
+    
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>
+  <a href="https://ppalazon.github.io/18.02/part-1a/session-8/">Session 8: Equations of Planes</a>
+</h3>
+
+        <p>Captured On [2020-02-05 Wed 19:52] Source Session 8: Equations of Planes | Part A: Vectors, Determinants and Planes | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Equation of plane
+  
+  Figure 2: Another solution equation of plane
+  2 How can we find the equation of the plane containing 3 points? 2.</p>
+        
+    </div>
+</div>
+
+    
+    
+
+
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.02/">18.02 Multivariable Calculus</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.02/part-1a/">1A: Vectors and Matrices - Vectors, determinants and planes</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="https://ppalazon.github.io/18.02/part-1a/index.xml" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

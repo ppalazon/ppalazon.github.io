@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Session 60: Fundamental Theorem for Line Integrals  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="calculus, maths, ">
+
+
+<meta property="og:title" content="Session 60: Fundamental Theorem for Line Integrals  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.02/part-3b/session-60/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="content-source" content="18.02/part-3b/session-60.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Captured On [2020-02-06 Thu 13:32] Source Session 60: Fundamental Theorem for Line Integrals | Part B: Vector Fields and Line Integrals | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare 1 Chalkboard Figure 1: Special case where vector field is gradient field Figure 2: Fundamental Theorem of Calculus for Line Integrals
+"/>
+<meta property="og:article:published_time" content="2019-04-18T00:00:00&#43;02:00" />
+<meta property="og:article:modified_time" content="2019-04-18T00:00:00&#43;02:00" />
+
+
+
+<meta property="og:article:tag" content="calculus">
+
+<meta property="og:article:tag" content="maths">
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ppalazon" />
+<meta name="twitter:creator" content="@ppalazon" />
+<meta name="twitter:title" content="Session 60: Fundamental Theorem for Line Integrals" />
+<meta name="twitter:description" content="Captured On [2020-02-06 Thu 13:32] Source Session 60: Fundamental Theorem for Line Integrals | Part B: Vector Fields and Line Integrals | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare 1 Chalkboard Figure 1: Special case where vector field is gradient field Figure 2: Fundamental Theorem of Calculus for Line Integrals
+"/>
+<meta name="twitter:url" content="https://ppalazon.github.io/18.02/part-3b/session-60/" />
+<meta name="twitter:domain" content="https://ppalazon.github.io">
+
+
+
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+     "@type": "Article",
+     "headline": "Session 60: Fundamental Theorem for Line Integrals",
+     "author": {
+         "@type": "Person",
+         "name": "http://profiles.google.com/+?rel=author"
+     },
+     "datePublished": "2019-04-18",
+     "description": "",
+     "wordCount":  595 
+ }
+</script>
+
+
+
+<link rel="canonical" href="https://ppalazon.github.io/18.02/part-3b/session-60/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+ }
+ .hero {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: calc(200px + (450 - 200) * ((100vw - 300px) / (1600 - 300)));
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: calc(-1 * (200px + (450 - 200) * ((100vw - 300px) / (1600 - 300))));
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+    <header class="container hat">
+        <h1>Session 60: Fundamental Theorem for Line Integrals
+</h1>
+
+        
+
+
+<span class="author">by
+    
+    MIT OCW, Pablo Palazon
+    
+</span>
+
+
+    </header>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            
+            <div class="content">
+  <dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2020-02-06 Thu 13:32]</span></span></dd>
+<dt>Source</dt>
+<dd><a href="https://ocw.mit.edu/courses/mathematics/18-02sc-multivariable-calculus-fall-2010/3.-double-integrals-and-line-integrals-in-the-plane/part-b-vector-fields-and-line-integrals/session-60-fundamental-theorem-for-line-integrals/index.htm">Session 60: Fundamental Theorem for Line Integrals | Part B: Vector Fields and Line Integrals | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare</a></dd>
+</dl>
+<h2 id="chalkboard"><span class="section-num">1</span> Chalkboard</h2>
+<p><a id="orgd35f938"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/52/bf061b-6c32-4446-b3b5-e2aa3052d8eb/_20200206_134340MIT18_02SC_L20Brds_9.png"
+         alt="Figure 1: Special case where vector field is gradient field" width="80%"/> <figcaption>
+            <p>Figure 1: Special case where vector field is gradient field</p>
+        </figcaption>
+</figure>
+
+<p><a id="org432f3c5"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/52/bf061b-6c32-4446-b3b5-e2aa3052d8eb/_20200206_134345MIT18_02SC_L20Brds_10.png"
+         alt="Figure 2: Fundamental Theorem of Calculus for Line Integrals" width="80%"/> <figcaption>
+            <p>Figure 2: Fundamental Theorem of Calculus for Line Integrals</p>
+        </figcaption>
+</figure>
+
+<p><a id="orgdb4446f"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/52/bf061b-6c32-4446-b3b5-e2aa3052d8eb/_20200206_134351MIT18_02SC_L20Brds_11.png"
+         alt="Figure 3: Proof of FTC for Line Integrals" width="80%"/> <figcaption>
+            <p>Figure 3: Proof of FTC for Line Integrals</p>
+        </figcaption>
+</figure>
+
+<p><a id="orgccfaeac"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/52/bf061b-6c32-4446-b3b5-e2aa3052d8eb/_20200206_134358MIT18_02SC_L20Brds_12.png"
+         alt="Figure 4: Proof of FTC for Line Integrals - 2" width="80%"/> <figcaption>
+            <p>Figure 4: Proof of FTC for Line Integrals - 2</p>
+        </figcaption>
+</figure>
+
+<p><a id="org58292f6"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/52/bf061b-6c32-4446-b3b5-e2aa3052d8eb/_20200206_134407MIT18_02SC_L20Brds_13.png"
+         alt="Figure 5: Example of FTC for Line Integrals" width="80%"/> <figcaption>
+            <p>Figure 5: Example of FTC for Line Integrals</p>
+        </figcaption>
+</figure>
+
+<p><a id="org188ca7a"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/52/bf061b-6c32-4446-b3b5-e2aa3052d8eb/_20200206_134413MIT18_02SC_L20Brds_14.png"
+         alt="Figure 6: Warning: Only for gradient fields" width="80%"/> <figcaption>
+            <p>Figure 6: Warning: Only for gradient fields</p>
+        </figcaption>
+</figure>
+
+<p><a id="org8d37d22"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/52/bf061b-6c32-4446-b3b5-e2aa3052d8eb/_20200206_134420MIT18_02SC_L20Brds_15.png"
+         alt="Figure 7: Path independence" width="80%"/> <figcaption>
+            <p>Figure 7: Path independence</p>
+        </figcaption>
+</figure>
+
+<p><a id="orgd675097"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/52/bf061b-6c32-4446-b3b5-e2aa3052d8eb/_20200206_134426MIT18_02SC_L20Brds_16.png"
+         alt="Figure 8: Gradient field is conservative" width="80%"/> <figcaption>
+            <p>Figure 8: Gradient field is conservative</p>
+        </figcaption>
+</figure>
+
+<p><a id="orga43a2cf"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/52/bf061b-6c32-4446-b3b5-e2aa3052d8eb/_20200206_134431MIT18_02SC_L20Brds_17.png"
+         alt="Figure 9: Non-conservative vector field" width="80%"/> <figcaption>
+            <p>Figure 9: Non-conservative vector field</p>
+        </figcaption>
+</figure>
+
+<h2 id="describe-the-fundamental-theorem-of-calculus-for-line-integrals"><span class="section-num">2</span> Describe the Fundamental Theorem of Calculus for Line integrals</h2>
+<h3 id="front"><span class="section-num">2.1</span> Front</h3>
+<p><b>Describe the Fundamental Theorem of Calculus for Line integrals</b></p>
+<p>\(\vb{F}\) and \(C\) any curve</p>
+<h3 id="back"><span class="section-num">2.2</span> Back</h3>
+<p>\(\vb{F} = \grad{f}\) is a <strong>gradient field</strong>, and \(C\) is any curve with
+endpoint \(P_0 = (x_0,y_0)\) and \(P_1 = (x_1, y_1)\)</p>
+<p>\({\displaystyle \int_C \vb{F} \dd{\vb{r}} = \eval{f(x,y)}_{P_0}^{P_1}
+= f(x_1, y_1) - f(x_0, y_0)}\)</p>
+<p>That is, for <strong>gradient field</strong> the line integral is independent of the
+path taken, i.e., it depends only on the endpoints of \(C\)</p>
+<h2 id="how-can-we-proof-ftc-for-line-integrals"><span class="section-num">3</span> How can we proof FTC for Line integrals?</h2>
+<h3 id="front"><span class="section-num">3.1</span> Front</h3>
+<p><b>How can we proof FTC for Line integrals?</b></p>
+<p>\(\vb{F}\) and \(C\) any curve</p>
+<h3 id="back"><span class="section-num">3.2</span> Back</h3>
+<p>\(\vb{F} = \grad{f}\) is a gradient field and \(f(x,y)\) is a potential
+function. The curve is defined by a parametric curve where \(x = x(t)\)
+and \(y = y(t)\). Where \(t_0\) is the start endpoint and \(t_1\) is the
+finish endpoint of the curve \(C\)</p>
+<p>\({\displaystyle \int_C \grad{f} \dd{\vb{r}} = \int_C f_x \dd{x} + f_y
+\dd{y} = \int_{t_0}^{t_1} \biggl[ f_x(x(t), y(t))\dv{x}{t} + f_y(x(t),
+y(t)) \dv{y}{t} \biggr] \dd{t}}\) (From the chain rule)</p>
+<p>\({\displaystyle = \int_{t_0}^{t_1} \dv{f(x(t), y(t))}{t} \dd{t} =
+\eval{f(x(t), y(t))}_{t_0}^{t_1} = f(P_1) - f(P_0)}\)</p>
+<h2 id="what-means-the-ftc-for-line-integral"><span class="section-num">4</span> What means the FTC for Line Integral?</h2>
+<h3 id="front"><span class="section-num">4.1</span> Front</h3>
+<p><b>What means the FTC for Line Integral?</b></p>
+<p>\(\vb{F}\) and \(C\) any curve</p>
+<p>Describe the consequences</p>
+<h3 id="back"><span class="section-num">4.2</span> Back</h3>
+<p>\(\vb{F} = \grad{f}\) (gradient field)</p>
+<p>For <strong>gradient fields</strong> \(\vb{F}\) the work integral \({\displaystyle
+\int_C \vb{F} \dd{\vb{r}}}\) depends only on the endpoints of the
+path. In this case a line integral is <em>path independent</em></p>
+<p><strong>Special case</strong>, for closed curve \(C\)</p>
+<p>\({\displaystyle \oint_C \grad{f} \dd{\vb{r}} = 0}\) (no work)</p>
+<p>Following physics, where a conservative force does no work around a
+closed loop, we say \(\vb{F} = \grad{f}\) is a conservative field.</p>
+<h2 id="all-vector-fields-are-gradient-fields"><span class="section-num">5</span> All vector fields are gradient fields?</h2>
+<h3 id="front"><span class="section-num">5.1</span> Front</h3>
+<p><b>All vector fields are gradient fields?</b></p>
+<h3 id="back"><span class="section-num">5.2</span> Back</h3>
+<p>No</p>
+<h2 id="can-we-apply-ftc-for-line-integral-to-any-vector-field"><span class="section-num">6</span> Can we apply FTC for Line integral to any vector field?</h2>
+<h3 id="front"><span class="section-num">6.1</span> Front</h3>
+<p><b>Can we apply FTC for Line integral to any vector field?</b></p>
+<h3 id="back"><span class="section-num">6.2</span> Back</h3>
+<p>No, we only can apply for gradient fields, so \(\vb{F} = \grad{f}\)</p>
+<h2 id="what-can-we-say-about-this-equation"><span class="section-num">7</span> What can we say about this equation?</h2>
+<h3 id="front"><span class="section-num">7.1</span> Front</h3>
+<p><b>What can we say about this equation?</b></p>
+<p>\({\displaystyle \oint_C \vb{F} \dd{r}}\), where \(\vb{F} = \grad{f}\)</p>
+<h3 id="back"><span class="section-num">7.2</span> Back</h3>
+<p>We can say that \(\vb{F}\) is a conservative force that does no work
+around a closed loop, so \({\displaystyle \oint_C \grad{f} \dd{\vb{r}}
+= 0}\)</p>
+<h2 id="write-the-ftc-for-line-integrals-using-differentials"><span class="section-num">8</span> Write the FTC for Line integrals using differentials</h2>
+<h3 id="front"><span class="section-num">8.1</span> Front</h3>
+<p><b>Write the FTC for Line integrals using differentials</b></p>
+<p>\(\vb{F}\) and \(C\) any curve</p>
+<h3 id="back"><span class="section-num">8.2</span> Back</h3>
+<p>\(\vb{F} = \grad{f} = \ev{f_x,f_y} \implies \grad{f} \dd{r} =
+\ev{f_x,f_y} \cdot \ev{\dd{x},\dd{y}} = f_x \dd{x} + f_y \dd{y}\)</p>
+<p>Using differentials \(\dd{f} = f_x \dd{x} + f_y \dd{y}\)</p>
+<p>\({\displaystyle \int_C M \dd{x} + N \dd{y} = \int_C df}\), where \(M =
+f_x\) and \(N = f_y\)</p>
+<p>\(\int_C \dd{f} = f(P_1) - f(P_0)\), where \(P_0\) and \(P_1\) are the
+endpoints of the curve \(C\)</p>
+
+</div>
+
+
+            <footer>
+    
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-3b%2fsession-60%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Session%2060%3a%20Fundamental%20Theorem%20for%20Line%20Integrals&amp;url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-3b%2fsession-60%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-3b%2fsession-60%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-3b%2fsession-60%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-3b%2fsession-60%2f&amp;title=Session%2060%3a%20Fundamental%20Theorem%20for%20Line%20Integrals" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Session%2060%3a%20Fundamental%20Theorem%20for%20Line%20Integrals&amp;body=Check out this site https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-3b%2fsession-60%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+
+<nav>
+    <ul class="pager">
+    
+    <li class="previous">
+        <a href="https://ppalazon.github.io/18.02/part-3b/session-59/" title="Session 59: Example: Line Integrals for Work">
+            <span aria-hidden="true">&larr;</span>Session 59: Example: Line Integrals for Work
+        </a>
+    </li>
+    
+
+    
+    <li class="next">
+        <a href="https://ppalazon.github.io/18.02/part-3b/session-61/" title="Session 61: Conservative Fields, Path Independence, Exact Differentials">
+            Session 61: Conservative Fields, Path Independence, Exact Differentials <span aria-hidden="true">&rarr;</span>
+        </a>
+    </li>
+    
+    </ul>
+</nav>
+
+
+
+</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//ppalazon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+        </div>
+    </div>
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.02/">18.02 Multivariable Calculus</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.02/part-3b/">3B: Vector Fields and Line Integrals</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.02/part-3b/session-60/">Session 60: Fundamental Theorem for Line Integrals</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

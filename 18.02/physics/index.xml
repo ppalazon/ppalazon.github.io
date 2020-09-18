@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Physics Applications on Pablo Palazon&#39;s Website</title>
+    <link>https://ppalazon.github.io/18.02/physics/</link>
+    <description>Recent content in Physics Applications on Pablo Palazon&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>CC BY-NC-ND 4.0</copyright>
+    <lastBuildDate>Thu, 18 Apr 2019 00:00:00 +0200</lastBuildDate><atom:link href="https://ppalazon.github.io/18.02/physics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Session 97: Curl and Physics</title>
+      <link>https://ppalazon.github.io/18.02/physics/session-97/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/physics/session-97/</guid>
+      <description>Captured On [2020-02-06 Thu 18:16] Source Session 97: Curl and Physics | Physics Applications | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  
+  Figure 1: Recall what measures curl of velocity field
+  
+  Figure 2: Curl of velocity field
+  
+  Figure 3: Curl on force field</description>
+    </item>
+    
+    <item>
+      <title>Session 98: Maxwell&#39;s Equations</title>
+      <link>https://ppalazon.github.io/18.02/physics/session-98/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/physics/session-98/</guid>
+      <description> Captured On [2020-02-06 Thu 18:18] Source Session 98: Maxwell&amp;rsquo;s Equations | Physics Applications | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  
+  Figure 1: Maxwell&amp;rsquo;s Equations
+  
+  Figure 2: Gauss-Coulumb Law
+  
+  Figure 3: Faraday&amp;rsquo;s Law
+  
+  Figure 4: Remark
+  </description>
+    </item>
+    
+  </channel>
+</rss>

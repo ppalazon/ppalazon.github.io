@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Linearization Near Critical Points  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="ode, maths, ">
+
+
+<meta property="og:title" content="Linearization Near Critical Points  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.03/unit-4/session-37/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="content-source" content="18.03/unit-4/session-37.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Captured On [2020-03-09 Mon 12:02] Source Linearization Near Critical Points | Unit IV: First-order Systems | Differential Equations | Mathematics | MIT OpenCourseWare  1 How can we get information about the trajectories of autonomous linear system without… 1.1 Front How can we get information about the trajectories of autonomous linear system without&amp;hellip;
+determining them analytically or using a computer to plot them
+1.2 Back Analyzing what happens near critical points."/>
+<meta property="og:article:published_time" content="2020-01-18T00:00:00&#43;01:00" />
+<meta property="og:article:modified_time" content="2020-01-18T00:00:00&#43;01:00" />
+
+
+
+<meta property="og:article:tag" content="ode">
+
+<meta property="og:article:tag" content="maths">
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ppalazon" />
+<meta name="twitter:creator" content="@ppalazon" />
+<meta name="twitter:title" content="Linearization Near Critical Points" />
+<meta name="twitter:description" content="Captured On [2020-03-09 Mon 12:02] Source Linearization Near Critical Points | Unit IV: First-order Systems | Differential Equations | Mathematics | MIT OpenCourseWare  1 How can we get information about the trajectories of autonomous linear system without… 1.1 Front How can we get information about the trajectories of autonomous linear system without&amp;hellip;
+determining them analytically or using a computer to plot them
+1.2 Back Analyzing what happens near critical points."/>
+<meta name="twitter:url" content="https://ppalazon.github.io/18.03/unit-4/session-37/" />
+<meta name="twitter:domain" content="https://ppalazon.github.io">
+
+
+
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+     "@type": "Article",
+     "headline": "Linearization Near Critical Points",
+     "author": {
+         "@type": "Person",
+         "name": "http://profiles.google.com/+?rel=author"
+     },
+     "datePublished": "2020-01-18",
+     "description": "",
+     "wordCount":  1368 
+ }
+</script>
+
+
+
+<link rel="canonical" href="https://ppalazon.github.io/18.03/unit-4/session-37/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+ }
+ .hero {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: calc(200px + (450 - 200) * ((100vw - 300px) / (1600 - 300)));
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: calc(-1 * (200px + (450 - 200) * ((100vw - 300px) / (1600 - 300))));
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+    <header class="container hat">
+        <h1>Linearization Near Critical Points
+</h1>
+
+        
+
+
+<span class="author">by
+    
+    MIT OCW, Pablo Palazon
+    
+</span>
+
+
+    </header>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            
+            <div class="content">
+  <dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2020-03-09 Mon 12:02]</span></span></dd>
+<dt>Source</dt>
+<dd><a href="https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-iv-first-order-systems/linearization-near-critical-points/">Linearization Near Critical Points | Unit IV: First-order Systems | Differential Equations | Mathematics | MIT OpenCourseWare</a></dd>
+</dl>
+<h2 id="how-can-we-get-information-about-the-trajectories-of-autonomous-linear-system-without-and-x2026"><span class="section-num">1</span> How can we get information about the trajectories of autonomous linear system without…</h2>
+<h3 id="front"><span class="section-num">1.1</span> Front</h3>
+<p><b>How can we get information about the trajectories of autonomous linear system without&hellip;</b></p>
+<p>determining them analytically or using a computer to plot them</p>
+<h3 id="back"><span class="section-num">1.2</span> Back</h3>
+<p>Analyzing what happens near critical points. We can do it linearizing the linear
+system at the critical points.</p>
+<h2 id="what-does-linearization-mean-of-a-non-linear-system"><span class="section-num">2</span> What does linearization mean of a non-linear system?</h2>
+<h3 id="front"><span class="section-num">2.1</span> Front</h3>
+<p><b>What does linearization mean of a non-linear system?</b></p>
+<h3 id="back"><span class="section-num">2.2</span> Back</h3>
+<p>It&rsquo;s an approximation near critical point by a linear system</p>
+<h2 id="what-are-the-conditions-for-linearizate-a-non-linear-system"><span class="section-num">3</span> What are the conditions for linearizate a non-linear system?</h2>
+<h3 id="front"><span class="section-num">3.1</span> Front</h3>
+<p><b>What are the conditions for linearizate a non-linear system?</b></p>
+<ul>
+<li>\(x' = f(x,y)\)</li>
+<li>\(y' = g(x,y)\)</li>
+</ul>
+<h3 id="back"><span class="section-num">3.2</span> Back</h3>
+<p>You need to find their critical points, and for each point the functions \(f\) and
+\(g\) must be sufficiently differentiable.</p>
+<h2 id="why-high-order-terms-in-x-and-y-can-be-neglected-in-a-linearization-of-a-non-linear-system"><span class="section-num">4</span> Why high order terms in x and y can be neglected in a linearization of a non-linear system?</h2>
+<h3 id="front"><span class="section-num">4.1</span> Front</h3>
+<p><b>Why high order terms in x and y can be neglected in a linearization of a non-linear system?</b></p>
+<h3 id="back"><span class="section-num">4.2</span> Back</h3>
+<p>Because the linearization is for points really close to critical points, so if
+the difference between critical point and another point is near \(0\), its higher
+values are really smaller</p>
+<h2 id="how-can-we-get-linearization-using-the-jacobian-from-multivariable-linear-approximation"><span class="section-num">5</span> How can we get linearization using the Jacobian from multivariable linear approximation?</h2>
+<h3 id="front"><span class="section-num">5.1</span> Front</h3>
+<p><b>How can we get linearization using the Jacobian from multivariable linear approximation?</b></p>
+<ul>
+<li>\(x' = f(x,y)\)</li>
+<li>\(y' = g(x,y)\)</li>
+</ul>
+<p>Let be \((x_0, y_0)\) a critical point</p>
+<p>Show the process</p>
+<h3 id="back"><span class="section-num">5.2</span> Back</h3>
+<p>We need to approximate \(f\) and \(g\) near \((x_0, y_0)\)</p>
+<ul>
+<li>\(\Delta x = x - x_0\)</li>
+<li>\(\Delta y = y - y_0\)</li>
+<li>\(\Delta f = f(x,y) - f(x_0,y_0)\)</li>
+<li>\({\displaystyle \Delta f \approx \biggl( \pdv{f}{x} \biggr)_0 \Delta x +
+\biggl(\pdv{f}{y} \biggr)_0 \Delta y}\)</li>
+</ul>
+<p>As \(f(x_0,y_0) = 0\) (critical point)</p>
+<p>\({\displaystyle f(x,y) \approx \biggl( \pdv{f}{x} \biggr)_0 \Delta x +
+\biggl(\pdv{f}{y} \biggr)_0 \Delta y}\)</p>
+<p>We now make the change of variables</p>
+<ul>
+<li>\(x_1 = x - x_0 = \Delta x\)</li>
+<li>\(y_1 = y - y_0 = \Delta y\)</li>
+</ul>
+<p>Getting the approximation of \(f\) and \(g\) computing before at \((x_0,y_0)\). The
+result is that in the neighborhood of the critical point \((x_0,y_0)\), the
+linearization of the system</p>
+<ul>
+<li>\({\displaystyle x_1' = f(x,y) = \biggl( \pdv{f}{x} \biggr)_0 x_1 +
+\biggl(\pdv{f}{y} \biggr)_0 y_1}\)</li>
+<li>\({\displaystyle y_1' = g(x,y) = \biggl( \pdv{g}{x} \biggr)_0 x_1 +
+\biggl(\pdv{g}{y} \biggr)_0 y_1}\)</li>
+</ul>
+<p>In matrix notation, the linearization is therefore</p>
+<p>\({\displaystyle \vb{x_1}' = A \vb{x_1}}\), where \({\displaystyle \vb{x_1}
+= \begin{pmatrix}x_1 \\ y_1\end{pmatrix}}\) and \({\displaystyle A
+= \begin{pmatrix}f_x &amp; f_y \\ g_x &amp; g_y\end{pmatrix}_{(x_0, y_0)}}\)</p>
+<p>the matrix \(A\) is the Jacobian matrix evaluated at the critical point \((x_0,
+y_0)\)</p>
+<h2 id="what-is-the-jacobian-matrix-for-getting-the-linearization-of-this-system"><span class="section-num">6</span> What is the Jacobian matrix for getting the linearization of this system?</h2>
+<h3 id="front"><span class="section-num">6.1</span> Front</h3>
+<p><b>What is the Jacobian matrix for getting the linearization of this system?</b></p>
+<ul>
+<li>\(x' = f(x,y)\)</li>
+<li>\(y' = g(x,y)\)</li>
+</ul>
+<p>Let be \((x_0, y_0)\) a critical point</p>
+<h3 id="back"><span class="section-num">6.2</span> Back</h3>
+<p>\({\displaystyle A = \begin{pmatrix}f_x &amp; f_y \\ g_x &amp; g_y\end{pmatrix}_{(x_0,
+y_0)}}\)</p>
+<h2 id="what-is-the-general-procedure-for-sketching-the-trajectories-of-non-linear-system"><span class="section-num">7</span> What is the general procedure for sketching the trajectories of non-linear system?</h2>
+<h3 id="front"><span class="section-num">7.1</span> Front</h3>
+<p><b>What is the general procedure for sketching the trajectories of non-linear system?</b></p>
+<h3 id="back"><span class="section-num">7.2</span> Back</h3>
+<ul>
+<li>Find all the critical points</li>
+<li>For each critical point
+<ul>
+<li>Find the Jacobian matrix \(A\) of the linearized system</li>
+<li>Find the geometric type and stability of the linearized system
+<ul>
+<li>Getting the eigenvalues</li>
+</ul>
+</li>
+<li>If type is (saddle, node or spiral) (not star node or defective node)
+<ul>
+<li>Getting the eigenvalues, direction on motion</li>
+<li>Sketch of trajectories near the critical point</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Mark all critical points in the \(xy\text{-plane}\), and sketch the trajectories
+around the critical points determined before</li>
+<li>Sketch in some other trajectories to fill out the picture
+<ul>
+<li>Check compatibility with trajectories you have already sketched near
+critical points</li>
+<li>If you cannot sketch plausible trajectories, check possible mistakes</li>
+</ul>
+</li>
+</ul>
+<h2 id="when-does-linearizing-at-critical-points-work-to-get-trajectories-of-a-non-linear-system"><span class="section-num">8</span> When does linearizing at critical points work to get trajectories of a non-linear system?</h2>
+<h3 id="front"><span class="section-num">8.1</span> Front</h3>
+<p><b>When does linearizing at critical points work to get trajectories of a non-linear system? </b></p>
+<h3 id="back"><span class="section-num">8.2</span> Back</h3>
+<p>This method only works if the linearized system turns out to be a node, saddle,
+or spiral</p>
+<h2 id="when-can-we-say-that-a-system-is-structurally-stable"><span class="section-num">9</span> When can we say that a system is structurally stable?</h2>
+<h3 id="front"><span class="section-num">9.1</span> Front</h3>
+<p><b>When can we say that a system is structurally stable?</b></p>
+<ul>
+<li>\(x' = f(x,y) = ax + by\)</li>
+<li>\(y' = g(x,y) = cx + dy\)</li>
+</ul>
+<h3 id="back"><span class="section-num">9.2</span> Back</h3>
+<p>We say a system is structural if small changes in the system parameters (i.e.,
+the constants that enter into the functions on the right hand side) do not
+changes the geometric type or stability of its critical points, or its limit
+cycles.</p>
+<p>So, his system is structurally stable if it is a spiral, saddle, or node.</p>
+<p>In cases of saddle or node, the eigenvalues are real and distinct, but not
+degenerate or star node. If coefficients changes a little, the eigenvalues will
+also change a little (see roots of the characteristic roots). So the new roots
+will still be real, and will have the same sign. Thus the changed system will
+still have the same geometric type and stability.</p>
+<p>Similar interpretation could be done with complex eigenvalue with form \(r \pm
+si\), with \(r \gt 0\) and \(s \gt 0\), \(r \lt 0\) and \(s \gt 0\)</p>
+<p>It&rsquo;s easy to see with the \(TD\text{-diagram}\), if the system stays in the
+borderline, then and little change on the system parameters will change the type
+and the stability of the system.</p>
+<h2 id="when-can-we-say-what-happen-in-a-critical-point-in-non-linear-system"><span class="section-num">10</span> When can we say what happen in a critical point in non-linear system?</h2>
+<h3 id="front"><span class="section-num">10.1</span> Front</h3>
+<p><b>When can we say what happen in a critical point in non-linear system?</b></p>
+<p>Without a doubt</p>
+<h3 id="back"><span class="section-num">10.2</span> Back</h3>
+<p>For an autonomous non-linear system, the linearized system correctly classifies
+the critical point if the linear system is a spiral node, a nodal source or
+sink, or a saddle.</p>
+<h2 id="what-are-the-cases-of-borderline-type-of-critical-point-on-linearized-non-linear-system"><span class="section-num">11</span> What are the cases of borderline type of critical point on linearized non-linear system?</h2>
+<h3 id="front"><span class="section-num">11.1</span> Front</h3>
+<p><b>What are the cases of borderline type of critical point on linearized non-linear system?</b></p>
+<h3 id="back"><span class="section-num">11.2</span> Back</h3>
+<ul>
+<li>Eigenvalue pure imaginary: \(\lambda = 0 + si\), \(s \gt 0\)
+<ul>
+<li>It corresponds to a center, so the trajectories are a family of concentric
+ellipses, centered at the origin</li>
+</ul>
+</li>
+<li>Eigenvalue real and \(\lambda = 0\) (<em>critical line</em>)
+<ul>
+<li>Shows a line of critical points (constant solutions), with all other
+trajectories being parallel ending up or away of at one of the critical
+points</li>
+</ul>
+</li>
+<li>One repeated real eigenvalue
+<ul>
+<li>eigenvalue positive or negative</li>
+<li>eigenvector complete or defective</li>
+</ul>
+</li>
+</ul>
+<h2 id="what-does-it-happen-if-we-change-a-little-this-system-and-x2026"><span class="section-num">12</span> What does it happen if we change a little this system…</h2>
+<h3 id="front"><span class="section-num">12.1</span> Front</h3>
+<p><b>What does it happen if we change a little this system&hellip;</b></p>
+<ul>
+<li>\(x' = f(x,y) = ax + by\)</li>
+<li>\(y' = g(x,y) = cx + dy\)</li>
+</ul>
+<p>And the linearized system at critical point has eigenvalue pure imaginary</p>
+<h3 id="back"><span class="section-num">12.2</span> Back</h3>
+<p>In this case, this is a borderline geometric type, and it&rsquo;s not stable. If we
+change a little the system, it will produce another type of system</p>
+<p>From center trajectory to:</p>
+<ul>
+<li>
+<p>source spiral</p>
+</li>
+<li>
+<p>sink spiral</p>
+</li>
+<li>
+<p>center (\(\lambda=0 + 0i\))</p>
+<figure>
+    <img src="https://ppalazon.github.io/9b/5a7879-de20-42a9-b82a-ec530d60a325/_20200319_222440VSZD1rP.png"/> 
+</figure>
+
+</li>
+</ul>
+<h2 id="what-does-it-happen-if-we-change-a-little-this-system-and-x2026"><span class="section-num">13</span> What does it happen if we change a little this system…</h2>
+<h3 id="front"><span class="section-num">13.1</span> Front</h3>
+<p><b>What does it happen if we change a little this system&hellip;</b></p>
+<ul>
+<li>\(x' = f(x,y) = ax + by\)</li>
+<li>\(y' = g(x,y) = cx + dy\)</li>
+</ul>
+<p>And the linearized system at critical point has one eigenvalue real and the
+other is \(0\)</p>
+<h3 id="back"><span class="section-num">13.2</span> Back</h3>
+<p>In this case, this is a borderline geometric type, and it&rsquo;s not stable</p>
+<p>The solution of this linearized system has this form \(\vb{x} = c_1 \alpha_1 +
+c_2 \alpha_2 e^{\lambda t}\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/4d/0b8a46-11bd-4e29-8ec1-9e03e8e2a8e2/_20200319_222549HAGceY9.png"/> 
+</figure>
+
+<p>If the linearized system change a little, from the critical line to:</p>
+<ul>
+<li>
+<p>Unstable saddle</p>
+</li>
+<li>
+<p>Critical line</p>
+</li>
+<li>
+<p>Sink node</p>
+<figure>
+    <img src="https://ppalazon.github.io/4d/0b8a46-11bd-4e29-8ec1-9e03e8e2a8e2/_20200319_2226038vA7qm1.png"/> 
+</figure>
+
+</li>
+</ul>
+<h2 id="what-does-it-happen-if-we-change-a-little-this-system-and-x2026"><span class="section-num">14</span> What does it happen if we change a little this system…</h2>
+<h3 id="front"><span class="section-num">14.1</span> Front</h3>
+<p><b>What does it happen if we change a little this system&hellip;</b></p>
+<ul>
+<li>\(x' = f(x,y) = ax + by\)</li>
+<li>\(y' = g(x,y) = cx + dy\)</li>
+</ul>
+<p>And the linearized system at critical point has only one repeated real
+eigenvalue</p>
+<h3 id="back"><span class="section-num">14.2</span> Back</h3>
+<p>In this case, this is a borderline geometric type, and it&rsquo;s not stable.</p>
+<p>Depending on whether eigenvalue is positive or negative, and whether the
+repeated eigenvalue is complete, or defective.</p>
+<p>For example:</p>
+<figure>
+    <img src="https://ppalazon.github.io/bc/1d399b-1115-49b4-8741-3d502524c7d5/_20200319_222618hJ07CiG.png"/> 
+</figure>
+
+
+</div>
+
+
+            <footer>
+    
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-4%2fsession-37%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Linearization%20Near%20Critical%20Points&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-4%2fsession-37%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-4%2fsession-37%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-4%2fsession-37%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-4%2fsession-37%2f&amp;title=Linearization%20Near%20Critical%20Points" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Linearization%20Near%20Critical%20Points&amp;body=Check out this site https%3a%2f%2fppalazon.github.io%2f18.03%2funit-4%2fsession-37%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+
+<nav>
+    <ul class="pager">
+    
+    <li class="previous">
+        <a href="https://ppalazon.github.io/18.03/unit-4/session-36/" title="Nonlinear Systems">
+            <span aria-hidden="true">&larr;</span>Nonlinear Systems
+        </a>
+    </li>
+    
+
+    
+    <li class="next">
+        <a href="https://ppalazon.github.io/18.03/unit-4/session-38/" title="Limitations of the Linear: Limit Cycles and Chaos">
+            Limitations of the Linear: Limit Cycles and Chaos <span aria-hidden="true">&rarr;</span>
+        </a>
+    </li>
+    
+    </ul>
+</nav>
+
+
+
+</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//ppalazon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+        </div>
+    </div>
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/">18.03 Differential Equations</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/unit-4/">4: First-order Systems</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.03/unit-4/session-37/">Linearization Near Critical Points</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

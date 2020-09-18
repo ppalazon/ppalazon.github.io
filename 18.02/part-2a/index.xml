@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2A: Functions of Two Variables, Tangent Approximation and Optimization on Pablo Palazon&#39;s Website</title>
+    <link>https://ppalazon.github.io/18.02/part-2a/</link>
+    <description>Recent content in 2A: Functions of Two Variables, Tangent Approximation and Optimization on Pablo Palazon&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>CC BY-NC-ND 4.0</copyright>
+    <lastBuildDate>Thu, 18 Apr 2019 00:00:00 +0200</lastBuildDate><atom:link href="https://ppalazon.github.io/18.02/part-2a/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2A: Functions of Two Variables, Tangent Approximation and Optimization</title>
+      <link>https://ppalazon.github.io/18.02/part-2a/_index_/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-2a/_index_/</guid>
+      <description>&lt;p&gt;We start this unit by learning to visualize functions of several variables using
+graphs and level curves. Following this we will study partial derivatives. These
+will be used in the tangent approximation formula, which is one of the keys to
+multivariable calculus. It ties together the geometric and algebraic sides of
+the subject and is the higher dimensional analog of the equation for the tangent
+line found in single variable calculus. We will use it in part B to develop the
+chain rule.&lt;/p&gt;
+&lt;p&gt;We will apply our understanding of partial derivatives to solving unconstrained
+optimization problems. (In part C we will solve constrained optimization
+problems.)&lt;/p&gt;
+&lt;p&gt;Last Modification: &lt;strong&gt;2020-02-07 Fri 16:44&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Session 24: Functions of Two Variables: Graphs</title>
+      <link>https://ppalazon.github.io/18.02/part-2a/session-24/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-2a/session-24/</guid>
+      <description>Captured On [2020-02-05 Wed 22:39] Source Session 24: Functions of Two Variables: Graphs | Part A: Functions of Two Variables, Tangent Approximation and Optimization | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Function of 1 variable
+  
+  Figure 2: Example of multivariable functions
+  
+  Figure 3: For simplicity, functions based on 2 or 3 variables</description>
+    </item>
+    
+    <item>
+      <title>Session 25: Level Curves and Contour Plots</title>
+      <link>https://ppalazon.github.io/18.02/part-2a/session-25/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-2a/session-25/</guid>
+      <description>Captured On [2020-02-05 Wed 22:40] Source Session 25: Level Curves and Contour Plots | Part A: Functions of Two Variables, Tangent Approximation and Optimization | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Contour plot definition
+  
+  Figure 2: Level of contour plot
+  
+  Figure 3: Contour plot examples</description>
+    </item>
+    
+    <item>
+      <title>Session 26: Partial Derivatives</title>
+      <link>https://ppalazon.github.io/18.02/part-2a/session-26/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-2a/session-26/</guid>
+      <description>Captured On [2020-02-05 Wed 22:40] Source Session 26: Partial Derivatives | Part A: Functions of Two Variables, Tangent Approximation and Optimization | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Derivative of a function of 1 variable
+  
+  Figure 2: Approximation formula
+  
+  Figure 3: Partial derivative definition</description>
+    </item>
+    
+    <item>
+      <title>Session 27: Approximation Formula</title>
+      <link>https://ppalazon.github.io/18.02/part-2a/session-27/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-2a/session-27/</guid>
+      <description>Captured On [2020-02-06 Thu 10:31] Source Session 27: Approximation Formula | Part A: Functions of Two Variables, Tangent Approximation and Optimization | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Review partial derivatives
+  
+  Figure 2: Approximation formula
+  
+  Figure 3: Justify approximation formula
+  
+  Figure 4: Tangent line to the same point</description>
+    </item>
+    
+    <item>
+      <title>Session 28: Optimization Problems</title>
+      <link>https://ppalazon.github.io/18.02/part-2a/session-28/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-2a/session-28/</guid>
+      <description>Captured On [2020-02-06 Thu 10:32] Source Session 28: Optimization Problems | Part A: Functions of Two Variables, Tangent Approximation and Optimization | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Applications of Partial Derivatives
+  
+  Figure 2: At local min or max
+  
+  Figure 3: Definition of critical point</description>
+    </item>
+    
+    <item>
+      <title>Session 29: Least Squares</title>
+      <link>https://ppalazon.github.io/18.02/part-2a/session-29/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-2a/session-29/</guid>
+      <description>Captured On [2020-02-06 Thu 10:32] Source Session 29: Least Squares | Part A: Functions of Two Variables, Tangent Approximation and Optimization | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Least squares interpolation
+  
+  Figure 2: Find best &amp;ldquo;a&amp;rdquo; and &amp;ldquo;b&amp;rdquo;
+  
+  Figure 3: Partial derivatives &amp;ldquo;a&amp;rdquo; and &amp;ldquo;b&amp;rdquo;</description>
+    </item>
+    
+    <item>
+      <title>Session 30: Second Derivative Test</title>
+      <link>https://ppalazon.github.io/18.02/part-2a/session-30/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-2a/session-30/</guid>
+      <description>Captured On [2020-02-06 Thu 10:32] Source Session 30: Second Derivative Test | Part A: Functions of Two Variables, Tangent Approximation and Optimization | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Recall critical points
+  
+  Figure 2: How do we find global min/man?
+  
+  Figure 3: Second derivative test</description>
+    </item>
+    
+  </channel>
+</rss>

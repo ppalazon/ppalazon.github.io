@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1: First Order Differential Equations on Pablo Palazon&#39;s Website</title>
+    <link>https://ppalazon.github.io/18.03/unit-1/</link>
+    <description>Recent content in 1: First Order Differential Equations on Pablo Palazon&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>CC BY-NC-ND 4.0</copyright>
+    <lastBuildDate>Tue, 17 Sep 2019 00:00:00 +0200</lastBuildDate><atom:link href="https://ppalazon.github.io/18.03/unit-1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Basic DE&#39;s and Separable Equations</title>
+      <link>https://ppalazon.github.io/18.03/unit-1/session-1/</link>
+      <pubDate>Tue, 17 Sep 2019 16:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-1/session-1/</guid>
+      <description>Captured On [2019-09-17 Tue 16:00] Source Basic DE&amp;rsquo;s and Separable Equations | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 Can be \(e^{at}=0\)? 1.1 Front Can be \(e^{at}=0\)?
+1.2 Back Never
+2 Write a sketch of the graph 2.1 Front Write a sketch of the graph
+\(y=e^t\)
+2.2 Back   3 Write a sketch of the graph 3.1 Front Write a sketch of the graph</description>
+    </item>
+    
+    <item>
+      <title>Geometric Methods</title>
+      <link>https://ppalazon.github.io/18.03/unit-1/session-2/</link>
+      <pubDate>Tue, 17 Sep 2019 16:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-1/session-2/</guid>
+      <description>Captured On [2019-09-17 Tue 16:00] Source Geometric Methods | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is a direction field 1.1 Front What is a direction field
+for the equation \(y&#39; = f(x,y)\)
+1.2 Back For each point \((x,y)\) of the plane is drawn a little segment whose slope is \(f(x,y)\)
+For example: \({\displaystyle \dv{y}{x} = 2x}\)
+  2 How can we draw a direction field by hand?</description>
+    </item>
+    
+    <item>
+      <title>First Order Linear ODE&#39;s</title>
+      <link>https://ppalazon.github.io/18.03/unit-1/session-4/</link>
+      <pubDate>Thu, 12 Sep 2019 13:40:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-1/session-4/</guid>
+      <description>Captured On [2019-09-11 Wed 20:32] Source First Order Linear ODE&amp;rsquo;s | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is a first order linear ODE? 1.1 Front What is a first order linear ODE?
+Write the standard form
+1.2 Back In the unknown function \(x = x(t)\)
+\({\displaystyle A(t) \dv{x}{t} + B(t) x(t) = C(t)}\)
+As \(A(t) \neq 0\), we can simplify the equation by dividing by \(A(t)\)</description>
+    </item>
+    
+    <item>
+      <title>Complex Arithmetic and Exponentials</title>
+      <link>https://ppalazon.github.io/18.03/unit-1/session-6/</link>
+      <pubDate>Thu, 26 Sep 2019 15:47:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-1/session-6/</guid>
+      <description>Captured On [2019-09-17 Tue 15:58] Source Complex Arithmetic and Exponentials | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is a complex number? 1.1 Front What is a complex number?
+1.2 Back A complex number is an expression of the form \(a + ib\)
+2 When can we say that 2 complex number are equals? 2.1 Front When can we say that 2 complex number are equals?</description>
+    </item>
+    
+    <item>
+      <title>Sinusoidal Functions</title>
+      <link>https://ppalazon.github.io/18.03/unit-1/session-7/</link>
+      <pubDate>Fri, 27 Sep 2019 18:57:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-1/session-7/</guid>
+      <description>Captured On [2019-09-26 Thu 15:47] Source Sinusoidal Functions | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is a sinusoidal function equation? 1.1 Front What is a sinusoidal function equation?
+1.2 Back \(f(t) = A \cos(\omega t - \phi)\)
+2 What is the sinusoidal oscillation equation? 2.1 Front What is the sinusoidal oscillation equation?
+2.2 Back \(f(t) = A \cos(\omega t - \phi)\)</description>
+    </item>
+    
+    <item>
+      <title>First Order Constant Coefficient Linear ODE&#39;s</title>
+      <link>https://ppalazon.github.io/18.03/unit-1/session-8/</link>
+      <pubDate>Tue, 01 Oct 2019 12:22:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-1/session-8/</guid>
+      <description>Captured On [2019-09-27 Fri 19:04] Source First Order Constant Coefficient Linear ODE&amp;rsquo;s | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is a constant coefficient First ODE? 1.1 Front What is a constant coefficient First ODE?
+1.2 Back \(\dot{y} + ky = q(t)\), where \(k\) is a constant
+2 What is the solution of a constant coefficient First ODE? 2.1 Front What is the solution of a constant coefficient First ODE?</description>
+    </item>
+    
+    <item>
+      <title>Exponential Input; Gain and Phase Lag</title>
+      <link>https://ppalazon.github.io/18.03/unit-1/session-9/</link>
+      <pubDate>Wed, 02 Oct 2019 13:05:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-1/session-9/</guid>
+      <description>Captured On [2019-10-01 Tue 12:22] Source Exponential Input; Gain and Phase Lag | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 Explain the method of optimism to solve this first order ODE 1.1 Front Explain the method of optimism to solve this first order ODE
+\(\dot{x} + 2x = 4e^{3t}\)
+1.2 Back The inspiration is based on the fact that \(\dv{t} e^{rt} = re^{rt}\).</description>
+    </item>
+    
+    <item>
+      <title>First Order Autonomous Differential Equations</title>
+      <link>https://ppalazon.github.io/18.03/unit-1/session-10/</link>
+      <pubDate>Sat, 05 Oct 2019 18:18:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-1/session-10/</guid>
+      <description>Captured On [2019-10-02 Wed 13:06] Source First Order Autonomous Differential Equations | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is an autonomous first order differential equation? 1.1 Front What is an autonomous first order differential equation?
+1.2 Back There are (in general) nonlinear equations of the form \(\dot{x} = f(x)\)
+The word autonomous means self governing and indicates that the rate of change of \(x\) is governed by \(x\) itself and it not dependent of time.</description>
+    </item>
+    
+    <item>
+      <title>Linear vs. Nonlinear</title>
+      <link>https://ppalazon.github.io/18.03/unit-1/session-11/</link>
+      <pubDate>Tue, 08 Oct 2019 09:24:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-1/session-11/</guid>
+      <description> Captured On [2019-10-07 Mon 13:29] Source Linear vs. Nonlinear | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  </description>
+    </item>
+    
+  </channel>
+</rss>

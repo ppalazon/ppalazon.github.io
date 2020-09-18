@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Damped Harmonic Oscillators  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="ode, ">
+
+
+<meta property="og:title" content="Damped Harmonic Oscillators  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.03/unit-2/session-13/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="content-source" content="18.03/unit-2/session-13.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Captured On [2019-10-11 Fri 17:46] Source [[https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-ii-second-order-constant-coefficient-linear-equations/damped-harmonic-oscillators/index.htm][Damped Harmonic Oscillators | Unit II: Second Order Constant Coefficient  Linear Equations | Differential Equations | Mathematics | MIT OpenCourseWare]]
+1 What is a damped sinusoid equation? 1.1 Front What is a damped sinusoid equation?
+Write the general form
+1.2 Back \(y(t) = A e^{- \lambda t} \cos(\omega t - \phi)\)
+  2 What is the basic solutions of DE is we get \(z(t)\) with complex exponential?"/>
+<meta property="og:article:published_time" content="2019-10-16T11:34:00&#43;02:00" />
+<meta property="og:article:modified_time" content="2019-10-16T11:34:00&#43;02:00" />
+
+
+
+<meta property="og:article:tag" content="ode">
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ppalazon" />
+<meta name="twitter:creator" content="@ppalazon" />
+<meta name="twitter:title" content="Damped Harmonic Oscillators" />
+<meta name="twitter:description" content="Captured On [2019-10-11 Fri 17:46] Source [[https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-ii-second-order-constant-coefficient-linear-equations/damped-harmonic-oscillators/index.htm][Damped Harmonic Oscillators | Unit II: Second Order Constant Coefficient  Linear Equations | Differential Equations | Mathematics | MIT OpenCourseWare]]
+1 What is a damped sinusoid equation? 1.1 Front What is a damped sinusoid equation?
+Write the general form
+1.2 Back \(y(t) = A e^{- \lambda t} \cos(\omega t - \phi)\)
+  2 What is the basic solutions of DE is we get \(z(t)\) with complex exponential?"/>
+<meta name="twitter:url" content="https://ppalazon.github.io/18.03/unit-2/session-13/" />
+<meta name="twitter:domain" content="https://ppalazon.github.io">
+
+
+
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+     "@type": "Article",
+     "headline": "Damped Harmonic Oscillators",
+     "author": {
+         "@type": "Person",
+         "name": "http://profiles.google.com/+?rel=author"
+     },
+     "datePublished": "2019-10-16",
+     "description": "",
+     "wordCount":  2410 
+ }
+</script>
+
+
+
+<link rel="canonical" href="https://ppalazon.github.io/18.03/unit-2/session-13/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+ }
+ .hero {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: calc(200px + (450 - 200) * ((100vw - 300px) / (1600 - 300)));
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: calc(-1 * (200px + (450 - 200) * ((100vw - 300px) / (1600 - 300))));
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+    <header class="container hat">
+        <h1>Damped Harmonic Oscillators
+</h1>
+
+        
+
+
+<span class="author">by
+    
+    Pablo Palazon
+    
+</span>
+
+
+    </header>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            
+            <div class="content">
+  <dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2019-10-11 Fri 17:46]</span></span></dd>
+<dt>Source</dt>
+<dd>[[<a href="https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-ii-second-order-constant-coefficient-linear-equations/damped-harmonic-oscillators/index.htm">https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-ii-second-order-constant-coefficient-linear-equations/damped-harmonic-oscillators/index.htm</a>][Damped Harmonic Oscillators | Unit II: Second Order Constant Coefficient</dd>
+</dl>
+<p>Linear Equations | Differential Equations | Mathematics | MIT OpenCourseWare]]</p>
+<h2 id="what-is-a-damped-sinusoid-equation"><span class="section-num">1</span> What is a damped sinusoid equation?</h2>
+<h3 id="front"><span class="section-num">1.1</span> Front</h3>
+<p><b>What is a damped sinusoid equation?</b></p>
+<p>Write the general form</p>
+<h3 id="back"><span class="section-num">1.2</span> Back</h3>
+<p>\(y(t) = A e^{- \lambda t} \cos(\omega t - \phi)\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/f3/5e6e6e-7f8a-4f62-b94a-e39655b7817d/_20200916_205702xu68iqw.png"/> 
+</figure>
+
+<h2 id="what-is-the-basic-solutions-of-de-is-we-get--zt---with-complex-exponential"><span class="section-num">2</span> What is the basic solutions of DE is we get \(z(t)\) with complex exponential?</h2>
+<h3 id="front"><span class="section-num">2.1</span> Front</h3>
+<p><b>What is the basic solutions of DE is we get $z(t)$ with complex exponential?</b></p>
+<p>\(z(t) = e^{(a + ib)t} = e^{at}(\cos(bt) + i \sin(bt))\)</p>
+<h3 id="back"><span class="section-num">2.2</span> Back</h3>
+<p>Using the Real Solution Theorem, the two basic solutions are the real
+and imaginary part os \(z_1\)</p>
+<ul>
+<li>\(e^{at} \cos(bt)\)</li>
+<li>\(e^{at} \sin(bt)\)</li>
+</ul>
+<h2 id="which-are-the-solutions-if-the-roots-of-characteristic-polynomial-are-repeated"><span class="section-num">3</span> Which are the solutions if the roots of characteristic polynomial are repeated?</h2>
+<h3 id="front"><span class="section-num">3.1</span> Front</h3>
+<p><b>Which are the solutions if the roots of characteristic polynomial are repeated?</b></p>
+<p>In a second order constant coefficients linear equation, for example
+\(p(s) = (s+2)^2\)</p>
+<h3 id="back"><span class="section-num">3.2</span> Back</h3>
+<p>\(r = -2\) as a repeated root, the only exponential solution is
+\(e^{-2t}\). But, we can looking for another solution which is not a
+constant multiple of \(e^{-2t}\). Given by \(te^{-2t}\)</p>
+<p>\(x(t) = c_1e^{-2t} + c_2 t e^{-2t} = e^{-2t} (c_1 + c_2t)\)</p>
+<h2 id="suppose-the-roots-of-a-certain-homogeneous-constant-coefficient-linear-equation-are"><span class="section-num">4</span> Suppose the roots of a certain homogeneous constant coefficient linear equation are</h2>
+<h3 id="front"><span class="section-num">4.1</span> Front</h3>
+<p><b>Suppose the roots of a certain homogeneous constant coefficient linear equation are</b></p>
+<p>\(3, 4, 4, 4, 5 \pm 2i, 5 \pm 2i\)</p>
+<p>Give the general real solutions to the equation</p>
+<h3 id="back"><span class="section-num">4.2</span> Back</h3>
+<p>Basic solutions</p>
+<ul>
+<li>\(e^{3t}\)</li>
+<li>\(e^{4t}\)</li>
+<li>\(te^{4t}\)</li>
+<li>\(t^2e^{4t}\)</li>
+<li>\(e^{5t} \cos(2t)\)</li>
+<li>\(e^{5t} \sin(2t)\)</li>
+<li>\(te^{5t} \cos(2t)\)</li>
+<li>\(te^{5t} \sin(2t)\)</li>
+</ul>
+<p>For each repeated root we added a multiple \(t\) to the basic solutions</p>
+<p>Using superposition, the general solution is</p>
+<p>\(x(t) = c_1 e^{3t} + c_2 e^{4t} + c_3 te^{4t} + c_4 t^2e^{4t} + c_5
+e^{5t} \cos(2t) + c_6 e^{5t} \sin(2t) + c_7 t e^{5t} \cos(2t) + c_8 t
+e^{5t} \sin(2t)\)</p>
+<h2 id="what-is-the-order-of-the-de-if-we-get-8-roots"><span class="section-num">5</span> What is the order of the DE if we get 8 roots?</h2>
+<h3 id="front"><span class="section-num">5.1</span> Front</h3>
+<p><b>What is the order of the DE if we get 8 roots?</b></p>
+<h3 id="back"><span class="section-num">5.2</span> Back</h3>
+<p>The order of the differential equation is \(8\)</p>
+<h2 id="how-can-get-a-real-solution-if-get-complex-superposition-solution"><span class="section-num">6</span> How can get a real solution if get complex superposition solution?</h2>
+<h3 id="front"><span class="section-num">6.1</span> Front</h3>
+<p><b>How can get a real solution if get complex superposition solution?</b></p>
+<p>We get 2 complex roots in the characteristic polynomial, and we get
+\(z_1(t) = e^{(a + ib)t}\) and \(z_2(t) = e^{(a - ib)t}\).</p>
+<p>We say that \(x(t) = C_1 e^{(a + ib)t} + C_2 e^{(a - ib)t}\)</p>
+<p>Define \(C_1\) and \(C_2\) and write a complete form</p>
+<h3 id="back"><span class="section-num">6.2</span> Back</h3>
+<p>If \(x(t)\) is a real solutions \(C_1\) and \(C_2\) must be complex
+numbers. If you need to get only the real part we could expand the
+solution and get it, but it&rsquo;ll be to long.</p>
+<p>If we change \(i \to -i\) and the formula is the same, we can say that
+this is a real number, so</p>
+<p>\(x(t) = C_1 e^{(a + ib)t} + C_2 e^{(a - ib)t} = \bar{C_1} e^{(a - ib)t} + \bar{C_2} e^{(a + ib)t}\) this implies that</p>
+<p>\(\bar{C_1} = C_2\) and \(\bar{C_2} = C_1\), so the real solution must be
+in the form</p>
+<p>\(x(t) = (c + id) e^{(a + ib)t} + (c - id) e^{(a - ib)t}\)</p>
+<p><strong>This form in science and engineering</strong></p>
+<h2 id="can-we-apply-the-uniqueness-theorem-to-a-second-order-de"><span class="section-num">7</span> Can we apply the uniqueness theorem to a second order DE?</h2>
+<h3 id="front"><span class="section-num">7.1</span> Front</h3>
+<p><b>Can we apply the uniqueness theorem to a second order DE?</b></p>
+<h3 id="back"><span class="section-num">7.2</span> Back</h3>
+<p>No, the uniqueness theorem as stated only applies to first order
+equations</p>
+<h2 id="what-are-the-values--r--for-this-equation"><span class="section-num">8</span> What are the values \(r\) for this equation?</h2>
+<h3 id="front"><span class="section-num">8.1</span> Front</h3>
+<p><b>What are the values $r$ for this equation?</b></p>
+<p>\(r^2 + k = 0\)</p>
+<h3 id="back"><span class="section-num">8.2</span> Back</h3>
+<p>\(r = \pm \sqrt{-k} = \pm i \sqrt{k}\)</p>
+<h2 id="given-the-solution-get-its-de"><span class="section-num">9</span> Given the solution get its DE?</h2>
+<h3 id="front"><span class="section-num">9.1</span> Front</h3>
+<p><b>Given the solution get its DE?</b></p>
+<p>\(y = c_1 + c_2x\)</p>
+<h3 id="back"><span class="section-num">9.2</span> Back</h3>
+<p>\(y' = 2\) and \(y''=0\), so this implies \(a = 1\), \(b=c\), on its
+characteristic polynomial \(ar^2 + br + c = 0\)</p>
+<h2 id="what-is-the-model-of-the-damped-harmonic-oscillator"><span class="section-num">10</span> What is the model of the damped harmonic oscillator?</h2>
+<h3 id="front"><span class="section-num">10.1</span> Front</h3>
+<p><b>What is the model of the damped harmonic oscillator?</b></p>
+<p>Write the DE</p>
+<h3 id="back"><span class="section-num">10.2</span> Back</h3>
+<p>\(m\ddot{x} + b\dot{x} + kx = 0\)</p>
+<p>Where \(m \gt 0\), \(b \geq 0\), \(k \gt 0\)</p>
+<h2 id="what-are-the-differences-between-damped-harmonic-oscillator-and-simple-harmonic-oscillator"><span class="section-num">11</span> What are the differences between damped harmonic oscillator and simple harmonic oscillator?</h2>
+<h3 id="front"><span class="section-num">11.1</span> Front</h3>
+<p><b>What are the differences between damped harmonic oscillator and simple harmonic oscillator?</b></p>
+<h3 id="back"><span class="section-num">11.2</span> Back</h3>
+<p>Damped harmonic oscillator: \(m\ddot{x} + b\dot{x} + kx = 0\)</p>
+<p>When \(b=0\) it has a pure sinusoidal solution and this DE is called
+simple harmonic oscillator</p>
+<h2 id="how-can-we-study-damped-harmonic-oscillator-system"><span class="section-num">12</span> How can we study damped harmonic oscillator system?</h2>
+<h3 id="front"><span class="section-num">12.1</span> Front</h3>
+<p><b>How can we study damped harmonic oscillator system?</b></p>
+<p>Which method?</p>
+<h3 id="back"><span class="section-num">12.2</span> Back</h3>
+<p>The roots of characteristic polynomial</p>
+<h2 id="what-are-the-solutions-of-a-simple-harmonic-oscillator"><span class="section-num">13</span> What are the solutions of a simple harmonic oscillator?</h2>
+<h3 id="front"><span class="section-num">13.1</span> Front</h3>
+<p><b>What are the solutions of a simple harmonic oscillator?</b></p>
+<h3 id="back"><span class="section-num">13.2</span> Back</h3>
+<p>DE: \(m\ddot{x} + kx = 0\)</p>
+<p>\(x(t) = c_1 \cos(\omega t) + c_2 \sin(\omega t) = A\cos(\omega t -
+\phi)\), where \(\omega = \sqrt{k/m}\)</p>
+<p>The output is pure sinusoid</p>
+<figure>
+    <img src="https://ppalazon.github.io/13/dadfc6-8a63-490e-aad7-2607269e3bd0/_20200916_205713YA6M5xy.png"/> 
+</figure>
+
+<h2 id="what-kind-of-response-are-there-in-a-harmonic-oscillator-system"><span class="section-num">14</span> What kind of response are there in a harmonic oscillator system?</h2>
+<h3 id="front"><span class="section-num">14.1</span> Front</h3>
+<p><b>What kind of response are there in a harmonic oscillator system?</b></p>
+<p>Estimate its values for each kind of response</p>
+<h3 id="back"><span class="section-num">14.2</span> Back</h3>
+<p>\(m\ddot{x} + b\dot{x} + kx = 0\), where \(m \gt 0, b \geq 0, k \gt 0\)</p>
+<p>It has characteristic equation</p>
+<p>\(ms^2 + bs + k = 0\)</p>
+<p>with characteristic roots</p>
+<p>\({\displaystyle \frac{-b \pm \sqrt{b^2 - 4mk}}{2m}}\)</p>
+<dl>
+<dt>underdamping</dt>
+<dd>\(b^2 \lt 4mk\) (\(b\) is small relative to \(m\) and \(k\))</dd>
+<dt>overdamping</dt>
+<dd>\(b^2 \gt 4mk\) (\(b\) is large relative to \(m\) and \(k\))</dd>
+<dt>critical damping</dt>
+<dd>\(b^2 = 4mk\) (\(b\) is just between over and
+underdamping)</dd>
+</dl>
+<h2 id="what-does-mean-that-a-harmonic-oscillator-system-is-underdamping"><span class="section-num">15</span> What does mean that a harmonic oscillator system is underdamping?</h2>
+<h3 id="front"><span class="section-num">15.1</span> Front</h3>
+<p><b>What does mean that a harmonic oscillator system is underdamping?</b></p>
+<p>\(m\ddot{x} + b\dot{x} + kx = 0\)</p>
+<p>Solve it and give solutions</p>
+<h3 id="back"><span class="section-num">15.2</span> Back</h3>
+<p>Where characteristic roots are \({\displaystyle \frac{-b \pm
+\sqrt{b^2 - 4mk}}{2m}}\)</p>
+<p>If \(b^2 \lt 4mk\) the square root are negative (characteristic root are
+non-real), \(b\) is relatively small</p>
+<p>Let \({\displaystyle \omega_d = \frac{\sqrt{\abs{b^2 - 4mk}}}{2m}}\),
+then</p>
+<ul>
+<li>characteristic root are
+<ul>
+<li>\({\displaystyle \frac{-b}{2m} \pm i \omega_d}\)</li>
+</ul>
+</li>
+<li>Complex exponential solutions:
+<ul>
+<li>\({\displaystyle e^{(-b/2m + i\omega_d)t}}\)</li>
+<li>\({\displaystyle e^{(-b/2m - i\omega_d)t}}\)</li>
+</ul>
+</li>
+<li>Basic real solutions:
+<ul>
+<li>\({\displaystyle e^{-bt/2m} \cos(\omega_d t)}\)</li>
+<li>\({\displaystyle e^{-bt/2m} \sin(\omega_d t)}\)</li>
+</ul>
+</li>
+<li>General real solution
+<ul>
+<li>\({\displaystyle c_1 e^{-bt/2m} \cos(\omega_d t) + c_2 e^{-bt/2m}
+\sin(\omega_d t) = A e^{-bt/2m} \cos(\omega_d t - \phi)}\)</li>
+</ul>
+</li>
+</ul>
+<h2 id="what-does-mean-physically-that-a-harmonic-oscillator-system-is-underdamping"><span class="section-num">16</span> What does mean physically that a harmonic oscillator system is underdamping?</h2>
+<h3 id="front"><span class="section-num">16.1</span> Front</h3>
+<p><b>What does mean physically that a harmonic oscillator system is underdamping?</b></p>
+<p>\(m\ddot{x} + b\dot{x} + kx = 0\), which solution is \(A e^{-bt/2m}
+\cos(\omega_d t - \phi)\)</p>
+<h3 id="back"><span class="section-num">16.2</span> Back</h3>
+<p>When \(b=0\) the response is a sinusoid. Damping is a frictional force,
+so it generates heat and dissipates energy. When the damping constant
+\(b\) is small we would expect the system still oscillate, but with
+decreasing amplitude as its energy is converted to heat.</p>
+<p>Over time it should come to rest at equilibrium. In the solution, the
+factor \(\cos(\omega_d t - \phi)\) shows the oscillation. The
+exponential factor \(e^{-bt/2m}\) has a negative exponent and therefore
+gives the decaying amplitude. As \(t \to \infty\), the exponential goes
+asymptotically to \(0\), so \(x(t)\) also goes asymptotically to its
+equilibrium position \(x=0\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/75/38a367-d03d-43d0-892f-87ba8d915a9d/_20200916_205723MEWVs3O.png"/> 
+</figure>
+
+<h2 id="what-is-the--omega-d--in-a-harmonic-oscillator-system"><span class="section-num">17</span> What is the \(\omega_{d}\) in a harmonic oscillator system?</h2>
+<h3 id="front"><span class="section-num">17.1</span> Front</h3>
+<p><b>What is the $\omega_{d}$ in a harmonic oscillator system?</b></p>
+<p>\(m\ddot{x} + b\dot{x} + kx = 0\), which solution is \(A e^{-bt/2m}
+\cos(\omega_d t - \phi)\)</p>
+<h3 id="back"><span class="section-num">17.2</span> Back</h3>
+<p>Is the damped angular (or circular) frequency, also it&rsquo;s called
+pseudo-frequency of \(x(t)\). But \(\omega_d\) is not periodic and only
+periodic functions have a frequency. Nonetheless, \(x(t)\) does
+oscillate, crossing \(x=0\) twice each pseudo-period.</p>
+<p>\({\displaystyle \omega_d = \frac{\sqrt{\abs{b^2 - 4mk}}}{2m}}\)</p>
+<h2 id="what-does-mean-that-a-harmonic-oscillator-system-is-overdamping"><span class="section-num">18</span> What does mean that a harmonic oscillator system is overdamping?</h2>
+<h3 id="front"><span class="section-num">18.1</span> Front</h3>
+<p><b>What does mean that a harmonic oscillator system is overdamping?</b></p>
+<p>\(m\ddot{x} + b\dot{x} + kx = 0\)</p>
+<p>Solve it and give solutions</p>
+<h3 id="back"><span class="section-num">18.2</span> Back</h3>
+<p>It&rsquo;s the case when the characteristic roots are distinct real
+roots. If \(b^2 \gt 4mk\), the term under square root is positive. In
+order for \(b^2 \gt 4mk\) the damping constant \(b\) must be relatively
+large.</p>
+<p>The roots are both negative, since \(b^2 - 4mk \lt b^2\) the square root
+is less than \(b\) and therefore the root \(-b + \sqrt{b^2 - 4mk} \lt 0\)</p>
+<ul>
+<li>Characteristic roots
+<ul>
+<li>\({\displaystyle r_1 = \frac{-b + \sqrt{b^2 - 4mk}}{2m}}\)</li>
+<li>\({\displaystyle r_2 = \frac{-b - \sqrt{b^2 - 4mk}}{2m}}\)</li>
+</ul>
+</li>
+<li>Exponential solutions
+<ul>
+<li>\({\displaystyle e^{r_1t}}\)</li>
+<li>\({\displaystyle e^{r_2t}}\)</li>
+</ul>
+</li>
+<li>General solution
+<ul>
+<li>\({\displaystyle x(t) = c_1 e^{r_1t} + c_2 e^{r_2t}}\)</li>
+</ul>
+</li>
+</ul>
+<h2 id="what-does-mean-physically-that-a-harmonic-oscillator-system-is-overdamping"><span class="section-num">19</span> What does mean physically that a harmonic oscillator system is overdamping?</h2>
+<h3 id="front"><span class="section-num">19.1</span> Front</h3>
+<p><b>What does mean physically that a harmonic oscillator system is overdamping?</b></p>
+<p>\(m\ddot{x} + b\dot{x} + kx = 0\), where its solution is \(x(t) = c_1
+e^{r_1t} + c_2 e^{r_2t}\)</p>
+<h3 id="back"><span class="section-num">19.2</span> Back</h3>
+<p>When the damping is large the frictional force is so great that the
+system can&rsquo;t oscillate. It might sound odd, but an unforced
+overdamping harmonic oscillator does not oscillate. Since both
+exponents are negative every solution in this case goes asymptotically
+to the equilibrium \(x=0\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/17/ef96c8-7e95-4d72-ac07-0d30667efa71/_20200916_2057364iy7lG9.png"/> 
+</figure>
+
+<p>At the top of many doors is a spring to make them shut
+automatically. The spring is damped to control the rate at which the
+door closes. If the damper is strong enough, so that the spring is
+overdamping, then the door just settles back to the equilibrium
+position (i.e. the closed position) without oscillating - which is
+usually what is wanted in this case.</p>
+<h2 id="what-does-mean-that-a-harmonic-oscillator-system-is-critical-damping"><span class="section-num">20</span> What does mean that a harmonic oscillator system is critical damping?</h2>
+<h3 id="front"><span class="section-num">20.1</span> Front</h3>
+<p><b>What does mean that a harmonic oscillator system is critical damping?</b></p>
+<p>\(m\ddot{x} + b\dot{x} + kx = 0\)</p>
+<p>Solve it and give solutions</p>
+<h3 id="back"><span class="section-num">20.2</span> Back</h3>
+<p>It&rsquo;s the case when the characteristic roots are repeated. If \(b^2 =
+4mk\) then the term under the square root is \(0\)</p>
+<ul>
+<li>Repeated characteristic roots
+<ul>
+<li>\({\displaystyle \frac{-b}{2m}}\)</li>
+</ul>
+</li>
+<li>Basic solutions
+<ul>
+<li>\({\displaystyle x_1(t) = e^{-bt/2m}}\)</li>
+<li>\({\displaystyle x_2(t) = te^{-bt/2m}}\)</li>
+</ul>
+</li>
+<li>General solution
+<ul>
+<li>\({\displaystyle x(t) = e^{-bt/2m} (c_1 + c_2t)}\)</li>
+</ul>
+</li>
+</ul>
+<h2 id="what-does-mean-physically-that-a-harmonic-oscillator-system-is-critical-damping"><span class="section-num">21</span> What does mean physically that a harmonic oscillator system is critical damping?</h2>
+<h3 id="front"><span class="section-num">21.1</span> Front</h3>
+<p><b>What does mean physically that a harmonic oscillator system is critical damping?</b></p>
+<h3 id="back"><span class="section-num">21.2</span> Back</h3>
+<p>As in the overdamping case, this does not oscillate. It is worth
+noting that for a fixed \(m\) and \(k\), choosing \(b\) to be the critical
+damping value gives the fastest return of the system to its
+equilibrium position.</p>
+<p>In engineering design this is often a desirable property. This can be
+seen by considering the roots, but we will not go through the algebra
+that show this.</p>
+<h2 id="what-are-the-differences-between-overdamping-and-critical-damping-harmonic-oscillator"><span class="section-num">22</span> What are the differences between overdamping and critical damping harmonic oscillator?</h2>
+<h3 id="front"><span class="section-num">22.1</span> Front</h3>
+<p><b>What are the differences between overdamping and critical damping harmonic oscillator?</b></p>
+<h3 id="back"><span class="section-num">22.2</span> Back</h3>
+<p>The critical damping response gives the fastest return of the system
+to its equilibrium position.</p>
+<h2 id="what-happens-if-we-increases-the-damping-constant-in-a-harmonic-oscillator"><span class="section-num">23</span> What happens if we increases the damping constant in a harmonic oscillator?</h2>
+<h3 id="front"><span class="section-num">23.1</span> Front</h3>
+<p><b>What happens if we increases the damping constant in a harmonic oscillator?</b></p>
+<p>\(m\ddot{x} + b\dot{x} + kx = 0\)</p>
+<h3 id="back"><span class="section-num">23.2</span> Back</h3>
+<p>If \(b\) goes up, then the damped angular frequency goes down. It that
+means that the frequency of oscillation will be slowed, until critical
+damping or over damping.</p>
+<h2 id="suppose-that--xt---is-a-solution-of-the-equation--m-ddot-x-plus-b-dot-x-plus-kx-0"><span class="section-num">24</span> Suppose that \(x(t)\) is a solution of the equation \(m\ddot{x} + b\dot{x} + kx=0\)</h2>
+<h3 id="front"><span class="section-num">24.1</span> Front</h3>
+<p><b>Suppose that $x(t)$ is a solution of the equation $m\ddot{x} + b\dot{x} + kx=0$</b></p>
+<p>where \(x(t) = e^{-t/2} \cos(3t)\)</p>
+<p>What are the exponential solutions (solution of the form \(e^{\alpha
+t}\))?</p>
+<h3 id="back"><span class="section-num">24.2</span> Back</h3>
+<ul>
+<li>\(e^{(-1/2 + 3i)t}\)</li>
+<li>\(e^{(-1/2 - 3i)t}\)</li>
+</ul>
+<h2 id="how-can-we-graph-exponential-solutions-curve-in-the-complex-plane"><span class="section-num">25</span> How can we graph exponential solutions curve in the complex plane?</h2>
+<h3 id="front"><span class="section-num">25.1</span> Front</h3>
+<p><b>How can we graph exponential solutions curve in the complex plane?</b></p>
+<p>for example, \(z(t) = e^{(-1/2 + 3i)t}\)</p>
+<h3 id="back"><span class="section-num">25.2</span> Back</h3>
+<p>Using parametric functions</p>
+<ul>
+<li>\(x(t) = e^{-t/2} \cos(3t)\)</li>
+<li>\(y(t) = e^{-t/2} \sin(3t)\)</li>
+</ul>
+<figure>
+    <img src="https://ppalazon.github.io/88/595323-2c1f-4548-aa49-0d3f55fff900/_20200916_205754gCNq9VZ.png"/> 
+</figure>
+
+<h2 id="let--omega-gt-0--dot-a-damped-sinusoid--xt--ae-at-cos--omega-t"><span class="section-num">26</span> Let \(\omega \gt 0\). A damped sinusoid \(x(t) = Ae^{-at}\cos(\omega t)\)</h2>
+<h3 id="front"><span class="section-num">26.1</span> Front</h3>
+<p><b>Let $\omega \gt 0$. A damped sinusoid $x(t) = Ae^{-at}\cos(\omega t)$</b></p>
+<p>With &ldquo;pseudo-period&rdquo; \(2\pi / \omega\)</p>
+<p>What is the spacing between successive maxima of \(x(t)\)?. Is it always
+the same, or does it differ from one successive pair of maxima to the
+next?</p>
+<h3 id="back"><span class="section-num">26.2</span> Back</h3>
+<p>The extrema of \(x(t)\) occur when \(\dot{x}(t) = 0\)</p>
+<ul>
+<li>\({\displaystyle 0 = Ae^{-at}(-a \cos(\omega t) - \omega \sin(\omega
+t))}\)</li>
+<li>\({\displaystyle \omega \sin(\omega t) = -a \cos(\omega t)}\)</li>
+<li>\({\displaystyle \tan(\omega t) = - \frac{a}{\omega}}\)</li>
+</ul>
+<p>The maxima occur at every other such \(t\), and the spacing between
+successive maxima is twice the period of \(\tan(\omega t)\), which is
+just the pseudo-period \(2 \pi/\omega\). This is always the same since it
+doesn&rsquo;t depend on \(t\) or \(x\)</p>
+<h2 id="let-damped-sinusoid--ae-at-cos-omega-t---where--omega-gt-0"><span class="section-num">27</span> Let damped sinusoid \(Ae^{-at}\cos(\omega t)\) where \(\omega \gt 0\)</h2>
+<h3 id="front"><span class="section-num">27.1</span> Front</h3>
+<p><b>Let damped sinusoid $Ae^{-at}\cos(\omega t)$ where $\omega \gt 0$</b></p>
+<p>How could we get the \(a\) value?</p>
+<h3 id="back"><span class="section-num">27.2</span> Back</h3>
+<p>Suppose that 2 successive maxima occur at \(t = t_0\) and \(t = t_1\),
+that means that \(\cos(\omega t_1) = \cos(\omega t_0 + 2 \pi) =
+\cos(\omega t_0)\)</p>
+<p>Getting the ratio \(\frac{x(t_1)}{x(t_0)} = e^{a(t_0 - t_1)}\)</p>
+<p>\({\displaystyle a = \frac{\ln(x(t_1)) - \ln(x(t_0))}{t_0 - t_1}}\)</p>
+<h2 id="what-is-a-normalized-pair-of-solutions-of-a-damping-oscillator-system"><span class="section-num">28</span> What is a normalized pair of solutions of a damping oscillator system?</h2>
+<h3 id="front"><span class="section-num">28.1</span> Front</h3>
+<p><b>What is a normalized pair of solutions of a damping oscillator system?</b></p>
+<h3 id="back"><span class="section-num">28.2</span> Back</h3>
+<ul>
+<li>\(x_1\) is a solution with IVP \(x_1(0) = 1\) and \(\dot{x_1}(0) = 0\)</li>
+<li>\(x_2\) is a solution with IVP \(x_2(0) = 0\) and \(\dot{x_2}(0) = 1\)</li>
+</ul>
+<h2 id="from-this-normalized-solutions-how-can-we-get-any-other-solution-from-ivp"><span class="section-num">29</span> From this normalized solutions, how can we get any other solution from IVP?</h2>
+<h3 id="front"><span class="section-num">29.1</span> Front</h3>
+<p><b>From this normalized solutions, how can we get any other solution from IVP?</b></p>
+<ul>
+<li>\(x_1\) is a solution with IVP \(x_1(0) = 1\) and \(\dot{x_1}(0) = 0\)</li>
+<li>\(x_2\) is a solution with IVP \(x_2(0) = 0\) and \(\dot{x_2}(0) = 1\)</li>
+</ul>
+<p>New IVP \(x(0) = 2\) and \(\dot{x}(0) = 3\)</p>
+<h3 id="back"><span class="section-num">29.2</span> Back</h3>
+<p>\(x = 2 \cdot x_1 + 3 x_2\)</p>
+<h2 id="what-are-2-different-independent-solutions-for-a-ode"><span class="section-num">30</span> What are 2 different independent solutions for a ODE?</h2>
+<h3 id="front"><span class="section-num">30.1</span> Front</h3>
+<p><b>What are 2 different independent solutions for a ODE?</b></p>
+<p>For example \(y_1\) and \(y_2\)</p>
+<h3 id="back"><span class="section-num">30.2</span> Back</h3>
+<p>These 2 solutions are different if \(y_1 \neq c y_2\) and \(y_2 \neq c'
+y_1\). There is an exception if one of them are \(y_1 = 0\) and \(y_2 \neq
+0\)</p>
+<h2 id="is-the-derivative-a-linear-operator-with-respect-to-sum"><span class="section-num">31</span> Is the derivative a linear operator with respect to sum?</h2>
+<h3 id="front"><span class="section-num">31.1</span> Front</h3>
+<p><b>Is the derivative a linear operator with respect to sum?</b></p>
+<h3 id="back"><span class="section-num">31.2</span> Back</h3>
+<p>Let \(y(x)\) be a function and \(c\) a constant</p>
+<ul>
+<li>\((y_1 + y_2)' = y_1' + y_2'\)</li>
+<li>\((cy)' = c y'\)</li>
+</ul>
+
+</div>
+
+
+            <footer>
+    
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-2%2fsession-13%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Damped%20Harmonic%20Oscillators&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-2%2fsession-13%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-2%2fsession-13%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-2%2fsession-13%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-2%2fsession-13%2f&amp;title=Damped%20Harmonic%20Oscillators" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Damped%20Harmonic%20Oscillators&amp;body=Check out this site https%3a%2f%2fppalazon.github.io%2f18.03%2funit-2%2fsession-13%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+
+<nav>
+    <ul class="pager">
+    
+    <li class="previous">
+        <a href="https://ppalazon.github.io/18.03/unit-2/session-12/" title="Modes and the Characteristic Equation">
+            <span aria-hidden="true">&larr;</span>Modes and the Characteristic Equation
+        </a>
+    </li>
+    
+
+    
+    <li class="next">
+        <a href="https://ppalazon.github.io/18.03/unit-2/session-14/" title="Exponential Response">
+            Exponential Response <span aria-hidden="true">&rarr;</span>
+        </a>
+    </li>
+    
+    </ul>
+</nav>
+
+
+
+</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//ppalazon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+        </div>
+    </div>
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/">18.03 Differential Equations</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/unit-2/">2: Second Order Constant Coefficient Linear Equations</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.03/unit-2/session-13/">Damped Harmonic Oscillators</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

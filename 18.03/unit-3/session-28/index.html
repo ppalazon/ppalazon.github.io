@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Partial Fractions and Inverse Laplace Transform  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="ode, maths, ">
+
+
+<meta property="og:title" content="Partial Fractions and Inverse Laplace Transform  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.03/unit-3/session-28/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="content-source" content="18.03/unit-3/session-28.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Captured On [2020-01-02 Thu 18:40] Source Partial Fractions and Inverse Laplace Transform | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is a rational function? 1.1 Front What is a rational function?
+1.2 Back Is a function that is the ratio of two polynomials
+\({\displaystyle \frac{s &#43; }{s^2 &#43; 7s &#43; 9}}\)
+2 When can we say that a rational function is proper?"/>
+<meta property="og:article:published_time" content="2019-11-26T00:00:00&#43;01:00" />
+<meta property="og:article:modified_time" content="2019-11-26T00:00:00&#43;01:00" />
+
+
+
+<meta property="og:article:tag" content="ode">
+
+<meta property="og:article:tag" content="maths">
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ppalazon" />
+<meta name="twitter:creator" content="@ppalazon" />
+<meta name="twitter:title" content="Partial Fractions and Inverse Laplace Transform" />
+<meta name="twitter:description" content="Captured On [2020-01-02 Thu 18:40] Source Partial Fractions and Inverse Laplace Transform | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is a rational function? 1.1 Front What is a rational function?
+1.2 Back Is a function that is the ratio of two polynomials
+\({\displaystyle \frac{s &#43; }{s^2 &#43; 7s &#43; 9}}\)
+2 When can we say that a rational function is proper?"/>
+<meta name="twitter:url" content="https://ppalazon.github.io/18.03/unit-3/session-28/" />
+<meta name="twitter:domain" content="https://ppalazon.github.io">
+
+
+
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+     "@type": "Article",
+     "headline": "Partial Fractions and Inverse Laplace Transform",
+     "author": {
+         "@type": "Person",
+         "name": "http://profiles.google.com/+?rel=author"
+     },
+     "datePublished": "2019-11-26",
+     "description": "",
+     "wordCount":  1416 
+ }
+</script>
+
+
+
+<link rel="canonical" href="https://ppalazon.github.io/18.03/unit-3/session-28/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+ }
+ .hero {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: calc(200px + (450 - 200) * ((100vw - 300px) / (1600 - 300)));
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: calc(-1 * (200px + (450 - 200) * ((100vw - 300px) / (1600 - 300))));
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+    <header class="container hat">
+        <h1>Partial Fractions and Inverse Laplace Transform
+</h1>
+
+        
+
+
+<span class="author">by
+    
+    MIT OCW, Pablo Palazon
+    
+</span>
+
+
+    </header>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            
+            <div class="content">
+  <dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2020-01-02 Thu 18:40]</span></span></dd>
+<dt>Source</dt>
+<dd><a href="https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-iii-fourier-series-and-laplace-transform/partial-fractions-and-inverse-laplace-transform/">Partial Fractions and Inverse Laplace Transform | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare</a></dd>
+</dl>
+<h2 id="what-is-a-rational-function"><span class="section-num">1</span> What is a rational function?</h2>
+<h3 id="front"><span class="section-num">1.1</span> Front</h3>
+<p><b>What is a rational function?</b></p>
+<h3 id="back"><span class="section-num">1.2</span> Back</h3>
+<p>Is a function that is the ratio of two polynomials</p>
+<p>\({\displaystyle \frac{s + }{s^2 + 7s + 9}}\)</p>
+<h2 id="when-can-we-say-that-a-rational-function-is-proper"><span class="section-num">2</span> When can we say that a rational function is proper?</h2>
+<h3 id="front"><span class="section-num">2.1</span> Front</h3>
+<p><b>When can we say that a rational function is proper?</b></p>
+<h3 id="back"><span class="section-num">2.2</span> Back</h3>
+<p>A rational function is called <strong>proper</strong> if the degree of the numerator is
+strictly smaller than the degree of the denominator</p>
+<p>For example: \({\displaystyle \frac{s + 1}{s^2 + 7s + 9}}\)</p>
+<h2 id="what-is-the-objective-of-long-division-of-2-polynomials"><span class="section-num">3</span> What is the objective of long-division of 2 polynomials?</h2>
+<h3 id="front"><span class="section-num">3.1</span> Front</h3>
+<p><b>What is the objective of long-division of 2 polynomials?</b></p>
+<h3 id="back"><span class="section-num">3.2</span> Back</h3>
+<p>Using long-division we can always write an improper rational function as a
+polynomial plus a proper rational function.</p>
+<p>The partial fraction decomposition only applies to proper functions.</p>
+<h2 id="when-can-we-do-the-partial-fraction-decomposition"><span class="section-num">4</span> When can we do the partial fraction decomposition?</h2>
+<h3 id="front"><span class="section-num">4.1</span> Front</h3>
+<p><b>When can we do the partial fraction decomposition?</b></p>
+<h3 id="back"><span class="section-num">4.2</span> Back</h3>
+<p>When you have a proper rational function</p>
+<h2 id="use-long-division-to-rewrite-this-rational-function"><span class="section-num">5</span> Use long-division to rewrite this rational function?</h2>
+<h3 id="front"><span class="section-num">5.1</span> Front</h3>
+<p><b>Use long-division to rewrite this rational function?</b></p>
+<p>\({\displaystyle \frac{s^3 + 2s + 1}{s^2 + s - 2}}\)</p>
+<h3 id="back"><span class="section-num">5.2</span> Back</h3>
+<p>\({\displaystyle \frac{s^3 + 2s + 1}{s^2 + s - 2} = s - 1 + \frac{5s - 1}{s^2 +
+s - 2}}\)</p>
+<h2 id="compute-the-partial-fraction-for-this-rational-function"><span class="section-num">6</span> Compute the partial fraction for this rational function</h2>
+<h3 id="front"><span class="section-num">6.1</span> Front</h3>
+<p><b>Compute the partial fraction for this rational function</b></p>
+<p>\({\displaystyle \frac{3}{(s - 1)(s + 1)(s - 3)}}\)</p>
+<h3 id="back"><span class="section-num">6.2</span> Back</h3>
+<p>\({\displaystyle \frac{3}{(s - 1)(s + 1)(s - 3)} = \frac{A}{s - 1} + \frac{B}{s +
+1} + \frac{C}{s - 3}}\)</p>
+<p>\({\displaystyle 3 = A(s + 1)(s - 3) + B(s - 1)(s - 3) + C (s - 1)(s + 1)}\)</p>
+<ul>
+<li>For \(s = 1\), gives \({\displaystyle A = \frac{-3}{4}}\)</li>
+<li>For \(s = -1\), gives \({\displaystyle B = \frac{3}{8}}\)</li>
+<li>For \(s = 3\), gives \({\displaystyle C = \frac{3}{8}}\)</li>
+</ul>
+<p>\({\displaystyle \frac{3}{(s - 1)(s + 1)(s - 3)} = - \frac{3}{4(s-1)} +
+\frac{3}{8(s + 1)} + \frac{3}{8 (s - 3)}}\)</p>
+<h2 id="compute-the-partial-fraction-for-this-rational-function"><span class="section-num">7</span> Compute the partial fraction for this rational function</h2>
+<h3 id="front"><span class="section-num">7.1</span> Front</h3>
+<p><b>Compute the partial fraction for this rational function</b></p>
+<p>\({\displaystyle \frac{s - 1}{(s + 1)(s^2 + 4)}}\)</p>
+<h3 id="back"><span class="section-num">7.2</span> Back</h3>
+<p>\({\displaystyle \frac{s - 1}{(s + 1)(s^2 + 4)} = \frac{A}{s + 1} + \frac{Bs +
+C}{s^2 + 4}}\)</p>
+<p>\({\displaystyle s - 1 = A(s^2 + 4) + (Bs + C)(s + 1) = (A + B)s^2 + (B + C)s +
+(4A + C)}\)</p>
+<ul>
+<li>\(s^2\): \(0 = A +B\)</li>
+<li>\(s\): \(1 = B + C\)</li>
+<li>\(1\): \(-1 = 4A + C\)</li>
+</ul>
+<p>Solving, we get \(A=-2/5\), \(B = 2/5\) and \(C = 3/5\)</p>
+<h2 id="compute-the-partial-fraction-for-this-rational-function"><span class="section-num">8</span> Compute the partial fraction for this rational function</h2>
+<h3 id="front"><span class="section-num">8.1</span> Front</h3>
+<p><b>Compute the partial fraction for this rational function</b></p>
+<p>\({\displaystyle \frac{1}{(s + 1)(s^2 - 4)}}\)</p>
+<p>Only set the partial fractions</p>
+<h3 id="back"><span class="section-num">8.2</span> Back</h3>
+<p>\({\displaystyle \frac{1}{(s + 1)(s^2 - 4)} = \frac{1}{(s + 1)(s + 2)(s - 2)} =
+\frac{A}{s + 1} + \frac{B}{s + 2} + \frac{C}{s - 2}}\)</p>
+<h2 id="compute-the-partial-function-for-this-rational-function"><span class="section-num">9</span> Compute the partial function for this rational function</h2>
+<h3 id="front"><span class="section-num">9.1</span> Front</h3>
+<p><b>Compute the partial function for this rational function</b></p>
+<p>\({\displaystyle \frac{s^3 + 2s + 1}{s^2 + s - 2}}\)</p>
+<p>Only set the partial fractions</p>
+<h3 id="back"><span class="section-num">9.2</span> Back</h3>
+<p>\({\displaystyle \frac{s^3 + 2s + 1}{s^2 + s - 2} = s - 1 + \frac{5s - 1}{s^2 +
+s - 2} = s - 1 + \frac{A}{s + 2} + \frac{B}{s - 1}}\)</p>
+<h2 id="how-is-notated-the-inverse-laplace-transform"><span class="section-num">10</span> How is notated the inverse Laplace transform?</h2>
+<h3 id="front"><span class="section-num">10.1</span> Front</h3>
+<p><b>How is notated the inverse Laplace transform?</b></p>
+<h3 id="back"><span class="section-num">10.2</span> Back</h3>
+<p>\(\mathcal{L}^{-1}\)</p>
+<h2 id="what-is-the-inverse-laplace-transform-of-this-expression"><span class="section-num">11</span> What is the inverse Laplace transform of this expression?</h2>
+<h3 id="front"><span class="section-num">11.1</span> Front</h3>
+<p><b>What is the inverse Laplace transform of this expression?</b></p>
+<p>\({\displaystyle \mathcal{L}^{-1} \biggl(\frac{1}{s - 2} \biggr)}\)</p>
+<h3 id="back"><span class="section-num">11.2</span> Back</h3>
+<p>\({\displaystyle e^{2t}}\)</p>
+<h2 id="what-is-the-inverse-laplace-transform-of-this-expression"><span class="section-num">12</span> What is the inverse Laplace transform of this expression?</h2>
+<h3 id="front"><span class="section-num">12.1</span> Front</h3>
+<p><b>What is the inverse Laplace transform of this expression?</b></p>
+<p>\({\displaystyle \mathcal{L}^{-1} \biggl(\frac{1}{s^2 + 9} \biggr)}\)</p>
+<h3 id="back"><span class="section-num">12.2</span> Back</h3>
+<p>Use the table entry \({\displaystyle \mathcal{L}(\sin(\omega t)) =
+\frac{\omega}{s^2 + \omega^2}}\) and linearity</p>
+<p>\({\displaystyle \frac{1}{3} \sin(3t)}\)</p>
+<h2 id="what-is-the-inverse-laplace-transform-of-this-expression"><span class="section-num">13</span> What is the inverse Laplace transform of this expression?</h2>
+<h3 id="front"><span class="section-num">13.1</span> Front</h3>
+<p><b>What is the inverse Laplace transform of this expression?</b></p>
+<p>\({\displaystyle \mathcal{L}^{-1} \biggl(\frac{4}{(s - 2)^2} \biggr)}\)</p>
+<h3 id="back"><span class="section-num">13.2</span> Back</h3>
+<p>\({\displaystyle e^{2t} 4t}\)</p>
+<h2 id="what-is-the-inverse-laplace-transform-of-this-expression"><span class="section-num">14</span> What is the inverse Laplace transform of this expression?</h2>
+<h3 id="front"><span class="section-num">14.1</span> Front</h3>
+<p><b>What is the inverse Laplace transform of this expression?</b></p>
+<p>\({\displaystyle \mathcal{L}^{-1} \biggl(\frac{1}{s^2 + 4s + 13} \biggr)}\)</p>
+<h3 id="back"><span class="section-num">14.2</span> Back</h3>
+<p>Complete the square: \({\displaystyle s^2 + 4s + 13 = s^2 + 4s + 4 + 9 = (s +
+2)^2 + 9}\)</p>
+<p>\(F(s + 2)\) where \(F(s) = \frac{1}{s^2 + 9}\), where \({\displaystyle f(t) =
+\frac{\sin(3t)}{3}}\), so using the s-shift rule</p>
+<p>\({\displaystyle \mathcal{L}^{-1} (F(s-2)) = e^{-2t} \frac{\sin(3t)}{3}}\)</p>
+<h2 id="what-is-the-inverse-laplace-transform-of-this-expression"><span class="section-num">15</span> What is the inverse Laplace transform of this expression?</h2>
+<h3 id="front"><span class="section-num">15.1</span> Front</h3>
+<p><b>What is the inverse Laplace transform of this expression?</b></p>
+<p>\({\displaystyle \mathcal{L}^{-1} \biggl(\frac{s-1}{(s+1)(s^2 + 4)} \biggr)}\)</p>
+<p>Don&rsquo;t compute the coefficients</p>
+<h3 id="back"><span class="section-num">15.2</span> Back</h3>
+<p>\({\displaystyle \frac{s-1}{(s + 1)(s^2 + 4)} = \frac{A}{s+1} + \frac{Bs +
+C}{s^2 + 4}}\)</p>
+<p>\({\displaystyle \mathcal{L}^{-1} \biggl( \frac{A}{s+1} + \frac{Bs + C}{s^2 + 4}
+\biggr) = A e^{-t} + B \cos(2t) + \frac{C}{2} \sin(2t)}\)</p>
+<h2 id="which-is-the-partial-fraction-of-this-rational-function"><span class="section-num">16</span> Which is the partial fraction of this rational function?</h2>
+<h3 id="front"><span class="section-num">16.1</span> Front</h3>
+<p><b>Which is the partial fraction of this rational function?</b></p>
+<p>\({\displaystyle \frac{2s}{s^3(s + 1)^2 (s + 2)}}\)</p>
+<p>Don&rsquo;t compute the coefficients</p>
+<h3 id="back"><span class="section-num">16.2</span> Back</h3>
+<p>\({\displaystyle \frac{A}{s} + \frac{B}{s^2} + \frac{C}{s^3} + \frac{D}{s + 1} +
+\frac{E}{(s + 1)^2} + \frac{F}{s + 2}}\)</p>
+<h2 id="which-is-the-partial-fraction-of-this-rational-function"><span class="section-num">17</span> Which is the partial fraction of this rational function?</h2>
+<h3 id="front"><span class="section-num">17.1</span> Front</h3>
+<p><b>Which is the partial fraction of this rational function?</b></p>
+<p>\({\displaystyle \frac{2s}{s(s^2 + 1)^2(s^2 + 4s + 2)}}\)</p>
+<p>Don&rsquo;t compute the coefficients</p>
+<h3 id="back"><span class="section-num">17.2</span> Back</h3>
+<p>\({\displaystyle \frac{A}{s} + \frac{Bs + C}{s^2 + 1} + \frac{Ds +E}{(s^2 +
+1)^2} + \frac{Fs + G}{s^2 + 4s + 6}}\)</p>
+<h2 id="what-is-the-inverse-laplace-transform-of-this-expression"><span class="section-num">18</span> What is the inverse Laplace transform of this expression?</h2>
+<h3 id="front"><span class="section-num">18.1</span> Front</h3>
+<p><b>What is the inverse Laplace transform of this expression?</b></p>
+<p>\({\displaystyle \mathcal{L}^{-1} \biggl( \frac{Ds}{(s^2 + 1)^2} \biggr)}\)</p>
+<h3 id="back"><span class="section-num">18.2</span> Back</h3>
+<p>\({\displaystyle D \frac{t}{2} \sin(t)}\)</p>
+<h2 id="what-is-the-inverse-laplace-transform-of-this-expression"><span class="section-num">19</span> What is the inverse Laplace transform of this expression?</h2>
+<h3 id="front"><span class="section-num">19.1</span> Front</h3>
+<p><b>What is the inverse Laplace transform of this expression?</b></p>
+<p>\({\displaystyle \mathcal{L}^{-1} \biggl( \frac{E}{(s^2 + 1)^2} \biggr)}\)</p>
+<h3 id="back"><span class="section-num">19.2</span> Back</h3>
+<p>\({\displaystyle E \frac{1}{2} (\sin(t) - t \cos(t))}\)</p>
+<h2 id="what-is-the-inverse-laplace-transform-of-this-expression"><span class="section-num">20</span> What is the inverse Laplace transform of this expression?</h2>
+<h3 id="front"><span class="section-num">20.1</span> Front</h3>
+<p><b>What is the inverse Laplace transform of this expression?</b></p>
+<p>\({\displaystyle \mathcal{L}^{-1} \biggl(\frac{Fs + G}{s^2 + 4s + 6} \biggr)}\)</p>
+<h3 id="back"><span class="section-num">20.2</span> Back</h3>
+<p>Complete the square: \(s^2 + 4s + 6 = (s + 2)^2 + 2\)</p>
+<p>\({\displaystyle \mathcal{L}^{-1} \biggl(\frac{F(s + 2) + G - 2F}{(s + 2)^2 + 2}
+\biggr) = Fe^{-2t} \cos(\sqrt{2}t) + \frac{1}{\sqrt{2}} (G - 2F)e^{-2t}
+\sin(\sqrt{2}t)}\)</p>
+<h2 id="describe-the-process-of-cover-up-to-decompose-this-partial-fraction"><span class="section-num">21</span> Describe the process of cover-up to decompose this partial fraction</h2>
+<h3 id="front"><span class="section-num">21.1</span> Front</h3>
+<p><b>Describe the process of cover-up to decompose this partial fraction</b></p>
+<p>\({\displaystyle \frac{s-7}{(s-1)(s+2)}}\)</p>
+<p>Why does this method work?</p>
+<h3 id="back"><span class="section-num">21.2</span> Back</h3>
+<p>\({\displaystyle \frac{s-7}{(s-1)(s+2)} = \frac{A}{s-1} + \frac{B}{s+2}}\)</p>
+<p>To determine \(A\) by the cover-up method, on the left-hand side we mentally
+remove (or cover up with a finger) the factor \(s - 1\) associated with \(A\), and
+substitute \(s = 1\) into what&rsquo;s left; this gives \(A\)</p>
+<p>\({\displaystyle \frac{s-7}{(s + 2)} \bigg|_{s=1} = \frac{1 - 7}{1 + 2} = -2 =
+A}\)</p>
+<p>Similarly, \(B\) is found by covering up the factor \(s + 2\) on the left, and
+substituting \(s = -2\) into what&rsquo;s left</p>
+<p>\({\displaystyle \frac{s - 7}{(s - 1)} \bigg|_{s = -2} = \frac{-2 - 7}{-2 -1} = 3
+= B}\)</p>
+<p>\({\displaystyle \frac{s-7}{(s-1)(s+2)} = \frac{-2}{s-1} + \frac{3}{s+2}}\)</p>
+<p>The reason is simple. The &ldquo;right&rdquo; way to determine \(A\) from the equation would
+be to multiply both sides by \((s - 1)\)</p>
+<p>\({\displaystyle \frac{s-7}{(s + 2)} = A + \frac{B}{s+2}(s - 1)}\)</p>
+<p>Now if we substitute \(s = 1\), what we get is exactly \({\displaystyle A =
+\frac{1 - 7}{1 + 2}}\), since the term on the right disappears</p>
+<h2 id="what-is-the-inverse-laplace-transform-of-this-expression"><span class="section-num">22</span> What is the inverse Laplace transform of this expression?</h2>
+<h3 id="front"><span class="section-num">22.1</span> Front</h3>
+<p><b>What is the inverse Laplace transform of this expression?</b></p>
+<p>\({\displaystyle \mathcal{L}^{-1} \biggl(\frac{e^{-5s}}{s^2 - 4} \biggr)}\)</p>
+<h3 id="back"><span class="section-num">22.2</span> Back</h3>
+<p>\({\displaystyle u(t - 5) \biggl(\frac{1}{4} e^{2(t-5)} - \frac{1}{4} e^{-2(t -
+5)} \biggr)}\)</p>
+<h2 id="what-is-the-inverse-laplace-transform-of-this-expression"><span class="section-num">23</span> What is the inverse Laplace transform of this expression?</h2>
+<h3 id="front"><span class="section-num">23.1</span> Front</h3>
+<p><b>What is the inverse Laplace transform of this expression?</b></p>
+<p>\({\displaystyle \mathcal{L}^{-1} \biggl( \frac{5 - 2s}{s^2 + 7s + 10} \biggr)}\)</p>
+<h3 id="back"><span class="section-num">23.2</span> Back</h3>
+<p>\({\displaystyle \frac{5 - 2s}{(s + 2)(s + 5)} = \frac{3}{s+2} - \frac{5}{s +
+5}}\)</p>
+<p>\({\displaystyle \mathcal{L}^{-1} \biggl(\frac{3}{s+2} - \frac{5}{s + 5} \biggr)
+= 3 e^{-2t} - 5e^{-5t}}\)</p>
+
+</div>
+
+
+            <footer>
+    
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-28%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Partial%20Fractions%20and%20Inverse%20Laplace%20Transform&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-28%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-28%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-28%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-28%2f&amp;title=Partial%20Fractions%20and%20Inverse%20Laplace%20Transform" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Partial%20Fractions%20and%20Inverse%20Laplace%20Transform&amp;body=Check out this site https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-28%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+
+<nav>
+    <ul class="pager">
+    
+    <li class="previous">
+        <a href="https://ppalazon.github.io/18.03/unit-3/session-27/" title="Laplace Transform: Basics">
+            <span aria-hidden="true">&larr;</span>Laplace Transform: Basics
+        </a>
+    </li>
+    
+
+    
+    <li class="next">
+        <a href="https://ppalazon.github.io/18.03/unit-3/session-29/" title="Laplace Transform: Solving Initial Value Problems">
+            Laplace Transform: Solving Initial Value Problems <span aria-hidden="true">&rarr;</span>
+        </a>
+    </li>
+    
+    </ul>
+</nav>
+
+
+
+</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//ppalazon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+        </div>
+    </div>
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/">18.03 Differential Equations</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/unit-3/">3: Fourier Series and Laplace Transform</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.03/unit-3/session-28/">Partial Fractions and Inverse Laplace Transform</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

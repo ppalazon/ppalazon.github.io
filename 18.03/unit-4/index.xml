@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>4: First-order Systems on Pablo Palazon&#39;s Website</title>
+    <link>https://ppalazon.github.io/18.03/unit-4/</link>
+    <description>Recent content in 4: First-order Systems on Pablo Palazon&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>CC BY-NC-ND 4.0</copyright>
+    <lastBuildDate>Sat, 18 Jan 2020 00:00:00 +0100</lastBuildDate><atom:link href="https://ppalazon.github.io/18.03/unit-4/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linear Systems</title>
+      <link>https://ppalazon.github.io/18.03/unit-4/session-32/</link>
+      <pubDate>Sat, 18 Jan 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-4/session-32/</guid>
+      <description>Captured On [2020-01-21 Tue 13:07] Source Linear Systems | Unit IV First-order Systems | Differential Equations | Mathematics | MIT OpenCourseWare  1 Can we solve a linear system of ODE&amp;rsquo;s with constant coefficients by eliminating variables? 1.1 Front Can we solve a linear system of ODE&amp;rsquo;s with constant coefficients by eliminating variables?
+1.2 Back No, it&amp;rsquo;s a naive way to solve it. You need to use techniques of constant coefficient ODE methods.</description>
+    </item>
+    
+    <item>
+      <title>Matrix Methods: Eigenvalues and Normal Modes</title>
+      <link>https://ppalazon.github.io/18.03/unit-4/session-33/</link>
+      <pubDate>Sat, 18 Jan 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-4/session-33/</guid>
+      <description>Captured On [2020-02-01 Sat 12:35] Source Matrix Methods: Eigenvalues and Normal Modes | Unit IV: First-order Systems | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the trace of a square matrix? 1.1 Front What is the trace of a square matrix?
+For example, \({\displaystyle \operatorname{tr}\begin{pmatrix}a &amp;amp; b \\ c &amp;amp; d\end{pmatrix}}\)
+1.2 Back It&amp;rsquo;s the sum of the elements on the main diagonal; it&amp;rsquo;s denoted \(\operatorname{tr}(A)\):</description>
+    </item>
+    
+    <item>
+      <title>Qualitative Behavior: Phase Portraits</title>
+      <link>https://ppalazon.github.io/18.03/unit-4/session-34/</link>
+      <pubDate>Sat, 18 Jan 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-4/session-34/</guid>
+      <description>Captured On [2020-02-13 Thu 17:57] Source Qualitative Behavior: Phase Portraits | Unit IV: First-order Systems | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the phase plane for this system? 1.1 Front What is the phase plane for this system?
+\({\displaystyle \dot{\vb{x}} = A \vb{x}}\), where \({\displaystyle A = \begin{pmatrix}a &amp;amp; b \\ c &amp;amp; d\end{pmatrix}}\)
+1.2 Back It&amp;rsquo;s the \(xy\text{-plane}\) itself, where you can draw the trajectory of a solution with an arrow to indicate the direction of increasing time.</description>
+    </item>
+    
+    <item>
+      <title>Matrix Exponential</title>
+      <link>https://ppalazon.github.io/18.03/unit-4/session-35/</link>
+      <pubDate>Sat, 18 Jan 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-4/session-35/</guid>
+      <description>Captured On [2020-02-20 Thu 21:51] Source Matrix Exponentials | Unit IV: First-order Systems | Differential Equations | Mathematics | MIT OpenCourseWare  1 For this linear system, how many solutions are there? 1.1 Front For this linear system, how many solutions are there?
+\({\displaystyle \dot{\vb{x}} = A \vb{x}}\), where \(A\) is a \(n \cross n\) matrix
+1.2 Back There are \(n\) linearly independent solutions for the system
+2 How is the linear system when the coefficients are functions of the independent variable t?</description>
+    </item>
+    
+    <item>
+      <title>Nonlinear Systems</title>
+      <link>https://ppalazon.github.io/18.03/unit-4/session-36/</link>
+      <pubDate>Sat, 18 Jan 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-4/session-36/</guid>
+      <description>Captured On [2020-03-06 Fri 14:04] Source Nonlinear Systems | Unit IV: First-order Systems | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is an autonomous system? 1.1 Front What is an autonomous system?
+General First Order Autonomous Systems
+1.2 Back The word autonomous means self regulating. These systems are self regulating in the sense that their rate of change (e.g. derivatives) depends only on the state of the system (values of \(x\) and \(y\)) and not on the time \(t\)</description>
+    </item>
+    
+    <item>
+      <title>Linearization Near Critical Points</title>
+      <link>https://ppalazon.github.io/18.03/unit-4/session-37/</link>
+      <pubDate>Sat, 18 Jan 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-4/session-37/</guid>
+      <description>Captured On [2020-03-09 Mon 12:02] Source Linearization Near Critical Points | Unit IV: First-order Systems | Differential Equations | Mathematics | MIT OpenCourseWare  1 How can we get information about the trajectories of autonomous linear system without… 1.1 Front How can we get information about the trajectories of autonomous linear system without&amp;hellip;
+determining them analytically or using a computer to plot them
+1.2 Back Analyzing what happens near critical points.</description>
+    </item>
+    
+    <item>
+      <title>Limitations of the Linear: Limit Cycles and Chaos</title>
+      <link>https://ppalazon.github.io/18.03/unit-4/session-38/</link>
+      <pubDate>Sat, 18 Jan 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-4/session-38/</guid>
+      <description>Captured On [2020-03-16 Mon 19:13] Source Limitations of the Linear: Limit Cycles and Chaos | Unit IV: First-order Systems | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the form of the solutions that trace out a closed curve? 1.1 Front What is the form of the solutions that trace out a closed curve?
+In a non-linear system
+1.2 Back The solution \(\vb{x}(t)\) will be geometrically realized by a point which goes round and round the curve \(C\) with a certain period \(T\)</description>
+    </item>
+    
+  </channel>
+</rss>

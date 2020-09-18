@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>3: Fourier Series and Laplace Transform  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="ode, maths, ">
+
+
+<meta property="og:title" content="3: Fourier Series and Laplace Transform  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.03/unit-3/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="og:type" content="website" />
+
+
+<link rel="alternate" type="application/rss+xml" href="https://ppalazon.github.io/18.03/unit-3/index.xml" title="Pablo Palazon's Website" />
+<link rel="canonical" href="https://ppalazon.github.io/18.03/unit-3/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+<div id="main-content" class="container">
+    <header>
+        <h1>3: Fourier Series and Laplace Transform
+</h1>
+
+    </header>
+    <p>In this unit we will learn two new ways to represent certain types of functions,
+and these will help us solve linear time invariant (LTI) DE&rsquo;s with these
+functions as inputs.</p>
+<p>We start with Fourier series, which are a way to write periodic functions as
+sums of sinusoids. In Unit Two we learned how to solve a constant coefficient
+linear ODE with sinusoidal input. Now using Fourier series and the superposition
+principle we will be able to solve these equations with any periodic input.</p>
+<p>Next we will study the Laplace transform. This operation transforms a given
+function to a new function in a different independent variable. For example, the
+Laplace transform of \(f(t) = \cos(3t)\) is \(F(s) = s/ (s^2 + 9)\). If we think of
+$f(t)$$ as an input signal, then the key fact is that its Laplace transform
+\(F(s)\) represents the same signal viewed in a different way. The Laplace
+transform converts a DE for the function \(x(t)\) into an algebraic equation for
+its Laplace transform \(X(s)\). Then, once we solve for \(X(s)\) we can recover
+\(x(t)\).</p>
+<p>In the course of this unit, two important ideas will be introduced. The first is
+the convolution product of two functions. At first meeting this operation may
+seem a bit strange. Nonetheless, as we will see, it arises naturally, and the
+Laplace transform will allow us to work easily with it.</p>
+<p>The second important idea is the delta function. Up to now all inputs to our
+systems have caused small changes in a small amount of time. An impulse is an
+input that causes a sudden jump in the system. For example, a sharp blow to a
+mass will cause its momentum to jump. The delta function is a mathematical
+idealization of an impulse and one which allows us to handle DE&rsquo;s with these
+types of inputs.</p>
+<p>Last Modification: <strong>2020-09-16 Wed 22:56</strong></p>
+<dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2019-11-15 Fri 13:45]</span></span></dd>
+<dt>Source</dt>
+<dd><a href="https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-iii-fourier-series-and-laplace-transform/index.htm">Unit III: Fourier Series and Laplace Transform | Differential
+Equations | Mathematics | MIT OpenCourseWare</a></dd>
+</dl>
+
+    
+
+    
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>
+  <a href="https://ppalazon.github.io/18.03/unit-3/session-21/">Fourier Series: Basics</a>
+</h3>
+
+        <p>Captured On [2019-11-15 Fri 13:49] Source Fourier Series: Basics | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 Which is the minimum period of a constant function? 1.1 Front Which is the minimum period of a constant function?
+1.2 Back There is no minimal period, we don&rsquo;t allow \(P = 0\) to be periodic.
+Also, for any \(P\) value is a period, but no minimal</p>
+        
+    </div>
+</div>
+
+    
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>
+  <a href="https://ppalazon.github.io/18.03/unit-3/session-22/">Operations on Fourier Series</a>
+</h3>
+
+        <p>Captured On [2019-11-23 Sat 18:11] Source Operations on Fourier Series | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is an even function? 1.1 Front What is an even function?
+Let \(f(t)\) be a function, and write examples
+1.2 Back \(f(t)\) is even if \(f(-t) = f(t)\) for all \(t\)
+ \(t^2, t^4, t^6, \dots\), any even power of \(t\) \(\cos(at)\)  power series for \(\cos(at)\) has only even powers of \(t\)   A constant function  2 What is the integral of even function on a &lsquo;balanced&rsquo; interval?</p>
+        
+    </div>
+</div>
+
+    
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>
+  <a href="https://ppalazon.github.io/18.03/unit-3/session-23/">ODE&#39;s with Periodic Input, Resonance</a>
+</h3>
+
+        <p>Captured On [2019-11-29 Fri 13:34] Source [[https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-iii-fourier-series-and-laplace-transform/odes-with-periodic-input-resonance/index.htm][ODE&rsquo;s with Periodic Input, Resonance | Unit III: Fourier Series and  Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare]]
+1 How can we solve this ODE? 1.1 Front How can we solve this ODE?
+\(\ddot{x} + 9.1 x = f(t)\), where \(f(t)\) is a odd square wave of period \(2\pi\) with \(f(t) = 1\) for \(0 \lt t \lt \pi\)</p>
+        
+    </div>
+</div>
+
+    
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>
+  <a href="https://ppalazon.github.io/18.03/unit-3/session-24/">Step and Delta Functions: Integrals and Generalized Derivatives</a>
+</h3>
+
+        <p>Captured On [2019-12-06 Fri 14:05] Source Step and Delta Functions: Integrals and Generalized Derivatives | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  This session looks closely at discontinuous functions and introduces the notion of an impulse or delta function. The goal is to use these functions as the input to differential equations. Step functions and delta functions are not differentiable in the usual sense, but they do have what we will call generalized derivatives, which are suitable for use in DE&rsquo;s.</p>
+        
+    </div>
+</div>
+
+    
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>
+  <a href="https://ppalazon.github.io/18.03/unit-3/session-25/">Unit Step and Unit Impulse Response</a>
+</h3>
+
+        <p>Captured On [2019-12-17 Tue 13:01] Source Unit Step and Unit Impulse Response | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  In this session we study differential equations with step or delta functions as input. For physical systems, this means that we are looking at discontinuous or impulsive inputs to the system.
+1 When happens the pre-initial conditions in a DE? 1.</p>
+        
+    </div>
+</div>
+
+    
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>
+  <a href="https://ppalazon.github.io/18.03/unit-3/session-26/">Convolution</a>
+</h3>
+
+        <p>Captured On [2019-12-27 Fri 13:46] Source Convolution | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the definition of the convolution of 2 functions? 1.1 Front What is the definition of the convolution of 2 functions?
+One-sided convolution
+1.2 Back It&rsquo;s a function defined by this integral
+\({\displaystyle (f * g)(t) = \int_{0^-}^{t^+} f(\tau) g(t - \tau) \dd{\tau}}\) for \(t \gt 0\)</p>
+        
+    </div>
+</div>
+
+    
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>
+  <a href="https://ppalazon.github.io/18.03/unit-3/session-27/">Laplace Transform: Basics</a>
+</h3>
+
+        <p>Captured On [2019-12-30 Mon 17:43] Source Laplace Transform: Basics | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the definition of Laplace Transform? 1.1 Front What is the definition of Laplace Transform?
+1.2 Back The Laplace transform of a function \(f(t)\) of a real variable \(t\) is another function depending on a new variable \(s\), which is in general complex.</p>
+        
+    </div>
+</div>
+
+    
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>
+  <a href="https://ppalazon.github.io/18.03/unit-3/session-28/">Partial Fractions and Inverse Laplace Transform</a>
+</h3>
+
+        <p>Captured On [2020-01-02 Thu 18:40] Source Partial Fractions and Inverse Laplace Transform | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is a rational function? 1.1 Front What is a rational function?
+1.2 Back Is a function that is the ratio of two polynomials
+\({\displaystyle \frac{s + }{s^2 + 7s + 9}}\)
+2 When can we say that a rational function is proper?</p>
+        
+    </div>
+</div>
+
+    
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>
+  <a href="https://ppalazon.github.io/18.03/unit-3/session-29/">Laplace Transform: Solving Initial Value Problems</a>
+</h3>
+
+        <p>Captured On [2020-01-06 Mon 19:03] Source Laplace Transform: Solving Initial Value Problems | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 Compute with the definition the Laplace transform of \(f'\) 1.1 Front Compute with the definition the Laplace transform of $f'$
+\({\displaystyle \mathcal{L}(f')(s)}\)
+Don&rsquo;t do by heart
+1.2 Back \({\displaystyle \mathcal{L}(f') = \int_{0^-}^{\infty} f'(t) e^{-st} \dd{t}}\)
+Integrating by parts
+ \(u = e^{-st}\), \(\dd{u} = -s e^{-st} \dd{t}\) \(\dd{v} = f'(t) \dd{t}\), \(v = f(t)\)  \({\displaystyle f(t) e^{-st} \bigg|_{0^-}^{\infty} + s \int_{0^-}^{\infty} f(t) e^{-st} \dd{t} = -f(0^-) + s F(s)}\)</p>
+        
+    </div>
+</div>
+
+    
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>
+  <a href="https://ppalazon.github.io/18.03/unit-3/session-30/">Transfer (System) and Weight Functions, Green&#39;s Formula</a>
+</h3>
+
+        <p>Captured On [2020-01-10 Fri 13:16] Source Transfer (System) and Weight Functions, Green&rsquo;s Formula | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the transfer function for any LTI? 1.1 Front What is the transfer function for any LTI?
+In terms of unit impulse response
+1.2 Back \({\displaystyle W(s) = \mathcal{L}(w(t))}\)
+where \(w(t)\) is the unit impulse response
+2 What is the system function?</p>
+        
+    </div>
+</div>
+
+    
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>
+  <a href="https://ppalazon.github.io/18.03/unit-3/session-31/">Poles, Amplitude Response, Connection to ERF</a>
+</h3>
+
+        <p>Captured On [2020-01-11 Sat 17:01] Source Poles, Amplitude Response, Connection to ERF | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 When can we say that a rational function is in reduced form? 1.1 Front When can we say that a rational function is in reduced form?
+1.2 Back If the numerator \(q(s)\) and the denominator \(p(s)\) have no roots in common, then \(q(s)/p(s)\) is in reduced form</p>
+        
+    </div>
+</div>
+
+    
+    
+
+
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/">18.03 Differential Equations</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.03/unit-3/">3: Fourier Series and Laplace Transform</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="https://ppalazon.github.io/18.03/unit-3/index.xml" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

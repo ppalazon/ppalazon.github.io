@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Linear Operators, Linear Time Invariance  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="ode, ">
+
+
+<meta property="og:title" content="Linear Operators, Linear Time Invariance  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.03/unit-2/session-17/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="content-source" content="18.03/unit-2/session-17.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Captured On [2019-10-29 Tue 13:41] Source Linear Operators, Linear Time Invariance | Unit II: Second Order Constant Coefficient Linear Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the name of this symbol \(p(D)\)? 1.1 Front What is the name of this symbol $p(D)$?
+Where \(D\) is a differential operator
+1.2 Back \(p(D)\) is a polynomial operator
+2 What is a polynomial differential operator with constant coefficients?"/>
+<meta property="og:article:published_time" content="2019-10-11T00:00:00&#43;02:00" />
+<meta property="og:article:modified_time" content="2019-10-11T00:00:00&#43;02:00" />
+
+
+
+<meta property="og:article:tag" content="ode">
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ppalazon" />
+<meta name="twitter:creator" content="@ppalazon" />
+<meta name="twitter:title" content="Linear Operators, Linear Time Invariance" />
+<meta name="twitter:description" content="Captured On [2019-10-29 Tue 13:41] Source Linear Operators, Linear Time Invariance | Unit II: Second Order Constant Coefficient Linear Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the name of this symbol \(p(D)\)? 1.1 Front What is the name of this symbol $p(D)$?
+Where \(D\) is a differential operator
+1.2 Back \(p(D)\) is a polynomial operator
+2 What is a polynomial differential operator with constant coefficients?"/>
+<meta name="twitter:url" content="https://ppalazon.github.io/18.03/unit-2/session-17/" />
+<meta name="twitter:domain" content="https://ppalazon.github.io">
+
+
+
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+     "@type": "Article",
+     "headline": "Linear Operators, Linear Time Invariance",
+     "author": {
+         "@type": "Person",
+         "name": "http://profiles.google.com/+?rel=author"
+     },
+     "datePublished": "2019-10-11",
+     "description": "",
+     "wordCount":  1435 
+ }
+</script>
+
+
+
+<link rel="canonical" href="https://ppalazon.github.io/18.03/unit-2/session-17/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+ }
+ .hero {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: calc(200px + (450 - 200) * ((100vw - 300px) / (1600 - 300)));
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: calc(-1 * (200px + (450 - 200) * ((100vw - 300px) / (1600 - 300))));
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+    <header class="container hat">
+        <h1>Linear Operators, Linear Time Invariance
+</h1>
+
+        
+
+
+<span class="author">by
+    
+    Pablo Palazon
+    
+</span>
+
+
+    </header>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            
+            <div class="content">
+  <dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2019-10-29 Tue 13:41]</span></span></dd>
+<dt>Source</dt>
+<dd><a href="https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-ii-second-order-constant-coefficient-linear-equations/linear-operators-linear-time-invariance/index.htm">Linear Operators, Linear Time Invariance | Unit II: Second Order Constant
+Coefficient Linear Equations | Differential Equations | Mathematics | MIT
+OpenCourseWare</a></dd>
+</dl>
+<h2 id="what-is-the-name-of-this-symbol--pd"><span class="section-num">1</span> What is the name of this symbol \(p(D)\)?</h2>
+<h3 id="front"><span class="section-num">1.1</span> Front</h3>
+<p><b>What is the name of this symbol $p(D)$?</b></p>
+<p>Where \(D\) is a differential operator</p>
+<h3 id="back"><span class="section-num">1.2</span> Back</h3>
+<p>\(p(D)\) is a polynomial operator</p>
+<h2 id="what-is-a-polynomial-differential-operator-with-constant-coefficients"><span class="section-num">2</span> What is a polynomial differential operator with constant coefficients?</h2>
+<h3 id="front"><span class="section-num">2.1</span> Front</h3>
+<p><b>What is a polynomial differential operator with constant coefficients?</b></p>
+<h3 id="back"><span class="section-num">2.2</span> Back</h3>
+<p>\(p(D)\) that you can apply to any function (sufficiently differentible)</p>
+<p>\(p(D) = a_0 D^n + a_1 D^{n-1} + \dots + a_n\)</p>
+<h2 id="what-is-the-sum-rule-for-differential-operator--d"><span class="section-num">3</span> What is the sum rule for differential operator \(D\)?</h2>
+<h3 id="front"><span class="section-num">3.1</span> Front</h3>
+<p><b>What is the sum rule for differential operator $D$?</b></p>
+<h3 id="back"><span class="section-num">3.2</span> Back</h3>
+<p>Suppose that functions involved are sufficiently differentiable</p>
+<p>Where \(p(D)\) and \(q(D)\) are polynomial operators</p>
+<p>\([p(D) + q(D)]u = p(D)u + q(D)u\)</p>
+<h2 id="what-is-the-general-linear-ode-of-order--n--written-with-operators"><span class="section-num">4</span> What is the general linear ODE of order \(n\) written with operators?</h2>
+<h3 id="front"><span class="section-num">4.1</span> Front</h3>
+<p><b>What is the general linear ODE of order $n$ written with operators?</b></p>
+<h3 id="back"><span class="section-num">4.2</span> Back</h3>
+<p>It must have constant coefficients.</p>
+<p>\(y^{(n)} + a_1 y^{(n-1)} + \dots + a_n y = q(t)\)</p>
+<p>where \(p(D)\) is a polynomial differential operator with constant coefficients,
+\(p(D) = D^n + a_1 D^{n-1} + \dots + a_n\)</p>
+<p>\(p(D) y = q(t)\)</p>
+<h2 id="what-is-the-linearity-rule-for-differential-operator"><span class="section-num">5</span> What is the linearity rule for differential operator?</h2>
+<h3 id="front"><span class="section-num">5.1</span> Front</h3>
+<p><b>What is the linearity rule for differential operator?</b></p>
+<h3 id="back"><span class="section-num">5.2</span> Back</h3>
+<p>If \(f\) and \(g\) are functions and \(c_1\) and \(c_2\) are constants,</p>
+<p>\({\displaystyle p(D)(c_1 f + c_2 g) = c_1 p(D)f + c_2 p(D)g}\)</p>
+<h2 id="can-we-apply-the-linearity-rule-of-differential-operator-of-any-order"><span class="section-num">6</span> Can we apply the linearity rule of differential operator of any order?</h2>
+<h3 id="front"><span class="section-num">6.1</span> Front</h3>
+<p><b>Can we apply the linearity rule of differential operator of any order?</b></p>
+<p>\(D^n(c_1 f + c_2 g)\)</p>
+<h3 id="back"><span class="section-num">6.2</span> Back</h3>
+<p>Yes, \({\displaystyle D^n(c_1 f + c_2 g) = c_1 D^n f + c_2 D^n g}\)</p>
+<h2 id="what-does-mean-this-equation"><span class="section-num">7</span> What does mean this equation?</h2>
+<h3 id="front"><span class="section-num">7.1</span> Front</h3>
+<p><b>What does mean this equation?</b></p>
+<p>If \(f\) and \(g\) are functions and \(c_1\) and \(c_2\) are constants,</p>
+<p>\(aD^n(c_1 f + c_2 g)\), \(a\) could be a constant or a function of \(t\)</p>
+<h3 id="back"><span class="section-num">7.2</span> Back</h3>
+<p>\(a \dv[n]{t} (c_1 f + c_2 g) = c_1 a f^{(n)} + c_2 a g^{(n)} = c_1 a D^n f + c_2
+a D^n g\)</p>
+<h2 id="what-does-means-this-expression"><span class="section-num">8</span> What does means this expression?</h2>
+<h3 id="front"><span class="section-num">8.1</span> Front</h3>
+<p><b>What does means this expression?</b></p>
+<p>\(p(D)u\), where \(p(D) = g(D)h(D)\)</p>
+<h3 id="back"><span class="section-num">8.2</span> Back</h3>
+<figure>
+    <img src="https://ppalazon.github.io/e6/a8c337-0fcb-4062-9d7f-1054b951e51c/_20200916_205804NyLL7tC.png"/> 
+</figure>
+
+<p>\(D^m(a D^k u) = a D^{m+k} u\), which could be extends to general polynomial
+operators \(h(D)\) by linearity.</p>
+<p>In this case \(a\) must be a constant</p>
+<h2 id="is-this-expression-correct"><span class="section-num">9</span> Is this expression correct?</h2>
+<h3 id="front"><span class="section-num">9.1</span> Front</h3>
+<p><b>Is this expression correct?</b></p>
+<p>\(g(D)(h(D) u) = h(D)(g(D) u)\)</p>
+<h3 id="back"><span class="section-num">9.2</span> Back</h3>
+<p>It&rsquo;s true if \(g(D)\) and \(h(D)\) are polynomial operators with constant
+coefficients for every function \(u(t)\)</p>
+<h2 id="what-is-the-substitution-rule-of-polynomial-differential-operators"><span class="section-num">10</span> What is the substitution rule of polynomial differential operators?</h2>
+<h3 id="front"><span class="section-num">10.1</span> Front</h3>
+<p><b>What is the substitution rule of polynomial differential operators?</b></p>
+<h3 id="back"><span class="section-num">10.2</span> Back</h3>
+<p>\(p(D) e^{at} = p(a) e^{at}\)</p>
+<h2 id="expand-this-expression"><span class="section-num">11</span> Expand this expression?</h2>
+<h3 id="front"><span class="section-num">11.1</span> Front</h3>
+<p><b>Expand this expression?</b></p>
+<p>\(p(D)e^{at} u(t)\)</p>
+<h3 id="back"><span class="section-num">11.2</span> Back</h3>
+<p>\(e^{at} p(D+a)u(t)\), <strong>by the exponential-shift rule</strong></p>
+<h2 id="expand-this-expression"><span class="section-num">12</span> Expand this expression?</h2>
+<h3 id="front"><span class="section-num">12.1</span> Front</h3>
+<p><b>Expand this expression?</b></p>
+<p>\(D^3 e^{-t} \sin(t)\)</p>
+<p>Using several methods</p>
+<h3 id="back"><span class="section-num">12.2</span> Back</h3>
+<p><strong>Solution using the exponential-shift rule</strong> (and binomial theorem)</p>
+<p>\begin{align*}
+D^3 e^{-t} \sin(t) &amp;= e^{-t}(D-1)^3 \sin(t)\\\<br>
+&amp;= e^{-t}(D^3 -3D^2 + 3D -1) \sin(t) \\\<br>
+&amp;= e^{-t}(2 \cos(t) + 2 \sin(t))
+\end{align*}</p>
+<p><strong>Solution using the substitution rule</strong></p>
+<p>We can write \(e^{-t} \sin(t) = \operatorname{Im}(e^{(-1 + i)t})\)</p>
+<p>\begin{align*}
+D^3e^{(-1 + i)t} &amp;= (-1 + i)^3 e^{(-1 + i)t} \\\<br>
+&amp;= (2+2i)e^t(\cos(t) + i \sin(t))\\\<br>
+&amp;= e^t(2 \cos(t) + 2 \sin(t)) \text{ Getting the imaginary part}
+\end{align*}</p>
+<h2 id="can-we-use-this-expansion-if--c--and--a--are-complex-numbers"><span class="section-num">13</span> Can we use this expansion if \(c\) and \(a\) are complex numbers?</h2>
+<h3 id="front"><span class="section-num">13.1</span> Front</h3>
+<p><b>Can we use this expansion if $c$ and $a$ are complex numbers?</b></p>
+<p>\(D(c e^{at}) = c a e^{at}\)</p>
+<p>And the others rules of differential operator</p>
+<h3 id="back"><span class="section-num">13.2</span> Back</h3>
+<p>Yes, you can. Also, you can apply the rules and arguments for differential
+operators</p>
+<h2 id="what-is-a-linear-time-invariant-lti"><span class="section-num">14</span> What is a linear time invariant &ldquo;LTI&rdquo;?</h2>
+<h3 id="front"><span class="section-num">14.1</span> Front</h3>
+<p><b>What is a linear time invariant &ldquo;LTI&rdquo;?</b></p>
+<h3 id="back"><span class="section-num">14.2</span> Back</h3>
+<p>On linear ODE \(p(D)x = q(t)\) where \(p(D)\) is a constant coefficient operator,
+you can apply the time invariance of \(p(D)\) and you can say for another ODE
+\(p(D)y = q(t-c)\) that its particular solution is \(y(t) = x(t-c)\)</p>
+<h2 id="in-which-cases-can-i-say-that--yt--x--t-c---for-and-x2026"><span class="section-num">15</span> In which cases can I say that \(y(t) = x(t - c)\) for …</h2>
+<h3 id="front"><span class="section-num">15.1</span> Front</h3>
+<p><b>In which cases can I say that $y(t) = x(t - c)$ for &hellip;</b></p>
+<p>the ODE \(p(D) y = q(t-c)\) and \(y(t)\) is a solution of \(p(D)y = q(t)\)</p>
+<h3 id="back"><span class="section-num">15.2</span> Back</h3>
+<p>In case that \(p(D)\) is a constant coefficient operator</p>
+<p>It&rsquo;s called Linear Time Invariant operator</p>
+<h2 id="which-guess-solution-could-be-used-for-getting-the-particular-solution"><span class="section-num">16</span> Which guess solution could be used for getting the particular solution?</h2>
+<h3 id="front"><span class="section-num">16.1</span> Front</h3>
+<p><b>Which guess solution could be used for getting the particular solution?</b></p>
+<p>\(y'' + y' + y = 2xe^x\)</p>
+<h3 id="back"><span class="section-num">16.2</span> Back</h3>
+<p>You can try \(y_p = a_1 xe^x + a_2 e^x\)</p>
+<ul>
+<li>\(y_p' = a_1(x+1) e^x + a_2 e^x\)</li>
+<li>\(y_p'' = a_1(x+2) e^x + a_2e^x\)</li>
+<li>\(2xe^x = (a_1(x+2) e^x + a_2e^x) + (a_1(x+1) e^x + a_2 e^x) + (a_1 xe^x + a_2
+e^x) = 3a_1xe^x + (3a_1 + 3a_2)e^x\)
+<ul>
+<li>\(3a_1 = 2 \implies a_1 = 2/3\)</li>
+<li>\((3a_1 + 3a_2) = 0 \implies 2 + 3 a_2 \implies a_2 = -2/3\)</li>
+</ul>
+</li>
+</ul>
+<h2 id="which-guess-solution-could-be-used-for-getting-the-particular-solution"><span class="section-num">17</span> Which guess solution could be used for getting the particular solution?</h2>
+<h3 id="front"><span class="section-num">17.1</span> Front</h3>
+<p><b>Which guess solution could be used for getting the particular solution?</b></p>
+<p>\(y^{(4)} - 2 y'' + y = xe^x\)</p>
+<h3 id="back"><span class="section-num">17.2</span> Back</h3>
+<ul>
+<li>\(p(s) = s^4 -2 s^2 + 1 = (s^2 - 1)^2\)</li>
+<li>so \(p(1)=0\) repeated root (order 2)</li>
+<li>guess: \(y_p = x^2(Ax + B)e^{x}\)</li>
+</ul>
+<h2 id="graph-the-amplitude-in-terms-of--omega--of-this-ode"><span class="section-num">18</span> Graph the amplitude in terms of \(\omega\) of this ODE</h2>
+<h3 id="front"><span class="section-num">18.1</span> Front</h3>
+<p><b>Graph the amplitude in terms of $\omega$ of this ODE</b></p>
+<p>\(x'' + \omega_0^2 x = F_0 \cos(\omega t)\)</p>
+<p>Graph also the response when \(\omega = \omega_0\)</p>
+<h3 id="back"><span class="section-num">18.2</span> Back</h3>
+<p>Solving the ODE with complex replacement, characteristic polynomial and
+Exponential Response Formula (ERF)</p>
+<ul>
+<li>\({\displaystyle x_p = \frac{F_0 \cos(\omega t)}{\omega_0^2 - \omega^2}}\) when
+\(\omega_0 \neq \omega\)</li>
+<li>\({\displaystyle x_p = \frac{F_0 t \sin(\omega_0 t)}{2 \omega_0}}\) when
+\(\omega_0 = \omega\)</li>
+</ul>
+<p>\({\displaystyle A(\omega) = \abs{\frac{F_0}{\omega_0^2 - \omega_2}}}\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/9b/aa8a0b-300c-455e-ae37-580e8b618390/_20200916_205814rb4bMZW.png"/> 
+</figure>
+
+<figure>
+    <img src="https://ppalazon.github.io/9b/aa8a0b-300c-455e-ae37-580e8b618390/_20200916_205825SPBYTUA.png"/> 
+</figure>
+
+<h2 id="what-happens-when--omega--are-really-close-to--omega-0--in-this-system"><span class="section-num">19</span> What happens when \(\omega\) are really close to \(\omega_{0}\) in this system?</h2>
+<h3 id="front"><span class="section-num">19.1</span> Front</h3>
+<p><b>What happens when $\omega$ are really close to $\omega_{0}$ in this system?</b></p>
+<p>\((D^2 + \omega_0^2)x = F_0 \cos(\omega t)\)</p>
+<p>ERF: \({\displaystyle x_p(t) = \frac{F_0 \cos(\omega t)}{\omega_0^2 - \omega^2}}\)</p>
+<p>Study how is the response when \(\omega \to \omega_0\)</p>
+<h3 id="back"><span class="section-num">19.2</span> Back</h3>
+<p>In this case the amplitude of the output is bigger than the amplitude of the
+input, but the period is the same.</p>
+<p>When \(\omega = \omega_0\), it the case on pure resonance, and the RRF is
+completely different \({\displaystyle x_p(t) = \frac{F_0 t \sin(\omega t)}{2
+\omega_0}}\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/3d/504cfa-0149-423f-82e3-881d6b146cfc/_20200916_205839SPBYTUA.png"/> 
+</figure>
+
+<p>We can analyse what happens with another particular solution (getting a part
+from the complementary solution associated to homogeneous model), and study it
+what happens when \(\omega \to \omega_0\)</p>
+<p>\({\displaystyle x_p(t) = \frac{F_0 \cos(\omega t)}{\omega_0^2 - \omega^2} -
+\frac{F_0 \cos(\omega_0 t)}{\omega_0^2 - \omega^2}}\)</p>
+<p>\({\displaystyle \lim_{\omega \to \omega_0} x_p = \lim_{\omega \to \omega_0}
+\frac{- F_0 t \sin(\omega t)}{- 2 \omega} = \frac{F_0 t \sin(\omega_0 t)}{2
+\omega_0}}\)</p>
+<p>This is the response to the resonance.</p>
+<h2 id="how-is-the-graph-of-this-solution-when--omega-to-omega-d"><span class="section-num">20</span> How is the graph of this solution when \(\omega \to \omega_{d}\)</h2>
+<h3 id="front"><span class="section-num">20.1</span> Front</h3>
+<p><b>How is the graph of this solution when $\omega \to \omega_{d}$</b></p>
+<p>\({\displaystyle x_p(t) = \frac{F_0 \cos(\omega t)}{\omega_0^2 - \omega^2} -
+\frac{F_0 \cos(\omega_0 t)}{\omega_0^2 - \omega^2}}\)</p>
+<h3 id="back"><span class="section-num">20.2</span> Back</h3>
+<p>You need to use the trigonometric identify \(\cos(B) - \cos(A) = 2
+\sin(\frac{A-B}{2}) \sin(\frac{A+B}{2})\)</p>
+<p>For this case \({\displaystyle \cos(\omega t) - \cos(\omega_0 t) = 2
+\sin(\frac{t(\omega - \omega_0)}{2}) \sin(\frac{t(\omega + \omega_0)}{2})}\)</p>
+<p>As \(\omega \to \omega_{0}\),</p>
+<p>\({\displaystyle \frac{F_0 \sin(\frac{t(\omega - \omega_0)}{2})}{\omega_0^2 -
+\omega^2}}\), describe a very low frequency function with really big amplitude.</p>
+<p>And inside, there is the function \(\sin(t \omega_0)\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/d8/c84a6e-7ea8-4a0e-ba65-1d68d29bf837/_20200916_205847uNRKKfe.png"/> 
+</figure>
+
+<h2 id="how-can-we-proof-that-this-particular-solution-is-valid-for-this-system"><span class="section-num">21</span> How can we proof that this particular solution is valid for this system?</h2>
+<h3 id="front"><span class="section-num">21.1</span> Front</h3>
+<p><b>How can we proof that this particular solution is valid for this system?</b></p>
+<p>\(x_p(t) = \frac{t e^{at}}{p'(a)}\), is a solution of \(p(D)x = e^{at}\) and \(p(a) =
+0\)</p>
+<h3 id="back"><span class="section-num">21.2</span> Back</h3>
+<p>We can write \(p(D) = q(D)(D - a)\), where \(q(a) \neq 0\) because of \(p(D)\) could
+be factor by \((D - a)\)</p>
+<p>So, \(p'(D) = q'(D)(D-a) + q(D)\), so \(p'(a) = q'(a)(a - a) + q(a) = q(a)\)</p>
+<p>\begin{align*}
+p(D)x_p(t) &amp;= p(D) \frac{t e^{at}}{p'(a)} \\\<br>
+&amp;= \frac{e^{at}}{p'(a)} p(D + a)t \\\<br>
+&amp;= \frac{e^{at}}{p'(a)} q(D + a) D t \\\<br>
+&amp;= \frac{e^{at}}{q(a)} q(D + a) 1 \\\<br>
+&amp;= \frac{e^{at}}{q(a)} q(a) = e^{at}
+\end{align*}</p>
+<h2 id="which-is-the-value-of-this-expression"><span class="section-num">22</span> Which is the value of this expression?</h2>
+<h3 id="front"><span class="section-num">22.1</span> Front</h3>
+<p><b>Which is the value of this expression?</b></p>
+<p>\(p(D + a)1\), where \(a\) is a constant</p>
+<h3 id="back"><span class="section-num">22.2</span> Back</h3>
+<p>\(p(a)\)</p>
+
+</div>
+
+
+            <footer>
+    
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-2%2fsession-17%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Linear%20Operators%2c%20Linear%20Time%20Invariance&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-2%2fsession-17%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-2%2fsession-17%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-2%2fsession-17%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-2%2fsession-17%2f&amp;title=Linear%20Operators%2c%20Linear%20Time%20Invariance" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Linear%20Operators%2c%20Linear%20Time%20Invariance&amp;body=Check out this site https%3a%2f%2fppalazon.github.io%2f18.03%2funit-2%2fsession-17%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+
+<nav>
+    <ul class="pager">
+    
+    <li class="previous">
+        <a href="https://ppalazon.github.io/18.03/unit-2/session-16/" title="Undetermined Coefficients">
+            <span aria-hidden="true">&larr;</span>Undetermined Coefficients
+        </a>
+    </li>
+    
+
+    
+    <li class="next">
+        <a href="https://ppalazon.github.io/18.03/unit-2/session-18/" title="Pure Resonance">
+            Pure Resonance <span aria-hidden="true">&rarr;</span>
+        </a>
+    </li>
+    
+    </ul>
+</nav>
+
+
+
+</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//ppalazon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+        </div>
+    </div>
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/">18.03 Differential Equations</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/unit-2/">2: Second Order Constant Coefficient Linear Equations</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.03/unit-2/session-17/">Linear Operators, Linear Time Invariance</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

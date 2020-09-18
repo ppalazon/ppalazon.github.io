@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ATTACH on Pablo Palazon&#39;s Website</title>
+    <link>https://ppalazon.github.io/tags/attach/</link>
+    <description>Recent content in ATTACH on Pablo Palazon&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>CC BY-NC-ND 4.0</copyright>
+    <lastBuildDate>Thu, 18 Apr 2019 00:00:00 +0200</lastBuildDate><atom:link href="https://ppalazon.github.io/tags/attach/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1A: Vectors and Matrices - Vectors, determinants and planes</title>
+      <link>https://ppalazon.github.io/18.02/part-1a/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-1a/</guid>
+      <description>&lt;p&gt;Vectors are basic to this course. We will learn to manipulate them algebraically
+and geometrically. They will help us simplify the statements of problems and
+theorems and to find solutions and proofs.&lt;/p&gt;
+&lt;p&gt;Determinants measure volumes and areas. They will also be important in part B
+when we use matrices to solve systems of equations.&lt;/p&gt;
+&lt;p&gt;Last Modification: &lt;strong&gt;2020-09-17 Thu 11:44&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You can &lt;a href=&#34;https://ppalazon.github.io/a9/a5452d-6c21-4136-804f-ea0d4419c352/calculus-II-1a.pdf&#34;&gt;download the whole section in pdf&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>Session 22: Review of Topics</title>
+      <link>https://ppalazon.github.io/18.02/review/session-22/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/review/session-22/</guid>
+      <description> Captured On [2020-02-06 Thu 17:47] Source Session 22: Review of Topics | Exam 1 | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  
+  Figure 1: Review 1
+  
+  Figure 2: Review 2
+  
+  Figure 3: Review 3
+  
+  Figure 4: Review 4
+  </description>
+    </item>
+    
+    <item>
+      <title>Session 73: Review Double Integrals and Line Integrals in the Plane</title>
+      <link>https://ppalazon.github.io/18.02/review/session-73/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/review/session-73/</guid>
+      <description>Captured On [2020-02-06 Thu 18:03] Source Session 73: Exam Review | Exam 3 | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  
+  Figure 1: Review 1
+  
+  Figure 2: Review 2
+  
+  Figure 3: Review 3
+  
+  Figure 4: Review 4</description>
+    </item>
+    
+    <item>
+      <title>Session 96: Summary of Multiple Integration</title>
+      <link>https://ppalazon.github.io/18.02/review/session-96/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/review/session-96/</guid>
+      <description>Captured On [2020-02-06 Thu 18:05] Source Session 96: Summary of Multiple Integration | Part C: Line Integrals and Stokes&#39; Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  
+  Figure 1: Different multiple integrals
+  
+  Figure 2: Applications of multiple integrals
+  
+  Figure 3: Different surfaces</description>
+    </item>
+    
+    <item>
+      <title>Session 97: Curl and Physics</title>
+      <link>https://ppalazon.github.io/18.02/physics/session-97/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/physics/session-97/</guid>
+      <description>Captured On [2020-02-06 Thu 18:16] Source Session 97: Curl and Physics | Physics Applications | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  
+  Figure 1: Recall what measures curl of velocity field
+  
+  Figure 2: Curl of velocity field
+  
+  Figure 3: Curl on force field</description>
+    </item>
+    
+    <item>
+      <title>Session 98: Maxwell&#39;s Equations</title>
+      <link>https://ppalazon.github.io/18.02/physics/session-98/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/physics/session-98/</guid>
+      <description> Captured On [2020-02-06 Thu 18:18] Source Session 98: Maxwell&amp;rsquo;s Equations | Physics Applications | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  
+  Figure 1: Maxwell&amp;rsquo;s Equations
+  
+  Figure 2: Gauss-Coulumb Law
+  
+  Figure 3: Faraday&amp;rsquo;s Law
+  
+  Figure 4: Remark
+  </description>
+    </item>
+    
+  </channel>
+</rss>

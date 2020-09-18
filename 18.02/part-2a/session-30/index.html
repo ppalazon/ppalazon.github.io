@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Session 30: Second Derivative Test  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="calculus, maths, ">
+
+
+<meta property="og:title" content="Session 30: Second Derivative Test  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.02/part-2a/session-30/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="content-source" content="18.02/part-2a/session-30.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Captured On [2020-02-06 Thu 10:32] Source Session 30: Second Derivative Test | Part A: Functions of Two Variables, Tangent Approximation and Optimization | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare 1 Chalkboard Figure 1: Recall critical points Figure 2: How do we find global min/man?
+Figure 3: Second derivative test
+"/>
+<meta property="og:article:published_time" content="2019-04-18T00:00:00&#43;02:00" />
+<meta property="og:article:modified_time" content="2019-04-18T00:00:00&#43;02:00" />
+
+
+
+<meta property="og:article:tag" content="calculus">
+
+<meta property="og:article:tag" content="maths">
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ppalazon" />
+<meta name="twitter:creator" content="@ppalazon" />
+<meta name="twitter:title" content="Session 30: Second Derivative Test" />
+<meta name="twitter:description" content="Captured On [2020-02-06 Thu 10:32] Source Session 30: Second Derivative Test | Part A: Functions of Two Variables, Tangent Approximation and Optimization | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare 1 Chalkboard Figure 1: Recall critical points Figure 2: How do we find global min/man?
+Figure 3: Second derivative test
+"/>
+<meta name="twitter:url" content="https://ppalazon.github.io/18.02/part-2a/session-30/" />
+<meta name="twitter:domain" content="https://ppalazon.github.io">
+
+
+
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+     "@type": "Article",
+     "headline": "Session 30: Second Derivative Test",
+     "author": {
+         "@type": "Person",
+         "name": "http://profiles.google.com/+?rel=author"
+     },
+     "datePublished": "2019-04-18",
+     "description": "",
+     "wordCount":  1140 
+ }
+</script>
+
+
+
+<link rel="canonical" href="https://ppalazon.github.io/18.02/part-2a/session-30/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+ }
+ .hero {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: calc(200px + (450 - 200) * ((100vw - 300px) / (1600 - 300)));
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: calc(-1 * (200px + (450 - 200) * ((100vw - 300px) / (1600 - 300))));
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+    <header class="container hat">
+        <h1>Session 30: Second Derivative Test
+</h1>
+
+        
+
+
+<span class="author">by
+    
+    MIT OCW, Pablo Palazon
+    
+</span>
+
+
+    </header>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            
+            <div class="content">
+  <dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2020-02-06 Thu 10:32]</span></span></dd>
+<dt>Source</dt>
+<dd><a href="https://ocw.mit.edu/courses/mathematics/18-02sc-multivariable-calculus-fall-2010/2.-partial-derivatives/part-a-functions-of-two-variables-tangent-approximation-and-optimization/session-30-second-derivative-test/index.htm">Session 30: Second Derivative Test | Part A: Functions of Two Variables, Tangent Approximation and Optimization | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare</a></dd>
+</dl>
+<h2 id="chalkboard"><span class="section-num">1</span> Chalkboard</h2>
+<p><a id="orgc90271b"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/84/c33198-afc9-4668-a7df-5560e29c839e/_20200206_113145MIT18_02SC_L10Brds_1.png"
+         alt="Figure 1: Recall critical points" width="80%"/> <figcaption>
+            <p>Figure 1: Recall critical points</p>
+        </figcaption>
+</figure>
+
+<p><a id="orgded0906"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/84/c33198-afc9-4668-a7df-5560e29c839e/_20200206_113151MIT18_02SC_L10Brds_2.png"
+         alt="Figure 2: How do we find global min/man?" width="80%"/> <figcaption>
+            <p>Figure 2: How do we find global min/man?</p>
+        </figcaption>
+</figure>
+
+<p><a id="org45d3f81"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/84/c33198-afc9-4668-a7df-5560e29c839e/_20200206_113157MIT18_02SC_L10Brds_3.png"
+         alt="Figure 3: Second derivative test" width="80%"/> <figcaption>
+            <p>Figure 3: Second derivative test</p>
+        </figcaption>
+</figure>
+
+<p><a id="org400b859"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/84/c33198-afc9-4668-a7df-5560e29c839e/_20200206_113202MIT18_02SC_L10Brds_4.png"
+         alt="Figure 4: Squared terms" width="80%"/> <figcaption>
+            <p>Figure 4: Squared terms</p>
+        </figcaption>
+</figure>
+
+<p><a id="org1a9218f"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/84/c33198-afc9-4668-a7df-5560e29c839e/_20200206_113207MIT18_02SC_L10Brds_5.png"
+         alt="Figure 5: Studying cases" width="80%"/> <figcaption>
+            <p>Figure 5: Studying cases</p>
+        </figcaption>
+</figure>
+
+<p><a id="org4d3307d"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/84/c33198-afc9-4668-a7df-5560e29c839e/_20200206_113212MIT18_02SC_L10Brds_6.png"
+         alt="Figure 6: When \(4ac - b^{2} &amp;gt; 0\)" width="80%"/> <figcaption>
+            <p>Figure 6: When \(4ac - b^{2} &gt; 0\)</p>
+        </figcaption>
+</figure>
+
+<p><a id="orga9e8427"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/84/c33198-afc9-4668-a7df-5560e29c839e/_20200206_113218MIT18_02SC_L10Brds_7.png"
+         alt="Figure 7: Quadratic formula?" width="80%"/> <figcaption>
+            <p>Figure 7: Quadratic formula?</p>
+        </figcaption>
+</figure>
+
+<p><a id="org5e67e44"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/84/c33198-afc9-4668-a7df-5560e29c839e/_20200206_113223MIT18_02SC_L10Brds_8.png"
+         alt="Figure 8: Saddle point" width="80%"/> <figcaption>
+            <p>Figure 8: Saddle point</p>
+        </figcaption>
+</figure>
+
+<p><a id="org1871ec8"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/84/c33198-afc9-4668-a7df-5560e29c839e/_20200206_113229MIT18_02SC_L10Brds_9.png"
+         alt="Figure 9: Local max or min" width="80%"/> <figcaption>
+            <p>Figure 9: Local max or min</p>
+        </figcaption>
+</figure>
+
+<p><a id="org738b1fc"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/84/c33198-afc9-4668-a7df-5560e29c839e/_20200206_113235MIT18_02SC_L10Brds_10.png"
+         alt="Figure 10: In general, look at second derivative" width="80%"/> <figcaption>
+            <p>Figure 10: In general, look at second derivative</p>
+        </figcaption>
+</figure>
+
+<p><a id="org2e49add"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/84/c33198-afc9-4668-a7df-5560e29c839e/_20200206_113243MIT18_02SC_L10Brds_11.png"
+         alt="Figure 11: Second derivative test" width="80%"/> <figcaption>
+            <p>Figure 11: Second derivative test</p>
+        </figcaption>
+</figure>
+
+<p><a id="org5bbe7ec"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/84/c33198-afc9-4668-a7df-5560e29c839e/_20200206_113248MIT18_02SC_L10Brds_12.png"
+         alt="Figure 12: Second derivative test cases" width="80%"/> <figcaption>
+            <p>Figure 12: Second derivative test cases</p>
+        </figcaption>
+</figure>
+
+<p><a id="org1119d4b"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/84/c33198-afc9-4668-a7df-5560e29c839e/_20200206_113253MIT18_02SC_L10Brds_13.png"
+         alt="Figure 13: Verify the special case" width="80%"/> <figcaption>
+            <p>Figure 13: Verify the special case</p>
+        </figcaption>
+</figure>
+
+<p><a id="org121d6f1"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/84/c33198-afc9-4668-a7df-5560e29c839e/_20200206_113300MIT18_02SC_L10Brds_14.png"
+         alt="Figure 14: Quadratic approximation of \(f\)" width="80%"/> <figcaption>
+            <p>Figure 14: Quadratic approximation of \(f\)</p>
+        </figcaption>
+</figure>
+
+<p><a id="org3738b9c"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/84/c33198-afc9-4668-a7df-5560e29c839e/_20200206_113306MIT18_02SC_L10Brds_15.png"
+         alt="Figure 15: Conclusion of second derivative test" width="80%"/> <figcaption>
+            <p>Figure 15: Conclusion of second derivative test</p>
+        </figcaption>
+</figure>
+
+<h2 id="recall-second-derivative-test-for-1-variable-function"><span class="section-num">2</span> Recall second derivative test for 1 variable function</h2>
+<h3 id="front"><span class="section-num">2.1</span> Front</h3>
+<p><b>Recall second derivative test for 1 variable function</b></p>
+<h3 id="back"><span class="section-num">2.2</span> Back</h3>
+<ul>
+<li>Find the critical points, where \(f(x) = 0\)</li>
+<li>Apply second derivative for each critical point \(x_0\)
+<ul>
+<li>\(f''(x_0) &gt; 0 \implies x_0\) is a local minimum point</li>
+<li>\(f''(x_0) &lt; 0 \implies x_0\) is a local maximum point</li>
+<li>\(f''(x_0) = 0\), the test fails. You need more information (Could
+be an inflection point)</li>
+</ul>
+</li>
+</ul>
+<p>The idea behind is</p>
+<p>At \(x_0\) the slope of \(f'(x_0)=0\), if \(f''(x_0)&gt;0\) then \(f'(x)\) is
+strictly increasing for \(x\) near \(x_0\), so the slope is negative to
+the left of \(x_0\) and positive to the right. Which shows that \(x_0\) is
+a minimum point.</p>
+<p>The reasoning is similar for local maximum point</p>
+<h2 id="how-many-steps-do-you-need-to-complete-for-second-derivative-test"><span class="section-num">3</span> How many steps do you need to complete for second derivative test</h2>
+<h3 id="front"><span class="section-num">3.1</span> Front</h3>
+<p><b>How many steps do you need to complete for second derivative test for multivariable function?</b></p>
+<h3 id="back"><span class="section-num">3.2</span> Back</h3>
+<ol>
+<li>Find the critical points by solving the simultaneous equations
+<ul>
+<li>\(f_x(x,y) = 0\)</li>
+<li>\(f_y(x,y) = 0\)</li>
+</ul>
+</li>
+<li>The tangent plane at critical point it&rsquo;s horizontal</li>
+<li>You need 3 second derivatives a these points to determinate max,
+min or saddle point. Assuming that these second derivative exists
+and are continuous
+<ul>
+<li>\(A = (f_{xx})_0\)</li>
+<li>\(B = (f_{xy})_0 = (f_{yx})_0\)</li>
+<li>\(C = (f_{yy})_0\)</li>
+</ul>
+</li>
+<li>Compare results with \(AC - B^2\)</li>
+</ol>
+<h2 id="what-are-the-cases-of-second-derivative-test"><span class="section-num">4</span> What are the cases of second derivative test?</h2>
+<h3 id="front"><span class="section-num">4.1</span> Front</h3>
+<p><b>What are the cases of second derivative test?</b></p>
+<p>Let \((x_0,y_0)\) be a critical point of \(f(x,y)\)</p>
+<ul>
+<li>\(A = (f_{xx})_0\)</li>
+<li>\(B = (f_{xy})_0 = (f_{yx})_0\)</li>
+<li>\(C = (f_{yy})_0\)</li>
+</ul>
+<h3 id="back"><span class="section-num">4.2</span> Back</h3>
+<ul>
+<li>\(AC - B^2 &gt; 0\) and \(A\) and \(C &gt; 0 \implies (x_0,y_0)\) is a minimum
+point</li>
+<li>\(AC - B^2 &gt; 0\) and \(A\) and \(C &lt; 0 \implies (x_0,y_0)\) is a maximum
+point</li>
+<li>\(AC - B^2 &lt; 0 \implies (x_0, y_0)\) is a saddle point</li>
+</ul>
+<p>If \(AC - B^2 = 0\), the test fails and more investigation is needed</p>
+<p>Note: If \(AC - B^2 &gt; 0\), then \(AC &gt; 0\), so that \(A\) and \(C\) must have
+the same sign.</p>
+<h2 id="which-is-the-simplest-function-to-have-interesting-critical-points"><span class="section-num">5</span> Which is the simplest function to have interesting critical points?</h2>
+<h3 id="front"><span class="section-num">5.1</span> Front</h3>
+<p><b>Which is the simplest function to have interesting critical points?</b></p>
+<p>For second derivative test</p>
+<h3 id="back"><span class="section-num">5.2</span> Back</h3>
+<p>\({\displaystyle w = w_0 + ax + by + \frac{1}{2} (Ax^2 + 2Bxy + Cy^2)}\)</p>
+<p>This function has in general a unique critical point</p>
+<h2 id="do-the-second-derivative-test-for-this-function"><span class="section-num">6</span> Do the second derivative test for this function</h2>
+<h3 id="front"><span class="section-num">6.1</span> Front</h3>
+<p><b>Do the second derivative test for this function</b></p>
+<p>\({\displaystyle w = w_0 + ax + by + \frac{1}{2} (Ax^2 + 2Bxy + Cy^2)}\)</p>
+<p>Assume critical point at \((0,0)\)</p>
+<h3 id="back"><span class="section-num">6.2</span> Back</h3>
+<ul>
+<li>\((w_x)_0 = a\)</li>
+<li>\((w_y)_0 = b\)</li>
+<li>\(w_{xx} = A\)</li>
+<li>\(w_{xy} = B\)</li>
+<li>\(w_{yy} = C\)</li>
+</ul>
+<h2 id="which-is-the-taylor-s-approximation-of--fx-y---at-a-critical-point"><span class="section-num">7</span> Which is the Taylor&rsquo;s approximation of \(f(x,y)\) at a critical point?</h2>
+<h3 id="front"><span class="section-num">7.1</span> Front</h3>
+<p><b>Which is the Taylor&rsquo;s approximation of $f(x,y)$ at a critical point?</b></p>
+<p>\(f(x,y)\) at critical point \((x_0, y_0)\)</p>
+<h3 id="back"><span class="section-num">7.2</span> Back</h3>
+<p>\({\displaystyle w \approx w_0 + \biggl(\frac{\partial w}{\partial x}
+\biggr)_0 (x - x_0) + \biggl(\frac{\partial w}{\partial y} \biggr)_0
+(y - y_0) + \frac{1}{2} \biggl[ \biggl(\frac{\partial^{2} w}{\partial
+x^2} \biggr)_0 (x - x_0)^2 + 2 \biggl(\frac{\partial^{2} w}{\partial x
+\partial y} \biggr)_0 (x - x_0)(y - y_0) + \biggl(\frac{\partial^{2}
+w}{\partial y^2} \biggr)_0 (y - y_0)^2 \biggr]}\)</p>
+<p>Supposing that \({\displaystyle \frac{\partial w}{\partial x \partial
+y} = \frac{\partial w}{\partial y \partial x}}\)</p>
+<p>At critical point, \({\displaystyle \biggl(\frac{\partial w}{\partial
+x} \biggr) = 0}\), and \({\displaystyle \biggl(\frac{\partial w}{\partial
+y} \biggr) = 0}\), so you can reduce it to</p>
+<p>\({\displaystyle w \approx w_0 + \frac{1}{2} \biggl[
+\biggl(\frac{\partial^{2} w}{\partial x^2} \biggr)_0 (x - x_0)^2 + 2
+\biggl(\frac{\partial^{2} w}{\partial x \partial y} \biggr)_0 (x -
+x_0)(y - y_0) + \biggl(\frac{\partial^{2} w}{\partial y^2} \biggr)_0
+(y - y_0)^2 \biggr]}\)</p>
+<h2 id="how-we-can-proof-the-second-derivative-test-for-a-general-function"><span class="section-num">8</span> How we can proof the second-derivative test for a general function</h2>
+<h3 id="front"><span class="section-num">8.1</span> Front</h3>
+<p><b>How we can proof the second-derivative test for a general function</b></p>
+<h3 id="back"><span class="section-num">8.2</span> Back</h3>
+<ul>
+<li>Get a Taylor&rsquo;s formula approximation for \(w =f(x,y)\) at critical
+points \((x_0, y_0)\), and you will get a quadratic function.</li>
+<li>This quadratic function approximation has a max, min or saddle point
+there, so will \(f(x,y)\).</li>
+<li>\({\displaystyle w - w_0 \approx \frac{1}{2} (Au^2 + 2Buv + Cv^2)}\),
+where \(A,B,C\) are the second derivatives at critical point, and \(u=
+x - x_0\) and \(v = y - y_0\)</li>
+<li>Extract information about this quadratic formula, \(AC - B^2\)</li>
+</ul>
+<h2 id="what-can-we-say-about-the-function-from-the-quadratic-formula"><span class="section-num">9</span> What can we say about the function from the quadratic formula?</h2>
+<h3 id="front"><span class="section-num">9.1</span> Front</h3>
+<p><b>What can we say about the function from the quadratic formula?</b></p>
+<p>\({\displaystyle f(x) = Ax^2 + 2Bx + C = 0 \implies x = \frac{-B \pm
+\sqrt{B^2 - AC}}{A}}\)</p>
+<h3 id="back"><span class="section-num">9.2</span> Back</h3>
+<ul>
+<li>\(AC - B^2 &gt; 0\), \(A\) and \(C \gt 0 \implies f(x) \gt 0\) for all \(x\), there is a minimum</li>
+<li>\(AC - B^2 &gt; 0\), \(A\) and \(C \lt 0 \implies f(x) \lt 0\) for all \(x\), there is a maximum</li>
+<li>\(AC - B^2 &lt; 0 \implies f(x) \gt 0\) for some \(x\), and \(f(x) \lt 0\) for other
+\(x\)</li>
+</ul>
+<h2 id="where-do-you-need-to-look-at-when-you-seek-max-and-min-values"><span class="section-num">10</span> Where do you need to look at when you seek max and min values?</h2>
+<h3 id="front"><span class="section-num">10.1</span> Front</h3>
+<p><b>Where do you need to look at when you seek max and min values?</b></p>
+<h3 id="back"><span class="section-num">10.2</span> Back</h3>
+<ul>
+<li>At critical points</li>
+<li>Boundaries</li>
+</ul>
+<p>Then substitute values on function for get max/min</p>
+<h2 id="how-do-we-can-calculate-the-intersection-of-2-surfaces"><span class="section-num">11</span> How do we can calculate the intersection of 2 surfaces?</h2>
+<h3 id="front"><span class="section-num">11.1</span> Front</h3>
+<p><b>How do we can calculate the intersection of 2 surfaces?</b></p>
+<h3 id="back"><span class="section-num">11.2</span> Back</h3>
+<p>The point of each surface must give the same result, so we get the
+intersection</p>
+<h2 id="how-can-we-calculate-a-parametric-form-of-a-surface"><span class="section-num">12</span> How can we calculate a parametric form of a surface?</h2>
+<h3 id="front"><span class="section-num">12.1</span> Front</h3>
+<p><b>How can we calculate a parametric form of a surface?</b></p>
+<h3 id="back"><span class="section-num">12.2</span> Back</h3>
+<ul>
+<li>Set \(t\) to one value</li>
+<li>You need to know how are the other variables with respect to \(t\)</li>
+</ul>
+<h2 id="what-is-the-angle-of-intersection-of-2-surface-intersection-at-a-point"><span class="section-num">13</span> What is the angle of intersection of 2 surface intersection at a point?</h2>
+<h3 id="front"><span class="section-num">13.1</span> Front</h3>
+<p><b>What is the angle of intersection of 2 surface intersection at a point?</b></p>
+<h3 id="back"><span class="section-num">13.2</span> Back</h3>
+<p>It&rsquo;s the angle made of their tangent planes.</p>
+<p>Get its normals and get the angle between them.</p>
+<h2 id="which-is-the-angle-between-2-planes"><span class="section-num">14</span> Which is the angle between 2 planes?</h2>
+<h3 id="front"><span class="section-num">14.1</span> Front</h3>
+<p><b>Which is the angle between 2 planes?</b></p>
+<h3 id="back"><span class="section-num">14.2</span> Back</h3>
+<p>It&rsquo;s the angle between its normals</p>
+
+</div>
+
+
+            <footer>
+    
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-2a%2fsession-30%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Session%2030%3a%20Second%20Derivative%20Test&amp;url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-2a%2fsession-30%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-2a%2fsession-30%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-2a%2fsession-30%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-2a%2fsession-30%2f&amp;title=Session%2030%3a%20Second%20Derivative%20Test" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Session%2030%3a%20Second%20Derivative%20Test&amp;body=Check out this site https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-2a%2fsession-30%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+
+<nav>
+    <ul class="pager">
+    
+    <li class="previous">
+        <a href="https://ppalazon.github.io/18.02/part-2a/session-29/" title="Session 29: Least Squares">
+            <span aria-hidden="true">&larr;</span>Session 29: Least Squares
+        </a>
+    </li>
+    
+
+    
+    </ul>
+</nav>
+
+
+
+</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//ppalazon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+        </div>
+    </div>
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.02/">18.02 Multivariable Calculus</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.02/part-2a/">2A: Functions of Two Variables, Tangent Approximation and Optimization</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.02/part-2a/session-30/">Session 30: Second Derivative Test</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

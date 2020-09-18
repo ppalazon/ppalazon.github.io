@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>3B: Vector Fields and Line Integrals on Pablo Palazon&#39;s Website</title>
+    <link>https://ppalazon.github.io/18.02/part-3b/</link>
+    <description>Recent content in 3B: Vector Fields and Line Integrals on Pablo Palazon&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>CC BY-NC-ND 4.0</copyright>
+    <lastBuildDate>Thu, 18 Apr 2019 00:00:00 +0200</lastBuildDate><atom:link href="https://ppalazon.github.io/18.02/part-3b/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Session 56: Vector Fields</title>
+      <link>https://ppalazon.github.io/18.02/part-3b/session-56/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3b/session-56/</guid>
+      <description>Captured On [2020-02-06 Thu 13:29] Source Session 56: Vector Fields | Part B: Vector Fields and Line Integrals | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Vector fields meaning
+  
+  Figure 2: Examples of vector fields (1)
+  
+  Figure 3: Examples of vector fields (2)</description>
+    </item>
+    
+    <item>
+      <title>Session 57: Work and Line Integrals</title>
+      <link>https://ppalazon.github.io/18.02/part-3b/session-57/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3b/session-57/</guid>
+      <description>Captured On [2020-02-06 Thu 13:30] Source Session 57: Work and Line Integrals | Part B: Vector Fields and Line Integrals | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Work and line integrals
+  
+  Figure 2: Work as integral
+  
+  Figure 3: Example of work</description>
+    </item>
+    
+    <item>
+      <title>Session 58: Geometric Approach</title>
+      <link>https://ppalazon.github.io/18.02/part-3b/session-58/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3b/session-58/</guid>
+      <description>Captured On [2020-02-06 Thu 13:31] Source Session 58: Geometric Approach | Part B: Vector Fields and Line Integrals | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Geometric approach
+  
+  Figure 2: Example \(C\) circle of radius \(a\), and force radially away
+  
+  Figure 3: Same \(c\), but force are tanget to the circle</description>
+    </item>
+    
+    <item>
+      <title>Session 59: Example: Line Integrals for Work</title>
+      <link>https://ppalazon.github.io/18.02/part-3b/session-59/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3b/session-59/</guid>
+      <description>Captured On [2020-02-06 Thu 13:32] Source Session 59: Example: Line Integrals for Work | Part B: Vector Fields and Line Integrals | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Line integrals for work
+  
+  Figure 2: Example of line integrals for work
+  
+  Figure 3: First trajectory</description>
+    </item>
+    
+    <item>
+      <title>Session 60: Fundamental Theorem for Line Integrals</title>
+      <link>https://ppalazon.github.io/18.02/part-3b/session-60/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3b/session-60/</guid>
+      <description>Captured On [2020-02-06 Thu 13:32] Source Session 60: Fundamental Theorem for Line Integrals | Part B: Vector Fields and Line Integrals | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Special case where vector field is gradient field
+  
+  Figure 2: Fundamental Theorem of Calculus for Line Integrals</description>
+    </item>
+    
+    <item>
+      <title>Session 61: Conservative Fields, Path Independence, Exact Differentials</title>
+      <link>https://ppalazon.github.io/18.02/part-3b/session-61/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3b/session-61/</guid>
+      <description>Captured On [2020-02-06 Thu 13:33] Source Session 61: Conservative Fields, Path Independence, Exact Differentials | Part B: Vector Fields and Line Integrals | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Gradient fields in physics
+  
+  Figure 2: Meaning of conservativeness
+  
+  Figure 3: Equivalent properties I</description>
+    </item>
+    
+    <item>
+      <title>Session 62: Gradient Fields</title>
+      <link>https://ppalazon.github.io/18.02/part-3b/session-62/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3b/session-62/</guid>
+      <description>Captured On [2020-02-06 Thu 13:33] Source Session 62: Gradient Fields | Part B: Vector Fields and Line Integrals | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Recall FCT for line integral with gradient fields
+  
+  Figure 2: Meaning of conservative field
+  
+  Figure 3: How to know if vector fields is a gradient field</description>
+    </item>
+    
+    <item>
+      <title>Session 63: Potential Functions</title>
+      <link>https://ppalazon.github.io/18.02/part-3b/session-63/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3b/session-63/</guid>
+      <description>Captured On [2020-02-06 Thu 13:34] Source Session 63: Potential Functions | Part B: Vector Fields and Line Integrals | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Finding the potential
+  
+  Figure 2: Choosing a path
+  
+  Figure 3: Choosing a easiest path</description>
+    </item>
+    
+    <item>
+      <title>Session 64: Curl</title>
+      <link>https://ppalazon.github.io/18.02/part-3b/session-64/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3b/session-64/</guid>
+      <description>Captured On [2020-02-06 Thu 13:34] Source Session 64: Curl | Part B: Vector Fields and Line Integrals | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Recall \(\vb{F}\) using curl
+  
+  Figure 2: Definition of curl
+  
+  Figure 3: Curl for velocity field</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Session 27: Approximation Formula  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="calculus, maths, ">
+
+
+<meta property="og:title" content="Session 27: Approximation Formula  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.02/part-2a/session-27/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="content-source" content="18.02/part-2a/session-27.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Captured On [2020-02-06 Thu 10:31] Source Session 27: Approximation Formula | Part A: Functions of Two Variables, Tangent Approximation and Optimization | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare 1 Chalkboard Figure 1: Review partial derivatives Figure 2: Approximation formula
+Figure 3: Justify approximation formula
+Figure 4: Tangent line to the same point
+"/>
+<meta property="og:article:published_time" content="2019-04-18T00:00:00&#43;02:00" />
+<meta property="og:article:modified_time" content="2019-04-18T00:00:00&#43;02:00" />
+
+
+
+<meta property="og:article:tag" content="calculus">
+
+<meta property="og:article:tag" content="maths">
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ppalazon" />
+<meta name="twitter:creator" content="@ppalazon" />
+<meta name="twitter:title" content="Session 27: Approximation Formula" />
+<meta name="twitter:description" content="Captured On [2020-02-06 Thu 10:31] Source Session 27: Approximation Formula | Part A: Functions of Two Variables, Tangent Approximation and Optimization | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare 1 Chalkboard Figure 1: Review partial derivatives Figure 2: Approximation formula
+Figure 3: Justify approximation formula
+Figure 4: Tangent line to the same point
+"/>
+<meta name="twitter:url" content="https://ppalazon.github.io/18.02/part-2a/session-27/" />
+<meta name="twitter:domain" content="https://ppalazon.github.io">
+
+
+
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+     "@type": "Article",
+     "headline": "Session 27: Approximation Formula",
+     "author": {
+         "@type": "Person",
+         "name": "http://profiles.google.com/+?rel=author"
+     },
+     "datePublished": "2019-04-18",
+     "description": "",
+     "wordCount":  982 
+ }
+</script>
+
+
+
+<link rel="canonical" href="https://ppalazon.github.io/18.02/part-2a/session-27/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+ }
+ .hero {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: calc(200px + (450 - 200) * ((100vw - 300px) / (1600 - 300)));
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: calc(-1 * (200px + (450 - 200) * ((100vw - 300px) / (1600 - 300))));
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+    <header class="container hat">
+        <h1>Session 27: Approximation Formula
+</h1>
+
+        
+
+
+<span class="author">by
+    
+    MIT OCW, Pablo Palazon
+    
+</span>
+
+
+    </header>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            
+            <div class="content">
+  <dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2020-02-06 Thu 10:31]</span></span></dd>
+<dt>Source</dt>
+<dd><a href="https://ocw.mit.edu/courses/mathematics/18-02sc-multivariable-calculus-fall-2010/2.-partial-derivatives/part-a-functions-of-two-variables-tangent-approximation-and-optimization/session-27-approximation-formula/index.htm">Session 27: Approximation Formula | Part A: Functions of Two Variables, Tangent Approximation and Optimization | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare</a></dd>
+</dl>
+<h2 id="chalkboard"><span class="section-num">1</span> Chalkboard</h2>
+<p><a id="orgfc838d2"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/a4/83faab-f20b-49c9-9685-a6b8c2b12264/_20200206_112440MIT18_02SC_L9Brds_1.png"
+         alt="Figure 1: Review partial derivatives" width="80%"/> <figcaption>
+            <p>Figure 1: Review partial derivatives</p>
+        </figcaption>
+</figure>
+
+<p><a id="orga3c6fd1"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/a4/83faab-f20b-49c9-9685-a6b8c2b12264/_20200206_112446MIT18_02SC_L9Brds_2.png"
+         alt="Figure 2: Approximation formula" width="80%"/> <figcaption>
+            <p>Figure 2: Approximation formula</p>
+        </figcaption>
+</figure>
+
+<p><a id="org1c53144"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/a4/83faab-f20b-49c9-9685-a6b8c2b12264/_20200206_112452MIT18_02SC_L9Brds_3.png"
+         alt="Figure 3: Justify approximation formula" width="80%"/> <figcaption>
+            <p>Figure 3: Justify approximation formula</p>
+        </figcaption>
+</figure>
+
+<p><a id="org5428215"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/a4/83faab-f20b-49c9-9685-a6b8c2b12264/_20200206_112459MIT18_02SC_L9Brds_4.png"
+         alt="Figure 4: Tangent line to the same point" width="80%"/> <figcaption>
+            <p>Figure 4: Tangent line to the same point</p>
+        </figcaption>
+</figure>
+
+<p><a id="org38ba66c"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/a4/83faab-f20b-49c9-9685-a6b8c2b12264/_20200206_112507MIT18_02SC_L9Brds_5.png"
+         alt="Figure 5: Tagent plane through 2 tangent lines" width="80%"/> <figcaption>
+            <p>Figure 5: Tagent plane through 2 tangent lines</p>
+        </figcaption>
+</figure>
+
+<h2 id="what-is-a-tangent-plane"><span class="section-num">2</span> What is a tangent plane?</h2>
+<h3 id="front"><span class="section-num">2.1</span> Front</h3>
+<p><b>What is a tangent plane?</b></p>
+<p>Describe how to get it, and write tangent plane equation</p>
+<h3 id="back"><span class="section-num">2.2</span> Back</h3>
+<p>It&rsquo;s the plane tangent to a point on a 2 variable functions, that</p>
+<ul>
+<li>Pass through point \((x_0, y_0, w_0)\), where \(w_0 = f(x_0, y_0)\)</li>
+<li>Contain 2 tangent lines of the 2 partial functions</li>
+</ul>
+<p>\(A(x - x_0) + B(y - y_0) + C(w - w_0) = 0\)</p>
+<p>Assume that plane is not vertical, \(\implies C \neq 0\), so divide through \(C\)</p>
+<p>\(w - w_0 = a (x - x_0) + b(y - y_0)\), where \(a = A/C\), \(b=A/C\)</p>
+<ul>
+<li>\(a = \biggl( \frac{\partial w}{\partial x} \biggr)_0\)</li>
+<li>\(b = \biggl( \frac{\partial w}{\partial y} \biggr)_0\)</li>
+</ul>
+<h2 id="how-can-we-get-2-tangent-line-on-2-variable-functions-at-a-point"><span class="section-num">3</span> How can we get 2 tangent line on 2 variable functions at a point?</h2>
+<h3 id="front"><span class="section-num">3.1</span> Front</h3>
+<p><b>How can we get 2 tangent line on 2 variable functions at a point?</b></p>
+<h3 id="back"><span class="section-num">3.2</span> Back</h3>
+<ul>
+<li>Point \((x_0, y_0, w_0)\), \(w_0 = f(x_0, y_0)\)</li>
+<li>Slope of the tangent line in the \(\vb{i}\) direction (\(y = y_0\))
+<ul>
+<li>\({\displaystyle a = \biggl( \frac{\partial w}{\partial x}
+\biggr)_0}\)</li>
+</ul>
+</li>
+<li>Slope of the tangent line in the \(\vb{j}\) direction (\(x = x_0\))
+<ul>
+<li>\({\displaystyle b = \biggl( \frac{\partial w}{\partial y}
+\biggr)_0}\)</li>
+</ul>
+</li>
+<li>Line along \(\vb{i}\) direction
+<ul>
+<li>\(z = z_0 + a(x - x_0)\), (\(y = y_0\))</li>
+</ul>
+</li>
+<li>Line along \(\vb{j}\) direction
+<ul>
+<li>\(z = z_0 + b(y - y_0)\), (\(x = x_0\))</li>
+</ul>
+</li>
+</ul>
+<h2 id="which-is-the-equation-of-the-tangent-plane"><span class="section-num">4</span> Which is the equation of the tangent plane?</h2>
+<h3 id="front"><span class="section-num">4.1</span> Front</h3>
+<p><b>Which is the equation of the tangent plane?</b></p>
+<h3 id="back"><span class="section-num">4.2</span> Back</h3>
+<ul>
+<li>\(w_0 = f(x_0, y_0)\)</li>
+<li>\({\displaystyle w = w_0 + \biggl(\frac{\partial w}{\partial x}
+\biggr)_0 (x - x_0) + \biggl(\frac{\partial w}{\partial y} \biggr)_0
+(y - y_0)}\)</li>
+</ul>
+<p>You can use gradient too.</p>
+<h2 id="how-can-we-get-an-approximation-to-a-2-variable-function"><span class="section-num">5</span> How can we get an approximation to a 2 variable function?</h2>
+<h3 id="front"><span class="section-num">5.1</span> Front</h3>
+<p><b>How can we get an approximation to a 2 variable function?</b></p>
+<h3 id="back"><span class="section-num">5.2</span> Back</h3>
+<p>Using the tangent plane on this point</p>
+<p>\({\displaystyle f(x, y) \approx w_0 + \biggl(\frac{\partial
+w}{\partial x} \biggr)_0 (x - x_0) + \biggl(\frac{\partial w}{\partial
+y} \biggr)_0 (y - y_0)}\)</p>
+<h2 id="what-is-the-linearization-of--fx-y---at--x-0-y-0"><span class="section-num">6</span> What is the linearization of \(f(x,y)\) at \((x_{0}, y_{0})\)</h2>
+<h3 id="front"><span class="section-num">6.1</span> Front</h3>
+<p><b>What is the linearization of $f(x,y)$ at $(x_{0}, y_{0})$</b></p>
+<h3 id="back"><span class="section-num">6.2</span> Back</h3>
+<p>Is the approximation whose graph is the the tangent plane at the point
+\((x_0, y_0, w_0)\), where \(w_0 = f(x_0, y_0)\)</p>
+<p>It is the linear function which gives the best approximation to
+\(f(x,y)\) for values of \((x,y)\) close to \((x_0, y_0)\)</p>
+<p>\({\displaystyle f(x,y) \approx w_0 + \biggl(\frac{\partial w}{\partial
+x} \biggr)_0 (x - x_0) + \biggl(\frac{\partial w}{\partial y}
+\biggr)_0 (y - y_0)}\)</p>
+<h2 id="how-can-we-write-the-linearization-of--fx-y---using--delta--notation"><span class="section-num">7</span> How can we write the linearization of \(f(x,y)\) using \(\Delta\) notation?</h2>
+<h3 id="front"><span class="section-num">7.1</span> Front</h3>
+<p><b>How can we write the linearization of $f(x,y)$ using $\Delta$ notation?</b></p>
+<h3 id="back"><span class="section-num">7.2</span> Back</h3>
+<p>\(\Delta w \approx \biggl(\frac{\partial w}{\partial x} \biggr)_0
+\Delta x + \biggl(\frac{\partial w}{\partial y} \biggr)_0 \Delta y\)</p>
+<ul>
+<li>\(\Delta x = x - x_0\)</li>
+<li>\(\Delta y = y - y_0\)</li>
+<li>\(\Delta w = w - w_0\)</li>
+</ul>
+<h2 id="can-we-write-an-linear-approximation-for-functions-with-more-than-2-variables"><span class="section-num">8</span> Can we write an linear approximation for functions with more than 2 variables?</h2>
+<h3 id="front"><span class="section-num">8.1</span> Front</h3>
+<p><b>Can we write an linear approximation for functions with more than 2 variables?</b></p>
+<h3 id="back"><span class="section-num">8.2</span> Back</h3>
+<p>Yes, but you can&rsquo;t use tangent planes and geometry. You use the argument</p>
+<p>\(\Delta w \approx \biggl(\frac{\partial w}{\partial x} \biggr)_0
+\Delta x + \biggl(\frac{\partial w}{\partial y} \biggr)_0 \Delta y +
+\biggl(\frac{\partial w}{\partial z} \biggr)_0 \Delta z\)</p>
+<p>\(w = f(x,y,z)\)</p>
+<h2 id="what-is-the-sensitivity-principle"><span class="section-num">9</span> What is the sensitivity principle?</h2>
+<h3 id="front"><span class="section-num">9.1</span> Front</h3>
+<p><b>What is the sensitivity principle?</b></p>
+<p>Tip: Tangent approximation of \(w = f(x,y,\dots)\)</p>
+<h3 id="back"><span class="section-num">9.2</span> Back</h3>
+<p>The numerical value of \(w = f(x,y,\dots)\) calculated at some point
+\((x_0, y_0, \dots)\), will be most sensitive to small changes in that
+variable for which the corresponding partial derivative \(w_x, w_y,
+\dots\) has the largest value at the point</p>
+<p>Think about a box, the changes of the volume are more sensitive if we
+changes the smallest size of the box</p>
+<h2 id="why-tangent-plane-could-be-a-good-approximation-to-the-surface-at--x-0-y-0-w-0"><span class="section-num">10</span> Why tangent plane could be a good approximation to the surface at \((x_{0}, y_{0}, w_{0})?\)</h2>
+<h3 id="front"><span class="section-num">10.1</span> Front</h3>
+<p><b>Why tangent plane could be a good approximation to the surface at $(x_{0}, y_{0}, w_{0})?$</b></p>
+<h3 id="back"><span class="section-num">10.2</span> Back</h3>
+<p>It&rsquo;s the plane with the same slope as the surface in the \(\vb{i}\) and
+\(\vb{j}\) directions. This means the approximation \({\displaystyle
+\Delta w \approx \biggl(\frac{\partial w}{\partial x} \biggr)_0 \Delta
+x + \biggl(\frac{\partial w}{\partial y} \biggr)_0 \Delta y }\) will be
+good if you move away from \((x_0, y_0)\) in the \(\vb{i}\) direction or
+\(\vb{j}\) direction.</p>
+<p>See <strong>Smoothness hypothesis</strong> for check if the slope of this plane is
+the same on any other direction.</p>
+<h2 id="what-is-the-smoothness-hypothesis"><span class="section-num">11</span> What is the smoothness hypothesis?</h2>
+<h3 id="front"><span class="section-num">11.1</span> Front</h3>
+<p><b>What is the smoothness hypothesis?</b></p>
+<h3 id="back"><span class="section-num">11.2</span> Back</h3>
+<p>\(f(x,y)\) is smooth at \((x_0, y_0)\) if \(f_x\) and \(f_y\) are continuous
+in some rectangle centered at \((x_0,y_0)\)</p>
+<h2 id="does-the-tangent-plane-have-the-same-slope-as-the-surface-in-all-directions"><span class="section-num">12</span> Does the tangent plane have the same slope as the surface in all directions?</h2>
+<h3 id="front"><span class="section-num">12.1</span> Front</h3>
+<p><b>Does the tangent plane have the same slope as the surface in all directions?</b></p>
+<h3 id="back"><span class="section-num">12.2</span> Back</h3>
+<p><strong>Smoothness hypothesis</strong>: \(f(x,y)\) is smooth at \((x_0, y_0)\) if \(f_x\)
+and \(f_y\) are continuous in some rectangle centered at \((x_0,y_0)\)</p>
+<p>It this is true, then the approximation formula of tangent plane it&rsquo;s
+true for any direction away from \((x_0, y_0)\)</p>
+<h2 id="how-can-we-get-a-proof-of-linear-approximation-to-multivariable-functions"><span class="section-num">13</span> How can we get a proof of linear approximation to multivariable functions?</h2>
+<h3 id="front"><span class="section-num">13.1</span> Front</h3>
+<p><b>How can we get a proof of linear approximation to multivariable functions?</b></p>
+<h3 id="back"><span class="section-num">13.2</span> Back</h3>
+<p><strong>How can we get a proof of linear approximation to multivariable functions?</strong></p>
+<ul>
+<li>
+<p>This function must be smoothness at the point \((x_0, y_0, \dots)\),
+so the partial derivatives should be continuous in a neighborhood of this point</p>
+</li>
+<li>
+<p>You need to calculate the error terms in the approximation</p>
+<figure>
+    <img src="https://ppalazon.github.io/a4/83faab-f20b-49c9-9685-a6b8c2b12264/_20200206_112704z9qdUzf.png"/> 
+</figure>
+
+</li>
+</ul>
+
+</div>
+
+
+            <footer>
+    
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-2a%2fsession-27%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Session%2027%3a%20Approximation%20Formula&amp;url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-2a%2fsession-27%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-2a%2fsession-27%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-2a%2fsession-27%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-2a%2fsession-27%2f&amp;title=Session%2027%3a%20Approximation%20Formula" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Session%2027%3a%20Approximation%20Formula&amp;body=Check out this site https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-2a%2fsession-27%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+
+<nav>
+    <ul class="pager">
+    
+    <li class="previous">
+        <a href="https://ppalazon.github.io/18.02/part-2a/session-26/" title="Session 26: Partial Derivatives">
+            <span aria-hidden="true">&larr;</span>Session 26: Partial Derivatives
+        </a>
+    </li>
+    
+
+    
+    <li class="next">
+        <a href="https://ppalazon.github.io/18.02/part-2a/session-28/" title="Session 28: Optimization Problems">
+            Session 28: Optimization Problems <span aria-hidden="true">&rarr;</span>
+        </a>
+    </li>
+    
+    </ul>
+</nav>
+
+
+
+</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//ppalazon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+        </div>
+    </div>
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.02/">18.02 Multivariable Calculus</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.02/part-2a/">2A: Functions of Two Variables, Tangent Approximation and Optimization</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.02/part-2a/session-27/">Session 27: Approximation Formula</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

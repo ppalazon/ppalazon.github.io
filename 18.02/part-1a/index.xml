@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1A: Vectors and Matrices - Vectors, determinants and planes on Pablo Palazon&#39;s Website</title>
+    <link>https://ppalazon.github.io/18.02/part-1a/</link>
+    <description>Recent content in 1A: Vectors and Matrices - Vectors, determinants and planes on Pablo Palazon&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>CC BY-NC-ND 4.0</copyright>
+    <lastBuildDate>Thu, 18 Apr 2019 00:00:00 +0200</lastBuildDate><atom:link href="https://ppalazon.github.io/18.02/part-1a/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Session 1: Vectors</title>
+      <link>https://ppalazon.github.io/18.02/part-1a/session-1/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-1a/session-1/</guid>
+      <description>Captured On [2020-02-05 Wed 19:40] Source Session 1: Vectors | Part A: Vectors, Determinants and Planes | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Definition of vectors
+  
+  Figure 2: Length of a vector
+  
+  Figure 3: Modules and addition
+  
+  Figure 4: Multiplying by scalars</description>
+    </item>
+    
+    <item>
+      <title>Session 2: Dot Products</title>
+      <link>https://ppalazon.github.io/18.02/part-1a/session-2/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-1a/session-2/</guid>
+      <description>Captured On [2020-02-05 Wed 19:41] Source Session 2: Dot Products | Part A: Vectors, Determinants and Planes | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Dot Product Definition
+  
+  Figure 2: What does geometic definition mean?
+  
+  Figure 3: Dot product of combined vectors
+  2 What is the dot product of 2 vectors?</description>
+    </item>
+    
+    <item>
+      <title>Session 3: Uses of the Dot Product: Lengths and Angles</title>
+      <link>https://ppalazon.github.io/18.02/part-1a/session-3/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-1a/session-3/</guid>
+      <description>Captured On [2020-02-05 Wed 19:43] Source Session 3: Uses of the Dot Product: Lengths and Angles | Part A: Vectors, Determinants and Planes | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Computing lengths and angles
+  
+  Figure 2: Resolution of computing an angle
+  
+  Figure 3: Meaning of sign of a dot product</description>
+    </item>
+    
+    <item>
+      <title>Session 4: Vector Components</title>
+      <link>https://ppalazon.github.io/18.02/part-1a/session-4/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-1a/session-4/</guid>
+      <description>Captured On [2020-02-05 Wed 19:46] Source Session 4: Vector Components | Part A: Vectors, Determinants and Planes | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Review of dot product
+  
+  Figure 2: Components of \(\vec{A}\) along direction \(\vec{u}\)
+  
+  Figure 3: Pendulum problem with projections
+  2 Which is it the angle between 2 vectors?</description>
+    </item>
+    
+    <item>
+      <title>Session 5: Area and Determinants in 2D</title>
+      <link>https://ppalazon.github.io/18.02/part-1a/session-5/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-1a/session-5/</guid>
+      <description>Captured On [2020-02-05 Wed 19:47] Source Session 5: Area and Determinants in 2D | Part A: Vectors, Determinants and Planes | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Area within 2 vectors
+  
+  Figure 2: Rotated vector \(\vec{A}\)
+  
+  Figure 3: Area as determinant of 2 vectors</description>
+    </item>
+    
+    <item>
+      <title>Session 6: Volumes and Determinants in Space</title>
+      <link>https://ppalazon.github.io/18.02/part-1a/session-6/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-1a/session-6/</guid>
+      <description>Captured On [2020-02-05 Wed 19:49] Source Session 6: Volumes and Determinants in Space | Part A: Vectors, Determinants and Planes | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Determinant in space
+  
+  Figure 2: Volume of parallelepiped
+  2 What is the volume between 3 vectors? 2.1 Front What is the volume between 3 vectors?</description>
+    </item>
+    
+    <item>
+      <title>Session 7: Cross Products</title>
+      <link>https://ppalazon.github.io/18.02/part-1a/session-7/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-1a/session-7/</guid>
+      <description>Captured On [2020-02-05 Wed 19:50] Source Session 7: Cross Products | Part A: Vectors, Determinants and Planes | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Cross product of 2 vectors in 3-space
+  
+  Figure 2: Area of parallelogram with cross product
+  
+  Figure 3: Right hand method for direction of cross product</description>
+    </item>
+    
+    <item>
+      <title>Session 8: Equations of Planes</title>
+      <link>https://ppalazon.github.io/18.02/part-1a/session-8/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-1a/session-8/</guid>
+      <description>Captured On [2020-02-05 Wed 19:52] Source Session 8: Equations of Planes | Part A: Vectors, Determinants and Planes | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Equation of plane
+  
+  Figure 2: Another solution equation of plane
+  2 How can we find the equation of the plane containing 3 points? 2.</description>
+    </item>
+    
+  </channel>
+</rss>

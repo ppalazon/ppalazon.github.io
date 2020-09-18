@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2: Second Order Constant Coefficient Linear Equations on Pablo Palazon&#39;s Website</title>
+    <link>https://ppalazon.github.io/18.03/unit-2/</link>
+    <description>Recent content in 2: Second Order Constant Coefficient Linear Equations on Pablo Palazon&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>CC BY-NC-ND 4.0</copyright>
+    <lastBuildDate>Fri, 11 Oct 2019 00:00:00 +0200</lastBuildDate><atom:link href="https://ppalazon.github.io/18.03/unit-2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Modes and the Characteristic Equation</title>
+      <link>https://ppalazon.github.io/18.03/unit-2/session-12/</link>
+      <pubDate>Fri, 11 Oct 2019 16:58:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-2/session-12/</guid>
+      <description>Captured On [2019-10-08 Tue 11:29] Source Modes and the Characteristic Equation | Unit II: Second Order Constant Coefficient Linear Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 In this system, when is the equilibrium point and what does it mean? 1.1 Front In this system, when is the equilibrium point and what does it mean?
+  1.2 Back It&amp;rsquo;s at \(x=0\), and it&amp;rsquo;s the point where the spring is relaxed, which means that it is exerting no force.</description>
+    </item>
+    
+    <item>
+      <title>Damped Harmonic Oscillators</title>
+      <link>https://ppalazon.github.io/18.03/unit-2/session-13/</link>
+      <pubDate>Wed, 16 Oct 2019 11:34:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-2/session-13/</guid>
+      <description>Captured On [2019-10-11 Fri 17:46] Source [[https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-ii-second-order-constant-coefficient-linear-equations/damped-harmonic-oscillators/index.htm][Damped Harmonic Oscillators | Unit II: Second Order Constant Coefficient  Linear Equations | Differential Equations | Mathematics | MIT OpenCourseWare]]
+1 What is a damped sinusoid equation? 1.1 Front What is a damped sinusoid equation?
+Write the general form
+1.2 Back \(y(t) = A e^{- \lambda t} \cos(\omega t - \phi)\)
+  2 What is the basic solutions of DE is we get \(z(t)\) with complex exponential?</description>
+    </item>
+    
+    <item>
+      <title>Exponential Response</title>
+      <link>https://ppalazon.github.io/18.03/unit-2/session-14/</link>
+      <pubDate>Fri, 11 Oct 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-2/session-14/</guid>
+      <description>Captured On [2019-10-16 Wed 13:53] Source Exponential Resonse  1 Can we use the superposition principle for second order equation? 1.1 Front Can we use the superposition principle for second order equation?
+i.e. \(m\ddot{x} + b\dot{x} + kx = F_{ext}\)
+1.2 Back Yes, you can. Suppose \(x_p\) is any solution to this equation, and \(x_h\) is the solution of the homogeneous second order equation (\(m\ddot{x} + b\dot{x} + kx = 0\))</description>
+    </item>
+    
+    <item>
+      <title>Gain and Phase Lag</title>
+      <link>https://ppalazon.github.io/18.03/unit-2/session-15/</link>
+      <pubDate>Fri, 11 Oct 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-2/session-15/</guid>
+      <description>Captured On [2019-10-25 Fri 12:58] Source Gain and Phase Lag | Unit II: Second Order Constant Coefficient Linear Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 When can we say that a system is stable? 1.1 Front When can we say that a system is /stable/?
+1.2 Back If the systems&amp;rsquo;s long-term behaviour does not depend significantly on the initial conditions.
+2 Give an example of stable system in mechanics?</description>
+    </item>
+    
+    <item>
+      <title>Undetermined Coefficients</title>
+      <link>https://ppalazon.github.io/18.03/unit-2/session-16/</link>
+      <pubDate>Fri, 11 Oct 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-2/session-16/</guid>
+      <description>Captured On [2019-10-28 Mon 13:23] Source Undetermined Coefficients | Unit II: Second Order Constant Coefficient Linear Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the undetermined coefficients theorem? 1.1 Front What is the undetermined coefficients theorem?
+Let \(p(D)y = q(x)\), where \(q(x)\) is a polynomial
+1.2 Back \(q(x)\) is a polynomial with the form \(q(x) = a_nx^n + a_{n-1}x^{n-1} + \dots + a_0\), where the largest \(k\) is the degree of polynomial which \(a_k \neq 0\)</description>
+    </item>
+    
+    <item>
+      <title>Linear Operators, Linear Time Invariance</title>
+      <link>https://ppalazon.github.io/18.03/unit-2/session-17/</link>
+      <pubDate>Fri, 11 Oct 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-2/session-17/</guid>
+      <description>Captured On [2019-10-29 Tue 13:41] Source Linear Operators, Linear Time Invariance | Unit II: Second Order Constant Coefficient Linear Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the name of this symbol \(p(D)\)? 1.1 Front What is the name of this symbol $p(D)$?
+Where \(D\) is a differential operator
+1.2 Back \(p(D)\) is a polynomial operator
+2 What is a polynomial differential operator with constant coefficients?</description>
+    </item>
+    
+    <item>
+      <title>Pure Resonance</title>
+      <link>https://ppalazon.github.io/18.03/unit-2/session-18/</link>
+      <pubDate>Fri, 11 Oct 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-2/session-18/</guid>
+      <description> Captured On [2019-10-31 Thu 13:31] Source Pure Resonance | Unit II: Second Order Constant Coefficient Linear Equations | Differential Equations | Mathematics | MIT OpenCourseWare  </description>
+    </item>
+    
+    <item>
+      <title>Frequency Response and Practical Resonance</title>
+      <link>https://ppalazon.github.io/18.03/unit-2/session-19/</link>
+      <pubDate>Fri, 11 Oct 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-2/session-19/</guid>
+      <description>Captured On [2019-11-11 Mon 12:39] Source Frequency Response and Practical Resonance | Unit II: Second Order Constant Coefficient Linear Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the amplitude response of the system? 1.1 Front What is the amplitude response of the system?
+1.2 Back It&amp;rsquo;s called to the gain of the system in terms of input angular frequency
+2 What is the phase response of the system?</description>
+    </item>
+    
+    <item>
+      <title>Applications: LR Circuits</title>
+      <link>https://ppalazon.github.io/18.03/unit-2/session-20/</link>
+      <pubDate>Fri, 11 Oct 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-2/session-20/</guid>
+      <description> Captured On [2019-11-14 Thu 13:11] Source Applications: LRC Circuits | Unit II: Second Order Constant Coefficient Linear Equations | Differential Equations | Mathematics | MIT OpenCourseWare  </description>
+    </item>
+    
+  </channel>
+</rss>

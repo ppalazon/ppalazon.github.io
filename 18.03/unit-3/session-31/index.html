@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Poles, Amplitude Response, Connection to ERF  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="ode, maths, ">
+
+
+<meta property="og:title" content="Poles, Amplitude Response, Connection to ERF  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.03/unit-3/session-31/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="content-source" content="18.03/unit-3/session-31.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Captured On [2020-01-11 Sat 17:01] Source Poles, Amplitude Response, Connection to ERF | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 When can we say that a rational function is in reduced form? 1.1 Front When can we say that a rational function is in reduced form?
+1.2 Back If the numerator \(q(s)\) and the denominator \(p(s)\) have no roots in common, then \(q(s)/p(s)\) is in reduced form"/>
+<meta property="og:article:published_time" content="2019-11-26T00:00:00&#43;01:00" />
+<meta property="og:article:modified_time" content="2019-11-26T00:00:00&#43;01:00" />
+
+
+
+<meta property="og:article:tag" content="ode">
+
+<meta property="og:article:tag" content="maths">
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ppalazon" />
+<meta name="twitter:creator" content="@ppalazon" />
+<meta name="twitter:title" content="Poles, Amplitude Response, Connection to ERF" />
+<meta name="twitter:description" content="Captured On [2020-01-11 Sat 17:01] Source Poles, Amplitude Response, Connection to ERF | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 When can we say that a rational function is in reduced form? 1.1 Front When can we say that a rational function is in reduced form?
+1.2 Back If the numerator \(q(s)\) and the denominator \(p(s)\) have no roots in common, then \(q(s)/p(s)\) is in reduced form"/>
+<meta name="twitter:url" content="https://ppalazon.github.io/18.03/unit-3/session-31/" />
+<meta name="twitter:domain" content="https://ppalazon.github.io">
+
+
+
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+     "@type": "Article",
+     "headline": "Poles, Amplitude Response, Connection to ERF",
+     "author": {
+         "@type": "Person",
+         "name": "http://profiles.google.com/+?rel=author"
+     },
+     "datePublished": "2019-11-26",
+     "description": "",
+     "wordCount":  2353 
+ }
+</script>
+
+
+
+<link rel="canonical" href="https://ppalazon.github.io/18.03/unit-3/session-31/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+ }
+ .hero {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: calc(200px + (450 - 200) * ((100vw - 300px) / (1600 - 300)));
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: calc(-1 * (200px + (450 - 200) * ((100vw - 300px) / (1600 - 300))));
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+    <header class="container hat">
+        <h1>Poles, Amplitude Response, Connection to ERF
+</h1>
+
+        
+
+
+<span class="author">by
+    
+    MIT OCW, Pablo Palazon
+    
+</span>
+
+
+    </header>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            
+            <div class="content">
+  <dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2020-01-11 Sat 17:01]</span></span></dd>
+<dt>Source</dt>
+<dd><a href="https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-iii-fourier-series-and-laplace-transform/poles-amplitude-response-connection-to-erf/">Poles, Amplitude Response, Connection to ERF | Unit III: Fourier
+Series and Laplace Transform | Differential Equations | Mathematics | MIT
+OpenCourseWare</a></dd>
+</dl>
+<h2 id="when-can-we-say-that-a-rational-function-is-in-reduced-form"><span class="section-num">1</span> When can we say that a rational function is in reduced form?</h2>
+<h3 id="front"><span class="section-num">1.1</span> Front</h3>
+<p><b>When can we say that a rational function is in reduced form?</b></p>
+<h3 id="back"><span class="section-num">1.2</span> Back</h3>
+<p>If the numerator \(q(s)\) and the denominator \(p(s)\) have no roots in common, then
+\(q(s)/p(s)\) is in reduced form</p>
+<h2 id="what-is-a-pole-for-function"><span class="section-num">2</span> What is a pole for function?</h2>
+<h3 id="front"><span class="section-num">2.1</span> Front</h3>
+<p><b>What is a pole for function?</b></p>
+<h3 id="back"><span class="section-num">2.2</span> Back</h3>
+<p>For a rational function in reduced form the <strong>poles</strong> are the values of \(s\) where
+the denominator is equal to zero</p>
+<p>The points where the rational function is not defined</p>
+<p>We allow the poles to be complex numbers</p>
+<h2 id="what-are-the-poles-for-this-function"><span class="section-num">3</span> What are the poles for this function?</h2>
+<h3 id="front"><span class="section-num">3.1</span> Front</h3>
+<p><b>What are the poles for this function?</b></p>
+<p>\({\displaystyle \frac{1}{s^2 + 4}}\)</p>
+<h3 id="back"><span class="section-num">3.2</span> Back</h3>
+<p>\(s = \pm 2i\)</p>
+<h2 id="what-are-the-poles-for-this-function"><span class="section-num">4</span> What are the poles for this function?</h2>
+<h3 id="front"><span class="section-num">4.1</span> Front</h3>
+<p><b>What are the poles for this function?</b></p>
+<p>\({\displaystyle s^2 + 1}\)</p>
+<h3 id="back"><span class="section-num">4.2</span> Back</h3>
+<p>Has no poles, it not a rational function</p>
+<h2 id="what-are-the-poles-for-this-function"><span class="section-num">5</span> What are the poles for this function?</h2>
+<h3 id="front"><span class="section-num">5.1</span> Front</h3>
+<p><b>What are the poles for this function?</b></p>
+<p>\({\displaystyle \frac{1}{(s^2 + 8s + 7)(s^2 + 4)}}\)</p>
+<h3 id="back"><span class="section-num">5.2</span> Back</h3>
+<p>Has poles at \(-1, -7, \pm 2i\)</p>
+<h2 id="what-are-the-poles-for-this-function"><span class="section-num">6</span> What are the poles for this function?</h2>
+<h3 id="front"><span class="section-num">6.1</span> Front</h3>
+<p><b>What are the poles for this function?</b></p>
+<p>\({\displaystyle \frac{s - 2}{(s^2 - 4)}}\)</p>
+<h3 id="back"><span class="section-num">6.2</span> Back</h3>
+<p>Put in reduced form \({\displaystyle \frac{1}{s + 2}}\), so has only one pole at
+\(s = -2\)</p>
+<h2 id="what-the-poles-for-a-ode-s-with-system-function-of-form--1-ps"><span class="section-num">7</span> What the poles for a ODE&rsquo;s with system function of form \(1/p(s)\)?</h2>
+<h3 id="front"><span class="section-num">7.1</span> Front</h3>
+<p><b>What the poles for a ODE&rsquo;s with system function of form $1/p(s)$?</b></p>
+<h3 id="back"><span class="section-num">7.2</span> Back</h3>
+<p>The poles are just the roots of \(p(s)\). These are the familiar characteristic
+roots.</p>
+<h2 id="why-do-you-draw-the-function--fs---with-absolute-values"><span class="section-num">8</span> Why do you draw the function \(F(s)\) with absolute values?</h2>
+<h3 id="front"><span class="section-num">8.1</span> Front</h3>
+<p><b>Why do you draw the function $F(s)$ with absolute values?</b></p>
+<h3 id="back"><span class="section-num">8.2</span> Back</h3>
+<p>Because it&rsquo;s a simplification of the original graph, and we can see the poles of
+the transfer function of the form \(1/p(s)\) easily.</p>
+<h2 id="what-are-the-graph-to-see-the-poles-for-this-function"><span class="section-num">9</span> What are the graph to see the poles for this function?</h2>
+<h3 id="front"><span class="section-num">9.1</span> Front</h3>
+<p><b>What are the graph to see the poles for this function?</b></p>
+<p>\({\displaystyle F(s) = \frac{1}{s^2 - 4}}\)</p>
+<p>Only for \(s\) real</p>
+<h3 id="back"><span class="section-num">9.2</span> Back</h3>
+<p>There are 2 poles at \(s = \pm 2\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/d5/9c6335-c844-4231-b01c-b0ab58b42144/_20200916_224748HfANMdc.png"/> 
+</figure>
+
+<h2 id="what-is-the-exponential-growth-rate-of-a-function--ft"><span class="section-num">10</span> What is the exponential growth rate of a function \(f(t)\)?</h2>
+<h3 id="front"><span class="section-num">10.1</span> Front</h3>
+<p><b>What is the exponential growth rate of a function $f(t)$?</b></p>
+<h3 id="back"><span class="section-num">10.2</span> Back</h3>
+<p>The exponential growth rate of a function \(f(t)\) is the smallest value \(a\) such
+that</p>
+<p>\({\displaystyle \lim_{t \to \infty} \frac{f(t)}{e^{bt}} = 0 \qq{for all} b \gt a}\)</p>
+<p>This says \(f(t)\) grows slower than any exponential with growth rate larger than
+\(a\)</p>
+<h2 id="what-that-means-that-the-exponential-growth-rate-of--ft---is-positive"><span class="section-num">11</span> What that means that the exponential growth rate of \(f(t)\) is positive?</h2>
+<h3 id="front"><span class="section-num">11.1</span> Front</h3>
+<p><b>What that means that the exponential growth rate of $f(t)$ is positive?</b></p>
+<h3 id="back"><span class="section-num">11.2</span> Back</h3>
+<p>It means that the function \(f(t)\) grows rapidly to infinity as \(t \to \infty\)</p>
+<h2 id="what-does-mean-that-the-exponential-growth-rate-of--ft---is-negative"><span class="section-num">12</span> What does mean that the exponential growth rate of \(f(t)\) is negative?</h2>
+<h3 id="front"><span class="section-num">12.1</span> Front</h3>
+<p><b>What does mean that the exponential growth rate of $f(t)$ is negative?</b></p>
+<h3 id="back"><span class="section-num">12.2</span> Back</h3>
+<p>A negative growth rate means that the function \(f(t)\) is decaying exponentially
+to zero as \(t \to \infty\)</p>
+<h2 id="what-is-it-the-exponential-growth-rate-of-this-function"><span class="section-num">13</span> What is it the exponential growth rate of this function?</h2>
+<h3 id="front"><span class="section-num">13.1</span> Front</h3>
+<p><b>What is it the exponential growth rate of this function?</b></p>
+<p>\(e^{2t}\)</p>
+<h3 id="back"><span class="section-num">13.2</span> Back</h3>
+<p>\(2\)</p>
+<h2 id="what-is-it-the-exponential-growth-rate-of-this-function"><span class="section-num">14</span> What is it the exponential growth rate of this function?</h2>
+<h3 id="front"><span class="section-num">14.1</span> Front</h3>
+<p><b>What is it the exponential growth rate of this function?</b></p>
+<p>\(e^{-2t}\)</p>
+<h3 id="back"><span class="section-num">14.2</span> Back</h3>
+<p>\(-2\)</p>
+<h2 id="what-is-it-the-exponential-growth-rate-of-this-function"><span class="section-num">15</span> What is it the exponential growth rate of this function?</h2>
+<h3 id="front"><span class="section-num">15.1</span> Front</h3>
+<p><b>What is it the exponential growth rate of this function?</b></p>
+<p>\(f(t) = 1\)</p>
+<h3 id="back"><span class="section-num">15.2</span> Back</h3>
+<p>\(0\)</p>
+<h2 id="what-is-it-the-exponential-growth-rate-of-this-function"><span class="section-num">16</span> What is it the exponential growth rate of this function?</h2>
+<h3 id="front"><span class="section-num">16.1</span> Front</h3>
+<p><b>What is it the exponential growth rate of this function?</b></p>
+<p>\(f(t) = \cos(t)\)</p>
+<h3 id="back"><span class="section-num">16.2</span> Back</h3>
+<p>\(0\)</p>
+<p>\({\displaystyle \lim_{t \to \infty} \frac{\cos(t)}{e^{bt}} = 0}\) for all
+positive \(b\)</p>
+<h2 id="what-is-it-the-exponential-growth-rate-of-this-function"><span class="section-num">17</span> What is it the exponential growth rate of this function?</h2>
+<h3 id="front"><span class="section-num">17.1</span> Front</h3>
+<p><b>What is it the exponential growth rate of this function?</b></p>
+<p>\(f(t) = t\)</p>
+<h3 id="back"><span class="section-num">17.2</span> Back</h3>
+<p>Has exponential growth rate \(0\)</p>
+<p>This may be surprising because \(f(t)\) grows to infinity. But it grows linearly,
+which is slower than any positive exponential growth rate</p>
+<h2 id="what-is-it-the-exponential-growth-rate-of-this-function"><span class="section-num">18</span> What is it the exponential growth rate of this function?</h2>
+<h3 id="front"><span class="section-num">18.1</span> Front</h3>
+<p><b>What is it the exponential growth rate of this function?</b></p>
+<p>\(e^{t^2}\)</p>
+<h3 id="back"><span class="section-num">18.2</span> Back</h3>
+<p>Does not have an exponential growth rate since it grows faster than any
+exponential.</p>
+<h2 id="what-is-the-relation-between-exponential-growth-rate-and-poles-of--ft"><span class="section-num">19</span> What is the relation between exponential growth rate and poles of \(f(t)\)?</h2>
+<h3 id="front"><span class="section-num">19.1</span> Front</h3>
+<p><b>What is the relation between exponential growth rate and poles of $f(t)$?</b></p>
+<h3 id="back"><span class="section-num">19.2</span> Back</h3>
+<p>That&rsquo;s a theorem</p>
+<p>The exponential growth rate of the function \(f(t)\) is the <strong>largest</strong> real part of
+all poles of its Laplace transform \(\mathcal{L}(f(t))(s) = F(s)\)</p>
+<h2 id="what-is-it-the-exponential-growth-rate-of-this-function"><span class="section-num">20</span> What is it the exponential growth rate of this function?</h2>
+<h3 id="front"><span class="section-num">20.1</span> Front</h3>
+<p><b>What is it the exponential growth rate of this function?</b></p>
+<p>\({\displaystyle f(t) = 3e^{2t} + 5 e^t +7 e^{-8t}}\)</p>
+<h3 id="back"><span class="section-num">20.2</span> Back</h3>
+<p>Using the Laplace transform \({\displaystyle F(s) = \frac{3}{s - 2} +
+\frac{5}{s - 1} + \frac{7}{s + 8}}\), which has poles at \(s = 2, 1, -8\).</p>
+<p>The largest real part \(s\) is \(2\)</p>
+<p>Thus, the exponential growth rate of \(f(t)\) is \(2\)</p>
+<p>Also, it is clear that the \(3e^{2t}\) term determines the growth rate since it is
+the dominant term as \(t \to \infty\)</p>
+<h2 id="what-is-it-the-exponential-growth-rate-of-this-function"><span class="section-num">21</span> What is it the exponential growth rate of this function?</h2>
+<h3 id="front"><span class="section-num">21.1</span> Front</h3>
+<p><b>What is it the exponential growth rate of this function?</b></p>
+<p>\({\displaystyle f(t) = e^{-t} \cos(2t) + 3e^{-2t}}\)</p>
+<h3 id="back"><span class="section-num">21.2</span> Back</h3>
+<p>The Laplace transform \({\displaystyle F(s) = \frac{s}{(s + 1)^2 + 4} +
+\frac{3}{s + 2}}\)</p>
+<p>This has poles \(s = -1 \pm 2i, -2\)</p>
+<p>The largest part among these is \(-1\), so the exponential growth rate is \(-1\)</p>
+<h2 id="what-are-the-poles-for-this-function"><span class="section-num">22</span> What are the poles for this function?</h2>
+<h3 id="front"><span class="section-num">22.1</span> Front</h3>
+<p><b>What are the poles for this function?</b></p>
+<p>\({\displaystyle g(t) = u(t - a)f(t - a)}\), with \(a &gt; 0\)</p>
+<h3 id="back"><span class="section-num">22.2</span> Back</h3>
+<p>It&rsquo;s Laplace transform is \({\displaystyle G(s) = e^{-as}F(s)}\). Since \(e^{-as}\)
+does not have any poles, \(G(s)\) and \(F(s)\) has exactly the same poles. That is,
+the poles can&rsquo;t detect this type of shift in time</p>
+<h2 id="what-is-a-pole-diagram"><span class="section-num">23</span> What is a pole diagram?</h2>
+<h3 id="front"><span class="section-num">23.1</span> Front</h3>
+<p><b>What is a pole diagram?</b></p>
+<p>For function \(f(t)\)</p>
+<h3 id="back"><span class="section-num">23.2</span> Back</h3>
+<p>The pole diagram of a function \(F(s)\) is simply the complex s-plane with an \(X\)
+marking the location of each pole of \(F(s)\)</p>
+<h2 id="what-is-the-pole-diagram-for-this-function"><span class="section-num">24</span> What is the pole diagram for this function?</h2>
+<h3 id="front"><span class="section-num">24.1</span> Front</h3>
+<p><b>What is the pole diagram for this function?</b></p>
+<p>\({\displaystyle F = \frac{1}{s^2 + 4}}\)</p>
+<h3 id="back"><span class="section-num">24.2</span> Back</h3>
+<figure>
+    <img src="https://ppalazon.github.io/d5/9c6335-c844-4231-b01c-b0ab58b42144/_20200916_224756BusDO98.png"/> 
+</figure>
+
+<h2 id="determine-the-exponential-growth-rate-of-the-inverse-laplace-transform"><span class="section-num">25</span> Determine the exponential growth rate of the inverse Laplace transform</h2>
+<h3 id="front"><span class="section-num">25.1</span> Front</h3>
+<p><b>Determine the exponential growth rate of the inverse Laplace transform</b></p>
+<p>From the diagram</p>
+<figure>
+    <img src="https://ppalazon.github.io/d5/9c6335-c844-4231-b01c-b0ab58b42144/_20200916_224809Yu0D4zZ.png"/> 
+</figure>
+
+<h3 id="back"><span class="section-num">25.2</span> Back</h3>
+<p>The largest real part of a pole is \(-2\). The exponential growth rate is \(-2\)</p>
+<h2 id="what-happens-when--t-to-infty--for--ft---with-exponential-growth-rate-equals-to--0"><span class="section-num">26</span> What happens when \(t \to \infty\) for \(f(t)\) with exponential growth rate equals to \(0\)?</h2>
+<h3 id="front"><span class="section-num">26.1</span> Front</h3>
+<p><b>What happens when $t \to \infty$ for $f(t)$ with exponential growth rate equals to $0$?</b></p>
+<p>Poles of \(F(s)\) is \(0\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/d5/9c6335-c844-4231-b01c-b0ab58b42144/_20200916_224817fV5wyOL.png"/> 
+</figure>
+
+<h3 id="back"><span class="section-num">26.2</span> Back</h3>
+<p>We can&rsquo;t tell how \(f(t)\) behaves.</p>
+<p>For example, if \(F(s) = \frac{1}{s}\) then \(f(t) = 1\), which stays bounded</p>
+<p>if \(F(s) = \frac{1}{s^2}\), then \(f(t) = t\) which goes go to infinity, but more
+slowly than any positive exponential</p>
+<h2 id="determine-how-will-be--ft---as--t-to-infty--from-its-pole-diagram"><span class="section-num">27</span> Determine how will be \(f(t)\) as \(t \to \infty\) from its pole diagram?</h2>
+<h3 id="front"><span class="section-num">27.1</span> Front</h3>
+<p><b>Determine how will be $f(t)$ as $t \to \infty$ from its pole diagram?</b></p>
+<figure>
+    <img src="https://ppalazon.github.io/d5/9c6335-c844-4231-b01c-b0ab58b42144/_20200916_224826z4y9A1j.png"/> 
+</figure>
+
+<h3 id="back"><span class="section-num">27.2</span> Back</h3>
+<p>Exponential growth rate is \(3\), so \(f(t) \to \infty\)</p>
+<h2 id="what-is-the-pole-diagram-for-a-lti-system"><span class="section-num">28</span> What is the pole diagram for a LTI system?</h2>
+<h3 id="front"><span class="section-num">28.1</span> Front</h3>
+<p><b>What is the pole diagram for a LTI system?</b></p>
+<h3 id="back"><span class="section-num">28.2</span> Back</h3>
+<p>Is the pole diagram of its transfer function</p>
+<h2 id="what-is-the-pole-diagram-for-this-system"><span class="section-num">29</span> What is the pole diagram for this system?</h2>
+<h3 id="front"><span class="section-num">29.1</span> Front</h3>
+<p><b>What is the pole diagram for this system?</b></p>
+<p>\({\displaystyle \ddot{x} + 4 \dot{x} + 6x = \dot{y}}\), consider \(y(t)\) to be the input</p>
+<h3 id="back"><span class="section-num">29.2</span> Back</h3>
+<p>Assuming rest IC&rsquo;s, Laplace transforming this equation gives us</p>
+<p>\({\displaystyle (s^2 + 4s + 6)X = sY}\)</p>
+<p>This implies that \({\displaystyle X(s) = \frac{s}{s^2 + 4s + 6} Y(s)}\) where its
+transfer function is \({\displaystyle W(s) = \frac{s}{s^2 + 4s + 6}}\)</p>
+<p>This has poles at \(s = -2 \pm \sqrt{2}i\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/d5/9c6335-c844-4231-b01c-b0ab58b42144/_20200916_224837ijCY8dj.png"/> 
+</figure>
+
+<h2 id="when-can-we-say-that-a-system-is-stable"><span class="section-num">30</span> When can we say that a system is stable?</h2>
+<h3 id="front"><span class="section-num">30.1</span> Front</h3>
+<p><b>When can we say that a system is stable?</b></p>
+<p>Given its transfer function</p>
+<h3 id="back"><span class="section-num">30.2</span> Back</h3>
+<p>The system is stable if all its poles have negative real part</p>
+<p>Equivalently, the system is stable if all its poles lie strictly in the left
+half of the complex plane \(\operatorname{Re}(s) \lt 0\)</p>
+<h2 id="is-this-system-stable"><span class="section-num">31</span> Is this system stable?</h2>
+<h3 id="front"><span class="section-num">31.1</span> Front</h3>
+<p><b>Is this system stable?</b></p>
+<p>which pole diagram of an LTI is</p>
+<figure>
+    <img src="https://ppalazon.github.io/d5/9c6335-c844-4231-b01c-b0ab58b42144/_20200916_224846P2RUhKC.png"/> 
+</figure>
+
+<h3 id="back"><span class="section-num">31.2</span> Back</h3>
+<p>No, it isn&rsquo;t stable because one of its pole has positive real part</p>
+<h2 id="which-of-these-lti-system-are-stable"><span class="section-num">32</span> Which of these LTI system are stable?</h2>
+<h3 id="front"><span class="section-num">32.1</span> Front</h3>
+<p><b>Which of these LTI system are stable?</b></p>
+<p>Pole diagrams</p>
+<figure>
+    <img src="https://ppalazon.github.io/d5/9c6335-c844-4231-b01c-b0ab58b42144/_20200916_224858uKFQFzV.png"/> 
+</figure>
+
+<h3 id="back"><span class="section-num">32.2</span> Back</h3>
+<p>Only (e) has all its poles in the left half-plane, so all it&rsquo;s poles has
+negative real part</p>
+<h2 id="at-which-point-could-we-say-that-the-amplitude-of-the-lti-will-be-largest"><span class="section-num">33</span> At which point could we say that the amplitude of the LTI will be largest?</h2>
+<h3 id="front"><span class="section-num">33.1</span> Front</h3>
+<p><b>At which point could we say that the amplitude of the LTI will be largest?</b></p>
+<p>From its pole diagram</p>
+<figure>
+    <img src="https://ppalazon.github.io/d5/9c6335-c844-4231-b01c-b0ab58b42144/_20200916_224906y7Y6rqx.png"/> 
+</figure>
+
+<h3 id="back"><span class="section-num">33.2</span> Back</h3>
+<p>We are looking form \(\abs{F(s)}\) that we know that goes to infinfite at the
+poles of the transfer function.</p>
+<p>The can say that the point \(A\) will generate the largest amplitude because it
+close to a pole. The point \(B\) and \(C\) are both far from poles so it&rsquo;ll produce
+a smaller amplitude than \(A\)</p>
+<h2 id="what-is-the-relationship-between-amplitude-response-and-system-function"><span class="section-num">34</span> What is the relationship between amplitude response and system function?</h2>
+<h3 id="front"><span class="section-num">34.1</span> Front</h3>
+<p><b>What is the relationship between amplitude response and system function?</b></p>
+<p>Consider the system \(p(D) x = f(t)\)</p>
+<h3 id="back"><span class="section-num">34.2</span> Back</h3>
+<p>The transfer function is \({\displaystyle W(s) = \frac{1}{p(s)}}\)</p>
+<p>When \(f(t) = B \cos(\omega t)\), the ERP is</p>
+<p>\({\displaystyle x_p(t) = \frac{B \cos(\omega t - \phi)}{\abs{p(i\omega)}}}\),
+where \(\phi = \operatorname{Arg}(p(i\omega))\)</p>
+<p><strong>If the system is stable</strong>, then all solutions are asymptotic to the period
+function \(x_p(t)\)</p>
+<p>The amplitude response is \({\displaystyle g(\omega) =
+\frac{1}{\abs{p(i\omega)}}}\), so comparing with its transfer function</p>
+<p>\({\displaystyle g(\omega) = \abs{W(i\omega)}}\)</p>
+<p>This relationship holds for all stable LTI systems</p>
+<h2 id="at-approximately-what-frequency-will-the-system-have-the-biggest-response"><span class="section-num">35</span> At approximately what frequency will the system have the biggest response?</h2>
+<h3 id="front"><span class="section-num">35.1</span> Front</h3>
+<p><b>At approximately what frequency will the system have the biggest response?</b></p>
+<p>This is the pole diagram of a stable LTI system</p>
+<figure>
+    <img src="https://ppalazon.github.io/d5/9c6335-c844-4231-b01c-b0ab58b42144/_20200916_224915caBpc6Y.png"/> 
+</figure>
+
+<h3 id="back"><span class="section-num">35.2</span> Back</h3>
+<p>Let \(W(s)\) be the transfer function, which amplitude response if \({\displaystyle
+g(\omega) = \abs{W(i\omega)}}\)</p>
+<p>Since \(i\omega\) is on the positive imaginary axis, the amplitude response
+\(g(\omega)\) will be the largest point at the \(i\omega\) on the imaginary axis
+where \(\abs{W(i\omega)}\) is largest.</p>
+<p>Thus, we choose \(i\omega \approx 3i\), i.e. the practical resonant frequency is
+approximately \(\omega = 3\)</p>
+<p>You can see better in 3D</p>
+<figure>
+    <img src="https://ppalazon.github.io/d5/9c6335-c844-4231-b01c-b0ab58b42144/_20200916_224924V2Ogucc.png"/> 
+</figure>
+
+<p>The yellow amplitude curve runs along-side the &ldquo;mountains&rdquo; that rise up near the
+poles. As \(i\omega\) gets close to a pole, the amplitude curve moves up the side
+of the mountain.</p>
+<h2 id="which-system-decays-faster"><span class="section-num">36</span> Which system decays faster?</h2>
+<h3 id="front"><span class="section-num">36.1</span> Front</h3>
+<p><b>Which system decays faster?</b></p>
+<figure>
+    <img src="https://ppalazon.github.io/d5/9c6335-c844-4231-b01c-b0ab58b42144/_20200916_224932tRi8n4e.png"/> 
+</figure>
+
+<p>Order the system which decays in terms of velocity. And say which one has no
+oscillation</p>
+<h3 id="back"><span class="section-num">36.2</span> Back</h3>
+<p>We need to compare the rightmost pole are most on the left</p>
+<ul>
+<li>\(e^{-3t}\)</li>
+<li>\(e^{-2t}\)</li>
+<li>\(e^{-t}\)</li>
+<li>\(e^{-0.5t}\)</li>
+</ul>
+<p>No oscillation is b</p>
+<h2 id="consider-this--ft---which-values-of--omega--creates-the-biggest-response"><span class="section-num">37</span> Consider this \(f(t)\) which values of \(\omega\) creates the biggest response?</h2>
+<h3 id="front"><span class="section-num">37.1</span> Front</h3>
+<p><b>Consider this $f(t)$ which values of $\omega$ creates the biggest response?</b></p>
+<figure>
+    <img src="https://ppalazon.github.io/d5/9c6335-c844-4231-b01c-b0ab58b42144/_20200916_224940XeeG3uh.png"/> 
+</figure>
+
+<p>\(p(D) y = f(t)\), where \(f(t)=f_0 \cos(\omega t)\)</p>
+<h3 id="back"><span class="section-num">37.2</span> Back</h3>
+<p>Amplitude response is \({\displaystyle \frac{1}{\abs{p(i\omega)}}}\)</p>
+<p>The amplitude is biggest when the polynomial \(p(s)\) is close to \(0\). So need to
+close the value for \(i\omega\) close to pole in the imaginary axis.</p>
+<p>In this case \(i\omega = i4\), that is close to the pole which generate a big
+amplitude response.</p>
+<p>Amplitude response is a function on terms of \(i\omega\) (along imaginary axis),
+over a surface described by the transfer function.</p>
+<h2 id="find-the-pole-diagram-of--fs"><span class="section-num">38</span> Find the pole diagram of \(F(s)\)</h2>
+<h3 id="front"><span class="section-num">38.1</span> Front</h3>
+<p><b>Find the pole diagram of $F(s)$</b></p>
+<p>\({\displaystyle f(t) = \cos(2t) + e^{-t} \sin(t)}\)</p>
+<h3 id="back"><span class="section-num">38.2</span> Back</h3>
+<p>\({\displaystyle \mathcal{L}(s) = \frac{s}{s^2 + 4} + \frac{1}{(s+1)^1 + 1}}\)</p>
+<p>This has poles when \(s^2 + 4 = 0\), so at \(s = \pm 2i\), and when \((s+1)^2 + 1 =
+0\), so also at \(s = -1 \pm i\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/d5/9c6335-c844-4231-b01c-b0ab58b42144/_20200916_2249484Q0U17j.png"/> 
+</figure>
+
+<h2 id="from-this-pole-diagram-describe-all-function--ft---whose-laplace-transform-have-given-poles"><span class="section-num">39</span> From this pole diagram, describe all function \(f(t)\) whose Laplace transform have given poles?</h2>
+<h3 id="front"><span class="section-num">39.1</span> Front</h3>
+<p><b>From this pole diagram, describe all function $f(t)$ whose Laplace transform have given poles?</b></p>
+<p>Poles: \({1, i, -i}\)</p>
+<h3 id="back"><span class="section-num">39.2</span> Back</h3>
+<p>For large \(t\), these functions have exponential growth rate \(e^t\). This means
+that for any \(a \lt 1 \lt c\), \(e^{at} \lt \abs{f(t)} \lt e^{ct}\) for large \(t\)</p>
+<p>They also show a small oscillation of approximately constant amplitude and
+circular frequency \(1\)</p>
+<p>\(f(t) = ae^t + b \sin(t)\) where \(a,b \neq 0\) with \({\displaystyle F(s) =
+\frac{a}{s-1} + \frac{b}{s^2 + 1}}\)</p>
+<h2 id="from-this-pole-diagram-describe-all-function--ft---whose-laplace-transform-have-given-poles"><span class="section-num">40</span> From this pole diagram, describe all function \(f(t)\) whose Laplace transform have given poles?</h2>
+<h3 id="front"><span class="section-num">40.1</span> Front</h3>
+<p><b>From this pole diagram, describe all function $f(t)$ whose Laplace transform have given poles?</b></p>
+<p>Poles: \(-1 + 4i, -1 - 4i\)</p>
+<h3 id="back"><span class="section-num">40.2</span> Back</h3>
+<p>For large \(t\), these functions show exponential decay like \(e^{-t}\), and
+oscillate with circular frequency \(4\)</p>
+<p>\({\displaystyle f(t) = ae^{-t} \sin(4t)}\), where \(a \neq 0\) with \({\displaystyle
+F(s) = \frac{4a}{(s+1)^2 + 16}}\)</p>
+<h2 id="from-this-pole-diagram-describe-all-function--ft---whose-laplace-transform-have-given-poles"><span class="section-num">41</span> From this pole diagram, describe all function \(f(t)\) whose Laplace transform have given poles?</h2>
+<h3 id="front"><span class="section-num">41.1</span> Front</h3>
+<p><b>From this pole diagram, describe all function $f(t)$ whose Laplace transform have given poles?</b></p>
+<p>Poles: No have poles on the diagram</p>
+<h3 id="back"><span class="section-num">41.2</span> Back</h3>
+<p>For large \(t\), these functions decays to zero faster than any exponential</p>
+<p>\(f(t) = a \delta(t-b)\) where \(a \neq 0\) and \(b \geq 0\) with \({\displaystyle F(s)
+= ae^{-bt}}\), or \(f(t) = a(u(t) - u(t-b))\), where \(a \neq 0, b \gt 0\) with
+\({\displaystyle F(s) = a \frac{1 - e^{-bs}}{s}}\)</p>
+
+</div>
+
+
+            <footer>
+    
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-31%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Poles%2c%20Amplitude%20Response%2c%20Connection%20to%20ERF&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-31%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-31%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-31%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-31%2f&amp;title=Poles%2c%20Amplitude%20Response%2c%20Connection%20to%20ERF" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Poles%2c%20Amplitude%20Response%2c%20Connection%20to%20ERF&amp;body=Check out this site https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-31%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+
+<nav>
+    <ul class="pager">
+    
+    <li class="previous">
+        <a href="https://ppalazon.github.io/18.03/unit-3/session-30/" title="Transfer (System) and Weight Functions, Green&#39;s Formula">
+            <span aria-hidden="true">&larr;</span>Transfer (System) and Weight Functions, Green&#39;s Formula
+        </a>
+    </li>
+    
+
+    
+    </ul>
+</nav>
+
+
+
+</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//ppalazon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+        </div>
+    </div>
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/">18.03 Differential Equations</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/unit-3/">3: Fourier Series and Laplace Transform</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.03/unit-3/session-31/">Poles, Amplitude Response, Connection to ERF</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

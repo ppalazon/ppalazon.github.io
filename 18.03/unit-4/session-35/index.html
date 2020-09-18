@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Matrix Exponential  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="ode, maths, ">
+
+
+<meta property="og:title" content="Matrix Exponential  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.03/unit-4/session-35/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="content-source" content="18.03/unit-4/session-35.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Captured On [2020-02-20 Thu 21:51] Source Matrix Exponentials | Unit IV: First-order Systems | Differential Equations | Mathematics | MIT OpenCourseWare  1 For this linear system, how many solutions are there? 1.1 Front For this linear system, how many solutions are there?
+\({\displaystyle \dot{\vb{x}} = A \vb{x}}\), where \(A\) is a \(n \cross n\) matrix
+1.2 Back There are \(n\) linearly independent solutions for the system
+2 How is the linear system when the coefficients are functions of the independent variable t?"/>
+<meta property="og:article:published_time" content="2020-01-18T00:00:00&#43;01:00" />
+<meta property="og:article:modified_time" content="2020-01-18T00:00:00&#43;01:00" />
+
+
+
+<meta property="og:article:tag" content="ode">
+
+<meta property="og:article:tag" content="maths">
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ppalazon" />
+<meta name="twitter:creator" content="@ppalazon" />
+<meta name="twitter:title" content="Matrix Exponential" />
+<meta name="twitter:description" content="Captured On [2020-02-20 Thu 21:51] Source Matrix Exponentials | Unit IV: First-order Systems | Differential Equations | Mathematics | MIT OpenCourseWare  1 For this linear system, how many solutions are there? 1.1 Front For this linear system, how many solutions are there?
+\({\displaystyle \dot{\vb{x}} = A \vb{x}}\), where \(A\) is a \(n \cross n\) matrix
+1.2 Back There are \(n\) linearly independent solutions for the system
+2 How is the linear system when the coefficients are functions of the independent variable t?"/>
+<meta name="twitter:url" content="https://ppalazon.github.io/18.03/unit-4/session-35/" />
+<meta name="twitter:domain" content="https://ppalazon.github.io">
+
+
+
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+     "@type": "Article",
+     "headline": "Matrix Exponential",
+     "author": {
+         "@type": "Person",
+         "name": "http://profiles.google.com/+?rel=author"
+     },
+     "datePublished": "2020-01-18",
+     "description": "",
+     "wordCount":  3604 
+ }
+</script>
+
+
+
+<link rel="canonical" href="https://ppalazon.github.io/18.03/unit-4/session-35/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+ }
+ .hero {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: calc(200px + (450 - 200) * ((100vw - 300px) / (1600 - 300)));
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: calc(-1 * (200px + (450 - 200) * ((100vw - 300px) / (1600 - 300))));
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+    <header class="container hat">
+        <h1>Matrix Exponential
+</h1>
+
+        
+
+
+<span class="author">by
+    
+    MIT OCW, Pablo Palazon
+    
+</span>
+
+
+    </header>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            
+            <div class="content">
+  <dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2020-02-20 Thu 21:51]</span></span></dd>
+<dt>Source</dt>
+<dd><a href="https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-iv-first-order-systems/matrix-exponentials/">Matrix Exponentials | Unit IV: First-order Systems | Differential Equations | Mathematics | MIT OpenCourseWare</a></dd>
+</dl>
+<h2 id="for-this-linear-system-how-many-solutions-are-there"><span class="section-num">1</span> For this linear system, how many solutions are there?</h2>
+<h3 id="front"><span class="section-num">1.1</span> Front</h3>
+<p><b>For this linear system, how many solutions are there?</b></p>
+<p>\({\displaystyle \dot{\vb{x}} = A \vb{x}}\), where \(A\) is a \(n \cross n\) matrix</p>
+<h3 id="back"><span class="section-num">1.2</span> Back</h3>
+<p>There are \(n\) linearly independent solutions for the system</p>
+<h2 id="how-is-the-linear-system-when-the-coefficients-are-functions-of-the-independent-variable-t"><span class="section-num">2</span> How is the linear system when the coefficients are functions of the independent variable t?</h2>
+<h3 id="front"><span class="section-num">2.1</span> Front</h3>
+<p><b>How is the linear system when the coefficients are functions of the independent variable t?</b></p>
+<p>for \(n \cross n\) linear homogeneous systems</p>
+<h3 id="back"><span class="section-num">2.2</span> Back</h3>
+<p>\({\displaystyle \dot{\vb{x}} = A(t) \vb{x}}\)</p>
+<h2 id="when-can-we-say-that-the-n-solutions-are-linearly-independent"><span class="section-num">3</span> When can we say that the n solutions are linearly independent?</h2>
+<h3 id="front"><span class="section-num">3.1</span> Front</h3>
+<p><b>When can we say that the n solutions are linearly independent?</b></p>
+<p>Solutions for the system \({\displaystyle \dot{\vb{x}} = A \vb{x}}\)</p>
+<h3 id="back"><span class="section-num">3.2</span> Back</h3>
+<p>If \(c_1 \vb{x_1}(t) + \dots + c_n \vb{x_n}(t) = 0\) for all \(t\) \(\implies\) all
+\(c_i = 0\)</p>
+<h2 id="what-that-means-this-expression"><span class="section-num">4</span> What that means this expression?</h2>
+<h3 id="front"><span class="section-num">4.1</span> Front</h3>
+<p><b>What that means this expression?</b></p>
+<p>\(c_1 \vb{x_1}(t) + \dots + c_n \vb{x_n}(t) \equiv 0\)</p>
+<h3 id="back"><span class="section-num">4.2</span> Back</h3>
+<p>It&rsquo;s identically \(0\), meaning zero for all \(t\), the symbol \(\not \equiv\) means
+not identically 0, there is some \(t\text{-value}\) for which it is not zero</p>
+<h2 id="what-is-a-fundamental-set-of-solutions-for-this-linear-system"><span class="section-num">5</span> What is a fundamental set of solutions for this linear system?</h2>
+<h3 id="front"><span class="section-num">5.1</span> Front</h3>
+<p><b>What is a fundamental set of solutions for this linear system?</b></p>
+<p>\({\displaystyle \dot{\vb{x}} = A(t) \vb{x}}\)</p>
+<p>And what is the general solution?</p>
+<h3 id="back"><span class="section-num">5.2</span> Back</h3>
+<p>Is the set of solutions \(\vb{x_1}, \dots \vb{x_n}\) which is linearly independent
+for this system.</p>
+<p>The general solution is \(\vb{x} = c_1 \vb{x_1} + \dots + c_n \vb{x_n}\) using the
+superposition principle because it&rsquo;s a linear system.</p>
+<h2 id="what-is-the-existence-and-uniqueness-theorem-for-linear-systems"><span class="section-num">6</span> What is the existence and uniqueness theorem for linear systems?</h2>
+<h3 id="front"><span class="section-num">6.1</span> Front</h3>
+<p><b>What is the existence and uniqueness theorem for linear systems?</b></p>
+<p>\({\displaystyle \dot{\vb{x}} = A(t) \vb{x}}\)</p>
+<h3 id="back"><span class="section-num">6.2</span> Back</h3>
+<p>If the entries of the square matrix \(A(t)\) are continuous on an open interval
+\(I\) containing \(t_0\), then the initial value problem</p>
+<p>\({\displaystyle \dot{\vb{x}} = A(t) \vb{x}}\), \(\vb{x}(t_0) = \vb{x_0}\)</p>
+<p>has one and only one solution \(\vb{x}(t)\) on the interval \(I\)</p>
+<h2 id="what-is-the-linear-independence-theorem-for-linear-systems"><span class="section-num">7</span> What is the linear independence theorem for linear systems?</h2>
+<h3 id="front"><span class="section-num">7.1</span> Front</h3>
+<p><b>What is the linear independence theorem for linear systems?</b></p>
+<p>\({\displaystyle \dot{\vb{x}} = A(t) \vb{x}}\),</p>
+<h3 id="back"><span class="section-num">7.2</span> Back</h3>
+<p>Supposing that the entries of \(A(t)\) are continuous on an open interval \(I\)</p>
+<p>Let \(\vb{x_1}(t)\) and \(\vb{x_2}(t)\) be two solutions to the linear system on the
+interval \(I\), such that at some point \(t_0\) in \(I\), the vectors \(\vb{x_1}(t_0)\)
+and \(\vb{x_2}(t_0)\) are linearly independent.</p>
+<p>Then</p>
+<ol>
+<li>the solutions \(\vb{x_1}(t)\) and \(\vb{x_2}(t)\) are linearly independent on
+\(I\), and</li>
+<li>the vectors \(\vb{x_1}(t_1)\) and \(\vb{x_2}(t_1)\) are linearly independent at
+every point \(t_1\) of \(I\)</li>
+</ol>
+<h2 id="what-is-the-general-solution-theorem-for-linear-systems"><span class="section-num">8</span> What is the general solution theorem for linear systems?</h2>
+<h3 id="front"><span class="section-num">8.1</span> Front</h3>
+<p><b>What is the general solution theorem for linear systems?</b></p>
+<p>\({\displaystyle \dot{\vb{x}} = A(t) \vb{x}}\), where \(A\) is matrix of \(n \cross
+n\)</p>
+<h3 id="back"><span class="section-num">8.2</span> Back</h3>
+<ol>
+<li>This system has \(n\) linearly independent solutions</li>
+<li>If \(\vb{x_1}, \dots, \vb{x_n}\) are \(n\) linearly independent solutions, then
+every solution \(\vb{x}\) can be written in this form for some choice of \(c_i\)</li>
+</ol>
+<p>\({\displaystyle \vb{x} = c_1 \vb{x_1} + \dots + c_n \vb{x_n}}\)</p>
+<h2 id="what-is-the-wronskian-of-these-2-vector-functions"><span class="section-num">9</span> What is the Wronskian of these 2 vector functions?</h2>
+<h3 id="front"><span class="section-num">9.1</span> Front</h3>
+<p><b>What is the Wronskian of these 2 vector functions?</b></p>
+<p>Let \(\vb{x_1}(t)\) and \(\vb{x_2}(t)\) be two 2-vector functions</p>
+<h3 id="back"><span class="section-num">9.2</span> Back</h3>
+<p>We define their <strong>Wronskian</strong> to be the determinant</p>
+<p>\({\displaystyle W(\vb{x_1}, \vb{x_2})(t) = \begin{vmatrix}x_1(t) &amp; x_2 (t)
+\\ y_1(t) &amp; y_2(t)\end{vmatrix}}\)</p>
+<p>whose columns are the two vector functions</p>
+<h2 id="what-does-it-mean-that-wronskian-is-0-in-this-point"><span class="section-num">10</span> What does it mean that Wronskian is 0 in this point?</h2>
+<h3 id="front"><span class="section-num">10.1</span> Front</h3>
+<p><b>What does it mean that Wronskian is 0 in this point? </b></p>
+<p>\({\displaystyle W(\vb{x_1}, \vb{x_2}) (t_0) = 0}\)</p>
+<h3 id="back"><span class="section-num">10.2</span> Back</h3>
+<p>\({\displaystyle W(\vb{x_1}, \vb{x_2}) (t_0) = \begin{vmatrix}x_1(t_0) &amp; x_2
+(t_0) \\ y_1(t_0) &amp; y_2(t_0)\end{vmatrix} = 0 \Leftrightarrow \vb{x_1}(t_0)}\)
+and \(\vb{x_2}(t_0)\) are dependent</p>
+<h2 id="what-is-the-wronskian-vanishing-theorem-for-linear-systems"><span class="section-num">11</span> What is the Wronskian vanishing theorem for linear systems?</h2>
+<h3 id="front"><span class="section-num">11.1</span> Front</h3>
+<p><b>What is the Wronskian vanishing theorem for linear systems?</b></p>
+<p>\({\displaystyle \dot{\vb{x}} = A(t) \vb{x}}\), suppose \(A\) is \(2 \cross 2\)</p>
+<h3 id="back"><span class="section-num">11.2</span> Back</h3>
+<p>On an interval \(I\) where the entries of \(A(t)\) are continuous, let \(\vb{x_1}\)
+and \(\vb{x_2}\) be two solutions to this linear system and \(W(t)\) their Wronskian</p>
+<p>\({\displaystyle W(\vb{x_1}, \vb{x_2})(t) = \begin{vmatrix}x_1(t) &amp; x_2 (t)
+\\ y_1(t) &amp; y_2(t)\end{vmatrix}}\)</p>
+<p>Then either:</p>
+<ol>
+<li>\(W(t) \equiv 0\) on \(I\), and \(\vb{x_1}\) and \(\vb{x_2}\) are linearly dependent
+on \(I\), or</li>
+<li>\(W(t)\) is never \(0\) on \(I\), and \(\vb{x_1}\) and \(\vb{x_2}\) are linearly
+independent on \(I\)</li>
+</ol>
+<h2 id="what-is-the-matrix-form-of-inhomogeneous-linear-system"><span class="section-num">12</span> What is the matrix form of inhomogeneous linear system?</h2>
+<h3 id="front"><span class="section-num">12.1</span> Front</h3>
+<p><b>What is the matrix form of inhomogeneous linear system?</b></p>
+<h3 id="back"><span class="section-num">12.2</span> Back</h3>
+<p>\({\displaystyle \dot{\vb{u}} = A(t) \vb{u} + \vb{F}(t)}\)</p>
+<h2 id="what-is-the-general-solution-for-this-linear-system"><span class="section-num">13</span> What is the general solution for this linear system?</h2>
+<h3 id="front"><span class="section-num">13.1</span> Front</h3>
+<p><b>What is the general solution for this linear system?</b></p>
+<p>\({\displaystyle \dot{\vb{x}} = A(t) \vb{x} + \vb{F}(t)}\), where \(A\) is a square
+matrix \(2 \cross 2\)</p>
+<h3 id="back"><span class="section-num">13.2</span> Back</h3>
+<p>Its homogeneous linear system is \({\displaystyle \dot{\vb{x}} = A(t) \vb{x}}\)
+which solutions are \(\vb{x_h} = c_1 \vb{x_1} + c_2 \vb{x_2}\)</p>
+<p>And \(\vb{x_p}\) is a solution to inhomogeneous linear system, so the general
+solution to the system is</p>
+<p>\({\displaystyle \vb{x} = \vb{x_p} + \vb{x_h}}\)</p>
+<h2 id="what-is-the-existence-and-uniqueness-theorem-for-this-linear-system"><span class="section-num">14</span> What is the existence and uniqueness theorem for this linear system?</h2>
+<h3 id="front"><span class="section-num">14.1</span> Front</h3>
+<p><b>What is the existence and uniqueness theorem for this linear system?</b></p>
+<p>\({\displaystyle \dot{\vb{x}} = A(t) \vb{x} + \vb{F}(t)}\)</p>
+<h3 id="back"><span class="section-num">14.2</span> Back</h3>
+<p>We start with an initial time \(t_0\) and the initial value problem</p>
+<p>\({\displaystyle \dot{\vb{x}} = A(t) \vb{x} + \vb{F}(t)}\), \(\vb{x}(t_0) =
+\vb{x_0}\)</p>
+<p>If \(A(t)\) and \(\vb{F}(t)\) are continuous then there exists a unique solution to
+IVP</p>
+<h2 id="what-is-a-fundamental-matrix-for-this-system"><span class="section-num">15</span> What is a fundamental matrix for this system?</h2>
+<h3 id="front"><span class="section-num">15.1</span> Front</h3>
+<p><b>What is a fundamental matrix for this system?</b></p>
+<p>\({\displaystyle \dot{\vb{x}} = A(t) \vb{x}}\) where \(A(t)\) is \(2 \cross 2\) square
+matrix</p>
+<h3 id="back"><span class="section-num">15.2</span> Back</h3>
+<p>The fundamental matrix is the matrix composed by the 2 linearly independent
+solutions \(\vb{x_1}\) and \(\vb{x_2}\)</p>
+<p>\({\displaystyle \Phi (t) = \begin{pmatrix}\vb{x_1} \\ \vb{x_2}\end{pmatrix}
+= \begin{pmatrix} x_1 &amp; x_2 \\ y_1 &amp; y_2\end{pmatrix}}\)</p>
+<h2 id="what-is-the-general-solution-using-fundamental-matrix-notation"><span class="section-num">16</span> What is the general solution using fundamental matrix notation?</h2>
+<h3 id="front"><span class="section-num">16.1</span> Front</h3>
+<p><b>What is the general solution using fundamental matrix notation?</b></p>
+<p>Where \(\vb{x_1}\) and \(\vb{x_2}\) are the 2 linearly independent solutions</p>
+<h3 id="back"><span class="section-num">16.2</span> Back</h3>
+<p>General solution \({\displaystyle \vb{x}(t) = c_1 \begin{pmatrix}x_1 \\ y_1\end{pmatrix} + c_2 \begin{pmatrix} x_2 \\ y_2\end{pmatrix}
+= \begin{pmatrix}x_1 &amp; x_2 \\ y_1 &amp; y_2\end{pmatrix} \begin{pmatrix}c_1 \\ c_2\end{pmatrix}}\)</p>
+<p>which becomes using the fundamental matrix</p>
+<p>\({\displaystyle \vb{x} = \Phi(t) \vb{c}}\), where \(\vb{c} = \begin{pmatrix}c_1
+\\ c_2\end{pmatrix}\)</p>
+<p>Note that the vector \(\vb{c}\) must be written on the right, even though the
+\(c'\text{s}\) are usually written on the left when they are the coefficients of
+the solutions \(\vb{x_i}\)</p>
+<h2 id="how-can-we-solve-this-ivp-using-fundamental-matrix-notation"><span class="section-num">17</span> How can we solve this IVP using fundamental matrix notation?</h2>
+<h3 id="front"><span class="section-num">17.1</span> Front</h3>
+<p><b>How can we solve this IVP using fundamental matrix notation?</b></p>
+<p>\({\displaystyle \dot{\vb{x}} = A(t) \vb{x}}\), where \(\vb{x}(t_0) = \vb{x_0}\)</p>
+<p>Show the process</p>
+<h3 id="back"><span class="section-num">17.2</span> Back</h3>
+<p>The general solution is \({\displaystyle \vb{x} = \Phi(t) \vb{c}}\), where \(\vb{c}
+= \begin{pmatrix}c_1 \\ c_2\end{pmatrix}\)</p>
+<p>We choose the \(\vb{c}\) so that the initial condition is satisfied, substituting
+\(t_0\) gives us the matrix equation for \(\vb{c}\)</p>
+<p>\({\displaystyle \Phi(t_0) \vb{c} = \vb{x_0}}\)</p>
+<p>Since the determinant \({\displaystyle \abs{\Phi(t_0)}}\) is the value at \(t_0\) of
+the Wronskian of \(\vb{x_1}\) and \(\vb{x_2}\), it is non-zero since the two
+solutions are linearly independent. Therefore the inverse matrix exists and the
+matrix equation above can be solved for \(\vb{c}\)</p>
+<p>\({\displaystyle \vb{c} = \Phi(t_0)^{-1} \vb{x_0}}\)</p>
+<p>Using the above value of \(\vb{c}\), the solution to the IVP can now be written</p>
+<p>\({\displaystyle \vb{x} = \Phi(t) \Phi(t_0)^{-1} \vb{x_0}}\)</p>
+<p>Note that when the solution is written in this form, it&rsquo;s &ldquo;obvious&rdquo; that
+\(\vb{x}(t_0) = \vb{x_0}\),i.e., that the initial condition in IVP is satified</p>
+<h2 id="why-the-determinant-of-fundamental-matrix-could-be-never-0"><span class="section-num">18</span> Why the determinant of fundamental matrix could be never 0?</h2>
+<h3 id="front"><span class="section-num">18.1</span> Front</h3>
+<p><b>Why the determinant of fundamental matrix could be never 0?</b></p>
+<p>\({\displaystyle \abs{\Phi}(t)}\)</p>
+<h3 id="back"><span class="section-num">18.2</span> Back</h3>
+<p>Because it&rsquo;s the value of the Wronskian of \(x_i\) linearly independents solutions
+of the linear system.</p>
+<h2 id="how-many-fundamental-matrix-could-have-a-linear-system"><span class="section-num">19</span> How many fundamental matrix could have a linear system?</h2>
+<h3 id="front"><span class="section-num">19.1</span> Front</h3>
+<p><b>How many fundamental matrix could have a linear system?</b></p>
+<p>\({\displaystyle \dot{\vb{x}} = A(t) \vb{x}}\)</p>
+<h3 id="back"><span class="section-num">19.2</span> Back</h3>
+<p>There is no an unique fundamental matrix since there are many ways to pick two
+independent solutions of \({\displaystyle \dot{\vb{x}} = A(t) \vb{x}}\) to form
+the columns of \(\Phi\)</p>
+<h2 id="how-could-we-know-that-a-matrix-could-be-a-fundamental-matrix-of-the-system"><span class="section-num">20</span> How could we know that a matrix could be a fundamental matrix of the system?</h2>
+<h3 id="front"><span class="section-num">20.1</span> Front</h3>
+<p><b>How could we know that a matrix could be a fundamental matrix of the system?</b></p>
+<p>\({\displaystyle \dot{\vb{x}} = A \vb{x}}\)</p>
+<h3 id="back"><span class="section-num">20.2</span> Back</h3>
+<p>\(\Phi(t)\) is a fundamental matrix for the system if its determinant
+\({\displaystyle \abs{\Phi(t)}}\) is non-zero and it satisfies the matrix equation</p>
+<p>\({\displaystyle \dot{\Phi} = A \Phi}\)</p>
+<p>where \(\dot{\Phi}\) means that each entry of \(\Phi\) has been differentiated</p>
+<h2 id="how-could-be-proof-that-this-matrix-equations-is-true"><span class="section-num">21</span> How could be proof that this matrix equations is true?</h2>
+<h3 id="front"><span class="section-num">21.1</span> Front</h3>
+<p><b>How could be proof that this matrix equations is true?</b></p>
+<p>\({\displaystyle \dot{\Phi} = A \Phi}\), suppose \(A\) a \(2 \cross 2\) square matrix</p>
+<h3 id="back"><span class="section-num">21.2</span> Back</h3>
+<p>This is true, if \(\Phi(t)\) is a fundamental matrix for the system \({\displaystyle
+\dot{\vb{x}} = A(t) \vb{x}}\)</p>
+<p>In this case, the determinant of the fundamental matrix is never 0,
+\(\abs{\Phi(t)} \not \equiv 0\), so its columns \(\vb{x_1}\) and \(\vb{x_2}\) are
+linearly independent</p>
+<p>Let \({\displaystyle \Phi = \begin{pmatrix}\vb{x_1} \\ \vb{x_2}\end{pmatrix}}\).
+According to the rules for matrix multiplication</p>
+<p>\({\displaystyle \dot{\Phi} = A \Phi \implies \begin{pmatrix}\dot{\vb{x_1}} \\ \dot{\vb{x_2}}\end{pmatrix} = A \begin{pmatrix}\vb{x_1} \\ \vb{x_2}\end{pmatrix} = \begin{pmatrix}A \vb{x_1} \\ A \vb{x_2}\end{pmatrix}}\)</p>
+<p>which shows that</p>
+<p>\({\displaystyle \dot{\vb{x_1}} = A \vb{x_1}}\) and \({\displaystyle \dot{\vb{x_2}}
+= A \vb{x_2}}\)</p>
+<p>this means that \(\vb{x_1}\) and \(\vb{x_2}\) are solutions to the system
+\({\displaystyle \dot{\vb{x}} = A \vb{x}}\)</p>
+<h2 id="write-this-linear-system-in-its-matrix-form"><span class="section-num">22</span> Write this linear system in its matrix form</h2>
+<h3 id="front"><span class="section-num">22.1</span> Front</h3>
+<p><b>Write this linear system in its matrix form</b></p>
+<p>\({\displaystyle \dot{\vb{x}} = A \vb{x}}\)</p>
+<h3 id="back"><span class="section-num">22.2</span> Back</h3>
+<p>Let \(\Phi(t)\) be a fundamental matrix of this system</p>
+<p>\({\displaystyle \dot{\Phi} = A \Phi}\)</p>
+<h2 id="what-is-the-best-choice-for-fundamental-matrix-from-this-system"><span class="section-num">23</span> What is the best choice for fundamental matrix from this system?</h2>
+<h3 id="front"><span class="section-num">23.1</span> Front</h3>
+<p><b>What is the best choice for fundamental matrix from this system?</b></p>
+<p>\({\displaystyle \dot{\vb{u}} = A(t) \vb{x}}\) where \(A\) is a 2 square matrix and
+initial condition \(\vb{x}(t_0) = \vb{x_0}\)</p>
+<h3 id="back"><span class="section-num">23.2</span> Back</h3>
+<p>The fundamental matrix has form \({\displaystyle \Phi(t)
+= \begin{pmatrix}\vb{x_1} \\ \vb{x_2}\end{pmatrix} = \begin{pmatrix}x_1 &amp; x_2
+\\ y_1 &amp; y_2\end{pmatrix}}\)</p>
+<p>The solution to IVP is \(\vb{x} = \Phi(t) \Phi^{-1}(t_0) \vb{x_0}\)</p>
+<p>There 2 methods</p>
+<ol>
+<li>If the ODE has constant coefficients, and its eigenvalues are real and distinct
+<ul>
+<li>Fundamental matrix would be the one whose columns are the normal modes</li>
+<li>Normal modes has form \({\displaystyle \vb{x_i} = \vec{\alpha_1}
+e^{\lambda_i t}}\), \(i = 1,2\)</li>
+</ul>
+</li>
+<li>Useful in showing how the solution depends on the initial conditions
+<ul>
+<li>Pick \({\displaystyle \Phi(t_0) = I = \begin{pmatrix}1 &amp; 0 \\ 0 &amp;
+1\end{pmatrix}}\)</li>
+<li>\({\displaystyle \vb{x_1}(t_0) = \begin{pmatrix}1 \\ 0\end{pmatrix}}\)</li>
+<li>\({\displaystyle \vb{x_2}(t_0) = \begin{pmatrix}0 \\ 1\end{pmatrix}}\)</li>
+<li>Since the \(\vb{x_i}(t)\) are uniquely determined by these initial
+conditions, the fundamental matrix \(\Phi(t)\) satisfying \(\Phi(t_0) = I\) is
+also unique</li>
+</ul>
+</li>
+</ol>
+<h2 id="what-is-the-normalized-fundamental-matrix"><span class="section-num">24</span> What is the normalized fundamental matrix?</h2>
+<h3 id="front"><span class="section-num">24.1</span> Front</h3>
+<p><b>What is the normalized fundamental matrix?</b></p>
+<p>\({\displaystyle \dot{\vb{u}} = A \vb{u}}\) at \(t = t_0\)</p>
+<h3 id="back"><span class="section-num">24.2</span> Back</h3>
+<p>The unique matrix \(\widetilde{\Phi}_{t_0}(t)\) satisfying:</p>
+<p>\({\displaystyle \widetilde{\Phi}_{t_0}' = A \widetilde{\Phi}_{t_0}}\),
+\({\displaystyle \widetilde{\Phi}_{t_0} (t_0) = I}\)</p>
+<p>is called the <strong>normalized fundamental matrix</strong> at \(t_0\) for \(A\)</p>
+<p>The \(\widetilde{\Phi}_{t_0}\) must be a fundamental matrix which determinant is
+never 0. So in this case it&rsquo;s definition its true because \({\displaystyle
+\abs{\widetilde{\Phi}_{t_0}(t_0)} = 1}\)</p>
+<h2 id="what-does-this-symbol-mean"><span class="section-num">25</span> What does this symbol mean?</h2>
+<h3 id="front"><span class="section-num">25.1</span> Front</h3>
+<p><b>What does this symbol mean?</b></p>
+<p>\(\widetilde{\Phi}_0\)</p>
+<h3 id="back"><span class="section-num">25.2</span> Back</h3>
+<p>It&rsquo;s the normalized fundamental matrix at \(t = 0\) for \(A\)</p>
+<h2 id="how-is-the-solution-of-this-system-using-normalized-fundamental-matrix"><span class="section-num">26</span> How is the solution of this system using normalized fundamental matrix?</h2>
+<h3 id="front"><span class="section-num">26.1</span> Front</h3>
+<p><b>How is the solution of this system using normalized fundamental matrix?</b></p>
+<p>\({\displaystyle \dot{\vb{x}} = A(t) \vb{x}}\), where \(\vb{x}(0) = \vb{x_0}\)</p>
+<h3 id="back"><span class="section-num">26.2</span> Back</h3>
+<p>\({\displaystyle \vb{x}(t) = \widetilde{\Phi}_0(t) \vb{x_0}}\)</p>
+<h2 id="how-can-we-compute-the-normalized-fundamental-matrix"><span class="section-num">27</span> How can we compute the normalized fundamental matrix?</h2>
+<h3 id="front"><span class="section-num">27.1</span> Front</h3>
+<p><b>How can we compute the normalized fundamental matrix?</b></p>
+<p>\(\widetilde{\Phi}_0 (t)\)</p>
+<p>Show the process</p>
+<h3 id="back"><span class="section-num">27.2</span> Back</h3>
+<p>Matrix form for the solution to the IVP: \({\displaystyle \dot{\vb{x}} = A(t)
+\vb{x}}\), \({\displaystyle \vb{x}(0) = \vb{x_0}}\),</p>
+<ul>
+<li>\({\displaystyle \vb{x} = \widetilde{\Phi}_0 \vb{x_0}}\)</li>
+<li>\({\displaystyle \vb{x} = \Phi(t) \Phi(0)^{-1} \vb{x_0}}\)</li>
+</ul>
+<p>Find any fundamental matrix \(\Phi(t)\) and then</p>
+<p>\({\displaystyle \widetilde{\Phi}_0(t) = \Phi(t) \Phi(0)^{-1}}\)</p>
+<p>To verify this, we have to see that the matrix on the RHS satisfies the 2
+conditions of</p>
+<ul>
+<li>\({\displaystyle \widetilde{\Phi}_0' = A \widetilde{\Phi}_0}\)
+<ul>
+<li>Use of rule for matrix differentiation</li>
+</ul>
+</li>
+<li>\({\displaystyle \widetilde{\Phi}_0 (0) = I}\)
+<ul>
+<li>Trivial to check \({\displaystyle \widetilde{\Phi}_0 = \Phi(0) \Phi(0)^{-1} =
+I}\)</li>
+</ul>
+</li>
+</ul>
+<p>Since \(\Phi(t)\) is a fundamental matrix (any of them)</p>
+<p>\({\displaystyle (\Phi(t) \Phi(0)^{-1})' = \Phi(t)'\Phi(0)^{-1} = A \Phi(t)
+\Phi(0)^{-1} = A(\Phi(t) \Phi(0)^{-1})}\)</p>
+<p>showing that \(\Phi(t)\Phi(0)^{-1}\) also satisfies the first condition</p>
+<h2 id="what-are-the-basic-properties-of-fundamental-matrix"><span class="section-num">28</span> What are the basic properties of fundamental matrix?</h2>
+<h3 id="front"><span class="section-num">28.1</span> Front</h3>
+<p><b>What are the basic properties of fundamental matrix?</b></p>
+<p>Fundamental matrix \(\Phi(t)\) of \({\displaystyle \dot{\vb{x}} = A(t) \vb{x}}\)</p>
+<h3 id="back"><span class="section-num">28.2</span> Back</h3>
+<ol>
+<li>\(\operatorname{det}(\Phi(t)) \neq 0\) for any \(t\)</li>
+<li>\({\displaystyle \Phi(t)' = A \Phi(t)}\), so cols solve the system</li>
+</ol>
+<h2 id="what-is-the-definition-of-the-exponential-matrix"><span class="section-num">29</span> What is the definition of the exponential matrix?</h2>
+<h3 id="front"><span class="section-num">29.1</span> Front</h3>
+<p><b>What is the definition of the exponential matrix?</b></p>
+<p>\({\displaystyle e^A}\)</p>
+<h3 id="back"><span class="section-num">29.2</span> Back</h3>
+<p>Given an \(n \cross n\) constant matrix \(A\), the <strong>exponential matrix</strong> \(e^A\) is the
+\(n \cross n\) matrix defined by</p>
+<p>\({\displaystyle e^A = I + A + \frac{A^2}{2!} + \dots + \frac{A^n}{n!} + \dots}\)</p>
+<h2 id="what-are-the-dimensions-of-the-exponential-matrix"><span class="section-num">30</span> What are the dimensions of the exponential matrix?</h2>
+<h3 id="front"><span class="section-num">30.1</span> Front</h3>
+<p><b>What are the dimensions of the exponential matrix?</b></p>
+<p>\(e^{At}\) where \(A\) is \(n\) square matrix</p>
+<h3 id="back"><span class="section-num">30.2</span> Back</h3>
+<p>It&rsquo;s a \(n \cross n\) matrix</p>
+<h2 id="what-can-we-say-about-this-expression"><span class="section-num">31</span> What can we say about this expression?</h2>
+<h3 id="front"><span class="section-num">31.1</span> Front</h3>
+<p><b>What can we say about this expression?</b></p>
+<p>\({\displaystyle e^A = I + A + \frac{A^2}{2!} + \dots + \frac{A^n}{n!} + \dots}\)</p>
+<h3 id="back"><span class="section-num">31.2</span> Back</h3>
+<p>Each term of the RHS is an \(n \cross n\) matrix adding up the \(ij\text{-th}\)
+entry of each of these matrices gives you an infinite series whose sum is the
+\(ij\text{-th}\) entry of \(e^A\)</p>
+<p>The series always converges</p>
+<h2 id="expand-this-expression"><span class="section-num">32</span> Expand this expression</h2>
+<h3 id="front"><span class="section-num">32.1</span> Front</h3>
+<p><b>Expand this expression</b></p>
+<p>\((At)^2\) where \(A\) is \(n\) square matrix</p>
+<h3 id="back"><span class="section-num">32.2</span> Back</h3>
+<p>\({\displaystyle (At)^2 = At \cdot At = A \cdot A \cdot t^2 = A^2 t^2}\)</p>
+<h2 id="how-could-we-solve-this-linear-system"><span class="section-num">33</span> How could we solve this linear system?</h2>
+<h3 id="front"><span class="section-num">33.1</span> Front</h3>
+<p><b>How could we solve this linear system?</b></p>
+<p>\({\displaystyle \dot{\vb{x}} = A(t) \vb{x}}\), where \(\vb{x}(0) = \vb{x_0}\) and
+\(A\) is a square constant matrix</p>
+<h3 id="back"><span class="section-num">33.2</span> Back</h3>
+<p>As \(A\) is a square constant matrix, we can use this theorem</p>
+<ul>
+<li>\({\displaystyle e^{At} = \widetilde{\Phi}_0 (t)}\) is the normalized
+fundamental matrix at \(0\)</li>
+<li>the unique solution to this IVP is \({\displaystyle \vb{x} = e^{At} \vb{x_0}}\)</li>
+</ul>
+<h2 id="could-we-use-this-normalized-fundamental-matrix-for-any-linear-system"><span class="section-num">34</span> Could we use this normalized fundamental matrix for any linear system?</h2>
+<h3 id="front"><span class="section-num">34.1</span> Front</h3>
+<p><b>Could we use this normalized fundamental matrix for any linear system?</b></p>
+<p>\({\displaystyle \widetilde{\Phi}_0 = e^{At}}\), \({\displaystyle \dot{\vb{x}} =
+Ax}\)</p>
+<h3 id="back"><span class="section-num">34.2</span> Back</h3>
+<p>No, only when \(A\) is a constant square matrix</p>
+<h2 id="why-can-we-use-this-normalized-fundamental-matrix-for-this-linear-system"><span class="section-num">35</span> Why can we use this normalized fundamental matrix for this linear system?</h2>
+<h3 id="front"><span class="section-num">35.1</span> Front</h3>
+<p><b>Why can we use this normalized fundamental matrix for this linear system?</b></p>
+<p>\({\displaystyle \widetilde{\Phi}_0 = e^{At}}\) for the linear system
+\({\displaystyle \dot{\vb{x}} = A \vb{x}}\) where \(A\) is a constant square matrix</p>
+<p>Proof it</p>
+<h3 id="back"><span class="section-num">35.2</span> Back</h3>
+<p>If \(A\) is constant \({\displaystyle e^{A \cdot 0} = I}\), so the
+\(\widetilde{\Phi}_0(0) = I\)</p>
+<p>Letting \(\Phi = e^{At}\), we must show that \(\Phi' = A \Phi\)</p>
+<p>We assume that we can differentiate the series \({\displaystyle e^{At} = I + At +
+A^2 \frac{t^2}{2!} + \cdots + A^n \frac{t^n}{n!} + \cdots}\) term by term</p>
+<p>We have for the individual terms</p>
+<p>\({\displaystyle \dv{t} A^n \frac{t^n}{n!} = A^n \frac{t^{n-1}}{(n-1)!}}\)</p>
+<p>since \(A^n\) is a constant matrix. Differentiates the series term by term then
+gives</p>
+<p>\({\displaystyle \dv{\Phi}{t} = \dv{t} e^{At} = A + A^2 t + \cdots + A^n
+\frac{t^{n-1}}{(n-1)!} + \cdots = A e^{At} = A \Phi}\)</p>
+<h2 id="how-is-the-series-expansion-for-this-expenential"><span class="section-num">36</span> How is the series expansion for this expenential?</h2>
+<h3 id="front"><span class="section-num">36.1</span> Front</h3>
+<p><b>How is the series expansion for this expenential?</b></p>
+<p>\(e^{At}\) where \(A\) is a constant square matrix</p>
+<h3 id="back"><span class="section-num">36.2</span> Back</h3>
+<p>\({\displaystyle e^{At} = I + At + A^2 \frac{t^2}{2!} + \cdots + A^n
+\frac{t^n}{n!} + \cdots}\)</p>
+<h2 id="how-can-we-compute-this-normalized-fundamental-matrix-for-a-specific-system"><span class="section-num">37</span> How can we compute this normalized fundamental matrix for a specific system?</h2>
+<h3 id="front"><span class="section-num">37.1</span> Front</h3>
+<p><b>How can we compute this normalized fundamental matrix for a specific system?</b></p>
+<p>\({\displaystyle \widetilde{\Phi}_0 = e^{At}}\)</p>
+<h3 id="back"><span class="section-num">37.2</span> Back</h3>
+<p>You can use several techniques available</p>
+<ol>
+<li>In simple cases, it can be calculated directly as an infinite series of matrices</li>
+<li>It can always be calculated as the normalized fundamental matrix
+<ul>
+<li>\({\displaystyle \widetilde{\Phi}_0(t) = \Phi(t) \Phi(0)^{-1}}\)</li>
+</ul>
+</li>
+<li>Using the exponential law
+<ul>
+<li>\({\displaystyle e^{(B + C)t} = e^{Bt} e^{Ct}}\) valid if \(BC = CB\)</li>
+<li>To use it, one looks for constant matrices \(B\) and \(C\) such that \(A = B +
+C\), \(BC = CB\) and \(e^{Bt}\) and \(e^{Ct}\) are computable</li>
+<li>\(e^{At} = e^{Bt}e^{Ct}\)</li>
+</ul>
+</li>
+</ol>
+<h2 id="what-is-the-formula-to-get-particular-solution-to-inhomegeneous-systems"><span class="section-num">38</span> What is the formula to get particular solution to inhomegeneous systems?</h2>
+<h3 id="front"><span class="section-num">38.1</span> Front</h3>
+<p><b>What is the formula to get particular solution to inhomegeneous systems?</b></p>
+<p>\({\displaystyle \dot{\vb{x}} = A(t) \vb{x} + \vb{F}(t)}\)</p>
+<h3 id="back"><span class="section-num">38.2</span> Back</h3>
+<p>\({\displaystyle \vb{x_p} = \Phi \cdot \biggl(\int \Phi^{-1} \cdot \vb{F}
+\dd{t} + \vb{C} \biggr)}\)</p>
+<h2 id="how-can-we-get-a-formula-for-solving-inhomegeneous-linear-system"><span class="section-num">39</span> How can we get a formula for solving inhomegeneous linear system?</h2>
+<h3 id="front"><span class="section-num">39.1</span> Front</h3>
+<p><b>How can we get a formula for solving inhomegeneous linear system?</b></p>
+<p>\({\displaystyle \dot{\vb{x}} = A(t) \vb{x} + \vb{F}(t)}\)</p>
+<h3 id="back"><span class="section-num">39.2</span> Back</h3>
+<p>General homogeneous solution: \({\displaystyle \vb{x} = \Phi \cdot \vb{c}}\) for a
+constant vector \(\vb{c}\)</p>
+<p>Make \(c\) variable \(\leadsto\) trial solution \({\displaystyle \vb{x} = \Phi \cdot
+\vb{v}(t)}\)</p>
+<p>Plug this into \({\displaystyle \vb{x}' = A \vb{x} + \vb{F}(t) \implies
+\Phi' \cdot \vb{v} + \Phi \cdot \vb{v}' = A \Phi \cdot \vb{v} + \vb{F}}\)</p>
+<p>Now substitute for \({\displaystyle \Phi' = A \Phi}\):</p>
+<ul>
+<li>\({\displaystyle \implies A \Phi \cdot \vb{v} + \Phi \vb{v}' = A \Phi
+\cdot \vb{v} + \vb{F}}\)</li>
+<li>\({\displaystyle \implies \Phi \cdot \vb{v}' = \vb{F}}\)</li>
+<li>\({\displaystyle \implies \vb{v}' = \Phi^{-1} \cdot \vb{F}}\)</li>
+<li>\({\displaystyle \implies \vb{v} = \int \Phi^{-1} \cdot \vb{F} + \vb{C}}\)</li>
+<li>\({\displaystyle \implies \vb{x} = \Phi \cdot \vb{v} = \Phi \biggl( \int
+\Phi^{-1} \cdot \vb{F} \dd{t} + \vb{C} \biggr)}\)</li>
+</ul>
+<h2 id="what-is-the-definite-integral-version-of-variation-of-parameters-for-solving-inhomegeneous-linear-system"><span class="section-num">40</span> What is the definite integral version of variation of parameters for solving inhomegeneous linear system?</h2>
+<h3 id="front"><span class="section-num">40.1</span> Front</h3>
+<p><b>What is the definite integral version of variation of parameters for solving inhomegeneous linear system?</b></p>
+<p>\({\displaystyle \dot{\vb{x}} = A(t) \vb{x} + \vb{F}(t)}\)</p>
+<h3 id="back"><span class="section-num">40.2</span> Back</h3>
+<p>\({\displaystyle \vb{x}(t) = \Phi(t) \biggl( \int_{t_0}^t \Phi^{-1}(u) \cdot
+\vb{F}(u) \dd{u} + \vb{C} \biggr)}\), where \({\displaystyle \vb{C} =
+\Phi^{-1}(t_0) \cdot \vb{x}(t_0)}\)</p>
+<h2 id="get-general-solution-for-this-linear-system"><span class="section-num">41</span> Get general solution for this linear system</h2>
+<h3 id="front"><span class="section-num">41.1</span> Front</h3>
+<p><b>Get general solution for this linear system</b></p>
+<p>\({\displaystyle \vb{u}' = A \vb{u} + \begin{pmatrix}5 \\ 10\end{pmatrix}}\) where
+\({\displaystyle A = \begin{pmatrix}1 &amp; 1 \\ -4 &amp; 1\end{pmatrix}}\)</p>
+<p>Give the general solution if \({\displaystyle e^{At} = \begin{pmatrix}e^t
+\cos(2t) &amp; 1/2 e^t \sin(2t) \\ -2e^t \sin(2t) &amp; e^t \cos(2t)\end{pmatrix}}\)</p>
+<p>And solve for \(\vb{u}(0) = \vb{0}\)</p>
+<h3 id="back"><span class="section-num">41.2</span> Back</h3>
+<p>We guess a constant solution because the input vector is constant, \(\vb{u}
+= \begin{pmatrix}k_1 \\ k_2\end{pmatrix}\)</p>
+<p>Substituting this into the DE gives</p>
+<p>\({\displaystyle \begin{pmatrix}0 \\ 0\end{pmatrix} = A \begin{pmatrix}k_1
+\\ k_2\end{pmatrix} + \begin{pmatrix}5 \\ 10\end{pmatrix}}\)</p>
+<p>This implies</p>
+<p>\({\displaystyle \vb{u} = - A^{-1} \begin{pmatrix}5 \\ 10\end{pmatrix} = -
+\frac{1}{5} \begin{pmatrix}1 &amp; -1 \\ 4 &amp; 1\end{pmatrix} \begin{pmatrix}5
+\\ 10\end{pmatrix} = \begin{pmatrix}1 \\ -6\end{pmatrix}}\)</p>
+<p>Since all homogeneous solutions are of the form \({\displaystyle
+e^{At} \begin{pmatrix}a \\ b\end{pmatrix}}\), the general solution is then given
+by</p>
+<p>\({\displaystyle e^{At} \begin{pmatrix}a \\ b\end{pmatrix} + \begin{pmatrix}1
+\\ -6\end{pmatrix} = \begin{pmatrix}e^t (a \cos(2t) + b/2 \sin(2t)) + 1 \\ e^t(b
+\cos(2t) - 2a \sin(2t)) - 6\end{pmatrix}}\)</p>
+<p>To find the particular solution with \(\vb{u}(0) = \vb{0}\), we plug \(t = 0\) into
+the expression, and get that</p>
+<p>\({\displaystyle \begin{pmatrix}a + 1 \\ b - 6\end{pmatrix} = \begin{pmatrix}0
+\\ 0\end{pmatrix}}\)</p>
+<p>so the desired solution is given by the constant \(a = -1\) and \(b=6\)</p>
+<p>\({\displaystyle \vb{u} =  \begin{pmatrix}e^t (- \cos(2t) + 3 \sin(2t)) + 1
+\\ e^t (6 \cos(2t) + 2 \sin(2t)) - 6\end{pmatrix}}\)</p>
+<h2 id="what-is-the-particular-solution-for-this-linear-system"><span class="section-num">42</span> What is the particular solution for this linear system?</h2>
+<h3 id="front"><span class="section-num">42.1</span> Front</h3>
+<p><b>What is the particular solution for this linear system?</b></p>
+<p>\({\displaystyle \dot{\vb{u}} = A \vb{u} + \vb{q}}\) where \(\vb{q}\) is constant</p>
+<h3 id="back"><span class="section-num">42.2</span> Back</h3>
+<p>Checking that \(A\) is invertible, then we estimate that \(\vb{u_p}\) is constant
+\({\displaystyle \begin{pmatrix}k_1 \\ k_2\end{pmatrix}}\)</p>
+<p>Applying to the matrix equation</p>
+<p>\({\displaystyle \dot{\vb{u_p}} = \begin{pmatrix}0 \\ 0\end{pmatrix} =
+A \vb{u_p} + \vb{q}}\)</p>
+<p>\({\displaystyle \vb{u_p} = - A^{-1} \vb{q}}\)</p>
+<h2 id="suppose-that-these-are-both-normal-solution-find-the-solution-with-this-ivp"><span class="section-num">43</span> Suppose that these are both normal solution, find the solution with this IVP</h2>
+<h3 id="front"><span class="section-num">43.1</span> Front</h3>
+<p><b>Suppose that these are both normal solution, find the solution with this IVP</b></p>
+<ul>
+<li>\({\displaystyle e^{3t} \begin{pmatrix}1 \\ 1\end{pmatrix}}\)</li>
+<li>\({\displaystyle e^{2t} \begin{pmatrix}1 \\ 2\end{pmatrix}}\)</li>
+</ul>
+<p>satisfy the equation \({\displaystyle \dot{\vb{u}} = A \vb{u}}\)</p>
+<p>Find the solution \(\vb{u}\) such that \({\displaystyle \vb{u}(0)
+= \begin{pmatrix}1 \\ 0\end{pmatrix}}\)</p>
+<p>Without using fundamental matrix</p>
+<h3 id="back"><span class="section-num">43.2</span> Back</h3>
+<p>\({\displaystyle \vb{u} = c_1 e^{3t} \begin{pmatrix}1 \\ 1\end{pmatrix} + c_2
+e^{2t} \begin{pmatrix}1 \\ 2\end{pmatrix}}\)</p>
+<p>\({\displaystyle \vb{u}(0) = \begin{pmatrix}1 \\ 0\end{pmatrix} =
+c_1 \begin{pmatrix}1 \\ 1\end{pmatrix} + c_2 \begin{pmatrix}1 \\ 2\end{pmatrix}
+= \begin{pmatrix}c_1 + c_2 \\ c_1 + 2 c_2\end{pmatrix}}\)</p>
+<p>Thus \(c_1 = 2\) and \(c_2 = -1\)</p>
+<h2 id="suppose-that-these-are-both-normal-solutions-find-the-matrix--a"><span class="section-num">44</span> Suppose that these are both normal solutions, find the matrix \(A\)</h2>
+<h3 id="front"><span class="section-num">44.1</span> Front</h3>
+<p><b>Suppose that these are both normal solutions, find the matrix A</b></p>
+<ul>
+<li>\({\displaystyle e^{3t} \begin{pmatrix}1 \\ 1\end{pmatrix}}\)</li>
+<li>\({\displaystyle e^{2t} \begin{pmatrix}1 \\ 2\end{pmatrix}}\)</li>
+</ul>
+<p>satisfy the equation \({\displaystyle \dot{\vb{u}} = A \vb{u}}\)</p>
+<p>Find the matrix \(A\)</p>
+<h3 id="back"><span class="section-num">44.2</span> Back</h3>
+<p>The matrix \(A\) has eigenvalues \(3\) and \(2\), with eigenvectors
+\({\displaystyle \begin{pmatrix}1 \\ 1\end{pmatrix}}\) and
+\({\displaystyle \begin{pmatrix}1 \\ 2\end{pmatrix}}\)</p>
+<p>The \({\displaystyle \begin{pmatrix}a &amp; b \\ c &amp; d\end{pmatrix} \begin{pmatrix}1
+\\ 1\end{pmatrix} = 3 \begin{pmatrix}1 \\ 1\end{pmatrix}}\) and
+\({\displaystyle \begin{pmatrix}a &amp; b \\ c &amp; d\end{pmatrix} \begin{pmatrix}1
+\\ 2\end{pmatrix} = 2 \begin{pmatrix}1 \\ 2\end{pmatrix}}\)</p>
+<p>The top entries give the equation \(a + b = 3\) and \(a + 2b = 2\), which imply \(a =
+4\), \(b = -1\)</p>
+<p>The bottom entries give the equation \(c + d = 3\) and \(c + 2d = 4\), which imply
+\(c=2\), \(d=1\)</p>
+<p>\({\displaystyle A = \begin{pmatrix}4 &amp; -1 \\ 2 &amp; 1\end{pmatrix}}\)</p>
+
+</div>
+
+
+            <footer>
+    
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-4%2fsession-35%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Matrix%20Exponential&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-4%2fsession-35%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-4%2fsession-35%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-4%2fsession-35%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-4%2fsession-35%2f&amp;title=Matrix%20Exponential" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Matrix%20Exponential&amp;body=Check out this site https%3a%2f%2fppalazon.github.io%2f18.03%2funit-4%2fsession-35%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+
+<nav>
+    <ul class="pager">
+    
+    <li class="previous">
+        <a href="https://ppalazon.github.io/18.03/unit-4/session-34/" title="Qualitative Behavior: Phase Portraits">
+            <span aria-hidden="true">&larr;</span>Qualitative Behavior: Phase Portraits
+        </a>
+    </li>
+    
+
+    
+    <li class="next">
+        <a href="https://ppalazon.github.io/18.03/unit-4/session-36/" title="Nonlinear Systems">
+            Nonlinear Systems <span aria-hidden="true">&rarr;</span>
+        </a>
+    </li>
+    
+    </ul>
+</nav>
+
+
+
+</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//ppalazon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+        </div>
+    </div>
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/">18.03 Differential Equations</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/unit-4/">4: First-order Systems</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.03/unit-4/session-35/">Matrix Exponential</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Qualitative Behavior: Phase Portraits  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="ode, maths, ">
+
+
+<meta property="og:title" content="Qualitative Behavior: Phase Portraits  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.03/unit-4/session-34/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="content-source" content="18.03/unit-4/session-34.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Captured On [2020-02-13 Thu 17:57] Source Qualitative Behavior: Phase Portraits | Unit IV: First-order Systems | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the phase plane for this system? 1.1 Front What is the phase plane for this system?
+\({\displaystyle \dot{\vb{x}} = A \vb{x}}\), where \({\displaystyle A = \begin{pmatrix}a &amp;amp; b \\ c &amp;amp; d\end{pmatrix}}\)
+1.2 Back It&amp;rsquo;s the \(xy\text{-plane}\) itself, where you can draw the trajectory of a solution with an arrow to indicate the direction of increasing time."/>
+<meta property="og:article:published_time" content="2020-01-18T00:00:00&#43;01:00" />
+<meta property="og:article:modified_time" content="2020-01-18T00:00:00&#43;01:00" />
+
+
+
+<meta property="og:article:tag" content="ode">
+
+<meta property="og:article:tag" content="maths">
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ppalazon" />
+<meta name="twitter:creator" content="@ppalazon" />
+<meta name="twitter:title" content="Qualitative Behavior: Phase Portraits" />
+<meta name="twitter:description" content="Captured On [2020-02-13 Thu 17:57] Source Qualitative Behavior: Phase Portraits | Unit IV: First-order Systems | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the phase plane for this system? 1.1 Front What is the phase plane for this system?
+\({\displaystyle \dot{\vb{x}} = A \vb{x}}\), where \({\displaystyle A = \begin{pmatrix}a &amp;amp; b \\ c &amp;amp; d\end{pmatrix}}\)
+1.2 Back It&amp;rsquo;s the \(xy\text{-plane}\) itself, where you can draw the trajectory of a solution with an arrow to indicate the direction of increasing time."/>
+<meta name="twitter:url" content="https://ppalazon.github.io/18.03/unit-4/session-34/" />
+<meta name="twitter:domain" content="https://ppalazon.github.io">
+
+
+
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+     "@type": "Article",
+     "headline": "Qualitative Behavior: Phase Portraits",
+     "author": {
+         "@type": "Person",
+         "name": "http://profiles.google.com/+?rel=author"
+     },
+     "datePublished": "2020-01-18",
+     "description": "",
+     "wordCount":  4144 
+ }
+</script>
+
+
+
+<link rel="canonical" href="https://ppalazon.github.io/18.03/unit-4/session-34/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+ }
+ .hero {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: calc(200px + (450 - 200) * ((100vw - 300px) / (1600 - 300)));
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: calc(-1 * (200px + (450 - 200) * ((100vw - 300px) / (1600 - 300))));
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+    <header class="container hat">
+        <h1>Qualitative Behavior: Phase Portraits
+</h1>
+
+        
+
+
+<span class="author">by
+    
+    MIT OCW, Pablo Palazon
+    
+</span>
+
+
+    </header>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            
+            <div class="content">
+  <dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2020-02-13 Thu 17:57]</span></span></dd>
+<dt>Source</dt>
+<dd><a href="https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-iv-first-order-systems/qualitative-behavior-phase-portraits/">Qualitative Behavior: Phase Portraits | Unit IV: First-order Systems | Differential Equations | Mathematics | MIT OpenCourseWare</a></dd>
+</dl>
+<h2 id="what-is-the-phase-plane-for-this-system"><span class="section-num">1</span> What is the phase plane for this system?</h2>
+<h3 id="front"><span class="section-num">1.1</span> Front</h3>
+<p><b>What is the phase plane for this system?</b></p>
+<p>\({\displaystyle \dot{\vb{x}} = A \vb{x}}\), where \({\displaystyle A
+= \begin{pmatrix}a &amp; b \\ c &amp; d\end{pmatrix}}\)</p>
+<h3 id="back"><span class="section-num">1.2</span> Back</h3>
+<p>It&rsquo;s the \(xy\text{-plane}\) itself, where you can draw the trajectory of a
+solution with an arrow to indicate the direction of increasing time.</p>
+<h2 id="what-is-a-phase-portrait"><span class="section-num">2</span> What is a phase portrait?</h2>
+<h3 id="front"><span class="section-num">2.1</span> Front</h3>
+<p><b>What is a phase portrait?</b></p>
+<h3 id="back"><span class="section-num">2.2</span> Back</h3>
+<p>It is the graphs of enough trajectories in the phase plane to give a good sense
+of all solutions to the system</p>
+<h2 id="what-is-a-critical-point-for-this-system"><span class="section-num">3</span> What is a critical point for this system?</h2>
+<h3 id="front"><span class="section-num">3.1</span> Front</h3>
+<p><b>What is a critical point for this system?</b></p>
+<p>\({\displaystyle \dot{\vb{u}} = A \vb{u}}\), where \({\displaystyle A
+= \begin{pmatrix}a &amp; b \\ c &amp; d\end{pmatrix}}\)</p>
+<h3 id="back"><span class="section-num">3.2</span> Back</h3>
+<p>The point \((x_0, y_0)\) is a critical point of the system if</p>
+<p>\({\displaystyle \begin{pmatrix}\dot{x} \\ \dot{y}\end{pmatrix} =
+A \begin{pmatrix}x_0 \\ y_0\end{pmatrix} = \begin{pmatrix}0 \\ 0\end{pmatrix}}\)</p>
+<p>The equations of the system show this is equivalent to</p>
+<ul>
+<li>\(x = x_0\)</li>
+<li>\(y = y_0\)</li>
+</ul>
+<p>is a constant solution to the system</p>
+<h2 id="why-are-important-the-critical-points-for-this-system"><span class="section-num">4</span> Why are important the critical points for this system?</h2>
+<h3 id="front"><span class="section-num">4.1</span> Front</h3>
+<p><b>Why are important the critical points for this system?</b></p>
+<p>\({\displaystyle \dot{\vb{u}} = A \vb{u}}\), where \({\displaystyle A
+= \begin{pmatrix}a &amp; b \\ c &amp; d\end{pmatrix}}\)</p>
+<h3 id="back"><span class="section-num">4.2</span> Back</h3>
+<p>Critical points are the key to our qualitative view of systems. We classify the
+linear systems by their behavior near critical points.</p>
+<h2 id="which-is-the-critical-point-that-have-all-systems"><span class="section-num">5</span> Which is the critical point that have all systems?</h2>
+<h3 id="front"><span class="section-num">5.1</span> Front</h3>
+<p><b>Which is the critical point that have all systems?</b></p>
+<p>\({\displaystyle \dot{\vb{u}} = A \vb{u}}\), where \({\displaystyle A
+= \begin{pmatrix}a &amp; b \\ c &amp; d\end{pmatrix}}\)</p>
+<h3 id="back"><span class="section-num">5.2</span> Back</h3>
+<p>The point \((0,0)\)</p>
+<h2 id="when-can-we-say-that-the-system-only-has-the-point-0-as-critical-point"><span class="section-num">6</span> When can we say that the system only has the point 0 as critical point?</h2>
+<h3 id="front"><span class="section-num">6.1</span> Front</h3>
+<p><b>When can we say that the system only has the point 0 as critical point?</b></p>
+<p>\({\displaystyle \dot{\vb{u}} = A \vb{u}}\), where \({\displaystyle A
+= \begin{pmatrix}a &amp; b \\ c &amp; d\end{pmatrix}}\)</p>
+<h3 id="back"><span class="section-num">6.2</span> Back</h3>
+<p>If the matrix \(A\) is invertible, then \((0,0)\) is the only critical point</p>
+<h2 id="can-2-solution-to-the-system-intersect-in-the-phase-portrait"><span class="section-num">7</span> Can 2 solution to the system intersect in the phase portrait?</h2>
+<h3 id="front"><span class="section-num">7.1</span> Front</h3>
+<p><b>Can 2 solution to the system intersect in the phase portrait?</b></p>
+<p>\({\displaystyle \dot{\vb{u}} = A \vb{u}}\), where \({\displaystyle A
+= \begin{pmatrix}a &amp; b \\ c &amp; d\end{pmatrix}}\)</p>
+<h3 id="back"><span class="section-num">7.2</span> Back</h3>
+<p>No, two trajectories of the solution for the system cannot intersect.</p>
+<p>It&rsquo;s similar to integral curves for direction fields, where the integral curves
+did not cross</p>
+<h2 id="how-can-we-draw-the-easiest-trajectories-of-this-system-in-a-phase-portrait"><span class="section-num">8</span> How can we draw the easiest trajectories of this system in a phase portrait?</h2>
+<h3 id="front"><span class="section-num">8.1</span> Front</h3>
+<p><b>How can we draw the easiest trajectories of this system in a phase portrait?</b></p>
+<ul>
+<li>\({\displaystyle \dot{x} = y}\)</li>
+<li>\({\displaystyle \dot{y} = x}\)</li>
+</ul>
+<p>Which solution is \({\displaystyle \vb{u}(t) = c_1 \begin{pmatrix}1
+\\ 1\end{pmatrix} e^t + c_2 \begin{pmatrix}1 \\ -1\end{pmatrix} e^{-t}}\)</p>
+<h3 id="back"><span class="section-num">8.2</span> Back</h3>
+<p>Setting up \(c_{1} = c_2 = \pm 1\), we get 4 solutions</p>
+<ul>
+<li>\({\displaystyle \begin{pmatrix}1 \\ 1\end{pmatrix}e^t}\)</li>
+<li>\({\displaystyle - \begin{pmatrix}1 \\ 1\end{pmatrix} e^t}\)</li>
+<li>\({\displaystyle \begin{pmatrix}1 \\ -1\end{pmatrix}e^{-t}}\)</li>
+<li>\({\displaystyle - \begin{pmatrix}1 \\ -1\end{pmatrix}e^{-t}}\)</li>
+</ul>
+<p>The first solution, when \(t = 0\), the point is at \((1,1)\). As \(t\) increases, the
+point moves outward along the line \(y = x\). As \(t\) decreases through negative
+values, the point moves inwards along the line, toward \((0,0)\)</p>
+<p>Since \(t\) is always understood to be increasing on the trajectory, the whole
+trajectory consists of the ray \(y=x\) in the first quadrant, excluding the origin
+(which is not reached in finite negative time), with an outward direction of
+motion</p>
+<p>Similar analysis can be made for the other 3 solutions,</p>
+<figure>
+    <img src="https://ppalazon.github.io/47/c98e4a-6296-4cbe-aee2-7c431be77443/_20200214_162149GzkK3ID.png"/> 
+</figure>
+
+<p>Each of the four solutions has as its trajectory one of the four rays. The
+indicated direction of motion is outward or inward according to whether the
+exponential factor increases or decreases as \(t\) increases</p>
+<p>The origin is a fifth trajectory itself, which is a stationary point</p>
+<p><strong>So the intersecting diagonal lines represent five trajectories, no two of which
+intersect</strong></p>
+<h2 id="are-the-trajectories-intersecting-at-point-0-for-this-system"><span class="section-num">9</span> Are the trajectories intersecting at point 0 for this system?</h2>
+<h3 id="front"><span class="section-num">9.1</span> Front</h3>
+<p><b>Are the trajectories intersecting at point 0 for this system?</b></p>
+<p>\({\displaystyle \dot{\vb{u}} = A \vb{u}}\)</p>
+<h3 id="back"><span class="section-num">9.2</span> Back</h3>
+<p>No, at point \((0,0)\), in this point its a solution itself</p>
+<figure>
+    <img src="https://ppalazon.github.io/70/abfbec-64f9-4467-b0c3-0fa1c4642293/_20200214_162915screenshot.png"/> 
+</figure>
+
+<h2 id="what-can-we-say-about-this-system-from-its-phase-portrait"><span class="section-num">10</span> What can we say about this system from its phase portrait?</h2>
+<h3 id="front"><span class="section-num">10.1</span> Front</h3>
+<p><b>What can we say about this system from its phase portrait?</b></p>
+<figure>
+    <img src="https://ppalazon.github.io/47/c98e4a-6296-4cbe-aee2-7c431be77443/_20200214_162149GzkK3ID.png"/> 
+</figure>
+
+<h3 id="back"><span class="section-num">10.2</span> Back</h3>
+<p>It&rsquo;s a unstable saddle. It is called unstable because the trajectories go off to
+infinity as \(t\) increases, except at 0 and line \(y = -x\)</p>
+<p>It&rsquo;s called a saddle because of its general resemblance to the level curves of a
+saddle-shaped surface in 3-space</p>
+<h2 id="what-can-we-say-about-this-system-from-its-phase-portrait"><span class="section-num">11</span> What can we say about this system from its phase portrait?</h2>
+<h3 id="front"><span class="section-num">11.1</span> Front</h3>
+<p><b>What can we say about this system from its phase portrait?</b></p>
+<figure>
+    <img src="https://ppalazon.github.io/b6/30f5d1-b52b-42cc-87b7-be9b14ef029c/_20200214_163733screenshot.png"/> 
+</figure>
+
+<h3 id="back"><span class="section-num">11.2</span> Back</h3>
+<p>It&rsquo;s called an asymptotically stable node or sink node</p>
+<p>Means that all the trajectories approach the critical point as \(t\) increases</p>
+<h2 id="what-can-we-say-about-this-system-from-its-phase-portrait"><span class="section-num">12</span> What can we say about this system from its phase portrait?</h2>
+<h3 id="front"><span class="section-num">12.1</span> Front</h3>
+<p><b>What can we say about this system from its phase portrait?</b></p>
+<figure>
+    <img src="https://ppalazon.github.io/2d/cf14b6-6148-4744-9664-cff81a1cd587/_20200214_163938screenshot.png"/> 
+</figure>
+
+<h3 id="back"><span class="section-num">12.2</span> Back</h3>
+<p>It&rsquo;s called unstable node or source node</p>
+<h2 id="what-can-we-say-about-this-system-from-its-phase-portrait"><span class="section-num">13</span> What can we say about this system from its phase portrait?</h2>
+<h3 id="front"><span class="section-num">13.1</span> Front</h3>
+<p><b>What can we say about this system from its phase portrait?</b></p>
+<figure>
+    <img src="https://ppalazon.github.io/b6/76498c-338d-4b96-8bcb-62795536383e/_20200214_164345screenshot.png"/> 
+</figure>
+
+<h3 id="back"><span class="section-num">13.2</span> Back</h3>
+<p>It&rsquo;s a stable center linear system. The word stable means that any trajectory
+stays within a bounded region of the phase plane as \(t\) increases or decreases
+indefinitely</p>
+<p>Note: We cannot use &ldquo;asymptotically stable&rdquo;, since the trajectories do not
+approach the critical point \((0,0)\) as \(t\) increases</p>
+<p>In this case the trajectories are circles, but you can use the word <strong>center</strong> if
+the curves were ellipsses having the origin as cneter</p>
+<h2 id="what-can-we-say-about-this-system-from-its-phase-portrait"><span class="section-num">14</span> What can we say about this system from its phase portrait?</h2>
+<h3 id="front"><span class="section-num">14.1</span> Front</h3>
+<p><b>What can we say about this system from its phase portrait?</b></p>
+<figure>
+    <img src="https://ppalazon.github.io/2e/94ac17-f264-47b0-928b-fb387651aab1/_20200214_164801screenshot.png"/> 
+</figure>
+
+<h3 id="back"><span class="section-num">14.2</span> Back</h3>
+<p>Their trajectories are therefore traced out by the tip of an origin vector that
+rotates clockwise at a constant rate, while its magnitude shrinks exponentially
+to \(0\)</p>
+<p>In other words, the trajectories spiral in toward the origin as \(t\) increases</p>
+<p>We call this pattern as <strong>asymptotically stable spiral</strong></p>
+<h2 id="what-can-we-say-about-this-system-from-its-phase-portrait"><span class="section-num">15</span> What can we say about this system from its phase portrait?</h2>
+<h3 id="front"><span class="section-num">15.1</span> Front</h3>
+<p><b>What can we say about this system from its phase portrait?</b></p>
+<figure>
+    <img src="https://ppalazon.github.io/bf/86ad6f-a3d5-4c02-9c4a-26f6ddd5a65c/_20200214_165101screenshot.png"/> 
+</figure>
+
+<h3 id="back"><span class="section-num">15.2</span> Back</h3>
+<p>The magnitude of the rotating vector increases as \(t\) increases, giving as
+pattern an <strong>unstable spiral</strong></p>
+<h2 id="draw-a-sketch-of-this-linear-system"><span class="section-num">16</span> Draw a sketch of this linear system</h2>
+<h3 id="front"><span class="section-num">16.1</span> Front</h3>
+<p><b>Draw a sketch of this linear system</b></p>
+<ul>
+<li>\({\displaystyle \dot{x} = y}\)</li>
+<li>\({\displaystyle \dot{y} = x}\)</li>
+</ul>
+<p>Which solution is \({\displaystyle \vb{u}(t) = c_1 \begin{pmatrix}1
+\\ 1\end{pmatrix} e^t + c_2 \begin{pmatrix}1 \\ -1\end{pmatrix} e^{-t}}\)</p>
+<h3 id="back"><span class="section-num">16.2</span> Back</h3>
+<figure>
+    <img src="https://ppalazon.github.io/1c/2d670e-9bd2-4b86-80b8-60908620556e/_20200214_170118screenshot.png"/> 
+</figure>
+
+<p>For these trajectories we can do a little algebra</p>
+<ul>
+<li>\(x = c_1 e^t + c_2 e^{-t}\)</li>
+<li>\(y = c_1 e^t - c_2 e^{-t}\)</li>
+</ul>
+<p>This easily gives \(x^2 - y^2 = 4c_1 c_2 = k\), where \(k\) is a constant, which is
+the equation of a hyperbola oriented with the axes - we sketch in some of the
+hyperbolas.</p>
+<p>We know which direction to point the arrows indicating the direction of motion
+as \(t\) increases since they must be compatible with the motion along the rays -
+for by continuity, nearby trajectories must have arrowheads pointing in similar
+directions</p>
+<p>It&rsquo;s unstable saddle</p>
+<h2 id="draw-a-sketch-of-this-linear-system"><span class="section-num">17</span> Draw a sketch of this linear system</h2>
+<h3 id="front"><span class="section-num">17.1</span> Front</h3>
+<p><b>Draw a sketch of this linear system</b></p>
+<ul>
+<li>\({\displaystyle \dot{x} = -x}\)</li>
+<li>\({\displaystyle \dot{y} = -2y}\)</li>
+</ul>
+<p>Which solution is \({\displaystyle \vb{u}(t) = c_1 \begin{pmatrix}1
+\\ 0\end{pmatrix} e^{-t} + c_2 \begin{pmatrix}0 \\ 1\end{pmatrix} e^{-2t}}\)</p>
+<h3 id="back"><span class="section-num">17.2</span> Back</h3>
+<figure>
+    <img src="https://ppalazon.github.io/a3/983427-181c-459f-bc87-eb1f61392fd7/_20200214_170733screenshot.png"/> 
+</figure>
+
+<ul>
+<li>\(x = c_1 e^{-t}\)</li>
+<li>\(y = c_2 e^{-2t}\)</li>
+</ul>
+<p>Trajectories are a family of parabolas \(y = cx^2\)</p>
+<p>We can see that the term \(e^{-t}\) is dominant when \(t \to \infty\), so as \(t\)
+increasing the solution will be parallel to the ray
+\({\displaystyle \begin{pmatrix}1 \\ 0\end{pmatrix}}\)</p>
+<p>When \(t \to -\infty\), the dominant term is \(e^{-2t}\), so as \(t\) decreases the
+trajectories will be parallel to ray \({\displaystyle \begin{pmatrix}0
+\\ 1\end{pmatrix}}\)</p>
+<p>It&rsquo;s a asymptotically stable node or sink node</p>
+<h2 id="draw-a-sketch-of-this-linear-system"><span class="section-num">18</span> Draw a sketch of this linear system</h2>
+<h3 id="front"><span class="section-num">18.1</span> Front</h3>
+<p><b>Draw a sketch of this linear system</b></p>
+<ul>
+<li>\({\displaystyle \dot{x} = x}\)</li>
+<li>\({\displaystyle \dot{y} = 2y}\)</li>
+</ul>
+<p>Which solution is \({\displaystyle \vb{u}(t) = c_1 \begin{pmatrix}1
+\\ 0\end{pmatrix} e^{t} + c_2 \begin{pmatrix}0 \\ 1\end{pmatrix} e^{2t}}\)</p>
+<h3 id="back"><span class="section-num">18.2</span> Back</h3>
+<figure>
+    <img src="https://ppalazon.github.io/42/dc4e0c-77b9-4a6f-b8ff-cd9e3cecc536/_20200214_171313screenshot.png"/> 
+</figure>
+
+<p>It&rsquo;s an unstable node or source node</p>
+<h2 id="draw-a-sketch-of-this-linear-system"><span class="section-num">19</span> Draw a sketch of this linear system</h2>
+<h3 id="front"><span class="section-num">19.1</span> Front</h3>
+<p><b>Draw a sketch of this linear system</b></p>
+<ul>
+<li>\({\displaystyle \dot{x} = y}\)</li>
+<li>\({\displaystyle \dot{y} = -x}\)</li>
+</ul>
+<p>Which solution is \({\displaystyle \vb{u}(t) = c_1 \begin{pmatrix} \sin(t)
+\\ \cos(t)\end{pmatrix} + c_2 \begin{pmatrix} \cos(t) \\ - \sin(t)\end{pmatrix}}\)</p>
+<h3 id="back"><span class="section-num">19.2</span> Back</h3>
+<figure>
+    <img src="https://ppalazon.github.io/19/04bf16-5362-4b8c-9714-2169503eed7e/_20200214_171532screenshot.png"/> 
+</figure>
+
+<p>Dividing \(y'/x'\) converts to a separable first order ODE</p>
+<p>\({\displaystyle \frac{\dv{y}{t}}{\dv{x}{t}} = \frac{\dd{y}}{\dd{x}} = - \frac{x}{y}}\)</p>
+<p>\(x^2 + y^2 = c\)</p>
+<p>The trajectories are the family of circles centered at the origin. The direction
+of motion is determined by its velocity field. You can get a velocity vector at
+\((1,0\) is \(\ev{0, -1} = -\vu{j}\)</p>
+<p>So the motion is clockwise.</p>
+<p>It&rsquo;s a stable center linear system</p>
+<h2 id="draw-a-sketch-of-this-linear-system"><span class="section-num">20</span> Draw a sketch of this linear system</h2>
+<h3 id="front"><span class="section-num">20.1</span> Front</h3>
+<p><b>Draw a sketch of this linear system</b></p>
+<ul>
+<li>\({\displaystyle \dot{x} = -x + y}\)</li>
+<li>\({\displaystyle \dot{y} = -x - y}\)</li>
+</ul>
+<p>Which solution is \({\displaystyle \vb{u}(t) = c_1 \begin{pmatrix}\sin(t)
+\\ \cos(t)\end{pmatrix} e^{-t} + c_2 \begin{pmatrix}\cos(t) \\ -
+\sin(t)\end{pmatrix} e^{-t}}\)</p>
+<h3 id="back"><span class="section-num">20.2</span> Back</h3>
+<figure>
+    <img src="https://ppalazon.github.io/32/149513-02e3-4d78-a304-7114b80ecc79/_20200214_172215screenshot.png"/> 
+</figure>
+
+<p>Their trajectories are therefore traced out by the tip of an origin vector that
+rotates clockwise at a constant rate, while its magnitude shrinks exponentially
+to \(0\)</p>
+<p>In other words, the trajectories spiral in toward the origin as \(t\) increases</p>
+<p>We call this pattern as <strong>asymptotically stable spiral</strong></p>
+<h2 id="draw-a-sketch-of-this-linear-system"><span class="section-num">21</span> Draw a sketch of this linear system</h2>
+<h3 id="front"><span class="section-num">21.1</span> Front</h3>
+<p><b>Draw a sketch of this linear system</b></p>
+<ul>
+<li>\({\displaystyle \dot{x} = x + y}\)</li>
+<li>\({\displaystyle \dot{y} = -x + y}\)</li>
+</ul>
+<p>Which solution is \({\displaystyle \vb{u}(t) = c_1 \begin{pmatrix} \sin(t)
+\\ \cos(t)\end{pmatrix} e^{t} + c_2 \begin{pmatrix}\cos(t) \\ -
+\sin(t)\end{pmatrix} e^{t}}\)</p>
+<h3 id="back"><span class="section-num">21.2</span> Back</h3>
+<figure>
+    <img src="https://ppalazon.github.io/01/611760-fc5b-4f54-932e-b49bb1b4d411/_20200214_172350screenshot.png"/> 
+</figure>
+
+<p>The magnitude of the rotating vector increases as \(t\) increases, giving as
+pattern an <strong>unstable spiral</strong></p>
+<h2 id="describe-a-general-sketch-for-this-linear-system"><span class="section-num">22</span> Describe a general sketch for this linear system</h2>
+<h3 id="front"><span class="section-num">22.1</span> Front</h3>
+<p><b>Describe a general sketch for this linear system</b></p>
+<p>\({\displaystyle \dot{\vb{x}} = A \vb{x}}\), where \(A = 2 \cross 2\) constant
+matrix</p>
+<p>Which solution is \({\displaystyle \vb{u} = c_1 \vb{\alpha_1} e^{\lambda_1 t} +
+c_2 \vb{\alpha_2} e^{\lambda_2 t}}\)</p>
+<p>Suppose that its eigenvalues have opposite signs: \(\lambda_1 \gt 0\) and \(\lambda_2
+\lt 0\)</p>
+<h3 id="back"><span class="section-num">22.2</span> Back</h3>
+<p>This is unstable saddle</p>
+<ul>
+<li>
+<p>Draw 4 simple solution as rays, setting \(c_1 = \pm 1\) and \(c_2 = \pm 1\) and
+the other to \(0\)</p>
+<ul>
+<li>\({\displaystyle \vb{x} = \pm \vb{\alpha_1} e^{\lambda_1 t}}\)
+<ul>
+<li>\(\lambda_1 \gt 0\), then as \(t\) goes from \(-\infty\) to \(\infty\), this scalar
+factor increases from \(0\) to \(\infty\)</li>
+<li>A ray going out <strong>from the origin in the direction of the vector</strong>
+\(\vb{\alpha_1}\)</li>
+<li>Similar way for \(\vb{x} = - \vb{\alpha_1} e^{\lambda_1 t}\)</li>
+</ul>
+</li>
+<li>\({\displaystyle \vb{x} = \pm \vb{\alpha_2} e^{\lambda_2 t}}\)
+<ul>
+<li>\(\lambda_2 \gt 0\), then as \(t\) goes from \(-\infty\) to \(\infty\), this scalar
+factor increases from \(\infty\) to \(0\)</li>
+<li>A ray going out <strong>towards the origin in the direction of the vector</strong>
+\(\vb{\alpha_2}\)</li>
+<li>Similar way for \(\vb{x} = - \vb{\alpha_2} e^{\lambda_2 t}\)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>To complete the picture, we sketch some nearby trajectories</p>
+<ul>
+<li>Smooth curves generally following the directions of the four rays described
+above</li>
+<li>They look something like hyperbolas, and they do have the rays as asymptotes</li>
+<li>\({\displaystyle \vb{u} = c_1 \vb{\alpha_1} e^{\lambda_1 t} + C_2
+\vb{\alpha_2} e^{\lambda_2 t}}\)</li>
+</ul>
+<figure>
+    <img src="https://ppalazon.github.io/4d/98a6dd-85df-4456-9abd-6e0c8a291d45/_20200215_131324screenshot.png"/> 
+</figure>
+
+</li>
+</ul>
+<h2 id="describe-a-general-sketch-for-this-linear-system"><span class="section-num">23</span> Describe a general sketch for this linear system</h2>
+<h3 id="front"><span class="section-num">23.1</span> Front</h3>
+<p><b>Describe a general sketch for this linear system</b></p>
+<p>\({\displaystyle \dot{\vb{x}} = A \vb{x}}\), where \(A = 2 \cross 2\) constant
+matrix</p>
+<p>Which solution is \({\displaystyle \vb{u} = c_1 \vb{\alpha_1} e^{\lambda_1 t} +
+c_2 \vb{\alpha_2} e^{\lambda_2 t}}\)</p>
+<p>Suppose that its eigenvalues have same signs: \(\lambda_1 \lt \lambda_2 \lt 0\)</p>
+<h3 id="back"><span class="section-num">23.2</span> Back</h3>
+<p>It&rsquo;s a asymptotically stable / sink node</p>
+<ul>
+<li>
+<p>The rays coming in towards the origin as \(t\) increases, since both of the
+\(\lambda_i\) are negative</p>
+</li>
+<li>
+<p>The parabolic curves will certainly come in to the origin as \(t\) increases</p>
+<ul>
+<li>Near the origin:
+<ul>
+<li>Corresponds to large positive \(t\) (\(t \gg 1\))</li>
+<li>The dominant term is \({\displaystyle \vb{u} \approx c_2 \vb{\alpha_2}
+e^{-\lambda_2 t}}\), so solution near origin are parallel to \(\alpha_2\)
+eigenvector</li>
+</ul>
+</li>
+<li>Far from the origin:
+<ul>
+<li>Corresponds to large negative \(t\) (\(t \ll -1\))</li>
+<li>The dominant term is \({\displaystyle \vb{u} \approx c_1 \vb{\alpha_1}
+e^{\lambda_1 t}}\), so solution far from the origin are parallel to
+\(\alpha_1\) eigenvector</li>
+</ul>
+</li>
+</ul>
+<figure>
+    <img src="https://ppalazon.github.io/47/c98e4a-6296-4cbe-aee2-7c431be77443/_20200215_133041screenshot.png"/> 
+</figure>
+
+</li>
+</ul>
+<h2 id="describe-a-general-sketch-for-this-linear-system"><span class="section-num">24</span> Describe a general sketch for this linear system</h2>
+<h3 id="front"><span class="section-num">24.1</span> Front</h3>
+<p><b>Describe a general sketch for this linear system</b></p>
+<p>\({\displaystyle \dot{\vb{x}} = A \vb{x}}\), where \(A = 2 \cross 2\) constant
+matrix</p>
+<p>Which solution is \({\displaystyle \vb{u} = c_1 \vb{\alpha_1} e^{\lambda_1 t} +
+c_2 \vb{\alpha_2} e^{\lambda_2 t}}\)</p>
+<p>Suppose that its eigenvalues have same signs: \(\lambda_1 \gt \lambda_2 \gt 0\)</p>
+<h3 id="back"><span class="section-num">24.2</span> Back</h3>
+<p>It&rsquo;s an unstable source node</p>
+<ul>
+<li>
+<p>The rays coming from the origin is outwards, since the \(\lambda_i \gt 0\)</p>
+</li>
+<li>
+<p>The parabolic curves will certainly come from the origin as \(t\) increases</p>
+<ul>
+<li>Near the origin:
+<ul>
+<li>Corresponds to large negative \(t\) (\(t \ll -1\))</li>
+<li>The dominant term is \({\displaystyle \vb{u} \approx c_2 \vb{\alpha_2}
+e^{\lambda_2 t}}\), so solution near origin are parallel to \(\alpha_2\)
+eigenvector</li>
+</ul>
+</li>
+<li>Far from the origin:
+<ul>
+<li>Corresponds to large positive \(t\) (\(t \gg 1\))</li>
+<li>The dominant term is \({\displaystyle \vb{u} \approx c_1 \vb{\alpha_1}
+e^{\lambda_1 t}}\), so solution far from the origin are parallel to
+\(\alpha_1\) eigenvector</li>
+</ul>
+</li>
+</ul>
+<figure>
+    <img src="https://ppalazon.github.io/47/c98e4a-6296-4cbe-aee2-7c431be77443/_20200215_133624screenshot.png"/> 
+</figure>
+
+</li>
+</ul>
+<h2 id="describe-a-general-sketch-for-this-linear-system"><span class="section-num">25</span> Describe a general sketch for this linear system</h2>
+<h3 id="front"><span class="section-num">25.1</span> Front</h3>
+<p><b>Describe a general sketch for this linear system</b></p>
+<p>\({\displaystyle \dot{\vb{x}} = A \vb{x}}\), where \(A = 2 \cross 2\) constant
+matrix</p>
+<p>Which solution is \({\displaystyle \vb{u} = c_1 \vb{\alpha_1} e^{\lambda_1 t} +
+c_2 \vb{\alpha_2} e^{\lambda_2 t}}\)</p>
+<p>Suppose that its eigenvalues are pure imaginary: \(\lambda = \pm bi\), \(b \gt 0\)</p>
+<h3 id="back"><span class="section-num">25.2</span> Back</h3>
+<p>It&rsquo;s a stable center linear system</p>
+<p>Its solution has the form \({\displaystyle \vb{u} = \vb{c_1} \cos(bt) + \vb{c_2}
+\sin(bt)}\), where \(\vb{c_1}, \vb{c_2}\) constant vectors</p>
+<p>Every solution is periodic, with period \({\displaystyle \frac{2\pi}{b}}\), the
+moving point representing it retraces its path at this interval. The
+trajectories are ellipses</p>
+<p>It&rsquo;s enough if you determine whether the motion is clockwise or
+counterclockwise. So you can get a single velocity vector \(\dot{\vb{u}}\) of the
+velocity field</p>
+<figure>
+    <img src="https://ppalazon.github.io/47/c98e4a-6296-4cbe-aee2-7c431be77443/_20200215_134738screenshot.png"/> 
+</figure>
+
+<h2 id="describe-a-general-sketch-for-this-linear-system"><span class="section-num">26</span> Describe a general sketch for this linear system</h2>
+<h3 id="front"><span class="section-num">26.1</span> Front</h3>
+<p><b>Describe a general sketch for this linear system</b></p>
+<p>\({\displaystyle \dot{\vb{x}} = A \vb{x}}\), where \(A = 2 \cross 2\) constant
+matrix</p>
+<p>Which solution is \({\displaystyle \vb{u} = c_1 \vb{\alpha_1} e^{\lambda_1 t} +
+c_2 \vb{\alpha_2} e^{\lambda_2 t}}\)</p>
+<p>Suppose that its eigenvalues are complex: \(\lambda = a \pm bi\), \(a \lt 0\) and \(b
+\gt 0\)</p>
+<h3 id="back"><span class="section-num">26.2</span> Back</h3>
+<p>It&rsquo;s asymptotically stable (sink) spiral</p>
+<p>The solutions has the form \({\displaystyle \vb{u} = e^{at} (\vb{c_1} \cos(bt) +
+c_2 \sin(bt))}\), where \(\vb{c_1}, \vb{c_2}\) constant vectors</p>
+<p>Decreases towards \(0\) as \(t \to \infty\)</p>
+<p>Thus the point \(\vb{u}\) travels in a trajectory which is like an ellipse, except
+that the distance from the origin is steadily shrinking towards the origin.</p>
+<p>Te direction of motion is calculated from a single velocity vector
+\(\dot{\vb{u}}\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/47/c98e4a-6296-4cbe-aee2-7c431be77443/_20200215_135133screenshot.png"/> 
+</figure>
+
+<h2 id="describe-a-general-sketch-for-this-linear-system"><span class="section-num">27</span> Describe a general sketch for this linear system</h2>
+<h3 id="front"><span class="section-num">27.1</span> Front</h3>
+<p><b>Describe a general sketch for this linear system</b></p>
+<p>\({\displaystyle \dot{\vb{x}} = A \vb{x}}\), where \(A = 2 \cross 2\) constant
+matrix</p>
+<p>Which solution is \({\displaystyle \vb{u} = c_1 \vb{\alpha_1} e^{\lambda_1 t} +
+c_2 \vb{\alpha_2} e^{\lambda_2 t}}\)</p>
+<p>Suppose that its eigenvalues are complex: \(\lambda = a \pm bi\), \(a \gt 0\) and \(b
+\gt 0\)</p>
+<h3 id="back"><span class="section-num">27.2</span> Back</h3>
+<p>It&rsquo;s unstable (source) spiral</p>
+<p>The solutions has the form \({\displaystyle \vb{u} = e^{at} (\vb{c_1} \cos(bt) +
+c_2 \sin(bt))}\), where \(\vb{c_1}, \vb{c_2}\) constant vectors</p>
+<p>Increases towards \(\infty\) as \(t \to \infty\)</p>
+<p>Thus the point \(\vb{u}\) travels in a trajectory which is like an ellipse, except
+that the distance from the origin is steadily expanding away from the origin.</p>
+<p>Te direction of motion is calculated from a single velocity vector
+\(\dot{\vb{u}}\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/47/c98e4a-6296-4cbe-aee2-7c431be77443/_20200215_135415screenshot.png"/> 
+</figure>
+
+<h2 id="describe-a-general-sketch-for-this-linear-system"><span class="section-num">28</span> Describe a general sketch for this linear system</h2>
+<h3 id="front"><span class="section-num">28.1</span> Front</h3>
+<p><b>Describe a general sketch for this linear system</b></p>
+<p>\({\displaystyle \dot{\vb{x}} = A \vb{x}}\), where \(A = 2 \cross 2\) constant
+matrix</p>
+<p>Which solution is \({\displaystyle \vb{u} = c_1 \vb{\alpha_1} e^{\lambda_1 t} +
+c_2 \vb{\alpha_2} e^{\lambda_2 t}}\)</p>
+<p>Suppose that its eigenvalues are repeated: \(\lambda \neq 0\), defective</p>
+<h3 id="back"><span class="section-num">28.2</span> Back</h3>
+<p>It&rsquo;s incomplete, one independent eigenvector</p>
+<p>It&rsquo;s called <strong>defective node</strong></p>
+<p>If \(\lambda \gt 0\) is unstable, if \(\lambda \lt 0\) is asymptotically stable</p>
+<figure>
+    <img src="https://ppalazon.github.io/47/c98e4a-6296-4cbe-aee2-7c431be77443/_20200215_135814screenshot.png"/> 
+</figure>
+
+<h2 id="describe-a-general-sketch-for-this-linear-system"><span class="section-num">29</span> Describe a general sketch for this linear system</h2>
+<h3 id="front"><span class="section-num">29.1</span> Front</h3>
+<p><b>Describe a general sketch for this linear system</b></p>
+<p>\({\displaystyle \dot{\vb{x}} = A \vb{x}}\), where \(A = 2 \cross 2\) constant
+matrix</p>
+<p>Which solution is \({\displaystyle \vb{u} = c_1 \vb{\alpha_1} e^{\lambda_1 t} +
+c_2 \vb{\alpha_2} e^{\lambda_2 t}}\)</p>
+<p>Suppose that its eigenvalues are repeated: \(\lambda \neq 0\), complete</p>
+<h3 id="back"><span class="section-num">29.2</span> Back</h3>
+<p>You have 2 independent eigenvector corresponding to this unique \(\lambda\)</p>
+<p>It&rsquo;s called <strong>star node</strong></p>
+<p>If \(\lambda \gt 0\) is unstable, and if \(\lambda \lt 0\) is asymptotically stable</p>
+<figure>
+    <img src="https://ppalazon.github.io/47/c98e4a-6296-4cbe-aee2-7c431be77443/_20200215_140011screenshot.png"/> 
+</figure>
+
+<h2 id="describe-a-general-sketch-for-this-linear-system"><span class="section-num">30</span> Describe a general sketch for this linear system</h2>
+<h3 id="front"><span class="section-num">30.1</span> Front</h3>
+<p><b>Describe a general sketch for this linear system</b></p>
+<p>\({\displaystyle \dot{\vb{x}} = A \vb{x}}\), where \(A = 2 \cross 2\) constant
+matrix</p>
+<p>Which solution is \({\displaystyle \vb{u} = c_1 \vb{\alpha_1} e^{\lambda_1 t} +
+c_2 \vb{\alpha_2} e^{\lambda_2 t}}\)</p>
+<p>Suppose that its eigenvalues \(\lambda_1 = 0 \gt \lambda_2\)</p>
+<h3 id="back"><span class="section-num">30.2</span> Back</h3>
+<p>The critical points are not isolated - they lie on the line through \(0\) with
+direction \(\alpha_1\)</p>
+<p>\({\displaystyle \vb{u} = c_1 \alpha_1 +c_2 \alpha_2 e^{\lambda_2 t}}\)</p>
+<p>As \(t \to \infty\), \(\vb{u} \to c_1 \alpha_1\) along a line parallel to \(\alpha_2\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/47/c98e4a-6296-4cbe-aee2-7c431be77443/_20200218_124525screenshot.png"/> 
+</figure>
+
+<h2 id="describe-a-general-sketch-for-this-linear-system"><span class="section-num">31</span> Describe a general sketch for this linear system</h2>
+<h3 id="front"><span class="section-num">31.1</span> Front</h3>
+<p><b>Describe a general sketch for this linear system</b></p>
+<p>\({\displaystyle \dot{\vb{x}} = A \vb{x}}\), where \(A = 2 \cross 2\) constant
+matrix</p>
+<p>Which solution is \({\displaystyle \vb{u} = c_1 \vb{\alpha_1} e^{\lambda_1 t} +
+c_2 \vb{\alpha_2} e^{\lambda_2 t}}\)</p>
+<p>Suppose that its eigenvalues \(\lambda_1 = 0 \lt \lambda_2\)</p>
+<h3 id="back"><span class="section-num">31.2</span> Back</h3>
+<p>The critical points are not isolated - they lie on the line through \(0\) with
+direction \(\alpha_1\)</p>
+<p>\({\displaystyle \vb{u} = c_1 \alpha_1 +c_2 \alpha_2 e^{\lambda_2 t}}\)</p>
+<p>As \(t \to \infty\), \(\vb{u} \to \infty\) along a line parallel to \(\alpha_2\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/47/c98e4a-6296-4cbe-aee2-7c431be77443/_20200218_124720screenshot.png"/> 
+</figure>
+
+<h2 id="describe-a-general-sketch-for-this-linear-system"><span class="section-num">32</span> Describe a general sketch for this linear system</h2>
+<h3 id="front"><span class="section-num">32.1</span> Front</h3>
+<p><b>Describe a general sketch for this linear system</b></p>
+<p>\({\displaystyle \dot{\vb{x}} = A \vb{x}}\), where \(A = 2 \cross 2\) constant
+matrix</p>
+<p>Which solution is \({\displaystyle \vb{u} = c_1 \vb{\alpha_1} e^{\lambda_1 t} +
+c_2 \vb{\alpha_2} e^{\lambda_2 t}}\)</p>
+<p>Suppose that \(\lambda_1 = \lambda_2 = 0\)</p>
+<h3 id="back"><span class="section-num">32.2</span> Back</h3>
+<p>It&rsquo;s a line of critical points</p>
+<p>\({\displaystyle \vb{u} = c_1 \alpha_1 + c_2 (t \alpha_1 + \alpha_2)}\)</p>
+<p>Trajectories are parallel to \(\alpha_1\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/47/c98e4a-6296-4cbe-aee2-7c431be77443/_20200218_132559screenshot.png"/> 
+</figure>
+
+<h2 id="what-is-the-trace-determinant-graph--t-d-graph"><span class="section-num">33</span> What is the Trace Determinant graph (T-D graph)?</h2>
+<h3 id="front"><span class="section-num">33.1</span> Front</h3>
+<p><b>What is the Trace Determinant graph (T-D graph)?</b></p>
+<h3 id="back"><span class="section-num">33.2</span> Back</h3>
+<p>It&rsquo;s a graph where you can show the behaviour of the linear system through it&rsquo;s
+characteristic equation \(p_A(\lambda)\)</p>
+<p>Its abbreviations stands for \(T = \operatorname{tr}(A)\) and \(D =
+\operatorname{det}(A)\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/47/c98e4a-6296-4cbe-aee2-7c431be77443/_20200218_121541screenshot.png"/> 
+</figure>
+
+<h2 id="what-is-the-curve-which-separate-the-real-and-complex-eigenvalues-in-t-d-graph"><span class="section-num">34</span> What is the curve which separate the real and complex eigenvalues in T-D graph?</h2>
+<h3 id="front"><span class="section-num">34.1</span> Front</h3>
+<p><b>What is the curve which separate the real and complex eigenvalues in T-D graph?</b></p>
+<h3 id="back"><span class="section-num">34.2</span> Back</h3>
+<p>It&rsquo;s the curve \({\displaystyle D = \frac{T^2}{4}}\)</p>
+<p>If the discriminant of quadratic formula of the characteristic polynomial
+\(p_A(\lambda) = \lambda^2 - T\lambda + D\)</p>
+<p>So, it&rsquo;s root come from \({\displaystyle \lambda = \frac{T \pm \sqrt{T^2 - 4D}}{2}}\)</p>
+<ul>
+<li>\(\lambda\) is real if \(T^2 - 4D \gt 0\)</li>
+<li>\(\lambda\) is complex if \(T^2 - 4D \lt 0\)</li>
+</ul>
+<h2 id="what-does-mean-this-condition-in-the-t-d-graph"><span class="section-num">35</span> What does mean this condition in the T-D graph?</h2>
+<h3 id="front"><span class="section-num">35.1</span> Front</h3>
+<p><b>What does mean this condition in the T-D graph?</b></p>
+<p>\(D \lt 0\)</p>
+<p>Explain how is the response</p>
+<h3 id="back"><span class="section-num">35.2</span> Back</h3>
+<p>\({\displaystyle \lambda = \frac{T \pm \sqrt{T^2 - 4D}}{2}}\)</p>
+<p>The eigenvalues are real and of opposite sign, hence the phase portrait is a
+unstable saddle</p>
+<h2 id="what-does-mean-this-condition-in-the-t-d-graph"><span class="section-num">36</span> What does mean this condition in the T-D graph?</h2>
+<h3 id="front"><span class="section-num">36.1</span> Front</h3>
+<p><b>What does mean this condition in the T-D graph?</b></p>
+<p>\(0 \lt D \lt T^2/4\)</p>
+<p>Explain how is the response</p>
+<h3 id="back"><span class="section-num">36.2</span> Back</h3>
+<p>\({\displaystyle \lambda = \frac{T \pm \sqrt{T^2 - 4D}}{2}}\)</p>
+<p>The eigenvalues are real, distinct, and of the same sign, hence the phase
+portrait is a node</p>
+<p>If \(T \lt 0\) is stable</p>
+<p>If \(T \gt 0\) is unstable</p>
+<h2 id="what-does-mean-this-condition-in-the-t-d-graph"><span class="section-num">37</span> What does mean this condition in the T-D graph?</h2>
+<h3 id="front"><span class="section-num">37.1</span> Front</h3>
+<p><b>What does mean this condition in the T-D graph?</b></p>
+<p>\(0 \lt T^2/4 \lt D\)</p>
+<p>Explain how is the response</p>
+<h3 id="back"><span class="section-num">37.2</span> Back</h3>
+<p>\({\displaystyle \lambda = \frac{T \pm \sqrt{T^2 - 4D}}{2}}\)</p>
+<p>The eigenvalues are neither real nor purely imaginary (are complex), hence the
+phase portrait is a spiral</p>
+<p>If \(T \lt 0\) is stable</p>
+<p>If \(T \gt 0\) is unstable</p>
+<h2 id="describe-all-possible-responses-from-the-t-d-graph"><span class="section-num">38</span> Describe all possible responses from the T-D graph?</h2>
+<h3 id="front"><span class="section-num">38.1</span> Front</h3>
+<p><b>Describe all possible responses from the T-D graph?</b></p>
+<figure>
+    <img src="https://ppalazon.github.io/47/c98e4a-6296-4cbe-aee2-7c431be77443/_20200218_122801screenshot.png"/> 
+</figure>
+
+<h3 id="back"><span class="section-num">38.2</span> Back</h3>
+<figure>
+    <img src="https://ppalazon.github.io/47/c98e4a-6296-4cbe-aee2-7c431be77443/_20200218_122814screenshot.png"/> 
+</figure>
+
+<h2 id="how-can-we-determine-the-direction-of-the-trajectory-from-this-matrix"><span class="section-num">39</span> How can we determine the direction of the trajectory from this matrix</h2>
+<h3 id="front"><span class="section-num">39.1</span> Front</h3>
+<p><b>How can we determine the direction of the trajectory from this matrix</b></p>
+<p>\({\displaystyle \begin{pmatrix}-1 &amp; 1 \\ 1 &amp; -1\end{pmatrix}}\)</p>
+<h3 id="back"><span class="section-num">39.2</span> Back</h3>
+<p>The linear system is \({\displaystyle \dot{\vb{u}} = A \vb{u}}\), and the
+direction field is given by \(\dot{\vb{u}}\)</p>
+<p>\({\displaystyle \dot{\vb{u}} = \begin{pmatrix}-1 &amp; 1 \\ 1 &amp; -1\end{pmatrix}}\)</p>
+<ul>
+<li>\(\dot{x} = - x + y\)</li>
+<li>\(\dot{y} = x - y\)</li>
+</ul>
+<p>At point \((1,0)\), the velocity vector is \(\ev{-1, 1}\), which means that the
+trajectory is upwards</p>
+<p>Another check is using <code>T-D</code> diagram for view which kind of solution is, and
+check the direction of velocity field with the entry \(A_{21}\) of the matrix. In
+this case is positive, so that means that it&rsquo;s upwards.</p>
+<h2 id="on-the-t-d-plane-where-can-you-guarantee-that-any-matrix-with-that-value-of-trace-and-determinant-is-stable"><span class="section-num">40</span> On the T-D plane, where can you guarantee that any matrix with that value of trace and determinant is stable?</h2>
+<h3 id="front"><span class="section-num">40.1</span> Front</h3>
+<p><b>On the T-D plane, where can you guarantee that any matrix with that value of trace and determinant is stable?</b></p>
+<h3 id="back"><span class="section-num">40.2</span> Back</h3>
+<p>Stable solutions occur if and only if both eigenvalues have negative real part.
+This happens exactly when the trace is negative an the determinant is positive -
+so, at all points inside the second quadrant in the T-D plane</p>
+<h2 id="on-the-t-d-plane-where-can-you-guarantee-that-any-matrix-with-that-value-of-trace-and-determinant-is-unstable"><span class="section-num">41</span> On the T-D plane, where can you guarantee that any matrix with that value of trace and determinant is unstable?</h2>
+<h3 id="front"><span class="section-num">41.1</span> Front</h3>
+<p><b>On the T-D plane, where can you guarantee that any matrix with that value of trace and determinant is unstable?</b></p>
+<h3 id="back"><span class="section-num">41.2</span> Back</h3>
+<p>Unstable solutions occur when there is at least one eigenvalue with positive real
+part. This happens either when the determinant is negative, or when the trace is
+positive - so, at all points inside the first, third, and fourth quadrants on
+the T-D plane</p>
+<h2 id="on-the-t-d-plane-where-can-you-guarantee-that-any-matrix-with-that-value-of-trace-and-determinant-is-neutrally-stable"><span class="section-num">42</span> On the T-D plane, where can you guarantee that any matrix with that value of trace and determinant is neutrally stable?</h2>
+<h3 id="front"><span class="section-num">42.1</span> Front</h3>
+<p><b>On the T-D plane, where can you guarantee that any matrix with that value of trace and determinant is neutrally stable?</b></p>
+<h3 id="back"><span class="section-num">42.2</span> Back</h3>
+<p>Neutrally stable solutions occur either when the trace is zero and the
+determinant is positive (giving periodic solutions), or when the determinant is
+zero and the trace is negative (giving combs)</p>
+<h2 id="on-the-t-d-plane-are-there-any-values-of-the-trace-and-determinant-for-which-there-are-matrices-exhibiting-more-than-one-type-of-limiting-behaviour"><span class="section-num">43</span> On the T-D plane, are there any values of the trace and determinant for which there are matrices exhibiting more than one type of limiting behaviour?</h2>
+<h3 id="front"><span class="section-num">43.1</span> Front</h3>
+<p><b>On the T-D plane, are there any values of the trace and determinant for which there are matrices exhibiting more than one type of limiting behaviour?</b></p>
+<h3 id="back"><span class="section-num">43.2</span> Back</h3>
+<p>When the trace and determinant are both zero, the zero matrix gives neutrally
+stable behaviour, while the matrix that has exactly one nonzero entry, in the
+upper right, gives unstable behaviour.</p>
+<h2 id="what-is-the-normal-mode-and-general-solution-for-this-linear-system"><span class="section-num">44</span> What is the normal mode and general solution for this linear system?</h2>
+<h3 id="front"><span class="section-num">44.1</span> Front</h3>
+<p><b>What is the normal mode and general solution for this linear system?</b></p>
+<p>\({\displaystyle \dot{\vb{u}} = A \vb{u}}\), where \({\displaystyle A
+= \begin{pmatrix}0.5 &amp; 1 \\ -2.25 &amp; 0.5\end{pmatrix}}\)</p>
+<h3 id="back"><span class="section-num">44.2</span> Back</h3>
+<p>Characteristic polynomial: \({\displaystyle p_A(\lambda) = \lambda^2 - \lambda +
+2.5}\)</p>
+<p>Eigenvalues: \({\displaystyle \lambda = \frac{1 \pm 3i}{2}}\)</p>
+<p>Eigenvector for \({\displaystyle \lambda_1 = \frac{1 + 3i}{2}}\) satisfies \((A -
+\lambda_1 I) \vb{v_1}\)</p>
+<p>Hence, \({\displaystyle \begin{pmatrix}-3i/2 &amp; 1 \\ -9/4 &amp; -3i/2\end{pmatrix} \vb{v_1} =
+\vb{0}}\)</p>
+<p>Eigenvector: \({\displaystyle \vb{v_1} = \begin{pmatrix}1 \\ 3i/2\end{pmatrix}}\)</p>
+<p>The normal modes: \({\displaystyle e^{(1 + 3i)t} \begin{pmatrix}1
+\\ 3i/2\end{pmatrix}}\), which has</p>
+<p>Real part of normal mode: \({\displaystyle \vb{u_1} =
+e^{t/2} \begin{pmatrix}\cos(3t/2) \\ - (3/2) \sin(3t/2)\end{pmatrix}}\)</p>
+<p>Imaginary part of normal mode: \({\displaystyle \vb{u_2} =
+e^{t/2} \begin{pmatrix}\sin(3t/2) \\ (3/2) \cos(3t/2)\end{pmatrix}}\)</p>
+<h2 id="suppose-this-ivp-is-x-and-y-increasing-at-t-0"><span class="section-num">45</span> Suppose this IVP, is x and y increasing at t = 0?</h2>
+<h3 id="front"><span class="section-num">45.1</span> Front</h3>
+<p><b>Suppose this IVP, is x and y increasing at t = 0?</b></p>
+<p>\({\displaystyle A = \begin{pmatrix}0.5 &amp; 1 \\ -2.25 &amp; 0.5\end{pmatrix}}\)</p>
+<p>At point \((1,0)\) of the phase portrait</p>
+<h3 id="back"><span class="section-num">45.2</span> Back</h3>
+<p>\({\displaystyle \dot{\vb{u}} = A \vb{u}}\), at \(t=0\) we have \(\vb{u}
+= \begin{pmatrix}1 \\ 0\end{pmatrix}\)</p>
+<p>So, \({\displaystyle \dot{\vb{u}} = \begin{pmatrix}0.5 &amp; 1 \\ -2.25 &amp;
+0.5\end{pmatrix} \begin{pmatrix}1 \\ 0\end{pmatrix} = \begin{pmatrix}0.5
+\\ -2.25\end{pmatrix}}\)</p>
+<p>So the values of \(x\) increases at \(t = 0\) with a ratio of \(0.5\), but the values
+of \(y\) decreases at \(t=0\) with a ratio of \(-2.25\)</p>
+
+</div>
+
+
+            <footer>
+    
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-4%2fsession-34%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Qualitative%20Behavior%3a%20Phase%20Portraits&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-4%2fsession-34%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-4%2fsession-34%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-4%2fsession-34%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-4%2fsession-34%2f&amp;title=Qualitative%20Behavior%3a%20Phase%20Portraits" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Qualitative%20Behavior%3a%20Phase%20Portraits&amp;body=Check out this site https%3a%2f%2fppalazon.github.io%2f18.03%2funit-4%2fsession-34%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+
+<nav>
+    <ul class="pager">
+    
+    <li class="previous">
+        <a href="https://ppalazon.github.io/18.03/unit-4/session-33/" title="Matrix Methods: Eigenvalues and Normal Modes">
+            <span aria-hidden="true">&larr;</span>Matrix Methods: Eigenvalues and Normal Modes
+        </a>
+    </li>
+    
+
+    
+    <li class="next">
+        <a href="https://ppalazon.github.io/18.03/unit-4/session-35/" title="Matrix Exponential">
+            Matrix Exponential <span aria-hidden="true">&rarr;</span>
+        </a>
+    </li>
+    
+    </ul>
+</nav>
+
+
+
+</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//ppalazon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+        </div>
+    </div>
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/">18.03 Differential Equations</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/unit-4/">4: First-order Systems</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.03/unit-4/session-34/">Qualitative Behavior: Phase Portraits</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

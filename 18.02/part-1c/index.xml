@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1C: Vectors and Matrices - Parametric Equations for Curves on Pablo Palazon&#39;s Website</title>
+    <link>https://ppalazon.github.io/18.02/part-1c/</link>
+    <description>Recent content in 1C: Vectors and Matrices - Parametric Equations for Curves on Pablo Palazon&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>CC BY-NC-ND 4.0</copyright>
+    <lastBuildDate>Thu, 18 Apr 2019 00:00:00 +0200</lastBuildDate><atom:link href="https://ppalazon.github.io/18.02/part-1c/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Session 15: Equations of Lines</title>
+      <link>https://ppalazon.github.io/18.02/part-1c/session-15/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-1c/session-15/</guid>
+      <description>Captured On [2020-02-05 Wed 21:25] Source Session 15: Equations of Lines | Part C: Parametric Equations for Curves | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Equations of lines
+  
+  Figure 2: Example of line through 2 points
+  
+  Figure 3: Position at time \(t\)</description>
+    </item>
+    
+    <item>
+      <title>Session 16: Intersection of a Line and a Plane</title>
+      <link>https://ppalazon.github.io/18.02/part-1c/session-16/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-1c/session-16/</guid>
+      <description>Captured On [2020-02-05 Wed 21:25] Source Session 16: Intersection of a Line and a Plane | Part C: Parametric Equations for Curves | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Application: Intersection with a plane
+  
+  Figure 2: Where are the points respect to the plane?
+  
+  Figure 3: When will be an intersection to the plane?</description>
+    </item>
+    
+    <item>
+      <title>Session 17: General Parametric Equations; the Cycloid</title>
+      <link>https://ppalazon.github.io/18.02/part-1c/session-17/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-1c/session-17/</guid>
+      <description>Captured On [2020-02-05 Wed 21:25] Source Session 17: General Parametric Equations; the Cycloid | Part C: Parametric Equations for Curves | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Parametric equations for arbitrary motion (plane/space)
+  
+  Figure 2: Cycloid path movement
+  
+  Figure 3: Which is the position \((x(\theta), y (\theta))\)</description>
+    </item>
+    
+    <item>
+      <title>Session 18: Point (Cusp) on Cycloid</title>
+      <link>https://ppalazon.github.io/18.02/part-1c/session-18/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-1c/session-18/</guid>
+      <description>Captured On [2020-02-05 Wed 21:26] Source Session 18: Point (Cusp) on Cycloid | Part C: Parametric Equations for Curves | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: What happens near bottom?
+  
+  Figure 2: Get an approximation for \(\theta\) small
+  
+  Figure 3: Taylor approximations for \(\sin\) and \(\cos\) when \(\theta\) is small</description>
+    </item>
+    
+    <item>
+      <title>Session 19: Velocity and Acceleration</title>
+      <link>https://ppalazon.github.io/18.02/part-1c/session-19/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-1c/session-19/</guid>
+      <description>Captured On [2020-02-05 Wed 21:26] Source Session 19: Velocity and Acceleration | Part C: Parametric Equations for Curves | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Review parametric equations and position vector
+  
+  Figure 2: Velocity in a cycloid
+  
+  Figure 3: Calculating module of speed</description>
+    </item>
+    
+    <item>
+      <title>Session 20: Velocity and Arc Length</title>
+      <link>https://ppalazon.github.io/18.02/part-1c/session-20/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-1c/session-20/</guid>
+      <description>Captured On [2020-02-05 Wed 21:28] Source Session 20: Velocity and Arc Length | Part C: Parametric Equations for Curves | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Arc lenght
+  
+  Figure 2: Lenght of an arch of cycloid
+  
+  Figure 3: Velocity vector
+  
+  Figure 4: Limit as \(\Delta t \to 0\)</description>
+    </item>
+    
+    <item>
+      <title>Session 21: Kepler&#39;s Second Law</title>
+      <link>https://ppalazon.github.io/18.02/part-1c/session-21/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-1c/session-21/</guid>
+      <description>Captured On [2020-02-05 Wed 21:29] Source Session 21: Kepler&amp;rsquo;s Second Law | Part C: Parametric Equations for Curves | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Description of kepler&amp;rsquo;s second law
+  
+  Figure 2: Kepler&amp;rsquo;s law in terms of vectors?
+  
+  Figure 3: Area for second law</description>
+    </item>
+    
+  </channel>
+</rss>

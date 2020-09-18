@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>18.03 Differential Equations on Pablo Palazon&#39;s Website</title>
+    <link>https://ppalazon.github.io/18.03/</link>
+    <description>Recent content in 18.03 Differential Equations on Pablo Palazon&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>CC BY-NC-ND 4.0</copyright>
+    <lastBuildDate>Fri, 13 Dec 2019 00:00:00 +0100</lastBuildDate><atom:link href="https://ppalazon.github.io/18.03/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How much time did I spend in this course?</title>
+      <link>https://ppalazon.github.io/18.03/working-table/</link>
+      <pubDate>Thu, 17 Sep 2020 11:18:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/working-table/</guid>
+      <description>&lt;p&gt;In this article I show how much time I spend at each session of this course,
+this is automatic system marked with timestamp with all hours&lt;/p&gt;
+&lt;p&gt;This timetables includes understanding the concepts and creating anki cards&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

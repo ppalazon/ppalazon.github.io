@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Convolution  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="ode, maths, ">
+
+
+<meta property="og:title" content="Convolution  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.03/unit-3/session-26/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="content-source" content="18.03/unit-3/session-26.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Captured On [2019-12-27 Fri 13:46] Source Convolution | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the definition of the convolution of 2 functions? 1.1 Front What is the definition of the convolution of 2 functions?
+One-sided convolution
+1.2 Back It&amp;rsquo;s a function defined by this integral
+\({\displaystyle (f * g)(t) = \int_{0^-}^{t^&#43;} f(\tau) g(t - \tau) \dd{\tau}}\) for \(t \gt 0\)"/>
+<meta property="og:article:published_time" content="2019-11-26T00:00:00&#43;01:00" />
+<meta property="og:article:modified_time" content="2019-11-26T00:00:00&#43;01:00" />
+
+
+
+<meta property="og:article:tag" content="ode">
+
+<meta property="og:article:tag" content="maths">
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ppalazon" />
+<meta name="twitter:creator" content="@ppalazon" />
+<meta name="twitter:title" content="Convolution" />
+<meta name="twitter:description" content="Captured On [2019-12-27 Fri 13:46] Source Convolution | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the definition of the convolution of 2 functions? 1.1 Front What is the definition of the convolution of 2 functions?
+One-sided convolution
+1.2 Back It&amp;rsquo;s a function defined by this integral
+\({\displaystyle (f * g)(t) = \int_{0^-}^{t^&#43;} f(\tau) g(t - \tau) \dd{\tau}}\) for \(t \gt 0\)"/>
+<meta name="twitter:url" content="https://ppalazon.github.io/18.03/unit-3/session-26/" />
+<meta name="twitter:domain" content="https://ppalazon.github.io">
+
+
+
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+     "@type": "Article",
+     "headline": "Convolution",
+     "author": {
+         "@type": "Person",
+         "name": "http://profiles.google.com/+?rel=author"
+     },
+     "datePublished": "2019-11-26",
+     "description": "",
+     "wordCount":  2193 
+ }
+</script>
+
+
+
+<link rel="canonical" href="https://ppalazon.github.io/18.03/unit-3/session-26/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+ }
+ .hero {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: calc(200px + (450 - 200) * ((100vw - 300px) / (1600 - 300)));
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: calc(-1 * (200px + (450 - 200) * ((100vw - 300px) / (1600 - 300))));
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+    <header class="container hat">
+        <h1>Convolution
+</h1>
+
+        
+
+
+<span class="author">by
+    
+    MIT OCW, Pablo Palazon
+    
+</span>
+
+
+    </header>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            
+            <div class="content">
+  <dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2019-12-27 Fri 13:46]</span></span></dd>
+<dt>Source</dt>
+<dd><a href="https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-iii-fourier-series-and-laplace-transform/convolution/">Convolution | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare</a></dd>
+</dl>
+<h2 id="what-is-the-definition-of-the-convolution-of-2-functions"><span class="section-num">1</span> What is the definition of the convolution of 2 functions?</h2>
+<h3 id="front"><span class="section-num">1.1</span> Front</h3>
+<p><b>What is the definition of the convolution of 2 functions?</b></p>
+<p>One-sided convolution</p>
+<h3 id="back"><span class="section-num">1.2</span> Back</h3>
+<p>It&rsquo;s a function defined by this integral</p>
+<p>\({\displaystyle (f * g)(t) = \int_{0^-}^{t^+} f(\tau) g(t - \tau) \dd{\tau}}\)
+for \(t \gt 0\)</p>
+<p>One-sided convolution is only concerned with functions on the interval \((0^-,
+\infty)\). When using convolution we never look at \(t \lt 0\)</p>
+<h2 id="when-can-we-use--0--and--t--as-limits-on-the-convolution-function"><span class="section-num">2</span> When can we use \(0\) and \(t\) as limits on the convolution function?</h2>
+<h3 id="front"><span class="section-num">2.1</span> Front</h3>
+<p><b>When can we use $0$ and $t$ as limits on the convolution function?</b></p>
+<h3 id="back"><span class="section-num">2.2</span> Back</h3>
+<p>When both function \(f\) and \(g\) are continuous or have at worst jump
+discontinuities then we can use \(0\) and \(t\) for the limits.</p>
+<p>\({\displaystyle f * g(t) = \int_0^t f(\tau)g(t - \tau) \dd{\tau}}\)</p>
+<h2 id="show-this-equation"><span class="section-num">3</span> Show this equation</h2>
+<h3 id="front"><span class="section-num">3.1</span> Front</h3>
+<p><b>Show this equation</b></p>
+<p>\({\displaystyle e^{at} * e^{bt} = \frac{e^{at} - e^{bt}}{a - b}}\) when \(a \neq
+b\)</p>
+<h3 id="back"><span class="section-num">3.2</span> Back</h3>
+<p>\begin{align*}
+e^{at} * e^{bt} &amp;= \int_0^t e^{a\tau} e^{b(t - \tau)} \dd{\tau} \\\<br>
+&amp;= e^{bt} \int_0^t e^{(a - b)\tau} \dd{\tau} \\\<br>
+&amp;= e^{bt} \frac{e^{(a-b)\tau}}{a - b} \bigg|_0^t \\\<br>
+&amp;= e^{bt} \frac{e^{(a-b)t} - 1}{a -b}\\\<br>
+&amp;= \frac{e^{at} - e^{bt}}{a - b}
+\end{align*}</p>
+<p>You could safely integrate just from \(0\) to \(t\) instead of having to specify
+precisely \(0^-\) to \(t^+\)</p>
+<h2 id="compute-the-convolution-of-this-2-functions"><span class="section-num">4</span> Compute the convolution of this 2 functions</h2>
+<h3 id="front"><span class="section-num">4.1</span> Front</h3>
+<p><b>Compute the convolution of this 2 functions</b></p>
+<p>\({\displaystyle e^{at} * e^{at}}\)</p>
+<h3 id="back"><span class="section-num">4.2</span> Back</h3>
+<p>\begin{align*}
+e^{at} * e^{at} &amp;= \int_0^t e^{a\tau} e^{a(t - \tau)} \dd{\tau} \\\<br>
+&amp;= e^{at} \int_0^t e^{a\tau} e^{-a\tau} \dd{\tau} \\\<br>
+&amp;= e^{at} \int_0^t \dd{\tau}\\\<br>
+&amp;= e^{at} t
+\end{align*}</p>
+<h2 id="express-as-a-convolution-the-solution-to-the-first-order-constant-coefficient-linear-ivp"><span class="section-num">5</span> Express as a convolution the solution to the first order constant coefficient linear IVP</h2>
+<h3 id="front"><span class="section-num">5.1</span> Front</h3>
+<p><b>Express as a convolution the solution to the first order constant coefficient linear IVP</b></p>
+<p>\(\dot{y} + ky = q(t)\), \(y(0) = 0\)</p>
+<p>Don&rsquo;t use Green&rsquo;s Theorem for DE. Explain how to reach the integral convolution</p>
+<p>We know that \(e^{-kt}\) is the solution to corresponding homogeneous DE
+\(\dot{y} + ky\), but the initial condition \(y(0) = 1\). This is the simplest case
+of Green&rsquo;s Formula.</p>
+<h3 id="back"><span class="section-num">5.2</span> Back</h3>
+<p>Multiplying both sides by its integrating factor \(e^{kt}\)</p>
+<p>\({\displaystyle (y e^{kt})' = q(t) e^{kt}}\)</p>
+<p>Integrate both sides from \(0\) to \(t\), and apply the Fundamental Theorem of
+Calculus to the left side; since we have \(y(0) = 0\), the solution we seek
+satisfies</p>
+<p>\({\displaystyle y_p e^{kt} = \int_0^t q(\tau) e^{k\tau} \dd{\tau}}\)</p>
+<p>\({\displaystyle y_p = \int_0^t q(\tau) e^{-k(t - \tau)} \dd{\tau} = q(t) *
+e^{-kt}}\)</p>
+<h2 id="which-are-the-properties-of-the-convolution-of-2-functions"><span class="section-num">6</span> Which are the properties of the convolution of 2 functions?</h2>
+<h3 id="front"><span class="section-num">6.1</span> Front</h3>
+<p><b>Which are the properties of the convolution of 2 functions?</b></p>
+<h3 id="back"><span class="section-num">6.2</span> Back</h3>
+<ol>
+<li>Linearity (or distributive law)
+<ul>
+<li>\((c_1 f_1 + c_2 f_2) * g = c_1(f_1 * g) + c_2 (f_2 * g)\)</li>
+</ul>
+</li>
+<li>Commutativity
+<ul>
+<li>\(f * g = g * f\)</li>
+</ul>
+</li>
+<li>Associativity
+<ul>
+<li>\(f * (g * h) = (f * g) * h\)</li>
+</ul>
+</li>
+<li>Multiplicative identify (thinking as type of multiplications)
+<ul>
+<li>\(\delta(t)\)</li>
+<li>\((\delta * f)(t) = f(t)\)</li>
+</ul>
+</li>
+</ol>
+<h2 id="what-is-the-equivalent-to-this-expression"><span class="section-num">7</span> What is the equivalent to this expression?</h2>
+<h3 id="front"><span class="section-num">7.1</span> Front</h3>
+<p><b>What is the equivalent to this expression?</b></p>
+<p>\({\displaystyle (\delta * f)(t)}\)</p>
+<h3 id="back"><span class="section-num">7.2</span> Back</h3>
+<p>\({\displaystyle (\delta * f)(t) = \int_{0^-}^t \delta(\tau) f (t - \tau)
+\dd{\tau} = f (t - 0) = f(t)}\)</p>
+<p>for \(t \geq 0\)</p>
+<h2 id="what-is-the-equivalent-to-this-expression"><span class="section-num">8</span> What is the equivalent to this expression?</h2>
+<h3 id="front"><span class="section-num">8.1</span> Front</h3>
+<p><b>What is the equivalent to this expression?</b></p>
+<p>\({\displaystyle (\delta(t - a) * f)(t)}\)</p>
+<h3 id="back"><span class="section-num">8.2</span> Back</h3>
+<p>\({\displaystyle (\delta(t - a) * f)(t) = \int_{0^-}^{t^+} \delta(\tau - a) f(t -
+\tau) \dd{\tau} = f(t - a) \int_{0^-}^{t^+} \delta(\tau - a) \dd{\tau} = f(t -
+a)}\)</p>
+<p>Checking that \(f(t)\delta(t - a) = f(a) \delta(t - a)\)</p>
+<p>For \(t \geq a\), the integral in this expression is just 1, and for \(0 \lt t \lt
+a\), this integral is zero</p>
+<h2 id="what-is-the-value-of-this-integral"><span class="section-num">9</span> What is the value of this integral?</h2>
+<h3 id="front"><span class="section-num">9.1</span> Front</h3>
+<p><b>What is the value of this integral?</b></p>
+<p>\({\displaystyle \int_{0^-}^b \delta(\tau) f(\tau) \dd{\tau}}\)</p>
+<h3 id="back"><span class="section-num">9.2</span> Back</h3>
+<p>\(f(0)\)</p>
+<h2 id="what-is-the-value-of-the-convolution-of-these-2-functions"><span class="section-num">10</span> What is the value of the convolution of these 2 functions?</h2>
+<h3 id="front"><span class="section-num">10.1</span> Front</h3>
+<p><b>What is the value of the convolution of these 2 functions?</b></p>
+<p>\({\displaystyle f(t) * 1}\)</p>
+<h3 id="back"><span class="section-num">10.2</span> Back</h3>
+<p>\({\displaystyle f(t) * 1 = \int_0^t f(\tau) 1 \dd{\tau} = \int_0^t f(\tau)
+\dd{\tau}}\)</p>
+<h2 id="what-is-the-green-s-formula-for-de"><span class="section-num">11</span> What is the Green&rsquo;s Formula for DE?</h2>
+<h3 id="front"><span class="section-num">11.1</span> Front</h3>
+<p><b>What is the Green&rsquo;s Formula for DE?</b></p>
+<h3 id="back"><span class="section-num">11.2</span> Back</h3>
+<p>Suppose that we have a linear time invariant system with rest IC</p>
+<p>\({\displaystyle p(D) y = f(t)}\), \(y(t) = 0\) for \(t&lt;0\)</p>
+<p>We will consider \(f(t)\) to be the input to this system. We don&rsquo;t consider
+functions for \(t \lt 0\), the initial conditions mean that \(y(t)\) and all its
+derivatives are \(0\) at \(t = 0^-\)</p>
+<p>Suppose further that \(w(t)\) is the unit impulse response for \(p(D)\). That is,
+\(w(t)\) satisfies \(p(d) w = \delta(t)\), with rest IC. Then, for any input \(f(t)\)
+the solution to equation \(p(D) y = f(t)\) is given by <strong>Green&rsquo;s formula</strong></p>
+<p>\({\displaystyle y(t) = (f * w)(t) = \int_{0^-}^{t^+} f(\tau) w(t - \tau)
+\dd{\tau}}\)</p>
+<h2 id="why-is-really-useful-green-s-formula-for-de"><span class="section-num">12</span> Why is really useful Green&rsquo;s formula for DE?</h2>
+<h3 id="front"><span class="section-num">12.1</span> Front</h3>
+<p><b>Why is really useful Green&rsquo;s formula for DE?</b></p>
+<h3 id="back"><span class="section-num">12.2</span> Back</h3>
+<p>It tells us the response to any input once we know the unit impulse response.
+Furthermore, it gives us that response as an integral which can be computed
+numerically if necessary.</p>
+<p>For many physical systems the impulse response can be measured directly or
+deduced from measurements.</p>
+<p>This formula gives us a method for predicting the system&rsquo;s response to any
+input.</p>
+<h2 id="which-are-the-condition-for-use-the-green-s-formula-for-de"><span class="section-num">13</span> Which are the condition for use the Green&rsquo;s formula for DE?</h2>
+<h3 id="front"><span class="section-num">13.1</span> Front</h3>
+<p><b>Which are the condition for use the Green&rsquo;s formula for DE?</b></p>
+<h3 id="back"><span class="section-num">13.2</span> Back</h3>
+<ul>
+<li>Have a linear time invariant (LTI) system</li>
+<li>With rest initial conditions</li>
+<li>Know the unit impulse response</li>
+</ul>
+<h2 id="what-is-the-weight-function-of-a-system"><span class="section-num">14</span> What is the weight function of a system?</h2>
+<h3 id="front"><span class="section-num">14.1</span> Front</h3>
+<p><b>What is the weight function of a system?</b></p>
+<h3 id="back"><span class="section-num">14.2</span> Back</h3>
+<p>It&rsquo;s the unit impulse response</p>
+<p>If we think of an integral as a &lsquo;sum&rsquo; then Green&rsquo;s formula shows the solution
+\(y(t)\) to \(p(D)y = f(t)\) is given as a weighted sum of the small bits of input,
+\(f(\tau) \dd{\tau}\)</p>
+<h2 id="find-the-particular-solution-given-by-green-s-formula-to-this-de"><span class="section-num">15</span> Find the particular solution given by Green&rsquo;s formula to this DE?</h2>
+<h3 id="front"><span class="section-num">15.1</span> Front</h3>
+<p><b>Find the particular solution given by Green&rsquo;s formula to this DE?</b></p>
+<p>\(\ddot{y} + y = A\), \(y(0) = 0\), \(\dot{y}(0) = 0\), where \(A\) is a constant</p>
+<p>Tip: unit impulse response \(w(t) = \sin(t)\)</p>
+<h3 id="back"><span class="section-num">15.2</span> Back</h3>
+<p>For \(t \geq 0\)</p>
+<p>\({\displaystyle y_p(t) = \int_0^t A \sin(t - \tau) \dd{\tau} = A \cos(t - \tau)
+\bigg|_0^t = A (1 - \cos(t))}\)</p>
+<h2 id="how-could-we-proof-the-green-s-formula-for-de"><span class="section-num">16</span> How could we proof the Green&rsquo;s Formula for DE?</h2>
+<h3 id="front"><span class="section-num">16.1</span> Front</h3>
+<p><b>How could we proof the Green&rsquo;s Formula for DE?</b></p>
+<p>For \(P(D) y = f(t)\), \(y(t) = 0\) for \(t \lt 0\)</p>
+<p>The solution for \(t \gt 0\) is given by</p>
+<p>\({\displaystyle y(t) = (f * w)(f) = \int_{0^-}^{t^+} f(\tau) g(t - \tau)
+\dd{\tau}}\)</p>
+<p>where \(w(t)\) is the weight function for the system.</p>
+<p>Suppose that \(f(t)\) is continuous</p>
+<h3 id="back"><span class="section-num">16.2</span> Back</h3>
+<p>We will use</p>
+<ul>
+<li>Linear time invariant (LTI) of the system</li>
+<li>Superposition</li>
+<li>Definition of the integral as a limit of Riemman sum</li>
+</ul>
+<p>As \(f(t)\) is continuous we can change limits of sum, but this proof work for
+\(f(t)\) hat has jump discontinuities or contains delta functions</p>
+<p>LTI means: \(y(t)\) solves \(P(D)y = f(t) \implies y(t -a)\) solves \(P(D)y =
+f(t-a)\). We can say that if \(y(t)\) is the response to input \(f(t)\) then \(y(t
+-a)\) is the response to input \(f(t - a)\)</p>
+<p>Divide up time into intervals of width \(\Delta t\). So, \(t_0 = 0, t_1 = \Delta t,
+t_2 = 2 \Delta t\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/e1/6256b4-f645-49bf-9a4a-e63870357c58/_20200916_2244512tyeKlC.png"/> 
+</figure>
+
+<p>We decompose the input signal \(f(t)\) into packets over each interval. The
+\(k\text{th}\) signal packet, \(f_k(t)\) coincides with \(f(t)\) between \(t_k\) and
+\(t_{k+1}\) and \(0\) elsewhere</p>
+<p>\({\displaystyle f_k(t) = \begin{cases}
+f(t) &amp;\text{for } t_k \lt t \lt t_{k+1} \\\<br>
+0 &amp;\text{elsewhere}
+\end{cases}
+}\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/e1/6256b4-f645-49bf-9a4a-e63870357c58/_20200916_224459oNujhYU.png"/> 
+</figure>
+
+<p>It is clear that for \(t \gt 0\) we have \(f(t)\) is the sum of the packets</p>
+<p>\({\displaystyle f(t) = f_0(t) + f_1(t) + \dots + f_k(t) + \dots}\)</p>
+<p>A single package \(f_k(t)\) is concentrated entirely in a small neighbourhood of
+\(t_k\) so it is approximately an impulse with the same size as the area under
+\(f_k(t)\). The are under \(f_k (t) \approx f(t_k) \Delta t\). Hence,</p>
+<p>\({\displaystyle f_k (t) \approx (f(t_k) \Delta t) \delta(t - t_k)}\)</p>
+<p>The weight function \(w(t)\) is response to \(\delta(t)\). So, by linear time
+invariance the response to \(f_k(t)\) is</p>
+<p>\({\displaystyle y_{k}(t) \approx (f(t_k) \Delta t) w(t - t_k)}\)</p>
+<p>We want to find the response at a fixed time. Since \(t\) is already in use, we
+will let \(T\) be our fixed time and find \(y(T)\)</p>
+<p>Since \(f\) is the sum of \(f_k\), superposition gives \(y\) is the sum of \(y_k\).</p>
+<p>\({\displaystyle y(T) = y_o(T) + y_1(T) + \dots \approx \biggl(f(t_0) w(T -
+t_0) + f(t_1)w(T - t_1) + \dots \biggr) \Delta t}\)</p>
+<p>We can ignore all the terms where \(t_k &gt; T\) (Because then \(w(T - t_k) = 0\),
+since \(T - t_k \lt 0\)). If \(n\) is the last index where \(t_k \lt T\)</p>
+<p>\({\displaystyle y(T) \approx \biggl(f(t_0)w(T - t_0) + f(t_1)w(T - t_1) + \dots
+f(t_n)w(T - t_n) \biggr)\Delta t}\)</p>
+<p>This is the Riemann sum and as \(\Delta t \to 0\) it goes to an integral</p>
+<p>\({\displaystyle y(T) = \int_0^T f(t)w(T - t) \dd{t}}\)</p>
+<h2 id="what-is-the-causality-principle"><span class="section-num">17</span> What is the causality principle?</h2>
+<h3 id="front"><span class="section-num">17.1</span> Front</h3>
+<p><b>What is the causality principle?</b></p>
+<p>Why is it important for system?</p>
+<h3 id="back"><span class="section-num">17.2</span> Back</h3>
+<p>Causality is the principle that the future does not affect the past. Green&rsquo;s
+theorem shows that the system \(p(D)y = f(t)\) where \(y(t) = 0\) for \(t \lt 0\) is
+causal.</p>
+<p>That means \(y(t)\) only depends on the input up to time \(t\).</p>
+<p>Real physical system are causal</p>
+<h2 id="describe-non-causal-systems"><span class="section-num">18</span> Describe non-causal systems</h2>
+<h3 id="front"><span class="section-num">18.1</span> Front</h3>
+<p><b>Describe non-causal systems</b></p>
+<h3 id="back"><span class="section-num">18.2</span> Back</h3>
+<p>An audio compressor that gathers information after time \(t\) before deciding how
+to compress the signal at time \(t\).</p>
+<p>System with input \(f(t)\) and output \(y(t)\) where \(y\) is the solution to \(\dot{y}
+= f(t + 1)\)</p>
+<h2 id="how-much-is-in-the-lake-at-time--t-0"><span class="section-num">19</span> How much is in the lake at time \(t &gt; 0\)?</h2>
+<h3 id="front"><span class="section-num">19.1</span> Front</h3>
+<p><b>How much is in the lake at time $t &gt; 0$?</b></p>
+<p>We have a lake, and a pollutant is being dumped into it, at a certain variable
+rate \(f(t)\). This pollutant degrades exponentially over time. If the lake begins
+at time zero with no pollutant, how much is in the lake at time \(t \gt 0\)?</p>
+<p>Don&rsquo;t use Green&rsquo;s Formula. Tip: Use the exponential decay</p>
+<h3 id="back"><span class="section-num">19.2</span> Back</h3>
+<p>Let \(x(t)\) be the amount of pollutant in the lake at time \(t\), and \(a\) be the
+decay constant.</p>
+<p>For exponential decay we know that if a quantity of \(p\) of pollutant is dropped
+in the lake at time \(\tau_k\) then at a later time \(t\) (\(t &gt; \tau_k\)) <strong>it will
+have been reduced to the amount</strong> \({\displaystyle pe^{-a(t - \tau_k)}}\)</p>
+<p>\(t - \tau_k\) <strong>is the time elapsed between when the pollutant is added and when we
+check how much of it is left</strong></p>
+<p>In our system pollutant <strong>is not being added all at once</strong>. Rather, <strong>it is
+dripping continuously into the lake</strong></p>
+<p>We break the interval \([0, t]\) into \(n\) small pieces of width \(\Delta \tau\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/e1/6256b4-f645-49bf-9a4a-e63870357c58/_20200916_224507DGyl0hm.png"/> 
+</figure>
+
+<p>Let \(p_k\) be <strong>the amount of pollutant added in the interval</strong> \([\tau_k,
+\tau_{k+1}]\)</p>
+<p>Since \(\Delta \tau\) is small we get the approximation \(p_k \approx f(\tau_k)
+\Delta \tau\). Remember \(f(\tau)\) is a rate, so multiplying by time we get amount</p>
+<p>So, <strong>the amount of this left at time</strong> \(t\) is approximately, that is the
+contribution to \(x(t)\) from the interval \([\tau_k, \tau_{k + 1}]\)</p>
+<p>\({\displaystyle p_k e^{-a (t - \tau_k)} \approx f(\tau_k) \Delta \tau e^{-a (t -
+\tau_k)}}\)</p>
+<p>So, \(x(t)\) <strong>it is the sum up of the contributions of all the intervals</strong></p>
+<p>\begin{align*}
+x(t) &amp;\approx p_0 e^{-a (t - \tau_0)} + p_1 e^{-a (t - \tau_1)} + \dots + p_0 e^{-a (t - \tau_0)} \\\<br>
+&amp;\approx \biggl( f(\tau_0) e^{-a(t - \tau_0)} + f(\tau_1) e^{-a(t - \tau_1)} + \dots f(\tau_n) e^{-a(t - \tau_n)} \biggr) \Delta \tau
+\end{align*}</p>
+<p>This is a Riemann sum taking the limit as \(\Delta \tau \to 0\) we get the
+convolution integral</p>
+<p>\({\displaystyle x(t) = \int_0^t f(\tau)e^{-a(t - \tau)} \dd{\tau}}\)</p>
+<h2 id="what-is-the-response-to-this-system-using-green-s-formula"><span class="section-num">20</span> What is the response to this system using Green&rsquo;s formula?</h2>
+<h3 id="front"><span class="section-num">20.1</span> Front</h3>
+<p><b>What is the response to this system using Green&rsquo;s formula?</b></p>
+<p>\({\displaystyle 2 \ddot{x} + 8 x = \cos(2t)}\), with rest IC</p>
+<h3 id="back"><span class="section-num">20.2</span> Back</h3>
+<p>For \(t &gt; 0\), the weight function is the solution to</p>
+<p>\(2 \ddot{w} + 8 w = 0\), \(w(0) = 0\), \(\dot{w}(0) = 1/2\)</p>
+<p>The solution is \({\displaystyle w(t) = \frac{1}{4} \sin(2t)}\)</p>
+<p>For \(t &gt; 0\) Green&rsquo;s formula gives</p>
+<p>\({\displaystyle x(t) = \int_0^t \sin(2\tau) \frac{1}{4} \cos(2 (t - \tau))
+\dd{\tau}}\)</p>
+<p>Using the trigonometric identity:</p>
+<p>\({\displaystyle \sin(A) \cos(B) = \frac{\sin(A + B) + \sin(A - B)}{2}}\)</p>
+<p>\begin{align*}
+x(t) &amp;= \int_0^t \sin(2\tau) \frac{1}{4} \cos(2(t - \tau)) \dd{\tau} \\\<br>
+&amp;= \frac{1}{8} \int_0^t (\sin(2t) + \sin(4\tau - 2t)) \dd{\tau} \\\<br>
+&amp;= \frac{1}{8} \biggl( \tau \sin(2t) - \frac{\cos(4\tau - 2t)}{4} \biggr|_0^t \\\<br>
+&amp;= \frac{t \sin(2t)}{8}
+\end{align*}</p>
+<p>This is the answer we expected from our earlier work with the exponential
+response formula</p>
+
+</div>
+
+
+            <footer>
+    
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-26%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Convolution&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-26%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-26%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-26%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-26%2f&amp;title=Convolution" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Convolution&amp;body=Check out this site https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-26%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+
+<nav>
+    <ul class="pager">
+    
+    <li class="previous">
+        <a href="https://ppalazon.github.io/18.03/unit-3/session-25/" title="Unit Step and Unit Impulse Response">
+            <span aria-hidden="true">&larr;</span>Unit Step and Unit Impulse Response
+        </a>
+    </li>
+    
+
+    
+    <li class="next">
+        <a href="https://ppalazon.github.io/18.03/unit-3/session-27/" title="Laplace Transform: Basics">
+            Laplace Transform: Basics <span aria-hidden="true">&rarr;</span>
+        </a>
+    </li>
+    
+    </ul>
+</nav>
+
+
+
+</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//ppalazon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+        </div>
+    </div>
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/">18.03 Differential Equations</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/unit-3/">3: Fourier Series and Laplace Transform</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.03/unit-3/session-26/">Convolution</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

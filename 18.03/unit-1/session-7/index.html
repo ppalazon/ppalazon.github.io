@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Sinusoidal Functions  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="ode, maths, ">
+
+
+<meta property="og:title" content="Sinusoidal Functions  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.03/unit-1/session-7/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="content-source" content="18.03/unit-1/session-7.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Captured On [2019-09-26 Thu 15:47] Source Sinusoidal Functions | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is a sinusoidal function equation? 1.1 Front What is a sinusoidal function equation?
+1.2 Back \(f(t) = A \cos(\omega t - \phi)\)
+2 What is the sinusoidal oscillation equation? 2.1 Front What is the sinusoidal oscillation equation?
+2.2 Back \(f(t) = A \cos(\omega t - \phi)\)"/>
+<meta property="og:article:published_time" content="2019-09-27T18:57:00&#43;02:00" />
+<meta property="og:article:modified_time" content="2019-09-27T18:57:00&#43;02:00" />
+
+
+
+<meta property="og:article:tag" content="ode">
+
+<meta property="og:article:tag" content="maths">
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ppalazon" />
+<meta name="twitter:creator" content="@ppalazon" />
+<meta name="twitter:title" content="Sinusoidal Functions" />
+<meta name="twitter:description" content="Captured On [2019-09-26 Thu 15:47] Source Sinusoidal Functions | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is a sinusoidal function equation? 1.1 Front What is a sinusoidal function equation?
+1.2 Back \(f(t) = A \cos(\omega t - \phi)\)
+2 What is the sinusoidal oscillation equation? 2.1 Front What is the sinusoidal oscillation equation?
+2.2 Back \(f(t) = A \cos(\omega t - \phi)\)"/>
+<meta name="twitter:url" content="https://ppalazon.github.io/18.03/unit-1/session-7/" />
+<meta name="twitter:domain" content="https://ppalazon.github.io">
+
+
+
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+     "@type": "Article",
+     "headline": "Sinusoidal Functions",
+     "author": {
+         "@type": "Person",
+         "name": "http://profiles.google.com/+?rel=author"
+     },
+     "datePublished": "2019-09-27",
+     "description": "",
+     "wordCount":  910 
+ }
+</script>
+
+
+
+<link rel="canonical" href="https://ppalazon.github.io/18.03/unit-1/session-7/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+ }
+ .hero {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: calc(200px + (450 - 200) * ((100vw - 300px) / (1600 - 300)));
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: calc(-1 * (200px + (450 - 200) * ((100vw - 300px) / (1600 - 300))));
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+    <header class="container hat">
+        <h1>Sinusoidal Functions
+</h1>
+
+        
+
+
+<span class="author">by
+    
+    MIT OCW, Pablo Palazon
+    
+</span>
+
+
+    </header>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            
+            <div class="content">
+  <dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2019-09-26 Thu 15:47]</span></span></dd>
+<dt>Source</dt>
+<dd><a href="https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-i-first-order-differential-equations/sinusoidal-functions/index.htm">Sinusoidal Functions | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare</a></dd>
+</dl>
+<h2 id="what-is-a-sinusoidal-function-equation"><span class="section-num">1</span> What is a sinusoidal function equation?</h2>
+<h3 id="front"><span class="section-num">1.1</span> Front</h3>
+<p><strong>What is a sinusoidal function equation?</strong></p>
+<h3 id="back"><span class="section-num">1.2</span> Back</h3>
+<p>\(f(t) = A \cos(\omega t - \phi)\)</p>
+<h2 id="what-is-the-sinusoidal-oscillation-equation"><span class="section-num">2</span> What is the sinusoidal oscillation equation?</h2>
+<h3 id="front"><span class="section-num">2.1</span> Front</h3>
+<p><strong>What is the sinusoidal oscillation equation?</strong></p>
+<h3 id="back"><span class="section-num">2.2</span> Back</h3>
+<p>\(f(t) = A \cos(\omega t - \phi)\)</p>
+<h2 id="what-is-the-sinusoidal-signal-equation"><span class="section-num">3</span> What is the sinusoidal signal equation?</h2>
+<h3 id="front"><span class="section-num">3.1</span> Front</h3>
+<p><strong>What is the sinusoidal signal equation?</strong></p>
+<h3 id="back"><span class="section-num">3.2</span> Back</h3>
+<p>\(f(t) = A \cos(\omega t - \phi)\)</p>
+<h2 id="what-does-represent-this-equation"><span class="section-num">4</span> What does represent this equation?</h2>
+<h3 id="front"><span class="section-num">4.1</span> Front</h3>
+<p><strong>What does represent this equation?</strong></p>
+<p>\(f(t) = A \cos(\omega t - \phi)\)</p>
+<p>Explain each term too</p>
+<h3 id="back"><span class="section-num">4.2</span> Back</h3>
+<p>A sinusoidal function (or sinusoidal oscillation or sinusoidal signal)
+which is a cosine function which has been <strong>amplified</strong> by \(A\),
+<strong>shifted</strong> by \(\phi / w\), and <strong>compressed</strong> by \(w\)</p>
+<h2 id="what-is-the-amplitude-of-the-sinusoidal-function"><span class="section-num">5</span> What is the amplitude of the sinusoidal function?</h2>
+<h3 id="front"><span class="section-num">5.1</span> Front</h3>
+<p><strong>What is the amplitude of the sinusoidal function?</strong></p>
+<p>\(f(t) = A \cos(\omega t - \phi)\)</p>
+<h3 id="back"><span class="section-num">5.2</span> Back</h3>
+<p>\(A &gt; 0\): how high the graph of \(f(t)\) rises above the \(t\text{-axis}\)
+at its maximum values</p>
+<h2 id="what-is-the-phase-lag-of-the-sinusoidal-function"><span class="section-num">6</span> What is the phase lag of the sinusoidal function?</h2>
+<h3 id="front"><span class="section-num">6.1</span> Front</h3>
+<p><strong>What is the phase lag of the sinusoidal function?</strong></p>
+<p>\(f(t) = A \cos(\omega t - \phi)\)</p>
+<h3 id="back"><span class="section-num">6.2</span> Back</h3>
+<p>\(\phi\), the value of \(wt\) for which the graph has its maximum</p>
+<ul>
+<li>\(\phi = 0\), the graph has the position of \(\cos(\omega t)\)</li>
+<li>\(\phi = \pi /2\) it has the position of \(\sin(wt)\)</li>
+</ul>
+<h2 id="what-is-the-time-delay-or-time-lag-of-the-sinusoidal-function"><span class="section-num">7</span> What is the time delay or time lag of the sinusoidal function?</h2>
+<h3 id="front"><span class="section-num">7.1</span> Front</h3>
+<p><strong>What is the time delay or time lag of the sinusoidal function?</strong></p>
+<p>\(f(t) = A \cos(\omega t - \phi)\)</p>
+<h3 id="back"><span class="section-num">7.2</span> Back</h3>
+<p>\(\tau = \phi / w\), how far the \(x\text{-axis}\) the graph of \(\cos(\omega t)\)
+has been shifted to make the graph of \(f(t)\)</p>
+<p>\(A \cos(\omega t - \phi) = A \cos(w(t - \phi/w))\)</p>
+<h2 id="what-is-the-angular-frequency-of-the-sinusoidal-function"><span class="section-num">8</span> What is the angular frequency of the sinusoidal function?</h2>
+<h3 id="front"><span class="section-num">8.1</span> Front</h3>
+<p><strong>What is the angular frequency of the sinusoidal function?</strong></p>
+<p>\(f(t) = A \cos(\omega t - \phi)\)</p>
+<h3 id="back"><span class="section-num">8.2</span> Back</h3>
+<p>\(\omega\) is the number of complete oscillations \(f(t)\) makes in a time
+interval of length \(2\pi\). Number of radians per unit time</p>
+<h2 id="what-is-the-frequency-of-sinusoidal-function"><span class="section-num">9</span> What is the frequency of sinusoidal function?</h2>
+<h3 id="front"><span class="section-num">9.1</span> Front</h3>
+<p><strong>What is the frequency of sinusoidal function?</strong></p>
+<p>\(f(t) = A \cos(\omega t - \phi)\)</p>
+<h3 id="back"><span class="section-num">9.2</span> Back</h3>
+<p>\(\nu = \omega / 2\pi\), the number of complete oscillations the graph makes in
+a time interval of length \(1\). Number of cycles per unit time</p>
+<h2 id="what-is-the-period-of-the-sinusoidal-function"><span class="section-num">10</span> What is the period of the sinusoidal function?</h2>
+<h3 id="front"><span class="section-num">10.1</span> Front</h3>
+<p><strong>What is the period of the sinusoidal function?</strong></p>
+<p>\(f(t) = A \cos(\omega t - \phi)\)</p>
+<h3 id="back"><span class="section-num">10.2</span> Back</h3>
+<p>\(P = 2 \pi / \omega = 1 / \nu\)</p>
+<h2 id="get-information-from-this-graph"><span class="section-num">11</span> Get information from this graph</h2>
+<h3 id="front"><span class="section-num">11.1</span> Front</h3>
+<p><strong>Get information from this graph</strong></p>
+<figure>
+    <img src="https://ppalazon.github.io/84/fd5601-57b7-432f-8777-891157d991ab/_20200916_195050aViTYq8.png"/> 
+</figure>
+
+<p>Extract the function</p>
+<h3 id="back"><span class="section-num">11.2</span> Back</h3>
+<figure>
+    <img src="https://ppalazon.github.io/84/fd5601-57b7-432f-8777-891157d991ab/_20200916_195059lsXfbYk.png"/> 
+</figure>
+
+<ul>
+<li>\(A = 2.5\)</li>
+<li>\(\tau = \frac{1}{2}\)</li>
+<li>\(T = 2\)</li>
+<li>\(T = \frac{2 \pi}{\omega} \implies \omega = \frac{2\pi}{T} = \pi\)</li>
+<li>\(\tau = \frac{\phi}{w} \implies \phi = \tau \omega = \frac{\pi}{2}\)</li>
+<li>\(f(t) = 2.5 \cos(\pi t - \pi/2)\)</li>
+</ul>
+<h2 id="what-is-the-sinusoidal-identity"><span class="section-num">12</span> What is the sinusoidal identity?</h2>
+<h3 id="front"><span class="section-num">12.1</span> Front</h3>
+<p><strong>What is the sinusoidal identity?</strong></p>
+<h3 id="back"><span class="section-num">12.2</span> Back</h3>
+<p>The sum of two sinusoidal functions of the same frequency is another
+sinusoidal function with that frequency</p>
+<p>\(a \cos(\omega t) + b\sin(\omega t) = A \cos(\omega t - \phi)\)</p>
+<p>Where</p>
+<ul>
+<li>\(A = \sqrt{a^2 + b^2}\)</li>
+<li>\(\phi = atan2(b,a)\)</li>
+<li>\(a + bi = A e^{i\phi}\)</li>
+</ul>
+<h2 id="how-can-we-get-the-combination-of-these-2-sinusoidal-functions"><span class="section-num">13</span> How can we get the combination of these 2 sinusoidal functions?</h2>
+<h3 id="front"><span class="section-num">13.1</span> Front</h3>
+<p><strong>How can we get the combination of these 2 sinusoidal functions?</strong></p>
+<p>\(a \cos(\omega t) + b \sin(\omega t)\)</p>
+<h3 id="back"><span class="section-num">13.2</span> Back</h3>
+<p>Using the right triangle, where</p>
+<figure>
+    <img src="https://ppalazon.github.io/84/fd5601-57b7-432f-8777-891157d991ab/_20200916_195107gSuYSSq.png"/> 
+</figure>
+
+<ul>
+<li>\(a = A \cos (\phi)\)</li>
+<li>\(b = A \sin (\phi)\)</li>
+<li>\(\phi = atan2(b,a)\)</li>
+<li>\(a + ib = Ae^{i\phi}\)</li>
+</ul>
+<p>\begin{align*}
+a \cos(\omega t) + b \sin(\omega t) &amp;= A \cos(\phi) \cos(\omega t) + A \sin(\phi)\sin(\omega t)\\\<br>
+&amp;=A(\cos(\phi) \cos(\omega t) + \sin(\phi)\sin(\omega t)) \\\<br>
+&amp;=A(\cos(\omega t - \phi)) , \text{using cosine addition formula}
+\end{align*}</p>
+<h2 id="which-properties-has-any-linear-combination-of--cos-omega-t---and--sin-omega-t"><span class="section-num">14</span> Which properties has any linear combination of \(\cos(\omega t)\) and \(\sin(\omega t)\)?</h2>
+<h3 id="front"><span class="section-num">14.1</span> Front</h3>
+<p><strong>Which properties has any linear combination of \(\cos(\omega t)\) and \(\sin(\omega t)\)?</strong></p>
+<h3 id="back"><span class="section-num">14.2</span> Back</h3>
+<ul>
+<li>It&rsquo;s a sinusoidal function too</li>
+<li>Its period is \({\displaystyle \frac{2\pi}{\omega}}\)</li>
+</ul>
+<h2 id="what-is-the-amplitude-phase-form-of-sinusoidal-function"><span class="section-num">15</span> What is the amplitude-phase form of sinusoidal function?</h2>
+<h3 id="front"><span class="section-num">15.1</span> Front</h3>
+<p><strong>What is the amplitude-phase form of sinusoidal function?</strong></p>
+<h3 id="back"><span class="section-num">15.2</span> Back</h3>
+<p>\(A \cos(\omega t - \phi)\)</p>
+<h2 id="what-is-the-rectangular-or-cartesian-form-of-sinusoidal-function"><span class="section-num">16</span> What is the rectangular or Cartesian form of sinusoidal function?</h2>
+<h3 id="front"><span class="section-num">16.1</span> Front</h3>
+<p><strong>What is the rectangular or Cartesian form of sinusoidal function?</strong></p>
+<h3 id="back"><span class="section-num">16.2</span> Back</h3>
+<p>\(a \cos(\omega t) + b \sin(\omega t)\)</p>
+<h2 id="proof-that-equation-using-vectors"><span class="section-num">17</span> Proof that equation using vectors?</h2>
+<h3 id="front"><span class="section-num">17.1</span> Front</h3>
+<p><strong>Proof that equation using vectors?</strong></p>
+<p>\(a \cos(\omega t) + b \sin(\omega t) = A \cos(\omega t - \phi)\)</p>
+<h3 id="back"><span class="section-num">17.2</span> Back</h3>
+<figure>
+    <img src="https://ppalazon.github.io/84/fd5601-57b7-432f-8777-891157d991ab/_20200916_195119i3dSQE3.png"/> 
+</figure>
+
+<p>Where \(a \cos(\omega t) + b \sin(\omega t)\) can we write as the dot
+product \(\ev{a,b} \cdot \ev{\cos \theta, \sin \theta}\)</p>
+<p>Using dot product computation</p>
+<p>\(\abs{\ev{a,b} \cdot 1 \cdot \cos (\omega t - \phi)}\)</p>
+<h2 id="proof-this-equation-using-complex-numbers"><span class="section-num">18</span> Proof this equation using complex numbers?</h2>
+<h3 id="front"><span class="section-num">18.1</span> Front</h3>
+<p><strong>Proof this equation using complex numbers?</strong></p>
+<p>\(a \cos(\omega t) + b \sin(\omega t) = A \cos(\omega t - \phi)\)</p>
+<h3 id="back"><span class="section-num">18.2</span> Back</h3>
+<p>We can write \(a \cos(\omega t) + b \sin(\omega t)\) as
+\(\operatorname{Re}((a -ib)(\cos(\omega t) + i\sin(\omega t)))\)</p>
+<p>\(\phi = atan2(b, a)\)</p>
+<p>Using Euler&rsquo;s formula \(\operatorname{Re}(\sqrt{a^2 + b^2} e^{- i \phi}
+e^{i \omega t}) = \operatorname{Re}(\sqrt{a^2 + b^2}e^{i(\omega t -
+\phi)})\)</p>
+<p>\(\sqrt{a^2 + b^2} \cos (\omega t - \phi)\)</p>
+
+</div>
+
+
+            <footer>
+    
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-1%2fsession-7%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Sinusoidal%20Functions&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-1%2fsession-7%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-1%2fsession-7%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-1%2fsession-7%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-1%2fsession-7%2f&amp;title=Sinusoidal%20Functions" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Sinusoidal%20Functions&amp;body=Check out this site https%3a%2f%2fppalazon.github.io%2f18.03%2funit-1%2fsession-7%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+
+<nav>
+    <ul class="pager">
+    
+    <li class="previous">
+        <a href="https://ppalazon.github.io/18.03/unit-1/session-6/" title="Complex Arithmetic and Exponentials">
+            <span aria-hidden="true">&larr;</span>Complex Arithmetic and Exponentials
+        </a>
+    </li>
+    
+
+    
+    <li class="next">
+        <a href="https://ppalazon.github.io/18.03/unit-1/session-8/" title="First Order Constant Coefficient Linear ODE&#39;s">
+            First Order Constant Coefficient Linear ODE&#39;s <span aria-hidden="true">&rarr;</span>
+        </a>
+    </li>
+    
+    </ul>
+</nav>
+
+
+
+</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//ppalazon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+        </div>
+    </div>
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/">18.03 Differential Equations</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/unit-1/">1: First Order Differential Equations</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.03/unit-1/session-7/">Sinusoidal Functions</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

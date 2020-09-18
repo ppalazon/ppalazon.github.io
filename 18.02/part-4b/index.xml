@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>4B: Flux and the Divergence Theorem on Pablo Palazon&#39;s Website</title>
+    <link>https://ppalazon.github.io/18.02/part-4b/</link>
+    <description>Recent content in 4B: Flux and the Divergence Theorem on Pablo Palazon&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>CC BY-NC-ND 4.0</copyright>
+    <lastBuildDate>Thu, 18 Apr 2019 00:00:00 +0200</lastBuildDate><atom:link href="https://ppalazon.github.io/18.02/part-4b/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Session 79: Vector Fields in Space</title>
+      <link>https://ppalazon.github.io/18.02/part-4b/session-79/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4b/session-79/</guid>
+      <description>Captured On [2020-02-06 Thu 17:08] Source Session 79: Vector Fields in Space | Part B: Flux and the Divergence Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Vector fields in space
+  
+  Figure 2: Force fields
+  
+  Figure 3: Graviational field equation and more examples</description>
+    </item>
+    
+    <item>
+      <title>Session 80: Flux Through a Surface</title>
+      <link>https://ppalazon.github.io/18.02/part-4b/session-80/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4b/session-80/</guid>
+      <description>Captured On [2020-02-06 Thu 17:11] Source Session 80: Flux Through a Surface | Part B: Flux and the Divergence Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Recall flux in 2D
+  
+  Figure 2: Flux of \(\vb{F}\) across \(\Delta S\)
+  
+  Figure 3: Flux of \(\vb{F}\) across the surface</description>
+    </item>
+    
+    <item>
+      <title>Session 81: Calculating Flux; Finding ndS</title>
+      <link>https://ppalazon.github.io/18.02/part-4b/session-81/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4b/session-81/</guid>
+      <description>Captured On [2020-02-06 Thu 17:12] Source Session 81: Calculating Flux; Finding ndS | Part B: Flux and the Divergence Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Flux on not constant \(\vb{F} \cdot \vu{n}\)
+  
+  Figure 2: \(\dd{S}\) in spherical coordinates
+  
+  Figure 3: Computing flux</description>
+    </item>
+    
+    <item>
+      <title>Session 82: ndS for a Surface z = f(x, y)</title>
+      <link>https://ppalazon.github.io/18.02/part-4b/session-82/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4b/session-82/</guid>
+      <description>Captured On [2020-02-06 Thu 17:14] Source Session 82: ndS for a Surface z = f(x, y) | Part B: Flux and the Divergence Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Flux of \(\vb{F}\) through surface \(S\)
+  
+  Figure 2: Normal unit vector and surface element</description>
+    </item>
+    
+    <item>
+      <title>Session 83: Other Ways to Find ndS</title>
+      <link>https://ppalazon.github.io/18.02/part-4b/session-83/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4b/session-83/</guid>
+      <description>Captured On [2020-02-06 Thu 17:15] Source Session 83: Other Ways to Find ndS | Part B: Flux and the Divergence Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Generic description of \(S\)
+  
+  Figure 2: Sides of surface
+  
+  Figure 3: Knowing the normal vector of the surface</description>
+    </item>
+    
+    <item>
+      <title>Session 84: Divergence Theorem</title>
+      <link>https://ppalazon.github.io/18.02/part-4b/session-84/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4b/session-84/</guid>
+      <description>Captured On [2020-02-06 Thu 17:16] Source Session 84: Divergence Theorem | Part B: Flux and the Divergence Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Divergence theorem
+  
+  Figure 2: Equation of divergence theorem
+  
+  Figure 3: Example of divergence theorem
+  2 Which is the divergence of \(\vb{F}\)?</description>
+    </item>
+    
+    <item>
+      <title>Session 85: Physical Meaning of Flux; Del Notation</title>
+      <link>https://ppalazon.github.io/18.02/part-4b/session_85/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4b/session_85/</guid>
+      <description>Captured On [2020-02-06 Thu 17:17] Source Session 85: Physical Meaning of Flux; Del Notation | Part B: Flux and the Divergence Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Recall divergence theorem
+  
+  Figure 2: &amp;ldquo;Del&amp;rdquo; notation
+  
+  Figure 3: Physical interpretation of divergence</description>
+    </item>
+    
+    <item>
+      <title>Session 86: Proof of the Divergence Theorem</title>
+      <link>https://ppalazon.github.io/18.02/part-4b/session-86/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4b/session-86/</guid>
+      <description>Captured On [2020-02-06 Thu 17:18] Source Session 86: Proof of the Divergence Theorem | Part B: Flux and the Divergence Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Proof of divergence theorem
+  
+  Figure 2: \(D\) is vertically simple
+  
+  Figure 3: Checking both sides has same outcome</description>
+    </item>
+    
+    <item>
+      <title>Session 87: Diffusion Equation</title>
+      <link>https://ppalazon.github.io/18.02/part-4b/session-87/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4b/session-87/</guid>
+      <description>Captured On [2020-02-06 Thu 17:19] Source Session 87: Diffusion Equation | Part B: Flux and the Divergence Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Introduction to Diffusion Equation
+  
+  Figure 2: Heat equation
+  
+  Figure 3: How relate \(\vb{F}\) with \(\pdv{u}{t}\)</description>
+    </item>
+    
+  </channel>
+</rss>

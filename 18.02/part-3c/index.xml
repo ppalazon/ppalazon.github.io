@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>3C: Green&#39;s Theorem on Pablo Palazon&#39;s Website</title>
+    <link>https://ppalazon.github.io/18.02/part-3c/</link>
+    <description>Recent content in 3C: Green&#39;s Theorem on Pablo Palazon&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>CC BY-NC-ND 4.0</copyright>
+    <lastBuildDate>Thu, 18 Apr 2019 00:00:00 +0200</lastBuildDate><atom:link href="https://ppalazon.github.io/18.02/part-3c/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Session 65: Green&#39;s Theorem</title>
+      <link>https://ppalazon.github.io/18.02/part-3c/session-65/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3c/session-65/</guid>
+      <description>Captured On [2020-02-06 Thu 13:53] Source Session 65: Green&amp;rsquo;s Theorem | Part C: Green&amp;rsquo;s Theorem | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Line integral for closed path
+  
+  Figure 2: Green&amp;rsquo;s Theorem
+  
+  Figure 3: Green&amp;rsquo;s Theorem (II)
+  
+  Figure 4: Warning and example</description>
+    </item>
+    
+    <item>
+      <title>Session 66: Curl(F) = 0 Implies Conservative</title>
+      <link>https://ppalazon.github.io/18.02/part-3c/session-66/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3c/session-66/</guid>
+      <description>Captured On [2020-02-06 Thu 16:29] Source Session 66: Curl(F) = 0 Implies Conservative | Part C: Green&amp;rsquo;s Theorem | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Special case of Green Theorem
+  
+  Figure 2: Proof of \(\vb{F}\) conservative when curl \(\vb{F}\) is \(0\)
+  
+  Figure 3: Consequence of \(\text{curl} \vb{F} = 0\)</description>
+    </item>
+    
+    <item>
+      <title>Session 67: Proof of Green&#39;s Theorem</title>
+      <link>https://ppalazon.github.io/18.02/part-3c/session-67/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3c/session-67/</guid>
+      <description>Captured On [2020-02-06 Thu 16:31] Source Session 67: Proof of Green&amp;rsquo;s Theorem | Part C: Green&amp;rsquo;s Theorem | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Proof of Green&amp;rsquo;s Theorem
+  
+  Figure 2: 2 observations
+  
+  Figure 3: Proof of one part</description>
+    </item>
+    
+    <item>
+      <title>Session 68: Planimeter: Green&#39;s Theorem and Area</title>
+      <link>https://ppalazon.github.io/18.02/part-3c/session-68/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3c/session-68/</guid>
+      <description>Captured On [2020-02-06 Thu 16:32] Source Session 68: Planimeter: Green&amp;rsquo;s Theorem and Area | Part C: Green&amp;rsquo;s Theorem | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Planimeter
+  2 What is a planimeter? 2.1 Front What is a planimeter?
+Define it, and write its equation
+2.2 Back It&amp;rsquo;s an instruments for measuring areas through closing perimeters.</description>
+    </item>
+    
+    <item>
+      <title>Session 69: Flux in 2D</title>
+      <link>https://ppalazon.github.io/18.02/part-3c/session-69/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3c/session-69/</guid>
+      <description>Captured On [2020-02-06 Thu 16:33] Source Session 69: Flux in 2D | Part C: Green&amp;rsquo;s Theorem | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Flux presentation
+  
+  Figure 2: \(\vu{n}\) as clockwise from \(\vu{T}\)
+  
+  Figure 3: Flux and Work comparison</description>
+    </item>
+    
+    <item>
+      <title>Session 70: Normal Form of Green&#39;s Theorem</title>
+      <link>https://ppalazon.github.io/18.02/part-3c/session-70/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3c/session-70/</guid>
+      <description>Captured On [2020-02-06 Thu 16:34] Source Session 70: Normal Form of Green&amp;rsquo;s Theorem | Part C: Green&amp;rsquo;s Theorem | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: What is the Green&amp;rsquo;s Theorem for flux
+  
+  Figure 2: Green&amp;rsquo;s Theorem for flux
+  
+  Figure 3: Green&amp;rsquo;s Theorem in normal form vs tangential form</description>
+    </item>
+    
+    <item>
+      <title>Session 71: Extended Green&#39;s Theorem: Boundaries with Multiple Pieces</title>
+      <link>https://ppalazon.github.io/18.02/part-3c/session-71/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3c/session-71/</guid>
+      <description>Captured On [2020-02-06 Thu 16:35] Source Session 71: Extended Green&amp;rsquo;s Theorem: Boundaries with Multiple Pieces | Part C: Green&amp;rsquo;s Theorem | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: More about validity of Green&amp;rsquo;s Theorem
+  
+  Figure 2: \(\vb{F}\) defined everywhere in \(R\)
+  
+  Figure 3: Use of Green&amp;rsquo;s Theorem</description>
+    </item>
+    
+    <item>
+      <title>Session 72: Simply Connected Regions and Conservative Fields</title>
+      <link>https://ppalazon.github.io/18.02/part-3c/session-72/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3c/session-72/</guid>
+      <description>Captured On [2020-02-06 Thu 16:36] Source Session 72: Simply Connected Regions and Conservative Fields | Part C: Green&amp;rsquo;s Theorem | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Connected region in the plane
+  
+  Figure 2: Where can I apply Green&amp;rsquo;s Theorem?
+  
+  Figure 3: Correct definition of \(\vb{F}\) conservative</description>
+    </item>
+    
+  </channel>
+</rss>

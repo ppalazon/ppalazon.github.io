@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>ODE&#39;s with Periodic Input, Resonance  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="ode, maths, ">
+
+
+<meta property="og:title" content="ODE&#39;s with Periodic Input, Resonance  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.03/unit-3/session-23/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="content-source" content="18.03/unit-3/session-23.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Captured On [2019-11-29 Fri 13:34] Source [[https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-iii-fourier-series-and-laplace-transform/odes-with-periodic-input-resonance/index.htm][ODE&amp;rsquo;s with Periodic Input, Resonance | Unit III: Fourier Series and  Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare]]
+1 How can we solve this ODE? 1.1 Front How can we solve this ODE?
+\(\ddot{x} &#43; 9.1 x = f(t)\), where \(f(t)\) is a odd square wave of period \(2\pi\) with \(f(t) = 1\) for \(0 \lt t \lt \pi\)"/>
+<meta property="og:article:published_time" content="2019-11-26T00:00:00&#43;01:00" />
+<meta property="og:article:modified_time" content="2019-11-26T00:00:00&#43;01:00" />
+
+
+
+<meta property="og:article:tag" content="ode">
+
+<meta property="og:article:tag" content="maths">
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ppalazon" />
+<meta name="twitter:creator" content="@ppalazon" />
+<meta name="twitter:title" content="ODE&#39;s with Periodic Input, Resonance" />
+<meta name="twitter:description" content="Captured On [2019-11-29 Fri 13:34] Source [[https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-iii-fourier-series-and-laplace-transform/odes-with-periodic-input-resonance/index.htm][ODE&amp;rsquo;s with Periodic Input, Resonance | Unit III: Fourier Series and  Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare]]
+1 How can we solve this ODE? 1.1 Front How can we solve this ODE?
+\(\ddot{x} &#43; 9.1 x = f(t)\), where \(f(t)\) is a odd square wave of period \(2\pi\) with \(f(t) = 1\) for \(0 \lt t \lt \pi\)"/>
+<meta name="twitter:url" content="https://ppalazon.github.io/18.03/unit-3/session-23/" />
+<meta name="twitter:domain" content="https://ppalazon.github.io">
+
+
+
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+     "@type": "Article",
+     "headline": "ODE\u0027s with Periodic Input, Resonance",
+     "author": {
+         "@type": "Person",
+         "name": "http://profiles.google.com/+?rel=author"
+     },
+     "datePublished": "2019-11-26",
+     "description": "",
+     "wordCount":  1058 
+ }
+</script>
+
+
+
+<link rel="canonical" href="https://ppalazon.github.io/18.03/unit-3/session-23/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+ }
+ .hero {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: calc(200px + (450 - 200) * ((100vw - 300px) / (1600 - 300)));
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: calc(-1 * (200px + (450 - 200) * ((100vw - 300px) / (1600 - 300))));
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+    <header class="container hat">
+        <h1>ODE&#39;s with Periodic Input, Resonance
+</h1>
+
+        
+
+
+<span class="author">by
+    
+    MIT OCW, Pablo Palazon
+    
+</span>
+
+
+    </header>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            
+            <div class="content">
+  <dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2019-11-29 Fri 13:34]</span></span></dd>
+<dt>Source</dt>
+<dd>[[<a href="https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-iii-fourier-series-and-laplace-transform/odes-with-periodic-input-resonance/index.htm">https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-iii-fourier-series-and-laplace-transform/odes-with-periodic-input-resonance/index.htm</a>][ODE&rsquo;s with Periodic Input, Resonance | Unit III: Fourier Series and</dd>
+</dl>
+<p>Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare]]</p>
+<h2 id="how-can-we-solve-this-ode"><span class="section-num">1</span> How can we solve this ODE?</h2>
+<h3 id="front"><span class="section-num">1.1</span> Front</h3>
+<p><b>How can we solve this ODE?</b></p>
+<p>\(\ddot{x} + 9.1 x = f(t)\), where \(f(t)\) is a odd square wave of period \(2\pi\)
+with \(f(t) = 1\) for \(0 \lt t \lt \pi\)</p>
+<h3 id="back"><span class="section-num">1.2</span> Back</h3>
+<ul>
+<li>Use the Fourier Series of \(f(t)\)
+<ul>
+<li>\({\displaystyle f(t) = \frac{4}{\pi} \sum_{n \text{ odd}}^{\infty}
+\frac{\sin(nt)}{n}}\)</li>
+</ul>
+</li>
+<li>So the DE: \({\displaystyle \ddot{x} + 9.1 x = \frac{4}{\pi} \biggl(\sin(t) +
+\frac{\sin(3t)}{3} + \frac{\sin(5t)}{5} + \dots \biggr)}\)</li>
+<li>Solve the DE with a single sine function as input
+<ul>
+<li>\({\displaystyle \ddot{x_n} + 9.1 x_n = \frac{\sin(nt)}{n}}\)</li>
+<li>We use the index \(n\) so we can tell our solutions apart</li>
+<li>Using the superposition to add the factor \(\frac{4}{\pi}\) and sum of the
+others \(\sin\)</li>
+</ul>
+</li>
+<li>Using complex replacement and ERF
+<ul>
+<li>\({\displaystyle x_{n,p}(t) = \frac{\sin(nt)}{n (9.1 - n^2)}}\)</li>
+</ul>
+</li>
+<li>Using superposition to get a particular solution \(x_p(t)\)
+<ul>
+<li>\({\displaystyle x_{sp}(t) = \frac{4}{\pi} \sum_{n \text{ odd}}^{\infty}
+x_{n,p}(t) = \frac{4}{\pi} \sum_{n \text{ odd}}^{\infty} \frac{\sin(nt)}{n
+(9.1 - n^2)}}\)</li>
+</ul>
+</li>
+</ul>
+<p>This solution is called the steady periodic solution.</p>
+<h2 id="what-is-the-fourier-series-for-this-function"><span class="section-num">2</span> What is the Fourier Series for this function?</h2>
+<h3 id="front"><span class="section-num">2.1</span> Front</h3>
+<p><b>What is the Fourier Series for this function?</b></p>
+<p>\(f(t)\) is a odd square wave of period \(2\pi\) with \(f(t) = 1\) for \(0 \lt t
+\lt \pi\)</p>
+<p>By heart</p>
+<h3 id="back"><span class="section-num">2.2</span> Back</h3>
+<p>\({\displaystyle \frac{4}{\pi} \sum_{n \text{ odd}}^{\infty} \frac{\sin(nt)}{n}}\)</p>
+<h2 id="as--omega-n--gets-close-to-1-3-or-5-what-is-the-dominant-frequency-in-the-ouput"><span class="section-num">3</span> As \(\omega_{n}\) gets close to 1,3 or 5 what is the dominant frequency in the ouput?</h2>
+<h3 id="front"><span class="section-num">3.1</span> Front</h3>
+<p><b>As $\omega_{n}$ gets close to 1,3 or 5 what is the dominant frequency in the ouput?As $\omega_{}$</b></p>
+<p>\({\displaystyle \ddot{x} + \omega_n^2 x = \omega_n^2 f(t)}\)</p>
+<p>where \(f(t)\) is a odd square wave of period \(2\pi\) with \(f(t) = 1\) for \(0
+\lt t \lt \pi\)</p>
+<h3 id="back"><span class="section-num">3.2</span> Back</h3>
+<p>With \(\omega_n\) near \(1\) the output resembles a frequency \(1\) sine wave. For
+\(\omega_n\) near \(3\) the dominant frequency in the output is \(3\), there are three
+peaks in the oscillation over one cycle of the square wave. Likewise for
+\(\omega_n\) near \(5\) the dominant frequency is \(5\)</p>
+<p>\({\displaystyle f(t) = \frac{4}{\pi} \sum_{n \text{ odd}}^{\infty}
+\frac{\sin(nt)}{n}}\)</p>
+<p>Each term in the series affects the system. If the system has natural frequency
+\(3\) then the \(\sin(3t)\) term causes it to resonate with a large amplitude at
+that frequency. Thus, the response to that term is far larger than the response
+to any other term.</p>
+<h2 id="how-can-we-solve-this-damped-harmonic-oscillator"><span class="section-num">4</span> How can we solve this damped harmonic oscillator?</h2>
+<h3 id="front"><span class="section-num">4.1</span> Front</h3>
+<p><b>How can we solve this damped harmonic oscillator?</b></p>
+<p>\(\ddot{x} + 2 \dot{x} + 9x = f(t)\)</p>
+<p>Where \(f(t)\) is a triangle wave</p>
+<figure>
+    <img src="https://ppalazon.github.io/7a/9eb052-d307-4029-a412-5cc8df65833b/_20200916_220949QfAFjJA.png"/> 
+</figure>
+
+<h3 id="back"><span class="section-num">4.2</span> Back</h3>
+<ul>
+<li>Get the Fourier Series of \(f(t)\)
+<ul>
+<li>\({\displaystyle f(t) = \frac{1}{2} - \frac{4}{\pi^2} \biggl(\cos(t) +
+\frac{\cos(3t)}{3^2} + \frac{\cos(5t)}{5^2} + \cdots \biggr)}\)</li>
+</ul>
+</li>
+<li>Solving for the individual components
+<ul>
+<li>Not including Fourier coefficients of the input in the DE</li>
+<li>\(\ddot{x_n} + 2 \dot{x_n} + 9 x_{n} = \cos(nt)\)</li>
+<li>For \(n = 0\), \(x_{n,p} = 1/9\)</li>
+<li>For \(n \geq 1\)
+<ul>
+<li>Complex replacement: \(\ddot{z_n} + 2 \dot{z_n} + 9 z_n = e^{int}\), where
+\(x_n = \operatorname{Re}(z_n)\)</li>
+<li>ERF: \({\displaystyle z_{n,p} = \frac{e^{int}}{9 - n^2 + 2in}}\)</li>
+<li>Polar coordinates: \(9 - n^2 + 2in = R_n e^{i \phi_n}\)
+<ul>
+<li>\(R_n = \sqrt{(9 - n^2)^2 + 4n^2}\)</li>
+<li>\(\phi_n = \operatorname{Arg}(9 - n^2 + 2in) = \arctan \frac{2n}{9 -
+n^2}\)</li>
+</ul>
+</li>
+<li>Thus, \({\displaystyle z_{n,p} = \frac{1}{R_n} e^{i(nt - \phi_n)}}\), which
+implies \(x_{n,p} = \frac{\cos(nt - \phi_n)}{R_n}\)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Superposition
+<ul>
+<li>Adding Fourier coefficients</li>
+<li>\({\displaystyle x_{sp}(t) = \frac{1}{18} - \frac{4}{\pi^2}
+\biggl(\frac{\cos(t - \phi_1)}{R_1} + \frac{\cos(3t - \phi_3)}{3^2 R_3} +
+\frac{\cos(5t - \phi_5)}{5^2 R_5} + \cdots \biggr)}\)</li>
+</ul>
+</li>
+</ul>
+<h2 id="for-which-values-of--omega-n--this-solution-is-not-periodic"><span class="section-num">5</span> For which values of \(\omega_{n}\) this solution is not periodic?</h2>
+<h3 id="front"><span class="section-num">5.1</span> Front</h3>
+<p><b>For which values of $\omega_{n}$ this solution is not periodic?</b></p>
+<p>\({\displaystyle x_p(t) = \frac{\pi}{2 \omega_n^2} - \frac{4}{\pi} \sum_{n
+\text{odd}}^{\infty} \frac{\cos(k \omega t)}{k^2(\omega_n^2 - k^2 \omega^2)}}\)</p>
+<p>For this oscillator: \(\ddot{x} + \omega_n^2 x = f(t)\), where \({\displaystyle
+f(t) = \frac{\pi}{2} - \frac{4}{\pi} \sum_{n \text{ odd}}^{\infty} \frac{\cos(k
+\omega t)}{k^2}}\)</p>
+<h3 id="back"><span class="section-num">5.2</span> Back</h3>
+<p>This solution experiences a resonance if and only if \(\omega_n\) (natural
+frequency of the system) coincides with the angular frequency of a term with
+nonzero coefficient in the Fourier expansion of the driving function \(f(t)\)</p>
+<p>So, we get periodic solutions for all \(\omega_n \neq k(0, 1, 3, 5, 7, \dots)
+\omega\)</p>
+<h2 id="are-there-frequencies-at-which-there-is-more-than-one-periodic-solution"><span class="section-num">6</span> Are there frequencies at which there is more than one periodic solution?</h2>
+<h3 id="front"><span class="section-num">6.1</span> Front</h3>
+<p><b>Are there frequencies at which there is more than one periodic solution?</b></p>
+<p>For the oscillator system: \(\ddot{x} + \omega_n^2 x = f(t)\), where
+\({\displaystyle f(t) = \frac{\pi}{2} - \frac{4}{\pi} \sum_{n \text{
+odd}}^{\infty} \frac{\cos(k \omega t)}{k^2}}\)</p>
+<p>It&rsquo;s particular solution is \({\displaystyle x_p(t) = \frac{\pi}{2 \omega_n^2} -
+\frac{4}{\pi} \sum_{n \text{odd}}^{\infty} \frac{\cos(k \omega
+t)}{k^2(\omega_n^2 - k^2 \omega^2)}}\)</p>
+<h3 id="back"><span class="section-num">6.2</span> Back</h3>
+<p>Yes, for special frequencies. The homogeneous solution for the system is</p>
+<p>\({\displaystyle x_h = c_1 \cos(\omega_n t) + c_2 \sin(\omega_n t)}\)</p>
+<p>If the steady periodic solution, \(x_p\), has a period in common with \(x_h\) then
+we can add them together to get many solutions with that common period.</p>
+<ul>
+<li>Base period of \(x_h\) is \(2\pi / \omega_n\)</li>
+<li>Base period of \(x_p\) is \(2\pi / \omega\) provided \(\omega_n \neq 0, \omega, 3
+\omega, \dots\)</li>
+</ul>
+<p>The functions \(x_h\) and \(x_p\) have a common period when some positive integer
+multiple of the base period of \(x_h\) equals a multiple of the base period of
+\(x_p\)</p>
+<p>\({\displaystyle M \frac{2\pi}{\omega_n} = N \frac{2\pi}{\omega}}\), for some
+positive integers \(M\) and \(N\). So</p>
+<p>\({\displaystyle \omega_n = \frac{M}{N} \omega}\)</p>
+<p>There is more than one periodic solution if \(\omega_n\) is any positive rational
+multiple of \(\omega\) except \(1,3,5, \dots\)</p>
+<h2 id="when-can-we-say-that-this-system-is-in-pure-resonance-without-calculating-the-solution"><span class="section-num">7</span> When can we say that this system is in pure resonance without calculating the solution?</h2>
+<h3 id="front"><span class="section-num">7.1</span> Front</h3>
+<p><b>When can we say that this system is in pure resonance without calculating the solution?</b></p>
+<p>\(m \ddot{x} + k x = f(t)\), where \(f(t)\) is a periodic function</p>
+<h3 id="back"><span class="section-num">7.2</span> Back</h3>
+<p>The natural frequency of the spring-mass system is \({\displaystyle \omega_n =
+\sqrt{\frac{k}{m}}}\)</p>
+<p>The typical term of the Fourier expansion of \(f(t)\) is \({\displaystyle \cos(n
+\frac{\pi}{L} t)}\) and \({\displaystyle \sin(n \frac{\pi}{L} t)}\); thus we get
+pure resonance if and only if the angular frequency of any of the Fourier terms
+is equals to \(\omega_n\),</p>
+<p>\({\displaystyle \omega_n = \frac{n \pi}{L}}\), where \(n\) is an integer</p>
+<h2 id="how-can-we-expand-this-expression"><span class="section-num">8</span> How can we expand this expression?</h2>
+<h3 id="front"><span class="section-num">8.1</span> Front</h3>
+<p><b>How can we expand this expression?</b></p>
+<p>\({\displaystyle \sum_{n \text{odd}}^{\infty} \sin(n(t + \pi/2))}\)</p>
+<h3 id="back"><span class="section-num">8.2</span> Back</h3>
+<p>\({\displaystyle \cos(t) - \cos(3t) + \cos(5t) - \cos(7t) + \cdots}\)</p>
+
+</div>
+
+
+            <footer>
+    
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-23%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=ODE%27s%20with%20Periodic%20Input%2c%20Resonance&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-23%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-23%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-23%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-23%2f&amp;title=ODE%27s%20with%20Periodic%20Input%2c%20Resonance" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=ODE%27s%20with%20Periodic%20Input%2c%20Resonance&amp;body=Check out this site https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-23%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+
+<nav>
+    <ul class="pager">
+    
+    <li class="previous">
+        <a href="https://ppalazon.github.io/18.03/unit-3/session-22/" title="Operations on Fourier Series">
+            <span aria-hidden="true">&larr;</span>Operations on Fourier Series
+        </a>
+    </li>
+    
+
+    
+    <li class="next">
+        <a href="https://ppalazon.github.io/18.03/unit-3/session-24/" title="Step and Delta Functions: Integrals and Generalized Derivatives">
+            Step and Delta Functions: Integrals and Generalized Derivatives <span aria-hidden="true">&rarr;</span>
+        </a>
+    </li>
+    
+    </ul>
+</nav>
+
+
+
+</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//ppalazon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+        </div>
+    </div>
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/">18.03 Differential Equations</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/unit-3/">3: Fourier Series and Laplace Transform</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.03/unit-3/session-23/">ODE&#39;s with Periodic Input, Resonance</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

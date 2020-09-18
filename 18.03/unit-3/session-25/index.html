@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Unit Step and Unit Impulse Response  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="ode, maths, ">
+
+
+<meta property="og:title" content="Unit Step and Unit Impulse Response  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.03/unit-3/session-25/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="content-source" content="18.03/unit-3/session-25.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Captured On [2019-12-17 Tue 13:01] Source Unit Step and Unit Impulse Response | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  In this session we study differential equations with step or delta functions as input. For physical systems, this means that we are looking at discontinuous or impulsive inputs to the system.
+1 When happens the pre-initial conditions in a DE? 1."/>
+<meta property="og:article:published_time" content="2019-11-26T00:00:00&#43;01:00" />
+<meta property="og:article:modified_time" content="2019-11-26T00:00:00&#43;01:00" />
+
+
+
+<meta property="og:article:tag" content="ode">
+
+<meta property="og:article:tag" content="maths">
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ppalazon" />
+<meta name="twitter:creator" content="@ppalazon" />
+<meta name="twitter:title" content="Unit Step and Unit Impulse Response" />
+<meta name="twitter:description" content="Captured On [2019-12-17 Tue 13:01] Source Unit Step and Unit Impulse Response | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  In this session we study differential equations with step or delta functions as input. For physical systems, this means that we are looking at discontinuous or impulsive inputs to the system.
+1 When happens the pre-initial conditions in a DE? 1."/>
+<meta name="twitter:url" content="https://ppalazon.github.io/18.03/unit-3/session-25/" />
+<meta name="twitter:domain" content="https://ppalazon.github.io">
+
+
+
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+     "@type": "Article",
+     "headline": "Unit Step and Unit Impulse Response",
+     "author": {
+         "@type": "Person",
+         "name": "http://profiles.google.com/+?rel=author"
+     },
+     "datePublished": "2019-11-26",
+     "description": "",
+     "wordCount":  3190 
+ }
+</script>
+
+
+
+<link rel="canonical" href="https://ppalazon.github.io/18.03/unit-3/session-25/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+ }
+ .hero {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: calc(200px + (450 - 200) * ((100vw - 300px) / (1600 - 300)));
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: calc(-1 * (200px + (450 - 200) * ((100vw - 300px) / (1600 - 300))));
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+    <header class="container hat">
+        <h1>Unit Step and Unit Impulse Response
+</h1>
+
+        
+
+
+<span class="author">by
+    
+    MIT OCW, Pablo Palazon
+    
+</span>
+
+
+    </header>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            
+            <div class="content">
+  <dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2019-12-17 Tue 13:01]</span></span></dd>
+<dt>Source</dt>
+<dd><a href="https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-iii-fourier-series-and-laplace-transform/unit-step-and-unit-impulse-response/">Unit Step and Unit Impulse Response | Unit III: Fourier Series and
+Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare</a></dd>
+</dl>
+<p>In this session we study differential equations with step or delta functions as
+input. For physical systems, this means that we are looking at discontinuous or
+impulsive inputs to the system.</p>
+<h2 id="when-happens-the-pre-initial-conditions-in-a-de"><span class="section-num">1</span> When happens the pre-initial conditions in a DE?</h2>
+<h3 id="front"><span class="section-num">1.1</span> Front</h3>
+<p><b>When happens the pre-initial conditions in a DE?</b></p>
+<h3 id="back"><span class="section-num">1.2</span> Back</h3>
+<p>\(x(0^-)\), \(\dot{x}(0^-)\)</p>
+<h2 id="when-happens-the-post-initial-conditions-in-a-de"><span class="section-num">2</span> When happens the post-initial conditions in a DE?</h2>
+<h3 id="front"><span class="section-num">2.1</span> Front</h3>
+<p><b>When happens the post-initial conditions in a DE?</b></p>
+<h3 id="back"><span class="section-num">2.2</span> Back</h3>
+<p>\(x(0^+)\), \(\dot{x}(0^+)\)</p>
+<h2 id="when-are-pre-initial-and-post-initials-conditions-of-a-de-necessary"><span class="section-num">3</span> When are pre-initial and post-initials conditions of a DE necessary?</h2>
+<h3 id="front"><span class="section-num">3.1</span> Front</h3>
+<p><b>When are pre-initial and post-initials conditions of a DE necessary?</b></p>
+<h3 id="back"><span class="section-num">3.2</span> Back</h3>
+<p>When there is a discontinuity at \(t=0\) in the input signal of the DE. Sometimes,
+if we say initial conditions we will mean the pre-initial conditions.</p>
+<p>If \(x(t)\) is smooth the pre and post-initial conditions are the same and their
+is no need to distinguish between them.</p>
+<h2 id="what-is-the-solution-for-this-equation"><span class="section-num">4</span> What is the solution for this equation?</h2>
+<h3 id="front"><span class="section-num">4.1</span> Front</h3>
+<p><b>What is the solution for this equation?</b></p>
+<p>\(\dot{x} = u(t)\), \(x(0^-) = 0\)</p>
+<p>Explain the initial conditions values</p>
+<h3 id="back"><span class="section-num">4.2</span> Back</h3>
+<p>\({\displaystyle x(t) = \begin{cases}
+0 &amp;\text{for } t \lt 0 \\\<br>
+t &amp;\text{for } t \gt 0
+\end{cases}
+}\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/28/a66688-4614-4e5e-965f-93d5e957bf2b/_20200916_224319j5sHhU0.png"/> 
+</figure>
+
+<ul>
+<li>\(x(0^+) = 0\), the post-initial condition is equals to pre-initial condition</li>
+<li>Rate of change jumps from 0 to 1 \(\dot{x} = u(t)\) at \(t=0\)</li>
+<li>So, the response \(x(t)\) should be continuous</li>
+<li>\(\dot{x}(0^-) = 0 \neq \dot{x}(0^+) = 1\)</li>
+</ul>
+<h2 id="what-is-the-solution-for-this-de"><span class="section-num">5</span> What is the solution for this DE?</h2>
+<h3 id="front"><span class="section-num">5.1</span> Front</h3>
+<p><b>What is the solution for this DE?</b></p>
+<p>\(\dot{x} = \delta(t)\), \(x(0^-) = 0\)</p>
+<p>Explain the initial conditions values</p>
+<h3 id="back"><span class="section-num">5.2</span> Back</h3>
+<ul>
+<li>Integrating \(\delta(t)\), \(x(t) = u(t)\)</li>
+<li>Pre-initial conditions is different to post-initial condition
+<ul>
+<li>\(x(0^-) = 0 \neq x(0^+) = 1\)</li>
+</ul>
+</li>
+<li>The impulse causes a jump in the value of \(x\)</li>
+</ul>
+<h2 id="what-is-the-solution-for-this-de"><span class="section-num">6</span> What is the solution for this DE?</h2>
+<h3 id="front"><span class="section-num">6.1</span> Front</h3>
+<p><b>What is the solution for this DE?</b></p>
+<p>\(\ddot{x} = u(t)\), \(x(0^-) = 0\), \(\dot{x}(0^-) = 0\)</p>
+<h3 id="back"><span class="section-num">6.2</span> Back</h3>
+<figure>
+    <img src="https://ppalazon.github.io/28/a66688-4614-4e5e-965f-93d5e957bf2b/_20200916_224328dzxoNZp.png"/> 
+</figure>
+
+<ul>
+<li>Integrating twice
+<ul>
+<li>\({\displaystyle x(t) = \begin{cases}
+0 &amp;\text{for } t \lt 0 \\\<br>
+t^2/2 &amp;\text{for } t \gt 0
+\end{cases}
+}\)</li>
+</ul>
+</li>
+<li>\(x(0^-) = x(0^+) = 0\)</li>
+<li>\(\dot{x}(0^-) = \dot{x}(0^+) = 0\)</li>
+<li>\(\ddot{x}(0^-) = 0 \neq \ddot{x}(0^+) = 1\)</li>
+</ul>
+<h2 id="what-is-the-solution-for-this-de"><span class="section-num">7</span> What is the solution for this DE?</h2>
+<h3 id="front"><span class="section-num">7.1</span> Front</h3>
+<p><b>What is the solution for this DE?</b></p>
+<p>\(\ddot{x} = \delta(t)\), \(x(0^-) = 0\), \(\dot{x}(0^-) = 0\)</p>
+<p>Explain initial value conditions</p>
+<h3 id="back"><span class="section-num">7.2</span> Back</h3>
+<figure>
+    <img src="https://ppalazon.github.io/28/a66688-4614-4e5e-965f-93d5e957bf2b/_20200916_224338m83CBrX.png"/> 
+</figure>
+
+<ul>
+<li>\({\displaystyle x(t) = \begin{cases}
+0 &amp;\text{for } t \lt 0\\\<br>
+t &amp;\text{for } t \gt 0
+\end{cases}
+}\)</li>
+<li>\(x(0^-) = x(0^+) = 0\)</li>
+<li>\(\dot{x}(0^-) = 0 \neq x(0^+) = 1\)</li>
+</ul>
+<p>In this cases \(x(t)\) itself is continuous, but for the second order equation the
+input \(\delta(t)\) caused a jump in the first derivative</p>
+<h2 id="what-are-the-rest-initial-conditions"><span class="section-num">8</span> What are the rest initial conditions?</h2>
+<h3 id="front"><span class="section-num">8.1</span> Front</h3>
+<p><b>What are the rest initial conditions?</b></p>
+<p>Explain the case for DE of order \(n\)</p>
+<h3 id="back"><span class="section-num">8.2</span> Back</h3>
+<p>Is the case where \(x(t) = 0\) for \(t \lt 0\)</p>
+<p>\({\displaystyle x(0^-) = 0, \dot{x}(0^-) = 0, \dots, x^{(n-1)}(0^-) = 0}\)</p>
+<h2 id="what-happens-to-the-response-and-initial-conditions-of-de-with-unit-step-input"><span class="section-num">9</span> What happens to the response and initial conditions of DE with unit step input?</h2>
+<h3 id="front"><span class="section-num">9.1</span> Front</h3>
+<p><b>What happens to the response and initial conditions of DE with unit step input?</b></p>
+<h3 id="back"><span class="section-num">9.2</span> Back</h3>
+<p>It causes a smooth response with matching pre and post-initial conditions</p>
+<h2 id="what-happens-to-the-response-and-initial-conditions-of-de-with-unit-impulse-input"><span class="section-num">10</span> What happens to the response and initial conditions of DE with unit impulse input?</h2>
+<h3 id="front"><span class="section-num">10.1</span> Front</h3>
+<p><b>What happens to the response and initial conditions of DE with unit impulse input?</b></p>
+<h3 id="back"><span class="section-num">10.2</span> Back</h3>
+<p>The response could contains jumps or be continuous. It&rsquo;s a piecewise smooth
+functions.</p>
+<p>The pre and post initial conditions match except for the derivative one less
+than the order of the equation.</p>
+<h2 id="what-would-be-the-model-of-this-de"><span class="section-num">11</span> What would be the model of this DE?</h2>
+<h3 id="front"><span class="section-num">11.1</span> Front</h3>
+<p><b>What would be the model of this DE?</b></p>
+<p>\({\displaystyle \dot{x} + kx = ru(t)}\), \(x(0^-) = 0\), where \(k,r\) are constants</p>
+<p>Tip: Nuclear reactor</p>
+<h3 id="back"><span class="section-num">11.2</span> Back</h3>
+<p>This would model the amount of uranium in a nuclear reactor where we add uranium
+at the constant rate of \(r\) kg/year starting at time \(t=0\) and where \(k\) is the
+decay rate of the uranium.</p>
+<h2 id="how-could-we-solve-this-de"><span class="section-num">12</span> How could we solve this DE?</h2>
+<h3 id="front"><span class="section-num">12.1</span> Front</h3>
+<p><b>How could we solve this DE?</b></p>
+<p>\({\displaystyle \dot{x} + kx = ru(t)}\), \(x(0^-) = 0\) where \(r,k\) are constants</p>
+<p>Don&rsquo;t assume that the response must be continuous because of unit step input</p>
+<h3 id="back"><span class="section-num">12.2</span> Back</h3>
+<p>The equation is \({\displaystyle \dot{x} + kx = \begin{cases} 0 &amp;\text{for } t
+\lt 0 \ r &amp;\text{for } t \gt 0 \end{cases} }\)</p>
+<p>Solving the 2 pieces, we get \({\displaystyle x(t) = \begin{cases} c_1e^{-kt}
+&amp;\text{for } t \lt 0 \ r/k + c_2e^{-kt} &amp;\text{for } t \gt 0 \end{cases} }\)</p>
+<p>This gives \(x(0^-) = c_1\) and \(x(0^+) = r/k + c_2\). If these two are different
+there is a jump at \(t=0\) of magnitude \(x(0^-) - x(0^+) = r/k + c_2 - c_1\)</p>
+<p>As \(x(0^-) = 0\), implies \(c_1 = 0\), our solution looks like \({\displaystyle x(t)
+= \begin{cases} 0 &amp;\text{for } t \lt 0\ r/k + c_2e^{-kt} &amp;\text{for } t \gt 0
+\end{cases} }\)</p>
+<p>Substituting this into our differential equation, where we must use the
+generalized derivative if there is a jump at \(t=0\)</p>
+<p>\begin{align*}
+\dot{x} + kx &amp;= (r/k + c_2)\delta(t) + \begin{cases} 0 &amp;\text{for } t \lt 0\ -k c_2 e^{-kt} + r + kc_2 e^{-kt} &amp;\text{for } t \gt 0 \end{cases} \\\<br>
+&amp;= (r/k +c_2 )\delta(t) + \begin{cases}
+0 &amp;\text{for } t \lt 0\\\<br>
+r &amp;\text{for } t \gt 0
+\end{cases}
+\end{align*}</p>
+<p>Comparing the RHS, we see that \(r/k + c_2 = 0 \implies c_2 = -r/k\)</p>
+<p>So the solution is</p>
+<p>\({\displaystyle x(t) = \begin{cases} 0 &amp;\text{for } t \lt 0 \ r/k(1 - e^{-kt})
+&amp;\text{for } t \gt 0 \end{cases} }\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/28/a66688-4614-4e5e-965f-93d5e957bf2b/_20200916_224350tu4CjYJ.png"/> 
+</figure>
+
+<h2 id="what-does-mean-the-phrase-unit-step-response"><span class="section-num">13</span> What does mean the phrase &lsquo;Unit Step Response&rsquo;?</h2>
+<h3 id="front"><span class="section-num">13.1</span> Front</h3>
+<p><b>What does mean the phrase &lsquo;Unit Step Response&rsquo;?</b></p>
+<p>For this system, \(\dot{x} + kx = f(t)\)</p>
+<h3 id="back"><span class="section-num">13.2</span> Back</h3>
+<p>The unit step response means the response of the system when the input is a unit
+step.</p>
+<p>We consider \(f(t)\) to be the input. But sometimes makes more sense to consider
+something else to be the input. For example, in Newton&rsquo;s law of cooling
+\(\dot{T} + kT = k T_e\) it makes physical sense to call \(T_e\) the temperature of
+the environment, the input.</p>
+<p>In this case the unit step response of the system means the response to the
+input \(T_e(t) = u(t)\), the solution to \(\dot{T} + kT = ku(t)\)</p>
+<p>It&rsquo;s written \(v(t)\)</p>
+<h2 id="for-the-solution--vt---what-is--dot-v-0-plus"><span class="section-num">14</span> For the solution \(v(t)\) what is \(\dot{v}(0^{+})\)?</h2>
+<h3 id="front"><span class="section-num">14.1</span> Front</h3>
+<p><b>For the solution $v(t)$ what is $\dot{v}(0^{+})$?</b></p>
+<p>Consider the equation \(\dot{v} + kv = u(t)\) with rest initial conditions,
+\(v(0^-) = 0\)</p>
+<h3 id="back"><span class="section-num">14.2</span> Back</h3>
+<p>\(v(t)\) is continuous so \(v(0^-) = v(0^+) = v(0) = 0\). Therefore the DE shows
+\(\dot{v}(0^+) = u(0^+) = 1\)</p>
+<h2 id="what-would-be-the-model-of-this-de"><span class="section-num">15</span> What would be the model of this DE?</h2>
+<h3 id="front"><span class="section-num">15.1</span> Front</h3>
+<p><b>What would be the model of this DE?</b></p>
+<p>\({\displaystyle \dot{x} + kx = \delta(t)}\), \(x(0^-) = 0\), where \(k,r\) are
+constants</p>
+<p>Tip: Nuclear reactor</p>
+<h3 id="back"><span class="section-num">15.2</span> Back</h3>
+<p>This would model, the amount of uranium in a nuclear reactor where at \(t=0\) we
+add \(1\) kg of uranium all at once and \(k\) is the decay rate of the uranium</p>
+<h2 id="how-could-we-solve-this-de"><span class="section-num">16</span> How could we solve this DE?</h2>
+<h3 id="front"><span class="section-num">16.1</span> Front</h3>
+<p><b>How could we solve this DE?</b></p>
+<p>\({\displaystyle \dot{x} + kx = \delta(t)}\), \(x(0^-) = 0\), where \(k,r\) are
+constants</p>
+<h3 id="back"><span class="section-num">16.2</span> Back</h3>
+<p>Because of the rest initial conditions we have \(x(t) = 0\) for \(t \lt 0\)</p>
+<p>The effect of the input is to cause the amount \(x(t)\) to jump from \(0\) to \(1\) at
+\(t = 0\). That is, \(x(0^+) = 1\). For \(t&gt;0\) the input \(\delta(t) = 0\) and,</p>
+<p>Therefore, for \(t &gt; 0\) we should solve \(\dot{x} + kx = 0\), \(x(0) = 1\), which
+general solution is \(x(t) = ce^{-kt}\). Using \(x(0) = 1 \implies c=1\)</p>
+<p>\({\displaystyle x(t) = e^{-kt} u(t) = \begin{cases} 0 &amp;\text{for } t \lt 0\\\<br>
+e^{-kt} &amp;\text{for } t \gt 0 \end{cases}}\)</p>
+<h2 id="what-is-the-unit-impulse-response"><span class="section-num">17</span> What is the unit impulse response?</h2>
+<h3 id="front"><span class="section-num">17.1</span> Front</h3>
+<p><b>What is the unit impulse response?</b></p>
+<h3 id="back"><span class="section-num">17.2</span> Back</h3>
+<p>We denote \(w(t)\). In some sense it is the simplest nontrivial solution to the
+system \(\dot{x} + kx = \delta(t)\), \(x(0^-) = 0\), where \(k\) is constant</p>
+<p>\(w(t) = u(t) e^{-kt}\)</p>
+<p>You just give the system a unit kick at \(t=0\), stand back, and watch the result.</p>
+<p>For \(t \gt 0\) it is just the homogeneous solution with initial condition \(x(0) =
+1\)</p>
+<h2 id="which-is-the-graph-of-the-unit-impulse-response"><span class="section-num">18</span> Which is the graph of the unit impulse response?</h2>
+<h3 id="front"><span class="section-num">18.1</span> Front</h3>
+<p><b>Which is the graph of the unit impulse response?</b></p>
+<p>\(w(t) = u(t) e^{-kt}\)</p>
+<h3 id="back"><span class="section-num">18.2</span> Back</h3>
+<p>At \(t=0\) it jumps to \(x=1\) and then decays exponentially to \(0\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/28/a66688-4614-4e5e-965f-93d5e957bf2b/_20200916_224401NzXD8z7.png"/> 
+</figure>
+
+<h2 id="how-is-the-response-if-you-use-the-box-function-instead-of--deltat---as-input"><span class="section-num">19</span> How is the response if you use the box function instead of \(\delta(t)\) as input?</h2>
+<h3 id="front"><span class="section-num">19.1</span> Front</h3>
+<p><b>How is the response if you use the box function instead of $\delta(t)$ as input?</b></p>
+<p>\(\dot{x} + kx = q(t)\)</p>
+<p>Don&rsquo;t solve it using \({\displaystyle u_h = \begin{cases} 0 &amp;\text{for } t \lt 0
+\ 1/h &amp;\text{for } 0 \lt t \lt h \ 0 &amp;\text{for } h \lt t \end{cases} }\)</p>
+<p>Only graph an sketch for several \(h\)</p>
+<h3 id="back"><span class="section-num">19.2</span> Back</h3>
+<figure>
+    <img src="https://ppalazon.github.io/28/a66688-4614-4e5e-965f-93d5e957bf2b/_20200916_224417H2yLrkd.png"/> 
+</figure>
+
+<p>The input is plotted in black and the output in red. Notice how the output rises
+faster and gets closer to \(1\) as \(h \to 0\). Finally, in the limit of small \(h\),
+it jumps directly to \(1\)</p>
+<h2 id="what-does-mean-the-phrase-unit-impulse-response"><span class="section-num">20</span> What does mean the phrase &lsquo;Unit Impulse Response&rsquo;?</h2>
+<h3 id="front"><span class="section-num">20.1</span> Front</h3>
+<p><b>What does mean the phrase &lsquo;Unit Impulse Response&rsquo;?</b></p>
+<p>For: \({\displaystyle \dot{x} + kx = f(t)}\)</p>
+<h3 id="back"><span class="section-num">20.2</span> Back</h3>
+<p>The unit impulse response means the response of the system when the input is a
+unit impulse.</p>
+<p>We considered \(f(t)\) to be the input. Suppose, instead, we have the system
+\({\displaystyle \dot{T} + k T = k T_e}\), we consider \(T_e\) to be the input.</p>
+<p>Then, the unit impulse response is the response of the system to input \(T_e(t) =
+\delta(t)\), i.e. the solution to \({\displaystyle \dot{T} + kT = k \delta(t)}\)</p>
+<h2 id="for-the-solution--wt---what-is--dot-w-0-plus"><span class="section-num">21</span> For the solution \(w(t)\) what is \(\dot{w}(0^+)\)?</h2>
+<h3 id="front"><span class="section-num">21.1</span> Front</h3>
+<p><b>For the solution $w(t)$ what is $\dot{w}(0^{+})$?</b></p>
+<p>Consider the equation \({\displaystyle \dot{w}(t) + kw = \delta(t)}\) with rest
+initial conditions, \(w(0^-) = 0\)</p>
+<h3 id="back"><span class="section-num">21.2</span> Back</h3>
+<p>Using the DE we get \(\dot{w}(0^+) + k w(0^+) = \delta(0^+)\). We know \(w(0^+) =
+1\) and \(\delta(0^+) = 0\). Therefore \(\dot{w}(0^+) = -k\)</p>
+<p>We could also look at the solution \(w(t) = e^{-kt}\) for \(t &gt; 0\). Thus
+\(\dot{w}(t) = -k e^{-kt}\) for \(t&gt;0\). This implies \(\dot{w}(0^+) = -k\)</p>
+<p>Using the solution to the DE probably seems easier than the first method, but it
+is important to be able to draw conclusions without knowing the solution.</p>
+<h2 id="what-is-the-solution-for-this-de"><span class="section-num">22</span> What is the solution for this DE?</h2>
+<h3 id="front"><span class="section-num">22.1</span> Front</h3>
+<p><b>What is the solution for this DE?</b></p>
+<p>\(m \ddot{x} + kx = u(t)\), where \(x(0^-) = 0\), \(\dot{x}(0^-) = 0\)</p>
+<p>You can use continuity response assumption, but you must explain it</p>
+<h3 id="back"><span class="section-num">22.2</span> Back</h3>
+<p>The mass is at res at equilibrium until \(t = 0\) when a steady force starts to
+acts on it.</p>
+<p>Force represents a change in momentum over time. A finite force \(F(t)\) can only
+cause and infinitesimal change in momentum (i.e. \(F(t) \dd{t}\)) at a time.
+Therefore, the mass does not change position abruptly, nor does it change
+velocity instantaneously. Because of this we should expect a solution which is
+continuous with continuous derivative. Only the acceleration experiences a
+discontinuity.</p>
+<p>For \(t &lt; 0\), we already know that \(x(t) = 0\). For \(t&gt;0\) the DE is \(m \ddot{x} +
+kx = 1\). Which solution is \(x(t) = x_p(t) + x_h(t)\)</p>
+<ul>
+<li>\({\displaystyle x_p(t) = \frac{1}{k}}\)</li>
+<li>\({\displaystyle x_h(t) = c_1 \cos(\omega_n t) + c_2 \sin(\omega_n t)}\), where
+\({\displaystyle \omega_n = \sqrt{\frac{k}{m}}}\)</li>
+</ul>
+<p>The continuity of \(x\) and \(\ddot{x}\) implies \(x(0) = x(0^-) = 0\), and
+\(\dot{x}(0) = \dot{x}(0^-) = 0\). This allow us to find \(c_1\) and \(c_2\)</p>
+<ul>
+<li>\(0 = x(0) = 1/k + c_1 \implies c_1 = - 1/k\)</li>
+<li>\(0 = \dot{x}(0) = c_2 \omega_n \implies c_2 = 0\)</li>
+</ul>
+<p>The unit step response for this system is</p>
+<p>\({\displaystyle x(t) = \frac{1}{k} (1 - \cos(\omega_n t)) u(t) = v(t)}\)</p>
+<p>You can solve it without assume this continuity in the response, you need to
+solve for the different cases \(t \lt 0\) and \(t \gt 0\), replace IVP pre-initials
+conditions, substitute the solution in the DE and compare with the RHS of the
+DE.</p>
+<h2 id="how-is-the-graph-of-the-unit-step-response"><span class="section-num">23</span> How is the graph of the unit step response?</h2>
+<h3 id="front"><span class="section-num">23.1</span> Front</h3>
+<p><b>How is the graph of the unit step response?</b></p>
+<p>DE: \(m \ddot{x} + kx = u(t)\)</p>
+<p>Draw and sketch</p>
+<h3 id="back"><span class="section-num">23.2</span> Back</h3>
+<figure>
+    <img src="https://ppalazon.github.io/28/a66688-4614-4e5e-965f-93d5e957bf2b/_20200916_224425aG6uvOc.png"/> 
+</figure>
+
+<h2 id="meaning-of-the-unit-step-response"><span class="section-num">24</span> Meaning of the &lsquo;Unit Step Response&rsquo;</h2>
+<h3 id="front"><span class="section-num">24.1</span> Front</h3>
+<p><b>Meaning of the &lsquo;Unit Step Response&rsquo;</b></p>
+<p>\(m \ddot{x} + b \dot{x} + kx = b \dot{y}\), consider \(y\) to be the unit step input</p>
+<h3 id="back"><span class="section-num">24.2</span> Back</h3>
+<p>The unit step response is the response of the system to a unit step input. The
+unit step response for these systems are equivalents</p>
+<ul>
+<li>\(m \ddot{x} + b \dot{x} + kx = b \dot{u}(t)\)</li>
+<li>\(m \ddot{x} + b \dot{x} + kx = b \delta(t)\)</li>
+</ul>
+<h2 id="which-are-the-properties-of-this-system-s-response"><span class="section-num">25</span> Which are the properties of this system&rsquo;s response?</h2>
+<h3 id="front"><span class="section-num">25.1</span> Front</h3>
+<p><b>Which are the properties of this system&rsquo;s response?</b></p>
+<p>\(m \ddot{x} + b \dot{x} + kx = f(t)\), where the input is \(f(t) = c \delta(t - a)\)</p>
+<p>How are \(x(t)\) and \(\dot{x}(t)\)?</p>
+<h3 id="back"><span class="section-num">25.2</span> Back</h3>
+<ol>
+<li>The momentum \(m \dot{x}(t)\) jumps by \(c\) units at \(t = a\), that is
+\({\displaystyle m \dot{x}(a^+) - m \dot{x}(a^-) = c}\)
+<ul>
+<li>\(\dot{x}(a^+) = c / m\) if \(\dot{x}(a^-) = 0\)</li>
+</ul>
+</li>
+<li>The position \(x(t)\) is unchanged at \(t = a\), that is \(x(a^+) = x(a^-)\)</li>
+</ol>
+<h2 id="why-the-position--xt---is-unchanged-at--t-a--for-this-de"><span class="section-num">26</span> Why the position \(x(t)\) is unchanged at \(t=a\) for this DE?</h2>
+<h3 id="front"><span class="section-num">26.1</span> Front</h3>
+<p><b>Why the position $x(t)$ is unchanged at $t=a$ for this DE?</b></p>
+<p>\(m \ddot{x} + b \dot{x} + kx = f(t)\) where \(f(t) = c \delta(t-a)\)</p>
+<h3 id="back"><span class="section-num">26.2</span> Back</h3>
+<p>If \(x(t)\) had a jump at \(t = a\) then \(\dot{x}\) would contain a multiple of
+\(\delta(t - a)\). So, \(m \ddot{x}\) would contain a multiple of the doublet
+\(\delta'(t-a)\). This is impossible since the input \(\delta(t-a)\) does not
+contain a doublet</p>
+<p>So, \(x(a^-) = x(a^+)\)</p>
+<h2 id="why-are-there-a-jump-of--c--units-in--m-dot-x--term-in-this-de"><span class="section-num">27</span> Why are there a jump of \(c\) units in \(m \dot{x}\) term in this DE?</h2>
+<h3 id="front"><span class="section-num">27.1</span> Front</h3>
+<p><b>Why are there a jump of $c$ units in $m \dot{x}$ term in this DE?</b></p>
+<p>\(m \ddot{x} + b \dot{x} + k x = f(t)\) where \(f(t) = c \delta(t - a)\)</p>
+<h3 id="back"><span class="section-num">27.2</span> Back</h3>
+<p>To make the left-hand side of equation match the right hand side, \(m \dot{x}(t)\)
+has a jump of \(c\) units at \(t = a\), so \(m \ddot{x}(t)\) contains the term \(c
+\delta (t - a)\)</p>
+<h2 id="what-is-the-unit-impulse-response-for-this-system"><span class="section-num">28</span> What is the unit impulse response for this system?</h2>
+<h3 id="front"><span class="section-num">28.1</span> Front</h3>
+<p><b>What is the unit impulse response for this system?</b></p>
+<p>\({\displaystyle m \ddot{x} + b \dot{x} + kx = f(t)}\), only set up the conditions
+for solving it</p>
+<p>Write its equivalent ODE</p>
+<h3 id="back"><span class="section-num">28.2</span> Back</h3>
+<p>Is the solution to this equation with input \(f(t) = \delta(t)\) and rest initial
+conditions: \(x(t) = 0\) for \(t &lt; 0\). So the IVP are \(x(0^-) = 0\) and
+\(\dot{x}(0^-) = 0\)</p>
+<p>Let \(w(t)\) denote the solution we seek. The unit impulse input will cause a unit
+jump in the momentum at \(t = 0\) and no change in position. We also know that,
+for \(t &gt; 0\), the input \(\delta(t) = 0\). So for \(t &gt; 0\), \(w(t)\) satisfies the
+equation</p>
+<p>\(m \ddot{w} + b \dot{w} + kw = 0\), where \(\dot{w}(0^+) = 1/m\) and \(w(0^+) = 0\)</p>
+<p>You will get it, solving this DE</p>
+<h2 id="describe-how-would-be-a-system-with-this-de"><span class="section-num">29</span> Describe how would be a system with this DE?</h2>
+<h3 id="front"><span class="section-num">29.1</span> Front</h3>
+<p><b>Describe how would be a system with this DE?</b></p>
+<p>\(m \ddot{x} + b \dot{x} + kx = \delta (t)\) with rest conditions</p>
+<p>Describe it with a physical example</p>
+<h3 id="back"><span class="section-num">29.2</span> Back</h3>
+<p>This could be a damped spring-mass system with mass \(m\), damping constant \(b\)
+and spring constant \(k\). The mass is at rest at equilibrium unit time \(t = 0\)
+when it is hit by a sudden very brief intense force, rather like getting hit on
+the head by a hammer. The effect is to increase the momentum instantaneously,
+without changing the position of the mass</p>
+<h2 id="draw-a-sketch-of-the-unit-impulse-response-for-this-system"><span class="section-num">30</span> Draw a sketch of the unit impulse response for this system</h2>
+<h3 id="front"><span class="section-num">30.1</span> Front</h3>
+<p><b>Draw a sketch of the unit impulse response for this system</b></p>
+<p>\(m \ddot{x} + b \dot{x} + k x = \delta(t)\)</p>
+<h3 id="back"><span class="section-num">30.2</span> Back</h3>
+<figure>
+    <img src="https://ppalazon.github.io/28/a66688-4614-4e5e-965f-93d5e957bf2b/_20200916_224433vZU8Aj5.png"/> 
+</figure>
+
+<h2 id="what-does-mean-the-unit-impulse-response-for-this-system"><span class="section-num">31</span> What does mean the unit impulse response for this system?</h2>
+<h3 id="front"><span class="section-num">31.1</span> Front</h3>
+<p><b>What does mean the unit impulse response for this system?</b></p>
+<p>\(m \ddot{x} + b \dot{x} + kx = b \dot{y}\)</p>
+<h3 id="back"><span class="section-num">31.2</span> Back</h3>
+<p>It&rsquo;s the response to this system considering \(y\) as the unit impulse input of
+the system. So that means the solution to</p>
+<p>\(m \ddot{x} + b \dot{x} + kx = b \dot{\delta}(t)\) with rest IC where
+\(\dot{\delta}(t)\) is a doublet.</p>
+<p>For \(t &gt; 0\) this is equivalent to</p>
+<p>\({\displaystyle m \ddot{x} + b \dot{x} + kx = 0}\) with post IC \({\displaystyle
+x(0^+) = \frac{b}{m}}\) and \({\displaystyle x(0^+) = - \frac{b^2}{m^2}}\)</p>
+<h2 id="what-is--dot-w-0-plus"><span class="section-num">32</span> What is \(\dot{w}(0^{+})\)?</h2>
+<h3 id="front"><span class="section-num">32.1</span> Front</h3>
+<p><b>What is $\dot{w}(0^{+})$?</b></p>
+<p>Let \(w(t)\) be the solution to \(m \ddot{x} + kx = \delta(t)\) with rest initial
+conditions</p>
+<h3 id="back"><span class="section-num">32.2</span> Back</h3>
+<p>The unit impulse input causes a unit jump in momentum. Starting from rest this
+means \(m \dot{w}(0^+) = 1\), so \(\dot{w}(0^+) = 1/m\)</p>
+<h2 id="what-are-the-post-initial-conditions-for-this-system"><span class="section-num">33</span> What are the post-initial conditions for this system?</h2>
+<h3 id="front"><span class="section-num">33.1</span> Front</h3>
+<p><b>What are the post-initial conditions for this system?</b></p>
+<p>\({\displaystyle a_n x^{(n)} + a_{n-1}x^{(n-1)} + \dots + a_1 x' + a_0 x =
+\delta(t)}\) with rest IC</p>
+<h3 id="back"><span class="section-num">33.2</span> Back</h3>
+<p>The effect of the \(\delta\) function input is to cause a jump in the
+\(n-1^{\text{st}}\) derivative at time \(t = 0\), while the lower order derivatives
+do not jump.</p>
+<ul>
+<li>\(x(0^+) = 0\)</li>
+<li>\(x'(0^+) = 0\)</li>
+<li>\(\dots\)</li>
+<li>\(x^{(n-2)}(0^+) = 0\)</li>
+<li>\(x^{(n-1)}(0^+) = 1 / a_n\)</li>
+</ul>
+<p>Since \(x^{n-1}(t)\) has a jump of \(x^{(n-1)}(0^+) = 1 / a_n\) at \(t = 0\), its
+derivative \(a_n x^{(n)}(t)\) has a unit impulse, \(\delta(t)\), at \(t = 0\)</p>
+<h2 id="how-could-we-know-the-unit-impulse-response-from-the-unit-step-response"><span class="section-num">34</span> How could we know the unit impulse response from the unit step response?</h2>
+<h3 id="front"><span class="section-num">34.1</span> Front</h3>
+<p><b>How could we know the unit impulse response from the unit step response?</b></p>
+<p>Suppose that \(h(t)\) is the unit step response where \(h(t) = (1 - e^{-t/2}) u(t)\)</p>
+<p>Graph both responses</p>
+<h3 id="back"><span class="section-num">34.2</span> Back</h3>
+<p>The unit impulse response is the derivative of the unit step response, so</p>
+<p>\({\displaystyle w(t) = h'(t) = \frac{1}{2} e^{-t/2} u(t) + (1 -
+e^{-t/2}\delta(t)) = \frac{1}{2} e^{-t/2} u(t)}\)</p>
+<p>The term \({\displaystyle (1 - e^{-t/2} \delta(t) = 0}\) because at \(t = 0\) the
+coefficient of \(\delta(t)\) is \(0\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/28/a66688-4614-4e5e-965f-93d5e957bf2b/_20200916_224442Q5SBQ2B.png"/> 
+</figure>
+
+<h2 id="find-the-solution-for-this-de-from-its-unit-impulse-response"><span class="section-num">35</span> Find the solution for this DE from its unit impulse response</h2>
+<h3 id="front"><span class="section-num">35.1</span> Front</h3>
+<p><b>Find the solution for this DE from its unit impulse response</b></p>
+<p>\({\displaystyle \ddot{x} + 2 \dot{x} = 3\delta(t - 1)}\), where its unit impulse
+response is \({\displaystyle w(t) = \frac{1}{2}(1 - e^{-2t}) u(t)}\)</p>
+<h3 id="back"><span class="section-num">35.2</span> Back</h3>
+<p>Using time invariance, we find that a solution to this equation is</p>
+<p>\({\displaystyle x = 3 w(t-1) = \frac{3}{2}(1 - e^{2 - 2t}) u(t - 1)}\)</p>
+
+</div>
+
+
+            <footer>
+    
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-25%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Unit%20Step%20and%20Unit%20Impulse%20Response&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-25%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-25%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-25%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-25%2f&amp;title=Unit%20Step%20and%20Unit%20Impulse%20Response" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Unit%20Step%20and%20Unit%20Impulse%20Response&amp;body=Check out this site https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-25%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+
+<nav>
+    <ul class="pager">
+    
+    <li class="previous">
+        <a href="https://ppalazon.github.io/18.03/unit-3/session-24/" title="Step and Delta Functions: Integrals and Generalized Derivatives">
+            <span aria-hidden="true">&larr;</span>Step and Delta Functions: Integrals and Generalized Derivatives
+        </a>
+    </li>
+    
+
+    
+    <li class="next">
+        <a href="https://ppalazon.github.io/18.03/unit-3/session-26/" title="Convolution">
+            Convolution <span aria-hidden="true">&rarr;</span>
+        </a>
+    </li>
+    
+    </ul>
+</nav>
+
+
+
+</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//ppalazon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+        </div>
+    </div>
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/">18.03 Differential Equations</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/unit-3/">3: Fourier Series and Laplace Transform</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.03/unit-3/session-25/">Unit Step and Unit Impulse Response</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

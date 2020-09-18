@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Session 11: Matrix Inverses  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="calculus, maths, ">
+
+
+<meta property="og:title" content="Session 11: Matrix Inverses  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.02/part-1b/session-11/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="content-source" content="18.02/part-1b/session-11.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Captured On [2020-02-05 Wed 21:19] Source Session 11: Matrix Inverses | Part B: Matrices and Systems of Equations | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare 1 Chalkboard Figure 1: Inverse Matrix Figure 2: Inverse Matrix formula
+Figure 3: Inverse Matrix Formula: Minors and cofactors
+Figure 4: Inverse Matrix Formula: Transpose and Divide by (\det(A))
+"/>
+<meta property="og:article:published_time" content="2019-04-18T00:00:00&#43;02:00" />
+<meta property="og:article:modified_time" content="2019-04-18T00:00:00&#43;02:00" />
+
+
+
+<meta property="og:article:tag" content="calculus">
+
+<meta property="og:article:tag" content="maths">
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ppalazon" />
+<meta name="twitter:creator" content="@ppalazon" />
+<meta name="twitter:title" content="Session 11: Matrix Inverses" />
+<meta name="twitter:description" content="Captured On [2020-02-05 Wed 21:19] Source Session 11: Matrix Inverses | Part B: Matrices and Systems of Equations | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare 1 Chalkboard Figure 1: Inverse Matrix Figure 2: Inverse Matrix formula
+Figure 3: Inverse Matrix Formula: Minors and cofactors
+Figure 4: Inverse Matrix Formula: Transpose and Divide by (\det(A))
+"/>
+<meta name="twitter:url" content="https://ppalazon.github.io/18.02/part-1b/session-11/" />
+<meta name="twitter:domain" content="https://ppalazon.github.io">
+
+
+
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+     "@type": "Article",
+     "headline": "Session 11: Matrix Inverses",
+     "author": {
+         "@type": "Person",
+         "name": "http://profiles.google.com/+?rel=author"
+     },
+     "datePublished": "2019-04-18",
+     "description": "",
+     "wordCount":  479 
+ }
+</script>
+
+
+
+<link rel="canonical" href="https://ppalazon.github.io/18.02/part-1b/session-11/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+ }
+ .hero {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: calc(200px + (450 - 200) * ((100vw - 300px) / (1600 - 300)));
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: calc(-1 * (200px + (450 - 200) * ((100vw - 300px) / (1600 - 300))));
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+    <header class="container hat">
+        <h1>Session 11: Matrix Inverses
+</h1>
+
+        
+
+
+<span class="author">by
+    
+    MIT OCW, Pablo Palazon
+    
+</span>
+
+
+    </header>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            
+            <div class="content">
+  <dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2020-02-05 Wed 21:19]</span></span></dd>
+<dt>Source</dt>
+<dd><a href="https://ocw.mit.edu/courses/mathematics/18-02sc-multivariable-calculus-fall-2010/1.-vectors-and-matrices/part-b-matrices-and-systems-of-equations/session-11-matrix-inverses/index.htm">Session 11: Matrix Inverses | Part B: Matrices and Systems of Equations | 1. Vectors and Matrices | Multivariable Calculus | Mathematics | MIT OpenCourseWare</a></dd>
+</dl>
+<h2 id="chalkboard"><span class="section-num">1</span> Chalkboard</h2>
+<p><a id="org7422443"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/e5/2251d1-1bf8-4048-b0ff-e5c74e8dd214/_20200205_211947MIT18_02SC_L3Brds_12.png"
+         alt="Figure 1: Inverse Matrix" width="80%"/> <figcaption>
+            <p>Figure 1: Inverse Matrix</p>
+        </figcaption>
+</figure>
+
+<p><a id="org33573e7"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/e5/2251d1-1bf8-4048-b0ff-e5c74e8dd214/_20200205_211952MIT18_02SC_L3Brds_13.png"
+         alt="Figure 2: Inverse Matrix formula" width="80%"/> <figcaption>
+            <p>Figure 2: Inverse Matrix formula</p>
+        </figcaption>
+</figure>
+
+<p><a id="orgf60f5f8"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/e5/2251d1-1bf8-4048-b0ff-e5c74e8dd214/_20200205_211959MIT18_02SC_L3Brds_14.png"
+         alt="Figure 3: Inverse Matrix Formula: Minors and cofactors" width="80%"/> <figcaption>
+            <p>Figure 3: Inverse Matrix Formula: Minors and cofactors</p>
+        </figcaption>
+</figure>
+
+<p><a id="org7651222"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/e5/2251d1-1bf8-4048-b0ff-e5c74e8dd214/_20200205_212005MIT18_02SC_L3Brds_15.png"
+         alt="Figure 4: Inverse Matrix Formula: Transpose and Divide by \(\det(A)\)" width="80%"/> <figcaption>
+            <p>Figure 4: Inverse Matrix Formula: Transpose and Divide by \(\det(A)\)</p>
+        </figcaption>
+</figure>
+
+<h2 id="how-can-we-solve-a-small-squared-linear-system"><span class="section-num">2</span> How can we solve a small squared linear system?</h2>
+<h3 id="front"><span class="section-num">2.1</span> Front</h3>
+<p><b>How can we solve a small squared linear system?</b></p>
+<ul>
+<li>Low dimensional</li>
+<li>\(2 \times 2\) system, or \(3 \times 3\) system</li>
+<li>\(x_1 = a_{11}y_1 + a_{12}y_2 + a_{13}y_{3}\)</li>
+<li>\(x_2 = a_{21}y_1 + a_{22}y_2 + a_{23}y_{3}\)</li>
+<li>\(x_3 = a_{31}y_1 + a_{32}y_2 + a_{33}y_{3}\)</li>
+</ul>
+<h3 id="back"><span class="section-num">2.2</span> Back</h3>
+<ul>
+<li>Using inverse matrices</li>
+<li>\(A \vb{x} = \vb{b}\)</li>
+<li>\(A\) matrix with coefficients \((a_{ij})\)</li>
+<li>\({\displaystyle \vb{x} = \begin{pmatrix} x_1 \ x_2 \x_3
+\end{pmatrix}}\)</li>
+<li>\({\displaystyle \vb{b} = \begin{pmatrix} b_1 \ b_2 \ b_3 \end{pmatrix}}\)</li>
+</ul>
+<p>Solving (multiplying by inverse matrix \(M\) at the left)</p>
+<p>\begin{align*}
+A \vb{x} &amp;= \vb{b} \\\<br>
+M (A \vb{x}) &amp;= M \vb{b}\\\<br>
+\vb{x} = M \vb{b}
+\end{align*}</p>
+<h2 id="when-can-we-say-that-the-inverse-matrix-of--a--exits"><span class="section-num">3</span> When can we say that the inverse matrix of \(A\) exits?</h2>
+<h3 id="front"><span class="section-num">3.1</span> Front</h3>
+<p><b>When can we say that the inverse matrix of $A$ exits?</b></p>
+<h3 id="back"><span class="section-num">3.2</span> Back</h3>
+<ul>
+<li>\(M\) is the inverse matrix of \(A\)</li>
+<li>\(M \text{ exists } \Leftrightarrow \det(A) \neq 0\)</li>
+<li>That&rsquo;s because of determinant law of matrix multiplication
+<ul>
+<li>\(\det(AB) = \det(A) \det(B)\)</li>
+<li>\(MA = I \implies \det(M)\det(A) = \det(I) = 1 \implies \det(A)
+\neq 0\)</li>
+</ul>
+</li>
+</ul>
+<h2 id="which-step-do-we-need-to-calculate-a-matrix-inverse"><span class="section-num">4</span> Which step do we need to calculate a matrix inverse?</h2>
+<h3 id="front"><span class="section-num">4.1</span> Front</h3>
+<p><b>Which step do we need to calculate a matrix inverse?</b></p>
+<p>Set \(A\) matrix, and \(A^{-1}\) as inverse matrix</p>
+<h3 id="back"><span class="section-num">4.2</span> Back</h3>
+<ol>
+<li>\(A\) is a \(n \times n\) matrix</li>
+<li>\(\det(A) \neq 0\)</li>
+<li>Unique solution
+<ul>
+<li>\(A^{-1}A = AA^{-1} = I\), Identity matrix</li>
+<li>\(A \vb{x} = \vb{b}\)</li>
+<li>\(M(A \vb{x}) = M \vb{b}\)</li>
+<li>\(\vb{x} = M\vb{b}\)</li>
+</ul>
+</li>
+<li>\({\displaystyle A^{-1} = \frac{1}{\det(A)} \text{adj}(A) =
+\frac{1}{\det(A)} \begin{pmatrix} A_{11} &amp; A_{12} &amp; A_{13}
+\ A_{21} &amp; A_{22} &amp; A_{23} \ A_{31} &amp; A_{32} &amp; A_{33}
+\end{pmatrix}^{T}}\)
+<ul>
+<li>\(\text{adj}(A)\), is the <strong>adjoint</strong> or <strong>adjugate</strong> of \(A\)</li>
+<li>\(A_{ij} = (-1)^{i+j} \abs{A_{ij}}\) is the <strong>ij-cofactors</strong></li>
+<li>\(\abs{A_{ij}}\) is the <strong>ij-minor</strong>, the determinant after remove
+the row \(i\) and column \(j\)</li>
+</ul>
+</li>
+</ol>
+<p>Formula steps</p>
+<ol>
+<li>Calculate the matrix of minors</li>
+<li>Change the signs of the entries according to the checkerboard rule</li>
+<li>Transpose the resulting matrix, this gives \(\text{adj}(A)\)</li>
+<li>Divide every entry by \(\abs{A}\)</li>
+</ol>
+<h2 id="what-is-the-quick-formula-for-inverse-of--2-times-2--matrix--a"><span class="section-num">5</span> What is the quick formula for inverse of \(2 \times 2\) matrix \(A\)?</h2>
+<h3 id="front"><span class="section-num">5.1</span> Front</h3>
+<p><b>What is the quick formula for inverse of $2 \times 2$ matrix $A$?</b></p>
+<p>\({\displaystyle A = \begin{pmatrix}a &amp; b \ c &amp; d\end{pmatrix}}\)</p>
+<h3 id="back"><span class="section-num">5.2</span> Back</h3>
+<ul>
+<li>Cofactors \({\displaystyle \begin{pmatrix}d &amp; -c \ -b &amp; a
+\end{pmatrix}}\)</li>
+<li>adj \(A\): \({\displaystyle \begin{pmatrix}d &amp; -b \ -c &amp; a
+\end{pmatrix}}\)</li>
+<li>inverse of \(A\): \({\displaystyle \frac{1}{\abs{A}} \begin{pmatrix}d &amp;
+-b \ -c &amp; a \end{pmatrix}}\)</li>
+</ul>
+<p>Steps:</p>
+<ol>
+<li>Switch \(a\) and \(d\)</li>
+<li>Change the signs on \(b\) and \(c\)</li>
+<li>Divide by the determinant</li>
+</ol>
+
+</div>
+
+
+            <footer>
+    
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-1b%2fsession-11%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Session%2011%3a%20Matrix%20Inverses&amp;url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-1b%2fsession-11%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-1b%2fsession-11%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-1b%2fsession-11%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-1b%2fsession-11%2f&amp;title=Session%2011%3a%20Matrix%20Inverses" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Session%2011%3a%20Matrix%20Inverses&amp;body=Check out this site https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-1b%2fsession-11%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+
+<nav>
+    <ul class="pager">
+    
+    <li class="previous">
+        <a href="https://ppalazon.github.io/18.02/part-1b/session-10/" title="Session 10: Meaning of Matrix Multiplication">
+            <span aria-hidden="true">&larr;</span>Session 10: Meaning of Matrix Multiplication
+        </a>
+    </li>
+    
+
+    
+    <li class="next">
+        <a href="https://ppalazon.github.io/18.02/part-1b/session-12/" title="Session 12: Equations of Planes II">
+            Session 12: Equations of Planes II <span aria-hidden="true">&rarr;</span>
+        </a>
+    </li>
+    
+    </ul>
+</nav>
+
+
+
+</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//ppalazon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+        </div>
+    </div>
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.02/">18.02 Multivariable Calculus</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.02/part-1b/">1B: Vectors and Matrices - Matrices and Systems of Equations</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.02/part-1b/session-11/">Session 11: Matrix Inverses</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

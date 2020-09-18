@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Session 69: Flux in 2D  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="calculus, maths, ">
+
+
+<meta property="og:title" content="Session 69: Flux in 2D  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.02/part-3c/session-69/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="content-source" content="18.02/part-3c/session-69.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Captured On [2020-02-06 Thu 16:33] Source Session 69: Flux in 2D | Part C: Green&amp;rsquo;s Theorem | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare 1 Chalkboard Figure 1: Flux presentation Figure 2: (\vu{n}) as clockwise from (\vu{T})
+Figure 3: Flux and Work comparison
+"/>
+<meta property="og:article:published_time" content="2019-04-18T00:00:00&#43;02:00" />
+<meta property="og:article:modified_time" content="2019-04-18T00:00:00&#43;02:00" />
+
+
+
+<meta property="og:article:tag" content="calculus">
+
+<meta property="og:article:tag" content="maths">
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ppalazon" />
+<meta name="twitter:creator" content="@ppalazon" />
+<meta name="twitter:title" content="Session 69: Flux in 2D" />
+<meta name="twitter:description" content="Captured On [2020-02-06 Thu 16:33] Source Session 69: Flux in 2D | Part C: Green&amp;rsquo;s Theorem | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare 1 Chalkboard Figure 1: Flux presentation Figure 2: (\vu{n}) as clockwise from (\vu{T})
+Figure 3: Flux and Work comparison
+"/>
+<meta name="twitter:url" content="https://ppalazon.github.io/18.02/part-3c/session-69/" />
+<meta name="twitter:domain" content="https://ppalazon.github.io">
+
+
+
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+     "@type": "Article",
+     "headline": "Session 69: Flux in 2D",
+     "author": {
+         "@type": "Person",
+         "name": "http://profiles.google.com/+?rel=author"
+     },
+     "datePublished": "2019-04-18",
+     "description": "",
+     "wordCount":  671 
+ }
+</script>
+
+
+
+<link rel="canonical" href="https://ppalazon.github.io/18.02/part-3c/session-69/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+ }
+ .hero {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: calc(200px + (450 - 200) * ((100vw - 300px) / (1600 - 300)));
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: calc(-1 * (200px + (450 - 200) * ((100vw - 300px) / (1600 - 300))));
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+    <header class="container hat">
+        <h1>Session 69: Flux in 2D
+</h1>
+
+        
+
+
+<span class="author">by
+    
+    MIT OCW, Pablo Palazon
+    
+</span>
+
+
+    </header>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            
+            <div class="content">
+  <dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2020-02-06 Thu 16:33]</span></span></dd>
+<dt>Source</dt>
+<dd><a href="https://ocw.mit.edu/courses/mathematics/18-02sc-multivariable-calculus-fall-2010/3.-double-integrals-and-line-integrals-in-the-plane/part-c-greens-theorem/session-69-flux-in-2d">Session 69: Flux in 2D | Part C: Green&rsquo;s Theorem | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare</a></dd>
+</dl>
+<h2 id="chalkboard"><span class="section-num">1</span> Chalkboard</h2>
+<p><a id="orga948b1f"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/00/dfeef6-8d6f-4c65-b52e-983093d58251/_20200206_163342MIT18_02SC_L23Brds_1.png"
+         alt="Figure 1: Flux presentation" width="80%"/> <figcaption>
+            <p>Figure 1: Flux presentation</p>
+        </figcaption>
+</figure>
+
+<p><a id="org6639f38"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/00/dfeef6-8d6f-4c65-b52e-983093d58251/_20200206_163347MIT18_02SC_L23Brds_2.png"
+         alt="Figure 2: \(\vu{n}\) as clockwise from \(\vu{T}\)" width="80%"/> <figcaption>
+            <p>Figure 2: \(\vu{n}\) as clockwise from \(\vu{T}\)</p>
+        </figcaption>
+</figure>
+
+<p><a id="orge523f6c"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/00/dfeef6-8d6f-4c65-b52e-983093d58251/_20200206_163353MIT18_02SC_L23Brds_3.png"
+         alt="Figure 3: Flux and Work comparison" width="80%"/> <figcaption>
+            <p>Figure 3: Flux and Work comparison</p>
+        </figcaption>
+</figure>
+
+<p><a id="orgf16490f"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/00/dfeef6-8d6f-4c65-b52e-983093d58251/_20200206_163359MIT18_02SC_L23Brds_4.png"
+         alt="Figure 4: Intepretation of Flux" width="80%"/> <figcaption>
+            <p>Figure 4: Intepretation of Flux</p>
+        </figcaption>
+</figure>
+
+<p><a id="org8da61b1"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/00/dfeef6-8d6f-4c65-b52e-983093d58251/_20200206_163404MIT18_02SC_L23Brds_5.png"
+         alt="Figure 5: Visualization of Flux" width="80%"/> <figcaption>
+            <p>Figure 5: Visualization of Flux</p>
+        </figcaption>
+</figure>
+
+<p><a id="org50b741d"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/00/dfeef6-8d6f-4c65-b52e-983093d58251/_20200206_163410MIT18_02SC_L23Brds_6.png"
+         alt="Figure 6: What flows across \(C\)" width="80%"/> <figcaption>
+            <p>Figure 6: What flows across \(C\)</p>
+        </figcaption>
+</figure>
+
+<p><a id="orge832561"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/00/dfeef6-8d6f-4c65-b52e-983093d58251/_20200206_163416MIT18_02SC_L23Brds_7.png"
+         alt="Figure 7: Example of Flux" width="80%"/> <figcaption>
+            <p>Figure 7: Example of Flux</p>
+        </figcaption>
+</figure>
+
+<p><a id="org907f08f"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/00/dfeef6-8d6f-4c65-b52e-983093d58251/_20200206_163423MIT18_02SC_L23Brds_8.png"
+         alt="Figure 8: Example of Flux II" width="80%"/> <figcaption>
+            <p>Figure 8: Example of Flux II</p>
+        </figcaption>
+</figure>
+
+<p><a id="orge686331"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/00/dfeef6-8d6f-4c65-b52e-983093d58251/_20200206_163429MIT18_02SC_L23Brds_9.png"
+         alt="Figure 9: Calculation flux using components" width="80%"/> <figcaption>
+            <p>Figure 9: Calculation flux using components</p>
+        </figcaption>
+</figure>
+
+<p><a id="org8235a6e"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/00/dfeef6-8d6f-4c65-b52e-983093d58251/_20200206_163435MIT18_02SC_L23Brds_10.png"
+         alt="Figure 10: \(\vu{T}\) vs \(\vu{n}\)" width="80%"/> <figcaption>
+            <p>Figure 10: \(\vu{T}\) vs \(\vu{n}\)</p>
+        </figcaption>
+</figure>
+
+<p><a id="org5e64fc6"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/00/dfeef6-8d6f-4c65-b52e-983093d58251/_20200206_163441MIT18_02SC_L23Brds_11.png"
+         alt="Figure 11: Line integral for Flux" width="80%"/> <figcaption>
+            <p>Figure 11: Line integral for Flux</p>
+        </figcaption>
+</figure>
+
+<p><a id="orgfb9a627"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/00/dfeef6-8d6f-4c65-b52e-983093d58251/_20200206_163448MIT18_02SC_L23Brds_12.png"
+         alt="Figure 12: Another way of writing flux components" width="80%"/> <figcaption>
+            <p>Figure 12: Another way of writing flux components</p>
+        </figcaption>
+</figure>
+
+<h2 id="find--m--and--n--equals-the-polar-moment-of-inertia"><span class="section-num">2</span> Find \(M\) and \(N\) equals the polar moment of inertia</h2>
+<h3 id="front"><span class="section-num">2.1</span> Front</h3>
+<p><b>Find $M$ and $N$ equals the polar moment of inertia</b></p>
+<ul>
+<li>\({\displaystyle \oint_C M \dd{x} + N \dd{y}}\)</li>
+<li>Density: uniform</li>
+<li>Region in the plane boundary \(C\)</li>
+</ul>
+<h3 id="back"><span class="section-num">2.2</span> Back</h3>
+<ul>
+<li>Let \(R\) be the region enclosed by \(C\) and \(\phi\) be the uniform
+density of \(R\)</li>
+<li>Polar moment of inertia: \({\displaystyle \iint_R \dd{I} = \iint_R
+r^2 \dd{m} = \iint_R (x^2 + y^2) \phi \dd{A}}\)</li>
+</ul>
+<p>Using the Green&rsquo;s Theorem, we need that \(N_x - M_y = \delta x^2 + \delta
+y^2\). Choosing the simplest choice \(N_x = \delta y^2\) and \(M_y = -\delta
+x^2\). So, this leads to \(N = \delta xy^2\) and \(M = -\delta yx^2\)</p>
+<p>\({\displaystyle \oint_C -\delta x^2 y \dd{x} + \delta x y^2 \dd{y}}\)</p>
+<h2 id="what-is-a-flux"><span class="section-num">3</span> What is a flux?</h2>
+<h3 id="front"><span class="section-num">3.1</span> Front</h3>
+<p><b>What is a flux?</b></p>
+<p>Let \(\vb{F}\) be a vector field and \(C\) a path</p>
+<h3 id="back"><span class="section-num">3.2</span> Back</h3>
+<p>It&rsquo;s another line integral, it&rsquo;s called Flux of \(\vb{F}\) across \(C\)</p>
+<p>\({\displaystyle \int_C \vb{F} \cdot \vu{n} \dd{s}}\)</p>
+<h2 id="how-can-we-get-the-normal-vector-to-a-path--c"><span class="section-num">4</span> How can we get the normal vector to a path \(C\)</h2>
+<h3 id="front"><span class="section-num">4.1</span> Front</h3>
+<p><b>How can we get the normal vector to a path $C$</b></p>
+<p>Let \(C = r(t)\)</p>
+<h3 id="back"><span class="section-num">4.2</span> Back</h3>
+<p>\(\vu{n}\) is \(90\) degrees clockwise from \(\vu{T}\)</p>
+<p>\(\Delta \vb{r} = \ev{\Delta x, \Delta y} = \vu{T} \Delta s\)</p>
+<p>\(\vu{n} \Delta s = \ev{\Delta y, - \Delta x}\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/00/dfeef6-8d6f-4c65-b52e-983093d58251/_20200917_122719kKVfG6G.png"/> 
+</figure>
+
+<figure>
+    <img src="https://ppalazon.github.io/00/dfeef6-8d6f-4c65-b52e-983093d58251/_20200917_1227233faHkBv.png"/> 
+</figure>
+
+<p>This direction is opposite to the one customarily used in kinematics
+where \(\vb{t}\) and \(\vb{n}\) form a right-handed coordinate system for
+motion along \(C\)</p>
+<h2 id="what-is-the-interpretation-of-flux-of--vb-f----velocity-field"><span class="section-num">5</span> What is the interpretation of Flux of \(\vb{F}\) (Velocity field)</h2>
+<h3 id="front"><span class="section-num">5.1</span> Front</h3>
+<p><b>What is the interpretation of Flux of $\vb{F}$ (Velocity field)</b></p>
+<p>Across curve \(C\), two-dimensional flow field</p>
+<h3 id="back"><span class="section-num">5.2</span> Back</h3>
+<p>Flux measures how much fluid passes through curve \(C\) per unit time</p>
+<figure>
+    <img src="https://ppalazon.github.io/00/dfeef6-8d6f-4c65-b52e-983093d58251/_20200917_122814lafeHLI.png"/> 
+</figure>
+
+<h2 id="what-is-the-equation-of-flux--vb-f--across--c"><span class="section-num">6</span> What is the equation of flux \(\vb{F}\) across \(C\)?</h2>
+<h3 id="front"><span class="section-num">6.1</span> Front</h3>
+<p><b>What is the equation of flux $\vb{F}$ across $C$?</b></p>
+<p>In symbols and notation of differentials. Where \(x(t)\), \(y(t)\) is any
+parametrization of \(C\)</p>
+<h3 id="back"><span class="section-num">6.2</span> Back</h3>
+<p>\(\vu{n} \dd{s} = \dd{y} \vu{i} - \dd{x} \vu{j}\)</p>
+<p>\({\displaystyle \int_C \vb{F} \cdot \vu{n} \dd{s} = \int_C M \dd{y} -
+N \dd{x} = \int_C \biggl( M \dv{y}{t} - N \dv{x}{t} \biggr) \dd{t}}\)</p>
+<h2 id="which-is-the-natural-physics-interpretation-for-flux"><span class="section-num">7</span> Which is the natural physics interpretation for flux?</h2>
+<h3 id="front"><span class="section-num">7.1</span> Front</h3>
+<p><b>Which is the natural physics interpretation for flux?</b></p>
+<p>Where \(\vb{F}\) as representing a two-dimensional flow field</p>
+<h3 id="back"><span class="section-num">7.2</span> Back</h3>
+<p>The line integral represents the rate with respect to time at which
+mass is being transported across \(C\)</p>
+<h2 id="which-is-the-convention-for-positive-and-negative-flux"><span class="section-num">8</span> Which is the convention for positive and negative flux</h2>
+<h3 id="front"><span class="section-num">8.1</span> Front</h3>
+<p><b>Which is the convention for positive and negative flux</b></p>
+<p>\(\vb{F}\) is two-dimensional flow field</p>
+<h3 id="back"><span class="section-num">8.2</span> Back</h3>
+<p>If we think of the flow as taking place in a shallow tank of unit
+depth. The convention about \(\vb{n}\) makes this mass-transport rate
+positive if the flow is from left to right as you face in the positive
+direction of \(C\), and negative in the other case</p>
+<h2 id="how-can-we-express-the-mass-transport-rate-across--c--in-a-vector-field--vb-f"><span class="section-num">9</span> How can we express the mass-transport rate across \(C\) in a vector field \(\vb{F}\)?</h2>
+<h3 id="front"><span class="section-num">9.1</span> Front</h3>
+<p><strong>How can we express the mass-transport rate across \(C\) in a vector
+field \(\vb{F}\)?</strong></p>
+<p>Let \(\vb{F}\) a constant vector field representing a flow, and \(C\) is a
+directed line segment of length \(L\)</p>
+<h3 id="back"><span class="section-num">9.2</span> Back</h3>
+<p><strong>How can we express the mass-transport rate across \(C\) in a vector
+field \(\vb{F}\)?</strong></p>
+<figure>
+    <img src="https://ppalazon.github.io/00/dfeef6-8d6f-4c65-b52e-983093d58251/_20200917_122822A3m4RYo.png"/> 
+</figure>
+
+<p>Using \(C'\), mass-transport rate across \({\displaystyle C' =
+\abs{\vb{F}} (L \cos \theta) = (\vb{F} \cdot \vu{n}) L}\)</p>
+
+</div>
+
+
+            <footer>
+    
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-3c%2fsession-69%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Session%2069%3a%20Flux%20in%202D&amp;url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-3c%2fsession-69%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-3c%2fsession-69%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-3c%2fsession-69%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-3c%2fsession-69%2f&amp;title=Session%2069%3a%20Flux%20in%202D" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Session%2069%3a%20Flux%20in%202D&amp;body=Check out this site https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-3c%2fsession-69%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+
+<nav>
+    <ul class="pager">
+    
+    <li class="previous">
+        <a href="https://ppalazon.github.io/18.02/part-3c/session-68/" title="Session 68: Planimeter: Green&#39;s Theorem and Area">
+            <span aria-hidden="true">&larr;</span>Session 68: Planimeter: Green&#39;s Theorem and Area
+        </a>
+    </li>
+    
+
+    
+    <li class="next">
+        <a href="https://ppalazon.github.io/18.02/part-3c/session-70/" title="Session 70: Normal Form of Green&#39;s Theorem">
+            Session 70: Normal Form of Green&#39;s Theorem <span aria-hidden="true">&rarr;</span>
+        </a>
+    </li>
+    
+    </ul>
+</nav>
+
+
+
+</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//ppalazon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+        </div>
+    </div>
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.02/">18.02 Multivariable Calculus</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.02/part-3c/">3C: Green&#39;s Theorem</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.02/part-3c/session-69/">Session 69: Flux in 2D</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

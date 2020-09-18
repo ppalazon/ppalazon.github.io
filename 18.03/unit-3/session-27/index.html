@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Laplace Transform: Basics  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="ode, maths, ">
+
+
+<meta property="og:title" content="Laplace Transform: Basics  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.03/unit-3/session-27/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="content-source" content="18.03/unit-3/session-27.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Captured On [2019-12-30 Mon 17:43] Source Laplace Transform: Basics | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the definition of Laplace Transform? 1.1 Front What is the definition of Laplace Transform?
+1.2 Back The Laplace transform of a function \(f(t)\) of a real variable \(t\) is another function depending on a new variable \(s\), which is in general complex."/>
+<meta property="og:article:published_time" content="2019-11-26T00:00:00&#43;01:00" />
+<meta property="og:article:modified_time" content="2019-11-26T00:00:00&#43;01:00" />
+
+
+
+<meta property="og:article:tag" content="ode">
+
+<meta property="og:article:tag" content="maths">
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ppalazon" />
+<meta name="twitter:creator" content="@ppalazon" />
+<meta name="twitter:title" content="Laplace Transform: Basics" />
+<meta name="twitter:description" content="Captured On [2019-12-30 Mon 17:43] Source Laplace Transform: Basics | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the definition of Laplace Transform? 1.1 Front What is the definition of Laplace Transform?
+1.2 Back The Laplace transform of a function \(f(t)\) of a real variable \(t\) is another function depending on a new variable \(s\), which is in general complex."/>
+<meta name="twitter:url" content="https://ppalazon.github.io/18.03/unit-3/session-27/" />
+<meta name="twitter:domain" content="https://ppalazon.github.io">
+
+
+
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+     "@type": "Article",
+     "headline": "Laplace Transform: Basics",
+     "author": {
+         "@type": "Person",
+         "name": "http://profiles.google.com/+?rel=author"
+     },
+     "datePublished": "2019-11-26",
+     "description": "",
+     "wordCount":  2545 
+ }
+</script>
+
+
+
+<link rel="canonical" href="https://ppalazon.github.io/18.03/unit-3/session-27/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+ }
+ .hero {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: calc(200px + (450 - 200) * ((100vw - 300px) / (1600 - 300)));
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: calc(-1 * (200px + (450 - 200) * ((100vw - 300px) / (1600 - 300))));
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+    <header class="container hat">
+        <h1>Laplace Transform: Basics
+</h1>
+
+        
+
+
+<span class="author">by
+    
+    MIT OCW, Pablo Palazon
+    
+</span>
+
+
+    </header>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            
+            <div class="content">
+  <dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2019-12-30 Mon 17:43]</span></span></dd>
+<dt>Source</dt>
+<dd><a href="https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-iii-fourier-series-and-laplace-transform/laplace-transform-basics/">Laplace Transform: Basics | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare</a></dd>
+</dl>
+<h2 id="what-is-the-definition-of-laplace-transform"><span class="section-num">1</span> What is the definition of Laplace Transform?</h2>
+<h3 id="front"><span class="section-num">1.1</span> Front</h3>
+<p><b>What is the definition of Laplace Transform?</b></p>
+<h3 id="back"><span class="section-num">1.2</span> Back</h3>
+<p>The Laplace transform of a function \(f(t)\) of a real variable \(t\) is another
+function depending on a new variable \(s\), which is in general complex.</p>
+<p>We denote the Laplace transform of \(f\) by \(\mathcal{L}f\)</p>
+<p>\({\displaystyle (\mathcal{L}f)(s) = \int_{0^-}^{\infty} f(t) e^{-st} \dd{t}}\)</p>
+<p>for all values of \(s\) for which the integral converge.</p>
+<ul>
+<li>\(\mathcal{L}f\) is only defined for those values of \(s\) for which the improper
+integral converges</li>
+<li>\(s\) could be complex</li>
+<li>Under lower limit \(0^-\) is necessary for accommodate generalized functions
+which contains \(\delta(t)\)</li>
+<li>\(\mathcal{L}f\) is only concerned with functions on \((0^-, \infty)\)</li>
+</ul>
+<h2 id="for-which-values-of--s--is-defined-the-laplace-transform"><span class="section-num">2</span> For which values of \(s\) is defined the Laplace Transform?</h2>
+<h3 id="front"><span class="section-num">2.1</span> Front</h3>
+<p><b>For which values of $s$ is defined the Laplace Transform?</b></p>
+<p>\(\mathcal{L}f\)</p>
+<h3 id="back"><span class="section-num">2.2</span> Back</h3>
+<p>Is only defined for those values of \(s\) for which the improper integral
+\({\displaystyle \int_{0^-}^{\infty} f(t) e^{-st} \dd{t}}\) converges</p>
+<h2 id="could-we-use-complex-number-in-the-new-variable--s--of-the-laplace-transform"><span class="section-num">3</span> Could we use complex number in the new variable \(s\) of the Laplace Transform?</h2>
+<h3 id="front"><span class="section-num">3.1</span> Front</h3>
+<p><b>Could we use complex number in the new variable $s$ of the Laplace Transform?</b></p>
+<h3 id="back"><span class="section-num">3.2</span> Back</h3>
+<p>Yes, it&rsquo;s allowed</p>
+<h2 id="why-do-we-need-the-lower-limit--0--in-the-integral-of-laplace-transform"><span class="section-num">4</span> Why do we need the lower limit \(0^{-}\) in the integral of Laplace Transform?</h2>
+<h3 id="front"><span class="section-num">4.1</span> Front</h3>
+<p><b>Why do we need the lower limit $0^{-}$ in the integral of Laplace Transform?</b></p>
+<h3 id="back"><span class="section-num">4.2</span> Back</h3>
+<p>Because it necessary to accommodate generalized functions which contains
+\(\delta(t)\)</p>
+<h2 id="on-which-interval-are-defined-the-laplace-transform-functions"><span class="section-num">5</span> On which interval are defined the Laplace Transform functions?</h2>
+<h3 id="front"><span class="section-num">5.1</span> Front</h3>
+<p><b>On which interval are defined the Laplace Transform functions?</b></p>
+<h3 id="back"><span class="section-num">5.2</span> Back</h3>
+<p>\((0^-, \infty)\)</p>
+<h2 id="how-do-we-understood-the-meaning-of--fs---in-this-formula"><span class="section-num">6</span> How do we understood the meaning of \(F(s)\) in this formula?</h2>
+<h3 id="front"><span class="section-num">6.1</span> Front</h3>
+<p><b>How do we understood the meaning of $F(s)$ in this formula?</b></p>
+<p>\(\mathcal{L}(f') = sF(s) - f(0^-)\)</p>
+<h3 id="back"><span class="section-num">6.2</span> Back</h3>
+<p>\(F(s) = \mathcal{L}(f) = (\mathcal{L}f)(s)\)</p>
+<h2 id="which-is-the-notation-for-write-the-laplace-transform-of--t-2"><span class="section-num">7</span> Which is the notation for write the Laplace transform of \(t^{2}\)?</h2>
+<h3 id="front"><span class="section-num">7.1</span> Front</h3>
+<p><b>Which is the notation for write the Laplace transform of $t^{2}$?</b></p>
+<h3 id="back"><span class="section-num">7.2</span> Back</h3>
+<p>\(\mathcal{L}(t^{2})(s) = \mathcal{L}(t^2)\)</p>
+<h2 id="if--ft--t-2--what-are-the-notation-for-write-its-laplace-transform"><span class="section-num">8</span> If \(f(t) = t^{2}\), what are the notation for write its Laplace Transform?</h2>
+<h3 id="front"><span class="section-num">8.1</span> Front</h3>
+<p><b>If $f(t) = t^{2}$, what are the notation for write its Laplace Transform?</b></p>
+<h3 id="back"><span class="section-num">8.2</span> Back</h3>
+<ul>
+<li>\((\mathcal{L}f)(s)\)</li>
+<li>\(F(s)\)</li>
+<li>\(\mathcal{L}f(s)\)</li>
+<li>\(\mathcal{L}(f(t))(s)\)</li>
+<li>\(\mathcal{L}(t^2)(s)\)</li>
+<li>\(\mathcal{L}f\)</li>
+<li>\(F\)</li>
+<li>\(\mathcal{L}(t^2)\)</li>
+</ul>
+<h2 id="let--ft--1--find--fs"><span class="section-num">9</span> Let \(f(t)=1\), find \(F(s)\)</h2>
+<h3 id="front"><span class="section-num">9.1</span> Front</h3>
+<p><b>Let $f(t)=1$, find $F(s)$</b></p>
+<p>Using the definition of Laplace Transform</p>
+<h3 id="back"><span class="section-num">9.2</span> Back</h3>
+<p>\({\displaystyle \mathcal{L}(1) = F(s) = \int_0^{\infty} e^{-st} \dd{t} = \lim_{T
+\to \infty} \frac{e^{-st}}{-s} \bigg|_0^T = \lim_{T \to \infty} \frac{e^{-sT} -
+1}{-s}}\)</p>
+<p>The limit depends on whether \(s\) is positive or negative</p>
+<p>\({\displaystyle \lim_{T \to \infty} e^{-sT} = \begin{cases}
+0 &amp;\text{for } s \gt 0 \\\<br>
+\infty &amp;\text{for } s \lt 0
+\end{cases}
+}\)</p>
+<p>Therefore</p>
+<p>\({\displaystyle \mathcal{L}(1) = F(s) = \begin{cases}
+\frac{1}{s} &amp;\text{for } s \gt 0 \\\<br>
+\text{diverges } &amp;\text{for } s \leq 0
+\end{cases}
+}\)</p>
+<h2 id="compute-this-laplace-transform"><span class="section-num">10</span> Compute this Laplace Transform</h2>
+<h3 id="front"><span class="section-num">10.1</span> Front</h3>
+<p><b>Compute this Laplace Transform</b></p>
+<p>\(\mathcal{L}(e^{at})\) using the definition of Laplace Transform</p>
+<h3 id="back"><span class="section-num">10.2</span> Back</h3>
+<p>\({\displaystyle \mathcal{L}(e^{at}) = \int_0^{\infty} e^{at} e^{-st} \dd{t} =
+\lim_{T \to \infty} \frac{e^{(a - s)t}}{a - s} \bigg|_0^T = \lim_{T \to \infty}
+\frac{e^{(a - s)T} - 1}{a - s}}\)</p>
+<p>The limit depends on whether \(s \gt a\) or \(s \lt a\)</p>
+<p>\({\displaystyle \lim_{T \to \infty} e^{(a -s)T} = \begin{cases}
+0 &amp;\text{if } s \gt a \\\<br>
+\infty &amp;\text{if } s \lt a
+\end{cases}
+}\)</p>
+<p>Therefore</p>
+<p>\({\displaystyle \mathcal{L}(e^{at}) = \begin{cases}
+\frac{1}{s - a} &amp;\text{if } s \gt a \\\<br>
+\text{diverges } &amp;\text{if } s \leq a
+\end{cases}
+}\)</p>
+<h2 id="are-the-laplace-transform-linear"><span class="section-num">11</span> Are the Laplace Transform linear?</h2>
+<h3 id="front"><span class="section-num">11.1</span> Front</h3>
+<p><b>Are the Laplace Transform linear?</b></p>
+<p>\(\mathcal{L}(c_1 f + c_2 g)\)</p>
+<h3 id="back"><span class="section-num">11.2</span> Back</h3>
+<p>\(c_1 \mathcal{L}(f) + c_2 \mathcal{L}(g)\)</p>
+<h2 id="what-is-the-laplace-transform-for--ft--1--by-heart"><span class="section-num">12</span> What is the Laplace Transform for \(f(t) = 1\) by heart?</h2>
+<h3 id="front"><span class="section-num">12.1</span> Front</h3>
+<p><b>What is the Laplace Transform for $f(t) = 1$ by heart?</b></p>
+<h3 id="back"><span class="section-num">12.2</span> Back</h3>
+<p>\({\displaystyle F(s) = \frac{1}{s}}\) for \(s \gt 0\)</p>
+<h2 id="what-is-the-laplace-transform-for--ft--e-at--by-heart"><span class="section-num">13</span> What is the Laplace Transform for \(f(t) = e^{at}\) by heart?</h2>
+<h3 id="front"><span class="section-num">13.1</span> Front</h3>
+<p><b>What is the Laplace Transform for $f(t) = e^{at}$ by heart?</b></p>
+<h3 id="back"><span class="section-num">13.2</span> Back</h3>
+<p>\({\displaystyle F(s) = \frac{1}{s - a}}\) for \(\operatorname{Re}(s - a) \gt 0\)</p>
+<h2 id="show-that-the-laplace-transform-of--e-at-ft--f--s-a"><span class="section-num">14</span> Show that the Laplace Transform of \(e^{at}f(t) = F(s - a)\)</h2>
+<h3 id="front"><span class="section-num">14.1</span> Front</h3>
+<p><b>Show that the Laplace Transform of $e^{at}f(t) = F(s - a)$</b></p>
+<h3 id="back"><span class="section-num">14.2</span> Back</h3>
+<p>\({\displaystyle \mathcal{L}(e^{at} f(t)) = \int_0^\infty e^{at} f(t) e^{-st}
+\dd{t} = \int_0^{\infty} f(t) e^{-(s - a)t} \dd{t} = F(s - a)}\)</p>
+<p>That is the definition of Laplace Transform which variable is \(s - a\), valid for
+\(s \gt a\)</p>
+<p>That&rsquo;s is called <strong>exponential shift</strong></p>
+<h2 id="what-is-the-region-on-convergence-of-the-laplace-transform"><span class="section-num">15</span> What is the region on convergence of the Laplace Transform?</h2>
+<h3 id="front"><span class="section-num">15.1</span> Front</h3>
+<p><b>What is the region on convergence of the Laplace Transform?</b></p>
+<h3 id="back"><span class="section-num">15.2</span> Back</h3>
+<p>It&rsquo;s the complex region where the Laplace Transform is defined</p>
+<figure>
+    <img src="https://ppalazon.github.io/25/e170b1-6d8e-4053-a893-7fbba9503e0b/_20200916_224516QrbeGIc.png"/> 
+</figure>
+
+<h2 id="compute-laplace-transform-of--ft--1--for-complex--s"><span class="section-num">16</span> Compute Laplace Transform of \(f(t) = 1\) for complex \(s\)</h2>
+<h3 id="front"><span class="section-num">16.1</span> Front</h3>
+<p><b>Compute Laplace Transform of $f(t) = 1$ for complex $s$</b></p>
+<p>Let \(s = \alpha + i \beta\)</p>
+<h3 id="back"><span class="section-num">16.2</span> Back</h3>
+<p>\({\displaystyle \mathcal{L}(1)(s) = \int_0^{\infty} e^{-st} \dd{t} = \lim_{T \to
+\infty} \frac{e^{-st}}{-s} \bigg|_0^T = \lim_{T \to \infty} \frac{e^{-\alpha
+t}(\cos(\beta t) + i \sin(\beta t))}{-s} \bigg|_0^T}\)</p>
+<p>This converges if \(\alpha \gt 0\) and diverges if \(\alpha \lt 0\). Since \(\alpha =
+\operatorname{Re}(s)\) we have \(\mathcal{L}(1) = 1/s\) for \(\operatorname{Re}(s)
+\gt 0\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/25/e170b1-6d8e-4053-a893-7fbba9503e0b/_20200916_224525QrbeGIc.png"/> 
+</figure>
+
+<h2 id="what-does-mean-that-the-laplace-transform-is-defined-under-the-frequency-view"><span class="section-num">17</span> What does mean that the Laplace Transform is defined under the frequency view?</h2>
+<h3 id="front"><span class="section-num">17.1</span> Front</h3>
+<p><b>What does mean that the Laplace Transform is defined under the frequency view?</b></p>
+<h3 id="back"><span class="section-num">17.2</span> Back</h3>
+<p>The Laplace Transform variable \(s\) can be thought of as complex frequency. The
+Euler&rsquo;s formula says \(e^{i\omega t} = \cos(\omega t) + i \sin(\omega t)\) and we
+call \(\omega\) the angular frequency.</p>
+<p>By analogy for any complex number exponent we call \(s\) the complex frequency in
+\(e^{st}\). If \(s = a + i \omega\) then \(s\) is the complex frequency and its
+imaginary part \(\omega\) is an actual frequency of a sinusoidal oscillation</p>
+<h2 id="are-there-a-laplace-transform-if-its-improper-integral-fails-to-converge"><span class="section-num">18</span> Are there a Laplace Transform if its improper integral fails to converge?</h2>
+<h3 id="front"><span class="section-num">18.1</span> Front</h3>
+<p><b>Are there a Laplace Transform if its improper integral fails to converge?</b></p>
+<h3 id="back"><span class="section-num">18.2</span> Back</h3>
+<p>No, if the integral doesn&rsquo;t converge for any \(s\) then the function does not have
+a Laplace transform.</p>
+<p>For example, \({\displaystyle f(t) = e^{t^2}}\)</p>
+<h2 id="when-can-we-say-that-a-function-is-of-exponential-order"><span class="section-num">19</span> When can we say that a function is of exponential order?</h2>
+<h3 id="front"><span class="section-num">19.1</span> Front</h3>
+<p><b>When can we say that a function is of exponential order?</b></p>
+<h3 id="back"><span class="section-num">19.2</span> Back</h3>
+<p>A function said to be of <strong>exponential order</strong> if there are numbers \(a\) and \(M\)
+such that \(\abs{f(t)} \lt Me^{at}\) for all \(t\). In this case, we say that \(f\)
+has exponential order \(a\)</p>
+<h2 id="which-functions-has-exponential-order--0"><span class="section-num">20</span> Which functions has exponential order \(0\)?</h2>
+<h3 id="front"><span class="section-num">20.1</span> Front</h3>
+<p><b>Which functions has exponential order $0$?</b></p>
+<h3 id="back"><span class="section-num">20.2</span> Back</h3>
+<ul>
+<li>\(1\)</li>
+<li>\(\cos(\omega t)\)</li>
+<li>\(\sin(\omega t)\)</li>
+</ul>
+<h2 id="which-functions-has-exponential-order--a"><span class="section-num">21</span> Which functions has exponential order \(a\)?</h2>
+<h3 id="front"><span class="section-num">21.1</span> Front</h3>
+<p><b>Which functions has exponential order $a$?</b></p>
+<h3 id="back"><span class="section-num">21.2</span> Back</h3>
+<p>\(e^{at}\)</p>
+<h2 id="what-is-a-piecewise-continuous-function"><span class="section-num">22</span> What is a piecewise continuous function?</h2>
+<h3 id="front"><span class="section-num">22.1</span> Front</h3>
+<p><b>What is a piecewise continuous function?</b></p>
+<p>\(f(t)\)</p>
+<h3 id="back"><span class="section-num">22.2</span> Back</h3>
+<p>\(f(t)\) is a piecewise continuous function if it is continuous everywhere except
+at a finite number of points in any finite interval and it at these points it
+has a jump discontinuity (i.e. a jump of finite height)</p>
+<p>Example: The square wave is a piecewise continuous</p>
+<h2 id="is-the-square-wave-a-piecewise-continuous-function"><span class="section-num">23</span> Is the square wave a piecewise continuous function?</h2>
+<h3 id="front"><span class="section-num">23.1</span> Front</h3>
+<p><b>Is the square wave a piecewise continuous function?</b></p>
+<h3 id="back"><span class="section-num">23.2</span> Back</h3>
+<p>Yes, it&rsquo;s</p>
+<h2 id="what-can-we-say-about-the-laplace-transform-of-this-function"><span class="section-num">24</span> What can we say about the Laplace transform of this function?</h2>
+<h3 id="front"><span class="section-num">24.1</span> Front</h3>
+<p><b>What can we say about the Laplace transform of this function?</b></p>
+<p>\(f(t)\) is a piecewise continuous function and of exponential order \(a\)</p>
+<h3 id="back"><span class="section-num">24.2</span> Back</h3>
+<p>We can say that the Laplace transform \(\mathcal{L}f(s)\) converges for all \(s\)
+with \(\operatorname{Re}(s) \gt a\)</p>
+<h2 id="what-is-the-value-of-this-expression"><span class="section-num">25</span> What is the value of this expression?</h2>
+<h3 id="front"><span class="section-num">25.1</span> Front</h3>
+<p><b>What is the value of this expression?</b></p>
+<p>\(\abs{e^{-ibt}}\)</p>
+<h3 id="back"><span class="section-num">25.2</span> Back</h3>
+<p>\(1\)</p>
+<h2 id="for-which-values-of--alpha--converges-this-improper-integral"><span class="section-num">26</span> For which values of \(\alpha\) converges this improper integral?</h2>
+<h3 id="front"><span class="section-num">26.1</span> Front</h3>
+<p><b>For which values of $\alpha$ converges this improper integral?</b></p>
+<p>\({\displaystyle \int_0^{\infty} M e^{-\alpha t} \dd{t}}\)</p>
+<h3 id="back"><span class="section-num">26.2</span> Back</h3>
+<p>Converges for \(\alpha \gt 0\)</p>
+<h2 id="could-we-extend-the-domain-of--fs--1-s"><span class="section-num">27</span> Could we extend the domain of \(F(s) = 1/s\)?</h2>
+<h3 id="front"><span class="section-num">27.1</span> Front</h3>
+<p><b>Could we extend the domain of $F(s) = 1/s$?</b></p>
+<p>For \(f(t)\) we have \(F(s) = 1/s\) with region of convergence \(\operatorname{Re}(s)
+\gt 0\)</p>
+<h3 id="back"><span class="section-num">27.2</span> Back</h3>
+<p>The function \(1/s\) is well defined for all \(s \neq 0\), so you can extend the
+domain of \(F(s)\) from the region of convergence by the process <strong>analytic
+continuation</strong></p>
+<p>In this class analytic continuation will always consist of extending \(F(s)\) to
+the complex plane minus the zeros of the denominator.</p>
+<h2 id="what-is-the-exponential-order-of--t-n"><span class="section-num">28</span> What is the exponential order of \(t^{n}\)?</h2>
+<h3 id="front"><span class="section-num">28.1</span> Front</h3>
+<p><b>What is the exponential order of $t^{n}$?</b></p>
+<h3 id="back"><span class="section-num">28.2</span> Back</h3>
+<p>\(t^n \leq M e^t\), with \(a = 1\) is enough</p>
+<p>\(t^{n}\) is a 1 exponential type</p>
+<p>Proof:</p>
+<p>\({\displaystyle \frac{t^n}{e^t} \leq M}\) for some \(M\)</p>
+<p>\({\displaystyle \lim_{t \to \infty} \frac{t^n}{e^t} = 0}\) by L&rsquo;Hop rule for \(n\)
+times, the denominator always will keep \(e^t\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/25/e170b1-6d8e-4053-a893-7fbba9503e0b/_20200916_2245338lXNTf0.png"/> 
+</figure>
+
+<p>where \(M\) is the maximum point</p>
+<h2 id="write-several-examples-of-function-that-are-not-exponential-type"><span class="section-num">29</span> Write several examples of function that are not exponential type?</h2>
+<h3 id="front"><span class="section-num">29.1</span> Front</h3>
+<p><b>Write several examples of function that are not exponential type?</b></p>
+<h3 id="back"><span class="section-num">29.2</span> Back</h3>
+<ul>
+<li>\({\displaystyle \frac{1}{t}}\)</li>
+<li>\({\displaystyle e^{t^2}}\) it grows to rapidly \(e^{t^2} \gt e^{kt}\) not matters
+which \(k\) you choose</li>
+</ul>
+<h2 id="has--1-t--a-laplace-transform"><span class="section-num">30</span> Has \(1/t\) a Laplace transform?</h2>
+<h3 id="front"><span class="section-num">30.1</span> Front</h3>
+<p><b>Has $1/t$ a Laplace transform?</b></p>
+<h3 id="back"><span class="section-num">30.2</span> Back</h3>
+<p>No because it not a exponential type function</p>
+<h2 id="compute-the-laplace-transform-of--cos--and--sin"><span class="section-num">31</span> Compute the Laplace transform of \(\cos\) and \(\sin\)</h2>
+<h3 id="front"><span class="section-num">31.1</span> Front</h3>
+<p><b>Compute the Laplace transform of $\cos$ and $\sin$</b></p>
+<ul>
+<li>\(\mathcal{L}(\sin(\omega t))\)</li>
+<li>\(\mathcal{L}(\cos(\omega t))\)</li>
+</ul>
+<p>Tip: \(\mathcal{L}(e^{a t}) = \frac{1}{s - a}\) for \(s \gt a\)</p>
+<h3 id="back"><span class="section-num">31.2</span> Back</h3>
+<p>Using the Laplace transform of \(e^{at}\) and Euler&rsquo;s formula for the complex
+exponential</p>
+<p>\({\displaystyle \mathcal{L}(\cos(\omega t) + i \sin(\omega t)) =
+\mathcal{L}(e^{i \omega t}) = \frac{1}{s - i\omega} = \frac{1}{s - i\omega}
+\cdot \frac{s + i\omega}{s + i \omega} = \frac{s + i\omega}{s^2 + \omega^2}}\)</p>
+<p>Taking the real and imaginary parts given us the formula</p>
+<ul>
+<li>\({\displaystyle \mathcal{L}(\cos(\omega t)) =
+\operatorname{Re}(\mathcal{L}(e^{i \omega t})) = \frac{s}{s^2 + \omega^2}}\)</li>
+<li>\({\displaystyle \mathcal{L}(\sin(\omega t)) =
+\operatorname{Im}(\mathcal{L}(e^{i \omega t})) = \frac{\omega}{s^2 +
+\omega^2}}\)</li>
+</ul>
+<p>The region of convergence follow from the fact that \(\cos(\omega t)\) and
+\(\sin(\omega t)\) both have exponential order \(0\)</p>
+<h2 id="compute-the-laplace-transform-of--t-n"><span class="section-num">32</span> Compute the Laplace transform of \(t^{n}\)</h2>
+<h3 id="front"><span class="section-num">32.1</span> Front</h3>
+<p><b>Compute the Laplace transform of $t^{n}$</b></p>
+<p>For a positive integer, \(n\)</p>
+<h3 id="back"><span class="section-num">32.2</span> Back</h3>
+<p>\({\displaystyle \mathcal{L}(t^n) = \int_0^{\infty} t^n e^{-st} \dd{t}}\)</p>
+<p>Integrating by parts, where</p>
+<ul>
+<li>\({\displaystyle u = t^n}\), \({\displaystyle \dd{u} = n t^{n-1} \dd{t}}\)</li>
+<li>\({\displaystyle \dd{v} = e^{-st} \dd{t}}\), \({\displaystyle v =
+\frac{e^{-st}}{-s}}\)</li>
+</ul>
+<p>\({\displaystyle \mathcal{L}(t^n) = \frac{t^n e^{-st}}{-s} \bigg|_0^{\infty} -
+\int_0^{\infty} \frac{n t^{n-1} e^{-st}}{-s} \dd{t}}\)</p>
+<p>The evaluation of \({\displaystyle \frac{t^n e^{-st}}{-s} \bigg|_0^{\infty} = 0 -
+0 = 0}\) for \(s &gt; 0\)</p>
+<ul>
+<li>\({\displaystyle \frac{1}{-s} \lim_{t \to \infty} \frac{t^n}{e^{st}} = 0}\), for
+\(s &gt; 0\), but diverges when \(s &lt; 0\)</li>
+<li>\({\displaystyle \frac{0}{-s} = 0}\) for \(s &gt; 0\)</li>
+</ul>
+<p>Therefore</p>
+<p>\({\displaystyle \mathcal{L}(t^n) = \frac{1}{s} \int_0^{\infty} n t^{n-1} e^{-st}
+= \frac{n}{s} \mathcal{L}(t^{n-1})}\)</p>
+<p>Applying this pattern until reduction, we will get</p>
+<p>\({\displaystyle \mathcal{L}(t^n) = \frac{n!}{s^n} \mathcal{L}(t^0) =
+\frac{n!}{s^n} \mathcal{L}(1) = \frac{n!}{s^n} \frac{1}{s} =
+\frac{n!}{s^{n+1}}}\)</p>
+<h2 id="what-does-mean--fs-z"><span class="section-num">33</span> What does mean \(F(s - z)\)?</h2>
+<h3 id="front"><span class="section-num">33.1</span> Front</h3>
+<p><b>What does mean $F(s - z)$?</b></p>
+<p>\(z\) could be a complex number. Describe which is its convergence too.</p>
+<h3 id="back"><span class="section-num">33.2</span> Back</h3>
+<p>If the s-shift formula, where \(F(s) = \mathcal{L}(f(t))\)</p>
+<p>\(F(s - z) = \mathcal{L}(e^{zit} f(t))\), where \(z\) could be a complex number</p>
+<p>If the region of convergence for \(\mathcal{L}f\) is \(\operatorname{Re}(s) \gt a\)
+then the region of convergence for \(\mathcal{L}(e^{zt} f(t))\) is
+\(\operatorname{Re}(s) &gt; \operatorname{Re}(z) + a\)</p>
+<h2 id="what-is-the-laplace-transform-of--e-zt-cos-omega-t"><span class="section-num">34</span> What is the Laplace transform of \(e^{zt}\cos(\omega t)\)?</h2>
+<h3 id="front"><span class="section-num">34.1</span> Front</h3>
+<p><b>What is the Laplace transform of $e^{zt}\cos(\omega t)$?</b></p>
+<p>\({\displaystyle \mathcal{L}(e^{zt} \cos(\omega t))}\)</p>
+<h3 id="back"><span class="section-num">34.2</span> Back</h3>
+<p>\({\displaystyle \mathcal{L}(e^{zt} \cos(\omega t)) = \frac{s - z}{(s - z)^2 +
+\omega^2}}\)</p>
+<p>for \(\operatorname{Re}(s) \gt \operatorname{Re}(z)\)</p>
+<h2 id="what-is-the-laplace-transform-of--e-zt-sin-omega-t"><span class="section-num">35</span> What is the Laplace transform of \(e^{zt} \sin(\omega t)\)?</h2>
+<h3 id="front"><span class="section-num">35.1</span> Front</h3>
+<p><b>What is the Laplace transform of $e^{zt} \sin(\omega t)$?</b></p>
+<p>\({\displaystyle \mathcal{L}(e^{zt} \sin(\omega t))}\)</p>
+<h3 id="back"><span class="section-num">35.2</span> Back</h3>
+<p>\({\displaystyle \mathcal{L}(e^{zt} \sin(\omega t)) = \frac{\omega}{(s - z)^2 +
+\omega^2}}\)</p>
+<p>for \(\operatorname{Re}(s) \gt \operatorname{Re}(z)\)</p>
+<h2 id="what-is-the-laplace-transform-of--deltat"><span class="section-num">36</span> What is the Laplace transform of \(\delta(t)\)?</h2>
+<h3 id="front"><span class="section-num">36.1</span> Front</h3>
+<p><b>What is the Laplace transform of $\delta(t)$?</b></p>
+<p>\({\displaystyle \mathcal{L}\delta(t)}\)</p>
+<h3 id="back"><span class="section-num">36.2</span> Back</h3>
+<p>\({\displaystyle \mathcal{L}\delta(t) = \int_{0^-}^{\infty} \delta(t) e^{-st}
+\dd{t} = 1}\) for all \(s\)</p>
+<h2 id="what-is-the-laplace-transform-of--deltat-a"><span class="section-num">37</span> What is the Laplace transform of \(\delta(t - a)\)?</h2>
+<h3 id="front"><span class="section-num">37.1</span> Front</h3>
+<p><b>What is the Laplace transform of $\delta(t - a)$?</b></p>
+<p>\({\displaystyle \mathcal{L}(\delta(t - a))}\) for \(a &gt; 0\)</p>
+<h3 id="back"><span class="section-num">37.2</span> Back</h3>
+<p>\({\displaystyle \mathcal{L}(\delta(t - a)) = \int_{0^-}^{\infty} \delta(t -
+a)e^{-st} \dd{t} = e^{-as}}\) for the region of convergence all \(s\)</p>
+<p>If \(a = 0\), then we will get \(1\), otherwise the improper integral will not
+converge</p>
+<h2 id="what-is-the-laplace-transform-of--1-plus-t--2"><span class="section-num">38</span> What is the Laplace transform of \((1 + t)^{2}\)?</h2>
+<h3 id="front"><span class="section-num">38.1</span> Front</h3>
+<p><b>What is the Laplace transform of $(1 + t)^{2}$?</b></p>
+<p>\({\displaystyle \mathcal{L}(1 + t)^2}\)</p>
+<h3 id="back"><span class="section-num">38.2</span> Back</h3>
+<p>\({\displaystyle \mathcal{L}(1 + t)^2 = \frac{1}{s} + \frac{2}{s^2} +
+\frac{2!}{s^{3}}}\)</p>
+<h2 id="what-is-the-laplace-transform-of-this-expression"><span class="section-num">39</span> What is the Laplace transform of this expression?</h2>
+<h3 id="front"><span class="section-num">39.1</span> Front</h3>
+<p><b>What is the Laplace transform of this expression?</b></p>
+<p>\({\displaystyle \mathcal{L}(e^{-t}(t^2 + 1))}\)</p>
+<h3 id="back"><span class="section-num">39.2</span> Back</h3>
+<p>By linearity and the formulas, \({\displaystyle \mathcal{L}(t^2 + 1) =
+\frac{2}{s^3} + \frac{1}{s} = \frac{2 + s^2}{s^3}}\)</p>
+<p>By s-shift, \({\displaystyle \mathcal{L}(e^{-t} (t^2 + 1)) = \frac{2 + (s +
+1)^2}{(s+1)^3} = \frac{s^2 + 2s + 3}{(s + 1)^3}}\)</p>
+<h2 id="find-a-formula-for-the-laplace-transform--gt--f--at---in-terms-of--fs"><span class="section-num">40</span> Find a formula for the Laplace transform \(g(t) = f(at)\) in terms of \(F(s)\)</h2>
+<h3 id="front"><span class="section-num">40.1</span> Front</h3>
+<p><b>Find a formula for the Laplace transform $g(t) = f(at)$ in terms of $F(s)$</b></p>
+<p>Suppose that \(F(s)\) is the Laplace transform of \(f(t)\) and \(a \gt 0\)</p>
+<h3 id="back"><span class="section-num">40.2</span> Back</h3>
+<p>\({\displaystyle G(s) = \int_0^{\infty} f(at)e^{-st} \dd{t}}\) and \({\displaystyle
+F(s) = \int_0^{\infty} f(t)e^{-st} \dd{t}}\)</p>
+<p>Make the substitution \(u = at\), then \(\dd{u} = a \dd{t}\):</p>
+<p>\({\displaystyle G(s) = \int_0^{\infty} f(u) e^{-s u/a} \frac{\dd{u}}{a} =
+\frac{1}{a} \int_0^{\infty} f(u) e^{-(s/a)u} \dd{u} = \frac{1}{a}
+F(\frac{s}{a})}\)</p>
+<h2 id="show-that-if--ht--f--t--g--t---then--hs--f--s--g--s"><span class="section-num">41</span> Show that if \(h(t) = f(t) * g(t)\) then \(H(s) = F(s)G(s)\)</h2>
+<h3 id="front"><span class="section-num">41.1</span> Front</h3>
+<p><b>Show that if $h(t) = f(t) * g(t)$ then $H(s) = F(s)G(s)$</b></p>
+<p>Tip: \({\displaystyle F(s) = \int_0^{\infty} f(x)e^{-sx} \dd{x}}\) and
+\({\displaystyle G(s) = \int_0^{\infty} g(y) e^{-sy} \dd{y}}\); expressing the
+product as a double integral; and changing coordinates using \(x = t - \tau\), \(y
+= \tau\)</p>
+<h3 id="back"><span class="section-num">41.2</span> Back</h3>
+<p>\({\displaystyle F(s)G(s) = \int_0^{\infty} \int_0^{\infty} f(x) e^{-sx}
+g(y)e^{-sy} \dd{x} \dd{y} = \iint_R f(x) g(y) e^{-s(x+y)} \dd{x}\dd{y}}\)</p>
+<p>Where \(R\) is the first quadrant. We can use the substitution \(x = t -\tau\), \(y =
+\tau\). To convert to these coordinates, note that the Jacobian</p>
+<p>\({\displaystyle \begin{vmatrix} \pdv{x}{t} &amp; \pdv{x}{\tau} \ \pdv{y}{t} &amp;
+\pdv{y}{\tau} \end{vmatrix} = \begin{vmatrix} 1 &amp; -1 \ 0 &amp; 1 \end{vmatrix} = 1}\)</p>
+<p>For fixed \(t\), \(\tau\) ranges over numbers between \(0\) and \(t\), and \(t\) ranges over
+positive numbers. Since \(t = x + y\)</p>
+<p>\begin{align*}
+F(s)G(s) &amp;= \int_0^{\infty} \int_0^t f(t - \tau)g(\tau) e^{-st} \dd{\tau} \dd{\tau} \\\<br>
+&amp;= \int_0^{\infty} \biggl(\int_0^{\infty} f(t - \tau)g(\tau) \dd{\tau} \biggr) e^{-st} \dd{t} \\\<br>
+&amp;= \int_0^{\infty} (f(t) * g(t)) e^{-st} \dd{t} \\\<br>
+&amp;= \int_0^{\infty} h(t)e^{-st}\dd{t}\\\<br>
+&amp;= H(s)
+\end{align*}</p>
+<h2 id="using-the-integral-definition-find-the-laplace-transform-of-the--ft"><span class="section-num">42</span> Using the integral definition find the Laplace transform of the \(f(t)\)</h2>
+<h3 id="front"><span class="section-num">42.1</span> Front</h3>
+<p><b>Using the integral definition find the Laplace transform of the $f(t)$</b></p>
+<p>\({\displaystyle f(t) = \begin{cases}
+1 &amp;\text{for } 0 \lt t \lt 1 \\\<br>
+0 &amp;\text{for } t \gt 1
+\end{cases}
+}\)</p>
+<h3 id="back"><span class="section-num">42.2</span> Back</h3>
+<p>\({\displaystyle F(s) = \int_0^{\infty} f(t) e^{-st} \dd{t} = \int_0^1 1 e^{-st}
+\dd{t} + \int_1^{\infty} 0 e^{-st} \dd{t}}\)</p>
+<p>This improper integral converges for any \(s\); the region of convergence is the
+whole complex plane.</p>
+<p>\({\displaystyle F(s) = \frac{1}{-s}e^{-st} \bigg|_0^1 = \frac{1 - e^{-s}}{s}}\)</p>
+
+</div>
+
+
+            <footer>
+    
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-27%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Laplace%20Transform%3a%20Basics&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-27%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-27%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-27%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-27%2f&amp;title=Laplace%20Transform%3a%20Basics" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Laplace%20Transform%3a%20Basics&amp;body=Check out this site https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-27%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+
+<nav>
+    <ul class="pager">
+    
+    <li class="previous">
+        <a href="https://ppalazon.github.io/18.03/unit-3/session-26/" title="Convolution">
+            <span aria-hidden="true">&larr;</span>Convolution
+        </a>
+    </li>
+    
+
+    
+    <li class="next">
+        <a href="https://ppalazon.github.io/18.03/unit-3/session-28/" title="Partial Fractions and Inverse Laplace Transform">
+            Partial Fractions and Inverse Laplace Transform <span aria-hidden="true">&rarr;</span>
+        </a>
+    </li>
+    
+    </ul>
+</nav>
+
+
+
+</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//ppalazon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+        </div>
+    </div>
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/">18.03 Differential Equations</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/unit-3/">3: Fourier Series and Laplace Transform</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.03/unit-3/session-27/">Laplace Transform: Basics</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

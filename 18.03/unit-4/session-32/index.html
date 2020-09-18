@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Linear Systems  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="ode, maths, ">
+
+
+<meta property="og:title" content="Linear Systems  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.03/unit-4/session-32/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="content-source" content="18.03/unit-4/session-32.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Captured On [2020-01-21 Tue 13:07] Source Linear Systems | Unit IV First-order Systems | Differential Equations | Mathematics | MIT OpenCourseWare  1 Can we solve a linear system of ODE&amp;rsquo;s with constant coefficients by eliminating variables? 1.1 Front Can we solve a linear system of ODE&amp;rsquo;s with constant coefficients by eliminating variables?
+1.2 Back No, it&amp;rsquo;s a naive way to solve it. You need to use techniques of constant coefficient ODE methods."/>
+<meta property="og:article:published_time" content="2020-01-18T00:00:00&#43;01:00" />
+<meta property="og:article:modified_time" content="2020-01-18T00:00:00&#43;01:00" />
+
+
+
+<meta property="og:article:tag" content="ode">
+
+<meta property="og:article:tag" content="maths">
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ppalazon" />
+<meta name="twitter:creator" content="@ppalazon" />
+<meta name="twitter:title" content="Linear Systems" />
+<meta name="twitter:description" content="Captured On [2020-01-21 Tue 13:07] Source Linear Systems | Unit IV First-order Systems | Differential Equations | Mathematics | MIT OpenCourseWare  1 Can we solve a linear system of ODE&amp;rsquo;s with constant coefficients by eliminating variables? 1.1 Front Can we solve a linear system of ODE&amp;rsquo;s with constant coefficients by eliminating variables?
+1.2 Back No, it&amp;rsquo;s a naive way to solve it. You need to use techniques of constant coefficient ODE methods."/>
+<meta name="twitter:url" content="https://ppalazon.github.io/18.03/unit-4/session-32/" />
+<meta name="twitter:domain" content="https://ppalazon.github.io">
+
+
+
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+     "@type": "Article",
+     "headline": "Linear Systems",
+     "author": {
+         "@type": "Person",
+         "name": "http://profiles.google.com/+?rel=author"
+     },
+     "datePublished": "2020-01-18",
+     "description": "",
+     "wordCount":  1463 
+ }
+</script>
+
+
+
+<link rel="canonical" href="https://ppalazon.github.io/18.03/unit-4/session-32/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+ }
+ .hero {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: calc(200px + (450 - 200) * ((100vw - 300px) / (1600 - 300)));
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: calc(-1 * (200px + (450 - 200) * ((100vw - 300px) / (1600 - 300))));
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+    <header class="container hat">
+        <h1>Linear Systems
+</h1>
+
+        
+
+
+<span class="author">by
+    
+    MIT OCW, Pablo Palazon
+    
+</span>
+
+
+    </header>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            
+            <div class="content">
+  <dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2020-01-21 Tue 13:07]</span></span></dd>
+<dt>Source</dt>
+<dd><a href="https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-iv-first-order-systems/linear-systems-introduction/">Linear Systems | Unit IV First-order Systems | Differential Equations | Mathematics | MIT OpenCourseWare</a></dd>
+</dl>
+<h2 id="can-we-solve-a-linear-system-of-ode-s-with-constant-coefficients-by-eliminating-variables"><span class="section-num">1</span> Can we solve a linear system of ODE&rsquo;s with constant coefficients by eliminating variables?</h2>
+<h3 id="front"><span class="section-num">1.1</span> Front</h3>
+<p><b>Can we solve a linear system of ODE&rsquo;s with constant coefficients by eliminating variables?</b></p>
+<h3 id="back"><span class="section-num">1.2</span> Back</h3>
+<p>No, it&rsquo;s a naive way to solve it. You need to use techniques of constant
+coefficient ODE methods. You can isolate a variable, and substitute in the other
+DE, with it&rsquo;s derivatives</p>
+<h2 id="how-are-the-solution-of-a-linear-system-of-ode-s-of-2x2-variables"><span class="section-num">2</span> How are the solution of a linear system of ODE&rsquo;s of 2x2 variables?</h2>
+<h3 id="front"><span class="section-num">2.1</span> Front</h3>
+<p><b>How are the solution of a linear system of ODE&rsquo;s of 2x2 variables?</b></p>
+<h3 id="back"><span class="section-num">2.2</span> Back</h3>
+<p>You will get 2 equation, 1 for each variable and apply superposition for each
+variable solution</p>
+<h2 id="what-is-a-first-order-linear-system"><span class="section-num">3</span> What is a first order linear system?</h2>
+<h3 id="front"><span class="section-num">3.1</span> Front</h3>
+<p><b>What is a first order linear system?</b></p>
+<p>Write an example of \(n \cross n\) linear system</p>
+<h3 id="back"><span class="section-num">3.2</span> Back</h3>
+<p>This is a shorten from \(n \cross n\) first order linear system of ODE&rsquo;s with
+constant coefficients which is a collection of \(n\) equation</p>
+<ul>
+<li>\(\dot{x_1} = a_{11} x_1 + \dots + a_{1n}x_n\)</li>
+<li>\(\dots\)</li>
+<li>\(\dot{x_n} = a_{n1}x_1 + \dots + a_{nn}a_n\)</li>
+</ul>
+<p>where the \(a_{ij}\) are constants</p>
+<h2 id="how-are-the-constants-for-this-linear-system-ode-solutions"><span class="section-num">4</span> How are the constants for this linear system ODE solutions?</h2>
+<h3 id="front"><span class="section-num">4.1</span> Front</h3>
+<p><b>How are the constants for this linear system ODE solutions?</b></p>
+<ul>
+<li>\(x(t) = c_1 e^{0.5t} + c_2e^{0.2t}\)</li>
+<li>\(y(t) = 2c_3 e^{0.5t} - c_4 e^{0.2t}\)</li>
+</ul>
+<h3 id="back"><span class="section-num">4.2</span> Back</h3>
+<ul>
+<li>The constants \(c_3 = c_1\) and \(c_2 = c_4\)</li>
+<li>For certain \(c_i\) there will be negatively-valued solutions; these are clearly
+not biologically significant: the model only holds for \(x,y \geq 0\)</li>
+</ul>
+<h2 id="is-a-good-method-solving-linear-system-by-elimination"><span class="section-num">5</span> Is a good method solving linear system by elimination?</h2>
+<h3 id="front"><span class="section-num">5.1</span> Front</h3>
+<p><b>Is a good method solving linear system by elimination?</b></p>
+<h3 id="back"><span class="section-num">5.2</span> Back</h3>
+<p>No, it&rsquo;s a method that always works but it&rsquo;s the preferred techniques. You
+don&rsquo;t need to know previous method for solving it.</p>
+<p>In both theoretical and especially numerical work it is usually preferable to go
+the opposite way and convert a higher order ODE into a system of first order
+equations and then use matrix methods.</p>
+<h2 id="use-the-method-of-elimination-to-solve-the-following-system"><span class="section-num">6</span> Use the method of elimination to solve the following system</h2>
+<h3 id="front"><span class="section-num">6.1</span> Front</h3>
+<p><b>Use the method of elimination to solve the following system</b></p>
+<ul>
+<li>\(\dot{x} = x + 3y\)</li>
+<li>\(\dot{y} = x - y\)</li>
+</ul>
+<h3 id="back"><span class="section-num">6.2</span> Back</h3>
+<p>Let us eliminate \(x\) by solving the second equation for \(x\), so \(x = y +
+\dot{y}\)</p>
+<p>Replacing \(x\) everywhere by \(y + \dot{y}\) in the first equation gives
+\(\ddot{y} - 4y = 0\)</p>
+<p>Its characteristic equation is \((r -2)(r+2) = 0\), so the general solution for
+\(y\) is \(y = c_1 e^{2t} + c_2 e^{-2t}\)</p>
+<p>From the solution for \(y\) and first equation, that was originally used to
+eliminate \(x\), we get \(x = 3c_1e^{2t} - c_2e^{-2t}\)</p>
+<p>The solution to the system is thus</p>
+<ul>
+<li>\(x = 3c_1e^{2t} - c_2e^{-2t}\)</li>
+<li>\(y = c_1e^{2t} + c_2e^{-2t}\)</li>
+</ul>
+<h2 id="how-can-we-write-this-linear-system-with-matrix-and-vectors"><span class="section-num">7</span> How can we write this linear system with matrix and vectors?</h2>
+<h3 id="front"><span class="section-num">7.1</span> Front</h3>
+<p><b>How can we write this linear system with matrix and vectors?</b></p>
+<ul>
+<li>\(\dot{x} = ax + by\)</li>
+<li>\(\dot{y} = cx + dy\)</li>
+</ul>
+<h3 id="back"><span class="section-num">7.2</span> Back</h3>
+<p>\({\displaystyle \begin{pmatrix} \dot{x}\\ \dot{y} \end{pmatrix}
+= \begin{pmatrix} a &amp; b\\ c &amp; d \end{pmatrix} \begin{pmatrix} x\\ y
+\end{pmatrix}}\)</p>
+<p>You can represent even more compact form. Let \({\displaystyle A
+= \begin{pmatrix}a &amp; b \\ c &amp; d\end{pmatrix}}\) and write \(\vb{u}\) for the column
+vector \({\displaystyle \begin{pmatrix}x \\ y\end{pmatrix}}\)</p>
+<p>We have \({\displaystyle \vb{\dot{u}} = \begin{pmatrix}\dot{x}(t) \\ \dot{y}(t)
+\end{pmatrix}}\)</p>
+<p>and the system is simply \(\dot{\vb{u}} = A \vb{u}\)</p>
+<h2 id="write-this-solution-function-in-vector-form"><span class="section-num">8</span> Write this solution function in vector form</h2>
+<h3 id="front"><span class="section-num">8.1</span> Front</h3>
+<p><b>Write this solution function in vector form</b></p>
+<ul>
+<li>\(x(t) = c_1 e^{0.5t} + c_2e^{0.2t}\)</li>
+<li>\(y(t) = 2c_1e^{0.5t} - c_2 e^{0.2t}\)</li>
+</ul>
+<h3 id="back"><span class="section-num">8.2</span> Back</h3>
+<p>\({\displaystyle \vb{u}(t) = \begin{pmatrix}c_1e^{0.5t} + c_2 e^{0.2t} \\ 2c_1
+e^{0.5t} - c_2e^{0.2t}\end{pmatrix} = c_1e^{0.5t} \begin{pmatrix}1
+\\ 2\end{pmatrix} + c_2 e^{0.2t} \begin{pmatrix}1 \\ -1\end{pmatrix}}\)</p>
+<h2 id="what-are-the-normal-modes-of-this-general-solution"><span class="section-num">9</span> What are the normal modes of this general solution?</h2>
+<h3 id="front"><span class="section-num">9.1</span> Front</h3>
+<p><b>What are the normal modes of this general solution?</b></p>
+<p>\({\displaystyle \vb{u}(t) = c_1e^{0.5t} \begin{pmatrix}1
+\\ 2\end{pmatrix} + c_2 e^{0.2t} \begin{pmatrix}1 \\ -1\end{pmatrix}}\)</p>
+<h3 id="back"><span class="section-num">9.2</span> Back</h3>
+<p>There are the column vector \(\vb{u_1}(t)\) and \(\vb{u_2}(t)\), removing the
+superposition</p>
+<p>\({\displaystyle \vb{u_1}(t) = e^{0.5t} \begin{pmatrix}1 \\ 2\end{pmatrix}}\)</p>
+<p>\({\displaystyle \vb{u_2}(t) = e^{0.2t} \begin{pmatrix}1 \\ -1\end{pmatrix}}\)</p>
+<h2 id="what-is-the-geometry-meaning-of--vb-u--for-this-linear-system"><span class="section-num">10</span> What is the geometry meaning of \(\vb{u}\) for this linear system?</h2>
+<h3 id="front"><span class="section-num">10.1</span> Front</h3>
+<p><b>What is the geometry meaning of $\vb{u}$ for this linear system?</b></p>
+<p>\({\displaystyle \dot{\vb{u}}(t) = A \vb{u}(t)}\), for a \(2 \cross 2\) linear
+system</p>
+<h3 id="back"><span class="section-num">10.2</span> Back</h3>
+<p>It plots a parametric curve on the \(xy\text{-plane}\), depends on it&rsquo;s initials
+conditions it traces a curve in the \(xy\text{-plane}\)</p>
+<h2 id="what-is-the-geometry-meaning-of--dot-vb-u--for-this-linear-system"><span class="section-num">11</span> What is the geometry meaning of \(\dot{\vb{u}}\) for this linear system?</h2>
+<h3 id="front"><span class="section-num">11.1</span> Front</h3>
+<p><b>What is the geometry meaning of $\dot{\vb{u}}$ for this linear system?</b></p>
+<p>\({\displaystyle \dot{\vb{u}}(t) = A \vb{u}}\)</p>
+<h3 id="back"><span class="section-num">11.2</span> Back</h3>
+<p>It&rsquo;s plot a vector fields which measures how quickly the parametric curve
+\({\displaystyle \vb{u}(t)}\) traces its trajectory. It&rsquo;s a velocity field</p>
+<h2 id="which-is-the-method-to-convert-a-second-order-homo-dot-linear-equation-to-first-linear-system"><span class="section-num">12</span> Which is the method to convert a second order homo. linear equation to first linear system?</h2>
+<h3 id="front"><span class="section-num">12.1</span> Front</h3>
+<p><b>Which is the method to convert a second order homo. linear equation to first linear system?</b></p>
+<p>Basic method name</p>
+<h3 id="back"><span class="section-num">12.2</span> Back</h3>
+<p>It&rsquo;s called <strong>anti-elimination</strong> and <strong>Companion Matrix</strong></p>
+<h2 id="what-is-the-companion-matrix-of-a-de"><span class="section-num">13</span> What is the companion matrix of a DE?</h2>
+<h3 id="front"><span class="section-num">13.1</span> Front</h3>
+<p><b>What is the companion matrix of a DE?</b></p>
+<h3 id="back"><span class="section-num">13.2</span> Back</h3>
+<p>It&rsquo;s the corresponding coefficient matrix to the DE</p>
+<h2 id="convert-this-de-to-a-first-order-linear-system"><span class="section-num">14</span> Convert this DE to a first order linear system</h2>
+<h3 id="front"><span class="section-num">14.1</span> Front</h3>
+<p><b>Convert this DE to a first order linear system</b></p>
+<p>\(\ddot{x} + b \dot{x} + kx = 0\) (second order homogeneous linear equation)</p>
+<p>Using anti-elimination</p>
+<h3 id="back"><span class="section-num">14.2</span> Back</h3>
+<p>Introduce a second variable defined by \(y = \dot{x}\), and substituting \(y =
+\dot{x}\) and \(\dot{y} = \ddot{x}\), so we get</p>
+<p>\({\displaystyle \dot{y} + by + kx =0 \implies \dot{y} = -kx -by}\)</p>
+<p>We now have a first order system</p>
+<p>\begin{alignat}{2} \dot{x} &amp; = &amp;y&amp;\\ \dot{y} &amp; = -kx -b &amp;y&amp; \end{alignat}</p>
+<p>The companion matrix of the equation is \({\displaystyle \begin{pmatrix}0 &amp; 1
+\\ -k &amp; -b\end{pmatrix}}\)</p>
+<h2 id="which-is-the-form-of-a-companion-matrix-for-a-second-order-constant-coefficient-de"><span class="section-num">15</span> Which is the form of a companion matrix for a second order constant coefficient DE?</h2>
+<h3 id="front"><span class="section-num">15.1</span> Front</h3>
+<p><b>Which is the form of a companion matrix for a second order constant coefficient DE?</b></p>
+<p>\({\displaystyle \ddot{x} + b \dot{x} + kx = 0}\)</p>
+<h3 id="back"><span class="section-num">15.2</span> Back</h3>
+<p>\({\displaystyle A = \begin{pmatrix}0 &amp; 1 \\ -k &amp; -b\end{pmatrix}}\)</p>
+<h2 id="describe-the-model-of-population-from-this-linear-system"><span class="section-num">16</span> Describe the model of population from this linear system</h2>
+<h3 id="front"><span class="section-num">16.1</span> Front</h3>
+<p><b>Describe the model of population from this linear system</b></p>
+<ul>
+<li>\(\dot{x} = 2x - 3y\)</li>
+<li>\(\dot{y} = x - y\)</li>
+</ul>
+<p>Explain which one it&rsquo;s the prey and the predator</p>
+<h3 id="back"><span class="section-num">16.2</span> Back</h3>
+<p>As we can see, if \(y\) increases the ratio of \(x\), \(\dot{x}\) will decreases with
+a factor of 3. And if \(x\) increases then the ratio the \(y\) (\(\dot{y}\))
+increases. So, we can suppose that \(y\) is the predator and \(x\) the prey. If
+there are more animal for \(x\) then \(y\) could eat better, but also if there are
+many animals of \(y\) could eat all of \(x\)</p>
+<p>The other 2 factor could be a birth rate for \(x\) and death rate for \(y\)</p>
+<h2 id="identify-which-of-the-trajectories-correspond-to-each-of-the-basic-solutions"><span class="section-num">17</span> Identify which of the trajectories correspond to each of the basic solutions</h2>
+<h3 id="front"><span class="section-num">17.1</span> Front</h3>
+<p><b>Identify which of the trajectories correspond to each of the basic solutions</b></p>
+<p>From this general solution</p>
+<p>\({\displaystyle x(t) = c_1 e^{-3t} + c_2 e^{-t}}\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/f1/45bdb2-5f86-4e6f-87ae-c15d61178b68/_20200218_121515qx8hBFz.png"/> 
+</figure>
+
+<h3 id="back"><span class="section-num">17.2</span> Back</h3>
+<p>Getting its derivative \({\displaystyle \dot{x}(t) = -3 c_1 e^{-3t} - c_2
+e^{-t}}\), and its basic solutions are \(x_1 = e^{-3t}\), \(\dot{x_1}(t) = -3
+e^{-3t}\) and \(x_2 = e^{-t}\), \(\dot{x_2}(t) = -e^{-t}\)</p>
+<p>The ray containing \({\displaystyle \begin{bmatrix}1 \\ -1\end{bmatrix}}\)
+corresponds to \(x_2\) and; the ray containing \({\displaystyle \begin{vmatrix}1
+\\ -3\end{vmatrix}}\) corresponds to \(x_{1}\)</p>
+<h2 id="write-down-the-general-solution-having-the-same-trajectory"><span class="section-num">18</span> Write down the general solution having the same trajectory</h2>
+<h3 id="front"><span class="section-num">18.1</span> Front</h3>
+<p><b>Write down the general solution having the same trajectory</b></p>
+<p>Initial trajectory that crosses \(x\text{-axis}\) at \(x=1\) at \(t=0\)</p>
+<p>\({\displaystyle \vb{u}(t) = \begin{bmatrix}x(t) \\ \dot{x}(t) \end{bmatrix} =
+\frac{1}{2} \begin{bmatrix}3e^{-t} - e^{-3t} \\ -3e^{-t} +
+3e^{-3t}\end{bmatrix}}\)</p>
+<p>Suppose the solution has \(x(a) = 1\)</p>
+<h3 id="back"><span class="section-num">18.2</span> Back</h3>
+<p>\({\displaystyle \vb{u}(t) = \frac{1}{2} \begin{bmatrix}3e^{-(t - a)} - e^{-3(t -
+a)} \\ -3e^{-(t - a)} + 3e^{-3(t - a)}\end{bmatrix}}\)</p>
+<h2 id="explain-for-a-companion-matrix-whenever-trajectory-that-crosses-the--x-text-axis--it-seems-to-do-it-perpendicularly"><span class="section-num">19</span> Explain for a companion matrix whenever trajectory that crosses the \(x\text{-axis}\) it seems to do it perpendicularly</h2>
+<h3 id="front"><span class="section-num">19.1</span> Front</h3>
+<p><b>Explain for a companion matrix whenever trajectory that crosses the $x\text{-axis}$ it seems to do it perpendicularly</b></p>
+<p>Its tangent vector is vertical</p>
+<h3 id="back"><span class="section-num">19.2</span> Back</h3>
+<p>The velocity vector of \({\displaystyle \vb{u}(t) = \begin{bmatrix}x(t)
+\\ \dot{x}(t)\end{bmatrix}}\) is \({\displaystyle \dot{\vb{u}}(t)
+= \begin{bmatrix}\dot{x}(t) \\ \ddot{x}(t)\end{bmatrix}}\)</p>
+<p>When \(\dot{x}(t) = 0\), then \({\displaystyle \dot{\vb{u}}(t)
+= \begin{bmatrix}0 \\ \ddot{x}(t)\end{bmatrix}}\), which is vertical.</p>
+<p>Alternatively, \({\displaystyle \dot{\vb{u}} = A \vb{u}}\) and \({\displaystyle A
+= \begin{bmatrix}0 &amp; 1 \\ c &amp; d\end{bmatrix}}\), so if \({\displaystyle \vb{u}
+= \begin{bmatrix}x \\ 0\end{bmatrix}}\) then \({\displaystyle \dot{\vb{u}}
+= \begin{bmatrix}0 &amp; 1 \\ c &amp; d\end{bmatrix} \begin{bmatrix}x \\ 0\end{bmatrix}
+= x \begin{bmatrix}0 \\ c\end{bmatrix}}\), which is vertical</p>
+
+</div>
+
+
+            <footer>
+    
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-4%2fsession-32%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Linear%20Systems&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-4%2fsession-32%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-4%2fsession-32%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-4%2fsession-32%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-4%2fsession-32%2f&amp;title=Linear%20Systems" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Linear%20Systems&amp;body=Check out this site https%3a%2f%2fppalazon.github.io%2f18.03%2funit-4%2fsession-32%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+
+<nav>
+    <ul class="pager">
+    
+
+    
+    <li class="next">
+        <a href="https://ppalazon.github.io/18.03/unit-4/session-33/" title="Matrix Methods: Eigenvalues and Normal Modes">
+            Matrix Methods: Eigenvalues and Normal Modes <span aria-hidden="true">&rarr;</span>
+        </a>
+    </li>
+    
+    </ul>
+</nav>
+
+
+
+</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//ppalazon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+        </div>
+    </div>
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/">18.03 Differential Equations</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/unit-4/">4: First-order Systems</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.03/unit-4/session-32/">Linear Systems</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

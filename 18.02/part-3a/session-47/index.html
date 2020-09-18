@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Session 47: Definition of Double Integration  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="calculus, maths, ">
+
+
+<meta property="og:title" content="Session 47: Definition of Double Integration  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.02/part-3a/session-47/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="content-source" content="18.02/part-3a/session-47.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Captured On [2020-02-06 Thu 13:14] Source Session 47: Definition of Double Integration | Part A: Double Integrals | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare 1 Chalkboard Figure 1: Recall integrals of 1 variable function Figure 2: Meaning of double integral
+Figure 3: Small pieces of area
+"/>
+<meta property="og:article:published_time" content="2019-04-18T00:00:00&#43;02:00" />
+<meta property="og:article:modified_time" content="2019-04-18T00:00:00&#43;02:00" />
+
+
+
+<meta property="og:article:tag" content="calculus">
+
+<meta property="og:article:tag" content="maths">
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ppalazon" />
+<meta name="twitter:creator" content="@ppalazon" />
+<meta name="twitter:title" content="Session 47: Definition of Double Integration" />
+<meta name="twitter:description" content="Captured On [2020-02-06 Thu 13:14] Source Session 47: Definition of Double Integration | Part A: Double Integrals | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare 1 Chalkboard Figure 1: Recall integrals of 1 variable function Figure 2: Meaning of double integral
+Figure 3: Small pieces of area
+"/>
+<meta name="twitter:url" content="https://ppalazon.github.io/18.02/part-3a/session-47/" />
+<meta name="twitter:domain" content="https://ppalazon.github.io">
+
+
+
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+     "@type": "Article",
+     "headline": "Session 47: Definition of Double Integration",
+     "author": {
+         "@type": "Person",
+         "name": "http://profiles.google.com/+?rel=author"
+     },
+     "datePublished": "2019-04-18",
+     "description": "",
+     "wordCount":  372 
+ }
+</script>
+
+
+
+<link rel="canonical" href="https://ppalazon.github.io/18.02/part-3a/session-47/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+ }
+ .hero {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: calc(200px + (450 - 200) * ((100vw - 300px) / (1600 - 300)));
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: calc(-1 * (200px + (450 - 200) * ((100vw - 300px) / (1600 - 300))));
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+    <header class="container hat">
+        <h1>Session 47: Definition of Double Integration
+</h1>
+
+        
+
+
+<span class="author">by
+    
+    MIT OCW, Pablo Palazon
+    
+</span>
+
+
+    </header>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            
+            <div class="content">
+  <dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2020-02-06 Thu 13:14]</span></span></dd>
+<dt>Source</dt>
+<dd><a href="https://ocw.mit.edu/courses/mathematics/18-02sc-multivariable-calculus-fall-2010/3.-double-integrals-and-line-integrals-in-the-plane/part-a-double-integrals/session-47-definition-of-double-integration/index.htm">Session 47: Definition of Double Integration | Part A: Double Integrals | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare</a></dd>
+</dl>
+<h2 id="chalkboard"><span class="section-num">1</span> Chalkboard</h2>
+<p><a id="org16cfbee"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/c9/fc8333-2cfd-4c9a-baeb-06ceeda99be5/_20200206_132009MIT18_02SC_L16Brds_1.png"
+         alt="Figure 1: Recall integrals of 1 variable function" width="80%"/> <figcaption>
+            <p>Figure 1: Recall integrals of 1 variable function</p>
+        </figcaption>
+</figure>
+
+<p><a id="orga2f16d6"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/c9/fc8333-2cfd-4c9a-baeb-06ceeda99be5/_20200206_132019MIT18_02SC_L16Brds_2.png"
+         alt="Figure 2: Meaning of double integral" width="80%"/> <figcaption>
+            <p>Figure 2: Meaning of double integral</p>
+        </figcaption>
+</figure>
+
+<p><a id="org5a827d0"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/c9/fc8333-2cfd-4c9a-baeb-06ceeda99be5/_20200206_132025MIT18_02SC_L16Brds_3.png"
+         alt="Figure 3: Small pieces of area" width="80%"/> <figcaption>
+            <p>Figure 3: Small pieces of area</p>
+        </figcaption>
+</figure>
+
+<p><a id="orgc97c8ac"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/c9/fc8333-2cfd-4c9a-baeb-06ceeda99be5/_20200206_132032MIT18_02SC_L16Brds_4.png"
+         alt="Figure 4: Computing double integrals taking slices" width="80%"/> <figcaption>
+            <p>Figure 4: Computing double integrals taking slices</p>
+        </figcaption>
+</figure>
+
+<p><a id="org755828e"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/c9/fc8333-2cfd-4c9a-baeb-06ceeda99be5/_20200206_132038MIT18_02SC_L16Brds_5.png"
+         alt="Figure 5: Iterated integrals" width="80%"/> <figcaption>
+            <p>Figure 5: Iterated integrals</p>
+        </figcaption>
+</figure>
+
+<h2 id="can-we-compute-a-double-integrals-as-a-limit-of-riemann-sums"><span class="section-num">2</span> Can we compute a double integrals as a limit of Riemann sums?</h2>
+<h3 id="front"><span class="section-num">2.1</span> Front</h3>
+<p><b>Can we compute a double integrals as a limit of Riemann sums?</b></p>
+<h3 id="back"><span class="section-num">2.2</span> Back</h3>
+<p>Yes, you can define a double integral as a sum similarly as 1 variable
+integrals.</p>
+<p>The result of these sum will be the volume under the graph, but these
+sums can be used to compute areas, volumes, mass, moment of inertia
+and many other quantities.</p>
+<h2 id="which-is-the-definition-of-double-integrals"><span class="section-num">3</span> Which is the definition of double integrals?</h2>
+<h3 id="front"><span class="section-num">3.1</span> Front</h3>
+<p><b>Which is the definition of double integrals?</b></p>
+<p>\(f(x,y)\) and region \(R\)</p>
+<h3 id="back"><span class="section-num">3.2</span> Back</h3>
+<p>\({\displaystyle \iint_R f(x,y) dA = \lim_{\Delta A \to 0} \sum_{i=1}^n
+f(x_i, y_i) \Delta A_i}\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/c9/fc8333-2cfd-4c9a-baeb-06ceeda99be5/_20200917_122034gahA3ol.png"/> 
+</figure>
+
+<p>For 18.02: The limit exist and be independent of the specific limiting
+process. Fractals and other objects don&rsquo;t satisfy them.</p>
+<h2 id="can-we-use-double-integrals-to-compute-the-area-of-a-region--r--in-the-plane"><span class="section-num">4</span> Can we use double integrals to compute the area of a region \(R\) in the plane?</h2>
+<h3 id="front"><span class="section-num">4.1</span> Front</h3>
+<p><b>Can we use double integrals to compute the area of a region $R$ in the plane?</b></p>
+<h3 id="back"><span class="section-num">4.2</span> Back</h3>
+<p>Yes, The area of \(R\) is just the sum of the areas of the pieces</p>
+<p>\({\displaystyle \text{area} = \iint_R dA}\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/c9/fc8333-2cfd-4c9a-baeb-06ceeda99be5/_20200917_122045gahA3ol.png"/> 
+</figure>
+
+<h2 id="how-can-set-up-a-double-integral-to-compute-the-volume"><span class="section-num">5</span> How can set up a double integral to compute the volume?</h2>
+<h3 id="front"><span class="section-num">5.1</span> Front</h3>
+<p><b>How can set up a double integral to compute the volume?</b></p>
+<p>Volume below the graph \(z = f(x,y) = 2 - 0.5(x +y)\) and above the unit
+square in the \(xy\text{-plane}\)</p>
+<p>Explain it with sums</p>
+<h3 id="back"><span class="section-num">5.2</span> Back</h3>
+<ul>
+<li>Unit square label as \(R\)</li>
+<li>\(R\) is divided into \(n\) small pieces
+<ul>
+<li>For the piece \(i^{\text{th}}\), it contains the point \((x_i,y_i)\)</li>
+<li>Which area is \(\Delta A_i\)</li>
+</ul>
+</li>
+</ul>
+<p>Small Volume: \(\Delta V_i \approx \Delta A_i f(x_i, y_i)\)</p>
+<p>Total Volume (as a sum): \({\displaystyle \sum_{i=1}^n \Delta V_i
+\approx \sum_{i=1}^n \Delta A_i \cross f(x_i, y_i)}\)</p>
+<p>As \(n \to \infty\), \(\Delta A_i \to 0\): \({\displaystyle \text{volume} =
+\iint_R f(x,y) dA}\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/c9/fc8333-2cfd-4c9a-baeb-06ceeda99be5/_20200917_122101hSNaVOr.png"/> 
+</figure>
+
+
+</div>
+
+
+            <footer>
+    
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-3a%2fsession-47%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Session%2047%3a%20Definition%20of%20Double%20Integration&amp;url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-3a%2fsession-47%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-3a%2fsession-47%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-3a%2fsession-47%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-3a%2fsession-47%2f&amp;title=Session%2047%3a%20Definition%20of%20Double%20Integration" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Session%2047%3a%20Definition%20of%20Double%20Integration&amp;body=Check out this site https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-3a%2fsession-47%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+
+<nav>
+    <ul class="pager">
+    
+
+    
+    <li class="next">
+        <a href="https://ppalazon.github.io/18.02/part-3a/session-48/" title="Session 48: Examples of Double Integration">
+            Session 48: Examples of Double Integration <span aria-hidden="true">&rarr;</span>
+        </a>
+    </li>
+    
+    </ul>
+</nav>
+
+
+
+</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//ppalazon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+        </div>
+    </div>
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.02/">18.02 Multivariable Calculus</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.02/part-3a/">3A: Double Integrals</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.02/part-3a/session-47/">Session 47: Definition of Double Integration</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

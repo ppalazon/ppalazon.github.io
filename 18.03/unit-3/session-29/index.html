@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Laplace Transform: Solving Initial Value Problems  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="ode, maths, ">
+
+
+<meta property="og:title" content="Laplace Transform: Solving Initial Value Problems  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.03/unit-3/session-29/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="content-source" content="18.03/unit-3/session-29.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Captured On [2020-01-06 Mon 19:03] Source Laplace Transform: Solving Initial Value Problems | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 Compute with the definition the Laplace transform of \(f&#39;\) 1.1 Front Compute with the definition the Laplace transform of $f&#39;$
+\({\displaystyle \mathcal{L}(f&#39;)(s)}\)
+Don&amp;rsquo;t do by heart
+1.2 Back \({\displaystyle \mathcal{L}(f&#39;) = \int_{0^-}^{\infty} f&#39;(t) e^{-st} \dd{t}}\)
+Integrating by parts
+ \(u = e^{-st}\), \(\dd{u} = -s e^{-st} \dd{t}\) \(\dd{v} = f&#39;(t) \dd{t}\), \(v = f(t)\)  \({\displaystyle f(t) e^{-st} \bigg|_{0^-}^{\infty} &#43; s \int_{0^-}^{\infty} f(t) e^{-st} \dd{t} = -f(0^-) &#43; s F(s)}\)"/>
+<meta property="og:article:published_time" content="2019-11-26T00:00:00&#43;01:00" />
+<meta property="og:article:modified_time" content="2019-11-26T00:00:00&#43;01:00" />
+
+
+
+<meta property="og:article:tag" content="ode">
+
+<meta property="og:article:tag" content="maths">
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ppalazon" />
+<meta name="twitter:creator" content="@ppalazon" />
+<meta name="twitter:title" content="Laplace Transform: Solving Initial Value Problems" />
+<meta name="twitter:description" content="Captured On [2020-01-06 Mon 19:03] Source Laplace Transform: Solving Initial Value Problems | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 Compute with the definition the Laplace transform of \(f&#39;\) 1.1 Front Compute with the definition the Laplace transform of $f&#39;$
+\({\displaystyle \mathcal{L}(f&#39;)(s)}\)
+Don&amp;rsquo;t do by heart
+1.2 Back \({\displaystyle \mathcal{L}(f&#39;) = \int_{0^-}^{\infty} f&#39;(t) e^{-st} \dd{t}}\)
+Integrating by parts
+ \(u = e^{-st}\), \(\dd{u} = -s e^{-st} \dd{t}\) \(\dd{v} = f&#39;(t) \dd{t}\), \(v = f(t)\)  \({\displaystyle f(t) e^{-st} \bigg|_{0^-}^{\infty} &#43; s \int_{0^-}^{\infty} f(t) e^{-st} \dd{t} = -f(0^-) &#43; s F(s)}\)"/>
+<meta name="twitter:url" content="https://ppalazon.github.io/18.03/unit-3/session-29/" />
+<meta name="twitter:domain" content="https://ppalazon.github.io">
+
+
+
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+     "@type": "Article",
+     "headline": "Laplace Transform: Solving Initial Value Problems",
+     "author": {
+         "@type": "Person",
+         "name": "http://profiles.google.com/+?rel=author"
+     },
+     "datePublished": "2019-11-26",
+     "description": "",
+     "wordCount":  2517 
+ }
+</script>
+
+
+
+<link rel="canonical" href="https://ppalazon.github.io/18.03/unit-3/session-29/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+ }
+ .hero {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: calc(200px + (450 - 200) * ((100vw - 300px) / (1600 - 300)));
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: calc(-1 * (200px + (450 - 200) * ((100vw - 300px) / (1600 - 300))));
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+    <header class="container hat">
+        <h1>Laplace Transform: Solving Initial Value Problems
+</h1>
+
+        
+
+
+<span class="author">by
+    
+    MIT OCW, Pablo Palazon
+    
+</span>
+
+
+    </header>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            
+            <div class="content">
+  <dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2020-01-06 Mon 19:03]</span></span></dd>
+<dt>Source</dt>
+<dd><a href="https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-iii-fourier-series-and-laplace-transform/laplace-transform-solving-initial-value-problems/">Laplace Transform: Solving Initial Value Problems | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare</a></dd>
+</dl>
+<h2 id="compute-with-the-definition-the-laplace-transform-of--f"><span class="section-num">1</span> Compute with the definition the Laplace transform of \(f'\)</h2>
+<h3 id="front"><span class="section-num">1.1</span> Front</h3>
+<p><b>Compute with the definition the Laplace transform of $f'$</b></p>
+<p>\({\displaystyle \mathcal{L}(f')(s)}\)</p>
+<p>Don&rsquo;t do by heart</p>
+<h3 id="back"><span class="section-num">1.2</span> Back</h3>
+<p>\({\displaystyle \mathcal{L}(f') = \int_{0^-}^{\infty} f'(t) e^{-st} \dd{t}}\)</p>
+<p>Integrating by parts</p>
+<ul>
+<li>\(u = e^{-st}\), \(\dd{u} = -s e^{-st} \dd{t}\)</li>
+<li>\(\dd{v} = f'(t) \dd{t}\), \(v = f(t)\)</li>
+</ul>
+<p>\({\displaystyle f(t) e^{-st} \bigg|_{0^-}^{\infty} + s \int_{0^-}^{\infty} f(t)
+e^{-st} \dd{t} = -f(0^-) + s F(s)}\)</p>
+<p>The last equality follows from</p>
+<ul>
+<li>We assume \(f(t)\) has exponential order, so if \(\operatorname{Re}(s)\) is large
+enough \(f(t)e^{-st}\) is \(0\) as \(t \to \infty\)</li>
+<li>The integral in the second term is none other than the Laplace transform of
+\(f(t)\)</li>
+</ul>
+<h2 id="what-is-the-laplace-transform-of--f"><span class="section-num">2</span> What is the Laplace transform of \(f'\)?</h2>
+<h3 id="front"><span class="section-num">2.1</span> Front</h3>
+<p><b>What is the Laplace transform of $f'$?</b></p>
+<p>by heart</p>
+<h3 id="back"><span class="section-num">2.2</span> Back</h3>
+<p>\({\displaystyle \mathcal{L}(f') = sF(s) - f(0^-)}\)</p>
+<h2 id="what-is-the-laplace-transform-of--f-n"><span class="section-num">3</span> What is the Laplace transform of \(f^{(n)}\)?</h2>
+<h3 id="front"><span class="section-num">3.1</span> Front</h3>
+<p><b>What is the Laplace transform of $f^{(n)}$?</b></p>
+<p>by heart</p>
+<h3 id="back"><span class="section-num">3.2</span> Back</h3>
+<p>\({\displaystyle \mathcal{L}(f^{(n)}) = s^n F(s) - s^{n-1}f(0^-) -
+s^{n-2}f'(0^-) + \dots - f^{(n-1)(0^-)}}\)</p>
+<h2 id="what-happens-with-all-annoying-terms-of-the-laplace-transform-of--f-n"><span class="section-num">4</span> What happens with all annoying terms of the Laplace transform of \(f^{(n)}\)?</h2>
+<h3 id="front"><span class="section-num">4.1</span> Front</h3>
+<p><b>What happens with all annoying terms of the Laplace transform of $f^{(n)}$?</b></p>
+<p>\(f(0^-)\), \(f'(0^-)\) with rest IC</p>
+<h3 id="back"><span class="section-num">4.2</span> Back</h3>
+<p>All these annoying terms are 0</p>
+<h2 id="what-is-the-laplace-transform-of--f-n---with-rest-ic"><span class="section-num">5</span> What is the Laplace transform of \(f^{(n)}\) with rest IC?</h2>
+<h3 id="front"><span class="section-num">5.1</span> Front</h3>
+<p><b>What is the Laplace transform of $f^{(n)}$ with rest IC?</b></p>
+<p>\({\displaystyle \mathcal{L}(f^{(n)})}\)</p>
+<h3 id="back"><span class="section-num">5.2</span> Back</h3>
+<p>\({\displaystyle \mathcal{L}(f^{(n)}) = s^n F(s)}\)</p>
+<h2 id="compute-the-laplace-transform-of-this-expression-with-two-different-ways"><span class="section-num">6</span> Compute the Laplace transform of this expression with two different ways</h2>
+<h3 id="front"><span class="section-num">6.1</span> Front</h3>
+<p><b>Compute the Laplace transform of this expression with two different ways</b></p>
+<p>\({\displaystyle f(t) = t^2 + 2t + 1}\), compute \(\mathcal{L}(f'')\)</p>
+<h3 id="back"><span class="section-num">6.2</span> Back</h3>
+<ul>
+<li>Directly: \({\displaystyle f''(t) = 2t \implies \mathcal{L}(f'') =
+\frac{2}{s}}\)</li>
+<li>Using rule: \({\displaystyle \mathcal{L}(f'') = s^2 F(s) - sf(0^-) - f'(0^-) =
+s^2(\frac{2}{s^3} + \frac{2}{s^2} + \frac{1}{s}) - s \cdot 1 - 2 =
+\frac{2}{s}}\)</li>
+</ul>
+<h2 id="proof-that-this-laplace-transform-is-valid"><span class="section-num">7</span> Proof that this Laplace transform is valid</h2>
+<h3 id="front"><span class="section-num">7.1</span> Front</h3>
+<p><b>Proof that this Laplace transform is valid</b></p>
+<p>\({\displaystyle \mathcal{L}(tf)(s) = -F'(s)}\)</p>
+<h3 id="back"><span class="section-num">7.2</span> Back</h3>
+<p>\({\displaystyle F(s) = \int_{0^-}^{\infty} f(t) e^{-st} \dd{t}}\)</p>
+<p>\({\displaystyle F'(s) = \dv{s} \int_{0^-}^{\infty} f(t) e^{-st} \dd{t} =
+\int_{0^-}^{\infty} -t f(t) e^{-st} \dd{t} = - \mathcal{L}(tf(t))}\)</p>
+<h2 id="what-is-the-laplace-transform-of-this-expression"><span class="section-num">8</span> What is the Laplace transform of this expression?</h2>
+<h3 id="front"><span class="section-num">8.1</span> Front</h3>
+<p><b>What is the Laplace transform of this expression?</b></p>
+<p>\({\displaystyle \mathcal{L}(t^n f)(s)}\)</p>
+<h3 id="back"><span class="section-num">8.2</span> Back</h3>
+<p>\({\displaystyle \mathcal{L}(t^n f)(s) = (-1)^n F^{(n)}(s)}\)</p>
+<h2 id="what-is-the-t-derivative-rule-of-laplace-transform"><span class="section-num">9</span> What is the t-derivative rule of Laplace Transform?</h2>
+<h3 id="front"><span class="section-num">9.1</span> Front</h3>
+<p><b>What is the t-derivative rule of Laplace Transform?</b></p>
+<h3 id="back"><span class="section-num">9.2</span> Back</h3>
+<ul>
+<li>\({\displaystyle \mathcal{L}(f') = sF(s) - f(0^-)}\)</li>
+<li>\({\displaystyle \mathcal{L}(f'') = s^2 F(s) -s f(0^-) - f'(0^-)}\)</li>
+<li>\({\displaystyle \mathcal{L}(f^{(n)}) = s^n F(s) - s^{n-1}f(0^-) -
+s^{n-2}f'(0^-) + \dots - f^{(n-1)}(0^-)}\)</li>
+</ul>
+<h2 id="what-is-the-s-derivative-rule-of-laplace-transform"><span class="section-num">10</span> What is the s-derivative rule of Laplace Transform?</h2>
+<h3 id="front"><span class="section-num">10.1</span> Front</h3>
+<p><b>What is the s-derivative rule of Laplace Transform?</b></p>
+<h3 id="back"><span class="section-num">10.2</span> Back</h3>
+<ul>
+<li>\({\displaystyle \mathcal{L}(tf) (s) = -F'(s)}\)</li>
+<li>\({\displaystyle \mathcal{L}(t^n f)(s) = (-1)^n F^{(n)}(s)}\)</li>
+</ul>
+<h2 id="what-is-the-laplace-transform-of-this-expression"><span class="section-num">11</span> What is the Laplace transform of this expression?</h2>
+<h3 id="front"><span class="section-num">11.1</span> Front</h3>
+<p><b>What is the Laplace transform of this expression?</b></p>
+<p>\({\displaystyle \mathcal{L}(t \sin(\omega t))}\)</p>
+<h3 id="back"><span class="section-num">11.2</span> Back</h3>
+<p>Let \(f(t) = \sin(\omega t)\). We know that \({\displaystyle F(s) =
+\frac{\omega}{s^2 + \omega^2}}\)</p>
+<p>The s-derivative rule implies</p>
+<p>\({\displaystyle \mathcal{L}(t \sin(\omega t)) = -F'(s) = \frac{2 \omega
+s}{(s^2 + \omega^2)^2}}\)</p>
+<h2 id="is-the-laplace-transforms-inverse-unique"><span class="section-num">12</span> Is the Laplace transforms inverse unique?</h2>
+<h3 id="front"><span class="section-num">12.1</span> Front</h3>
+<p><b>Is the Laplace transforms inverse unique?</b></p>
+<p>For example \({\displaystyle \mathcal{L}^{-1}(\frac{1}{s})}\)</p>
+<h3 id="back"><span class="section-num">12.2</span> Back</h3>
+<p>No, it&rsquo;s not unique for example \({\displaystyle \mathcal{L}(u) =
+\int_{0^-}^{\infty} u(t) e^{-st} \dd{t} = \frac{1}{s}}\)</p>
+<p>So \(f(t) = 1\) and \(f(t) = u(t)\) has the same \(\mathcal{L}f = \frac{1}{s}\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/ee/9eb620-e570-46c7-9f35-1dcece6295ae/_20200916_224542pTUQdPA.png"/> 
+</figure>
+
+<p>For Laplace transform we are only concerned with the interval \((0^-, \infty)\)</p>
+<h2 id="which-properties-could-has--ft---to-be-a-laplace-inverse-of--fs"><span class="section-num">13</span> Which properties could has \(f(t)\) to be a Laplace inverse of \(F(s)\)?</h2>
+<h3 id="front"><span class="section-num">13.1</span> Front</h3>
+<p><b>Which properties could has $f(t)$ to be a Laplace inverse of $F(s)$?</b></p>
+<p>Enumerate \(f(t)\) properties to be called its Laplace inverse \({\displaystyle
+\mathcal{L}^{-1} (F)}\)</p>
+<h3 id="back"><span class="section-num">13.2</span> Back</h3>
+<ul>
+<li>\(f(t)\) is a (possibly) generalized function</li>
+<li>\(f(t)\) is defined on \((0, \infty)\), except possibly at a discrete set of
+points where there are jump discontinuities or \(f(t)\) is singular, e.g. has
+delta functions.</li>
+<li>\(f(t)\) may also have a singular part at \(t = 0\), e.g. contains \(\delta(t)\)</li>
+<li>\(\mathcal{L}(f) = F\)</li>
+<li>In particular, the Laplace inverse is not defined at \(t = 0\) and has nothing
+to say about \(f(0^-)\), \(f'(0^-)\), \(f''(0^-)\), … Indeed, it has nothing to
+say about \(f(t)\) for all \(t &lt; 0\). When finding the inverse Laplace transform
+these values are either irrelevant or must be determined by other means.</li>
+</ul>
+<h2 id="what-can-we-say-about--ft---for--t-0--extracted-as-the-laplace-inverse-of--fs"><span class="section-num">14</span> What can we say about \(f(t)\) for \(t &lt; 0\) extracted as the Laplace inverse of \(F(s)\)?</h2>
+<h3 id="front"><span class="section-num">14.1</span> Front</h3>
+<p><b>What can we say about $f(t)$ for $t &lt; 0$ extracted as the Laplace inverse of $F(s)$?</b></p>
+<h3 id="back"><span class="section-num">14.2</span> Back</h3>
+<p>It has nothing to say, the values of \(f(t)\) for \(t &lt; 0\) are irrelevant when you
+get \(f(t)\) as the Laplace inverse of \(F(s)\)</p>
+<h2 id="could--ft---as-a-laplace-inverse-contains-singular-part-at--t-0"><span class="section-num">15</span> Could \(f(t)\) as a Laplace inverse contains singular part at \(t=0\)?</h2>
+<h3 id="front"><span class="section-num">15.1</span> Front</h3>
+<p><b>Could $f(t)$ as a Laplace inverse contains singular part at $t=0$?</b></p>
+<h3 id="back"><span class="section-num">15.2</span> Back</h3>
+<p>Yes, \(f(t)\) may have a singular part at \(t = 0\), e.g. contains \(\delta(t)\)</p>
+<h2 id="must-the-laplace-inverse-be-defined-at--t-0"><span class="section-num">16</span> Must the Laplace inverse be defined at \(t = 0\)?</h2>
+<h3 id="front"><span class="section-num">16.1</span> Front</h3>
+<p><b>Must the Laplace inverse be defined at $t = 0$?</b></p>
+<h3 id="back"><span class="section-num">16.2</span> Back</h3>
+<p>No, it&rsquo;s not necessary. The Laplace inverse \(f(t)\) is defined for \((0, \infty)\)</p>
+<h2 id="could-be-all-of-these-function-the-laplace-inverse-of--fs"><span class="section-num">17</span> Could be all of these function the Laplace inverse of \(F(s)\)?</h2>
+<h3 id="front"><span class="section-num">17.1</span> Front</h3>
+<p><b>Could be all of these function the Laplace inverse of $F(s)$?</b></p>
+<figure>
+    <img src="https://ppalazon.github.io/ee/9eb620-e570-46c7-9f35-1dcece6295ae/_20200916_224551PF0HqpT.png"/> 
+</figure>
+
+<h3 id="back"><span class="section-num">17.2</span> Back</h3>
+<p>Yes, there are all different for \(t \lt 0\) and the last two are not defined at \(t
+= 0\). Since they agree on \(t \gt 0\) (and have no delta function at \(t = 0\)) they
+have the same Laplace transform.</p>
+<h2 id="could-be-any-of-these-function-be-the-laplace-inverse-of--fs"><span class="section-num">18</span> Could be any of these function be the Laplace inverse of \(F(s)\)?</h2>
+<h3 id="front"><span class="section-num">18.1</span> Front</h3>
+<p><b>Could be any of these function be the Laplace inverse of $F(s)$?</b></p>
+<figure>
+    <img src="https://ppalazon.github.io/ee/9eb620-e570-46c7-9f35-1dcece6295ae/_20200916_224600YqDsgKt.png"/> 
+</figure>
+
+<h3 id="back"><span class="section-num">18.2</span> Back</h3>
+<p>Yes, they differ only at the point \(t = a\) but both has the same Laplace
+transform. This is because the integral is an area and the areas under two
+curves that differ like these are the same.</p>
+<p>The continuous function \(f_1 (t)\) is usually a better choice</p>
+<h2 id="what-is-a-removable-discontinuity-on--ft"><span class="section-num">19</span> What is a removable discontinuity on \(f(t)\)?</h2>
+<h3 id="front"><span class="section-num">19.1</span> Front</h3>
+<p><b>What is a removable discontinuity on $f(t)$?</b></p>
+<h3 id="back"><span class="section-num">19.2</span> Back</h3>
+<figure>
+    <img src="https://ppalazon.github.io/ee/9eb620-e570-46c7-9f35-1dcece6295ae/_20200916_224610sFq8qX6.png"/> 
+</figure>
+
+<p>This discontinuity could be removable by changing the value of \(f(a)\) to 1</p>
+<p>Technically, \(f(a^-) = f(a^+) = b\), so we can make a new function, continuous at
+\(a\) by redefining the value at \(t = a\)</p>
+<p>\({\displaystyle f_1(t) = \begin{cases}
+f(t) &amp;\text{for } t \neq a\\\<br>
+b &amp;\text{for } t =a
+\end{cases}
+}\)</p>
+<p>We say that discontinuity at \(t = a\) is removable</p>
+<h2 id="solve-this-de-using-laplace-transform"><span class="section-num">20</span> Solve this DE using Laplace transform</h2>
+<h3 id="front"><span class="section-num">20.1</span> Front</h3>
+<p><b>Solve this DE using Laplace transform</b></p>
+<p>\(\dot{x} + 3x = e^{-t}\) with rest IC</p>
+<p>Explain the process. Set the relationships with other methods of resolution</p>
+<h3 id="back"><span class="section-num">20.2</span> Back</h3>
+<p>Rest IC mean that \(x(t) = 0\) for \(t \lt 0\), so \(x(0^-)\), \(\dot{x}(0^-)\),… all
+are \(0\)</p>
+<p>As usual, let \(X = \mathcal{L}(x)\)</p>
+<p>Using the t-derivative rule we can take the Laplace transform of (both sides) of
+the DE</p>
+<p>\({\displaystyle (sX(s) - f(0^-)) + 3X(s) = \frac{1}{s + 1}}\)</p>
+<p>Next we substitute the known value \(x(0^-) = 0\) and solve for \(X(s)\)</p>
+<p>\({\displaystyle (s + 3)X(s) = \frac{1}{s + 1} \implies X(s) =
+\frac{1}{(s+1)(s+3)}}\)</p>
+<p>Finally, we find \(x(t) = \mathcal{L}^{-1}(X)\) by using cover-up to do the
+partial fractions decomposition</p>
+<p>\({\displaystyle \frac{1}{(s + 1)(s + 3)} = \frac{1}{2(s+1)} - \frac{1}{2(s + 3)}
+\implies x(t) = \frac{1}{2} e^{-t} - \frac{1}{2} e^{-3t}}\) for \(t \gt 0\)</p>
+<p>Notes:</p>
+<ul>
+<li>The term \({\displaystyle \frac{e^{-t}}{2}}\) is what the ERF (exponential
+response formula) would give us</li>
+<li>The term \({\displaystyle \frac{e^{-3t}}{2}}\) is the homogeneous part of the
+solution, needed to match the IC</li>
+<li>Laplace transform method found \(x(t)\) for \(t &lt; 0\). Rest IC tell us \(x(t)\) for
+\(t &lt; 0\)</li>
+<li>\(x(0^+) = 0\) since the input does not contains \(\delta(t)\). There is no jump
+in \(x(t)\) at \(t = 0\)</li>
+<li>The factor \(s + 3\) in front of \(X(s)\) is the characteristic polynomial of this
+system</li>
+</ul>
+<h2 id="find-the-unit-impulse-response-for-the-system--pd--x-f--using-laplace-transform"><span class="section-num">21</span> Find the unit impulse response for the system \(p(D)x = f\) using Laplace transform</h2>
+<h3 id="front"><span class="section-num">21.1</span> Front</h3>
+<p><b>Find the unit impulse response for the system $p(D)x = f$ using Laplace transform</b></p>
+<p>Where \(p(D) = D^2 + 2D + 2I\), consider \(f\) to be the input.</p>
+<p>Explain the values for \(w(0^-)\), \(\dot{w}(0^-)\), \(w(0^+)\) and \(\dot{w}(0^+)\)</p>
+<h3 id="back"><span class="section-num">21.2</span> Back</h3>
+<p>IVP: \({\displaystyle \ddot{w} + 2 \dot{w} + 2w = \delta(t)}\) with rest IC</p>
+<p>Laplace: \({\displaystyle s^2W + 2sW + 2W = 1 \implies W = \frac{1}{s^2 + 2s +
+2}}\) (Here we left out all the &lsquo;annoying terms&rsquo; because they are all 0 due to
+the rest IC)</p>
+<p>Complete the square: \({\displaystyle s^2 + 2s + 2 = (s + 1)^2 + 1}\)</p>
+<p>Inverse Laplace (using s-shift rule):</p>
+<p>\({\displaystyle W = \frac{1}{(s + 1)^2 + 1} \implies w(t) = e^{-t}
+\mathcal{L}^{-1} (\frac{1}{s^2 + 1}) = e^{-t} \sin(t)}\) for \(t &gt; 0\)</p>
+<p>Thus: \({\displaystyle w(t) = u(t) e^{-t} \sin(t) = \begin{cases}
+0 &amp;\text{for } t \lt 0 \\\<br>
+e^{-t} \sin(t) &amp;\text{for } t \gt 0
+\end{cases}
+}\)</p>
+<ul>
+<li>\(w(0^-) = \dot{w}(0^-) = 0\)</li>
+<li>Post-initial conditions emerge naturally from the solution and are \(w(0^+) =
+0\), \(\dot{w}(0^+) = 1\)</li>
+<li>Since \(\dot{w}(0^-) = 0\) the first derivative jumps by \(1\) unit at \(t = 0\)</li>
+<li>\((s^{2 + 2s + 1)}\) is the characteristic polynomial</li>
+</ul>
+<h2 id="solve-this-ivp-using-laplace-transform"><span class="section-num">22</span> Solve this IVP using Laplace transform</h2>
+<h3 id="front"><span class="section-num">22.1</span> Front</h3>
+<p><b>Solve this IVP using Laplace transform</b></p>
+<p>\(\dot{x} + 2x = 4t\) with initial condition \(x(0) = 1\)</p>
+<h3 id="back"><span class="section-num">22.2</span> Back</h3>
+<p>Because the input contains no delta function it is okay to specify the initial
+condition at \(t = 0\) instead of \(t = 0^-\). There will no jump in the output
+\(x(0) = x(0^-) = x(0^+)\)</p>
+<p>Laplace: \({\displaystyle sX - x(0^-) + 2X = \frac{4}{s^2}}\)</p>
+<p>Algebra and partial fractions</p>
+<p>\({\displaystyle X(s) = \frac{4}{s^2(s+2)} + \frac{1}{s + 2} = \frac{A}{s} +
+\frac{B}{s^2} + \frac{C}{s + 2} + \frac{1}{s + 2}}\)</p>
+<p>Cover-up gives</p>
+<ul>
+<li>\(B = 2\)</li>
+<li>\(C = 1\)</li>
+</ul>
+<p>Undetermined coefficients gives</p>
+<ul>
+<li>\(A = -1\)</li>
+</ul>
+<p>Inverse Laplace:</p>
+<p>\(x(t) = -1 + 2t + 2e^{-2t}\) for \(t \gt 0\)</p>
+<h2 id="solve-this-ivp-using-laplace-transform"><span class="section-num">23</span> Solve this IVP using Laplace transform</h2>
+<h3 id="front"><span class="section-num">23.1</span> Front</h3>
+<p><b>Solve this IVP using Laplace transform</b></p>
+<p>\(\ddot{x} + 4x = \cos(2t)\) with rest IC</p>
+<h3 id="back"><span class="section-num">23.2</span> Back</h3>
+<p>Laplace: \({\displaystyle (s^2 + 4)X(s) = \frac{s}{s^2 + 4} \implies X(s) =
+\frac{s}{(s^2 + 4)^2}}\)</p>
+<p>Inverse Laplace: \({\displaystyle x(t) = \frac{t \sin(2t)}{4}}\)</p>
+<p>Notes:</p>
+<ul>
+<li>This is a response of pure resonance</li>
+</ul>
+<h2 id="consider-this-system-and-its-unit-impulse-response-and-x2026"><span class="section-num">24</span> Consider this system and its unit impulse response…</h2>
+<h3 id="front"><span class="section-num">24.1</span> Front</h3>
+<p><b>Consider this system and its unit impulse response&hellip;</b></p>
+<p>\(\dot{x} + 3x = f(t)\), \(w(t) = u(t) e^{-3t}\)</p>
+<p>What is the response if \(f(t) = \delta(t - 2)\) with rest IC?</p>
+<p>Graph both responses</p>
+<h3 id="back"><span class="section-num">24.2</span> Back</h3>
+<p>LTI (Linear Time Invariance) tell us the response will also be shifted</p>
+<p>\({\displaystyle x(t) = w(t - 2) = u(t -2) e^{-3(t - 2)}}\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/ee/9eb620-e570-46c7-9f35-1dcece6295ae/_20200916_224618WYqpMA5.png"/> 
+</figure>
+
+<h2 id="what-is-the-t-translation-rule-for-laplace-transform"><span class="section-num">25</span> What is the t-translation rule for Laplace transform?</h2>
+<h3 id="front"><span class="section-num">25.1</span> Front</h3>
+<p><b>What is the t-translation rule for Laplace transform?</b></p>
+<p>Tip: Delta and Heaviside functions</p>
+<h3 id="back"><span class="section-num">25.2</span> Back</h3>
+<ul>
+<li>\({\displaystyle \mathcal{L}(u(t - a)f(t - a)) = e^{-as} F(s)}\)</li>
+<li>\({\displaystyle \mathcal{L}(u(t - a)f(t)) = e^{-as} \mathcal{L}(f(t + a))}\)</li>
+<li>\({\displaystyle \mathcal{L}(u(t - a)) = \frac{e^{-as}}{s}}\)</li>
+<li>\({\displaystyle \mathcal{L}(\delta(t - a)) = e^{-as}}\)</li>
+</ul>
+<h2 id="what-is-the-inverse-laplace-transform-for--e-as-fs"><span class="section-num">26</span> What is the inverse Laplace transform for \(e^{-as}F(s)\)?</h2>
+<h3 id="front"><span class="section-num">26.1</span> Front</h3>
+<p><b>What is the inverse Laplace transform for $e^{-as}F(s)$?</b></p>
+<h3 id="back"><span class="section-num">26.2</span> Back</h3>
+<p>\({\displaystyle u(t - a)f(t - a)}\)</p>
+<h2 id="what-is-the-inverse-laplace-for-this-expression"><span class="section-num">27</span> What is the inverse Laplace for this expression?</h2>
+<h3 id="front"><span class="section-num">27.1</span> Front</h3>
+<p><b>What is the inverse Laplace for this expression?</b></p>
+<p>\({\displaystyle \mathcal{L}^{-1} \biggl(\frac{k e^{-as}}{s^2 + k^2} \biggr)}\)</p>
+<h3 id="back"><span class="section-num">27.2</span> Back</h3>
+<p>\({\displaystyle f(t) = \mathcal{L}^{-1} \biggl( \frac{k}{s^2 + k^2} \biggr) =
+\sin(kt)}\)</p>
+<p>So, \({\displaystyle \mathcal{L}^{-1} \biggl(\frac{k e^{-as}}{s^2 + k^2} \biggr)
+= u(t - a) f(t - a) = u(t -a) \sin(k(t -a))}\)</p>
+<h2 id="what-is-the-laplace-transform-of--ut-3--t"><span class="section-num">28</span> What is the Laplace transform of \((u(t - 3)t\)?</h2>
+<h3 id="front"><span class="section-num">28.1</span> Front</h3>
+<p><b>What is the Laplace transform of $(u(t - 3)t$?</b></p>
+<p>\({\displaystyle \mathcal{L}(u(t - 3)t)}\)</p>
+<h3 id="back"><span class="section-num">28.2</span> Back</h3>
+<p>\({\displaystyle e^{-3s} \mathcal{L}(t + 3) = e^{-3s} \biggl(\frac{1}{s^2} +
+\frac{3}{s} \biggr)}\)</p>
+<h2 id="what-is-the-laplace-transform-of-this-expression"><span class="section-num">29</span> What is the Laplace transform of this expression?</h2>
+<h3 id="front"><span class="section-num">29.1</span> Front</h3>
+<p><b>What is the Laplace transform of this expression?</b></p>
+<p>\({\displaystyle \mathcal{L}(u(t - 3) \cdot 1)}\)</p>
+<h3 id="back"><span class="section-num">29.2</span> Back</h3>
+<p>\({\displaystyle e^{-3s} \mathcal{L}1} = \frac{e^{-3s}}{s}\)</p>
+<h2 id="what-is-the-laplace-transform-of-this-expression"><span class="section-num">30</span> What is the Laplace transform of this expression?</h2>
+<h3 id="front"><span class="section-num">30.1</span> Front</h3>
+<p><b>What is the Laplace transform of this expression?</b></p>
+<p>\({\displaystyle f(t) = \begin{cases}
+0 &amp;\text{for } t \lt 2 \\\<br>
+t^2 &amp;\text{for } t \gt 2
+\end{cases}
+}\)</p>
+<h3 id="back"><span class="section-num">30.2</span> Back</h3>
+<p>\({\displaystyle f(t) = u(t - 2)t^2 \implies F(s) = e^{-2s} \mathcal{L}((t +
+2)^2) = e^{-2s} \biggl(\frac{2}{s^3} + \frac{4}{s^2} + \frac{4}{s} \biggr)}\)</p>
+<h2 id="what-is-the-laplace-transform-for-this-expression"><span class="section-num">31</span> What is the Laplace transform for this expression?</h2>
+<h3 id="front"><span class="section-num">31.1</span> Front</h3>
+<p><b>What is the Laplace transform for this expression?</b></p>
+<p>\({\displaystyle f(t) = \begin{cases}
+\cos(t) &amp;\text{for } 0 \lt t \lt 2\pi \\\<br>
+0 &amp;\text{for } t \gt 2\pi
+\end{cases}
+}\)</p>
+<h3 id="back"><span class="section-num">31.2</span> Back</h3>
+<p>\({\displaystyle f(t) = \cos(t)(u(t) - u(t - 2\pi)) = u(t) \cos(t) - u(t -2\pi)
+\cos(t)}\)</p>
+<p>\({\displaystyle F(s) = \frac{s}{s^2 + 1} - e^{-2\pi s} \mathcal{L}(\cos(t +
+2\pi)) = (1 - e^{-2 \pi s}) \frac{s}{s^2 + 1}}\)</p>
+<h2 id="how-is-the--ft---and-its-laplace-transform-to-model-this-situation"><span class="section-num">32</span> How is the \(f(t)\) and its Laplace transform to model this situation?</h2>
+<h3 id="front"><span class="section-num">32.1</span> Front</h3>
+<p><b>How is the $f(t)$ and its Laplace transform to model this situation?</b></p>
+<p>Stock a lake with fish at a constant rate of \(r\) units per year, but after half
+year the funding is cut and the program ends</p>
+<h3 id="back"><span class="section-num">32.2</span> Back</h3>
+<p>\({\displaystyle f(t) = \begin{cases}
+r &amp;\text{for } 0 \lt t \lt 1/2 \\\<br>
+0 &amp;\text{for } 1/2 \lt t
+\end{cases}
+}\)</p>
+<p>Using u-format: \({\displaystyle f(t) = r(1 - u(t - 1/2))}\)</p>
+<p>Laplace: \({\displaystyle \mathcal{L}(f)(s) = F(s) = \frac{r}{s} - \frac{r}{s}e^{-s/2}}\)</p>
+<h2 id="what-is-the-inverse-laplace-for-this-expression"><span class="section-num">33</span> What is the inverse Laplace for this expression?</h2>
+<h3 id="front"><span class="section-num">33.1</span> Front</h3>
+<p><b>What is the inverse Laplace for this expression?</b></p>
+<p>\({\displaystyle \mathcal{L}^{-1} \biggl( \frac{r e^{-s/2}}{s(s + k)} \biggr)}\)</p>
+<h3 id="back"><span class="section-num">33.2</span> Back</h3>
+<p>\({\displaystyle u(t-1/2) \frac{r}{k} (1 - e^{-k(t - 1/2)})}\)</p>
+<h2 id="how-is-the--ft---and-its-laplace-transform-to-model-this-situation"><span class="section-num">34</span> How is the \(f(t)\) and its Laplace transform to model this situation?</h2>
+<h3 id="front"><span class="section-num">34.1</span> Front</h3>
+<p><b>How is the $f(t)$ and its Laplace transform to model this situation?</b></p>
+<p>Once a year \(r/2\) units of fish are dumped all at once into the lake</p>
+<h3 id="back"><span class="section-num">34.2</span> Back</h3>
+<p>\({\displaystyle f(t) = \frac{r}{2} (\delta(t) + \delta(t - 1) + \delta(t - 2) +
+\delta(t - 3) + \dots)}\)</p>
+<p>This is called <strong>impulse train</strong></p>
+<p>Laplace: \({\displaystyle F(s) = \frac{r}{2} (1 + e^{-s} + e^{-2s} + e^{-3s} + \dots)}\)</p>
+<h2 id="find-the-laplace-transform-of--ft---by-use-of-the-t-shift-rule"><span class="section-num">35</span> Find the Laplace transform of \(f(t)\) by use of the t-shift rule</h2>
+<h3 id="front"><span class="section-num">35.1</span> Front</h3>
+<p><b>Find the Laplace transform of $f(t)$ by use of the t-shift rule</b></p>
+<p>\({\displaystyle f(t) = (u(t) - u(t - 2\pi)) \sin(t)}\)</p>
+<h3 id="back"><span class="section-num">35.2</span> Back</h3>
+<p>In this case we can write \(\sin(t) = \sin(t - 2 \pi)\) (since it is periodic with
+period \(2\pi\)). Then using the shift rule</p>
+<p>\({\displaystyle \mathcal{L}(u(t) - u(t - 2\pi) \sin(t - 2\pi)) =
+\biggl(1 - e^{-2\pi s} \biggr) \biggl(\frac{1}{s^2 + 1} \biggr)}\)</p>
+<h2 id="what-is-the-inverse-laplace-of-this-expression"><span class="section-num">36</span> What is the inverse Laplace of this expression?</h2>
+<h3 id="front"><span class="section-num">36.1</span> Front</h3>
+<p><b>What is the inverse Laplace of this expression?</b></p>
+<p>\({\displaystyle \mathcal{L}^{-1} \biggl( \frac{a}{b (as + b)} \biggr)}\)</p>
+<h3 id="back"><span class="section-num">36.2</span> Back</h3>
+<p>\({\displaystyle \frac{a}{b} \frac{1}{a} \mathcal{L}^{-1} \biggl(\frac{1}{s +
+b/a} \biggr) = \frac{1}{b} e^{- bt/a}}\)</p>
+
+</div>
+
+
+            <footer>
+    
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-29%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Laplace%20Transform%3a%20Solving%20Initial%20Value%20Problems&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-29%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-29%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-29%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-29%2f&amp;title=Laplace%20Transform%3a%20Solving%20Initial%20Value%20Problems" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Laplace%20Transform%3a%20Solving%20Initial%20Value%20Problems&amp;body=Check out this site https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-29%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+
+<nav>
+    <ul class="pager">
+    
+    <li class="previous">
+        <a href="https://ppalazon.github.io/18.03/unit-3/session-28/" title="Partial Fractions and Inverse Laplace Transform">
+            <span aria-hidden="true">&larr;</span>Partial Fractions and Inverse Laplace Transform
+        </a>
+    </li>
+    
+
+    
+    <li class="next">
+        <a href="https://ppalazon.github.io/18.03/unit-3/session-30/" title="Transfer (System) and Weight Functions, Green&#39;s Formula">
+            Transfer (System) and Weight Functions, Green&#39;s Formula <span aria-hidden="true">&rarr;</span>
+        </a>
+    </li>
+    
+    </ul>
+</nav>
+
+
+
+</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//ppalazon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+        </div>
+    </div>
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/">18.03 Differential Equations</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/unit-3/">3: Fourier Series and Laplace Transform</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.03/unit-3/session-29/">Laplace Transform: Solving Initial Value Problems</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

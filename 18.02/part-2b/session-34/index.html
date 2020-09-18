@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Session 34: The Chain Rule with More Variables  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="calculus, maths, ">
+
+
+<meta property="og:title" content="Session 34: The Chain Rule with More Variables  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.02/part-2b/session-34/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="content-source" content="18.02/part-2b/session-34.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Captured On [2020-02-06 Thu 12:28] Source Session 34: The Chain Rule with More Variables | Part B: Chain Rule, Gradient and Directional Derivatives | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare 1 Chalkboard Figure 1: Chain rule with more variables Figure 2: Expansion of chain rule
+Figure 3: Partial derivative with more variables
+"/>
+<meta property="og:article:published_time" content="2019-04-18T00:00:00&#43;02:00" />
+<meta property="og:article:modified_time" content="2019-04-18T00:00:00&#43;02:00" />
+
+
+
+<meta property="og:article:tag" content="calculus">
+
+<meta property="og:article:tag" content="maths">
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ppalazon" />
+<meta name="twitter:creator" content="@ppalazon" />
+<meta name="twitter:title" content="Session 34: The Chain Rule with More Variables" />
+<meta name="twitter:description" content="Captured On [2020-02-06 Thu 12:28] Source Session 34: The Chain Rule with More Variables | Part B: Chain Rule, Gradient and Directional Derivatives | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare 1 Chalkboard Figure 1: Chain rule with more variables Figure 2: Expansion of chain rule
+Figure 3: Partial derivative with more variables
+"/>
+<meta name="twitter:url" content="https://ppalazon.github.io/18.02/part-2b/session-34/" />
+<meta name="twitter:domain" content="https://ppalazon.github.io">
+
+
+
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+     "@type": "Article",
+     "headline": "Session 34: The Chain Rule with More Variables",
+     "author": {
+         "@type": "Person",
+         "name": "http://profiles.google.com/+?rel=author"
+     },
+     "datePublished": "2019-04-18",
+     "description": "",
+     "wordCount":  399 
+ }
+</script>
+
+
+
+<link rel="canonical" href="https://ppalazon.github.io/18.02/part-2b/session-34/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+ }
+ .hero {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: calc(200px + (450 - 200) * ((100vw - 300px) / (1600 - 300)));
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: calc(-1 * (200px + (450 - 200) * ((100vw - 300px) / (1600 - 300))));
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+    <header class="container hat">
+        <h1>Session 34: The Chain Rule with More Variables
+</h1>
+
+        
+
+
+<span class="author">by
+    
+    MIT OCW, Pablo Palazon
+    
+</span>
+
+
+    </header>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            
+            <div class="content">
+  <dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2020-02-06 Thu 12:28]</span></span></dd>
+<dt>Source</dt>
+<dd><a href="https://ocw.mit.edu/courses/mathematics/18-02sc-multivariable-calculus-fall-2010/2.-partial-derivatives/part-b-chain-rule-gradient-and-directional-derivatives/session-34-the-chain-rule-with-more-variables/index.htm">Session 34: The Chain Rule with More Variables | Part B: Chain Rule, Gradient and Directional Derivatives | 2. Partial Derivatives | Multivariable Calculus | Mathematics | MIT OpenCourseWare</a></dd>
+</dl>
+<h2 id="chalkboard"><span class="section-num">1</span> Chalkboard</h2>
+<p><a id="org33e26fa"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/ae/0acaaa-4a36-45fd-93a5-c3dea3248f4c/_20200206_124151MIT18_02SC_L11Brds_13.png"
+         alt="Figure 1: Chain rule with more variables" width="80%"/> <figcaption>
+            <p>Figure 1: Chain rule with more variables</p>
+        </figcaption>
+</figure>
+
+<p><a id="orgd7068a3"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/ae/0acaaa-4a36-45fd-93a5-c3dea3248f4c/_20200206_124200MIT18_02SC_L11Brds_14.png"
+         alt="Figure 2: Expansion of chain rule" width="80%"/> <figcaption>
+            <p>Figure 2: Expansion of chain rule</p>
+        </figcaption>
+</figure>
+
+<p><a id="org32d4bd1"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/ae/0acaaa-4a36-45fd-93a5-c3dea3248f4c/_20200206_124206MIT18_02SC_L11Brds_15.png"
+         alt="Figure 3: Partial derivative with more variables" width="80%"/> <figcaption>
+            <p>Figure 3: Partial derivative with more variables</p>
+        </figcaption>
+</figure>
+
+<p><a id="orgff4a727"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/ae/0acaaa-4a36-45fd-93a5-c3dea3248f4c/_20200206_124211MIT18_02SC_L11Brds_16.png"
+         alt="Figure 4: Example with polar coordinates" width="80%"/> <figcaption>
+            <p>Figure 4: Example with polar coordinates</p>
+        </figcaption>
+</figure>
+
+<h2 id="how-is-the-chain-rule-for-partial-derivative-with-more-than-one-independent-variable"><span class="section-num">2</span> How is the chain rule for partial derivative with more than one independent variable?</h2>
+<h3 id="front"><span class="section-num">2.1</span> Front</h3>
+<p><b>How is the chain rule for partial derivative with more than one independent variable?</b></p>
+<p>\(w=f(x,y)\), and \(x = x(u,v)\), \(y = y(u,v)\)</p>
+<p>Get \(\frac{\partial w}{\partial u}\) and \(\frac{\partial w}{\partial
+y}\)</p>
+<h3 id="back"><span class="section-num">2.2</span> Back</h3>
+<p>For computing \(w\) we need to do a chain of computations</p>
+<p>\((u,v) \to (x,y) \to w\)</p>
+<p>Where \(w\) is a dependent variable, \(u, v\) are independent variables
+and \(x,y\) are intermediate variables.</p>
+<p>Since \(w\) is a function of \(x\) and \(y\) it has partial derivatives
+\(\frac{\partial w}{\partial x}\) and \(\frac{\partial w}{\partial y}\)</p>
+<p>Ultimately, \(w\) is a function of \(u\) and \(v\)</p>
+<p>\({\displaystyle \frac{\partial w}{\partial u} = \frac{\partial
+w}{\partial x} \frac{\partial x}{\partial u} + \frac{\partial
+w}{\partial y} \frac{\partial y}{\partial u}}\)</p>
+<p>\({\displaystyle \frac{\partial w}{\partial v} = \frac{\partial
+w}{\partial x} \frac{\partial x}{\partial v} + \frac{\partial
+w}{\partial y} \frac{\partial y}{\partial v}}\)</p>
+<h2 id="get-the-total-differential--dw--in-terms-of--du--and--dv"><span class="section-num">3</span> Get the total differential \(dw\) in terms of \(du\) and \(dv\)</h2>
+<h3 id="front"><span class="section-num">3.1</span> Front</h3>
+<p><b>Get the total differential $dw$ in terms of $du$ and $dv$</b></p>
+<p>\(w=xyz\), \(x = u^2v\), \(y=uv^2\), \(z = u^2 + v^2\)</p>
+<h3 id="back"><span class="section-num">3.2</span> Back</h3>
+<p>\({\displaystyle dw = \frac{\partial w}{\partial x} dx + \frac{\partial
+w}{\partial y} dy + \frac{\partial w}{\partial z} dz = yz dx + xz dy +
+xy dz}\)</p>
+<p>Double total differential</p>
+<ul>
+<li>\({\displaystyle dx = \frac{\partial x}{\partial u} du +
+\frac{\partial x}{\partial v} dv = 2uv du + u^2 dv}\)</li>
+<li>\({\displaystyle dy = \frac{\partial y}{\partial u} du +
+\frac{\partial y}{\partial v} dv = v^2 du + 2uv dv}\)</li>
+<li>\({\displaystyle dz = \frac{\partial z}{\partial u} du +
+\frac{\partial z}{\partial v} dv = 2u du + 2v dv}\)</li>
+</ul>
+<p>Also</p>
+<p>\({\displaystyle dw = \frac{\partial w}{\partial u} du + \frac{\partial
+w}{\partial v} dv}\)</p>
+<h2 id="how-can-we-build-a-dependency-graph-for-chain-rule-of-multivariable-partial-derivative"><span class="section-num">4</span> How can we build a &lsquo;dependency graph&rsquo; for chain rule of multivariable partial derivative?</h2>
+<h3 id="front"><span class="section-num">4.1</span> Front</h3>
+<p><strong>How can we build a &lsquo;dependency graph&rsquo; for chain rule of multivariable
+partial derivative?</strong></p>
+<p>\(w = w(x,y)\), \(x = x(u,v)\) and \(y = y(u,v)\)</p>
+<h3 id="back"><span class="section-num">4.2</span> Back</h3>
+<p><strong>How can we build a &lsquo;dependency graph&rsquo; for chain rule of multivariable
+partial derivative?</strong></p>
+<figure>
+    <img src="https://ppalazon.github.io/ae/0acaaa-4a36-45fd-93a5-c3dea3248f4c/_20200917_121818tD9odnI.png"/> 
+</figure>
+
+
+</div>
+
+
+            <footer>
+    
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-2b%2fsession-34%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Session%2034%3a%20The%20Chain%20Rule%20with%20More%20Variables&amp;url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-2b%2fsession-34%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-2b%2fsession-34%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-2b%2fsession-34%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-2b%2fsession-34%2f&amp;title=Session%2034%3a%20The%20Chain%20Rule%20with%20More%20Variables" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Session%2034%3a%20The%20Chain%20Rule%20with%20More%20Variables&amp;body=Check out this site https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-2b%2fsession-34%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+
+<nav>
+    <ul class="pager">
+    
+    <li class="previous">
+        <a href="https://ppalazon.github.io/18.02/part-2b/session-32/" title="Session 32: Total Differentials and the Chain Rule">
+            <span aria-hidden="true">&larr;</span>Session 32: Total Differentials and the Chain Rule
+        </a>
+    </li>
+    
+
+    
+    <li class="next">
+        <a href="https://ppalazon.github.io/18.02/part-2b/session-35/" title="Session 35: Gradient: Definition, Perpendicular to Level Curves">
+            Session 35: Gradient: Definition, Perpendicular to Level Curves <span aria-hidden="true">&rarr;</span>
+        </a>
+    </li>
+    
+    </ul>
+</nav>
+
+
+
+</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//ppalazon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+        </div>
+    </div>
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.02/">18.02 Multivariable Calculus</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.02/part-2b/">2B: Chain Rule, Gradient and Directional Derivatives</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.02/part-2b/session-34/">Session 34: The Chain Rule with More Variables</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

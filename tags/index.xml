@@ -1,24 +1,63 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Sobremesa en Milliways</title>
+    <title>Tags on Pablo Palazon&#39;s Website</title>
     <link>https://ppalazon.github.io/tags/</link>
-    <description>Recent content in Tags on Sobremesa en Milliways</description>
+    <description>Recent content in Tags on Pablo Palazon&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <managingEditor>pablo.palazon@gmail.com (Pablo Palazon)</managingEditor>
-    <webMaster>pablo.palazon@gmail.com (Pablo Palazon)</webMaster>
-    <copyright>CC BY-NC-ND 3.0</copyright>
-    <lastBuildDate>Wed, 11 Apr 2018 00:00:00 +0200</lastBuildDate>
+    <copyright>CC BY-NC-ND 4.0</copyright>
+    <lastBuildDate>Sat, 18 Jan 2020 00:00:00 +0100</lastBuildDate><atom:link href="https://ppalazon.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>calculus</title>
+      <link>https://ppalazon.github.io/tags/calculus/</link>
+      <pubDate>Sat, 18 Jan 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/tags/calculus/</guid>
+      <description></description>
+    </item>
     
-	<atom:link href="https://ppalazon.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>math</title>
+      <link>https://ppalazon.github.io/tags/math/</link>
+      <pubDate>Sat, 18 Jan 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/tags/math/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>maths</title>
+      <link>https://ppalazon.github.io/tags/maths/</link>
+      <pubDate>Sat, 18 Jan 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/tags/maths/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ode</title>
+      <link>https://ppalazon.github.io/tags/ode/</link>
+      <pubDate>Sat, 18 Jan 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/tags/ode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ATTACH</title>
+      <link>https://ppalazon.github.io/tags/attach/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/tags/attach/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>me</title>
       <link>https://ppalazon.github.io/tags/me/</link>
       <pubDate>Wed, 11 Apr 2018 00:00:00 +0200</pubDate>
-      <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
+      
       <guid>https://ppalazon.github.io/tags/me/</guid>
       <description></description>
     </item>
@@ -27,7 +66,7 @@
       <title>ppalazon</title>
       <link>https://ppalazon.github.io/tags/ppalazon/</link>
       <pubDate>Wed, 11 Apr 2018 00:00:00 +0200</pubDate>
-      <author>pablo.palazon@gmail.com (Pablo Palazon)</author>
+      
       <guid>https://ppalazon.github.io/tags/ppalazon/</guid>
       <description></description>
     </item>

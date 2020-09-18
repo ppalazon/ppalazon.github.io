@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Session 67: Proof of Green&#39;s Theorem  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="calculus, maths, ">
+
+
+<meta property="og:title" content="Session 67: Proof of Green&#39;s Theorem  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.02/part-3c/session-67/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="content-source" content="18.02/part-3c/session-67.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Captured On [2020-02-06 Thu 16:31] Source Session 67: Proof of Green&amp;rsquo;s Theorem | Part C: Green&amp;rsquo;s Theorem | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare 1 Chalkboard Figure 1: Proof of Green&amp;rsquo;s Theorem Figure 2: 2 observations
+Figure 3: Proof of one part
+"/>
+<meta property="og:article:published_time" content="2019-04-18T00:00:00&#43;02:00" />
+<meta property="og:article:modified_time" content="2019-04-18T00:00:00&#43;02:00" />
+
+
+
+<meta property="og:article:tag" content="calculus">
+
+<meta property="og:article:tag" content="maths">
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ppalazon" />
+<meta name="twitter:creator" content="@ppalazon" />
+<meta name="twitter:title" content="Session 67: Proof of Green&#39;s Theorem" />
+<meta name="twitter:description" content="Captured On [2020-02-06 Thu 16:31] Source Session 67: Proof of Green&amp;rsquo;s Theorem | Part C: Green&amp;rsquo;s Theorem | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare 1 Chalkboard Figure 1: Proof of Green&amp;rsquo;s Theorem Figure 2: 2 observations
+Figure 3: Proof of one part
+"/>
+<meta name="twitter:url" content="https://ppalazon.github.io/18.02/part-3c/session-67/" />
+<meta name="twitter:domain" content="https://ppalazon.github.io">
+
+
+
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+     "@type": "Article",
+     "headline": "Session 67: Proof of Green\u0027s Theorem",
+     "author": {
+         "@type": "Person",
+         "name": "http://profiles.google.com/+?rel=author"
+     },
+     "datePublished": "2019-04-18",
+     "description": "",
+     "wordCount":  290 
+ }
+</script>
+
+
+
+<link rel="canonical" href="https://ppalazon.github.io/18.02/part-3c/session-67/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+ }
+ .hero {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: calc(200px + (450 - 200) * ((100vw - 300px) / (1600 - 300)));
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: calc(-1 * (200px + (450 - 200) * ((100vw - 300px) / (1600 - 300))));
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+    <header class="container hat">
+        <h1>Session 67: Proof of Green&#39;s Theorem
+</h1>
+
+        
+
+
+<span class="author">by
+    
+    MIT OCW, Pablo Palazon
+    
+</span>
+
+
+    </header>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            
+            <div class="content">
+  <dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2020-02-06 Thu 16:31]</span></span></dd>
+<dt>Source</dt>
+<dd><a href="https://ocw.mit.edu/courses/mathematics/18-02sc-multivariable-calculus-fall-2010/3.-double-integrals-and-line-integrals-in-the-plane/part-c-greens-theorem/session-67-proof-of-greens-theorem">Session 67: Proof of Green&rsquo;s Theorem | Part C: Green&rsquo;s Theorem | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare</a></dd>
+</dl>
+<h2 id="chalkboard"><span class="section-num">1</span> Chalkboard</h2>
+<p><a id="org0d54ddb"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/5d/2ce30b-ec1d-4687-aec4-8b8e3bbd85b9/_20200206_163209MIT18_02SC_L22Brds_11.png"
+         alt="Figure 1: Proof of Green&amp;rsquo;s Theorem" width="80%"/> <figcaption>
+            <p>Figure 1: Proof of Green&rsquo;s Theorem</p>
+        </figcaption>
+</figure>
+
+<p><a id="org2a1521c"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/5d/2ce30b-ec1d-4687-aec4-8b8e3bbd85b9/_20200206_163214MIT18_02SC_L22Brds_12.png"
+         alt="Figure 2: 2 observations" width="80%"/> <figcaption>
+            <p>Figure 2: 2 observations</p>
+        </figcaption>
+</figure>
+
+<p><a id="org8990280"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/5d/2ce30b-ec1d-4687-aec4-8b8e3bbd85b9/_20200206_163221MIT18_02SC_L22Brds_13.png"
+         alt="Figure 3: Proof of one part" width="80%"/> <figcaption>
+            <p>Figure 3: Proof of one part</p>
+        </figcaption>
+</figure>
+
+<p><a id="orgf360224"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/5d/2ce30b-ec1d-4687-aec4-8b8e3bbd85b9/_20200206_163226MIT18_02SC_L22Brds_14.png"
+         alt="Figure 4: Cut (R) &amp;ldquo;vertically simple&amp;rdquo;" width="80%"/> <figcaption>
+            <p>Figure 4: Cut (R) &ldquo;vertically simple&rdquo;</p>
+        </figcaption>
+</figure>
+
+<p><a id="org73d10d7"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/5d/2ce30b-ec1d-4687-aec4-8b8e3bbd85b9/_20200206_163231MIT18_02SC_L22Brds_15.png"
+         alt="Figure 5: Main step of prove" width="80%"/> <figcaption>
+            <p>Figure 5: Main step of prove</p>
+        </figcaption>
+</figure>
+
+<p><a id="org51badc0"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/5d/2ce30b-ec1d-4687-aec4-8b8e3bbd85b9/_20200206_163237MIT18_02SC_L22Brds_16.png"
+         alt="Figure 6: Line integrals" width="80%"/> <figcaption>
+            <p>Figure 6: Line integrals</p>
+        </figcaption>
+</figure>
+
+<p><a id="org36fad6f"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/5d/2ce30b-ec1d-4687-aec4-8b8e3bbd85b9/_20200206_163243MIT18_02SC_L22Brds_17.png"
+         alt="Figure 7: Sum of all line integrals" width="80%"/> <figcaption>
+            <p>Figure 7: Sum of all line integrals</p>
+        </figcaption>
+</figure>
+
+<p><a id="org0245154"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/5d/2ce30b-ec1d-4687-aec4-8b8e3bbd85b9/_20200206_163248MIT18_02SC_L22Brds_18.png"
+         alt="Figure 8: Doble integral of internal region" width="80%"/> <figcaption>
+            <p>Figure 8: Doble integral of internal region</p>
+        </figcaption>
+</figure>
+
+<h2 id="which-step-we-need-to-do-for-proofing-green-s-theorem"><span class="section-num">2</span> Which step we need to do for proofing Green&rsquo;s Theorem?</h2>
+<h3 id="front"><span class="section-num">2.1</span> Front</h3>
+<p><b>Which step we need to do for proofing Green&rsquo;s Theorem?</b></p>
+<p>Only describe the steps</p>
+<h3 id="back"><span class="section-num">2.2</span> Back</h3>
+<p>Green&rsquo;s Theorem: \({\displaystyle \oint_C M \dd{x} + N \dd{y} = \iint_R
+(N_x - M_y) \dd{A}}\)</p>
+<ol>
+<li>
+<p>First Observation</p>
+<ul>
+<li>Separate this integral as \(N = 0\) and \(M = 0\)
+<ul>
+<li>\({\displaystyle \oint_C M \dd{x} = \iint_R - M_y \dd{A}}\)</li>
+<li>\({\displaystyle \oint_C N \dd{y} = \iint_R N_x \dd{A}}\)</li>
+</ul>
+</li>
+<li>The sum of both equation is the complete proof of Green Theorem</li>
+</ul>
+</li>
+<li>
+<p>Second Observation</p>
+<ul>
+<li>Decompose \(R\) into simpler regions, creating new paths around
+this new regions. The sums of the regions is \(R\) and the sum of
+\(C_i\) path around each region is \(C\) (this is true, because all
+path are counterclockwise, and 2 path in the boundaries with
+opposite orientations is \(0\)).</li>
+<li>You can use &ldquo;vertically simple&rdquo;, &ldquo;horizontal simple&rdquo; or
+rectangles
+<ul>
+<li><figure>
+    <img src="https://ppalazon.github.io/5d/2ce30b-ec1d-4687-aec4-8b8e3bbd85b9/_20200917_122646l6ya952.png"/> 
+</figure>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Main Step (using the separated integral)</p>
+<ul>
+<li>Calculate the right hand side of Green&rsquo;s Theorem
+<ul>
+<li>Set the outer integral</li>
+</ul>
+</li>
+<li>Calculate the left hand side of Green&rsquo;s T
+<ul>
+<li>Along some size the integral is \(0\)</li>
+</ul>
+</li>
+<li>\({\displaystyle \int_a^b M(x,c) - M(x,d) \dd{x}}\)
+<ul>
+<li><figure>
+    <img src="https://ppalazon.github.io/5d/2ce30b-ec1d-4687-aec4-8b8e3bbd85b9/_20200917_122700vVf5bEz.png"/> 
+</figure>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<figure>
+    <img src="https://ppalazon.github.io/5d/2ce30b-ec1d-4687-aec4-8b8e3bbd85b9/_20200917_122709kjiXz5T.png"/> 
+</figure>
+
+<p>Any region can be approximated as closely as we want by a sum of
+rectangles, Green&rsquo;s Theorem must hold on arbitrary regions</p>
+
+</div>
+
+
+            <footer>
+    
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-3c%2fsession-67%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Session%2067%3a%20Proof%20of%20Green%27s%20Theorem&amp;url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-3c%2fsession-67%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-3c%2fsession-67%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-3c%2fsession-67%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-3c%2fsession-67%2f&amp;title=Session%2067%3a%20Proof%20of%20Green%27s%20Theorem" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Session%2067%3a%20Proof%20of%20Green%27s%20Theorem&amp;body=Check out this site https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-3c%2fsession-67%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+
+<nav>
+    <ul class="pager">
+    
+    <li class="previous">
+        <a href="https://ppalazon.github.io/18.02/part-3c/session-66/" title="Session 66: Curl(F) = 0 Implies Conservative">
+            <span aria-hidden="true">&larr;</span>Session 66: Curl(F) = 0 Implies Conservative
+        </a>
+    </li>
+    
+
+    
+    <li class="next">
+        <a href="https://ppalazon.github.io/18.02/part-3c/session-68/" title="Session 68: Planimeter: Green&#39;s Theorem and Area">
+            Session 68: Planimeter: Green&#39;s Theorem and Area <span aria-hidden="true">&rarr;</span>
+        </a>
+    </li>
+    
+    </ul>
+</nav>
+
+
+
+</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//ppalazon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+        </div>
+    </div>
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.02/">18.02 Multivariable Calculus</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.02/part-3c/">3C: Green&#39;s Theorem</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.02/part-3c/session-67/">Session 67: Proof of Green&#39;s Theorem</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

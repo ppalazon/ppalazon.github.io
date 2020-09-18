@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Geometric Methods  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="ode, maths, ">
+
+
+<meta property="og:title" content="Geometric Methods  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.03/unit-1/session-2/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="content-source" content="18.03/unit-1/session-2.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Captured On [2019-09-17 Tue 16:00] Source Geometric Methods | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is a direction field 1.1 Front What is a direction field
+for the equation \(y&#39; = f(x,y)\)
+1.2 Back For each point \((x,y)\) of the plane is drawn a little segment whose slope is \(f(x,y)\)
+For example: \({\displaystyle \dv{y}{x} = 2x}\)
+  2 How can we draw a direction field by hand?"/>
+<meta property="og:article:published_time" content="2019-09-17T16:00:00&#43;02:00" />
+<meta property="og:article:modified_time" content="2019-09-17T16:00:00&#43;02:00" />
+
+
+
+<meta property="og:article:tag" content="ode">
+
+<meta property="og:article:tag" content="maths">
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ppalazon" />
+<meta name="twitter:creator" content="@ppalazon" />
+<meta name="twitter:title" content="Geometric Methods" />
+<meta name="twitter:description" content="Captured On [2019-09-17 Tue 16:00] Source Geometric Methods | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is a direction field 1.1 Front What is a direction field
+for the equation \(y&#39; = f(x,y)\)
+1.2 Back For each point \((x,y)\) of the plane is drawn a little segment whose slope is \(f(x,y)\)
+For example: \({\displaystyle \dv{y}{x} = 2x}\)
+  2 How can we draw a direction field by hand?"/>
+<meta name="twitter:url" content="https://ppalazon.github.io/18.03/unit-1/session-2/" />
+<meta name="twitter:domain" content="https://ppalazon.github.io">
+
+
+
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+     "@type": "Article",
+     "headline": "Geometric Methods",
+     "author": {
+         "@type": "Person",
+         "name": "http://profiles.google.com/+?rel=author"
+     },
+     "datePublished": "2019-09-17",
+     "description": "",
+     "wordCount":  1550 
+ }
+</script>
+
+
+
+<link rel="canonical" href="https://ppalazon.github.io/18.03/unit-1/session-2/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+ }
+ .hero {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: calc(200px + (450 - 200) * ((100vw - 300px) / (1600 - 300)));
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: calc(-1 * (200px + (450 - 200) * ((100vw - 300px) / (1600 - 300))));
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+    <header class="container hat">
+        <h1>Geometric Methods
+</h1>
+
+        
+
+
+<span class="author">by
+    
+    MIT OCW, Pablo Palazon
+    
+</span>
+
+
+    </header>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            
+            <div class="content">
+  <dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2019-09-17 Tue 16:00]</span></span></dd>
+<dt>Source</dt>
+<dd><a href="https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-i-first-order-differential-equations/geometric-methods/index.htm">Geometric Methods | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare</a></dd>
+</dl>
+<h2 id="what-is-a-direction-field"><span class="section-num">1</span> What is a direction field</h2>
+<h3 id="front"><span class="section-num">1.1</span> Front</h3>
+<p><strong>What is a direction field</strong></p>
+<p>for the equation \(y' = f(x,y)\)</p>
+<h3 id="back"><span class="section-num">1.2</span> Back</h3>
+<p>For each point \((x,y)\) of the plane is drawn a little segment whose
+slope is \(f(x,y)\)</p>
+<p>For example: \({\displaystyle \dv{y}{x} = 2x}\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/6c/cd2ce6-0bd4-4f36-a1a6-3d798ca9b517/_20200916_193719KKeVx9G.png"/> 
+</figure>
+
+<h2 id="how-can-we-draw-a-direction-field-by-hand"><span class="section-num">2</span> How can we draw a direction field by hand?</h2>
+<h3 id="front"><span class="section-num">2.1</span> Front</h3>
+<p><strong>How can we draw a direction field by hand?</strong></p>
+<p>for the equation \(y' = f(x,y)\)</p>
+<h3 id="back"><span class="section-num">2.2</span> Back</h3>
+<ul>
+<li>Draw in lightly (or in dashed lines) the isoclines for \(y' = f(x,y)\)
+<ul>
+<li>Family of curves given by \(f(x,y) = m\), where \(m\) is constant</li>
+</ul>
+</li>
+<li>Along the isocline, the line segments all have the same slope \(m\)</li>
+<li>Draw a solid line curves which are at each point tangent to the line
+segment at that point, this curve is a integral curve (solution
+curves) for the direction field</li>
+</ul>
+<h2 id="what-is-a-isocline"><span class="section-num">3</span> What is a isocline?</h2>
+<h3 id="front"><span class="section-num">3.1</span> Front</h3>
+<p><strong>What is a isocline?</strong></p>
+<p>for \(y' = f(x,y)\)</p>
+<h3 id="back"><span class="section-num">3.2</span> Back</h3>
+<p>These are the one-parameter family of curves given by the equations
+\(f(x,y) = m\), where \(m\) is constant</p>
+<p>Along this line, all segments in a direction field has the same slope</p>
+<p>&ldquo;iso-cline&rdquo; = &ldquo;equal slope&rdquo;</p>
+<h2 id="what-is-the-direction-field-for--y-x-y"><span class="section-num">4</span> What is the direction field for \(y' = x - y\)?</h2>
+<h3 id="front"><span class="section-num">4.1</span> Front</h3>
+<p><strong>What is the direction field for \(y' = x - y\)?</strong></p>
+<h3 id="back"><span class="section-num">4.2</span> Back</h3>
+<figure>
+    <img src="https://ppalazon.github.io/6c/cd2ce6-0bd4-4f36-a1a6-3d798ca9b517/_20200916_193734bTHAPvh.png"/> 
+</figure>
+
+<p>Isocline for</p>
+<ul>
+<li>\(m = -1\), \(-1 = x - y \implies y = x + 1\)</li>
+<li>\(m = 0\), \(0 = x-y \implies y = x\), at this line the slope is
+horizontal</li>
+</ul>
+<h2 id="what-is-a-integral-curve-for-the-direction-field"><span class="section-num">5</span> What is a integral curve for the direction field?</h2>
+<h3 id="front"><span class="section-num">5.1</span> Front</h3>
+<p><strong>What is a integral curve for the direction field?</strong></p>
+<p>for the equation \(y' = f(x,y)\)</p>
+<h3 id="back"><span class="section-num">5.2</span> Back</h3>
+<p>It&rsquo;s a line which are at each point tangent to the line segment at
+that point in a direction field. These line segment are given by
+isoclines</p>
+<p>Are the graphs of the solution to \(y' = f(x,y)\)</p>
+<h2 id="can-2-integral-curve-cross-each-other"><span class="section-num">6</span> Can 2 integral curve cross each other?</h2>
+<h3 id="front"><span class="section-num">6.1</span> Front</h3>
+<p><strong>Can 2 integral curve cross each other?</strong></p>
+<h3 id="back"><span class="section-num">6.2</span> Back</h3>
+<p>No, they can&rsquo;t because of the Existence and Uniqueness theorem</p>
+<h2 id="can-2-integral-curves-be-tangent-each-other"><span class="section-num">7</span> Can 2 integral curves be tangent each other?</h2>
+<h3 id="front"><span class="section-num">7.1</span> Front</h3>
+<p><strong>Can 2 integral curves be tangent each other?</strong></p>
+<p>Can 2 integral curves touch each other?</p>
+<h3 id="back"><span class="section-num">7.2</span> Back</h3>
+<p>No, they can&rsquo;t because of the Existence and Uniqueness theorem</p>
+<h2 id="which-is-the-existence-and-uniqueness-theorem-for-odes"><span class="section-num">8</span> Which is the Existence and Uniqueness Theorem for ODEs?</h2>
+<h3 id="front"><span class="section-num">8.1</span> Front</h3>
+<p><strong>Which is the Existence and Uniqueness Theorem for ODEs?</strong></p>
+<p>for the equation \(y' = f(x,y)\)</p>
+<h3 id="back"><span class="section-num">8.2</span> Back</h3>
+<p>For any \((a,b)\) in the region where \(f\) is defined, \(y'= f(x,y)\) has
+exactly one solution (one and only one) such that \(y(a) = b\)</p>
+<p>The theorem can fail if \(f(x,y)\) is not continuous at \((a,b)\)</p>
+<h2 id="must--yx---be-defined-for-all--x--to-use-existence-and-uniqueness-theorem-for-odes"><span class="section-num">9</span> Must \(y(x)\) be defined for all \(x\) to use Existence and Uniqueness Theorem for ODEs?</h2>
+<h3 id="front"><span class="section-num">9.1</span> Front</h3>
+<p><strong>Must \(y(x)\) be defined for all \(x\) to use Existence and Uniqueness Theorem for ODEs?</strong></p>
+<h3 id="back"><span class="section-num">9.2</span> Back</h3>
+<p>No, it may only exist for \(x\) near \(a\)</p>
+<h2 id="what-does-happen-if--fx-y---is-not-continuous-at--a-b"><span class="section-num">10</span> What does happen if \(f(x,y)\) is not continuous at \((a,b)\)?</h2>
+<h3 id="front"><span class="section-num">10.1</span> Front</h3>
+<p><strong>What does happen if \(f(x,y)\) is not continuous at \((a,b)\)?</strong></p>
+<p>Tip: Referee to Existence and Uniqueness Theorem for ODE&rsquo;s</p>
+<h3 id="back"><span class="section-num">10.2</span> Back</h3>
+<p>The might be many solution curves or no solution curves that pass
+through the point \((a,b)\)</p>
+<h2 id="can-we-say-that-existence-and-uniqueness-theorem-fails-for-this-de"><span class="section-num">11</span> Can we say that Existence and Uniqueness Theorem fails for this DE?</h2>
+<h3 id="front"><span class="section-num">11.1</span> Front</h3>
+<p><strong>Can we say that Existence and Uniqueness Theorem fails for this DE?</strong></p>
+<p>\(x y' = 1 - y\), which solution is \(y = 1 - Cx\)</p>
+<h3 id="back"><span class="section-num">11.2</span> Back</h3>
+<figure>
+    <img src="https://ppalazon.github.io/6c/cd2ce6-0bd4-4f36-a1a6-3d798ca9b517/_20200916_1947364LWj8NG.png"/> 
+</figure>
+
+<p>If we write the DE in standard format \(y' = f(x,y)\), then we see that
+\(\dv{y}{x} = \frac{1-y}{x}\), where we can see that this DE is not
+defined for \(x = 0\)</p>
+<p>So, the theorem is correct, only that the domain reduced</p>
+<h2 id="what-is-a-nullcline"><span class="section-num">12</span> What is a nullcline?</h2>
+<h3 id="front"><span class="section-num">12.1</span> Front</h3>
+<p><strong>What is a nullcline?</strong></p>
+<h3 id="back"><span class="section-num">12.2</span> Back</h3>
+<p>It&rsquo;s a isocline with \(m=0\), it&rsquo;s where the \(y'\) is \(0\)</p>
+<h2 id="why-are-important-fences-and-funnels-in-isoclines"><span class="section-num">13</span> Why are important fences and funnels in isoclines?</h2>
+<h3 id="front"><span class="section-num">13.1</span> Front</h3>
+<p><strong>Why are important fences and funnels in isoclines?</strong></p>
+<h3 id="back"><span class="section-num">13.2</span> Back</h3>
+<p>Are used to find out for certain where trajectories go at scales you can&rsquo;t see</p>
+<ul>
+<li>small scales</li>
+<li>largest scales (off the screen) that are relevant to long-term
+behaviour</li>
+</ul>
+<h2 id="what-kinds-of-fences-are-there-at-isocline-diagrams"><span class="section-num">14</span> What kinds of fences are there at isocline diagrams?</h2>
+<h3 id="front"><span class="section-num">14.1</span> Front</h3>
+<p><strong>What kinds of fences are there at isocline diagrams?</strong></p>
+<p>for the equation \(y' = f(x,y)\)</p>
+<h3 id="back"><span class="section-num">14.2</span> Back</h3>
+<ul>
+<li>Lower fence
+<ul>
+<li>Is a curve that &lsquo;blocks&rsquo; an integral curve from crossing from
+above</li>
+<li>To find such a fence look for a curve so that all the direction
+field elements along the curve point up from it</li>
+<li>The lower curve is the lower fence</li>
+<li>Any integral curve crossing the fence must cross tangent to the
+slope field cannot cross it from above</li>
+<li>\(y = L(x)\) such that \(L'(x) &lt; f(x, L(x))\)
+<ul>
+<li>The slope of the curve is always less than the slope of the
+direction field at each point</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Upper fence
+<ul>
+<li>Is a curve that blocks integral curves from crossing from below</li>
+</ul>
+</li>
+</ul>
+<figure>
+    <img src="https://ppalazon.github.io/6c/cd2ce6-0bd4-4f36-a1a6-3d798ca9b517/_20200916_194812PEhWnq1.png"/> 
+</figure>
+
+<h2 id="how-can-you-construct-pieces-of-fences"><span class="section-num">15</span> How can you construct pieces of fences?</h2>
+<h3 id="front"><span class="section-num">15.1</span> Front</h3>
+<p><strong>How can you construct pieces of fences?</strong></p>
+<h3 id="back"><span class="section-num">15.2</span> Back</h3>
+<ul>
+<li>Using pieces of isocline</li>
+<li>Using straight line segments</li>
+</ul>
+<h2 id="do-we-need-to-defined-a-fence-for-all--x"><span class="section-num">16</span> Do we need to defined a fence for all \(x\)?</h2>
+<h3 id="front"><span class="section-num">16.1</span> Front</h3>
+<p><strong>Do we need to defined a fence for all \(x\)?</strong></p>
+<h3 id="back"><span class="section-num">16.2</span> Back</h3>
+<p>No, you could define them only on an interval. The best sort of fences
+for understanding long-term behaviour are defined for all \(x \geq c\),
+for a fairly small constant \(c\)</p>
+<h2 id="what-happens-if-a-integral-curve-can-t-cross-an-integral-curve-itself"><span class="section-num">17</span> What happens if a integral curve can&rsquo;t cross an integral curve itself?</h2>
+<h3 id="front"><span class="section-num">17.1</span> Front</h3>
+<p><strong>What happens if a integral curve can&rsquo;t cross an integral curve itself?</strong></p>
+<h3 id="back"><span class="section-num">17.2</span> Back</h3>
+<p>Is both an upper and a lower fence</p>
+<h2 id="which-are-the-fences-of-this-equation"><span class="section-num">18</span> Which are the fences of this equation?</h2>
+<h3 id="front"><span class="section-num">18.1</span> Front</h3>
+<p><strong>Which are the fences of this equation?</strong></p>
+<p>\(y' = y^2 - x\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/6c/cd2ce6-0bd4-4f36-a1a6-3d798ca9b517/_20200916_194845K69lLXJ.png"/> 
+</figure>
+
+<h3 id="back"><span class="section-num">18.2</span> Back</h3>
+<ul>
+<li>Lower fence: is the bottom half of the isocline \(m=0\) for \(x\) large
+enough</li>
+<li>Upper fence: is the bottom half of the isocline \(m=-1\) for \(x\) large
+enough</li>
+</ul>
+<p>Look carefully you&rsquo;ll see one of the integral curves crossing it from
+above near \(x=1\), so \(m=-1\) is an upper fence only for large values of
+\(x\)</p>
+<h2 id="what-is-a-funnel"><span class="section-num">19</span> What is a funnel?</h2>
+<h3 id="front"><span class="section-num">19.1</span> Front</h3>
+<p><strong>What is a funnel?</strong></p>
+<p>for the equation \(y' = f(x,y)\)</p>
+<h3 id="back"><span class="section-num">19.2</span> Back</h3>
+<p>Consists of a pair of fences; one lower fence \(L(x)\) and one upper
+fence \(U(x)\)</p>
+<ol>
+<li>For \(x\) large the lower fence is below the upper fence \(L(x) &lt;
+U(x)\)</li>
+<li>Two fences come together asymptotically
+<ul>
+<li>\(U(x) - L(x)\) is small for large \(x\)</li>
+</ul>
+</li>
+</ol>
+<p>The integral curves that end up between them are trapped there</p>
+<h2 id="define-the-funnel-for-this-equation"><span class="section-num">20</span> Define the funnel for this equation?</h2>
+<h3 id="front"><span class="section-num">20.1</span> Front</h3>
+<p><strong>Define the funnel for this equation?</strong></p>
+<p>\(y' = y^2 - x\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/6c/cd2ce6-0bd4-4f36-a1a6-3d798ca9b517/_20200916_194923K69lLXJ.png"/> 
+</figure>
+
+<h3 id="back"><span class="section-num">20.2</span> Back</h3>
+<p>For \(x &gt; 2\) (large \(x\)), the isocline \(m=0\) (lower fence) and \(m=-1\)
+(upper fence) act as a funnel</p>
+<p>Bottom half of the isocline \(m=0\) is \(y = - \sqrt{x}\) and the bottom
+half of \(m=-1\) is \(y = - \sqrt{x - 1}\)</p>
+<p>For the solutions between them have the highly accurate estimates</p>
+<p>\({\displaystyle - \sqrt{x} &lt; y(x) &lt; - \sqrt{x - 1}}\)</p>
+<p>which is valid for large \(x\)</p>
+<h2 id="could-2-parallel-lines-form-a-funnel"><span class="section-num">21</span> Could 2 parallel lines form a funnel?</h2>
+<h3 id="front"><span class="section-num">21.1</span> Front</h3>
+<p><strong>Could 2 parallel lines form a funnel?</strong></p>
+<h3 id="back"><span class="section-num">21.2</span> Back</h3>
+<p>No, because they are parallel, at constant distance one apart</p>
+<p>To be a funnel, the 2 curves must come asymptotically together as \(x\)
+gets larger</p>
+<h2 id="what-is-a-separatrix"><span class="section-num">22</span> What is a separatrix?</h2>
+<h3 id="front"><span class="section-num">22.1</span> Front</h3>
+<p><strong>What is a separatrix?</strong></p>
+<h3 id="back"><span class="section-num">22.2</span> Back</h3>
+<p>Is an integral curve such that integral curves above it behave
+entirely differently from integral curves below it as \(x\) increases to
+infinity.</p>
+<h2 id="if-a-integral-curve-seems-to-be-a-straight-line-how-can-we-get-the-solution-equation"><span class="section-num">23</span> If a integral curve seems to be a straight line, how can we get the solution equation?</h2>
+<h3 id="front"><span class="section-num">23.1</span> Front</h3>
+<p><strong>If a integral curve seems to be a straight line, how can we get the solution equation?</strong></p>
+<p>\(y' = x - 2y\)</p>
+<h3 id="back"><span class="section-num">23.2</span> Back</h3>
+<p>Looking for what \(m\) and \(b\) is \(y = mx + b\) a solution</p>
+<p>\({\displaystyle m = \dv{y}{x} = x - 2y = x - 2(mx + b) = (1 - 2m)x -
+2b}\)</p>
+<p>Two polynomials in \(x\) can only the same for all \(x\) (over the reals)
+if they have the same coefficients. Equate coefficients of the powers
+of \(x\) to get two equations in two unknowns that must be satisfied
+simultaneously.</p>
+<ul>
+<li>\(m = 2b\)</li>
+<li>\(0 = 1 -2m\)</li>
+</ul>
+<p>So, \(m = 1/2\) and plugging in \(m\) in the first equation \(b = -1/4\)</p>
+<p>Solution: \({\displaystyle y = \frac{1}{2} x - \frac{1}{4}}\)</p>
+<h2 id="when-can-we-say-that-a-isocline-is-a-solution-of-de"><span class="section-num">24</span> When can we say that a isocline is a solution of DE?</h2>
+<h3 id="front"><span class="section-num">24.1</span> Front</h3>
+<p><strong>When can we say that a isocline is a solution of DE?</strong></p>
+<p>for \(y' = 2x + y\)</p>
+<h3 id="back"><span class="section-num">24.2</span> Back</h3>
+<p>The isocline curves are of the form \(y = -2x + m\), if \(y'=-2 = 2x + y\)</p>
+<p>We see, that the isocline \(y = -2x -2\) can get from the solution \(y =
+-2x - 2\)</p>
+<h2 id="what-happens-if-integral-curve-cannot-cross-a-isocline"><span class="section-num">25</span> What happens if integral curve cannot cross a isocline?</h2>
+<h3 id="front"><span class="section-num">25.1</span> Front</h3>
+<p><strong>What happens if integral curve cannot cross a isocline?</strong></p>
+<h3 id="back"><span class="section-num">25.2</span> Back</h3>
+<p>It&rsquo;s possible that this isocline it&rsquo;s a solution for the DE</p>
+
+</div>
+
+
+            <footer>
+    
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-1%2fsession-2%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Geometric%20Methods&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-1%2fsession-2%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-1%2fsession-2%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-1%2fsession-2%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-1%2fsession-2%2f&amp;title=Geometric%20Methods" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Geometric%20Methods&amp;body=Check out this site https%3a%2f%2fppalazon.github.io%2f18.03%2funit-1%2fsession-2%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+
+<nav>
+    <ul class="pager">
+    
+    <li class="previous">
+        <a href="https://ppalazon.github.io/18.03/unit-1/session-1/" title="Basic DE&#39;s and Separable Equations">
+            <span aria-hidden="true">&larr;</span>Basic DE&#39;s and Separable Equations
+        </a>
+    </li>
+    
+
+    
+    <li class="next">
+        <a href="https://ppalazon.github.io/18.03/unit-1/session-4/" title="First Order Linear ODE&#39;s">
+            First Order Linear ODE&#39;s <span aria-hidden="true">&rarr;</span>
+        </a>
+    </li>
+    
+    </ul>
+</nav>
+
+
+
+</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//ppalazon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+        </div>
+    </div>
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/">18.03 Differential Equations</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/unit-1/">1: First Order Differential Equations</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.03/unit-1/session-2/">Geometric Methods</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

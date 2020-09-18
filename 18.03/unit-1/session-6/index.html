@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Complex Arithmetic and Exponentials  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="ode, maths, ">
+
+
+<meta property="og:title" content="Complex Arithmetic and Exponentials  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.03/unit-1/session-6/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="content-source" content="18.03/unit-1/session-6.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Captured On [2019-09-17 Tue 15:58] Source Complex Arithmetic and Exponentials | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is a complex number? 1.1 Front What is a complex number?
+1.2 Back A complex number is an expression of the form \(a &#43; ib\)
+2 When can we say that 2 complex number are equals? 2.1 Front When can we say that 2 complex number are equals?"/>
+<meta property="og:article:published_time" content="2019-09-26T15:47:00&#43;02:00" />
+<meta property="og:article:modified_time" content="2019-09-26T15:47:00&#43;02:00" />
+
+
+
+<meta property="og:article:tag" content="ode">
+
+<meta property="og:article:tag" content="maths">
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ppalazon" />
+<meta name="twitter:creator" content="@ppalazon" />
+<meta name="twitter:title" content="Complex Arithmetic and Exponentials" />
+<meta name="twitter:description" content="Captured On [2019-09-17 Tue 15:58] Source Complex Arithmetic and Exponentials | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is a complex number? 1.1 Front What is a complex number?
+1.2 Back A complex number is an expression of the form \(a &#43; ib\)
+2 When can we say that 2 complex number are equals? 2.1 Front When can we say that 2 complex number are equals?"/>
+<meta name="twitter:url" content="https://ppalazon.github.io/18.03/unit-1/session-6/" />
+<meta name="twitter:domain" content="https://ppalazon.github.io">
+
+
+
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+     "@type": "Article",
+     "headline": "Complex Arithmetic and Exponentials",
+     "author": {
+         "@type": "Person",
+         "name": "http://profiles.google.com/+?rel=author"
+     },
+     "datePublished": "2019-09-26",
+     "description": "",
+     "wordCount":  2483 
+ }
+</script>
+
+
+
+<link rel="canonical" href="https://ppalazon.github.io/18.03/unit-1/session-6/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+ }
+ .hero {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: calc(200px + (450 - 200) * ((100vw - 300px) / (1600 - 300)));
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: calc(-1 * (200px + (450 - 200) * ((100vw - 300px) / (1600 - 300))));
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+    <header class="container hat">
+        <h1>Complex Arithmetic and Exponentials
+</h1>
+
+        
+
+
+<span class="author">by
+    
+    MIT OCW, Pablo Palazon
+    
+</span>
+
+
+    </header>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            
+            <div class="content">
+  <dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2019-09-17 Tue 15:58]</span></span></dd>
+<dt>Source</dt>
+<dd><a href="https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-i-first-order-differential-equations/complex-arithmetic-and-exponentials/index.htm">Complex Arithmetic and Exponentials | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare</a></dd>
+</dl>
+<h2 id="what-is-a-complex-number"><span class="section-num">1</span> What is a complex number?</h2>
+<h3 id="front"><span class="section-num">1.1</span> Front</h3>
+<p><strong>What is a complex number?</strong></p>
+<h3 id="back"><span class="section-num">1.2</span> Back</h3>
+<p>A complex number is an expression of the form \(a + ib\)</p>
+<h2 id="when-can-we-say-that-2-complex-number-are-equals"><span class="section-num">2</span> When can we say that 2 complex number are equals?</h2>
+<h3 id="front"><span class="section-num">2.1</span> Front</h3>
+<p><strong>When can we say that 2 complex number are equals?</strong></p>
+<p>\(a + ib = c + id\), where \(a,b,c,d\) are real numbers</p>
+<h3 id="back"><span class="section-num">2.2</span> Back</h3>
+<p>When \(a = c\) and \(b = d\)</p>
+<h2 id="what-are-the-real-and-imaginary-part-of-a-complex-number"><span class="section-num">3</span> What are the real and imaginary part of a complex number?</h2>
+<h3 id="front"><span class="section-num">3.1</span> Front</h3>
+<p><strong>What are the real and imaginary part of a complex number?</strong></p>
+<p>\(a + ib\)</p>
+<h3 id="back"><span class="section-num">3.2</span> Back</h3>
+<ul>
+<li>\(a = \operatorname{Re}(a + ib)\)</li>
+<li>\(b = \operatorname{Im}(a + ib)\)</li>
+</ul>
+<h2 id="what-represent-the-symbol--i--in-a-complex-number"><span class="section-num">4</span> What represent the symbol \(i\) in a complex number?</h2>
+<h3 id="front"><span class="section-num">4.1</span> Front</h3>
+<p><strong>What represent the symbol \(i\) in a complex number?</strong></p>
+<h3 id="back"><span class="section-num">4.2</span> Back</h3>
+<p>\(i = \sqrt{-1}\), so \(i^2 = -1\)</p>
+<h2 id="how-can-we-sum-2-complex-numbers"><span class="section-num">5</span> How can we sum 2 complex numbers</h2>
+<h3 id="front"><span class="section-num">5.1</span> Front</h3>
+<p><strong>How can we sum 2 complex numbers</strong></p>
+<p>\((a + ib) + (c + id)\)</p>
+<h3 id="back"><span class="section-num">5.2</span> Back</h3>
+<p>\((a + c) + i(b + d)\)</p>
+<h2 id="how-can-we-multiply-2-complex-numbers"><span class="section-num">6</span> How can we multiply 2 complex numbers?</h2>
+<h3 id="front"><span class="section-num">6.1</span> Front</h3>
+<p><strong>How can we multiply 2 complex numbers?</strong></p>
+<p>\((a + ib)(c + id)\)</p>
+<h3 id="back"><span class="section-num">6.2</span> Back</h3>
+<p>\((ac - bd) + i(ad + bc)\)</p>
+<h2 id="how-can-we-divide-2-complex-numbers"><span class="section-num">7</span> How can we divide 2 complex numbers?</h2>
+<h3 id="front"><span class="section-num">7.1</span> Front</h3>
+<p><strong>How can we divide 2 complex numbers?</strong></p>
+<p>\({\displaystyle \frac{a + ib}{c + id}}\)</p>
+<h3 id="back"><span class="section-num">7.2</span> Back</h3>
+<p>Assuming that \(c + id \neq 0\), and using complex conjugate of \(c + id\)</p>
+<p>\({\displaystyle \frac{a + ib}{c + id} \cdot \frac{c - id}{c - id} =
+\frac{ac + bd}{c^2 + d^2} + i \frac{bc - ad}{c^2 + d^2}}\)</p>
+<h2 id="what-is-a-complex-conjugate-and-why-is-useful"><span class="section-num">8</span> What is a complex conjugate and why is useful?</h2>
+<h3 id="front"><span class="section-num">8.1</span> Front</h3>
+<p><strong>What is a complex conjugate and why is useful?</strong></p>
+<p>\(z = a + ib\)</p>
+<h3 id="back"><span class="section-num">8.2</span> Back</h3>
+<p>Complex conjugate of \(z\) is \(\overline{z} = a - ib\), note that
+\(\overline{z}z = a^2 + b^2\).</p>
+<p>It&rsquo;s useful for compute the division between 2 complex numbers</p>
+<h2 id="what-is-the-value-of--overline-z-z--where--z--is-a-complex-number"><span class="section-num">9</span> What is the value of \(\overline{z}z\) where \(z\) is a complex number?</h2>
+<h3 id="front"><span class="section-num">9.1</span> Front</h3>
+<p><strong>What is the value of \(\overline{z}z\) where \(z\) is a complex number?</strong></p>
+<p>\(z = a + ib\)</p>
+<h3 id="back"><span class="section-num">9.2</span> Back</h3>
+<p>\(\overline{z}z = a^2 + b^2 = \abs{z}^2\)</p>
+<h2 id="what-is-the-absolute-value-of-a-complex-number"><span class="section-num">10</span> What is the absolute value of a complex number?</h2>
+<h3 id="front"><span class="section-num">10.1</span> Front</h3>
+<p><strong>What is the absolute value of a complex number?</strong></p>
+<p>\(z = a + ib\)</p>
+<h3 id="back"><span class="section-num">10.2</span> Back</h3>
+<p>It&rsquo;s the same as the modulus of \(z\)</p>
+<p>\(\abs{z} = \abs{a + ib} = \sqrt{a^2 + b^2}\)</p>
+<h2 id="what-is-the-modulus-of-a-complex-number"><span class="section-num">11</span> What is the modulus of a complex number?</h2>
+<h3 id="front"><span class="section-num">11.1</span> Front</h3>
+<p><strong>What is the modulus of a complex number?</strong></p>
+<p>\(z = a + ib\)</p>
+<h3 id="back"><span class="section-num">11.2</span> Back</h3>
+<p>It&rsquo;s the same as the absolute value of \(z\)</p>
+<p>\(\abs{z} = \abs{a + ib} = \sqrt{a^2 + b^2}\)</p>
+<h2 id="what-is-the-complex-plane"><span class="section-num">12</span> What is the complex plane?</h2>
+<h3 id="front"><span class="section-num">12.1</span> Front</h3>
+<p><strong>What is the complex plane?</strong></p>
+<h3 id="back"><span class="section-num">12.2</span> Back</h3>
+<p>It&rsquo;s the plane where are represented a complex number \(a + ib\) in
+Cartesian coordinates, where it&rsquo;s a point at \((a,b)\)</p>
+<h2 id="how-can-we-represent-a-complex-number-in-polar-coordinates"><span class="section-num">13</span> How can we represent a complex number in polar coordinates?</h2>
+<h3 id="front"><span class="section-num">13.1</span> Front</h3>
+<p><strong>How can we represent a complex number in polar coordinates?</strong></p>
+<p>\(a + ib\)</p>
+<h3 id="back"><span class="section-num">13.2</span> Back</h3>
+<ul>
+<li>\(a = x = r \cos(\theta)\)</li>
+<li>\(b = y = r \sin(\theta)\)</li>
+</ul>
+<p>Assuming \(a + ib \neq 0\), \(a + ib = r (\cos(\theta) + i
+\sin(\theta))\), and using the Euler&rsquo;s formula \(a + ib = r e^{i\theta}\)</p>
+<p>Where \(r = \abs{a + ib} = \sqrt{a^2 + b^2}\), and \(\theta =
+\operatorname{arg}(a + ib)\), where \(0 \neq \theta &lt; 2\pi\)</p>
+<p>\({\displaystyle \theta = \arctan(\frac{b}{a})}\), being aware the sign
+of the \(a\) and \(b\) for setting correctly \(\theta\) in its quadrant</p>
+<h2 id="what-is-the-argument-of-a-complex-number"><span class="section-num">14</span> What is the argument of a complex number?</h2>
+<h3 id="front"><span class="section-num">14.1</span> Front</h3>
+<p><strong>What is the argument of a complex number?</strong></p>
+<p>\(a + ib\)</p>
+<h3 id="back"><span class="section-num">14.2</span> Back</h3>
+<p>It is the polar angle \(\theta\) in polar coordinates, \(\theta =
+\operatorname{arg}(a + ib)\)</p>
+<h2 id="what-is-the-euler-s-formula"><span class="section-num">15</span> What is the Euler&rsquo;s Formula?</h2>
+<h3 id="front"><span class="section-num">15.1</span> Front</h3>
+<p><strong>What is the Euler&rsquo;s Formula?</strong></p>
+<h3 id="back"><span class="section-num">15.2</span> Back</h3>
+<p>\(e^{i\theta} = \cos \theta + i \sin \theta\)</p>
+<h2 id="how-can-we-justify-the-euler-s-formula"><span class="section-num">16</span> How can we justify the Euler&rsquo;s Formula?</h2>
+<h3 id="front"><span class="section-num">16.1</span> Front</h3>
+<p><strong>How can we justify the Euler&rsquo;s Formula?</strong></p>
+<h3 id="back"><span class="section-num">16.2</span> Back</h3>
+<p>Using the infinite series from the definition of \(e\)</p>
+<p>\({\displaystyle e^t = 1 + \frac{t}{1!} + \frac{t^2}{2!} +
+\frac{t^3}{3!} + \dots}\)</p>
+<p>Substituting \(t\) for \(i\theta\)</p>
+<p>\begin{align*}
+e^{i\theta} &amp;= \biggl(1 - \frac{\theta}{2!} + \frac{\theta^4}{4!} - \dots \biggr) + i \biggl(\theta - \frac{\theta^3}{3!} + \frac{\theta^5}{5!} - \dots \biggr)\\\<br>
+&amp;= \cos(\theta) + i \sin(\theta)
+\end{align*}</p>
+<p>in view of the infinite series representations for \(\cos(\theta)\) and
+\(\sin(\theta)\)</p>
+<p>It&rsquo;s not a proof because the series expansion of \(e^t\) is valid when
+\(t\) is a real number. It&rsquo;s formally compatible with the series
+expansions for the exponential, sine and cosine functions.</p>
+<h2 id="why-is-it-useful-the-complex-number-in-polar-representation"><span class="section-num">17</span> Why is it useful the complex number in polar representation?</h2>
+<h3 id="front"><span class="section-num">17.1</span> Front</h3>
+<p><strong>Why is it useful the complex number in polar representation?</strong></p>
+<h3 id="back"><span class="section-num">17.2</span> Back</h3>
+<p>It reduces the complexity of complex number multiplication and
+division. Using the form \(re^{i\theta}\) you can follow the exponential
+addition rules as the real exponential</p>
+<h2 id="how-can-we-multiply-these-terms"><span class="section-num">18</span> How can we multiply these terms?</h2>
+<h3 id="front"><span class="section-num">18.1</span> Front</h3>
+<p><strong>How can we multiply these terms?</strong></p>
+<p>\(r_1e^{i\theta_1} \cdot r_2e^{i\theta_2}\)</p>
+<h3 id="back"><span class="section-num">18.2</span> Back</h3>
+<p>\(r_1 r_2 e^{i(\theta_1 + \theta_2)}\)</p>
+<p>Multiply the absolute values and add the angles.</p>
+<h2 id="what-is-it-the-reciprocal-of-this-term"><span class="section-num">19</span> What is it the reciprocal of this term?</h2>
+<h3 id="front"><span class="section-num">19.1</span> Front</h3>
+<p><strong>What is it the reciprocal of this term?</strong></p>
+<p>\({\displaystyle \frac{1}{re^{i\theta}}}\)</p>
+<h3 id="back"><span class="section-num">19.2</span> Back</h3>
+<p>\({\displaystyle \frac{1}{r} e^{-i\theta}}\)</p>
+<h2 id="how-can-we-divide-these-terms"><span class="section-num">20</span> How can we divide these terms?</h2>
+<h3 id="front"><span class="section-num">20.1</span> Front</h3>
+<p><strong>How can we divide these terms?</strong></p>
+<p>\({\displaystyle \frac{r_1e^{i\theta_1}}{r_2e^{i\theta_2}}}\)</p>
+<h3 id="back"><span class="section-num">20.2</span> Back</h3>
+<p>\({\displaystyle \frac{r_1}{r_2} e^{i(\theta_1 - \theta_2)}}\)</p>
+<p>Divide by its absolute value and subtract its angle</p>
+<h2 id="what-is-the-demoivre-s-formula"><span class="section-num">21</span> What is the DeMoivre&rsquo;s formula?</h2>
+<h3 id="front"><span class="section-num">21.1</span> Front</h3>
+<p><strong>What is the DeMoivre&rsquo;s formula?</strong></p>
+<h3 id="back"><span class="section-num">21.2</span> Back</h3>
+<p>\((\cos \theta + i \sin \theta)^n = \cos (n\theta) + i \sin(n\theta)\)</p>
+<p>It&rsquo;s the special case when \(r=1\)</p>
+<h2 id="expand-this-formula"><span class="section-num">22</span> Expand this formula</h2>
+<h3 id="front"><span class="section-num">22.1</span> Front</h3>
+<p><strong>Expand this formula</strong></p>
+<p>\((\cos \theta + i \sin \theta)^n\)</p>
+<h3 id="back"><span class="section-num">22.2</span> Back</h3>
+<p>\(\cos (n\theta) + i \sin(n\theta)\)</p>
+<h2 id="expand-this-formula"><span class="section-num">23</span> Expand this formula</h2>
+<h3 id="front"><span class="section-num">23.1</span> Front</h3>
+<p><strong>Expand this formula</strong></p>
+<p>\(\cos (n\theta) + i \sin(n\theta)\)</p>
+<h3 id="back"><span class="section-num">23.2</span> Back</h3>
+<p>\((\cos \theta + i \sin \theta)^n\)</p>
+<h2 id="express--1-plus-i--6--in-cartesian-form"><span class="section-num">24</span> Express \((1 + i)^{6}\) in Cartesian form</h2>
+<h3 id="front"><span class="section-num">24.1</span> Front</h3>
+<p><strong>Express \((1 + i)^{6}\) in Cartesian form</strong></p>
+<h3 id="back"><span class="section-num">24.2</span> Back</h3>
+<p>\({\displaystyle (1 + i)^6 = (\sqrt{2} e^{i\pi/4})^6 = (\sqrt{2})^6
+e^{i 6 \pi / 4} = 8 e^{i3 \pi / 2} = -8i}\)</p>
+<h2 id="express-this-formula-in-polar-form"><span class="section-num">25</span> Express this formula in polar form</h2>
+<h3 id="front"><span class="section-num">25.1</span> Front</h3>
+<p><strong>Express this formula in polar form</strong></p>
+<p>\({\displaystyle \frac{1 + i \sqrt{3}}{\sqrt{3} + i}}\)</p>
+<h3 id="back"><span class="section-num">25.2</span> Back</h3>
+<p>\({\displaystyle \frac{1 + i \sqrt{3}}{\sqrt{3} + i} = \frac{2 e^{i
+\pi/3}}{2 e^{i \pi / 6}} = e^{i \pi/6}}\)</p>
+<h2 id="express-this-formula-in-complex-numbers"><span class="section-num">26</span> Express this formula in complex numbers?</h2>
+<h3 id="front"><span class="section-num">26.1</span> Front</h3>
+<p><strong>Express this formula in complex numbers?</strong></p>
+<p>\(a \cos(\lambda t) + b \sin(\lambda t)\)</p>
+<h3 id="back"><span class="section-num">26.2</span> Back</h3>
+<p>where \(a + ib = A e^{i \phi}\)</p>
+<p>\begin{align*}
+a \cos(\lambda t) + b \sin(\lambda t) &amp;= \operatorname{Re}((a - ib) \cdot (\cos(\lambda t) + i \sin(\lambda t))) \\\<br>
+&amp;= \operatorname{Re}(Ae^{-i \phi} \cdot e^{i \lambda t})\\\<br>
+&amp;= \operatorname{Re}(A e^{i (\lambda t - \phi)}) = A \cos (\lambda t - \phi)
+\end{align*}</p>
+<h2 id="write-this-expression-in-polar-representation"><span class="section-num">27</span> Write this expression in polar representation</h2>
+<h3 id="front"><span class="section-num">27.1</span> Front</h3>
+<p><strong>Write this expression in polar representation</strong></p>
+<p>\(a - ib\)</p>
+<h3 id="back"><span class="section-num">27.2</span> Back</h3>
+<p>\(A e^{-i \theta}\), where \(A = \sqrt{a^2 + b^2}\) and \(\theta = \arctan
+(b/a)\)</p>
+<h2 id="justify-that--e-i-theta-1-cdot-e-i-theta-2-e-i-theta-1-plus-theta-2"><span class="section-num">28</span> Justify that \(e^{i\theta_{1}}\cdot e^{i\theta_{2}} = e^{i \theta_{1}+ \theta_{2}}\)</h2>
+<h3 id="front"><span class="section-num">28.1</span> Front</h3>
+<p><strong>Justify that \(e^{i\theta_{1}}\cdot e^{i\theta_{2}} = e^{i \theta_{1}+ \theta_{2}}\)</strong></p>
+<p>Can we use the exponential law with complex exponential?</p>
+<h3 id="back"><span class="section-num">28.2</span> Back</h3>
+<p>\begin{align*}
+e^{i\theta_1}\cdot e^{i\theta_2} &amp;= (\cos \theta_1 + i \sin \theta_1)
+\cdot (\cos \theta_2 + i \sin \theta_2)\\\<br>
+&amp;= \cos \theta_1 \cos \theta_2 - \sin \theta_1 \sin \theta_2 + i (\cos \theta_1 \sin \theta_2 + \sin \theta_1 \cos \theta_2) \\\<br>
+&amp;= \cos(\theta_1 + \theta_2) + i \sin(\theta_1 + \theta_2)\\\<br>
+&amp;= e^{i(\theta_1 + \theta_2)}
+\end{align*}</p>
+<h2 id="justify-this-equation"><span class="section-num">29</span> Justify this equation</h2>
+<h3 id="front"><span class="section-num">29.1</span> Front</h3>
+<p><strong>Justify this equation</strong></p>
+<p>\({\displaystyle \dv{\theta} e^{i \theta} = i e^{i \theta}}\), and that
+\(y(0) = 1\)</p>
+<h3 id="back"><span class="section-num">29.2</span> Back</h3>
+<p>\begin{align*}
+\dv{\theta} e^{i \theta} &amp;= \dv{\theta}(\cos \theta + i \sin \theta)\\\<br>
+&amp;= \dv{\theta}(\cos \theta) + i \dv{\sin \theta}\\\<br>
+&amp;= -\sin \theta + i \cos \theta \\\<br>
+&amp;= i(\cos \theta + i \sin \theta) \\\<br>
+&amp;= i e^{i\theta}
+\end{align*}</p>
+<p>\({\displaystyle e^{i0} = \cos 0 + i \sin 0} = 1 + i0 = 1\)</p>
+<h2 id="what-effect-has-multiply-by--i--a-complex-number-in-the-complex-plane"><span class="section-num">30</span> What effect has multiply by \(i\) a complex number in the complex plane?</h2>
+<h3 id="front"><span class="section-num">30.1</span> Front</h3>
+<p><strong>What effect has multiply by \(i\) a complex number in the complex plane?</strong></p>
+<p>\(i(a + ib)\)</p>
+<h3 id="back"><span class="section-num">30.2</span> Back</h3>
+<p>\(i(a + ib) = -b +ia\)</p>
+<p>Which is rotated by 90 degrees counterclockwise</p>
+<figure>
+    <img src="https://ppalazon.github.io/a6/52ebab-4af2-48d9-917f-6cd0f45c6029/_20200916_1950058pF20m9.png"/> 
+</figure>
+
+<h2 id="if--overline-z-z--what-does-that-tell-us-about-the-value--z-a-plus-ib"><span class="section-num">31</span> If \(\overline{z}=z\), what does that tell us about the value \(z=a+ib\)?</h2>
+<h3 id="front"><span class="section-num">31.1</span> Front</h3>
+<p><strong>If \(\overline{z}=z\), what does that tell us about the value \(z=a+ib\)?</strong></p>
+<h3 id="back"><span class="section-num">31.2</span> Back</h3>
+<p>\(a - ib = - (a + ib) \implies a = -a = 0\)</p>
+<h2 id="which-is-the-definition-of-an-exponential-to-an-arbitrary-complex-power"><span class="section-num">32</span> Which is the definition of an exponential to an arbitrary complex power?</h2>
+<h3 id="front"><span class="section-num">32.1</span> Front</h3>
+<p><strong>Which is the definition of an exponential to an arbitrary complex power?</strong></p>
+<p>\(e^{a + ib}\)</p>
+<h3 id="back"><span class="section-num">32.2</span> Back</h3>
+<p>\(e^{a + ib} = e^a e^{ib} = e^a (\cos (b) + i \sin(b))\)</p>
+<h2 id="what-is-the-real-part-of-an-exponential-to-a-complex-number"><span class="section-num">33</span> What is the real part of an exponential to a complex number?</h2>
+<h3 id="front"><span class="section-num">33.1</span> Front</h3>
+<p><strong>What is the real part of an exponential to a complex number?</strong></p>
+<p>\(\operatorname{Re}(e^{a + ib})\)</p>
+<h3 id="back"><span class="section-num">33.2</span> Back</h3>
+<p>\(e^a \cos(b)\)</p>
+<h2 id="what-is-the-imaginary-part-of-an-exponential-to-a-complex-number"><span class="section-num">34</span> What is the imaginary part of an exponential to a complex number?</h2>
+<h3 id="front"><span class="section-num">34.1</span> Front</h3>
+<p><strong>What is the imaginary part of an exponential to a complex number?</strong></p>
+<p>\(\operatorname{Im}(e^{a + ib})\)</p>
+<h3 id="back"><span class="section-num">34.2</span> Back</h3>
+<p>\(e^a \sin (b)\)</p>
+<h2 id="how-can-you-express-cosine-in-terms-of-complex-exponential"><span class="section-num">35</span> How can you express cosine in terms of complex exponential?</h2>
+<h3 id="front"><span class="section-num">35.1</span> Front</h3>
+<p><strong>How can you express cosine in terms of complex exponential?</strong></p>
+<p>\(\cos(x)\)</p>
+<h3 id="back"><span class="section-num">35.2</span> Back</h3>
+<p>\({\displaystyle \cos(x) = \operatorname{Re}(e^{ix}) = \frac{1}{2}
+(e^{ix} + e^{-ix})}\)</p>
+<h2 id="how-can-you-express-sine-in-terms-of-complex-exponential"><span class="section-num">36</span> How can you express sine in terms of complex exponential?</h2>
+<h3 id="front"><span class="section-num">36.1</span> Front</h3>
+<p><strong>How can you express sine in terms of complex exponential?</strong></p>
+<p>\(\sin(x)\)</p>
+<h3 id="back"><span class="section-num">36.2</span> Back</h3>
+<p>\({\displaystyle \sin(x) = \operatorname{Im}(e^{ix}) =
+\frac{1}{2i}(e^{ix} - e^{-ix})}\)</p>
+<h2 id="express--cos-3-x---in-terms-of-the-functions--cosnx---for-suitable--n"><span class="section-num">37</span> Express \(\cos^{3}(x)\) in terms of the functions \(\cos(nx)\), for suitable \(n\)</h2>
+<h3 id="front"><span class="section-num">37.1</span> Front</h3>
+<p><strong>Express \(\cos^{3}(x)\) in terms of the functions \(\cos(nx)\), for suitable \(n\)</strong></p>
+<p>\(\cos^3(x)\)</p>
+<h3 id="back"><span class="section-num">37.2</span> Back</h3>
+<p>Using \(\cos(x) = \frac{1}{2} (e^{ix} + e^{-ix})\) and the binomial
+theorem</p>
+<p>\begin{align*}
+\cos^3(x) &amp;= \frac{1}{2^3} (e^{ix} + e^{-ix})^3 \\\<br>
+&amp;= \frac{1}{8}(e^{3x} + 3e^{ix} + 3e^{-ix} + e^{-3ix}) \\\<br>
+&amp;= \frac{1}{4}(\frac{1}{2}(e^{3x} + e^{-3ix}) + \frac{1}{2}(3e^{ix} + 3e^{-ix})) \\\<br>
+&amp;= \frac{1}{4} \cos(3x) + \frac{3}{4} \cos(x)
+\end{align*}</p>
+<h2 id="express--e-x-cos2x---in-terms-of-exponential"><span class="section-num">38</span> Express \(e^{x}\cos(2x)\) in terms of exponential</h2>
+<h3 id="front"><span class="section-num">38.1</span> Front</h3>
+<p><strong>Express \(e^{x}\cos(2x)\) in terms of exponential</strong></p>
+<h3 id="back"><span class="section-num">38.2</span> Back</h3>
+<p>Using: \(e^x e^{i2x} = e^x (\cos(2x) + i\sin(2x))\)</p>
+<p>\(e^x \cos(2x) = \operatorname{Re}(e^{(1+2i)x})\)</p>
+<h2 id="what-is-the-derivative-of--e-a-plus-ib--x--with-respect-to--x"><span class="section-num">39</span> What is the derivative of \(e^{(a + ib)x}\) with respect to \(x\)?</h2>
+<h3 id="front"><span class="section-num">39.1</span> Front</h3>
+<p><strong>What is the derivative of \(e^{(a + ib)x}\) with respect to \(x\)?</strong></p>
+<p>\(D(e^{(a + ib)x})\)</p>
+<h3 id="back"><span class="section-num">39.2</span> Back</h3>
+<p>\(D(e^{(a + ib)x}) = (a + ib)e^{(a + ib)x}\)</p>
+<h2 id="what-is-the-integral-of--e-a-plus-ib--x--with-respect-to--x"><span class="section-num">40</span> What is the integral of \(e^{(a + ib)x}\) with respect to \(x\)?</h2>
+<h3 id="front"><span class="section-num">40.1</span> Front</h3>
+<p><strong>What is the integral of \(e^{(a + ib)x}\) with respect to \(x\)?</strong></p>
+<p>\({\displaystyle \int e^{(a + ib)x} dx}\)</p>
+<h3 id="back"><span class="section-num">40.2</span> Back</h3>
+<p>\({\displaystyle \int e^{(a + ib)x} dx = \frac{1}{a + ib} e^{(a + ib)x}}\)</p>
+<h2 id="minimize-this-formula"><span class="section-num">41</span> Minimize this formula</h2>
+<h3 id="front"><span class="section-num">41.1</span> Front</h3>
+<p><strong>Minimize this formula</strong></p>
+<p>\({\displaystyle \operatorname{Re}(\frac{1}{1 + 2i} e^{(1 + 2i)x})}\)</p>
+<h3 id="back"><span class="section-num">41.2</span> Back</h3>
+<p>\({\displaystyle \biggl(\frac{1}{5} - \frac{2}{5}i \biggr) (e^x
+\cos(2x) + ie^x \sin(2x)) = \frac{1}{5} e^x \cos(2x) + \frac{2}{5} e^x
+\sin(2x)}\)</p>
+<h2 id="how-can-we-get-the--n-text-th--roots-of-unity"><span class="section-num">42</span> How can we get the \(n\text{th}\) roots of unity</h2>
+<h3 id="front"><span class="section-num">42.1</span> Front</h3>
+<p><strong>How can we get the \(n\text{th}\) roots of unity</strong></p>
+<p>\(z^n = 1\)</p>
+<p>Explain the process</p>
+<h3 id="back"><span class="section-num">42.2</span> Back</h3>
+<ul>
+<li>Use polar representation for both sides, using all possible polar angles
+<ul>
+<li>\(r^n e^{in\theta} = 1 \cdot e^{2k\pi i}\), \(k = 0, \pm 1, \pm 2, \dots\)</li>
+</ul>
+</li>
+<li>Equating the absolute value and polar angles
+<ul>
+<li>\(r^n = 1\)</li>
+<li>\(n \theta = 2k\pi\), \(k = 0, \pm 1, \pm 2, \dots\)</li>
+</ul>
+</li>
+<li>Where we can conclude
+<ul>
+<li>\(r = 1\)</li>
+<li>\({\displaystyle \theta = \frac{2k \pi}{n}}\), \(k = 0, 1, 2, \dots,
+n-1\)</li>
+</ul>
+</li>
+<li>If we add \(an\), an integer multiple of \(n\), to \(k\), we get the same
+complex number
+<ul>
+<li>\({\displaystyle \theta &lsquo;= \frac{2(k + an) \pi}{n} = \theta +
+2a\pi}\)</li>
+<li>\(e^{i\theta &lsquo;} = e^{i\theta}\), since \(e^{2a\pi i} = (e^{2 \pi i})^2\)</li>
+</ul>
+</li>
+<li>Conclusion
+<ul>
+<li>the \(n-\text{th}\) roots of \(1\) are the numbers \(e^{2k\pi i / n}\),
+\(k = 0, 1, 2, \dots, n-1\)</li>
+</ul>
+</li>
+</ul>
+<h2 id="how-can-we-represent--n-text-th--roots-of-unity"><span class="section-num">43</span> How can we represent \(n-\text{th}\) roots of unity?</h2>
+<h3 id="front"><span class="section-num">43.1</span> Front</h3>
+<p><strong>How can we represent \(n-\text{th}\) roots of unity?</strong></p>
+<p>In the complex plane</p>
+<h3 id="back"><span class="section-num">43.2</span> Back</h3>
+<ul>
+<li>All lies on the unit circle in the complex plane, since have
+absolute value \(1\)</li>
+<li>Evenly spaced around the unit circle, starting with the root \(z=1\)</li>
+<li>Angle between 2 consecutive roots is \(2\pi / \theta\)</li>
+</ul>
+<p>Case \(n=6\), solutions to the equation \(z^6 = 1\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/a6/52ebab-4af2-48d9-917f-6cd0f45c6029/_20200916_195027aamEiq3.png"/> 
+</figure>
+
+<h2 id="what-are-the--n-text-th--roots-of-unity"><span class="section-num">44</span> What are the \(n-\text{th}\) roots of unity?</h2>
+<h3 id="front"><span class="section-num">44.1</span> Front</h3>
+<p><strong>What are the \(n-\text{th}\) roots of unity?</strong></p>
+<p>Using \(\zeta\) notation</p>
+<h3 id="back"><span class="section-num">44.2</span> Back</h3>
+<p>The \(n\text{-th}\) roots of \(1\) are \(1, \zeta, \zeta^2, \zeta^3, &hellip;,
+\zeta^{n-1}\), where \(\zeta = e^{2\pi i / n}\)</p>
+<h2 id="how-can-we-represent-a-complex-number-using-the-maximum-number-of-complex-angles"><span class="section-num">45</span> How can we represent a complex number using the maximum number of complex angles?</h2>
+<h3 id="front"><span class="section-num">45.1</span> Front</h3>
+<p><strong>How can we represent a complex number using the maximum number of complex angles?</strong></p>
+<p>For \(1\) and \(re^{i\theta}\)</p>
+<h3 id="back"><span class="section-num">45.2</span> Back</h3>
+<p>Using \(e^{i 2\pi k} = 1\), multiplying by \(1\):</p>
+<ul>
+<li>\(1 \cdot e^{i 2\pi k}\), for \(k = 0, \pm 1, \pm 2, \dots\)</li>
+<li>\(r e^{i\theta} e^{i 2\pi k} = r e^{i(2\pi k + \theta)}\)</li>
+</ul>
+<h2 id="how-can-we-get--n-text-th--roots-of-any-complex-number--w"><span class="section-num">46</span> How can we get \(n-\text{th}\) roots of any complex number \(w\)?</h2>
+<h3 id="front"><span class="section-num">46.1</span> Front</h3>
+<p><strong>How can we get \(n-\text{th}\) roots of any complex number \(w\)?</strong></p>
+<p>\(w = re^{i\theta}\), where \(\theta = \operatorname{Arg}(w), 0 \leq
+\theta &lt; 2\pi\)</p>
+<h3 id="back"><span class="section-num">46.2</span> Back</h3>
+<ul>
+<li>\(z^n = w = re^{i\theta}\)</li>
+<li>\(p^n e^{in\phi} = r e^{i\theta} e^{i 2\pi k}\), for \(k = 0, \pm 1,
+\pm 2, \dots\)</li>
+<li>Conclusion
+<ul>
+<li>\(p = \sqrt[n]{r}\)</li>
+<li>\(\phi = \frac{\theta + 2 \pi k}{n}\) for \(k = 0, 1, 2, \dots, n-1\)</li>
+</ul>
+</li>
+</ul>
+<p>So \(z = \sqrt[n]{r} e^{i(\theta + 2\pi k)/n}\)</p>
+<p>the \(n-\text{th}\) roots of \(1\) are the numbers \(\sqrt[n]{r}e^{i
+(\theta + 2k\pi )/ n}\), \(k =0, 1, 2, \dots, n-1\)</p>
+<p>You can write the roots as \(\sqrt[n]{w} = z_0, z_0 \zeta, z_0 \zeta^2,
+\dots, z_0 \zeta^{n-1}\), where \(z_0 = \sqrt[n]{r}e^{i \theta / n}\)</p>
+<h2 id="what-is--zeta--in-the-roots-of-a-complex-number"><span class="section-num">47</span> What is \(\zeta\) in the roots of a complex number?</h2>
+<h3 id="front"><span class="section-num">47.1</span> Front</h3>
+<p><strong>What is \(\zeta\) in the roots of a complex number?</strong></p>
+<h3 id="back"><span class="section-num">47.2</span> Back</h3>
+<p>\(\zeta = e^{i 2 \pi / n}\), where \(\zeta^n = 1\)</p>
+<h2 id="check-that-all-numbers-in-this-series-satisfy--z-n-w"><span class="section-num">48</span> Check that all numbers in this series satisfy \(z^{n}=w\)</h2>
+<h3 id="front"><span class="section-num">48.1</span> Front</h3>
+<p><strong>Check that all numbers in this series satisfy \(z^{n}=w\)</strong></p>
+<p>\(\sqrt[n]{w} = z_0, z_0 \zeta, z_0 \zeta^2, \dots, z_0 \zeta^{n-1}\),
+where \(z_0 = \sqrt[n]{r}e^{i \theta / n}\)</p>
+<h3 id="back"><span class="section-num">48.2</span> Back</h3>
+<ul>
+<li>\((z_0 \zeta^i)^n = z_0^n \zeta^{ni} = z_0^n \cdot 1^{i} = w\), where
+\(w = z^n\)</li>
+</ul>
+<h2 id="which-is-the-value-of--z-n--of-a-complex-number"><span class="section-num">49</span> Which is the value of \(z^{-n}\) of a complex number?</h2>
+<h3 id="front"><span class="section-num">49.1</span> Front</h3>
+<p><strong>Which is the value of \(z^{-n}\) of a complex number?</strong></p>
+<h3 id="back"><span class="section-num">49.2</span> Back</h3>
+<p>\(z^{-n} = r^{-n} e^{-i n \theta}\)</p>
+<h2 id="what-is-the-value-of---i--2"><span class="section-num">50</span> What is the value of \((-i)^{2}\)?</h2>
+<h3 id="front"><span class="section-num">50.1</span> Front</h3>
+<p><strong>What is the value of \((-i)^{2}\)?</strong></p>
+<h3 id="back"><span class="section-num">50.2</span> Back</h3>
+<p>\((-i) \cdot (-i) = 1 (i) \cdot i = -1\)</p>
+
+</div>
+
+
+            <footer>
+    
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-1%2fsession-6%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Complex%20Arithmetic%20and%20Exponentials&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-1%2fsession-6%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-1%2fsession-6%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-1%2fsession-6%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-1%2fsession-6%2f&amp;title=Complex%20Arithmetic%20and%20Exponentials" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Complex%20Arithmetic%20and%20Exponentials&amp;body=Check out this site https%3a%2f%2fppalazon.github.io%2f18.03%2funit-1%2fsession-6%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+
+<nav>
+    <ul class="pager">
+    
+    <li class="previous">
+        <a href="https://ppalazon.github.io/18.03/unit-1/session-4/" title="First Order Linear ODE&#39;s">
+            <span aria-hidden="true">&larr;</span>First Order Linear ODE&#39;s
+        </a>
+    </li>
+    
+
+    
+    <li class="next">
+        <a href="https://ppalazon.github.io/18.03/unit-1/session-7/" title="Sinusoidal Functions">
+            Sinusoidal Functions <span aria-hidden="true">&rarr;</span>
+        </a>
+    </li>
+    
+    </ul>
+</nav>
+
+
+
+</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//ppalazon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+        </div>
+    </div>
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/">18.03 Differential Equations</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/unit-1/">1: First Order Differential Equations</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.03/unit-1/session-6/">Complex Arithmetic and Exponentials</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

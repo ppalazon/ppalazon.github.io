@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>18.02 Multivariable Calculus  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="calculus, math, ">
+
+
+<meta property="og:title" content="18.02 Multivariable Calculus  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.02/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="og:type" content="website" />
+
+
+<link rel="alternate" type="application/rss+xml" href="https://ppalazon.github.io/18.02/index.xml" title="Pablo Palazon's Website" />
+<link rel="canonical" href="https://ppalazon.github.io/18.02/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+<div id="main-content" class="container">
+    <header>
+        <h1>18.02 Multivariable Calculus
+</h1>
+
+    </header>
+    <p>This is my personal notes about 18.02 course</p>
+<details open>
+<summary>
+MIT OCW Introduction
+</summary>
+<p class="details">
+<p>This course covers differential, integral and vector calculus for functions of
+more than one variable. These mathematical tools and methods are used
+extensively in the physical sciences, engineering, economics and computer
+graphics.</p>
+</p>
+</details>
+<p>Thanks you so much MIT for creating and sharing your courses in <a href="https://ocw.mit.edu/index.htm">MIT OCW</a>. I
+created this notes for myself, but I&rsquo;d like to share with everybody. <a href="https://ocw.mit.edu/index.htm">MIT OCW</a>
+allow this kind of works, please check out <a href="https://ocw.mit.edu/terms/">MIT OCW terms</a>.</p>
+
+
+    
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>
+  <a href="https://ppalazon.github.io/18.02/part-1a/">1A: Vectors and Matrices - Vectors, determinants and planes</a>
+</h3>
+
+        <p><p>Vectors are basic to this course. We will learn to manipulate them algebraically
+and geometrically. They will help us simplify the statements of problems and
+theorems and to find solutions and proofs.</p>
+<p>Determinants measure volumes and areas. They will also be important in part B
+when we use matrices to solve systems of equations.</p>
+<p>Last Modification: <strong>2020-09-17 Thu 11:44</strong></p>
+<blockquote>
+<p>You can <a href="https://ppalazon.github.io/a9/a5452d-6c21-4136-804f-ea0d4419c352/calculus-II-1a.pdf">download the whole section in pdf</a></p>
+</blockquote></p>
+        
+    </div>
+</div>
+
+    
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>
+  <a href="https://ppalazon.github.io/18.02/part-1b/">1B: Vectors and Matrices - Matrices and Systems of Equations</a>
+</h3>
+
+        <p><p>The basic point of this part is to formulate systems of linear equations in
+terms of matrices. We can then view them as analogous to an equation like \(7x =
+5\).</p>
+<p>In order to use them in systems of equations we will need to learn the algebra
+of matrices; in particular, how to multiply them and how to find their inverses.</p>
+<p>Geometrically, a linear equation in \(x\), \(y\) and \(z\) is the equation of a plane.
+Solving a system of linear equations is equivalent to finding the intersection
+of the corresponding planes.</p>
+<p>Last Modification: <strong>2020-09-17 Thu 11:47</strong></p></p>
+        
+    </div>
+</div>
+
+    
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>
+  <a href="https://ppalazon.github.io/18.02/part-1c/">1C: Vectors and Matrices - Parametric Equations for Curves</a>
+</h3>
+
+        <p><p>Parametric equations define trajectories in space or in the plane. Very often we
+can think of the trajectory as that of a particle moving through space and the
+parameter as time. In this case, the parametric curve is written \((x(t); y(t);
+z(t))\), which gives the position of the particle at time t.</p>
+<p>A moving particle also has a velocity and acceleration. These are vectors which
+vary in time. We will learn to compute them as derivatives of the position
+vector.</p>
+<p>Last Modification: <strong>2020-09-17 Thu 12:07</strong></p></p>
+        
+    </div>
+</div>
+
+    
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>
+  <a href="https://ppalazon.github.io/18.02/part-2a/">2A: Functions of Two Variables, Tangent Approximation and Optimization</a>
+</h3>
+
+        <p><p>We start this unit by learning to visualize functions of several variables using
+graphs and level curves. Following this we will study partial derivatives. These
+will be used in the tangent approximation formula, which is one of the keys to
+multivariable calculus. It ties together the geometric and algebraic sides of
+the subject and is the higher dimensional analog of the equation for the tangent
+line found in single variable calculus. We will use it in part B to develop the
+chain rule.</p>
+<p>We will apply our understanding of partial derivatives to solving unconstrained
+optimization problems. (In part C we will solve constrained optimization
+problems.)</p>
+<p>Last Modification: <strong>2020-09-17 Thu 12:17</strong></p></p>
+        
+    </div>
+</div>
+
+    
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>
+  <a href="https://ppalazon.github.io/18.02/part-2b/">2B: Chain Rule, Gradient and Directional Derivatives</a>
+</h3>
+
+        <p><p>As in single variable calculus, there is a multivariable chain rule. The version
+with several variables is more complicated and we will use the tangent
+approximation and total differentials to help understand and organize it.</p>
+<p>Also related to the tangent approximation formula is the gradient of a function.
+The gradient is one of the key concepts in multivariable calculus. It is a
+vector field, so it allows us to use vector techniques to study functions of
+several variables. Geometrically, it is perpendicular to the level curves or
+surfaces and represents the direction of most rapid change of the function.
+Analytically, it holds all the rate information for the function and can be used
+to compute the rate of change in any direction.</p>
+<p>Last Modification: <strong>2020-09-17 Thu 12:19</strong></p></p>
+        
+    </div>
+</div>
+
+    
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>
+  <a href="https://ppalazon.github.io/18.02/part-2c/">2C: Lagrange Multipliers and Constrained Differentials</a>
+</h3>
+
+        <p><p>In this part we will study a new type of optimization problem: that of finding
+the maximum (or minimum) value of a function w = f(x, y, z) when we are only
+allowed to consider points (x, y, z) which are constrained to lie on a surface.
+The technique we will use to solve these problems is called Lagrange
+multipliers.</p>
+<p>Last Modification: <strong>2020-09-17 Thu 12:19</strong></p></p>
+        
+    </div>
+</div>
+
+    
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>
+  <a href="https://ppalazon.github.io/18.02/part-3a/">3A: Double Integrals</a>
+</h3>
+
+        <p><p>In part A, we will learn about double integration over regions in the plane.
+Conceptually an integral is a sum. We will apply this idea to computing the
+mass, center of mass and moment of inertia of a two dimensional body and the
+volume of a region bounded by surfaces.</p>
+<p>In order to compute double integrals we will have to describe regions in the
+plane in terms of the equations describing their boundary curves. After that,
+the computation just becomes two single variable integrations done iteratively.</p>
+<p>Last Modification: <strong>2020-09-17 Thu 12:23</strong></p></p>
+        
+    </div>
+</div>
+
+    
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>
+  <a href="https://ppalazon.github.io/18.02/part-3b/">3B: Vector Fields and Line Integrals</a>
+</h3>
+
+        <p><p>A vector field attaches a vector to each point. For example, the sun has a
+gravitational field, which gives its gravitational attraction at each point in
+space. The field does work as it moves a mass along a curve. We will learn to
+express this work as a line integral and to compute its value.</p>
+<p>In physics, some force fields conserve energy. Such conservative fields are
+determined by their potential energy functions. We will define what a
+conservative field is mathematically and learn to identify them and find their
+potential function.</p>
+<p>Last Modification: <strong>2020-09-17 Thu 12:25</strong></p></p>
+        
+    </div>
+</div>
+
+    
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>
+  <a href="https://ppalazon.github.io/18.02/part-3c/">3C: Green&#39;s Theorem</a>
+</h3>
+
+        <p><p>In this part we will learn Green&rsquo;s theorem, which relates line integrals over a
+closed path to a double integral over the region enclosed. The line integral
+involves a vector field and the double integral involves derivatives (either div
+or curl, we will learn both) of the vector field.</p>
+<p>First we will give Green&rsquo;s theorem in work form. The line integral in question
+is the work done by the vector field. The double integral uses the curl of the
+vector field. Then we will study the line integral for flux of a field across a
+curve. Finally we will give Green&rsquo;s theorem in flux form. This relates the line
+integral for flux with the divergence of the vector field.</p>
+<p>Last Modification: <strong>2020-09-17 Thu 12:30</strong></p></p>
+        
+    </div>
+</div>
+
+    
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>
+  <a href="https://ppalazon.github.io/18.02/part-4a/">4A: Triple Integrals</a>
+</h3>
+
+        <p><p>In this part we will learn to compute triple integrals over regions in space. We
+will learn to do this in three natural coordinate systems: rectangular,
+cylindrical and spherical.</p>
+<p>Last Modification: <strong>2020-09-17 Thu 12:31</strong></p></p>
+        
+    </div>
+</div>
+
+    
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>
+  <a href="https://ppalazon.github.io/18.02/part-4b/">4B: Flux and the Divergence Theorem</a>
+</h3>
+
+        <p><p>Here we will extend Green&rsquo;s theorem in flux form to the divergence (or Gauss')
+theorem relating the flux of a vector field through a closed surface to a triple
+integral over the region it encloses. Before learning this theorem we will have
+to discuss the surface integrals, flux through a surface and the divergence of a
+vector field.</p>
+<p>Last Modification: <strong>2020-09-17 Thu 12:33</strong></p></p>
+        
+    </div>
+</div>
+
+    
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>
+  <a href="https://ppalazon.github.io/18.02/part-4c/">4C: Line Integrals and Stokes&#39; Theorem</a>
+</h3>
+
+        <p><p>In this part we will extend Green&rsquo;s theorem in work form to Stokes' theorem. For
+a given vector field, this relates the field&rsquo;s work integral over a closed space
+curve with the flux integral of the field&rsquo;s curl over any surface that has that
+curve as its boundary.</p>
+<p>Last Modification: <strong>2020-09-17 Thu 12:37</strong></p></p>
+        
+    </div>
+</div>
+
+    
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>
+  <a href="https://ppalazon.github.io/18.02/physics/">Physics Applications</a>
+</h3>
+
+        <p><p>Last Modification: <strong>2020-09-17 Thu 12:56</strong></p></p>
+        
+    </div>
+</div>
+
+    
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>
+  <a href="https://ppalazon.github.io/18.02/review/">Review for Exams</a>
+</h3>
+
+        <p><p>Last Modification: <strong>2020-09-17 Thu 12:55</strong></p></p>
+        
+    </div>
+</div>
+
+    
+
+    
+    
+
+
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.02/">18.02 Multivariable Calculus</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="https://ppalazon.github.io/18.02/index.xml" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

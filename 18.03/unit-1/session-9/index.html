@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Exponential Input; Gain and Phase Lag  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="ode, maths, ">
+
+
+<meta property="og:title" content="Exponential Input; Gain and Phase Lag  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.03/unit-1/session-9/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="content-source" content="18.03/unit-1/session-9.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Captured On [2019-10-01 Tue 12:22] Source Exponential Input; Gain and Phase Lag | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 Explain the method of optimism to solve this first order ODE 1.1 Front Explain the method of optimism to solve this first order ODE
+\(\dot{x} &#43; 2x = 4e^{3t}\)
+1.2 Back The inspiration is based on the fact that \(\dv{t} e^{rt} = re^{rt}\)."/>
+<meta property="og:article:published_time" content="2019-10-02T13:05:00&#43;02:00" />
+<meta property="og:article:modified_time" content="2019-10-02T13:05:00&#43;02:00" />
+
+
+
+<meta property="og:article:tag" content="ode">
+
+<meta property="og:article:tag" content="maths">
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ppalazon" />
+<meta name="twitter:creator" content="@ppalazon" />
+<meta name="twitter:title" content="Exponential Input; Gain and Phase Lag" />
+<meta name="twitter:description" content="Captured On [2019-10-01 Tue 12:22] Source Exponential Input; Gain and Phase Lag | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 Explain the method of optimism to solve this first order ODE 1.1 Front Explain the method of optimism to solve this first order ODE
+\(\dot{x} &#43; 2x = 4e^{3t}\)
+1.2 Back The inspiration is based on the fact that \(\dv{t} e^{rt} = re^{rt}\)."/>
+<meta name="twitter:url" content="https://ppalazon.github.io/18.03/unit-1/session-9/" />
+<meta name="twitter:domain" content="https://ppalazon.github.io">
+
+
+
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+     "@type": "Article",
+     "headline": "Exponential Input; Gain and Phase Lag",
+     "author": {
+         "@type": "Person",
+         "name": "http://profiles.google.com/+?rel=author"
+     },
+     "datePublished": "2019-10-02",
+     "description": "",
+     "wordCount":  680 
+ }
+</script>
+
+
+
+<link rel="canonical" href="https://ppalazon.github.io/18.03/unit-1/session-9/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+ }
+ .hero {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: calc(200px + (450 - 200) * ((100vw - 300px) / (1600 - 300)));
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: calc(-1 * (200px + (450 - 200) * ((100vw - 300px) / (1600 - 300))));
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+    <header class="container hat">
+        <h1>Exponential Input; Gain and Phase Lag
+</h1>
+
+        
+
+
+<span class="author">by
+    
+    MIT OCW, Pablo Palazon
+    
+</span>
+
+
+    </header>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            
+            <div class="content">
+  <dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2019-10-01 Tue 12:22]</span></span></dd>
+<dt>Source</dt>
+<dd><a href="https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-i-first-order-differential-equations/exponential-input-gain-and-phase-lag/index.htm">Exponential Input; Gain and Phase Lag | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare</a></dd>
+</dl>
+<h2 id="explain-the-method-of-optimism-to-solve-this-first-order-ode"><span class="section-num">1</span> Explain the method of optimism to solve this first order ODE</h2>
+<h3 id="front"><span class="section-num">1.1</span> Front</h3>
+<p><strong>Explain the method of optimism to solve this first order ODE</strong></p>
+<p>\(\dot{x} + 2x = 4e^{3t}\)</p>
+<h3 id="back"><span class="section-num">1.2</span> Back</h3>
+<p>The inspiration is based on the fact that \(\dv{t} e^{rt} =
+re^{rt}\). As the right hand side (input) is an exponential, maybe the
+output signal \(x(t)\) is also an exponential function.</p>
+<p>Let&rsquo;s try: \(x_p(t) = Ae^{3t}\), that is not the general solution, it is
+just one particular solution. We don&rsquo;t know \(A\) but, we can substitute
+this particular solution in the ODE and get \(A\).</p>
+<ul>
+<li>\(\dot{x_p} + 2x_p = 3Ae^{3t} + 2Ae^{3t} = 5Ae^{3t}\)</li>
+<li>\(5Ae^{3t}=4e^{3t} \implies A = 4/5\)</li>
+<li>So, \(x_p(t) = 4/5 e^{3t}\)</li>
+</ul>
+<p>Also, we know the homogeneous solution of \(\dot{x} + 2x = 0\), \(x_h(t)
+= Ce^{-2t}\). So, using superposition principle, we can get the general
+solution</p>
+<p>\({\displaystyle x(t) = x_p(t) + x_h(t) = \frac{4}{5} e^{3t} +
+Ce^{-2t}}\)</p>
+<h2 id="how-can-we-get-the-general-solution-of-a-first-order-constant-coefficient-de-with-sinusoidal-input"><span class="section-num">2</span> How can we get the general solution of a first order constant coefficient DE with sinusoidal input?</h2>
+<h3 id="front"><span class="section-num">2.1</span> Front</h3>
+<p><strong>How can we get the general solution of a first order constant coefficient DE with sinusoidal input?</strong></p>
+<p>\(\dot{x} + kx = B\cos(\omega t)\)</p>
+<p>Assuming \(k\), \(\omega\) and \(B\) are all positives</p>
+<h3 id="back"><span class="section-num">2.2</span> Back</h3>
+<p>The strategy is to use Euler&rsquo;s formula to replace \(\cos(\omega t)\) by
+the complex exponential \(e^{i\omega t}\). We call this technique
+<strong>complex replacement</strong></p>
+<p>Complex replacement: \(\dot{z} + kz = Be^{i \omega t}\), where
+\(\cos(\omega t) = \operatorname{Re}(e^{i\omega t})\) and \(x(t) =
+\operatorname{Re}(z)\)</p>
+<p>Using the optimistic method of exponential input will get an
+exponential solution. Using the particular solution \(z_p(t) = Ae^{i
+\omega t}\)</p>
+<ul>
+<li>\(\dot{z_p} + k z_p = i \omega A e^{i\omega t} + kAe^{i\omega t} =
+(k + i\omega)Ae^{i\omega t}\)</li>
+<li>\((k + i\omega)Ae^{i\omega t} = Be^{i\omega t} \implies A =
+\frac{B}{k + i\omega}\)</li>
+</ul>
+<p>So \(z_p(t) = \frac{B}{k + i\omega} e^{i\omega t}\), using polar
+coordinates \(z_p(t) = \frac{B e^{i(\omega t - \phi)}}{\sqrt{k^2 +
+\omega^{2}}}\). Where \(\phi = \operatorname{Arg}(k + i\omega)\)</p>
+<p>Taking the real part: \({\displaystyle x_p(t) = \frac{B}{\sqrt{k^2 +
+\omega^2}} \cos(\omega t - \phi)}\).</p>
+<p>Finally, the general solution is got using homogeneous solution and
+principle of superposition</p>
+<p>\({\displaystyle x(t) = x_p(t) + Ce^{-kt} = \frac{B}{\sqrt{k^2 +
+\omega^2}} \cos(\omega t - \phi) + Ce^{-kt}}\)</p>
+<h2 id="write-by-heart-a-particular-solution-of-this-ode"><span class="section-num">3</span> Write by heart a particular solution of this ODE?</h2>
+<h3 id="front"><span class="section-num">3.1</span> Front</h3>
+<p><strong>Write by heart a particular solution of this ODE?</strong></p>
+<p>\(\dot{x} + kx = kB \cos(\omega t)\)</p>
+<h3 id="back"><span class="section-num">3.2</span> Back</h3>
+<p>\({\displaystyle x_p(t) = \frac{kB}{\sqrt{k^2 + \omega^2}} \cos(\omega
+t - \phi)}\), where \(\phi = \operatorname{Arg}(k + i\omega)\)</p>
+<h2 id="what-is-the-gain--or-amplitude-response--in-this-particular-solution"><span class="section-num">4</span> What is the gain (or amplitude response) in this particular solution?</h2>
+<h3 id="front"><span class="section-num">4.1</span> Front</h3>
+<p><strong>What is the gain (or amplitude response) in this particular solution?</strong></p>
+<p>\(\dot{x} + kx = kB \cos(\omega t)\), where \({\displaystyle x_p(t) =
+\frac{kB}{\sqrt{k^2 + \omega^2}} \cos(\omega t - \phi)}\)</p>
+<h3 id="back"><span class="section-num">4.2</span> Back</h3>
+<p>Gain is the ratio between output amplitude and input amplitude, so</p>
+<p>\({\displaystyle g = \frac{k}{\sqrt{k^2 + \omega^{2}}}}\)</p>
+<p>You can write \(x_p(t) = gB\cos(\omega t - \phi)\)</p>
+<h2 id="what-are-the-bode-plots"><span class="section-num">5</span> What are the bode plots?</h2>
+<h3 id="front"><span class="section-num">5.1</span> Front</h3>
+<p><strong>What are the bode plots?</strong></p>
+<p>\(\dot{x} + kx = kB \cos(\omega t)\), where the particular solution is
+\({\displaystyle x_p(t) = \frac{kB}{\sqrt{k^2 + \omega^2}} \cos(\omega
+t - \phi)}\)</p>
+<p>Explain how are bode plots and why are useful</p>
+<h3 id="back"><span class="section-num">5.2</span> Back</h3>
+<p>On the first order with constant coefficient and sinusoidal input ODE,
+we can get relevant information about the behaviour of the system.</p>
+<p>We can get the gain (or amplitude response) of the system. \(g =
+\frac{k}{\sqrt{k^2 + \omega^{2}}}\)</p>
+<p>Where, \(\phi\) is the phase lag, and \(g\) is the input amplitude scaled
+by the gain to give the output amplitude.</p>
+<p>Fixing the coupling constant \(k\) and think how \(g\) and \(\phi\) vary as
+we vary \(\omega\), we can write \(g(\omega)\) and \(\phi(\omega)\)</p>
+<p>The bode plots are graph \(g(\omega)\) and \(-\phi(\omega)\) with respect
+to \(\omega\) fixing the coupling constant to some values (for example,
+\(k = .25, .5, .75, 1, 1.25, 1.5\))</p>
+<figure>
+    <img src="https://ppalazon.github.io/2c/55354e-2d70-4619-8d65-df10eafa6670/_20200916_195138DCDCsxB.png"/> 
+</figure>
+
+<p>Technically, the bode plots display \(\log g(\omega)\) and
+\(-\phi(\omega)\) against \(\log \omega\)</p>
+
+</div>
+
+
+            <footer>
+    
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-1%2fsession-9%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Exponential%20Input%3b%20Gain%20and%20Phase%20Lag&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-1%2fsession-9%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-1%2fsession-9%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-1%2fsession-9%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-1%2fsession-9%2f&amp;title=Exponential%20Input%3b%20Gain%20and%20Phase%20Lag" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Exponential%20Input%3b%20Gain%20and%20Phase%20Lag&amp;body=Check out this site https%3a%2f%2fppalazon.github.io%2f18.03%2funit-1%2fsession-9%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+
+<nav>
+    <ul class="pager">
+    
+    <li class="previous">
+        <a href="https://ppalazon.github.io/18.03/unit-1/session-8/" title="First Order Constant Coefficient Linear ODE&#39;s">
+            <span aria-hidden="true">&larr;</span>First Order Constant Coefficient Linear ODE&#39;s
+        </a>
+    </li>
+    
+
+    
+    <li class="next">
+        <a href="https://ppalazon.github.io/18.03/unit-1/session-10/" title="First Order Autonomous Differential Equations">
+            First Order Autonomous Differential Equations <span aria-hidden="true">&rarr;</span>
+        </a>
+    </li>
+    
+    </ul>
+</nav>
+
+
+
+</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//ppalazon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+        </div>
+    </div>
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/">18.03 Differential Equations</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/unit-1/">1: First Order Differential Equations</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.03/unit-1/session-9/">Exponential Input; Gain and Phase Lag</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

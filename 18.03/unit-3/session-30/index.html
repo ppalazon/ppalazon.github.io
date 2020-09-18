@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Transfer (System) and Weight Functions, Green&#39;s Formula  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="ode, maths, ">
+
+
+<meta property="og:title" content="Transfer (System) and Weight Functions, Green&#39;s Formula  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.03/unit-3/session-30/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="content-source" content="18.03/unit-3/session-30.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Captured On [2020-01-10 Fri 13:16] Source Transfer (System) and Weight Functions, Green&amp;rsquo;s Formula | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the transfer function for any LTI? 1.1 Front What is the transfer function for any LTI?
+In terms of unit impulse response
+1.2 Back \({\displaystyle W(s) = \mathcal{L}(w(t))}\)
+where \(w(t)\) is the unit impulse response
+2 What is the system function?"/>
+<meta property="og:article:published_time" content="2019-11-26T00:00:00&#43;01:00" />
+<meta property="og:article:modified_time" content="2019-11-26T00:00:00&#43;01:00" />
+
+
+
+<meta property="og:article:tag" content="ode">
+
+<meta property="og:article:tag" content="maths">
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ppalazon" />
+<meta name="twitter:creator" content="@ppalazon" />
+<meta name="twitter:title" content="Transfer (System) and Weight Functions, Green&#39;s Formula" />
+<meta name="twitter:description" content="Captured On [2020-01-10 Fri 13:16] Source Transfer (System) and Weight Functions, Green&amp;rsquo;s Formula | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the transfer function for any LTI? 1.1 Front What is the transfer function for any LTI?
+In terms of unit impulse response
+1.2 Back \({\displaystyle W(s) = \mathcal{L}(w(t))}\)
+where \(w(t)\) is the unit impulse response
+2 What is the system function?"/>
+<meta name="twitter:url" content="https://ppalazon.github.io/18.03/unit-3/session-30/" />
+<meta name="twitter:domain" content="https://ppalazon.github.io">
+
+
+
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+     "@type": "Article",
+     "headline": "Transfer (System) and Weight Functions, Green\u0027s Formula",
+     "author": {
+         "@type": "Person",
+         "name": "http://profiles.google.com/+?rel=author"
+     },
+     "datePublished": "2019-11-26",
+     "description": "",
+     "wordCount":  1198 
+ }
+</script>
+
+
+
+<link rel="canonical" href="https://ppalazon.github.io/18.03/unit-3/session-30/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+ }
+ .hero {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: calc(200px + (450 - 200) * ((100vw - 300px) / (1600 - 300)));
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: calc(-1 * (200px + (450 - 200) * ((100vw - 300px) / (1600 - 300))));
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+    <header class="container hat">
+        <h1>Transfer (System) and Weight Functions, Green&#39;s Formula
+</h1>
+
+        
+
+
+<span class="author">by
+    
+    MIT OCW, Pablo Palazon
+    
+</span>
+
+
+    </header>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            
+            <div class="content">
+  <dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2020-01-10 Fri 13:16]</span></span></dd>
+<dt>Source</dt>
+<dd><a href="https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-iii-fourier-series-and-laplace-transform/transfer-system-and-weight-functions-greens-formula/">Transfer (System) and Weight Functions, Green&rsquo;s Formula | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare</a></dd>
+</dl>
+<h2 id="what-is-the-transfer-function-for-any-lti"><span class="section-num">1</span> What is the transfer function for any LTI?</h2>
+<h3 id="front"><span class="section-num">1.1</span> Front</h3>
+<p><b>What is the transfer function for any LTI?</b></p>
+<p>In terms of unit impulse response</p>
+<h3 id="back"><span class="section-num">1.2</span> Back</h3>
+<p>\({\displaystyle W(s) = \mathcal{L}(w(t))}\)</p>
+<p>where \(w(t)\) is the unit impulse response</p>
+<h2 id="what-is-the-system-function"><span class="section-num">2</span> What is the system function?</h2>
+<h3 id="front"><span class="section-num">2.1</span> Front</h3>
+<p><b>What is the system function?</b></p>
+<p>For LTI</p>
+<h3 id="back"><span class="section-num">2.2</span> Back</h3>
+<p>It&rsquo;s called transfer function for any LTI</p>
+<h2 id="what-is-the-transfer-function-for-this-system"><span class="section-num">3</span> What is the transfer function for this system?</h2>
+<h3 id="front"><span class="section-num">3.1</span> Front</h3>
+<p><b>What is the transfer function for this system?</b></p>
+<p>\({\displaystyle p(D)x = f(t)}\), let \(p(D)\)</p>
+<h3 id="back"><span class="section-num">3.2</span> Back</h3>
+<p>\({\displaystyle W(s) = \frac{1}{p(s)}}\)</p>
+<h2 id="show-the-transfer-function-as-the-ratio-of-output-to-input"><span class="section-num">4</span> Show the transfer function as the ratio of output to input</h2>
+<h3 id="front"><span class="section-num">4.1</span> Front</h3>
+<p><b>Show the transfer function as the ratio of output to input</b></p>
+<p>\({\displaystyle p(D) x = f(t)}\) with rest IC</p>
+<h3 id="back"><span class="section-num">4.2</span> Back</h3>
+<p>Taking Laplace transform of both sides gives</p>
+<p>\({\displaystyle p(s)X(s) = F(s) \implies X(s) = \frac{1}{p(s)} F(s) = W(s)
+F(s)}\)</p>
+<p>Solving \(W(s)\) shows \({\displaystyle W(s) = \frac{X(s)}{F(s)} =
+\frac{\text{output}}{\text{input}}}\)</p>
+<h2 id="find--pd---so-that--ws---is-the-transfer-function-for-the-system--pd--x-f--t"><span class="section-num">5</span> Find \(p(D)\) so that \(W(s)\) is the transfer function for the system \(p(D)x = f(t)\)</h2>
+<h3 id="front"><span class="section-num">5.1</span> Front</h3>
+<p><b>Find $p(D)$ so that $W(s)$ is the transfer function for the system $p(D)x = f(t)$</b></p>
+<p>\({\displaystyle W(s) = \frac{s}{s^2 + 1}}\)</p>
+<h3 id="back"><span class="section-num">5.2</span> Back</h3>
+<p>The system \(p(D)x = f(t)\) has transfer function \(\frac{1}{p(s)}\). Since \(W(t)\)
+is not one over a polynomial there is no such polynomial.</p>
+<p>Note that \(W(s)\) is the transfer function for the system \(\ddot{x} + x =
+\dot{y}\), where we consider \(y\) to be the input</p>
+<h2 id="what-is-the-transfer-function-for-this-lc-circuit"><span class="section-num">6</span> What is the transfer function for this LC circuit?</h2>
+<h3 id="front"><span class="section-num">6.1</span> Front</h3>
+<p><b>What is the transfer function for this LC circuit?</b></p>
+<p>\({\displaystyle i''(t) + 4i = v'(t)}\), where \(i\) is the current and \(v\) the
+voltage</p>
+<p>Solve it with 2 methods</p>
+<h3 id="back"><span class="section-num">6.2</span> Back</h3>
+<p>Method 1: We know that the characterization of the transfer function as the
+ratio output/input is \(W(s) = I(s)/V(s)\)</p>
+<p>Assuming rest IC, we have \(\mathcal{L}(v') = sV(s)\), so applying the Laplace
+transform</p>
+<p>\({\displaystyle (s^2 + 4) I(s) = sV(s) \implies W(s) = \frac{I(s)}{V(s)} =
+\frac{s}{s^2 + 4}}\)</p>
+<p>We can not write with the form of \(1/p(s)\)</p>
+<p>Method 2: We can deduce the \(\mathcal{L}(\delta'(t)) = s
+\mathcal{L}(\delta(t)) - \delta(0^-) = s\), and solve as usual</p>
+<h2 id="what-is-the-laplace-transform-of-this-expression"><span class="section-num">7</span> What is the Laplace transform of this expression?</h2>
+<h3 id="front"><span class="section-num">7.1</span> Front</h3>
+<p><b>What is the Laplace transform of this expression?</b></p>
+<p>\({\displaystyle \mathcal{L}(\delta'(t))}\)</p>
+<h3 id="back"><span class="section-num">7.2</span> Back</h3>
+<p>\({\displaystyle s \mathcal{L}(\delta(t)) - \delta(0^-) = s}\)</p>
+<h2 id="what-is-the-green-s-formula-in-frequency"><span class="section-num">8</span> What is the Green&rsquo;s Formula in Frequency?</h2>
+<h3 id="front"><span class="section-num">8.1</span> Front</h3>
+<p><b>What is the Green&rsquo;s Formula in Frequency?</b></p>
+<h3 id="back"><span class="section-num">8.2</span> Back</h3>
+<p>Let \(p(D)x = f(t)\), with rest IC be the system. Applying Laplace transform for
+both sides we get</p>
+<p>\({\displaystyle p(s)X(s) = F(s) \implies X(s) = \frac{1}{p(s)} F(s) = W(s)F(s)}\)</p>
+<p>where \(W(s)\) is the transfer function</p>
+<h2 id="how-can-we-write-convolution-of-2-function-as-a-multiplication"><span class="section-num">9</span> How can we write convolution of 2 function as a multiplication?</h2>
+<h3 id="front"><span class="section-num">9.1</span> Front</h3>
+<p><b>How can we write convolution of 2 function as a multiplication?</b></p>
+<p>\(w * f\)</p>
+<h3 id="back"><span class="section-num">9.2</span> Back</h3>
+<p>Applying Laplace transform</p>
+<p>\({\displaystyle \mathcal{L}(f * g) = W(s)F(s)}\)</p>
+<p>Convolution is a type of multiplication, because viewed from the frequency side
+it is multiplication</p>
+<h2 id="show-that-this-equation-is-true"><span class="section-num">10</span> Show that this equation is true</h2>
+<h3 id="front"><span class="section-num">10.1</span> Front</h3>
+<p><b>Show that this equation is true</b></p>
+<p>\({\displaystyle \mathcal{L}(f * g) = F(s)G(s)}\)</p>
+<h3 id="back"><span class="section-num">10.2</span> Back</h3>
+<p>\begin{align*}
+\mathcal{L}(f * g) &amp;= \int_0^{\infty} (f * g)e^{-st} \dd{t} \\\<br>
+&amp;= \int_0^{\infty} \int_0^t f(t - u)g(u) e^{-st} \dd{u} \dd{t} \\\<br>
+&amp;= \int_0^{\infty} \int_u^{\infty} f(t - u)g(u) e^{-st} \dd{t} \dd{u} \qq{Changing order of integration} \\\<br>
+&amp;= \int_0^{\infty} \int_0^{\infty} f(v) g(u)e^{-s(v+u)} \dd{v} \dd{u} \qq{Substituting} v=t-u, \dd{v} = \dd{t} \\\<br>
+&amp;= \int_0^{\infty} f(v)e^{-sv} \dd{v} \int_0^{\infty} g(u) e^{-su} \dd{u}\\\<br>
+&amp;= F(s)G(s)
+\end{align*}</p>
+<figure>
+    <img src="https://ppalazon.github.io/68/ffd67c-0af6-49fa-88cd-9f2fa1cedbdf/_20200916_224627kH2aGC2.png"/> 
+</figure>
+
+<h2 id="what-is-the-laplace-of-this-expression"><span class="section-num">11</span> What is the Laplace of this expression?</h2>
+<h3 id="front"><span class="section-num">11.1</span> Front</h3>
+<p><b>What is the Laplace of this expression?</b></p>
+<p>\({\displaystyle \mathcal{L}\biggl(\int_{0^-}^{t^+} f(\tau) \dd{t} \biggr)}\)</p>
+<h3 id="back"><span class="section-num">11.2</span> Back</h3>
+<p>\({\displaystyle \mathcal{L}\biggl(\int_{0^-}^{t^+} f(\tau) \dd{t} \biggr) =
+\mathcal{L}(f * 1) = F(s) \mathcal{L}1 = \frac{F(s)}{s}}\)</p>
+<h2 id="what-does-mean-this-diagram"><span class="section-num">12</span> What does mean this diagram?</h2>
+<h3 id="front"><span class="section-num">12.1</span> Front</h3>
+<p><b>What does mean this diagram?</b></p>
+<figure>
+    <img src="https://ppalazon.github.io/68/ffd67c-0af6-49fa-88cd-9f2fa1cedbdf/_20200916_224636Xt963Q1.png"/> 
+</figure>
+
+<h3 id="back"><span class="section-num">12.2</span> Back</h3>
+<p>\(\text{input } F(s) \leadsto \text{ output } X(s) = W(s)F(s)\)</p>
+<h2 id="what-is-a-cascaded-system"><span class="section-num">13</span> What is a cascaded system?</h2>
+<h3 id="front"><span class="section-num">13.1</span> Front</h3>
+<p><b>What is a cascaded system?</b></p>
+<h3 id="back"><span class="section-num">13.2</span> Back</h3>
+<p>There are 2 system where the output of the first, it&rsquo;ll be the input of the
+second system</p>
+<p>\(p_1(D)x = f\), \(p_2(D)y = x\), with rest IC</p>
+<p>The input to the cascade is \(f\) and the output is \(y\)</p>
+<h2 id="what-is-the-solution-of-this-system"><span class="section-num">14</span> What is the solution of this system?</h2>
+<h3 id="front"><span class="section-num">14.1</span> Front</h3>
+<p><b>What is the solution of this system?</b></p>
+<p>\(p_1(D)x = f\), \(p_2(D)y = x\), with rest IC</p>
+<h3 id="back"><span class="section-num">14.2</span> Back</h3>
+<p>Let \({\displaystyle W_1(s) = \frac{1}{p_1(s)}}\) and \({\displaystyle W_2(s) =
+\frac{1}{p_2(s)}}\) be the transfer function for the two differential equations</p>
+<p>\({\displaystyle X(s) = W_1(s)F(s) \qq{and} Y(s) = W_2(s)X(s)}\), so
+\({\displaystyle Y(s) = W_2(s)W_1(s)F(s)}\)</p>
+<p>The transfer function for the cascade is</p>
+<p>\({\displaystyle \text{output / input } = Y(s)/F(s) = W_2(s) W_1(s)}\)</p>
+<h2 id="represent-with-a-diagram-this-cascade-system"><span class="section-num">15</span> Represent with a diagram this cascade system</h2>
+<h3 id="front"><span class="section-num">15.1</span> Front</h3>
+<p><b>Represent with a diagram this cascade system</b></p>
+<p>\(p_1(D)x = f\), \(p_2(D)y = x\), with rest IC</p>
+<h3 id="back"><span class="section-num">15.2</span> Back</h3>
+<figure>
+    <img src="https://ppalazon.github.io/68/ffd67c-0af6-49fa-88cd-9f2fa1cedbdf/_20200916_2246489PphOPP.png"/> 
+</figure>
+
+<h2 id="what-is-the-solution-for-this-system-diagram"><span class="section-num">16</span> What is the solution for this system diagram?</h2>
+<h3 id="front"><span class="section-num">16.1</span> Front</h3>
+<p><b>What is the solution for this system diagram?</b></p>
+<figure>
+    <img src="https://ppalazon.github.io/68/ffd67c-0af6-49fa-88cd-9f2fa1cedbdf/_20200916_224657GyoZiUG.png"/> 
+</figure>
+
+<p>Explain the diagram too</p>
+<h3 id="back"><span class="section-num">16.2</span> Back</h3>
+<p>This is a parallel system. The plus sign in the circle indicates the 2 signals
+coming into the junction should be added. The split near the start indicates the
+input \(F(s)\) go into each system</p>
+<p>\({\displaystyle X_1(s) = W_1(s) F(s)}\), \({\displaystyle X_2(s) = W_2(s) F(s)}\),
+\({\displaystyle Y = X_1 + X_2}\)</p>
+<p>So the solution</p>
+<p>\({\displaystyle Y(s) = W_1 F + W_2 F = (W_1 + W_2) F}\)</p>
+<p>The transfer function of the system is \(W_1 + W_2\)</p>
+<h2 id="how-could-we-create-a-feedback-loop-for-this-system"><span class="section-num">17</span> How could we create a feedback loop for this system?</h2>
+<h3 id="front"><span class="section-num">17.1</span> Front</h3>
+<p><b>How could we create a feedback loop for this system?</b></p>
+<figure>
+    <img src="https://ppalazon.github.io/68/ffd67c-0af6-49fa-88cd-9f2fa1cedbdf/_20200916_2247056MvxA6E.png"/> 
+</figure>
+
+<p>Name both systems</p>
+<h3 id="back"><span class="section-num">17.2</span> Back</h3>
+<figure>
+    <img src="https://ppalazon.github.io/68/ffd67c-0af6-49fa-88cd-9f2fa1cedbdf/_20200916_224714lR9W2mA.png"/> 
+</figure>
+
+<p>The original system is known as the <strong>open loop system</strong> and the corresponding
+system with feedback is known as the <strong>closed loop system</strong></p>
+<h2 id="what-does-mean-the-symbol--cross-g--in-this-system-diagram"><span class="section-num">18</span> What does mean the symbol \(\cross g\) in this system diagram?</h2>
+<h3 id="front"><span class="section-num">18.1</span> Front</h3>
+<p><b>What does mean the symbol $\cross g$ in this system diagram?</b></p>
+<figure>
+    <img src="https://ppalazon.github.io/68/ffd67c-0af6-49fa-88cd-9f2fa1cedbdf/_20200916_224722lR9W2mA.png"/> 
+</figure>
+
+<h3 id="back"><span class="section-num">18.2</span> Back</h3>
+<p>The symbol \(\cross g\) means the input is scaled by \(g\), that is apply a gain of
+\(g\) to the input.</p>
+<h2 id="what-does-mean-the-symbol--sum--in-this-system-diagram"><span class="section-num">19</span> What does mean the symbol \(\sum\) in this system diagram?</h2>
+<h3 id="front"><span class="section-num">19.1</span> Front</h3>
+<p><b>What does mean the symbol $\sum$ in this system diagram?</b></p>
+<figure>
+    <img src="https://ppalazon.github.io/68/ffd67c-0af6-49fa-88cd-9f2fa1cedbdf/_20200916_224730lR9W2mA.png"/> 
+</figure>
+
+<h3 id="back"><span class="section-num">19.2</span> Back</h3>
+<p>The symbol \(\sum\) means the two inputs are combined; the plus and minus signs
+indicate to add or subtract the corresponding input</p>
+<h2 id="what-is-the-transfer-function-for-this-system"><span class="section-num">20</span> What is the transfer function for this system?</h2>
+<h3 id="front"><span class="section-num">20.1</span> Front</h3>
+<p><b>What is the transfer function for this system?</b></p>
+<figure>
+    <img src="https://ppalazon.github.io/68/ffd67c-0af6-49fa-88cd-9f2fa1cedbdf/_20200916_224739lR9W2mA.png"/> 
+</figure>
+
+<h3 id="back"><span class="section-num">20.2</span> Back</h3>
+<p>\({\displaystyle V = F - gY}\), \({\displaystyle Y = M \cdot V}\)</p>
+<p>That implies</p>
+<p>\({\displaystyle Y = W (F - gY) = \frac{W}{1 + gW} \cdot F}\)</p>
+<p>So, the transfer function is the ratio output/input</p>
+<p>\({\displaystyle \frac{Y}{F} = \frac{W}{1 + gW}}\)</p>
+<p>This formula is one case of what is often called <strong>Black&rsquo;s formula</strong></p>
+<h2 id="what-is-the-partial-fraction-of-this-rational-function"><span class="section-num">21</span> What is the partial fraction of this rational function?</h2>
+<h3 id="front"><span class="section-num">21.1</span> Front</h3>
+<p><b>What is the partial fraction of this rational function?</b></p>
+<p>\({\displaystyle \frac{1}{s^4 - 1}}\)</p>
+<h3 id="back"><span class="section-num">21.2</span> Back</h3>
+<p>\({\displaystyle \frac{1}{(s^2 + 1)(s - 1)(s + 1)} = - \frac{1}{2(s^2 + 1)} -
+\frac{1}{4(s+1)} + \frac{1}{4(s - 1)}}\)</p>
+
+</div>
+
+
+            <footer>
+    
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-30%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Transfer%20%28System%29%20and%20Weight%20Functions%2c%20Green%27s%20Formula&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-30%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-30%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-30%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-30%2f&amp;title=Transfer%20%28System%29%20and%20Weight%20Functions%2c%20Green%27s%20Formula" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Transfer%20%28System%29%20and%20Weight%20Functions%2c%20Green%27s%20Formula&amp;body=Check out this site https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-30%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+
+<nav>
+    <ul class="pager">
+    
+    <li class="previous">
+        <a href="https://ppalazon.github.io/18.03/unit-3/session-29/" title="Laplace Transform: Solving Initial Value Problems">
+            <span aria-hidden="true">&larr;</span>Laplace Transform: Solving Initial Value Problems
+        </a>
+    </li>
+    
+
+    
+    <li class="next">
+        <a href="https://ppalazon.github.io/18.03/unit-3/session-31/" title="Poles, Amplitude Response, Connection to ERF">
+            Poles, Amplitude Response, Connection to ERF <span aria-hidden="true">&rarr;</span>
+        </a>
+    </li>
+    
+    </ul>
+</nav>
+
+
+
+</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//ppalazon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+        </div>
+    </div>
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/">18.03 Differential Equations</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/unit-3/">3: Fourier Series and Laplace Transform</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.03/unit-3/session-30/">Transfer (System) and Weight Functions, Green&#39;s Formula</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

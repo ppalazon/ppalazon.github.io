@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Session 82: ndS for a Surface z = f(x, y)  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="calculus, maths, ">
+
+
+<meta property="og:title" content="Session 82: ndS for a Surface z = f(x, y)  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.02/part-4b/session-82/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="content-source" content="18.02/part-4b/session-82.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Captured On [2020-02-06 Thu 17:14] Source Session 82: ndS for a Surface z = f(x, y) | Part B: Flux and the Divergence Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare 1 Chalkboard Figure 1: Flux of \(\vb{F}\) through surface \(S\) Figure 2: Normal unit vector and surface element
+"/>
+<meta property="og:article:published_time" content="2019-04-18T00:00:00&#43;02:00" />
+<meta property="og:article:modified_time" content="2019-04-18T00:00:00&#43;02:00" />
+
+
+
+<meta property="og:article:tag" content="calculus">
+
+<meta property="og:article:tag" content="maths">
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ppalazon" />
+<meta name="twitter:creator" content="@ppalazon" />
+<meta name="twitter:title" content="Session 82: ndS for a Surface z = f(x, y)" />
+<meta name="twitter:description" content="Captured On [2020-02-06 Thu 17:14] Source Session 82: ndS for a Surface z = f(x, y) | Part B: Flux and the Divergence Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare 1 Chalkboard Figure 1: Flux of \(\vb{F}\) through surface \(S\) Figure 2: Normal unit vector and surface element
+"/>
+<meta name="twitter:url" content="https://ppalazon.github.io/18.02/part-4b/session-82/" />
+<meta name="twitter:domain" content="https://ppalazon.github.io">
+
+
+
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+     "@type": "Article",
+     "headline": "Session 82: ndS for a Surface z = f(x, y)",
+     "author": {
+         "@type": "Person",
+         "name": "http://profiles.google.com/+?rel=author"
+     },
+     "datePublished": "2019-04-18",
+     "description": "",
+     "wordCount":  537 
+ }
+</script>
+
+
+
+<link rel="canonical" href="https://ppalazon.github.io/18.02/part-4b/session-82/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+ }
+ .hero {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: calc(200px + (450 - 200) * ((100vw - 300px) / (1600 - 300)));
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: calc(-1 * (200px + (450 - 200) * ((100vw - 300px) / (1600 - 300))));
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+    <header class="container hat">
+        <h1>Session 82: ndS for a Surface z = f(x, y)
+</h1>
+
+        
+
+
+<span class="author">by
+    
+    MIT OCW, Pablo Palazon
+    
+</span>
+
+
+    </header>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            
+            <div class="content">
+  <dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2020-02-06 Thu 17:14]</span></span></dd>
+<dt>Source</dt>
+<dd><a href="https://ocw.mit.edu/courses/mathematics/18-02sc-multivariable-calculus-fall-2010/4.-triple-integrals-and-surface-integrals-in-3-space/part-b-flux-and-the-divergence-theorem/session-82-nds-for-a-surface-z-f-x-y">Session 82: ndS for a Surface z = f(x, y) | Part B: Flux and the Divergence Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare</a></dd>
+</dl>
+<h2 id="chalkboard"><span class="section-num">1</span> Chalkboard</h2>
+<p><a id="org8254e23"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/f4/f80f37-517a-4d24-986c-e1aaeb1605f1/_20200206_171514MIT18_02SC_L28Brds_1.png"
+         alt="Figure 1: Flux of \(\vb{F}\) through surface \(S\)" width="80%"/> <figcaption>
+            <p>Figure 1: Flux of \(\vb{F}\) through surface \(S\)</p>
+        </figcaption>
+</figure>
+
+<p><a id="orgc3ed79c"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/f4/f80f37-517a-4d24-986c-e1aaeb1605f1/_20200206_171519MIT18_02SC_L28Brds_2.png"
+         alt="Figure 2: Normal unit vector and surface element" width="80%"/> <figcaption>
+            <p>Figure 2: Normal unit vector and surface element</p>
+        </figcaption>
+</figure>
+
+<p><a id="org4b3db45"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/f4/f80f37-517a-4d24-986c-e1aaeb1605f1/_20200206_171525MIT18_02SC_L28Brds_3.png"
+         alt="Figure 3: Getting \(\vu{n} \dd{S}\) - I" width="80%"/> <figcaption>
+            <p>Figure 3: Getting \(\vu{n} \dd{S}\) - I</p>
+        </figcaption>
+</figure>
+
+<p><a id="org3ef207c"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/f4/f80f37-517a-4d24-986c-e1aaeb1605f1/_20200206_171530MIT18_02SC_L28Brds_4.png"
+         alt="Figure 4: Cross product of surface vectors" width="80%"/> <figcaption>
+            <p>Figure 4: Cross product of surface vectors</p>
+        </figcaption>
+</figure>
+
+<p><a id="orga703ded"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/f4/f80f37-517a-4d24-986c-e1aaeb1605f1/_20200206_171535MIT18_02SC_L28Brds_5.png"
+         alt="Figure 5: Example of non-trivial surface - I" width="80%"/> <figcaption>
+            <p>Figure 5: Example of non-trivial surface - I</p>
+        </figcaption>
+</figure>
+
+<p><a id="orgd86a2a2"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/f4/f80f37-517a-4d24-986c-e1aaeb1605f1/_20200206_171541MIT18_02SC_L28Brds_6.png"
+         alt="Figure 6: Example of non-trivial surface - II" width="80%"/> <figcaption>
+            <p>Figure 6: Example of non-trivial surface - II</p>
+        </figcaption>
+</figure>
+
+<h2 id="which-is-the-flux-through-general-surfaces"><span class="section-num">2</span> Which is the flux through general surfaces?</h2>
+<h3 id="front"><span class="section-num">2.1</span> Front</h3>
+<p><b>Which is the flux through general surfaces?</b></p>
+<p>Flux of \(\vb{F}\) through surface \(z = z(x,y)\)</p>
+<h3 id="back"><span class="section-num">2.2</span> Back</h3>
+<figure>
+    <img src="https://ppalazon.github.io/f4/f80f37-517a-4d24-986c-e1aaeb1605f1/_20200917_1232551s8omp9.png"/> 
+</figure>
+
+<p>The infinitesimal vector \(\dd{\vb{S}} = \vu{n} \dd{S}\) is simpler to
+calculate than \(\vu{n}\) and \(\dd{S}\) separately.</p>
+<p>\(\dd{\vb{S}} = \ev{- z_x, -z_y, 1} \dd{x} \dd{y}\), where \(\vu{n}\)
+points &ldquo;up&rdquo;</p>
+<p>if \(F(x,y,z) = c\) the surface, \({\displaystyle \dd{\vb{S} = \pm
+\frac{\grad{\vb{F}}}{F_z} \dd{x} \dd{y}}}\)</p>
+<h2 id="how-can-we-get-the--dd-vb-s--formula-for-general-surface"><span class="section-num">3</span> How can we get the \(\dd{\vb{S}}\) formula for general surface?</h2>
+<h3 id="front"><span class="section-num">3.1</span> Front</h3>
+<p><b>How can we get the $\dd{\vb{S}}$ formula for general surface?</b></p>
+<p>Surface: \(z = f(x,y)\). Explain the process to get the final equation</p>
+<h3 id="back"><span class="section-num">3.2</span> Back</h3>
+<figure>
+    <img src="https://ppalazon.github.io/f4/f80f37-517a-4d24-986c-e1aaeb1605f1/_20200917_12330586HY23j.png"/> 
+</figure>
+
+<ul>
+<li>Region \(R\) is the projection of \(S\) in the \(xy\text{-plane}\)</li>
+<li>Divide up \(R\) into infinitesimal rectangles parallel to
+\(xy\text{-axes}\)</li>
+<li>\(\dd{S} = \vu{n} \dd{S}\) that means:
+<ul>
+<li>Direction: Perpendicular to the surface, &ldquo;up&rdquo; direction</li>
+<li>Magnitude: the area \(\dd{S}\) of the infinitesimal parallelogram</li>
+<li>It&rsquo;s means a cross product of \(\vb{A} \cross \vb{B}\)</li>
+</ul>
+</li>
+<li>\(\vb{A} = \ev{\dd{x}, 0, f_x \dd{x}} = \ev{1, 0, f_x} \dd{x}\)</li>
+<li>\(\vb{B} = \ev{0, \dd{y}, f_y \dd{y}} = \ev{0, 1, f_y} \dd{y}\)</li>
+<li>So \(\vb{A} \cross \vb{B} = \ev{-f_x, -f_y, 1} \dd{x} \dd{y}\)</li>
+</ul>
+<h2 id="get--dd-vb-s--from-the-surface-given-by-and-x2026"><span class="section-num">4</span> Get \(\dd{\vb{S}}\) from the surface given by…</h2>
+<h3 id="front"><span class="section-num">4.1</span> Front</h3>
+<p><b>Get $\dd{\vb{S}}$ from the surface given by&hellip;</b></p>
+<p>\(F(x,y,z) = c\) and \(z = z(x,y)\)</p>
+<p>In terms of \(\grad{F}\), \(F_x\), \(F_y\) and/or \(F_z\)</p>
+<h3 id="back"><span class="section-num">4.2</span> Back</h3>
+<p>\({\displaystyle F(x,y,z) = c \implies F_x \pdv{x}{x} + F_y
+\pdv{y}{x} + F_z \pdv{z}{x} = 0 \implies F_x + F_z \pdv{z}{x} = 0}\),
+so we get that \(\pdv{z}{x} = - \frac{F_x}{F_z}\)</p>
+<p>Similarly, we can get \({\displaystyle \pdv{z}{y} = - \frac{F_y}{F_z}}\)</p>
+<p>Using \({\displaystyle \dd{\vb{S}} = \ev{- \pdv{z}{x}, - \pdv{z}{y}, 1}
+\dd{x} \dd{y} = \ev{\frac{F_x}{F_z}, \frac{F_y}{F_z},1} \dd{x} \dd{y}
+= \frac{\grad{F}}{F_z} \dd{x} \dd{y}}\)</p>
+<h2 id="get-the--dd-vb-s--for-the-ellipsoid"><span class="section-num">5</span> Get the \(\dd{\vb{S}}\) for the ellipsoid</h2>
+<h3 id="front"><span class="section-num">5.1</span> Front</h3>
+<p><b>Get the $\dd{\vb{S}}$ for the ellipsoid</b></p>
+<p>\(4x^2 + y^2 + 4z^2 = 4\)</p>
+<h3 id="back"><span class="section-num">5.2</span> Back</h3>
+<p>\({\displaystyle \dd{S} = \frac{\grad{F}}{F_z} \dd{x} \dd{y} =
+\frac{\ev{8x, 2y, 8z}}{8z}\dd{x} \dd{y} = \ev{\frac{8x}{8z},
+\frac{2y}{8z}, 1} \dd{x} \dd{y}}\)</p>
+<h2 id="how-can-we-use-surface-integral-for-compute-surface-area"><span class="section-num">6</span> How can we use surface integral for compute surface area?</h2>
+<h3 id="front"><span class="section-num">6.1</span> Front</h3>
+<p><b>How can we use surface integral for compute surface area?</b></p>
+<h3 id="back"><span class="section-num">6.2</span> Back</h3>
+<p>\({\displaystyle \iint_S f(x,y,z) \dd{S} = \iint_S 1 \dd{S}}\) is the
+area of \(S\)</p>
+<h2 id="how-can-calculate-mass-of-the-thin-shell--of-uniform-thickness"><span class="section-num">7</span> How can calculate mass of the thin shell (of uniform thickness)?</h2>
+<h3 id="front"><span class="section-num">7.1</span> Front</h3>
+<p><b>How can calculate mass of the thin shell (of uniform thickness)?</b></p>
+<p>Density: \(\delta(x,y,z)\) in gms/unit area, shell defined by a surface
+\(S\)</p>
+<h3 id="back"><span class="section-num">7.2</span> Back</h3>
+<p>Mass of \({\displaystyle S = \iint_S \delta(x,y,z) \dd{S}}\)</p>
+<h2 id="how-can-we-compute-the-average-value-of--fx-y-z---over-the-surface--s"><span class="section-num">8</span> How can we compute the average value of \(f(x,y,z)\) over the surface \(S\)?</h2>
+<h3 id="front"><span class="section-num">8.1</span> Front</h3>
+<p><b>How can we compute the average value of $f(x,y,z)$ over the surface $S$?</b></p>
+<h3 id="back"><span class="section-num">8.2</span> Back</h3>
+<p>Average value of \(f\) on \(S\) is \({\displaystyle \frac{1}{area S}
+\iint_S f(x,y,z) \dd{S}}\)</p>
+
+</div>
+
+
+            <footer>
+    
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-4b%2fsession-82%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Session%2082%3a%20ndS%20for%20a%20Surface%20z%20%3d%20f%28x%2c%20y%29&amp;url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-4b%2fsession-82%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-4b%2fsession-82%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-4b%2fsession-82%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-4b%2fsession-82%2f&amp;title=Session%2082%3a%20ndS%20for%20a%20Surface%20z%20%3d%20f%28x%2c%20y%29" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Session%2082%3a%20ndS%20for%20a%20Surface%20z%20%3d%20f%28x%2c%20y%29&amp;body=Check out this site https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-4b%2fsession-82%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+
+<nav>
+    <ul class="pager">
+    
+    <li class="previous">
+        <a href="https://ppalazon.github.io/18.02/part-4b/session-81/" title="Session 81: Calculating Flux; Finding ndS">
+            <span aria-hidden="true">&larr;</span>Session 81: Calculating Flux; Finding ndS
+        </a>
+    </li>
+    
+
+    
+    <li class="next">
+        <a href="https://ppalazon.github.io/18.02/part-4b/session-83/" title="Session 83: Other Ways to Find ndS">
+            Session 83: Other Ways to Find ndS <span aria-hidden="true">&rarr;</span>
+        </a>
+    </li>
+    
+    </ul>
+</nav>
+
+
+
+</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//ppalazon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+        </div>
+    </div>
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.02/">18.02 Multivariable Calculus</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.02/part-4b/">4B: Flux and the Divergence Theorem</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.02/part-4b/session-82/">Session 82: ndS for a Surface z = f(x, y)</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

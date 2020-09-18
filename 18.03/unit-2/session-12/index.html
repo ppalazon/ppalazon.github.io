@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Modes and the Characteristic Equation  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="ode, ">
+
+
+<meta property="og:title" content="Modes and the Characteristic Equation  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.03/unit-2/session-12/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="content-source" content="18.03/unit-2/session-12.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Captured On [2019-10-08 Tue 11:29] Source Modes and the Characteristic Equation | Unit II: Second Order Constant Coefficient Linear Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 In this system, when is the equilibrium point and what does it mean? 1.1 Front In this system, when is the equilibrium point and what does it mean?
+  1.2 Back It&amp;rsquo;s at \(x=0\), and it&amp;rsquo;s the point where the spring is relaxed, which means that it is exerting no force."/>
+<meta property="og:article:published_time" content="2019-10-11T16:58:00&#43;02:00" />
+<meta property="og:article:modified_time" content="2019-10-11T16:58:00&#43;02:00" />
+
+
+
+<meta property="og:article:tag" content="ode">
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ppalazon" />
+<meta name="twitter:creator" content="@ppalazon" />
+<meta name="twitter:title" content="Modes and the Characteristic Equation" />
+<meta name="twitter:description" content="Captured On [2019-10-08 Tue 11:29] Source Modes and the Characteristic Equation | Unit II: Second Order Constant Coefficient Linear Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 In this system, when is the equilibrium point and what does it mean? 1.1 Front In this system, when is the equilibrium point and what does it mean?
+  1.2 Back It&amp;rsquo;s at \(x=0\), and it&amp;rsquo;s the point where the spring is relaxed, which means that it is exerting no force."/>
+<meta name="twitter:url" content="https://ppalazon.github.io/18.03/unit-2/session-12/" />
+<meta name="twitter:domain" content="https://ppalazon.github.io">
+
+
+
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+     "@type": "Article",
+     "headline": "Modes and the Characteristic Equation",
+     "author": {
+         "@type": "Person",
+         "name": "http://profiles.google.com/+?rel=author"
+     },
+     "datePublished": "2019-10-11",
+     "description": "",
+     "wordCount":  1847 
+ }
+</script>
+
+
+
+<link rel="canonical" href="https://ppalazon.github.io/18.03/unit-2/session-12/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+ }
+ .hero {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: calc(200px + (450 - 200) * ((100vw - 300px) / (1600 - 300)));
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: calc(-1 * (200px + (450 - 200) * ((100vw - 300px) / (1600 - 300))));
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+    <header class="container hat">
+        <h1>Modes and the Characteristic Equation
+</h1>
+
+        
+
+
+<span class="author">by
+    
+    Pablo Palazon
+    
+</span>
+
+
+    </header>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            
+            <div class="content">
+  <dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2019-10-08 Tue 11:29]</span></span></dd>
+<dt>Source</dt>
+<dd><a href="https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-ii-second-order-constant-coefficient-linear-equations/modes-and-the-characteristic-equation/index.htm">Modes and the Characteristic Equation | Unit II: Second Order
+Constant Coefficient Linear Equations | Differential Equations | Mathematics |
+MIT OpenCourseWare</a></dd>
+</dl>
+<h2 id="in-this-system-when-is-the-equilibrium-point-and-what-does-it-mean"><span class="section-num">1</span> In this system, when is the equilibrium point and what does it mean?</h2>
+<h3 id="front"><span class="section-num">1.1</span> Front</h3>
+<p><b>In this system, when is the equilibrium point and what does it mean?</b></p>
+<figure>
+    <img src="https://ppalazon.github.io/ac/b27ebf-7101-410f-9d77-c1ee5546b002/_20200916_210307EuZqyp5.png"/> 
+</figure>
+
+<h3 id="back"><span class="section-num">1.2</span> Back</h3>
+<p>It&rsquo;s at \(x=0\), and it&rsquo;s the point where the spring is relaxed, which
+means that it is exerting no force.</p>
+<h2 id="which-is-the-differential-equation-for-this-system"><span class="section-num">2</span> Which is the differential equation for this system?</h2>
+<h3 id="front"><span class="section-num">2.1</span> Front</h3>
+<p><b>Which is the differential equation for this system?</b></p>
+<figure>
+    <img src="https://ppalazon.github.io/d1/8106f8-e540-4a5a-8971-2af71d5f723d/_20200916_205625EuZqyp5.png"/> 
+</figure>
+
+<h3 id="back"><span class="section-num">2.2</span> Back</h3>
+<p>\(m \ddot{x} = F_{\text{spr}} + F_{\text{ext}}\)</p>
+<h2 id="describe-the-model-of-the-force-of-a-spring"><span class="section-num">3</span> Describe the model of the force of a spring</h2>
+<h3 id="front"><span class="section-num">3.1</span> Front</h3>
+<p><b>Describe the model of the force of a spring</b></p>
+<p>Looking for the simplest valid in general</p>
+<h3 id="back"><span class="section-num">3.2</span> Back</h3>
+<p>Is characterized by the fact that is depends only on position</p>
+<ul>
+<li>\(x \gt 0 \implies F_{\text{spr}}(x) \lt 0\)</li>
+<li>\(x = 0 \implies F_{\text{spr}}(x) = 0\)</li>
+<li>\(x \lt 0 \implies F_{\text{spr}}(x) \gt 0\)</li>
+</ul>
+<p>Using the tangent line approximation</p>
+<p>\(F_{\text{spr}}(x) = -kx\), where \(k \gt 0\)</p>
+<p>It&rsquo;s call <strong>Hooke&rsquo;s Law</strong>, and \(k\) is called the <strong>spring constant</strong></p>
+<h2 id="how-can-we-model-friction-that-it-depends-only-on-the-velocity-of-the-mass--no-position"><span class="section-num">4</span> How can we model friction that it depends only on the velocity of the mass (no position)?</h2>
+<h3 id="front"><span class="section-num">4.1</span> Front</h3>
+<p><b>How can we model friction that it depends only on the velocity of the mass (no position)?</b></p>
+<h3 id="back"><span class="section-num">4.2</span> Back</h3>
+<p>Using a <strong>dashpot</strong>, that is a cylinder filled with oil and a pistol
+moves through.</p>
+<p>\(F_{\text{dash}} = f(\dot{x})\), it opposes the velocity</p>
+<ul>
+<li>\(\dot{x} \gt 0 \implies F_{\text{dash}} \lt 0\)</li>
+<li>\(\dot{x} = 0 \implies F_{\text{dash}} = 0\)</li>
+<li>\(\dot{x} \lt 0 \implies F_{\text{dash}} \gt 0\)</li>
+</ul>
+<p>\(F_{\text{dash}}(\dot{x}) = -b \dot{x}\)</p>
+<p>This is called <strong>linear damping</strong> and \(b\) is called the <strong>damping
+constant</strong></p>
+<h2 id="what-is-a-linear-damping"><span class="section-num">5</span> What is a linear damping?</h2>
+<h3 id="front"><span class="section-num">5.1</span> Front</h3>
+<p><b>What is a linear damping?</b></p>
+<h3 id="back"><span class="section-num">5.2</span> Back</h3>
+<p>It&rsquo;s a simple model of friction that depends only on the velocity of
+the mass, not position</p>
+<p>\(F_{\text{dash}}(\dot{x}) = -b \dot{x}\), where \(b\) is the damping
+constant</p>
+<h2 id="write-the-differential-equation-which-model-this-figure"><span class="section-num">6</span> Write the differential equation which model this figure?</h2>
+<h3 id="front"><span class="section-num">6.1</span> Front</h3>
+<p><b>Write the differential equation which model this figure?</b></p>
+<figure>
+    <img src="https://ppalazon.github.io/3a/a840cb-0e6c-4127-a12b-ad6fbf6f9fe1/_20200916_2056541THilK2.png"/> 
+</figure>
+
+<h3 id="back"><span class="section-num">6.2</span> Back</h3>
+<ul>
+<li>\(m \ddot{x} = F_{\text{spr}}(x) + F_{\text{damp}}(\dot{x}) +
+F_{\text{ext}}\)</li>
+<li>\(m \ddot{x} + b\dot{x} + kx = F_{\text{ext}}\)</li>
+</ul>
+<h2 id="what-is-the-hooke-s-law"><span class="section-num">7</span> What is the Hooke&rsquo;s law?</h2>
+<h3 id="front"><span class="section-num">7.1</span> Front</h3>
+<p><b>What is the Hooke&rsquo;s law?</b></p>
+<h3 id="back"><span class="section-num">7.2</span> Back</h3>
+<p>It&rsquo;s the law which model the force of a spring which depends only on
+the position of the mass</p>
+<p>\(F_{\text{spr}}(x) = -k x\)</p>
+<h2 id="describe-what-is-a-general-linear-differential-equation"><span class="section-num">8</span> Describe what is a general linear differential equation</h2>
+<h3 id="front"><span class="section-num">8.1</span> Front</h3>
+<p><b>Describe what is a general linear differential equation</b></p>
+<p>The generic form, and what means each part of the equation</p>
+<h3 id="back"><span class="section-num">8.2</span> Back</h3>
+<p>\({\displaystyle a_x x^{(n)} + a_{n-1}x^{(n-1)} + \cdots + a_1\dot{x} +
+a_0 x = g(t)}\)</p>
+<ul>
+<li>\(a_k\) are the coefficients
+<ul>
+<li>May depend upon \(t\), but not on \(x\)</li>
+<li>If \(a_n\) is not zero then the differential equation is said to be
+of order \(n\)</li>
+<li>Are parameters of the system</li>
+</ul>
+</li>
+<li>LHS of the equation represent the <em>system</em></li>
+<li>RHS of the equation represent the <em>input signal</em></li>
+</ul>
+<p>If all coefficients are constant, this equation is called <strong>constant
+coefficient linear equation</strong></p>
+<h2 id="which-the-form-of-the-equation-of-a-second-order-homogeneous-constant-coefficient-linear-equation"><span class="section-num">9</span> Which the form of the equation of a second order homogeneous constant coefficient linear equation?</h2>
+<h3 id="front"><span class="section-num">9.1</span> Front</h3>
+<p><b>Which the form of the equation of a second order homogeneous constant coefficient linear equation?</b></p>
+<h3 id="back"><span class="section-num">9.2</span> Back</h3>
+<p>\(\ddot{x} + A\dot{x} + Bx = 0\)</p>
+<h2 id="what-is-the-model-of-a-simple-harmonic-oscillator"><span class="section-num">10</span> What is the model of a simple harmonic oscillator?</h2>
+<h3 id="front"><span class="section-num">10.1</span> Front</h3>
+<p><b>What is the model of a simple harmonic oscillator?</b></p>
+<p>In terms of \(\omega\), and solutions</p>
+<h3 id="back"><span class="section-num">10.2</span> Back</h3>
+<p>It&rsquo;s when the system is <strong>undamped</strong>, where it ODE is \(m \ddot{x} + kx =
+0\)</p>
+<p>\({\displaystyle \ddot{x} + \frac{k}{m} x = 0}\)</p>
+<p>If we let \(w = \sqrt{k/m}\), then \(\ddot{x} + \omega^2 x = 0\)</p>
+<p>\(x(t) = a x_1(t) + b x_2(t)\), where \(x_1(t) = \cos(\omega t)\) and
+\(x_2(t) = \sin(\omega t)\)</p>
+<p>Since the input is \(0\) and the equation is linear, we can use
+superposition of solutions to get the general solution</p>
+<p>\(x(t) = a \cos(\omega t) + b\sin(\omega t) = A \cos(\omega t - \phi)\)</p>
+<p>Where \(x(0) = a\) and \(\dot{x}(0) = \omega b\), so you can solve
+(uniquely) for \(a\) and \(b\) to give any desired initial condition</p>
+<h2 id="what-is-the-period-of-a-nonzero-solution--ddot-x-plus-4x-0"><span class="section-num">11</span> What is the period of a nonzero solution \(\ddot{x} + 4x = 0\)</h2>
+<h3 id="front"><span class="section-num">11.1</span> Front</h3>
+<p><b>What is the period of a nonzero solution $\ddot{x} + 4x = 0$</b></p>
+<h3 id="back"><span class="section-num">11.2</span> Back</h3>
+<p>Natural frequency \(\omega_0 = \sqrt{k/m} = 2\)</p>
+<p>General solution, \(x(t) = c_1 \cos(2t) + c_2 \sin(2t) = A \cos(2t -
+\phi)\) (In both rectangular and phase-amplitude form)</p>
+<p>So, the period \(P = \frac{2\pi}{\omega} = \frac{2 \pi}{2} = \pi\)</p>
+<h2 id="how-can-we-solve-this-general-second-ode"><span class="section-num">12</span> How can we solve this general second ODE?</h2>
+<h3 id="front"><span class="section-num">12.1</span> Front</h3>
+<p><b>How can we solve this general second ODE?</b></p>
+<p>\(m\ddot{x} + b \dot{x} + kx = 0\)</p>
+<p>Explain the process to get a solution</p>
+<h3 id="back"><span class="section-num">12.2</span> Back</h3>
+<ul>
+<li>It&rsquo;s similar to \(\dot{x} +kx=0\) which solution is \(x = e^{-kt}\)</li>
+<li>We&rsquo;ll be optimistic and try for exponential solutions
+<ul>
+<li>\(x(t) = e^{rt}\)</li>
+</ul>
+</li>
+<li>Plug into the ODE
+<ul>
+<li>\(x = e^{rt}\)</li>
+<li>\(\dot{x} = re^{rt}\)</li>
+<li>\(\ddot{x} = r^2e^{rt}\)</li>
+</ul>
+</li>
+<li>\(m\ddot{x} + b\dot{x} + kx = 0 \implies (mr^2 + br + k)e^{rt} = 0\)</li>
+<li>As \(e^{rt} \neq 0\) for any \(t\), we can divide up this equation by \(e^{rt}\)
+<ul>
+<li>\(x(t) = e^{rt}\) is a solution always that \(r\) satisfies the
+<strong>characteristic equation</strong> \(mr^2 + br +k = 0\)</li>
+<li>The <strong>characteristic polynomial</strong> \(p( r) = mr^2 + br + k\)</li>
+</ul>
+</li>
+<li>Solving the characteristic equation we&rsquo;ll get 2 solutions \(x_1(t) = e^{r_1t}\)
+and \(x_2(t) = e^{r_2t}\)</li>
+<li>By superposition, the linear combination of independent solutions
+<ul>
+<li>\(x(t) = c_1x_1(t) + c_2 x_2(t) = c_1e^{r_1t} + c_2 e^{r_2t}\)</li>
+</ul>
+</li>
+</ul>
+<h2 id="what-is-the-characteristic-equation-for-solving-second-ode"><span class="section-num">13</span> What is the characteristic equation for solving second ODE?</h2>
+<h3 id="front"><span class="section-num">13.1</span> Front</h3>
+<p><b>What is the characteristic equation for solving second ODE?</b></p>
+<p>\(m \ddot{x} + b\dot{x} + kx = 0\)</p>
+<h3 id="back"><span class="section-num">13.2</span> Back</h3>
+<p>In a homogeneous second order ODE, we&rsquo;ll be optimistic and say that
+\(x(t) = e^{rt}\) is a solution for this ODE. Plugging in the ODE</p>
+<p>\((mr^2 + br + k)e^{rt} = 0\)</p>
+<p>That&rsquo;s the <strong>characteristic equation</strong></p>
+<h2 id="what-is-the-characteristic-polynomial-for-general--n-text-th--ode"><span class="section-num">14</span> What is the characteristic polynomial for General \(n\text{-th}\) ODE?</h2>
+<h3 id="front"><span class="section-num">14.1</span> Front</h3>
+<p><b>What is the characteristic polynomial for General $n\text{-th}$ ODE?</b></p>
+<p>\(a_nx^{(n)} + \cdots + a_1\dot{x} + a_0 x = 0\)</p>
+<h3 id="back"><span class="section-num">14.2</span> Back</h3>
+<p>\(p( r) = a_n(r^n) + \cdots + a_1 r + a_0\)</p>
+<h2 id="how-can-we-get-a-specific-solution-from-ivp-on-second-order-ode"><span class="section-num">15</span> How can we get a specific solution from IVP on second order ODE?</h2>
+<h3 id="front"><span class="section-num">15.1</span> Front</h3>
+<p><b>How can we get a specific solution from IVP on second order ODE?</b></p>
+<p>Initial conditions: \(x(0)\) and \(\dot{x}(0)\)</p>
+<h3 id="back"><span class="section-num">15.2</span> Back</h3>
+<p>After getting the characteristic equation, you will get 2 possible
+solutions. Solving this system of equations</p>
+<ul>
+<li>\(x(0) = c_1 e^{r_1 t} + c_2 e^{r_2 t}\)</li>
+<li>\(\dot{x}(0) = r_1 c_1 e^{r_1t} + r_2 c_2 e^{r_2t}\)</li>
+</ul>
+<h2 id="what-is-a-modal-solution"><span class="section-num">16</span> What is a modal solution?</h2>
+<h3 id="front"><span class="section-num">16.1</span> Front</h3>
+<p><b>What is a modal solution?</b></p>
+<h3 id="back"><span class="section-num">16.2</span> Back</h3>
+<p>It&rsquo;s a solution of the form \(x(t) = ce^{rt}\) to the homogeneous
+constant coefficient linear equation</p>
+<p>\({\displaystyle a_x x^{(n)} + a_{n-1}x^{(n-1)} + \cdots + a_1\dot{x} +
+a_0 x = 0}\)</p>
+<h2 id="what-is-a-mode-of-the-system"><span class="section-num">17</span> What is a mode of the system?</h2>
+<h3 id="front"><span class="section-num">17.1</span> Front</h3>
+<p><b>What is a mode of the system?</b></p>
+<h3 id="back"><span class="section-num">17.2</span> Back</h3>
+<p>\(e^{rt}\) is a mode of the system where \(x(t) = e^{rt}\) is a solution to the
+homogeneous constant coefficient linear equation</p>
+<p>\({\displaystyle a_x x^{(n)} + a_{n-1}x^{(n-1)} + \cdots + a_1\dot{x} +
+a_0 x = g(t)}\)</p>
+<h2 id="can-i-use-the-solution--e-rt--for-any-linear-equation"><span class="section-num">18</span> Can I use the solution \(e^{rt}\) for any linear equation?</h2>
+<h3 id="front"><span class="section-num">18.1</span> Front</h3>
+<p><b>Can I use the solution $e^{rt}$ for any linear equation?</b></p>
+<p>Where \(r\) is a root of the characteristic polynomial</p>
+<h3 id="back"><span class="section-num">18.2</span> Back</h3>
+<p>No, this only works for homogeneous constant coefficients linear
+equations</p>
+<p>\({\displaystyle a_x x^{(n)} + a_{n-1}x^{(n-1)} + \cdots + a_1\dot{x} +
+a_0 x = 0}\)</p>
+<p>Where \(a_i\) are constants.</p>
+<p>It does not work for non-constant coefficient or inhomogeneous or
+nonlinear equations</p>
+<h2 id="how-could-be-the-roots-of-the-characteristic-polynomial"><span class="section-num">19</span> How could be the roots of the characteristic polynomial?</h2>
+<h3 id="front"><span class="section-num">19.1</span> Front</h3>
+<p><b>How could be the roots of the characteristic polynomial?</b></p>
+<h3 id="back"><span class="section-num">19.2</span> Back</h3>
+<ul>
+<li>Roots can be real or non-real complex numbers</li>
+<li>Roots can also be repeated</li>
+</ul>
+<h2 id="how-are-the-modal-solutions-where-roots-of-characteristic-polynomial-are-real"><span class="section-num">20</span> How are the modal solutions where roots of characteristic polynomial are real?</h2>
+<h3 id="front"><span class="section-num">20.1</span> Front</h3>
+<p><b>How are the modal solutions where roots of characteristic polynomial are real?</b></p>
+<p>In a second order constant coefficients linear equation</p>
+<h3 id="back"><span class="section-num">20.2</span> Back</h3>
+<p>The modal solutions are \(x_1(t) = e^{r_1 t}\) and \(x_2(t) = e^{r_2 t}\)</p>
+<h2 id="how-are-the-general-solution-where-roots-of-characteristic-polynomial-are-real"><span class="section-num">21</span> How are the general solution where roots of characteristic polynomial are real?</h2>
+<h3 id="front"><span class="section-num">21.1</span> Front</h3>
+<p><b>How are the general solution where roots of characteristic polynomial are real?</b></p>
+<p>In a second order constant coefficients linear equation</p>
+<h3 id="back"><span class="section-num">21.2</span> Back</h3>
+<p>The general solution is found by superposition</p>
+<p>\(x(t) = c_1 x_1(t) + c_2 x_2(t) = c_1 e^{r_1 t}+ c_2 e^{r_2t}\)</p>
+<h2 id="how-are-the-modal-solution-where-roots-of-characteristic-polynomial-are-non-real-complex"><span class="section-num">22</span> How are the modal solution where roots of characteristic polynomial are non-real complex?</h2>
+<h3 id="front"><span class="section-num">22.1</span> Front</h3>
+<p><b>How are the modal solution where roots of characteristic polynomial are non-real complex?</b></p>
+<p>In a second order constant coefficients linear equation</p>
+<h3 id="back"><span class="section-num">22.2</span> Back</h3>
+<ul>
+<li>\(r_1 = a + ib \implies z_1(t) = e^{(a + ib)t}\)</li>
+<li>\(r_2 = a - ib \implies z_2(t) = e^{(a - ib)t}\)</li>
+</ul>
+<p>Where \(z\) indicate the functions are complex valued, but both will
+produces the same basic solutions because of \(\cos(bt) = \cos(-bt)\)
+and \(-\sin(bt) = \sin(-bt)\)</p>
+<p>Applying the superposition solution, we won&rsquo;t get any new solution</p>
+<h2 id="how-does-we-expect-solutions-in-de-when-has-real-coefficients"><span class="section-num">23</span> How does we expect solutions in DE when has real coefficients?</h2>
+<h3 id="front"><span class="section-num">23.1</span> Front</h3>
+<p><b>How does we expect solutions in DE when has real coefficients?</b></p>
+<h3 id="back"><span class="section-num">23.2</span> Back</h3>
+<p>We&rsquo;re expecting <em>real</em> value solutions</p>
+<h2 id="what-is-the-real-solution-theorem"><span class="section-num">24</span> What is the Real Solution Theorem?</h2>
+<h3 id="front"><span class="section-num">24.1</span> Front</h3>
+<p><b>What is the Real Solution Theorem?</b></p>
+<p>Let \(z(t)\) be a complex-valued solution to a second order constant
+coefficients linear equation, where all coefficients are real</p>
+<p>Give a proof</p>
+<h3 id="back"><span class="section-num">24.2</span> Back</h3>
+<p><strong>The real and imaginary parts of \(z\) are also solutions</strong></p>
+<p>If \(z(t) = u(t) + i v(t)\), we can build the table</p>
+<p>\begin{align*}
+k] \qquad z &amp;= u + iv \\\<br>
+b] \qquad \dot{z} &amp;= \dot{u} + i\dot{v} \\\<br>
+m] \qquad \ddot{z} &amp;= \ddot{u} + i\ddot{v} \\\<br>
+\end{align*}</p>
+<p>Summing the coefficients (\(z\) is solution of the homogeneous DE)</p>
+<p>\((m \ddot{u} + b \dot{u} + ku) + i(m\ddot{v} + b\dot{v} + kv) = 0\)</p>
+<p>The only way the sum can be zero is for both of them to be zero. That
+is, both \(u\) and \(v\) are solutions</p>
+<h2 id="what-is-the-general-solution-if-roots-of-characteristic-polynomial-are-complex"><span class="section-num">25</span> What is the general solution if roots of characteristic polynomial are complex?</h2>
+<h3 id="front"><span class="section-num">25.1</span> Front</h3>
+<p><b>What is the general solution if roots of characteristic polynomial are complex?</b></p>
+<ul>
+<li>\(r_1 = (a + ib)\)</li>
+<li>\(r_2 = (a - ib)\)</li>
+</ul>
+<h3 id="back"><span class="section-num">25.2</span> Back</h3>
+<p>Using the Real Solution Theorem, where modal are</p>
+<ul>
+<li>\(z_1(t) = e^{(a + ib)t} = e^{at}(\cos (bt) + i\sin(bt))\)</li>
+<li>\(z_2(t) = e^{(a - ib)t} = e^{at}(\cos (-bt) + i\sin(-bt))\)</li>
+</ul>
+<p>From \(z_1(t)\), the real solution is (using superposition)</p>
+<p>\(x(t) = c_1 e^{at} \cos(bt) + c_2 e^{at} \sin(bt) = e^{at} (c_1 \cos
+(bt) + c_2 \sin (bt)) = Ae^{at}\cos(bt - \phi)\)</p>
+<p>From \(z_2(t)\), the real solution is</p>
+<p>\(x(t) = c_1 e^{at} \cos(-bt) + c_2 e^{at} \sin(-bt) = e^{at} (c_1 \cos
+(bt) - c_2 \sin (bt)) = Ae^{at}\cos(bt - \phi)\)</p>
+<p>Up to a sign these are the same basic solutions as was obtained from
+\(z_1\), so \(z_2\) would have work just as well</p>
+<p><strong>We don&rsquo;t need to get both real solutions</strong></p>
+
+</div>
+
+
+            <footer>
+    
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-2%2fsession-12%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Modes%20and%20the%20Characteristic%20Equation&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-2%2fsession-12%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-2%2fsession-12%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-2%2fsession-12%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-2%2fsession-12%2f&amp;title=Modes%20and%20the%20Characteristic%20Equation" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Modes%20and%20the%20Characteristic%20Equation&amp;body=Check out this site https%3a%2f%2fppalazon.github.io%2f18.03%2funit-2%2fsession-12%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+
+<nav>
+    <ul class="pager">
+    
+
+    
+    <li class="next">
+        <a href="https://ppalazon.github.io/18.03/unit-2/session-13/" title="Damped Harmonic Oscillators">
+            Damped Harmonic Oscillators <span aria-hidden="true">&rarr;</span>
+        </a>
+    </li>
+    
+    </ul>
+</nav>
+
+
+
+</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//ppalazon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+        </div>
+    </div>
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/">18.03 Differential Equations</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/unit-2/">2: Second Order Constant Coefficient Linear Equations</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.03/unit-2/session-12/">Modes and the Characteristic Equation</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Session 84: Divergence Theorem  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="calculus, maths, ">
+
+
+<meta property="og:title" content="Session 84: Divergence Theorem  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.02/part-4b/session-84/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="content-source" content="18.02/part-4b/session-84.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Captured On [2020-02-06 Thu 17:16] Source Session 84: Divergence Theorem | Part B: Flux and the Divergence Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare 1 Chalkboard Figure 1: Divergence theorem Figure 2: Equation of divergence theorem
+Figure 3: Example of divergence theorem 2 Which is the divergence of (\vb{F})?
+"/>
+<meta property="og:article:published_time" content="2019-04-18T00:00:00&#43;02:00" />
+<meta property="og:article:modified_time" content="2019-04-18T00:00:00&#43;02:00" />
+
+
+
+<meta property="og:article:tag" content="calculus">
+
+<meta property="og:article:tag" content="maths">
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ppalazon" />
+<meta name="twitter:creator" content="@ppalazon" />
+<meta name="twitter:title" content="Session 84: Divergence Theorem" />
+<meta name="twitter:description" content="Captured On [2020-02-06 Thu 17:16] Source Session 84: Divergence Theorem | Part B: Flux and the Divergence Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare 1 Chalkboard Figure 1: Divergence theorem Figure 2: Equation of divergence theorem
+Figure 3: Example of divergence theorem 2 Which is the divergence of (\vb{F})?
+"/>
+<meta name="twitter:url" content="https://ppalazon.github.io/18.02/part-4b/session-84/" />
+<meta name="twitter:domain" content="https://ppalazon.github.io">
+
+
+
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+     "@type": "Article",
+     "headline": "Session 84: Divergence Theorem",
+     "author": {
+         "@type": "Person",
+         "name": "http://profiles.google.com/+?rel=author"
+     },
+     "datePublished": "2019-04-18",
+     "description": "",
+     "wordCount":  606 
+ }
+</script>
+
+
+
+<link rel="canonical" href="https://ppalazon.github.io/18.02/part-4b/session-84/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+ }
+ .hero {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: calc(200px + (450 - 200) * ((100vw - 300px) / (1600 - 300)));
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: calc(-1 * (200px + (450 - 200) * ((100vw - 300px) / (1600 - 300))));
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+    <header class="container hat">
+        <h1>Session 84: Divergence Theorem
+</h1>
+
+        
+
+
+<span class="author">by
+    
+    MIT OCW, Pablo Palazon
+    
+</span>
+
+
+    </header>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            
+            <div class="content">
+  <dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2020-02-06 Thu 17:16]</span></span></dd>
+<dt>Source</dt>
+<dd><a href="https://ocw.mit.edu/courses/mathematics/18-02sc-multivariable-calculus-fall-2010/4.-triple-integrals-and-surface-integrals-in-3-space/part-b-flux-and-the-divergence-theorem/session-84-divergence-theorem">Session 84: Divergence Theorem | Part B: Flux and the Divergence Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare</a></dd>
+</dl>
+<h2 id="chalkboard"><span class="section-num">1</span> Chalkboard</h2>
+<p><a id="org81d4573"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/b9/b6a032-1bc0-4692-aa73-94de92b0e37a/_20200206_171703MIT18_02SC_L28Brds_13.png"
+         alt="Figure 1: Divergence theorem" width="80%"/> <figcaption>
+            <p>Figure 1: Divergence theorem</p>
+        </figcaption>
+</figure>
+
+<p><a id="org4c0b348"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/b9/b6a032-1bc0-4692-aa73-94de92b0e37a/_20200206_171708MIT18_02SC_L28Brds_14.png"
+         alt="Figure 2: Equation of divergence theorem" width="80%"/> <figcaption>
+            <p>Figure 2: Equation of divergence theorem</p>
+        </figcaption>
+</figure>
+
+<p><a id="org5d564a9"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/b9/b6a032-1bc0-4692-aa73-94de92b0e37a/_20200206_171716MIT18_02SC_L28Brds_15.png"
+         alt="Figure 3: Example of divergence theorem" width="80%"/> <figcaption>
+            <p>Figure 3: Example of divergence theorem</p>
+        </figcaption>
+</figure>
+
+<h2 id="which-is-the-divergence-of--vb-f"><span class="section-num">2</span> Which is the divergence of \(\vb{F}\)?</h2>
+<h3 id="front"><span class="section-num">2.1</span> Front</h3>
+<p><b>Which is the divergence of $\vb{F}$?</b></p>
+<p>Let \(\vb{F} = M \vu{i} + N \vu{j} + P \vu{k}\)</p>
+<h3 id="back"><span class="section-num">2.2</span> Back</h3>
+<p>\(\vb{F}\) is a vector field differentiable in some region \(D\), where we
+are calculating the divergence</p>
+<p>\({\displaystyle \text{div} \vb{F} = \pdv{M}{x} + \pdv{N}{y} +
+\pdv{P}{z} = M_x + N_y + P_z}\)</p>
+<h2 id="define-physically-what-means-the-divergence-theorem-in-3-space"><span class="section-num">3</span> Define physically what means the divergence theorem in 3 space?</h2>
+<h3 id="front"><span class="section-num">3.1</span> Front</h3>
+<p><b>Define physically what means the divergence theorem in 3 space?</b></p>
+<p>Or <strong>Gauss' Theorem</strong></p>
+<p>Let \(\vb{F}\) a 3D flow field</p>
+<h3 id="back"><span class="section-num">3.2</span> Back</h3>
+<p>\({\displaystyle \oiint_S \vb{F} \cdot \dd{\vb{S}} = \iiint_D
+\text{div} \vb{F} \dd{V}}\)</p>
+<ul>
+<li>The surface integral: The mass transport rate across the closed
+surface \(S\), with flow out of \(S\) considered as positive, flow into
+\(S\) as negative</li>
+<li>The \(\text{div} F\) at \((x,y,z)\) is the source rate at \((x,y,z)\) is
+the rate at which fluid is being added to the flow at this point
+(positive). Negative rate means fluid is being removed from the
+flow. So the integral is the source rate for \(D\)</li>
+</ul>
+<p>flux across \(S\) = source rate for \(D\)</p>
+<p>The net flow outward across \(S\) is the same as the rate at which fluid
+is being produced (or added to the flow) inside \(S\)</p>
+<h2 id="how-can-we-show-that-the-flux-across--s--is-equals-to-source-rate-for--d"><span class="section-num">4</span> How can we show that the flux across \(S\) is equals to source rate for \(D\)?</h2>
+<h3 id="front"><span class="section-num">4.1</span> Front</h3>
+<p><b>How can we show that the flux across $S$ is equals to source rate for $D$?</b></p>
+<p>Where \(S\) is a closed surface, and \(D\) is the interior region of \(S\)</p>
+<p>Or show that \(\text{div} \vb{F}\) is the source rate at \((x,y,z)\)</p>
+<p>Let \(\vb{F} = \ev{M,N,P}\)</p>
+<h3 id="back"><span class="section-num">4.2</span> Back</h3>
+<figure>
+    <img src="https://ppalazon.github.io/b9/b6a032-1bc0-4692-aa73-94de92b0e37a/_20200917_123325kfSyzjQ.png"/> 
+</figure>
+
+<ul>
+<li>\(\vb{n}\) always pointing outwards</li>
+<li>\(P_0 = (x_0, y_0, z_0)\) point inside the region \(D\) where \(\vb{F}\)
+is defined</li>
+<li>For top and bottom surface, we calculate the total flux across these surface
+<ul>
+<li>Similar to front and back, and the 2 side faces</li>
+<li>Flux across top
+<ul>
+<li>\(\vb{F}(x_0, y_0, z_0 + \Delta z) \cdot \vu{k} \Delta x \Delta y =
+P(x_0, y_0, z_0 + \Delta z) \Delta x \Delta y\)</li>
+</ul>
+</li>
+<li>Flux across bottom
+<ul>
+<li>\(\vb{F}(x_0, y_0, z_0) \cdot -\vu{k} \Delta x \Delta y = -P(x_0,
+y_0, z_0) \Delta x \Delta y\)</li>
+</ul>
+</li>
+<li>Total flux (top + bottom)
+<ul>
+<li>\([P(x_0, y_0, z_0 + \Delta z) - P(x_0, y_0, z_0)]
+\Delta x \Delta y = \biggl(\frac{\Delta P}{\Delta z} \biggr)
+\Delta x \Delta y \Delta z\)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Net flux across pairs sides is approx
+<ul>
+<li>\(\biggl(\pdv{P}{z} \biggr)_0 \Delta x \Delta y \Delta z\)</li>
+<li>\(\biggl(\pdv{N}{y} \biggr)_0 \Delta x \Delta y \Delta z\)</li>
+<li>\(\biggl(\pdv{M}{x} \biggr)_0 \Delta x \Delta y \Delta z\)</li>
+</ul>
+</li>
+<li>Source rate for box is equals to net flux across the faces of box is
+approx
+<ul>
+<li>\(\biggl(\pdv{M}{x} + \pdv{N}{y} + \pdv{P}{z} \biggr)_0 \Delta x
+\Delta y \Delta z\)</li>
+</ul>
+</li>
+</ul>
+<p>So the interpretation for \(\text{div} \vb{F}\)</p>
+<p>source rate at \(P_0\) = \({\displaystyle \lim_{\text{box} \to 0}
+\frac{\text{source rate for box}}{\text{volume of box}} = (\text{div}
+\vb{F})_{0} = \biggl(\pdv{P}{z} + \pdv{N}{y} + \pdv{P}{z} \biggr)_0}\)</p>
+<h2 id="what-is-the-del-notation"><span class="section-num">5</span> What is the del notation?</h2>
+<h3 id="front"><span class="section-num">5.1</span> Front</h3>
+<p><b>What is the del notation?</b></p>
+<p>Expand their components</p>
+<h3 id="back"><span class="section-num">5.2</span> Back</h3>
+<p>\(\vb{\grad} = \ev{\pdv{}{x}, \pdv{}{y}, \pdv{}{z}}\)</p>
+<h2 id="what-is-the-difference-between-these-notations"><span class="section-num">6</span> What is the difference between these notations?</h2>
+<h3 id="front"><span class="section-num">6.1</span> Front</h3>
+<p><b>What is the difference between these notations?</b></p>
+<p>\(\grad{f}\) and \(\grad \cdot \vb{F}\)</p>
+<h3 id="back"><span class="section-num">6.2</span> Back</h3>
+<ul>
+<li>\({\displaystyle \grad{f} = \ev{\pdv{f}{x}, \pdv{f}{y}, \pdv{f}{z}}}\)
+(gradient)</li>
+<li>\({\displaystyle \grad{} \cdot \vb{F} = \ev{\pdv{}{x}, \pdv{}{y},
+\pdv{}{z}} \cdot \ev{P, Q, R} = \pdv{P}{x} + \pdv{Q}{y} +
+\pdv{R}{z}}\) (divergence)</li>
+</ul>
+
+</div>
+
+
+            <footer>
+    
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-4b%2fsession-84%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Session%2084%3a%20Divergence%20Theorem&amp;url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-4b%2fsession-84%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-4b%2fsession-84%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-4b%2fsession-84%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-4b%2fsession-84%2f&amp;title=Session%2084%3a%20Divergence%20Theorem" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Session%2084%3a%20Divergence%20Theorem&amp;body=Check out this site https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-4b%2fsession-84%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+
+<nav>
+    <ul class="pager">
+    
+    <li class="previous">
+        <a href="https://ppalazon.github.io/18.02/part-4b/session-83/" title="Session 83: Other Ways to Find ndS">
+            <span aria-hidden="true">&larr;</span>Session 83: Other Ways to Find ndS
+        </a>
+    </li>
+    
+
+    
+    <li class="next">
+        <a href="https://ppalazon.github.io/18.02/part-4b/session_85/" title="Session 85: Physical Meaning of Flux; Del Notation">
+            Session 85: Physical Meaning of Flux; Del Notation <span aria-hidden="true">&rarr;</span>
+        </a>
+    </li>
+    
+    </ul>
+</nav>
+
+
+
+</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//ppalazon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+        </div>
+    </div>
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.02/">18.02 Multivariable Calculus</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.02/part-4b/">4B: Flux and the Divergence Theorem</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.02/part-4b/session-84/">Session 84: Divergence Theorem</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Session 91: Stokes&#39; Theorem  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="calculus, maths, ">
+
+
+<meta property="og:title" content="Session 91: Stokes&#39; Theorem  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.02/part-4c/session-91/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="content-source" content="18.02/part-4c/session-91.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Captured On [2020-02-06 Thu 17:42] Source Session 91: Stokes&#39; Theorem | Part C: Line Integrals and Stokes&#39; Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare 1 Chalkboard Figure 1: Recall \(\text{curl}\vb{F}\) Figure 2: Curl examples
+Figure 3: Stokes&#39; Theorem
+Figure 4: Orientation of (S) and (C)
+"/>
+<meta property="og:article:published_time" content="2019-04-18T00:00:00&#43;02:00" />
+<meta property="og:article:modified_time" content="2019-04-18T00:00:00&#43;02:00" />
+
+
+
+<meta property="og:article:tag" content="calculus">
+
+<meta property="og:article:tag" content="maths">
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ppalazon" />
+<meta name="twitter:creator" content="@ppalazon" />
+<meta name="twitter:title" content="Session 91: Stokes&#39; Theorem" />
+<meta name="twitter:description" content="Captured On [2020-02-06 Thu 17:42] Source Session 91: Stokes&#39; Theorem | Part C: Line Integrals and Stokes&#39; Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare 1 Chalkboard Figure 1: Recall \(\text{curl}\vb{F}\) Figure 2: Curl examples
+Figure 3: Stokes&#39; Theorem
+Figure 4: Orientation of (S) and (C)
+"/>
+<meta name="twitter:url" content="https://ppalazon.github.io/18.02/part-4c/session-91/" />
+<meta name="twitter:domain" content="https://ppalazon.github.io">
+
+
+
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+     "@type": "Article",
+     "headline": "Session 91: Stokes\u0027 Theorem",
+     "author": {
+         "@type": "Person",
+         "name": "http://profiles.google.com/+?rel=author"
+     },
+     "datePublished": "2019-04-18",
+     "description": "",
+     "wordCount":  627 
+ }
+</script>
+
+
+
+<link rel="canonical" href="https://ppalazon.github.io/18.02/part-4c/session-91/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+ }
+ .hero {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: calc(200px + (450 - 200) * ((100vw - 300px) / (1600 - 300)));
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: calc(-1 * (200px + (450 - 200) * ((100vw - 300px) / (1600 - 300))));
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+    <header class="container hat">
+        <h1>Session 91: Stokes&#39; Theorem
+</h1>
+
+        
+
+
+<span class="author">by
+    
+    MIT OCW, Pablo Palazon
+    
+</span>
+
+
+    </header>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            
+            <div class="content">
+  <dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2020-02-06 Thu 17:42]</span></span></dd>
+<dt>Source</dt>
+<dd><a href="https://ocw.mit.edu/courses/mathematics/18-02sc-multivariable-calculus-fall-2010/4.-triple-integrals-and-surface-integrals-in-3-space/part-c-line-integrals-and-stokes-theorem/session-91-stokes-theorem">Session 91: Stokes' Theorem | Part C: Line Integrals and Stokes' Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare</a></dd>
+</dl>
+<h2 id="chalkboard"><span class="section-num">1</span> Chalkboard</h2>
+<p><a id="orga6939a2"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/38/7572ed-d872-4cf9-944e-fd60b15cf6f5/_20200206_174219MIT18_02SC_L31Brds_1.png"
+         alt="Figure 1: Recall \(\text{curl}\vb{F}\)" width="80%"/> <figcaption>
+            <p>Figure 1: Recall \(\text{curl}\vb{F}\)</p>
+        </figcaption>
+</figure>
+
+<p><a id="org6febc9f"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/38/7572ed-d872-4cf9-944e-fd60b15cf6f5/_20200206_174225MIT18_02SC_L31Brds_2.png"
+         alt="Figure 2: Curl examples" width="80%"/> <figcaption>
+            <p>Figure 2: Curl examples</p>
+        </figcaption>
+</figure>
+
+<p><a id="orgb5fce20"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/38/7572ed-d872-4cf9-944e-fd60b15cf6f5/_20200206_174231MIT18_02SC_L31Brds_3.png"
+         alt="Figure 3: Stokes&#39; Theorem" width="80%"/> <figcaption>
+            <p>Figure 3: Stokes' Theorem</p>
+        </figcaption>
+</figure>
+
+<p><a id="orgc12bf08"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/38/7572ed-d872-4cf9-944e-fd60b15cf6f5/_20200206_174237MIT18_02SC_L31Brds_4.png"
+         alt="Figure 4: Orientation of \(S\) and \(C\)" width="80%"/> <figcaption>
+            <p>Figure 4: Orientation of \(S\) and \(C\)</p>
+        </figcaption>
+</figure>
+
+<p><a id="orgca7c729"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/38/7572ed-d872-4cf9-944e-fd60b15cf6f5/_20200206_174242MIT18_02SC_L31Brds_5.png"
+         alt="Figure 5: Right-hand rule for \(S\) and \(C\) orientation" width="80%"/> <figcaption>
+            <p>Figure 5: Right-hand rule for \(S\) and \(C\) orientation</p>
+        </figcaption>
+</figure>
+
+<p><a id="orgad8c4ac"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/38/7572ed-d872-4cf9-944e-fd60b15cf6f5/_20200206_174249MIT18_02SC_L31Brds_6.png"
+         alt="Figure 6: Comparing Stokes with Green" width="80%"/> <figcaption>
+            <p>Figure 6: Comparing Stokes with Green</p>
+        </figcaption>
+</figure>
+
+<p><a id="org2dd44f1"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/38/7572ed-d872-4cf9-944e-fd60b15cf6f5/_20200206_174255MIT18_02SC_L31Brds_7.png"
+         alt="Figure 7: Green&amp;rsquo;s Theorem as special case of Stokes&#39; Theorem" width="80%"/> <figcaption>
+            <p>Figure 7: Green&rsquo;s Theorem as special case of Stokes' Theorem</p>
+        </figcaption>
+</figure>
+
+<p><a id="org5ea6689"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/38/7572ed-d872-4cf9-944e-fd60b15cf6f5/_20200206_174300MIT18_02SC_L31Brds_8.png"
+         alt="Figure 8: Why stokes is true?" width="80%"/> <figcaption>
+            <p>Figure 8: Why stokes is true?</p>
+        </figcaption>
+</figure>
+
+<h2 id="what-is-the-stokes-theorem"><span class="section-num">2</span> What is the Stokes' Theorem</h2>
+<h3 id="front"><span class="section-num">2.1</span> Front</h3>
+<p><b>What is the Stokes' Theorem</b></p>
+<p>Write it&rsquo;s equation, and define its hypothesis, Let \(C\) be a curve and
+\(\vb{F}\) a vector field</p>
+<h3 id="back"><span class="section-num">2.2</span> Back</h3>
+<ul>
+<li>\(C\) should be a closed curve</li>
+<li>\(S\) could be any surface which boundary is \(C\)</li>
+<li>Right-hand rule orientation</li>
+<li>\(\vb{F}\) must be defined in all \(S\)</li>
+</ul>
+<p>\({\displaystyle \oint_C \vb{F} \cdot \dd{\vb{r}} = \iint_S
+\curl{\vb{F}} \dd{\vb{S}}}\)</p>
+<h2 id="what-does-mean-that--c--and--s--in-stokes-theorem-should-be-compatibly-oriented"><span class="section-num">3</span> What does mean that \(C\) and \(S\) in Stokes' Theorem should be compatibly oriented?</h2>
+<h3 id="front"><span class="section-num">3.1</span> Front</h3>
+<p><b>What does mean that $C$ and $S$ in Stokes' Theorem should be compatibly oriented?</b></p>
+<h3 id="back"><span class="section-num">3.2</span> Back</h3>
+<p>Using the right-hand rule, when you walk in the positive direction on
+\(C\), keeping \(S\) to your left, then your head should point in the
+direction of \(\vb{n}\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/38/7572ed-d872-4cf9-944e-fd60b15cf6f5/_20200917_123451OTDT4PF.png"/> 
+</figure>
+
+<h2 id="how-should-be-oriented-these-surfaces-for-stokes-theorem"><span class="section-num">4</span> How should be oriented these surfaces for Stokes' Theorem</h2>
+<h3 id="front"><span class="section-num">4.1</span> Front</h3>
+<p><b>How should be oriented these surfaces for Stokes' Theorem</b></p>
+<figure>
+    <img src="https://ppalazon.github.io/38/7572ed-d872-4cf9-944e-fd60b15cf6f5/_20200917_123458MZ2XW4w.png"/> 
+</figure>
+
+<h3 id="back"><span class="section-num">4.2</span> Back</h3>
+<figure>
+    <img src="https://ppalazon.github.io/38/7572ed-d872-4cf9-944e-fd60b15cf6f5/_20200917_123504OTDT4PF.png"/> 
+</figure>
+
+<h2 id="which-is-the-normal-vector-of--s--for-using-stokes-theorem"><span class="section-num">5</span> Which is the normal vector of \(S\) for using Stokes' Theorem?</h2>
+<h3 id="front"><span class="section-num">5.1</span> Front</h3>
+<p><b>Which is the normal vector of $S$ for using Stokes' Theorem?</b></p>
+<figure>
+    <img src="https://ppalazon.github.io/38/7572ed-d872-4cf9-944e-fd60b15cf6f5/_20200917_123511d1j3VFO.png"/> 
+</figure>
+
+<p>The surface is a half-sphere with radius \(1\)</p>
+<h3 id="back"><span class="section-num">5.2</span> Back</h3>
+<figure>
+    <img src="https://ppalazon.github.io/38/7572ed-d872-4cf9-944e-fd60b15cf6f5/_20200917_123517bBFpAuS.png"/> 
+</figure>
+
+<p>\(\vu{n} = \ev{x,y,z}\)</p>
+<h2 id="what-is-the-relationship-between-stokes-theorem-and-green-theorem"><span class="section-num">6</span> What is the relationship between Stokes' theorem and Green Theorem</h2>
+<h3 id="front"><span class="section-num">6.1</span> Front</h3>
+<p><b>What is the relationship between Stokes' theorem and Green Theorem</b></p>
+<p>Let \(\vb{F}\) be a vector field in space, and \(C\) a closed curve</p>
+<h3 id="back"><span class="section-num">6.2</span> Back</h3>
+<p>\(\vb{F} = \ev{M,N,P}\), and \(C\) a simple closed curve in the
+\(xy\text{-plane}\), oriented positively (so the interior is on your
+left as you walk upright in the positive direction)</p>
+<p>Let \(S\) be the interior, compatibly oriented, \(\vu{n} = \vu{k}\), and
+\(\dd{S} = \dd{A}\)</p>
+<p>\({\displaystyle \oint_C \vb{F} \cdot \dd{\vb{r}} = \oint_C M \dd{x} +
+N \dd{y} = \iint_S \curl{\vb{F}} \cdot \vu{n} \dd{S} = \iint_R (N_x -
+M_y) \dd{A}}\) (which is the Greens' Theorem)</p>
+<p>This is true for other choices of the 2 variables</p>
+<h2 id="which-is-the-angular-velocity-of-the-paddle-wheel-in-a-3d-fluid-flow"><span class="section-num">7</span> Which is the angular velocity of the paddle wheel in a 3D fluid flow?</h2>
+<h3 id="front"><span class="section-num">7.1</span> Front</h3>
+<p><b>Which is the angular velocity of the paddle wheel in a 3D fluid flow?</b></p>
+<p>Let \(\vb{F}\) be the velocity field for a 3D fluid flow, \(a\) be the
+radius of the paddle wheel, and \(P_0\) be the center of the paddle
+wheel</p>
+<h3 id="back"><span class="section-num">7.2</span> Back</h3>
+<p><strong>Which is the angular velocity of the paddle wheel in a 3D fluid
+flow?</strong></p>
+<figure>
+    <img src="https://ppalazon.github.io/38/7572ed-d872-4cf9-944e-fd60b15cf6f5/_20200917_123523RRWR3R5.png"/> 
+</figure>
+
+<p>Angular velocity of the paddle wheel</p>
+<p>\({\displaystyle \frac{1}{2 \pi a^2} \oint_C \vb{F} \cdot \dd{\vb{r}}}\)</p>
+<p>By Stokes' Theorem, \(S\) being the circular dist having \(C\) as boundary</p>
+<p>\({\displaystyle \frac{1}{2 \pi a^2} \iint_S \curl{\vb{F}} \cdot \vu{u}
+\dd{S}}\)</p>
+<p>Since \(\text{curl} \vb{F} \cdot \vu{u}\) is approximately constant on
+\(S\) if \(a\) is small and \(S\) has area \(\pi a^2\)</p>
+<p>\({\displaystyle \approx \frac{1}{2 \pi a^2} (\text{curl} \vb{F})_0
+\cdot \vu{u} (\pi a^2)}\)</p>
+<p>As \(a \to 0\)</p>
+<p>angular velocity of the paddle wheel \({\displaystyle = \frac{1}{2}
+\curl{\vb{F}} \cdot \vu{u}}\)</p>
+<h2 id="which-is-the-direction-where-the-paddle-wheel-spin-faster"><span class="section-num">8</span> Which is the direction where the paddle wheel spin faster?</h2>
+<h3 id="front"><span class="section-num">8.1</span> Front</h3>
+<p><b>Which is the direction where the paddle wheel spin faster?</b></p>
+<figure>
+    <img src="https://ppalazon.github.io/38/7572ed-d872-4cf9-944e-fd60b15cf6f5/_20200917_123530RRWR3R5.png"/> 
+</figure>
+
+<p>Let \(\vb{F}\) be the velocity vector field for a 3D fluid flow</p>
+<h3 id="back"><span class="section-num">8.2</span> Back</h3>
+<p>angular velocity of paddle wheel is \(\frac{1}{2} (\text{curl}\vb{F})_0
+\cdot \vu{u}\)</p>
+<p>Maximum value when \(\vu{u}\) has the direction of
+\((\text{curl}\vb{F})_0\)</p>
+<ul>
+<li>direction of \((\text{curl}\vb{F})_0\) axial direction in which wheel
+spins faster</li>
+<li>magnitude of \((\text{curl}\vb{F})_0\) is twice this maximum angular
+velocity</li>
+</ul>
+
+</div>
+
+
+            <footer>
+    
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-4c%2fsession-91%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Session%2091%3a%20Stokes%27%20Theorem&amp;url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-4c%2fsession-91%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-4c%2fsession-91%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-4c%2fsession-91%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-4c%2fsession-91%2f&amp;title=Session%2091%3a%20Stokes%27%20Theorem" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Session%2091%3a%20Stokes%27%20Theorem&amp;body=Check out this site https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-4c%2fsession-91%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+
+<nav>
+    <ul class="pager">
+    
+    <li class="previous">
+        <a href="https://ppalazon.github.io/18.02/part-4c/session-90/" title="Session 90: Curl in 3D">
+            <span aria-hidden="true">&larr;</span>Session 90: Curl in 3D
+        </a>
+    </li>
+    
+
+    
+    <li class="next">
+        <a href="https://ppalazon.github.io/18.02/part-4c/session-92/" title="Session 92: Proof of Stokes&#39; Theorem">
+            Session 92: Proof of Stokes&#39; Theorem <span aria-hidden="true">&rarr;</span>
+        </a>
+    </li>
+    
+    </ul>
+</nav>
+
+
+
+</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//ppalazon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+        </div>
+    </div>
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.02/">18.02 Multivariable Calculus</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.02/part-4c/">4C: Line Integrals and Stokes&#39; Theorem</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.02/part-4c/session-91/">Session 91: Stokes&#39; Theorem</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

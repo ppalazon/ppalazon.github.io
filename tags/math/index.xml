@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>math on Pablo Palazon&#39;s Website</title>
+    <link>https://ppalazon.github.io/tags/math/</link>
+    <description>Recent content in math on Pablo Palazon&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>CC BY-NC-ND 4.0</copyright>
+    <lastBuildDate>Sat, 18 Jan 2020 00:00:00 +0100</lastBuildDate><atom:link href="https://ppalazon.github.io/tags/math/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>18.02 Multivariable Calculus</title>
+      <link>https://ppalazon.github.io/18.02/</link>
+      <pubDate>Sat, 18 Jan 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/</guid>
+      <description>This is my personal notes about 18.02 course
+ MIT OCW Introduction  This course covers differential, integral and vector calculus for functions of more than one variable. These mathematical tools and methods are used extensively in the physical sciences, engineering, economics and computer graphics.
+ Thanks you so much MIT for creating and sharing your courses in MIT OCW. I created this notes for myself, but I&amp;rsquo;d like to share with everybody.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Session 90: Curl in 3D  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="calculus, maths, ">
+
+
+<meta property="og:title" content="Session 90: Curl in 3D  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.02/part-4c/session-90/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="content-source" content="18.02/part-4c/session-90.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Captured On [2020-02-06 Thu 17:41] Source Session 90: Curl in 3D | Part C: Line Integrals and Stokes&#39; Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare 1 Chalkboard Figure 1: Curl in 3D Figure 2: (\vb{F}) in simply-connected region
+Figure 3: Del notation
+"/>
+<meta property="og:article:published_time" content="2019-04-18T00:00:00&#43;02:00" />
+<meta property="og:article:modified_time" content="2019-04-18T00:00:00&#43;02:00" />
+
+
+
+<meta property="og:article:tag" content="calculus">
+
+<meta property="og:article:tag" content="maths">
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ppalazon" />
+<meta name="twitter:creator" content="@ppalazon" />
+<meta name="twitter:title" content="Session 90: Curl in 3D" />
+<meta name="twitter:description" content="Captured On [2020-02-06 Thu 17:41] Source Session 90: Curl in 3D | Part C: Line Integrals and Stokes&#39; Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare 1 Chalkboard Figure 1: Curl in 3D Figure 2: (\vb{F}) in simply-connected region
+Figure 3: Del notation
+"/>
+<meta name="twitter:url" content="https://ppalazon.github.io/18.02/part-4c/session-90/" />
+<meta name="twitter:domain" content="https://ppalazon.github.io">
+
+
+
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+     "@type": "Article",
+     "headline": "Session 90: Curl in 3D",
+     "author": {
+         "@type": "Person",
+         "name": "http://profiles.google.com/+?rel=author"
+     },
+     "datePublished": "2019-04-18",
+     "description": "",
+     "wordCount":  606 
+ }
+</script>
+
+
+
+<link rel="canonical" href="https://ppalazon.github.io/18.02/part-4c/session-90/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+ }
+ .hero {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: calc(200px + (450 - 200) * ((100vw - 300px) / (1600 - 300)));
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: calc(-1 * (200px + (450 - 200) * ((100vw - 300px) / (1600 - 300))));
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+    <header class="container hat">
+        <h1>Session 90: Curl in 3D
+</h1>
+
+        
+
+
+<span class="author">by
+    
+    MIT OCW, Pablo Palazon
+    
+</span>
+
+
+    </header>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            
+            <div class="content">
+  <dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2020-02-06 Thu 17:41]</span></span></dd>
+<dt>Source</dt>
+<dd><a href="https://ocw.mit.edu/courses/mathematics/18-02sc-multivariable-calculus-fall-2010/4.-triple-integrals-and-surface-integrals-in-3-space/part-c-line-integrals-and-stokes-theorem/session-90-curl-in-3d">Session 90: Curl in 3D | Part C: Line Integrals and Stokes' Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare</a></dd>
+</dl>
+<h2 id="chalkboard"><span class="section-num">1</span> Chalkboard</h2>
+<p><a id="orgd721efa"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/00/d2066e-7888-4a06-a267-01518db91542/_20200206_174132MIT18_02SC_L30Brds_17.png"
+         alt="Figure 1: Curl in 3D" width="80%"/> <figcaption>
+            <p>Figure 1: Curl in 3D</p>
+        </figcaption>
+</figure>
+
+<p><a id="orgc6f5cd1"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/00/d2066e-7888-4a06-a267-01518db91542/_20200206_174138MIT18_02SC_L30Brds_18.png"
+         alt="Figure 2: \(\vb{F}\) in simply-connected region" width="80%"/> <figcaption>
+            <p>Figure 2: \(\vb{F}\) in simply-connected region</p>
+        </figcaption>
+</figure>
+
+<p><a id="org5a6657e"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/00/d2066e-7888-4a06-a267-01518db91542/_20200206_174144MIT18_02SC_L30Brds_19.png"
+         alt="Figure 3: Del notation" width="80%"/> <figcaption>
+            <p>Figure 3: Del notation</p>
+        </figcaption>
+</figure>
+
+<p><a id="org1f9201f"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/00/d2066e-7888-4a06-a267-01518db91542/_20200206_174150MIT18_02SC_L30Brds_20.png"
+         alt="Figure 4: Mnemotecnic formula for curl \(\vb{F}\)" width="80%"/> <figcaption>
+            <p>Figure 4: Mnemotecnic formula for curl \(\vb{F}\)</p>
+        </figcaption>
+</figure>
+
+<p><a id="org348c8f4"></a></p>
+<figure>
+    <img src="https://ppalazon.github.io/00/d2066e-7888-4a06-a267-01518db91542/_20200206_174156MIT18_02SC_L30Brds_21.png"
+         alt="Figure 5: Geometric meaning of curl" width="80%"/> <figcaption>
+            <p>Figure 5: Geometric meaning of curl</p>
+        </figcaption>
+</figure>
+
+<h2 id="is-the--text-curl-vb-f--a-scalar-function"><span class="section-num">2</span> Is the \(\text{curl}\vb{F}\) a scalar function?</h2>
+<h3 id="front"><span class="section-num">2.1</span> Front</h3>
+<p><b>Is the $\text{curl}\vb{F}$ a scalar function?</b></p>
+<p>Let \(\vb{F} = \ev{M,N}\) be a planar vector field</p>
+<h3 id="back"><span class="section-num">2.2</span> Back</h3>
+<p>In this case you can call it a scalar function because it only has
+\(\vu{k}\) component.</p>
+<p>But really, curl is a vector function and in this case</p>
+<p>\(\text{curl} \vb{F} = (N_x - M_y) \vu{k}\)</p>
+<h2 id="write-divergence-theorem-using-del-notation"><span class="section-num">3</span> Write divergence theorem using del notation</h2>
+<h3 id="front"><span class="section-num">3.1</span> Front</h3>
+<p><b>Write divergence theorem using del notation</b></p>
+<p>Let \(\vb{F} = \ev{M,N,P}\) be a vector field</p>
+<h3 id="back"><span class="section-num">3.2</span> Back</h3>
+<p>\({\displaystyle \iint_S \vb{F} \cdot \dd{\vb{S}} = \iiint_D
+\div{\vb{F}} \dd{V}}\)</p>
+<h2 id="compute-this-equation"><span class="section-num">4</span> Compute this equation</h2>
+<h3 id="front"><span class="section-num">4.1</span> Front</h3>
+<p><b>Compute this equation</b></p>
+<p>\(\curl{\grad{f}}\)</p>
+<h3 id="back"><span class="section-num">4.2</span> Back</h3>
+<p>\(\curl{\grad{f}} = 0\), it was part of the criterion for gradient field</p>
+<h2 id="compute-this-equation"><span class="section-num">5</span> Compute this equation</h2>
+<h3 id="front"><span class="section-num">5.1</span> Front</h3>
+<p><b>Compute this equation</b></p>
+<p>\(\div{\curl{\vb{F}}}\)</p>
+<h3 id="back"><span class="section-num">5.2</span> Back</h3>
+<p>\(\div{\curl{\vb{F}}} = 0\)</p>
+<p>Let \(\vb{F} = \ev{P,Q,R}\)</p>
+<p>\({\displaystyle \curl{\vb{F}} = \ev{R_y - Q_z, P_z - R_x, Q_x - P_y}}\)</p>
+<p>\({\displaystyle \div{\curl{\vb{F}}} = (R_y - Q_z)_x + (P_z - R_x)_y +
+(Q_x - P_y)_z = R_{yx} - Q_{zx} + P_{zy} - R_{xy} + Q_{xz} - P_{yz} =
+0}\)</p>
+<p>Note that for real vectors \(\vb{u} \cdot (\vb{u} \cross \vb{v}) = 0\)</p>
+<h2 id="how-rapidly-the-flow-spins-the-wheel"><span class="section-num">6</span> How rapidly the flow spins the wheel?</h2>
+<h3 id="front"><span class="section-num">6.1</span> Front</h3>
+<p><b>How rapidly the flow spins the wheel?</b></p>
+<p>Let \(\vb{F}\) be a flow where \(\vb{v}\) is its velocity field. And there
+is a paddle wheel of radius \(a\) so its center is at \((x_0, y_0)\)</p>
+<h3 id="back"><span class="section-num">6.2</span> Back</h3>
+<figure>
+    <img src="https://ppalazon.github.io/00/d2066e-7888-4a06-a267-01518db91542/_20200917_123416gNgaSYO.png"/> 
+</figure>
+
+<p>The velocity at one blade would be \(\vb{F}\cdot \vu{T}\), the component
+of the flow velocity vector \(\vb{F}\) perpendicular to the blade
+(Tangent to the circle of radius \(a\))</p>
+<p>If we only have one blade the wheel would spin around at an uneven
+rate. If the wheel has many blades, this unevenness will be averaged
+out, and it will spin around at approximately the <em>average value</em> of
+the tangential velocity \(\vb{F} \cdot \vu{T}\)</p>
+<p>So, this is the average tangential velocity of \(\vb{F} \cdot \vu{T}\)
+over the circle. Speed of blade:</p>
+<p>\({\displaystyle \frac{1}{2 \pi a} \oint_C \vb{F} \cdot \vu{T} \dd{s} =
+\frac{1}{2\pi a} \oint_C \vb{F} \cdot \dd{\vb{r}}}\)</p>
+<p>Applying Green&rsquo;s Theorem</p>
+<p>\({\displaystyle \frac{1}{2 \pi a} \iint_R \curl{\vb{F}}_0 \dd{x}
+\dd{y} \approx \frac{1}{2\pi a} (\curl{\vb{F}})_0 \pi a^2}\)</p>
+<p>Where \((\curl{\vb{F}})_0\) is the value of the function curl \(\vb{F}\)
+at \((x_0,y_0)\). If the paddle wheel is small we can approximate the
+curl \(\vb{F}\) to \((\curl{\vb{F}})_0\) over the interior \(R\) of the
+circle</p>
+<p>So we can deduce that \({\displaystyle \text{tangential speed} \approx
+\frac{a}{2} (\curl{\vb{F}})_0}\), getting rid \(a\), \({\displaystyle w_0
+\approx \frac{1}{2} (\curl{\vb{F}})_0}\)</p>
+<h2 id="what-measures-the-curl-of--vb-f"><span class="section-num">7</span> What measures the curl of \(\vb{F}\)?</h2>
+<h3 id="front"><span class="section-num">7.1</span> Front</h3>
+<p><b>What measures the curl of $\vb{F}$?</b></p>
+<p>Let \(\vb{F}\) be a flow</p>
+<h3 id="back"><span class="section-num">7.2</span> Back</h3>
+<p>It&rsquo;s measures the &ldquo;vorticity&rdquo; of the fluid flow - its tendency to
+produce rotation</p>
+<h2 id="get-a-formula-for-getting-potential-function-by-path-method"><span class="section-num">8</span> Get a formula for getting potential function by path method</h2>
+<h3 id="front"><span class="section-num">8.1</span> Front</h3>
+<p><b>Get a formula for getting potential function by path method</b></p>
+<p>Let \(\vb{F} = \ev{M,N,P}\)</p>
+<h3 id="back"><span class="section-num">8.2</span> Back</h3>
+<p>\(\vb{F} \cdot \dd{\vb{r}} = M \dd{x} + N \dd{y} + P \dd{z}\)</p>
+<p>\({\displaystyle \int_C \vb{F} \cdot \dd{\vb{r}} = f(P_1) - f(P_0)}\),
+setting \(P_0 = (0,0,0)\) and \(P_1 = (x_1, y_1, z_1)\)</p>
+<p>Draw a path with 3 path from \((0,0,0)\) to \((x_1,0,0)\) to \((x_1, y_1,
+0)\) to \((x_1, y_1, z_1)\)</p>
+<p>\({\displaystyle f(x_1, y_1,z_1) = \int_0^{x_1} M(x,0,0) \dd{x} +
+\int_0^{y_1} N(x_1, y, 0) \dd{y} + \int_0^{z_1} P(x_1,y_1,z) \dd{z}}\)</p>
+
+</div>
+
+
+            <footer>
+    
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-4c%2fsession-90%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Session%2090%3a%20Curl%20in%203D&amp;url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-4c%2fsession-90%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-4c%2fsession-90%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-4c%2fsession-90%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-4c%2fsession-90%2f&amp;title=Session%2090%3a%20Curl%20in%203D" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Session%2090%3a%20Curl%20in%203D&amp;body=Check out this site https%3a%2f%2fppalazon.github.io%2f18.02%2fpart-4c%2fsession-90%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+
+<nav>
+    <ul class="pager">
+    
+    <li class="previous">
+        <a href="https://ppalazon.github.io/18.02/part-4c/session-89/" title="Session 89: Gradient Fields and Potential Functions">
+            <span aria-hidden="true">&larr;</span>Session 89: Gradient Fields and Potential Functions
+        </a>
+    </li>
+    
+
+    
+    <li class="next">
+        <a href="https://ppalazon.github.io/18.02/part-4c/session-91/" title="Session 91: Stokes&#39; Theorem">
+            Session 91: Stokes&#39; Theorem <span aria-hidden="true">&rarr;</span>
+        </a>
+    </li>
+    
+    </ul>
+</nav>
+
+
+
+</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//ppalazon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+        </div>
+    </div>
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.02/">18.02 Multivariable Calculus</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.02/part-4c/">4C: Line Integrals and Stokes&#39; Theorem</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.02/part-4c/session-90/">Session 90: Curl in 3D</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

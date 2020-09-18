@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Matrix Methods: Eigenvalues and Normal Modes  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="ode, maths, ">
+
+
+<meta property="og:title" content="Matrix Methods: Eigenvalues and Normal Modes  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.03/unit-4/session-33/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="content-source" content="18.03/unit-4/session-33.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Captured On [2020-02-01 Sat 12:35] Source Matrix Methods: Eigenvalues and Normal Modes | Unit IV: First-order Systems | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the trace of a square matrix? 1.1 Front What is the trace of a square matrix?
+For example, \({\displaystyle \operatorname{tr}\begin{pmatrix}a &amp;amp; b \\ c &amp;amp; d\end{pmatrix}}\)
+1.2 Back It&amp;rsquo;s the sum of the elements on the main diagonal; it&amp;rsquo;s denoted \(\operatorname{tr}(A)\):"/>
+<meta property="og:article:published_time" content="2020-01-18T00:00:00&#43;01:00" />
+<meta property="og:article:modified_time" content="2020-01-18T00:00:00&#43;01:00" />
+
+
+
+<meta property="og:article:tag" content="ode">
+
+<meta property="og:article:tag" content="maths">
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ppalazon" />
+<meta name="twitter:creator" content="@ppalazon" />
+<meta name="twitter:title" content="Matrix Methods: Eigenvalues and Normal Modes" />
+<meta name="twitter:description" content="Captured On [2020-02-01 Sat 12:35] Source Matrix Methods: Eigenvalues and Normal Modes | Unit IV: First-order Systems | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the trace of a square matrix? 1.1 Front What is the trace of a square matrix?
+For example, \({\displaystyle \operatorname{tr}\begin{pmatrix}a &amp;amp; b \\ c &amp;amp; d\end{pmatrix}}\)
+1.2 Back It&amp;rsquo;s the sum of the elements on the main diagonal; it&amp;rsquo;s denoted \(\operatorname{tr}(A)\):"/>
+<meta name="twitter:url" content="https://ppalazon.github.io/18.03/unit-4/session-33/" />
+<meta name="twitter:domain" content="https://ppalazon.github.io">
+
+
+
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+     "@type": "Article",
+     "headline": "Matrix Methods: Eigenvalues and Normal Modes",
+     "author": {
+         "@type": "Person",
+         "name": "http://profiles.google.com/+?rel=author"
+     },
+     "datePublished": "2020-01-18",
+     "description": "",
+     "wordCount":  2357 
+ }
+</script>
+
+
+
+<link rel="canonical" href="https://ppalazon.github.io/18.03/unit-4/session-33/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+ }
+ .hero {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: calc(200px + (450 - 200) * ((100vw - 300px) / (1600 - 300)));
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: calc(-1 * (200px + (450 - 200) * ((100vw - 300px) / (1600 - 300))));
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+    <header class="container hat">
+        <h1>Matrix Methods: Eigenvalues and Normal Modes
+</h1>
+
+        
+
+
+<span class="author">by
+    
+    MIT OCW, Pablo Palazon
+    
+</span>
+
+
+    </header>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            
+            <div class="content">
+  <dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2020-02-01 Sat 12:35]</span></span></dd>
+<dt>Source</dt>
+<dd><a href="https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-iv-first-order-systems/matrix-methods-eigenvalues-and-normal-modes/">Matrix Methods: Eigenvalues and Normal Modes | Unit IV: First-order Systems | Differential Equations | Mathematics | MIT OpenCourseWare</a></dd>
+</dl>
+<h2 id="what-is-the-trace-of-a-square-matrix"><span class="section-num">1</span> What is the trace of a square matrix?</h2>
+<h3 id="front"><span class="section-num">1.1</span> Front</h3>
+<p><b>What is the trace of a square matrix?</b></p>
+<p>For example, \({\displaystyle \operatorname{tr}\begin{pmatrix}a &amp; b \\ c &amp;
+d\end{pmatrix}}\)</p>
+<h3 id="back"><span class="section-num">1.2</span> Back</h3>
+<p>It&rsquo;s the sum of the elements on the main diagonal; it&rsquo;s denoted
+\(\operatorname{tr}(A)\):</p>
+<p>\({\displaystyle \operatorname{tr}\begin{pmatrix}a &amp; b \\ c &amp; d\end{pmatrix} =
+a + d}\)</p>
+<h2 id="what-is-the-difference-between-the-determinant-and-a-matrix"><span class="section-num">2</span> What is the difference between the determinant and a matrix?</h2>
+<h3 id="front"><span class="section-num">2.1</span> Front</h3>
+<p><b>What is the difference between the determinant and a matrix?</b></p>
+<h3 id="back"><span class="section-num">2.2</span> Back</h3>
+<p>The determinant is a number, the matrix is the square array</p>
+<h2 id="what-does-really-mean-the-phrase-the-first-row-of-the-determinant"><span class="section-num">3</span> What does really mean the phrase &ldquo;the first row of the determinant&rdquo;?</h2>
+<h3 id="front"><span class="section-num">3.1</span> Front</h3>
+<p><b>What does really mean the phrase &ldquo;the first row of the determinant&rdquo;?</b></p>
+<h3 id="back"><span class="section-num">3.2</span> Back</h3>
+<p>That really means the first row of the corresponding matrix. Sometimes we write
+a matrix between vertical lines to indicate its determinant, so sometimes we can
+say phrases like this one.</p>
+<h2 id="what-are-the-solutions-for-this-equation"><span class="section-num">4</span> What are the solutions for this equation?</h2>
+<h3 id="front"><span class="section-num">4.1</span> Front</h3>
+<p><b>What are the solutions for this equation?</b></p>
+<p>\(A \vb{x} = \vb{0}\), where \(A\) is a square matrix</p>
+<h3 id="back"><span class="section-num">4.2</span> Back</h3>
+<p>This always has the solution \(\vb{x} = 0\), which we call the <strong>trivial solution</strong></p>
+<p>Also, there is a theorem</p>
+<p>\({\displaystyle A \vb{x} = 0} \text{ has a nontrivial solution} \Leftrightarrow
+\operatorname{det}(A) = 0\)</p>
+<p>we can say that \(A\) is singular</p>
+<h2 id="what-does-mean-linear-independence-of-vectors"><span class="section-num">5</span> What does mean linear independence of vectors?</h2>
+<h3 id="front"><span class="section-num">5.1</span> Front</h3>
+<p><b>What does mean linear independence of vectors?</b></p>
+<p>For two vectors</p>
+<h3 id="back"><span class="section-num">5.2</span> Back</h3>
+<p>This just means they are not zero are not multiples of each other</p>
+<p>Let \(\vb{a} = \ev{a_1, a_2}\) and \(\vb{b} = \ev{b_1, b_2}\) be 2-vectors, and \(A\)
+the square matrix having these vectors for its <strong>rows</strong> (or <strong>columns</strong>)</p>
+<p>\({\displaystyle \vb{a}, \vb{b} \text{ are linearly independent} \Leftrightarrow
+\operatorname{det}(A) \neq 0}\)</p>
+<h2 id="how-must-be--vb-v-1--and--vb-v-2--to-form--vb-w"><span class="section-num">6</span> How must be \(\vb{v_{1}}\) and \(\vb{v_{2}}\) to form \(\vb{w}\)</h2>
+<h3 id="front"><span class="section-num">6.1</span> Front</h3>
+<p><b>How must be $\vb{v_{1}}$ and $\vb{v_{2}}$ to form $\vb{w}$</b></p>
+<p>\(\vb{w} = c_1 \vb{v_1} + c_2 \vb{v_2}\)</p>
+<h3 id="back"><span class="section-num">6.2</span> Back</h3>
+<p>Both vectors \(\vb{v_1}\) and \(\vb{v_2}\) must be linearly independent</p>
+<h2 id="what-kind-of-solution-we-could-get-from-this-modal-solution"><span class="section-num">7</span> What kind of solution we could get from this modal solution?</h2>
+<h3 id="front"><span class="section-num">7.1</span> Front</h3>
+<p><b>What kind of solution we could get from this modal solution?</b></p>
+<p>\({\displaystyle e^{2t} \begin{pmatrix}3 \\ 1\end{pmatrix}}\) and \({\displaystyle
+e^{-2t} \begin{pmatrix}-1 \\ 1\end{pmatrix}}\)</p>
+<h3 id="back"><span class="section-num">7.2</span> Back</h3>
+<p>You could look for solution of the form \({\displaystyle e^{\lambda
+t} \begin{pmatrix}a_1 \\ a_2 \end{pmatrix}}\)</p>
+<h2 id="how-could-we-solve-this-system-of-equations"><span class="section-num">8</span> How could we solve this system of equations?</h2>
+<h3 id="front"><span class="section-num">8.1</span> Front</h3>
+<p><b>How could we solve this system of equations?</b></p>
+<ul>
+<li>\(\lambda a_1 = a_1 + 3a_2\)</li>
+<li>\(\lambda a_2 = a_1 - a_2\)</li>
+</ul>
+<h3 id="back"><span class="section-num">8.2</span> Back</h3>
+<p>These are a pair of nonlinear equations in three variables. The trick in solving
+them is to look at them as a pair of linear equations in the unknowns \(a_i\),
+with \(\lambda\) viewed as a parameter.</p>
+<p>\begin{alignat*}{3}
+(1 - \lambda) &amp;a_{1} +  &amp; 3a_2 &amp;= 0\<br>
+&amp;a_1 + (-1 - \lambda) &amp; a_2 &amp;= 0
+\end{alignat*}</p>
+<p>In this form, we recognize them as forming a square system of homogeneous linear
+equations.</p>
+<p>\(A \vb{a} = \vb{0}\), where \({\displaystyle A = \begin{pmatrix}1 - \lambda &amp; 3
+\\ 1 &amp; 1 - \lambda \end{pmatrix}}\)</p>
+<p>There is a non trivial solution if and only if \(\operatorname{det}(A) = 0\)</p>
+<p>\({\displaystyle \begin{vmatrix}1 - \lambda &amp; 3 \\ 1 &amp; 1 - \lambda \end{vmatrix}
+= 0 \implies \lambda^2 - 4 = 0}\), so if \(\lambda = \pm 2\), there is a non
+trivial solution \(\vb{a}\)</p>
+<p>Thus, we have 2 linear system</p>
+<ul>
+<li>\(\lambda = 2\)
+<ul>
+<li>\(-a_1 + 3 a_2 = 0\)</li>
+<li>\(a_1 - 3 a_2 = 0\)</li>
+<li>Setting \(a_1 = 1 \implies a_2 = 3\)</li>
+</ul>
+</li>
+<li>\(\lambda = -2\)
+<ul>
+<li>\(3 a_1 + 3 a_2 = 0\)</li>
+<li>\(a_1 + a_2 = 0\)</li>
+<li>Setting \(a_1 = 1 \implies a_2 = -1\)</li>
+</ul>
+</li>
+</ul>
+<h2 id="we-get-this-system-of-equations-as-a-de-response-why-are-linearly-dependents"><span class="section-num">9</span> We get this system of equations as a DE response, why are linearly dependents?</h2>
+<h3 id="front"><span class="section-num">9.1</span> Front</h3>
+<p><b>We get this system of equations as a DE response, why are linearly dependents?</b></p>
+<ul>
+<li>\(\lambda = 2\)
+<ul>
+<li>\(-a_1 + 3 a_2 = 0\)</li>
+<li>\(a_1 - 3 a_2 = 0\)</li>
+<li>Setting \(a_1 = 3 \implies a_2 = 1\)</li>
+</ul>
+</li>
+<li>\(\lambda = -2\)
+<ul>
+<li>\(3 a_1 + 3 a_2 = 0\)</li>
+<li>\(a_1 + a_2 = 0\)</li>
+<li>Setting \(a_1 = 1 \implies a_2 = -1\)</li>
+</ul>
+</li>
+</ul>
+<h3 id="back"><span class="section-num">9.2</span> Back</h3>
+<p>These are linear dependents because we set lambda a parameter for a 2 nonlinear
+equations. If this 2 equations were linearly independent, the nonlinear system
+only has a trivial solution.</p>
+<p>All of our effort has been to locate the two values of \(\lambda\) for which this
+will not be so. The dependency of the two equations is thus a check on the
+correctness of the value of \(\lambda\)</p>
+<h2 id="write-the-modal-solution-from-this-de"><span class="section-num">10</span> Write the modal solution from this DE</h2>
+<h3 id="front"><span class="section-num">10.1</span> Front</h3>
+<p><b>Write the modal solution from this DE</b></p>
+<p>\({\displaystyle \begin{pmatrix}x' \\ y'\end{pmatrix} = \begin{pmatrix}1 &amp; 3 \\ 1
+&amp; -1\end{pmatrix} \begin{pmatrix}x \\ y\end{pmatrix}}\)</p>
+<ul>
+<li>\(\lambda = 2\)
+<ul>
+<li>\(-a_1 + 3 a_2 = 0\)</li>
+<li>\(a_1 - 3 a_2 = 0\)</li>
+<li>Setting \(a_1 = 1 \implies a_2 = 3\)</li>
+</ul>
+</li>
+<li>\(\lambda = -2\)
+<ul>
+<li>\(3 a_1 + 3 a_2 = 0\)</li>
+<li>\(a_1 + a_2 = 0\)</li>
+<li>Setting \(a_1 = 1 \implies a_2 = -1\)</li>
+</ul>
+</li>
+</ul>
+<h3 id="back"><span class="section-num">10.2</span> Back</h3>
+<p>We get 2 solutions</p>
+<p>\({\displaystyle e^{2t} \begin{pmatrix}3 \\ 1\end{pmatrix}}\) and \({\displaystyle
+e^{-2t} \begin{pmatrix}1 \\ -1\end{pmatrix}}\)</p>
+<p>We can use superposition and get a general solution multiplying both modal
+solution by a non zero constant and sum them up. We can do that because we set
+up one of the \(a&rsquo;s\) with an arbitrary value, and the other is determined by the
+system.</p>
+<h2 id="how-could-we-write-this-expression-as-homogeneous-square-system"><span class="section-num">11</span> How could we write this expression as homogeneous square system?</h2>
+<h3 id="front"><span class="section-num">11.1</span> Front</h3>
+<p><b>How could we write this expression as homogeneous square system?</b></p>
+<p>\({\displaystyle \lambda \begin{pmatrix}a_1 \\ a_2\end{pmatrix}
+= \begin{pmatrix}1 &amp; 3 \\ 1 &amp; -1\end{pmatrix} \begin{pmatrix}a_1
+\\ a_2\end{pmatrix}}\)</p>
+<h3 id="back"><span class="section-num">11.2</span> Back</h3>
+<p>If we rewrite it as \({\displaystyle \begin{pmatrix}\lambda &amp; 0 \\ 0 &amp;
+\lambda\end{pmatrix} \begin{pmatrix}a_1 \\ a_2\end{pmatrix} = \begin{pmatrix}1 &amp;
+3 \\ 1 &amp; -1\end{pmatrix} \begin{pmatrix}a_1 \\ a_2\end{pmatrix}}\)</p>
+<p>We can subtract the left side form the right</p>
+<p>\({\displaystyle \begin{pmatrix}1 - \lambda &amp; 3 \\ 1 &amp; -1 - \lambda
+\end{pmatrix} \begin{pmatrix} a_1 \\ a_2 \end{pmatrix} = \begin{pmatrix}0
+\\ 0\end{pmatrix}}\)</p>
+<p>The trick therefore is to replace the scalar \(\lambda\) by the diagonal matrix
+\(\lambda I\)</p>
+<h2 id="how-could-we-combine-the-two-sides-by-subtraction-of-this-expression"><span class="section-num">12</span> How could we combine the two sides by subtraction of this expression?</h2>
+<h3 id="front"><span class="section-num">12.1</span> Front</h3>
+<p><b>How could we combine the two sides by subtraction of this expression?</b></p>
+<p>\({\displaystyle \lambda \begin{pmatrix}a_1 \\ a_2\end{pmatrix} = \begin{pmatrix}a &amp;
+b \\ c &amp; d\end{pmatrix} \begin{pmatrix} a_1 \\ a_2\end{pmatrix}}\)</p>
+<p>where \(\lambda\) is a scalar constant</p>
+<h3 id="back"><span class="section-num">12.2</span> Back</h3>
+<p>We can replace the scalar \(\lambda\) by the diagonal matrix \(\lambda I\). This
+gives</p>
+<p>\({\displaystyle \begin{pmatrix}\lambda &amp; 0 \\ 0 &amp;
+\lambda\end{pmatrix} \begin{pmatrix}a_1 \\ a_2\end{pmatrix} = \begin{pmatrix}a &amp; b
+\\ c &amp; d\end{pmatrix} \begin{pmatrix} a_1 \\ a_2\end{pmatrix}}\)</p>
+<p>So now we can subtract the LHS from the RHS using the distributive law for
+matrix addition and multiplication</p>
+<p>\({\displaystyle \begin{pmatrix}a - \lambda &amp; b \\ c &amp; d-
+\lambda\end{pmatrix} \begin{pmatrix}a_1 \\ a_2 \end{pmatrix} = \begin{pmatrix}0
+\\ 0\end{pmatrix}}\)</p>
+<h2 id="what-is-the-characteristic-equation-of-the-matrix-a"><span class="section-num">13</span> What is the characteristic equation of the matrix A?</h2>
+<h3 id="front"><span class="section-num">13.1</span> Front</h3>
+<p><b>What is the characteristic equation of the matrix A?</b></p>
+<p>\({\displaystyle A = \begin{pmatrix}a &amp; b \\ c &amp; d\end{pmatrix}}\)</p>
+<p>Explain how to get it</p>
+<h3 id="back"><span class="section-num">13.2</span> Back</h3>
+<p>It&rsquo;s the equation for computing the \(\lambda\) values where this square
+homogeneous system has a non-trivial solution</p>
+<p>\({\displaystyle \begin{pmatrix}a - \lambda &amp; b \\ c &amp; d-
+\lambda\end{pmatrix} \begin{pmatrix}a_1 \\ a_2 \end{pmatrix} = \begin{pmatrix}0
+\\ 0\end{pmatrix}}\)</p>
+<p>Thus, \({\displaystyle \begin{vmatrix}A - \lambda I\end{vmatrix} = 0}\):</p>
+<p>\({\displaystyle \begin{vmatrix}a - \lambda &amp; b \\ c &amp; d - \lambda\end{vmatrix} =
+0}\)</p>
+<p>The characteristic equation of the matrix is</p>
+<p>\({\displaystyle p_A (\lambda) = \lambda^2 - (a + d)\lambda + (ad - bc) =
+\lambda^2 - \operatorname{tr}(A) \lambda + \operatorname{det}(A) = 0}\)</p>
+<h2 id="what-are-the-characteristic-values-of-the-matrix-a"><span class="section-num">14</span> What are the characteristic values of the matrix A?</h2>
+<h3 id="front"><span class="section-num">14.1</span> Front</h3>
+<p><b>What are the characteristic values of the matrix A?</b></p>
+<p>\({\displaystyle A = \begin{pmatrix}a &amp; b \\ c &amp; d\end{pmatrix}}\)</p>
+<h3 id="back"><span class="section-num">14.2</span> Back</h3>
+<p>It&rsquo;s the \(\lambda\) values which are roots of its characteristic equation</p>
+<p>\({\displaystyle \lambda^2 - \operatorname{tr}(A)\lambda + \operatorname{det}(A)
+= 0}\)</p>
+<p>Also, it&rsquo;s called the eigenvalues</p>
+<h2 id="how-could-we-get-the-eigenvectors-for-this-matrix-a"><span class="section-num">15</span> How could we get the eigenvectors for this matrix A?</h2>
+<h3 id="front"><span class="section-num">15.1</span> Front</h3>
+<p><b>How could we get the eigenvectors for this matrix A?</b></p>
+<p>\({\displaystyle A = \begin{pmatrix}a &amp; b \\ c &amp; d\end{pmatrix}}\)</p>
+<h3 id="back"><span class="section-num">15.2</span> Back</h3>
+<p>When you have the eigenvalues of the matrix \(A\), you can compute the nontrivial
+solution for the system \((A - \lambda I) \vb{v} = 0\)</p>
+<p>For each of the 2 values of eigenvalues (real and distinct) you get a dependent
+system of equation (one will be a constant multiple of the other). It&rsquo;s because
+these \(\lambda\) values produce the \(\operatorname{det}(A - \lambda I) = 0\)</p>
+<ul>
+<li>\((a- \lambda_1) a_1 + b a_2 = 0\)</li>
+<li>\(c a_1 + (d - \lambda_1) a_2 = 0\)</li>
+</ul>
+<p>The eigenvector is a column vector with the values
+\({\displaystyle \begin{pmatrix}a_1 \\ a_2 \end{pmatrix}}\)</p>
+<h2 id="what-is-an-eigenline"><span class="section-num">16</span> What is an eigenline?</h2>
+<h3 id="front"><span class="section-num">16.1</span> Front</h3>
+<p><b>What is an eigenline?</b></p>
+<h3 id="back"><span class="section-num">16.2</span> Back</h3>
+<p>If \(\vb{v}\) is an eigenvector for \(\lambda\), then so is \(c \vb{v}\) for any real
+constant \(c\). It&rsquo;s a line through \(\vb{v}\) which is called <strong>eigneline</strong></p>
+<h2 id="can-we-get-solution-for-any-linear-system-of-de-using-eigenvectors"><span class="section-num">17</span> Can we get solution for any linear system of DE using eigenvectors?</h2>
+<h3 id="front"><span class="section-num">17.1</span> Front</h3>
+<p><b>Can we get solution for any linear system of DE using eigenvectors?</b></p>
+<p>\({\displaystyle \dot{\vb{u}} = A \vb{u}}\), where \(A\) is a square matrix \(N
+\cross N\)</p>
+<h3 id="back"><span class="section-num">17.2</span> Back</h3>
+<p>Yes, the eigenvalues and eigenvector comes from the equation
+\({\displaystyle \begin{vmatrix} A - \lambda I\end{vmatrix} = 0}\)</p>
+<h2 id="what-are-the-normal-modes-and-general-solution-from-this-eigenvalues-and-eigenvectors"><span class="section-num">18</span> What are the normal modes and general solution from this eigenvalues and eigenvectors?</h2>
+<h3 id="front"><span class="section-num">18.1</span> Front</h3>
+<p><b>What are the normal modes and general solution from this eigenvalues and eigenvectors?</b></p>
+<ul>
+<li>\({\displaystyle \lambda_1 = -1}\) which eigenvector is
+\({\displaystyle \begin{pmatrix}1 \\ 1\end{pmatrix}}\)</li>
+<li>\({\displaystyle \lambda_2 = 2}\) which eigenvector is
+\({\displaystyle \begin{pmatrix} 1 \\ 4\end{pmatrix}}\)</li>
+</ul>
+<h3 id="back"><span class="section-num">18.2</span> Back</h3>
+<p>The normal modes are \({\displaystyle e^{-t} \begin{pmatrix}1 \\ 1\end{pmatrix}}\)
+and \({\displaystyle e^{2t} \begin{pmatrix}1 \\ 4\end{pmatrix}}\)</p>
+<p>And the general solution is</p>
+<p>\({\displaystyle \vb{u}(t) = c_1 e^{-t} \begin{pmatrix}1 \\ 1\end{pmatrix} + c_2
+e^{2t} \begin{pmatrix}1 \\ 4\end{pmatrix}}\)</p>
+<h2 id="given-a-complex-eigenvalue-how-are-the-eigenvectors"><span class="section-num">19</span> Given a complex eigenvalue how are the eigenvectors?</h2>
+<h3 id="front"><span class="section-num">19.1</span> Front</h3>
+<p><b>Given a complex eigenvalue how are the eigenvectors?</b></p>
+<p>\({\displaystyle \lambda = a \pm bi}\)</p>
+<h3 id="back"><span class="section-num">19.2</span> Back</h3>
+<p>The corresponding eigenvector \(\vb{v}\), by solving the equations</p>
+<ul>
+<li>\((a - \lambda)a_1 + ba_2 = 0\)</li>
+<li>\(c a_1 + (d+ \lambda)a_2 = 0\)</li>
+</ul>
+<p>for its components \(a_1\) and \(a_2\). Since \(\lambda\) is complex, the \(a_i\) will
+also be complex, and therefore the eigenvector \(\vb{v}\) corresponding to
+\(\lambda\) will have complex components.</p>
+<h2 id="how-is-the-form-of-the-solution-with-a-complex-eigenvalue"><span class="section-num">20</span> How is the form of the solution with a complex eigenvalue?</h2>
+<h3 id="front"><span class="section-num">20.1</span> Front</h3>
+<p><b>How is the form of the solution with a complex eigenvalue?</b></p>
+<p>\(\lambda = a \pm bi\)</p>
+<h3 id="back"><span class="section-num">20.2</span> Back</h3>
+<p>We get a complex solution with the form</p>
+<p>\({\displaystyle \vb{x} = e^{(a + ib)t} \vb{v}}\), where \(\vb{v}\) it&rsquo;s the
+corresponding eigenvector</p>
+<h2 id="given-this-system-what-are-the-real-solutions"><span class="section-num">21</span> Given this system, what are the real solutions?</h2>
+<h3 id="front"><span class="section-num">21.1</span> Front</h3>
+<p><b>Given a system, what are the real solution?</b></p>
+<p>\({\displaystyle \dot{\vb{x}} = A \vb{x}}\), where \(A\) is a real matrix and
+\(\vb{x}\) is a complex solution</p>
+<h3 id="back"><span class="section-num">21.2</span> Back</h3>
+<p>Then its real and imaginary parts of \(\vb{x} = \vb{x_1} + i \vb{x_2}\) are also
+solutions to the system.</p>
+<p>Since \(\vb{x_1} + i \vb{x_2}\) is a solution, we have</p>
+<p>\({\displaystyle (\vb{x_1} + i \vb{x_2})' = A (\vb{x_1} + i \vb{x_2}) = A
+\vb{x_1} + i A \vb{x_2}}\)</p>
+<p>Equating real and imaginary parts of this equation</p>
+<p>\({\displaystyle \vb{x_1}' = A \vb{x_1}}\) and \({\displaystyle \vb{x_2}' = A
+\vb{x_2}}\)</p>
+<p>Which shows exactly that the real vector \(\vb{x_1}\) and \(\vb{x_2}\) are solutions
+to \(\vb{x}' = A \vb{x}\)</p>
+<h2 id="what-it-is-the-real-solution-from-the-complex-eigenvalue"><span class="section-num">22</span> What it is the real solution from the complex eigenvalue?</h2>
+<h3 id="front"><span class="section-num">22.1</span> Front</h3>
+<p><b>What it is the real solution from the complex eigenvalue?</b></p>
+<p>\(\lambda = a \pm ib\)</p>
+<p>Show the process with \(\vb{v}\) as complex eigenvector of this eigenvalue</p>
+<h3 id="back"><span class="section-num">22.2</span> Back</h3>
+<p>We can write its corresponding eigenvector \(\vb{v}\) in terms of real and
+imaginary parts, \(\vb{v} = \vb{v_1} + i \vb{v_2}\), where \(\vb{v_1}\) and \(\vb{v_2}\)
+it&rsquo;s a real vector.</p>
+<p>\({\displaystyle \vb{x} = e^{at} (\cos(bt) + i \sin(vt)) (\vb{v_1} + i
+\vb{v_2})}\)</p>
+<p>Where the real and imaginary parts of \(\vb{x}\) give respectively the 2 real
+solutions</p>
+<ul>
+<li>\({\displaystyle \vb{x_1} = e^{at}(\vb{v_1} \cos(bt) - \vb{v_2} \sin(bt))}\)</li>
+<li>\({\displaystyle \vb{x_2} = e^{at}(\vb{v_1} \sin(bt) + \vb{v_2} \cos(bt))}\)</li>
+</ul>
+<p>These solutions are linearly independent: they are two truly different solutions</p>
+<p>The general solution is given by their linear combinations</p>
+<p>\({\displaystyle c_1 \vb{x_1} + c_2 \vb{x_2}}\)</p>
+<p>Note: <strong>The complex conjugate eigenvalue \(a - ib\) gives up to sign the same two
+solutions \(\vb{x_1}\) and \(\vb{x_2}\)</strong></p>
+<h2 id="do-we-need-to-compute-the-real-solution-for-both-complex-eigenvalue"><span class="section-num">23</span> Do we need to compute the real solution for both complex eigenvalue?</h2>
+<h3 id="front"><span class="section-num">23.1</span> Front</h3>
+<p><b>Do we need to compute the real solution for both complex eigenvalue?</b></p>
+<p>\(\lambda = a \pm ib\)</p>
+<h3 id="back"><span class="section-num">23.2</span> Back</h3>
+<p>No, we will get the same 2 real solutions in both cases, so you only need to
+solve the system for one of the 2 complex eigenvalue.</p>
+<h2 id="what-could-happen-when-you-solve-a-system-which-has-a-repeated-eigenvalue"><span class="section-num">24</span> What could happen when you solve a system which has a repeated eigenvalue?</h2>
+<h3 id="front"><span class="section-num">24.1</span> Front</h3>
+<p><b>What could happen when you solve a system which has a repeated eigenvalue?</b></p>
+<p>\({\displaystyle \dot{\vb{x}} = A \vb{x}}\), where \(A\) is a matrix \(2 \cross 2\)</p>
+<p>\(\lambda\) is a double real root</p>
+<h3 id="back"><span class="section-num">24.2</span> Back</h3>
+<p>We need to find two linearly independent solution to the system. We can get one
+solution in the usual way. For example, let \(\vb{v_1}\) be an eigenvector
+corresponding to \(\lambda\). This is found by solving the system:</p>
+<p>\({\displaystyle (A - \lambda I)\vb{a} = 0}\), so that gives the solution
+\({\displaystyle \vb{x_1} = e^{\lambda t} \vb{v_1}}\)</p>
+<p>To find a second solution we have to distinguish 2 cases</p>
+<ul>
+<li>Complete case
+<ul>
+<li>\(\lambda\) is a complete eigenvalue if there are 2 linearly independent
+eigenvectors \(\vb{v_1}\) and \(\vb{v_2}\) corresponding to \(\lambda\)</li>
+</ul>
+</li>
+<li>Defective
+<ul>
+<li>In this case only there is one non-zero solution \(\vb{v_1}\), so \(\vb{x_1}\)
+is the unique normal mode.</li>
+<li>However, a second order system needs two independent solutions</li>
+<li>Repeated roots in second order suggest we try multiplying our normal
+solution by \(t\), but we need to fix as follows
+<ul>
+<li>\({\displaystyle \vb{x_2} = e^{\lambda t} (t \vb{v_1 + \vb{v_2})}}\), where
+\(\vb{2}\) is any vector satisfying</li>
+<li>\({\displaystyle (A - \lambda I) \vb{v_2} = \vb{v_1}}\)</li>
+<li>Remember: \(A \vb{v_1} = \lambda \vb{v_1}\)</li>
+</ul>
+</li>
+<li>\(\vb{v_2}\) is guaranteed to have a solution, provided that the eigenvalue
+\(\lambda\) really is defective</li>
+</ul>
+</li>
+</ul>
+
+</div>
+
+
+            <footer>
+    
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-4%2fsession-33%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Matrix%20Methods%3a%20Eigenvalues%20and%20Normal%20Modes&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-4%2fsession-33%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-4%2fsession-33%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-4%2fsession-33%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-4%2fsession-33%2f&amp;title=Matrix%20Methods%3a%20Eigenvalues%20and%20Normal%20Modes" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Matrix%20Methods%3a%20Eigenvalues%20and%20Normal%20Modes&amp;body=Check out this site https%3a%2f%2fppalazon.github.io%2f18.03%2funit-4%2fsession-33%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+
+<nav>
+    <ul class="pager">
+    
+    <li class="previous">
+        <a href="https://ppalazon.github.io/18.03/unit-4/session-32/" title="Linear Systems">
+            <span aria-hidden="true">&larr;</span>Linear Systems
+        </a>
+    </li>
+    
+
+    
+    <li class="next">
+        <a href="https://ppalazon.github.io/18.03/unit-4/session-34/" title="Qualitative Behavior: Phase Portraits">
+            Qualitative Behavior: Phase Portraits <span aria-hidden="true">&rarr;</span>
+        </a>
+    </li>
+    
+    </ul>
+</nav>
+
+
+
+</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//ppalazon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+        </div>
+    </div>
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/">18.03 Differential Equations</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/unit-4/">4: First-order Systems</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.03/unit-4/session-33/">Matrix Methods: Eigenvalues and Normal Modes</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

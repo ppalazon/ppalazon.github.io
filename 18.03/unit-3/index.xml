@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>3: Fourier Series and Laplace Transform on Pablo Palazon&#39;s Website</title>
+    <link>https://ppalazon.github.io/18.03/unit-3/</link>
+    <description>Recent content in 3: Fourier Series and Laplace Transform on Pablo Palazon&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>CC BY-NC-ND 4.0</copyright>
+    <lastBuildDate>Tue, 26 Nov 2019 00:00:00 +0100</lastBuildDate><atom:link href="https://ppalazon.github.io/18.03/unit-3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fourier Series: Basics</title>
+      <link>https://ppalazon.github.io/18.03/unit-3/session-21/</link>
+      <pubDate>Tue, 26 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-3/session-21/</guid>
+      <description>Captured On [2019-11-15 Fri 13:49] Source Fourier Series: Basics | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 Which is the minimum period of a constant function? 1.1 Front Which is the minimum period of a constant function?
+1.2 Back There is no minimal period, we don&amp;rsquo;t allow \(P = 0\) to be periodic.
+Also, for any \(P\) value is a period, but no minimal</description>
+    </item>
+    
+    <item>
+      <title>Operations on Fourier Series</title>
+      <link>https://ppalazon.github.io/18.03/unit-3/session-22/</link>
+      <pubDate>Tue, 26 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-3/session-22/</guid>
+      <description>Captured On [2019-11-23 Sat 18:11] Source Operations on Fourier Series | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is an even function? 1.1 Front What is an even function?
+Let \(f(t)\) be a function, and write examples
+1.2 Back \(f(t)\) is even if \(f(-t) = f(t)\) for all \(t\)
+ \(t^2, t^4, t^6, \dots\), any even power of \(t\) \(\cos(at)\)  power series for \(\cos(at)\) has only even powers of \(t\)   A constant function  2 What is the integral of even function on a &amp;lsquo;balanced&amp;rsquo; interval?</description>
+    </item>
+    
+    <item>
+      <title>ODE&#39;s with Periodic Input, Resonance</title>
+      <link>https://ppalazon.github.io/18.03/unit-3/session-23/</link>
+      <pubDate>Tue, 26 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-3/session-23/</guid>
+      <description>Captured On [2019-11-29 Fri 13:34] Source [[https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-iii-fourier-series-and-laplace-transform/odes-with-periodic-input-resonance/index.htm][ODE&amp;rsquo;s with Periodic Input, Resonance | Unit III: Fourier Series and  Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare]]
+1 How can we solve this ODE? 1.1 Front How can we solve this ODE?
+\(\ddot{x} + 9.1 x = f(t)\), where \(f(t)\) is a odd square wave of period \(2\pi\) with \(f(t) = 1\) for \(0 \lt t \lt \pi\)</description>
+    </item>
+    
+    <item>
+      <title>Step and Delta Functions: Integrals and Generalized Derivatives</title>
+      <link>https://ppalazon.github.io/18.03/unit-3/session-24/</link>
+      <pubDate>Tue, 26 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-3/session-24/</guid>
+      <description>Captured On [2019-12-06 Fri 14:05] Source Step and Delta Functions: Integrals and Generalized Derivatives | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  This session looks closely at discontinuous functions and introduces the notion of an impulse or delta function. The goal is to use these functions as the input to differential equations. Step functions and delta functions are not differentiable in the usual sense, but they do have what we will call generalized derivatives, which are suitable for use in DE&amp;rsquo;s.</description>
+    </item>
+    
+    <item>
+      <title>Unit Step and Unit Impulse Response</title>
+      <link>https://ppalazon.github.io/18.03/unit-3/session-25/</link>
+      <pubDate>Tue, 26 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-3/session-25/</guid>
+      <description>Captured On [2019-12-17 Tue 13:01] Source Unit Step and Unit Impulse Response | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  In this session we study differential equations with step or delta functions as input. For physical systems, this means that we are looking at discontinuous or impulsive inputs to the system.
+1 When happens the pre-initial conditions in a DE? 1.</description>
+    </item>
+    
+    <item>
+      <title>Convolution</title>
+      <link>https://ppalazon.github.io/18.03/unit-3/session-26/</link>
+      <pubDate>Tue, 26 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-3/session-26/</guid>
+      <description>Captured On [2019-12-27 Fri 13:46] Source Convolution | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the definition of the convolution of 2 functions? 1.1 Front What is the definition of the convolution of 2 functions?
+One-sided convolution
+1.2 Back It&amp;rsquo;s a function defined by this integral
+\({\displaystyle (f * g)(t) = \int_{0^-}^{t^+} f(\tau) g(t - \tau) \dd{\tau}}\) for \(t \gt 0\)</description>
+    </item>
+    
+    <item>
+      <title>Laplace Transform: Basics</title>
+      <link>https://ppalazon.github.io/18.03/unit-3/session-27/</link>
+      <pubDate>Tue, 26 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-3/session-27/</guid>
+      <description>Captured On [2019-12-30 Mon 17:43] Source Laplace Transform: Basics | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the definition of Laplace Transform? 1.1 Front What is the definition of Laplace Transform?
+1.2 Back The Laplace transform of a function \(f(t)\) of a real variable \(t\) is another function depending on a new variable \(s\), which is in general complex.</description>
+    </item>
+    
+    <item>
+      <title>Partial Fractions and Inverse Laplace Transform</title>
+      <link>https://ppalazon.github.io/18.03/unit-3/session-28/</link>
+      <pubDate>Tue, 26 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-3/session-28/</guid>
+      <description>Captured On [2020-01-02 Thu 18:40] Source Partial Fractions and Inverse Laplace Transform | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is a rational function? 1.1 Front What is a rational function?
+1.2 Back Is a function that is the ratio of two polynomials
+\({\displaystyle \frac{s + }{s^2 + 7s + 9}}\)
+2 When can we say that a rational function is proper?</description>
+    </item>
+    
+    <item>
+      <title>Laplace Transform: Solving Initial Value Problems</title>
+      <link>https://ppalazon.github.io/18.03/unit-3/session-29/</link>
+      <pubDate>Tue, 26 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-3/session-29/</guid>
+      <description>Captured On [2020-01-06 Mon 19:03] Source Laplace Transform: Solving Initial Value Problems | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 Compute with the definition the Laplace transform of \(f&#39;\) 1.1 Front Compute with the definition the Laplace transform of $f&#39;$
+\({\displaystyle \mathcal{L}(f&#39;)(s)}\)
+Don&amp;rsquo;t do by heart
+1.2 Back \({\displaystyle \mathcal{L}(f&#39;) = \int_{0^-}^{\infty} f&#39;(t) e^{-st} \dd{t}}\)
+Integrating by parts
+ \(u = e^{-st}\), \(\dd{u} = -s e^{-st} \dd{t}\) \(\dd{v} = f&#39;(t) \dd{t}\), \(v = f(t)\)  \({\displaystyle f(t) e^{-st} \bigg|_{0^-}^{\infty} + s \int_{0^-}^{\infty} f(t) e^{-st} \dd{t} = -f(0^-) + s F(s)}\)</description>
+    </item>
+    
+    <item>
+      <title>Transfer (System) and Weight Functions, Green&#39;s Formula</title>
+      <link>https://ppalazon.github.io/18.03/unit-3/session-30/</link>
+      <pubDate>Tue, 26 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-3/session-30/</guid>
+      <description>Captured On [2020-01-10 Fri 13:16] Source Transfer (System) and Weight Functions, Green&amp;rsquo;s Formula | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the transfer function for any LTI? 1.1 Front What is the transfer function for any LTI?
+In terms of unit impulse response
+1.2 Back \({\displaystyle W(s) = \mathcal{L}(w(t))}\)
+where \(w(t)\) is the unit impulse response
+2 What is the system function?</description>
+    </item>
+    
+    <item>
+      <title>Poles, Amplitude Response, Connection to ERF</title>
+      <link>https://ppalazon.github.io/18.03/unit-3/session-31/</link>
+      <pubDate>Tue, 26 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.03/unit-3/session-31/</guid>
+      <description>Captured On [2020-01-11 Sat 17:01] Source Poles, Amplitude Response, Connection to ERF | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 When can we say that a rational function is in reduced form? 1.1 Front When can we say that a rational function is in reduced form?
+1.2 Back If the numerator \(q(s)\) and the denominator \(p(s)\) have no roots in common, then \(q(s)/p(s)\) is in reduced form</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Frequency Response and Practical Resonance  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="ode, ">
+
+
+<meta property="og:title" content="Frequency Response and Practical Resonance  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.03/unit-2/session-19/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="content-source" content="18.03/unit-2/session-19.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Captured On [2019-11-11 Mon 12:39] Source Frequency Response and Practical Resonance | Unit II: Second Order Constant Coefficient Linear Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the amplitude response of the system? 1.1 Front What is the amplitude response of the system?
+1.2 Back It&amp;rsquo;s called to the gain of the system in terms of input angular frequency
+2 What is the phase response of the system?"/>
+<meta property="og:article:published_time" content="2019-10-11T00:00:00&#43;02:00" />
+<meta property="og:article:modified_time" content="2019-10-11T00:00:00&#43;02:00" />
+
+
+
+<meta property="og:article:tag" content="ode">
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ppalazon" />
+<meta name="twitter:creator" content="@ppalazon" />
+<meta name="twitter:title" content="Frequency Response and Practical Resonance" />
+<meta name="twitter:description" content="Captured On [2019-11-11 Mon 12:39] Source Frequency Response and Practical Resonance | Unit II: Second Order Constant Coefficient Linear Equations | Differential Equations | Mathematics | MIT OpenCourseWare  1 What is the amplitude response of the system? 1.1 Front What is the amplitude response of the system?
+1.2 Back It&amp;rsquo;s called to the gain of the system in terms of input angular frequency
+2 What is the phase response of the system?"/>
+<meta name="twitter:url" content="https://ppalazon.github.io/18.03/unit-2/session-19/" />
+<meta name="twitter:domain" content="https://ppalazon.github.io">
+
+
+
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+     "@type": "Article",
+     "headline": "Frequency Response and Practical Resonance",
+     "author": {
+         "@type": "Person",
+         "name": "http://profiles.google.com/+?rel=author"
+     },
+     "datePublished": "2019-10-11",
+     "description": "",
+     "wordCount":  1588 
+ }
+</script>
+
+
+
+<link rel="canonical" href="https://ppalazon.github.io/18.03/unit-2/session-19/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+ }
+ .hero {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: calc(200px + (450 - 200) * ((100vw - 300px) / (1600 - 300)));
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: calc(-1 * (200px + (450 - 200) * ((100vw - 300px) / (1600 - 300))));
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+    <header class="container hat">
+        <h1>Frequency Response and Practical Resonance
+</h1>
+
+        
+
+
+<span class="author">by
+    
+    Pablo Palazon
+    
+</span>
+
+
+    </header>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            
+            <div class="content">
+  <dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2019-11-11 Mon 12:39]</span></span></dd>
+<dt>Source</dt>
+<dd><a href="https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-ii-second-order-constant-coefficient-linear-equations/frequency-response-and-practical-resonance/index.htm">Frequency Response and Practical Resonance | Unit II: Second Order
+Constant Coefficient Linear Equations | Differential Equations | Mathematics |
+MIT OpenCourseWare</a></dd>
+</dl>
+<h2 id="what-is-the-amplitude-response-of-the-system"><span class="section-num">1</span> What is the amplitude response of the system?</h2>
+<h3 id="front"><span class="section-num">1.1</span> Front</h3>
+<p><b>What is the amplitude response of the system?</b></p>
+<h3 id="back"><span class="section-num">1.2</span> Back</h3>
+<p>It&rsquo;s called to the gain of the system in terms of input angular frequency</p>
+<h2 id="what-is-the-phase-response-of-the-system"><span class="section-num">2</span> What is the phase response of the system?</h2>
+<h3 id="front"><span class="section-num">2.1</span> Front</h3>
+<p><b>What is the phase response of the system?</b></p>
+<h3 id="back"><span class="section-num">2.2</span> Back</h3>
+<p>It&rsquo;s called to the phase lag function of the system in terms of input angular
+frequency.</p>
+<h2 id="what-is-the-frequency-response-of-the-system"><span class="section-num">3</span> What is the frequency response of the system?</h2>
+<h3 id="front"><span class="section-num">3.1</span> Front</h3>
+<p><b>What is the frequency response of the system?</b></p>
+<h3 id="back"><span class="section-num">3.2</span> Back</h3>
+<p>It&rsquo;s the amplitude response and phase response of a system. These functions are
+expressed in terms of input angular frequency.</p>
+<h2 id="what-happens-to-the-frequency-response-if-the-input-is-scaled-by--b"><span class="section-num">4</span> What happens to the frequency response if the input is scaled by \(B\)?</h2>
+<h3 id="front"><span class="section-num">4.1</span> Front</h3>
+<p><b>What happens to the frequency response if the input is scaled by $B$?</b></p>
+<h3 id="back"><span class="section-num">4.2</span> Back</h3>
+<p>The amplitude response is scales too by \(B\)</p>
+<h2 id="is-the-gain-always-equals-to-and-x2026"><span class="section-num">5</span> Is the gain always equals to …?</h2>
+<h3 id="front"><span class="section-num">5.1</span> Front</h3>
+<p><b>Is the gain always equals to &hellip;?</b></p>
+<p>\(\frac{1}{p(i\omega)}\)</p>
+<h3 id="back"><span class="section-num">5.2</span> Back</h3>
+<p>No, is the ratio between amplitude of the periodic output and amplitude of the
+periodic input.</p>
+<h2 id="what-is-the-practical-resonance-frequency"><span class="section-num">6</span> What is the practical resonance frequency?</h2>
+<h3 id="front"><span class="section-num">6.1</span> Front</h3>
+<p><b>What is the practical resonance frequency?</b></p>
+<h3 id="back"><span class="section-num">6.2</span> Back</h3>
+<p>It&rsquo;s an input frequency \(w_r\) where the gain has a peak. It&rsquo;s depends on the DE,
+and there are some systems where there is no practical resonance frequency.</p>
+<p>In systems like \(nx'' + bx' + kx = B \cos(\omega t)\), if \(b\) is large enough,
+there no practical resonance</p>
+<figure>
+    <img src="https://ppalazon.github.io/8b/2ab0e6-a3dc-4485-8b93-374d42307332/_20200916_205857rVHigJK.png"/> 
+</figure>
+
+<h2 id="how-can-we-find-the-practical-resonant-frequency"><span class="section-num">7</span> How can we find the practical resonant frequency?</h2>
+<h3 id="front"><span class="section-num">7.1</span> Front</h3>
+<p><b>How can we find the practical resonant frequency?</b></p>
+<h3 id="back"><span class="section-num">7.2</span> Back</h3>
+<p>If practical resonance occurs at frequency \(w_r\) is when gain response has a
+maximum for some \(w_r\), so the \(g'(w) = 0\) and it&rsquo;s a maximum.</p>
+<p>If the gain is \(g(w) = \frac{1}{f(w)}\), then the practical resonant frequency is
+when \(f(w)\) has a minimum.</p>
+<h2 id="what-happens-to-the-phase-lag-on-a-damped-system"><span class="section-num">8</span> What happens to the phase lag on a damped system?</h2>
+<h3 id="front"><span class="section-num">8.1</span> Front</h3>
+<p><b>What happens to the phase lag on a damped system?</b></p>
+<h3 id="back"><span class="section-num">8.2</span> Back</h3>
+<p>The damping causes a lag between when the input reaches its maximum and when the
+output does. In this picture below the dotted line is the input and the solid
+line is the response. The time lag is ratio \(\phi/\omega\)</p>
+<figure>
+    <img src="https://ppalazon.github.io/36/722108-5bf7-4841-8438-9f35ecd4b380/_20200916_205904rBNQVFN.png"/> 
+</figure>
+
+<h2 id="write-the-de-of-this-mechanical-vibration-system"><span class="section-num">9</span> Write the DE of this mechanical vibration system?</h2>
+<h3 id="front"><span class="section-num">9.1</span> Front</h3>
+<p><b>Write the DE of this mechanical vibration system?</b></p>
+<figure>
+    <img src="https://ppalazon.github.io/d4/243a90-5308-4fd6-a684-15bff5dffccd/_20200916_205912kuIswbV.png"/> 
+</figure>
+
+<h3 id="back"><span class="section-num">9.2</span> Back</h3>
+<ul>
+<li>\(y\) is the displacement of the plunger at the top of the spring</li>
+<li>\(x\) is the position of the mass, arranged so that \(x=y\) when the spring is
+unstretched and uncompressed.</li>
+<li>There are 2 forces acting on the mass
+<ul>
+<li>\(F_{\text{spr}} = -k (x - y) = k(y - x)\)</li>
+<li>\(F_{\text{dash}} = -b \dot{x}\)</li>
+</ul>
+</li>
+<li>\(m \ddot{x} = k(y-x) - b \dot{x}\)</li>
+</ul>
+<p>Standard form = \(m \ddot{x} + b \dot{x} + kx = ky\), where \(q = ky\) is the input
+function and \(y\) could be sinusoidal \(y = B_1 \cos(\omega t)\).</p>
+<h2 id="how-is-the-steady-state-system-of-this-de"><span class="section-num">10</span> How is the steady state system of this DE?</h2>
+<h3 id="front"><span class="section-num">10.1</span> Front</h3>
+<p><b>How is the steady state system of this DE?</b></p>
+<p>\(m \ddot{x} + b \dot{x} + kx = ky\), where \(y = B_1 \cos(\omega t)\)</p>
+<h3 id="back"><span class="section-num">10.2</span> Back</h3>
+<p>As the input is a sinusoidal function, we expect a sinusoidal particular
+solution with a form \(x_p(t) = A \cos(\omega t - \phi)\), where \(A = A(w)\) and
+\(\phi = \phi(w)\) both functions in terms of \(\omega\)</p>
+<h2 id="what-is-the-frequency-response-for-this-system"><span class="section-num">11</span> What is the frequency response for this system?</h2>
+<h3 id="front"><span class="section-num">11.1</span> Front</h3>
+<p><b>What is the frequency response for this system?</b></p>
+<p>\(m \ddot{x} + b \dot{x} + kx = ky\), where \(y = B_1 \cos(\omega t)\) is the input</p>
+<h3 id="back"><span class="section-num">11.2</span> Back</h3>
+<p>As the input signal is sinusoidal, when expect a sinusoidal particular solution,
+\(x_p(t) = A \cos(\omega t - \phi)\)</p>
+<p>\({\displaystyle g(w) = \frac{A}{B_1} = \frac{k}{\abs{p(i \omega)}} =
+\frac{k}{\sqrt{(k - m \omega^2)^2 + b^2 \omega^2}}}\)</p>
+<p>\({\displaystyle \phi(\omega) = \arctan \biggl( \frac{b \omega}{k - m\omega^2}
+\biggr)}\)</p>
+<h2 id="what-is-the-practical-resonant-frequency-for-this-system"><span class="section-num">12</span> What is the practical resonant frequency for this system?</h2>
+<h3 id="front"><span class="section-num">12.1</span> Front</h3>
+<p><b>What is the practical resonant frequency for this system?</b></p>
+<p>\(m \ddot{x} + b \dot{x} + kx = ky\), where \(y = B_1 \cos(\omega t)\)</p>
+<h3 id="back"><span class="section-num">12.2</span> Back</h3>
+<p>\({\displaystyle \omega_r = \sqrt{\frac{k}{m} - \frac{b^2}{2m^2}}}\)</p>
+<h2 id="write-the-de-of-this-mechanical-vibration-system"><span class="section-num">13</span> Write the DE of this mechanical vibration system?</h2>
+<h3 id="front"><span class="section-num">13.1</span> Front</h3>
+<p><b>Write the DE of this mechanical vibration system?</b></p>
+<figure>
+    <img src="https://ppalazon.github.io/19/8a7380-277d-47b7-baf7-d42af50f660d/_20200916_205921yfvfdtw.png"/> 
+</figure>
+
+<h3 id="back"><span class="section-num">13.2</span> Back</h3>
+<ul>
+<li>Position of the bottom \(y(t)\)</li>
+<li>Position of the mass is given by \(x(t)\), arranged so that \(x=0\) when the
+spring is relaxed</li>
+</ul>
+<p>\(m \ddot{x} = -kx + b \dv{t}(y - x)\)</p>
+<p>\(m \ddot{x} + b \dot{x} + kx = b \dot{y}\)</p>
+<h2 id="how-could-we-get-a-particular-solution-for-this-de"><span class="section-num">14</span> How could we get a particular solution for this DE?</h2>
+<h3 id="front"><span class="section-num">14.1</span> Front</h3>
+<p><b>How could we get a particular solution for this DE?</b></p>
+<p>\(m \ddot{x} + b \dot{x} + kx = b \dot{y}\), where \(y = y(t) = B \cos(\omega t)\)</p>
+<h3 id="back"><span class="section-num">14.2</span> Back</h3>
+<ul>
+<li>Complexify before taking the derivative of the RHS
+<ul>
+<li>\(m \ddot{z} + b \dot{z} + k z = b \widetilde{y}' = b i \omega B e^{i \omega
+t}\)</li>
+<li>Since \(y = \operatorname{Re}(\widetilde{y})\) and \(x = \operatorname{Re}(z)\)</li>
+</ul>
+</li>
+<li>ERF: \({\displaystyle z_p(t) = \frac{i \omega b B}{p(i\omega)} e^{i \omega t}}\)
+<ul>
+<li>where \(p(s) = m s^2 + b s + k\) is the characteristic polynomial</li>
+</ul>
+</li>
+</ul>
+<h2 id="what-is-the-gain-of-this-de"><span class="section-num">15</span> What is the gain of this DE?</h2>
+<h3 id="front"><span class="section-num">15.1</span> Front</h3>
+<p><b>What is the gain of this DE?</b></p>
+<p>\(m \ddot{x} + b \dot{x} + kx = b \dot{y}\), where \(y = y(t) = B \cos(\omega t)\)
+is the input, and its complex solution is \({\displaystyle z_p(t) = \frac{i \omega b
+B}{p(i\omega)} e^{i \omega t}}\)</p>
+<h3 id="back"><span class="section-num">15.2</span> Back</h3>
+<p>\({\displaystyle \widetilde{g}(\omega) = \frac{i \omega b}{p(i \omega)}}\), thus
+\({\displaystyle z_p(t) = B \widetilde{g}(\omega) e^{i \omega t}}\)</p>
+<h2 id="what-is-the-real-solution-for-this-de"><span class="section-num">16</span> What is the real solution for this DE?</h2>
+<h3 id="front"><span class="section-num">16.1</span> Front</h3>
+<p><b>What is the real solution for this DE?</b></p>
+<p>\(m \ddot{x} + b \dot{x} + kx = b \dot{y}\), where \(y = y(t) = B \cos(\omega t)\)
+is the input signal, and \({\displaystyle z_p(t) = \frac{i \omega b
+B}{p(i\omega)} e^{i \omega t}}\) is the complex solution</p>
+<h3 id="back"><span class="section-num">16.2</span> Back</h3>
+<p>Real solution will have this form: \(x_p(t) = A \cos(\omega t - \phi)\), so \(g =
+\frac{A}{B}\)</p>
+<p>\({\displaystyle \widetilde{g}(\omega) = \frac{i \omega b}{p(i \omega)}}\), thus
+\({\displaystyle z_p(t) = B \widetilde{g}(\omega) e^{i \omega t}}\)</p>
+<p>We can write \(\widetilde{g}(\omega) = \abs{\widetilde{g}} e^{-i \phi}\), where
+\(\phi = - \operatorname{Arg}(\widetilde{g})\), so \(z_p(t) = B \abs{\widetilde{g}}
+e^{i(\omega t - \phi)}\)</p>
+<p>So, the real solution is \(x_p(t) = B \abs{\widetilde{g}} \cos(\omega t - \phi)\)</p>
+<ul>
+<li>\({\displaystyle g(\omega) = \abs{\widetilde{g}} = \frac{\omega
+b}{\abs{p(i\omega)}} = \frac{\omega b}{\sqrt{(k - m \omega^2)^2 + b^2
+\omega^2}}}\)</li>
+<li>\({\displaystyle \phi(\omega) = - \operatorname{Arg}(\widetilde{g}) = \arctan
+(- (k - m\omega^2) / (b \omega))}\)</li>
+</ul>
+<h2 id="what-is-the-practical-resonant-frequency-for-this-de"><span class="section-num">17</span> What is the practical resonant frequency for this DE?</h2>
+<h3 id="front"><span class="section-num">17.1</span> Front</h3>
+<p><b>What is the practical resonant frequency for this DE?</b></p>
+<p>\(m \ddot{x} + b \dot{x} + kx = b \dot{y}\), where \(y = y(t) = B \cos(\omega t)\)
+where \({\displaystyle z_p(t) = \frac{i \omega b B}{p(i\omega)} e^{i \omega t}}\)</p>
+<p>Tip: \({\displaystyle \widetilde{g}(\omega) = \frac{i \omega b}{p(i \omega)}}\)</p>
+<h3 id="back"><span class="section-num">17.2</span> Back</h3>
+<p>Divide the numerator and denominator in \(\widetilde{g}\) by \(bi \omega\)</p>
+<p>\({\displaystyle \widetilde{g} = \frac{1}{1 + (k - m\omega^2)/(i\omega b)} =
+\frac{1}{1 - i (k -m \omega^2)/(\omega b)}}\)</p>
+<p>\({\displaystyle g = \abs{\widetilde{g}} = \frac{1}{\sqrt{1 + (k - m\omega^2)^2 /
+(\omega b)^2}}}\)</p>
+<p>The practical resonant frequency occurs when \(g\) get its maximum, so \(g\) is
+largest when \(k - m\omega^2 = 0\). At this point, \(g = 1\) and \(\omega_r =
+\sqrt{k/m} = \omega_0\). Thus, the resonant frequency is the natural frequency</p>
+<p>Since \(\widetilde{\omega_0} = 1\), the phase lag \(\phi =
+\operatorname{Arg}(\widetilde{g}) = 0\) at \(\omega_r\)</p>
+<h2 id="find-a-solution-of-this-de"><span class="section-num">18</span> Find a solution of this DE?</h2>
+<h3 id="front"><span class="section-num">18.1</span> Front</h3>
+<p><b>Find a solution of this DE?</b></p>
+<p>\(\ddot{x} + 3 \dot{x} + 2x = t e^{-t}\)</p>
+<h3 id="back"><span class="section-num">18.2</span> Back</h3>
+<p>Using the method of variation of parameters</p>
+<p>Suppose there is a solution of the form \(x(t) = u(t)e^{-t}\) for some function
+\(u(t)\). Then \(\dot{x} = \dot{u} e^{-t} - u e^{-t}\) and \(\ddot{x} =
+\ddot{u}e^{-t} - 2 \dot{u}e^{-t} + ue^{-t}\)</p>
+<p>Substituting in the DE:</p>
+<p>\({\displaystyle \ddot{u} e^{-t} - 2 \dot{u} e^{-t} + u e^{-t} + 3
+\dot{u}e^{-t} - 3 u e^{-t} + 2 u e^{-t} = (\ddot{u} + \dot{u})e^{-t} = t
+e^{-t}}\)</p>
+<p>The exponential is never zero, so can cancel \(e^{-t}\) from both sides and obtain
+\(\ddot{u} + \dot{u} = t\)</p>
+<p>To solve \(u\), we use the method of undetermined coefficients, where the
+corresponding characteristic polynomial \(p(s) = s^2 + s\) has zero constant term
+and nonzero linear term. So we guess a quadratic polynomial solution \(u = at^2 +
+bt + c\). Plugging this in to the equation, and solving coefficients gives us
+that \({\displaystyle u = \frac{t^2}{2} - t}\)</p>
+<p>On solution of the DE is \({\displaystyle x(t) = \biggl( \frac{t^2}{2} - t
+\biggr) e^{-t}}\)</p>
+<h2 id="how-can-we-know-that-a-system-has-practical-resonant-frequency"><span class="section-num">19</span> How can we know that a system has practical resonant frequency?</h2>
+<h3 id="front"><span class="section-num">19.1</span> Front</h3>
+<p><b>How can we know that a system has practical resonant frequency?</b></p>
+<p>Tip: \({\displaystyle w_r = \sqrt{\frac{k}{m} - \frac{c^2}{2m^2}}}\)</p>
+<h3 id="back"><span class="section-num">19.2</span> Back</h3>
+<p>The frequency which gives practical resonance if \(c \lt \sqrt{2km}\)</p>
+<h2 id="rewrite-this-expression"><span class="section-num">20</span> Rewrite this expression?</h2>
+<h3 id="front"><span class="section-num">20.1</span> Front</h3>
+<p><b>Rewrite this expression?</b></p>
+<p>\(\frac{z}{i}\)</p>
+<h3 id="back"><span class="section-num">20.2</span> Back</h3>
+<p>\(-iz\)</p>
+<h2 id="how-can-we-rotate--pi-2--a-complex-number"><span class="section-num">21</span> How can we rotate \(-\pi / 2\) a complex number?</h2>
+<h3 id="front"><span class="section-num">21.1</span> Front</h3>
+<p><b>How can we rotate $-\pi / 2$ a complex number?</b></p>
+<p>\(z\) complex number</p>
+<h3 id="back"><span class="section-num">21.2</span> Back</h3>
+<p>\(z/i\)</p>
+<h2 id="complete-this-graph"><span class="section-num">22</span> Complete this graph</h2>
+<h3 id="front"><span class="section-num">22.1</span> Front</h3>
+<p><b>Complete this graph</b></p>
+<p>And describe what it is its phase difference</p>
+<figure>
+    <img src="https://ppalazon.github.io/aa/122e01-8ed0-4ef0-ab89-ce1bb8bddd02/_20200916_2059281Js9Oo1.png"/> 
+</figure>
+
+<h3 id="back"><span class="section-num">22.2</span> Back</h3>
+<figure>
+    <img src="https://ppalazon.github.io/b6/d6dcd2-ea1b-443c-a41e-f28cd3b91910/_20200916_205938f8RRekY.png"/> 
+</figure>
+
+<ul>
+<li>\(z\) and \(iz\) have a phase difference of \(\pi/2\)</li>
+<li>\(z\) and \(z/i\) have a phase difference of \(- \pi / 2\)</li>
+</ul>
+
+</div>
+
+
+            <footer>
+    
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-2%2fsession-19%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Frequency%20Response%20and%20Practical%20Resonance&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-2%2fsession-19%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-2%2fsession-19%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-2%2fsession-19%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-2%2fsession-19%2f&amp;title=Frequency%20Response%20and%20Practical%20Resonance" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Frequency%20Response%20and%20Practical%20Resonance&amp;body=Check out this site https%3a%2f%2fppalazon.github.io%2f18.03%2funit-2%2fsession-19%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+
+<nav>
+    <ul class="pager">
+    
+    <li class="previous">
+        <a href="https://ppalazon.github.io/18.03/unit-2/session-18/" title="Pure Resonance">
+            <span aria-hidden="true">&larr;</span>Pure Resonance
+        </a>
+    </li>
+    
+
+    
+    <li class="next">
+        <a href="https://ppalazon.github.io/18.03/unit-2/session-20/" title="Applications: LR Circuits">
+            Applications: LR Circuits <span aria-hidden="true">&rarr;</span>
+        </a>
+    </li>
+    
+    </ul>
+</nav>
+
+
+
+</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//ppalazon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+        </div>
+    </div>
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/">18.03 Differential Equations</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/unit-2/">2: Second Order Constant Coefficient Linear Equations</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.03/unit-2/session-19/">Frequency Response and Practical Resonance</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

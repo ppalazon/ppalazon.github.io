@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>3A: Double Integrals on Pablo Palazon&#39;s Website</title>
+    <link>https://ppalazon.github.io/18.02/part-3a/</link>
+    <description>Recent content in 3A: Double Integrals on Pablo Palazon&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>CC BY-NC-ND 4.0</copyright>
+    <lastBuildDate>Thu, 18 Apr 2019 00:00:00 +0200</lastBuildDate><atom:link href="https://ppalazon.github.io/18.02/part-3a/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Session 47: Definition of Double Integration</title>
+      <link>https://ppalazon.github.io/18.02/part-3a/session-47/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3a/session-47/</guid>
+      <description>Captured On [2020-02-06 Thu 13:14] Source Session 47: Definition of Double Integration | Part A: Double Integrals | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Recall integrals of 1 variable function
+  
+  Figure 2: Meaning of double integral
+  
+  Figure 3: Small pieces of area</description>
+    </item>
+    
+    <item>
+      <title>Session 48: Examples of Double Integration</title>
+      <link>https://ppalazon.github.io/18.02/part-3a/session-48/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3a/session-48/</guid>
+      <description>Captured On [2020-02-06 Thu 13:14] Source Session 48: Examples of Double Integration | Part A: Double Integrals | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Example of iterated integral
+  
+  Figure 2: Inner integral
+  
+  Figure 3: Outer integral
+  
+  Figure 4: Same function, other region</description>
+    </item>
+    
+    <item>
+      <title>Session 49: Exchanging the Order of Integration</title>
+      <link>https://ppalazon.github.io/18.02/part-3a/session-49/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3a/session-49/</guid>
+      <description>Captured On [2020-02-06 Thu 13:14] Source Session 49: Exchanging the Order of Integration | Part A: Double Integrals | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Exchanging order of integration
+  
+  Figure 2: Example of exchanging order of integration
+  
+  Figure 3: Example conclusion</description>
+    </item>
+    
+    <item>
+      <title>Session 50: Double Integrals in Polar Coordinates</title>
+      <link>https://ppalazon.github.io/18.02/part-3a/session-50/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3a/session-50/</guid>
+      <description>Captured On [2020-02-06 Thu 13:15] Source Session 50: Double Integrals in Polar Coordinates | Part A: Double Integrals | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Double integral as interated integral \(\dd{y}\dd{x}\)
+  
+  Figure 2: Function in polar coordinates
+  
+  Figure 3: Setting up interated integrals on polar coordinates (1)</description>
+    </item>
+    
+    <item>
+      <title>Session 51: Applications: Mass and Average Value</title>
+      <link>https://ppalazon.github.io/18.02/part-3a/session-51/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3a/session-51/</guid>
+      <description>Captured On [2020-02-06 Thu 13:15] Source Session 51: Applications: Mass and Average Value | Part A: Double Integrals | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Area of a region \(R\)
+  
+  Figure 2: Mass of a flat object with density \(\delta\)
+  
+  Figure 3: Average value of \(f\)</description>
+    </item>
+    
+    <item>
+      <title>Session 52: Applications: Moment of Inertia</title>
+      <link>https://ppalazon.github.io/18.02/part-3a/session-52/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3a/session-52/</guid>
+      <description>Captured On [2020-02-06 Thu 13:15] Source Session 52: Applications: Moment of Inertia | Part A: Double Integrals | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Moment of inertia
+  
+  Figure 2: Kinetic energy
+  
+  Figure 3: Moment of inertia for each \(\Delta A\)</description>
+    </item>
+    
+    <item>
+      <title>Session 53: Change of Variables</title>
+      <link>https://ppalazon.github.io/18.02/part-3a/session-53/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3a/session-53/</guid>
+      <description>Captured On [2020-02-06 Thu 13:16] Source Session 53: Change of Variables | Part A: Double Integrals | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Change variable in double integral
+  
+  Figure 2: Basic example
+  
+  Figure 3: Basic example continuation</description>
+    </item>
+    
+    <item>
+      <title>Session 54: Example: Polar Coordinates</title>
+      <link>https://ppalazon.github.io/18.02/part-3a/session-54/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3a/session-54/</guid>
+      <description>Captured On [2020-02-06 Thu 13:16] Source Session 54: Example: Polar Coordinates | Part A: Double Integrals | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Polar coordinates
+  
+  Figure 2: Scaling factor
+  
+  Figure 3: Recall reciprocal rule for partial derivatives
+  2 Proof \(dA\) in polar coordinates with the Jacobian 2.</description>
+    </item>
+    
+    <item>
+      <title>Session 55: Example</title>
+      <link>https://ppalazon.github.io/18.02/part-3a/session-55/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-3a/session-55/</guid>
+      <description>Captured On [2020-02-06 Thu 13:16] Source Session 55: Example | Part A: Double Integrals | 3. Double Integrals and Line Integrals in the Plane | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Area element
+  
+  Figure 2: Integrand in terms of \(u,v\)
+  
+  Figure 3: Bounds
+  
+  Figure 4: Bounds switching to \(uv\) picture</description>
+    </item>
+    
+  </channel>
+</rss>

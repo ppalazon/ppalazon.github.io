@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>4C: Line Integrals and Stokes&#39; Theorem on Pablo Palazon&#39;s Website</title>
+    <link>https://ppalazon.github.io/18.02/part-4c/</link>
+    <description>Recent content in 4C: Line Integrals and Stokes&#39; Theorem on Pablo Palazon&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>CC BY-NC-ND 4.0</copyright>
+    <lastBuildDate>Thu, 18 Apr 2019 00:00:00 +0200</lastBuildDate><atom:link href="https://ppalazon.github.io/18.02/part-4c/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Session 88: Line Integrals in Space</title>
+      <link>https://ppalazon.github.io/18.02/part-4c/session-88/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4c/session-88/</guid>
+      <description>Captured On [2020-02-06 Thu 17:22] Source Session 88: Line Integrals in Space | Part C: Line Integrals and Stokes&#39; Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Line Integrals in Space
+  
+  Figure 2: Evaluation of Line Integrals
+  
+  Figure 3: Example of Line Integrals</description>
+    </item>
+    
+    <item>
+      <title>Session 89: Gradient Fields and Potential Functions</title>
+      <link>https://ppalazon.github.io/18.02/part-4c/session-89/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4c/session-89/</guid>
+      <description>Captured On [2020-02-06 Thu 17:39] Source Session 89: Gradient Fields and Potential Functions | Part C: Line Integrals and Stokes&#39; Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Test for Gradient Fields
+  
+  Figure 2: Criterion for Gradient Field
+  
+  Figure 3: Example for criterion gradient field</description>
+    </item>
+    
+    <item>
+      <title>Session 90: Curl in 3D</title>
+      <link>https://ppalazon.github.io/18.02/part-4c/session-90/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4c/session-90/</guid>
+      <description>Captured On [2020-02-06 Thu 17:41] Source Session 90: Curl in 3D | Part C: Line Integrals and Stokes&#39; Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Curl in 3D
+  
+  Figure 2: \(\vb{F}\) in simply-connected region
+  
+  Figure 3: Del notation</description>
+    </item>
+    
+    <item>
+      <title>Session 91: Stokes&#39; Theorem</title>
+      <link>https://ppalazon.github.io/18.02/part-4c/session-91/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4c/session-91/</guid>
+      <description>Captured On [2020-02-06 Thu 17:42] Source Session 91: Stokes&#39; Theorem | Part C: Line Integrals and Stokes&#39; Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Recall \(\text{curl}\vb{F}\)
+  
+  Figure 2: Curl examples
+  
+  Figure 3: Stokes&#39; Theorem
+  
+  Figure 4: Orientation of \(S\) and \(C\)</description>
+    </item>
+    
+    <item>
+      <title>Session 92: Proof of Stokes&#39; Theorem</title>
+      <link>https://ppalazon.github.io/18.02/part-4c/session-92/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4c/session-92/</guid>
+      <description>Captured On [2020-02-06 Thu 17:43] Source Session 92: Proof of Stokes&#39; Theorem | Part C: Line Integrals and Stokes&#39; Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Why Stokes is true?
+  
+  Figure 2: Strategy for proofing Stokes&#39; Theorem
+  2 Why Stokes is true? 2.1 Front Why Stokes is true?</description>
+    </item>
+    
+    <item>
+      <title>Session 93: Example</title>
+      <link>https://ppalazon.github.io/18.02/part-4c/session-93/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4c/session-93/</guid>
+      <description>Captured On [2020-02-06 Thu 17:43] Source Session 93: Example | Part C: Line Integrals and Stokes&#39; Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Example of Stokes&#39; Theorem
+  
+  Figure 2: Computing the surface integral
+  
+  Figure 3: Same result with Stokes&#39; Theorem</description>
+    </item>
+    
+    <item>
+      <title>Session 94: Simply Connected Regions; Topology</title>
+      <link>https://ppalazon.github.io/18.02/part-4c/session-94/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4c/session-94/</guid>
+      <description>Captured On [2020-02-06 Thu 17:44] Source Session 94: Simply Connected Regions; Topology | Part C: Line Integrals and Stokes&#39; Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Stokes and Path Independence
+  
+  Figure 2: Examples of simply-connected spaces
+  
+  Figure 3: Theorem for path independence of line integrals</description>
+    </item>
+    
+    <item>
+      <title>Session 95: Stokes&#39; Theorem and Surface Independence</title>
+      <link>https://ppalazon.github.io/18.02/part-4c/session-95/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://ppalazon.github.io/18.02/part-4c/session-95/</guid>
+      <description>Captured On [2020-02-06 Thu 17:45] Source Session 95: Stokes&#39; Theorem and Surface Independence | Part C: Line Integrals and Stokes&#39; Theorem | 4. Triple Integrals and Surface Integrals in 3-Space | Multivariable Calculus | Mathematics | MIT OpenCourseWare  1 Chalkboard 
+  Figure 1: Stokes and surface independence
+  
+  Figure 2: Check with divergence theorem
+  
+  Figure 3: Divergence of curl of vector fiels is 0</description>
+    </item>
+    
+  </channel>
+</rss>

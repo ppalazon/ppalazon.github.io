@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Fourier Series: Basics  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="ode, maths, ">
+
+
+<meta property="og:title" content="Fourier Series: Basics  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/18.03/unit-3/session-21/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="content-source" content="18.03/unit-3/session-21.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Captured On [2019-11-15 Fri 13:49] Source Fourier Series: Basics | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 Which is the minimum period of a constant function? 1.1 Front Which is the minimum period of a constant function?
+1.2 Back There is no minimal period, we don&amp;rsquo;t allow \(P = 0\) to be periodic.
+Also, for any \(P\) value is a period, but no minimal"/>
+<meta property="og:article:published_time" content="2019-11-26T00:00:00&#43;01:00" />
+<meta property="og:article:modified_time" content="2019-11-26T00:00:00&#43;01:00" />
+
+
+
+<meta property="og:article:tag" content="ode">
+
+<meta property="og:article:tag" content="maths">
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ppalazon" />
+<meta name="twitter:creator" content="@ppalazon" />
+<meta name="twitter:title" content="Fourier Series: Basics" />
+<meta name="twitter:description" content="Captured On [2019-11-15 Fri 13:49] Source Fourier Series: Basics | Unit III: Fourier Series and Laplace Transform | Differential Equations | Mathematics | MIT OpenCourseWare  1 Which is the minimum period of a constant function? 1.1 Front Which is the minimum period of a constant function?
+1.2 Back There is no minimal period, we don&amp;rsquo;t allow \(P = 0\) to be periodic.
+Also, for any \(P\) value is a period, but no minimal"/>
+<meta name="twitter:url" content="https://ppalazon.github.io/18.03/unit-3/session-21/" />
+<meta name="twitter:domain" content="https://ppalazon.github.io">
+
+
+
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+     "@type": "Article",
+     "headline": "Fourier Series: Basics",
+     "author": {
+         "@type": "Person",
+         "name": "http://profiles.google.com/+?rel=author"
+     },
+     "datePublished": "2019-11-26",
+     "description": "",
+     "wordCount":  1951 
+ }
+</script>
+
+
+
+<link rel="canonical" href="https://ppalazon.github.io/18.03/unit-3/session-21/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+ }
+ .hero {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: calc(200px + (450 - 200) * ((100vw - 300px) / (1600 - 300)));
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: calc(-1 * (200px + (450 - 200) * ((100vw - 300px) / (1600 - 300))));
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+    <header class="container hat">
+        <h1>Fourier Series: Basics
+</h1>
+
+        
+
+
+<span class="author">by
+    
+    MIT OCW, Pablo Palazon
+    
+</span>
+
+
+    </header>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            
+            <div class="content">
+  <dl>
+<dt>Captured On</dt>
+<dd><span class="timestamp-wrapper"><span class="timestamp">[2019-11-15 Fri 13:49]</span></span></dd>
+<dt>Source</dt>
+<dd><a href="https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-iii-fourier-series-and-laplace-transform/fourier-series-basics/index.htm">Fourier Series: Basics | Unit III: Fourier Series and Laplace
+Transform | Differential Equations | Mathematics | MIT OpenCourseWare</a></dd>
+</dl>
+<h2 id="which-is-the-minimum-period-of-a-constant-function"><span class="section-num">1</span> Which is the minimum period of a constant function?</h2>
+<h3 id="front"><span class="section-num">1.1</span> Front</h3>
+<p><b>Which is the minimum period of a constant function?</b></p>
+<h3 id="back"><span class="section-num">1.2</span> Back</h3>
+<p>There is no minimal period, we don&rsquo;t allow \(P = 0\) to be periodic.</p>
+<p>Also, for any \(P\) value is a period, but no minimal</p>
+<h2 id="what-is-a-base-period-of-a-periodic-function"><span class="section-num">2</span> What is a base period of a periodic function?</h2>
+<h3 id="front"><span class="section-num">2.1</span> Front</h3>
+<p><b>What is a base period of a periodic function?</b></p>
+<h3 id="back"><span class="section-num">2.2</span> Back</h3>
+<p>It&rsquo;s the minimal value period \(P\) for \(f(t + P) = f(t)\) for all \(t\)</p>
+<h2 id="what-the-period--p--for-this-function"><span class="section-num">3</span> What the period \(P\) for this function?</h2>
+<h3 id="front"><span class="section-num">3.1</span> Front</h3>
+<p><b>What the period $P$ for this function?</b></p>
+<p>\(f(t) = \sin(2t)\), and its base period</p>
+<h3 id="back"><span class="section-num">3.2</span> Back</h3>
+<p>It has period \(P = n\pi\) for any integer \(n = 1,2,3, \dots\). The base period is
+\(\pi\)</p>
+<h2 id="what-is-a-periodic-function"><span class="section-num">4</span> What is a periodic function?</h2>
+<h3 id="front"><span class="section-num">4.1</span> Front</h3>
+<p><b>What is a periodic function?</b></p>
+<h3 id="back"><span class="section-num">4.2</span> Back</h3>
+<p>Are functions which repeat \(f(t + P) = f(t)\) for all \(t\), where \(P \gt 0\)</p>
+<h2 id="what-are-the-typical-definition-of-a-window-in-periodic-function"><span class="section-num">5</span> What are the typical definition of a window in periodic function?</h2>
+<h3 id="front"><span class="section-num">5.1</span> Front</h3>
+<p><b>What are the typical definition of a window in periodic function?</b></p>
+<h3 id="back"><span class="section-num">5.2</span> Back</h3>
+<p>It&rsquo;s the interval for fully description of a periodic function. It&rsquo;s contains a
+full period of this function.</p>
+<ul>
+<li>\([ - P/2, P/2)\)</li>
+<li>\([0, P)\)</li>
+<li>Any other interval of length \(P\)</li>
+</ul>
+<h2 id="what-is-the-difference-between-frequency-and-angular-frequency"><span class="section-num">6</span> What is the difference between frequency and angular frequency?</h2>
+<h3 id="front"><span class="section-num">6.1</span> Front</h3>
+<p><b>What is the difference between frequency and angular frequency?</b></p>
+<p>What is the relationship between these 2 concepts?</p>
+<h3 id="back"><span class="section-num">6.2</span> Back</h3>
+<p>Angular frequency has units of radians/unit time and frequency has units of
+cycles/unit time. Where one cycle has \(2 \pi\) radians.</p>
+<p>\(\text{angular frequency } = 2\pi \cross \text{ frequency} = \frac{2\pi}{P}\)</p>
+<p>Angular frequency is also called circular frequency</p>
+<h2 id="what-is-a-fourier-series"><span class="section-num">7</span> What is a Fourier Series?</h2>
+<h3 id="front"><span class="section-num">7.1</span> Front</h3>
+<p><b>What is a Fourier Series?</b></p>
+<p>Explain with words</p>
+<h3 id="back"><span class="section-num">7.2</span> Back</h3>
+<p>A periodic function with base frequency \(\omega\) can be written as a sum of sines
+and cosines whose frequencies are integer multiples of \(\omega\). This is called
+the Fourier Series for the function.</p>
+<h2 id="which-collection-of-cosine-functions-all-have--2-pi--period"><span class="section-num">8</span> Which collection of cosine functions all have \(2\pi\) period?</h2>
+<h3 id="front"><span class="section-num">8.1</span> Front</h3>
+<p><b>Which collection of cosine functions all have $2\pi$ period?</b></p>
+<h3 id="back"><span class="section-num">8.2</span> Back</h3>
+<p>For \(n=1,2,3, \dots, \cos(nt)\) has period \(2\pi\), and base period \(2\pi / n\)</p>
+<h2 id="which-collection-of-sine-functions-all-have--2-pi--period"><span class="section-num">9</span> Which collection of sine functions all have \(2 \pi\) period?</h2>
+<h3 id="front"><span class="section-num">9.1</span> Front</h3>
+<p><b>Which collection of sine functions all have $2 \pi$ period?</b></p>
+<h3 id="back"><span class="section-num">9.2</span> Back</h3>
+<p>For \(n=1,2,3, \dots, \sin(nt)\) has period \(2\pi\), and base period \(2\pi / n\)</p>
+<h2 id="what-is-the-base--fundamental--frequency-of-the-function"><span class="section-num">10</span> What is the base (fundamental) frequency of the function?</h2>
+<h3 id="front"><span class="section-num">10.1</span> Front</h3>
+<p><b>What is the base (fundamental) frequency of the function?</b></p>
+<p>\(f(t) = \cos(t) + \cos(2t) + \cos(3t)\)</p>
+<h3 id="back"><span class="section-num">10.2</span> Back</h3>
+<p>The smallest common period of \(\cos(t)\), \(\cos(2t)\) and \(\cos(3t)\) is \(2\pi\).
+Thus, \(f(t)\) has minimal period \(P = 2\pi\), and therefore its base frequency
+\(\omega\) is \(\frac{2\pi}{P} = 1\)</p>
+<h2 id="what-is-the-fourier-theorem-for-periodic-functions"><span class="section-num">11</span> What is the Fourier theorem for periodic functions?</h2>
+<h3 id="front"><span class="section-num">11.1</span> Front</h3>
+<p><b>What is the Fourier theorem for periodic functions?</b></p>
+<p>Suppose \(f(t)\) has period \(2 \pi\)</p>
+<h3 id="back"><span class="section-num">11.2</span> Back</h3>
+<p>\({\displaystyle f(t) = \frac{a_0}{2} + \sum_{n=1}^{\infty} a_n \cos(nt) + b_n
+\sin(nt)}\)</p>
+<p>where the <strong>Fourier coefficients*</strong> are computed by:</p>
+<ul>
+<li>\({\displaystyle a_0 = \frac{1}{\pi} \int_{-\pi}^{\pi} f(t) dt}\)</li>
+<li>\({\displaystyle a_n = \frac{1}{\pi} \int_{-\pi}^{\pi} f(t) \cos(nt) dt}\)</li>
+<li>\({\displaystyle b_n = \frac{1}{\pi} \int_{-\pi}^{\pi} f(t) \sin(nt) dt}\)</li>
+</ul>
+<p>the RHS is called <strong>Fourier series</strong></p>
+<h2 id="why-we-don-t-need-to-calculate--b-0--in-the-fourier-theorem"><span class="section-num">12</span> Why we don&rsquo;t need to calculate \(b_{0}\) in the Fourier theorem?</h2>
+<h3 id="front"><span class="section-num">12.1</span> Front</h3>
+<p><b>Why we don&rsquo;t need to calculate $b_{0}$ in the Fourier theorem?</b></p>
+<p>Suppose \(f(t)\) has period \(2 \pi\)</p>
+<h3 id="back"><span class="section-num">12.2</span> Back</h3>
+<p>Because \(\sin(0 \cdot t) = 0\)</p>
+<h2 id="write-the-exponential-equivalent-for-this-expression"><span class="section-num">13</span> Write the exponential equivalent for this expression</h2>
+<h3 id="front"><span class="section-num">13.1</span> Front</h3>
+<p><b>Write the exponential equivalent for this expression</b></p>
+<p>\(cos(n \pi)\)</p>
+<h3 id="back"><span class="section-num">13.2</span> Back</h3>
+<p>\((-1)^n\)</p>
+<h2 id="expand-the-fourier-series-with-this-coefficients"><span class="section-num">14</span> Expand the Fourier series with this coefficients</h2>
+<h3 id="front"><span class="section-num">14.1</span> Front</h3>
+<p><b>Expand the Fourier series with this coefficients</b></p>
+<ul>
+<li>\(a_0 = 0\)</li>
+<li>\(a_n = 0\)</li>
+<li>\(b_n = \frac{4}{\pi n}\) if \(n\) is odd</li>
+<li>\(b_n = 0\) if \(n\) is even</li>
+</ul>
+<h3 id="back"><span class="section-num">14.2</span> Back</h3>
+<p>\({\displaystyle f(t) = \sum_{n=1}^{\infty} b_n \sin(nt) = \frac{4}{\pi} \biggl(
+\sin(t) + \frac{1}{3} \sin(3t) + \frac{1}{5} \sin(5t) + \cdots \biggr)}\)</p>
+<h2 id="how-is-the-fourier-series-of-a-odd-function"><span class="section-num">15</span> How is the Fourier Series of a odd function?</h2>
+<h3 id="front"><span class="section-num">15.1</span> Front</h3>
+<p><b>How is the Fourier Series of a odd function?</b></p>
+<h3 id="back"><span class="section-num">15.2</span> Back</h3>
+<p>Odd function: \(f(-t) = -f(t)\)</p>
+<p>This kind of function only have sines (which is also odd functions) in their
+Fourier series</p>
+<p>\({\displaystyle f(t) = \sum_{n=1}^{\infty} b_n \sin(nt)}\)</p>
+<h2 id="how-is-the-fourier-series-for-even-functions"><span class="section-num">16</span> How is the Fourier series for even functions?</h2>
+<h3 id="front"><span class="section-num">16.1</span> Front</h3>
+<p><b>How is the Fourier series for even functions?</b></p>
+<h3 id="back"><span class="section-num">16.2</span> Back</h3>
+<p>Even function: \(f(-t) = f(t)\)</p>
+<p>This kind of function only have cosine (which is also even function) in their
+Fourier series</p>
+<p>\({\displaystyle f(t) = \frac{a_0}{2} + \sum_{n=1}^{\infty} a_n \cos(nt)}\)</p>
+<h2 id="how-is-the-graph-of-the-fourier-series-of-this-function"><span class="section-num">17</span> How is the graph of the Fourier Series of this function?</h2>
+<h3 id="front"><span class="section-num">17.1</span> Front</h3>
+<p><b>How is the graph of the Fourier Series of this function?</b></p>
+<figure>
+    <img src="https://ppalazon.github.io/4a/214627-a7ef-4c14-a88e-fbcc87c5076e/_20200916_213724w4WyfPG.png"/> 
+</figure>
+
+<p>\(f(t) = \frac{4}{\pi} \biggl( \sin(t) + \frac{1}{3} \sin(3t) + \frac{1}{5}
+\sin(5t) + \cdots \biggr)\)</p>
+<h3 id="back"><span class="section-num">17.2</span> Back</h3>
+<figure>
+    <img src="https://ppalazon.github.io/26/ab7050-5f2f-4901-809c-eb2293a419a5/_20200916_2137347IxVcn7.png"/> 
+</figure>
+
+<h2 id="which-is-the-fourier-series-for-function-with-period-2l"><span class="section-num">18</span> Which is the Fourier Series for function with Period 2L?</h2>
+<h3 id="front"><span class="section-num">18.1</span> Front</h3>
+<p><b>Which is the Fourier Series for function with Period 2L?</b></p>
+<p>\(f(t)\) with period \(P = 2L\)</p>
+<h3 id="back"><span class="section-num">18.2</span> Back</h3>
+<p>\({\displaystyle f(t) = \frac{a_0}{2} + \sum_{n=1}^{\infty} a_n \cos(n
+\frac{\pi}{L}t) + b_n \sin(n \frac{\pi}{L} t)}\)</p>
+<p>with Fourier coefficients given by the general Fourier coefficients formula</p>
+<ul>
+<li>\({\displaystyle a_0 = \frac{1}{L} \int_{-L}^L f(t) \dd{t}}\)</li>
+<li>\({\displaystyle a_n = \frac{1}{L} \int_{-L}^L f(t) \cos(n \frac{\pi}{L} t)
+\dd{t}}\)</li>
+<li>\({\displaystyle b_n = \frac{1}{L} \int_{-L}^L f(t) \sin(n \frac{\pi}{L} t)
+\dd{t}}\)</li>
+</ul>
+<p>Where \(L = \frac{P}{2}\) is called the <strong>half-period</strong></p>
+<h2 id="how-is-the-graph-of-this-function"><span class="section-num">19</span> How is the graph of this function?</h2>
+<h3 id="front"><span class="section-num">19.1</span> Front</h3>
+<p><b>How is the graph of this function?</b></p>
+<p>Let \(f(t)\) be the period 2 function, which is defined on the window \([-1, 1)\) by
+\(f(t) = \abs{t}\)</p>
+<h3 id="back"><span class="section-num">19.2</span> Back</h3>
+<figure>
+    <img src="https://ppalazon.github.io/02/1e81ca-f868-482e-8989-0e3a77da2dc8/_20200916_213744q689c2p.png"/> 
+</figure>
+
+<h2 id="which-is-the-principle-of-orthogonality-for-2-periodic-functions"><span class="section-num">20</span> Which is the principle of orthogonality for 2 periodic functions?</h2>
+<h3 id="front"><span class="section-num">20.1</span> Front</h3>
+<p><b>Which is the principle of orthogonality for 2 periodic functions?</b></p>
+<p>Let \(u(t)\) and \(v(t)\) 2 distinct functions on \(\mathbb{R}\) with \(P = 2L\)</p>
+<h3 id="back"><span class="section-num">20.2</span> Back</h3>
+<p>These 2 functions are orthogonal if</p>
+<p>\({\displaystyle \int_{-L}^L u(t) v(t) \dd{t} = 0}\)</p>
+<h2 id="are-any-of-2-function-of-this-collection-orthogonal"><span class="section-num">21</span> Are any of 2 function of this collection orthogonal?</h2>
+<h3 id="front"><span class="section-num">21.1</span> Front</h3>
+<p><b>Are any of 2 function of this collection orthogonal?</b></p>
+<p>Collection:</p>
+<ul>
+<li>\(\sin(nt)\) for \(n=1, \dots, \infty\)</li>
+<li>\(\cos(mt)\) for \(m=0, \dots, \infty\)</li>
+</ul>
+<h3 id="back"><span class="section-num">21.2</span> Back</h3>
+<p>Only if these 2 function are distinct, I mean \(\sin\) and \(\cos\) are orthogonal
+on \([-\pi, \pi]\).</p>
+<p>Otherwise, this value of \({\displaystyle \int_{-\pi}^{\pi} \cos^2(nt) \dd{t}}\)
+or \({\displaystyle \int_{-\pi}^{\pi} \sin^2(nt) \dd{t}}\) is always positive</p>
+<h2 id="are-the-value-of-these-integrals-different"><span class="section-num">22</span> Are the value of these integrals different?</h2>
+<h3 id="front"><span class="section-num">22.1</span> Front</h3>
+<p><b>Are the value of these integrals different?</b></p>
+<p>\({\displaystyle \int_{-\pi}^{\pi} \sin^2(nt) \dd{t} \neq \int_{-\pi}^{\pi}
+\cos^2(nt) \dd{t}}\)</p>
+<p>What are its values?</p>
+<h3 id="back"><span class="section-num">22.2</span> Back</h3>
+<p>No, it has the same value, it&rsquo;s \(\pi\)</p>
+<h2 id="what-is-the-ode-which-satisfies-any-of-these-functions"><span class="section-num">23</span> What is the ODE which satisfies any of these functions?</h2>
+<h3 id="front"><span class="section-num">23.1</span> Front</h3>
+<p><b>What is the ODE which satisfies any of these functions?</b></p>
+<ul>
+<li>\(\sin(nt)\)</li>
+<li>\(\cos(nt)\)</li>
+</ul>
+<h3 id="back"><span class="section-num">23.2</span> Back</h3>
+<p>\(u_n'' + n^2 u_n = 0\)</p>
+<h2 id="what-could-be-a-solution-of-this-ode"><span class="section-num">24</span> What could be a solution of this ODE?</h2>
+<h3 id="front"><span class="section-num">24.1</span> Front</h3>
+<p><b>What could be a solution of this ODE?</b></p>
+<p>\(u'' + n^2 u = 0\), where \(u = u(t)\)</p>
+<h3 id="back"><span class="section-num">24.2</span> Back</h3>
+<ul>
+<li>\(\sin(nt)\)</li>
+<li>\(\cos(nt)\)</li>
+</ul>
+<h2 id="what-is-the-value-of-this-integral"><span class="section-num">25</span> What is the value of this integral?</h2>
+<h3 id="front"><span class="section-num">25.1</span> Front</h3>
+<p><b>What is the value of this integral?</b></p>
+<p>\({\displaystyle \int_{-L}^L \cos(n \frac{\pi}{L} t) \cos(m \frac{\pi}{L} t)
+\dd{t}}\)</p>
+<h3 id="back"><span class="section-num">25.2</span> Back</h3>
+<p>Depends on \(n\) and \(m\)</p>
+<ul>
+<li>\(n = m \neq 0 \implies L\)</li>
+<li>\(n \neq m \implies 0\)</li>
+<li>\(n = m = 0 \implies 2L\)</li>
+</ul>
+<h2 id="what-is-the-value-of-this-integral"><span class="section-num">26</span> What is the value of this integral?</h2>
+<h3 id="front"><span class="section-num">26.1</span> Front</h3>
+<p><b>What is the value of this integral?</b></p>
+<p>\({\displaystyle \int_{-L}^L \sin(n \frac{\pi}{L} t) \sin(m \frac{\pi}{L} t)
+\dd{t}}\)</p>
+<h3 id="back"><span class="section-num">26.2</span> Back</h3>
+<p>Depends on the values of \(n\) and \(m\)</p>
+<ul>
+<li>\(n = m \neq 0 \implies L\)</li>
+<li>\(n \neq m \implies 0\)</li>
+<li>\(n = m = 0 \implies 0\)</li>
+</ul>
+<h2 id="what-is-the-value-of-this-integral"><span class="section-num">27</span> What is the value of this integral?</h2>
+<h3 id="front"><span class="section-num">27.1</span> Front</h3>
+<p><b>What is the value of this integral?</b></p>
+<p>\({\displaystyle \int_{-L}^L \cos(n \frac{\pi}{L} t) \sin(m \frac{\pi}{L} t)
+\dd{t}}\)</p>
+<h3 id="back"><span class="section-num">27.2</span> Back</h3>
+<p>Always is 0, because of these functions are orthogonal on \([-L, L]\)</p>
+<h2 id="which-methods-could-we-use-for-proof-orthogonality-relation"><span class="section-num">28</span> Which methods could we use for proof orthogonality relation?</h2>
+<h3 id="front"><span class="section-num">28.1</span> Front</h3>
+<p><b>Which methods could we use for proof orthogonality relation?</b></p>
+<p>\({\displaystyle \int_{-\pi}^{\pi} \sin(nt) \cos(mt) \dd{t} = 0}\)</p>
+<h3 id="back"><span class="section-num">28.2</span> Back</h3>
+<ul>
+<li>Trig identities
+<ul>
+<li>\({\displaystyle \cos(\alpha) \cos(\beta) = \frac{1}{2} \biggl(\cos(\alpha +
+\beta) + \cos(\alpha - \beta) \biggr)}\)</li>
+<li>\({\displaystyle \cos(\alpha) \sin(\beta) = \frac{1}{2} \biggl(\sin(\alpha +
+\beta) - \sin(\alpha - \beta)  \biggr)}\)</li>
+<li>\({\displaystyle \sin(\alpha) + \sin(\beta) = \frac{1}{2}
+\biggl(\cos(\alpha - \beta) - \cos(\alpha + \beta) \biggr)}\)</li>
+</ul>
+</li>
+<li>Use complex relation
+<ul>
+<li>\({\displaystyle \cos(at) = \frac{1}{2} \biggl(e^{iat} + e^{-iat} \biggr)}\)</li>
+<li>\({\displaystyle \sin(at) = \frac{1}{2i} \biggl(e^{iat} - e^{-iat} \biggr)}\)</li>
+</ul>
+</li>
+<li>Using the ODE for trigonometric function \(\sin\) and \(\cos\)
+<ul>
+<li>\(u'' + n^2 u = 0\)</li>
+</ul>
+</li>
+</ul>
+<h2 id="how-can-we-get-the-fourier-coefficients-value"><span class="section-num">29</span> How can we get the Fourier coefficients value?</h2>
+<h3 id="front"><span class="section-num">29.1</span> Front</h3>
+<p><b>How can we get the Fourier coefficients value?</b></p>
+<p>Let \(f(t)\) be a periodic function with period \(P = 2L\) which Fourier series is</p>
+<p>\({\displaystyle f(t) = a_0 + \sum_{n=1}^{\infty} a_n \cos(n \frac{\pi}{L} t) +
+b_n \sin(n \frac{\pi}{L} t)}\)</p>
+<h3 id="back"><span class="section-num">29.2</span> Back</h3>
+<ul>
+<li>Suppose that we expand the sums
+<ul>
+<li>\({\displaystyle f(t) = a_0 + \cdots + a_k \cos(k \frac{\pi}{L} t) +
+\cdots + a_n \cos(n \frac{\pi}{L} t) + \cdots}\)</li>
+</ul>
+</li>
+<li>Multiply both side by \(\cos(n \frac{\pi}{L}t)\)
+<ul>
+<li>\({\displaystyle f(t) \cos(n \frac{\pi}{L}t) = a_0 \cos(n \frac{\pi}{L}t) +
+\cdots + a_k \cos(k \frac{\pi}{L} t)\cos(n \frac{\pi}{L}t) + \cdots + a_n
+\cos^2(n \frac{\pi}{L} t) + \cdots}\)</li>
+</ul>
+</li>
+<li>Integrate both side from \(-L\) to \(L\)
+<ul>
+<li>\({\displaystyle \int_{-L}^L f(t) \cos(n \frac{\pi}{L}t) \dd{t} = \int_{-L}^L \cdots \dd{t}}\)</li>
+</ul>
+</li>
+<li>Where we get 0 at:
+<ul>
+<li>\({\displaystyle \int_{-L}^L a_0 \cos(n \frac{\pi}{L}t) \dd{t} = 0}\)</li>
+<li>\({\displaystyle \int_{-L}^L a_k \cos(k \frac{\pi}{L} t) \cos(n \frac{\pi}{L}t) \dd{t} = 0}\)</li>
+<li>\({\displaystyle \int_{-L}^L b_k \sin(k \frac{\pi}{L} t) \cos(n
+\frac{\pi}{L}t) \dd{t} = 0}\)</li>
+</ul>
+</li>
+<li>But, for \({\displaystyle \int_{-L}^L a_n \cos^2(n \frac{\pi}{L}t) \dd{t} = a_n L}\)</li>
+<li>So, algebraically we get:
+<ul>
+<li>\({\displaystyle a_n = \frac{1}{L} f(t) \cos(n \frac{\pi}{L}t) \dd{t}}\)</li>
+</ul>
+</li>
+</ul>
+<p>We have an special case for \(a_0\), because of \({\displaystyle \int_{-L}^L f(t)
+\cos(0) \dd{t} = a_0 \int_{-L}^L \dd{t} = a_0 2L}\), so \({\displaystyle a_0 =
+\frac{1}{2L} \int_{-L}^L f(t) \dd{t}}\)</p>
+<h2 id="there-is-any-solution-of-this-ode-periodic"><span class="section-num">30</span> There is any solution of this ODE periodic?</h2>
+<h3 id="front"><span class="section-num">30.1</span> Front</h3>
+<p><b>There is any solution of this ODE periodic?</b></p>
+<p>\(\ddot{x} + \omega_n^2 x = \cos(\omega_n t)\)</p>
+<h3 id="back"><span class="section-num">30.2</span> Back</h3>
+<p>Every homogeneous component here is a periodic function with period \(2\pi /
+\omega\), but the particular solution we found</p>
+<p>\({\displaystyle x_p(t) = \frac{t \sin(\omega_n t)}{2 \omega_n}}\)</p>
+<p>is not periodic because there is no periodic \(P\) such that \(f(t + P) = f(t)\) for
+all \(t\)</p>
+<p>So the general solution \(x(t) = x_p(t) + C_1 \cos(\omega_n t) + c_2
+\sin(\omega_n t)\)</p>
+<p>Note: \(\omega_n \neq 0\), but also is a situation of resonance, \(\ddot{x} = 0\),
+which solution is \(x = c_1 t + c_2\), that is not periodic (non constant) solution
+(no oscillating)</p>
+<h2 id="what-is-the-period-of-this-function"><span class="section-num">31</span> What is the period of this function?</h2>
+<h3 id="front"><span class="section-num">31.1</span> Front</h3>
+<p><b>What is the period of this function?</b></p>
+<p>\(\abs{\sin(t)}\)</p>
+<h3 id="back"><span class="section-num">31.2</span> Back</h3>
+<p>\(P = \pi\), \(\abs{\sin(t + \pi)} = \abs{- \sin(t)} = \abs{\sin(t)}\)</p>
+<h2 id="what-is-the-period-of-this-function"><span class="section-num">32</span> What is the period of this function?</h2>
+<h3 id="front"><span class="section-num">32.1</span> Front</h3>
+<p><b>What is the period of this function?</b></p>
+<p>\(\cos^2(3t)\)</p>
+<h3 id="back"><span class="section-num">32.2</span> Back</h3>
+<p>\({\displaystyle P = \frac{1}{2} \frac{2 \pi}{3} = \frac{\pi}{3}}\)</p>
+<p>\({\displaystyle (\cos(3(t + \frac{\pi}{3})))^2 = (\cos(3t + \pi))^2 = (-
+\cos(3t))^2 = (\cos(3t))^2}\)</p>
+<h2 id="what-is-the-value-of-this-coefficient"><span class="section-num">33</span> What is the value of this coefficient?</h2>
+<h3 id="front"><span class="section-num">33.1</span> Front</h3>
+<p><b>What is the value of this coefficient?</b></p>
+<p>\({\displaystyle a_n = \frac{1}{n} \sin(\frac{\pi}{2} n)}\), for \(n\) integer</p>
+<h3 id="back"><span class="section-num">33.2</span> Back</h3>
+<ul>
+<li>\(n\) even \(a_n = 0\)</li>
+<li>\(n\) odd \(a_n = \frac{1}{n} \sin(\frac{\pi}{2} n)\)
+<ul>
+<li>if \(n = 4a + 1 \implies a_n = \frac{1}{n}\)</li>
+<li>if \(n = 4a + 3 \implies a_n = - \frac{1}{n}\)</li>
+</ul>
+</li>
+</ul>
+<h2 id="how-could-we-solve-this-integral"><span class="section-num">34</span> How could we solve this integral?</h2>
+<h3 id="front"><span class="section-num">34.1</span> Front</h3>
+<p><b>How could we solve this integral?</b></p>
+<p>\({\displaystyle \frac{1}{\pi} \int_{-\pi}^{\pi} \abs{t} \cos(nt) \dd{t}}\)</p>
+<p>Don&rsquo;t solve it if you don&rsquo;t want</p>
+<h3 id="back"><span class="section-num">34.2</span> Back</h3>
+<ul>
+<li>Using symmetry, this integral is \({\displaystyle \frac{2}{\pi}
+\int_{0}^{\pi} t \cos(nt) \dd{t}}\)</li>
+<li>Integrating by parts
+<ul>
+<li>\({\displaystyle \frac{2}{\pi n^2} ( (-1)^n - 1)}\)</li>
+</ul>
+</li>
+</ul>
+
+</div>
+
+
+            <footer>
+    
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-21%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Fourier%20Series%3a%20Basics&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-21%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-21%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-21%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-21%2f&amp;title=Fourier%20Series%3a%20Basics" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Fourier%20Series%3a%20Basics&amp;body=Check out this site https%3a%2f%2fppalazon.github.io%2f18.03%2funit-3%2fsession-21%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+
+<nav>
+    <ul class="pager">
+    
+
+    
+    <li class="next">
+        <a href="https://ppalazon.github.io/18.03/unit-3/session-22/" title="Operations on Fourier Series">
+            Operations on Fourier Series <span aria-hidden="true">&rarr;</span>
+        </a>
+    </li>
+    
+    </ul>
+</nav>
+
+
+
+</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//ppalazon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+        </div>
+    </div>
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/">18.03 Differential Equations</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/18.03/unit-3/">3: Fourier Series and Laplace Transform</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/18.03/unit-3/session-21/">Fourier Series: Basics</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

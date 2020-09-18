@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Significant Figures  &middot; Pablo Palazon&#39;s Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="">
+
+
+<meta property="og:title" content="Significant Figures  &middot; Pablo Palazon&#39;s Website ">
+<meta property="og:site_name" content="Pablo Palazon&#39;s Website"/>
+<meta property="og:url" content="https://ppalazon.github.io/zk/20200421183300-significant_figures/" />
+<meta property="og:locale" content="en-us">
+
+<meta property="content-source" content="zk/20200421183300-significant_figures.md">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="tags R:Scientific Notation  This is an important concept for measurements and limits of experimental uncertainty.
+It&amp;rsquo;s important to keep in mind the rules of R:Rounding
+Anki Cards What does significant digits mean? Front What does significant digits mean?
+Back The number of accurate digits is called the number of significant digits
+The counting of significant digits begins from the first nonzero digit from the left and can include digits before the decimal point."/>
+<meta property="og:article:published_time" content="2020-04-23T13:36:00&#43;02:00" />
+<meta property="og:article:modified_time" content="2020-04-23T13:36:00&#43;02:00" />
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ppalazon" />
+<meta name="twitter:creator" content="@ppalazon" />
+<meta name="twitter:title" content="Significant Figures" />
+<meta name="twitter:description" content="tags R:Scientific Notation  This is an important concept for measurements and limits of experimental uncertainty.
+It&amp;rsquo;s important to keep in mind the rules of R:Rounding
+Anki Cards What does significant digits mean? Front What does significant digits mean?
+Back The number of accurate digits is called the number of significant digits
+The counting of significant digits begins from the first nonzero digit from the left and can include digits before the decimal point."/>
+<meta name="twitter:url" content="https://ppalazon.github.io/zk/20200421183300-significant_figures/" />
+<meta name="twitter:domain" content="https://ppalazon.github.io">
+
+
+
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+     "@type": "Article",
+     "headline": "Significant Figures",
+     "author": {
+         "@type": "Person",
+         "name": "http://profiles.google.com/+?rel=author"
+     },
+     "datePublished": "2020-04-23",
+     "description": "",
+     "wordCount":  774 
+ }
+</script>
+
+
+
+<link rel="canonical" href="https://ppalazon.github.io/zk/20200421183300-significant_figures/" />
+
+
+<link rel="shortcut icon" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="https://ppalazon.github.io/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="https://ppalazon.github.io/favicon/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="https://ppalazon.github.io/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://ppalazon.github.io/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="https://ppalazon.github.io/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ppalazon.github.io/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ppalazon.github.io/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="https://ppalazon.github.io/favicon/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ppalazon.github.io/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ppalazon.github.io/favicon/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ppalazon.github.io/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ppalazon.github.io/favicon/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ppalazon.github.io/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ppalazon.github.io/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ppalazon.github.io/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ppalazon.github.io/favicon/favicon-180.png">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="https://ppalazon.github.io/css/bundle.min.ee61919b2993e052da817bb3215422117276ab51ec17c0ddddf12583645d1e18e69736477f6c8b82dd04edc5fa9f8806d64e546c89f656f0075b1983311644da.css" >
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="https://ppalazon.github.io/">
+            <img alt="" src="https://ppalazon.github.io/img/hugo-site-logo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/post/"  title="Blog">
+                  
+                  Blog
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+		<a href="https://ppalazon.github.io/about/"  title="About">
+                  
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<style>
+ .hero {
+     background-image: url(/img/hero-image-site.png);
+ }
+ .hero {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:  cover;
+     height: calc(200px + (450 - 200) * ((100vw - 300px) / (1600 - 300)));
+ }
+ .title-metas, .hat {
+     position: absolute;
+     right: 0px;
+     left:0px;
+     bottom: calc(-1 * (200px + (450 - 200) * ((100vw - 300px) / (1600 - 300))));
+     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+ }
+ body > .container {
+     padding-top: 15px;
+ }
+</style>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+    <header class="container hat">
+        <h1>Significant Figures
+</h1>
+
+        
+
+
+<span class="author">by
+    
+    Pablo Palazon
+    
+</span>
+
+
+    </header>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            
+            <div class="content">
+  <dl>
+<dt>tags</dt>
+<dd><a href="">R:Scientific Notation</a></dd>
+</dl>
+<p>This is an important concept for measurements and limits of experimental
+uncertainty.</p>
+<p>It&rsquo;s important to keep in mind the rules of <a href="">R:Rounding</a></p>
+<h2 id="anki-cards">Anki Cards</h2>
+<h3 id="what-does-significant-digits-mean">What does significant digits mean?</h3>
+<h4 id="front">Front</h4>
+<p><b>What does significant digits mean?</b></p>
+<h4 id="back">Back</h4>
+<p>The number of accurate digits is called the number of significant digits</p>
+<p>The counting of significant digits begins from the first nonzero digit from the
+left and can include digits before the decimal point.</p>
+<p>If there is no decimal point, then the final significant digit is underline</p>
+<h3 id="round-to-seven-significant-digit">Round to seven significant digit?</h3>
+<h4 id="front">Front</h4>
+<p><b>Round to seven significant digit?</b></p>
+<p>\(\pi \approx \num{3.14159265358979}\)</p>
+<h4 id="back">Back</h4>
+<p>\(\pi \approx \num{3.141593}\)</p>
+<h3 id="round-the-nine-significant-digit">Round the nine significant digit</h3>
+<h4 id="front">Front</h4>
+<p><b>Round the nine significant digit</b></p>
+<p>\(\pi \approx \num{3.14159265358979}\)</p>
+<h4 id="back">Back</h4>
+<p>\(\pi \approx \num{3.14159265}\)</p>
+<h3 id="round-to-four-significant-digit">Round to four significant digit?</h3>
+<h4 id="front">Front</h4>
+<p><b>Round to four significant digit?</b></p>
+<p>\(\num{1095487}\)</p>
+<h4 id="back">Back</h4>
+<p>\(\num{1095487} \approx 109\underline{5}000\)</p>
+<h3 id="round-to-three-significant-digits">Round to three significant digits</h3>
+<h4 id="front">Front</h4>
+<p><b>Round to three significant digits</b></p>
+<p>\(\num{1095487}\)</p>
+<h4 id="back">Back</h4>
+<p>\(\num{1095487} \approx 11\underline{0}0000\)</p>
+<h3 id="round-to-three-significant-digits">Round to three significant digits</h3>
+<h4 id="front">Front</h4>
+<p><b>Round to three significant digits</b></p>
+<p>\({\displaystyle \frac{5}{6} = 0.8\overline{3}}\)</p>
+<h4 id="back">Back</h4>
+<p>\({\displaystyle \frac{5}{6} \approx 0.833}\)</p>
+<h3 id="round-to-three-significant-digits">Round to three significant digits</h3>
+<h4 id="front">Front</h4>
+<p><b>Round to three significant digits</b></p>
+<p>\({\displaystyle \frac{1}{60} = 0.01\overline{6}}\)</p>
+<h4 id="back">Back</h4>
+<p>\({\displaystyle \frac{1}{60} \approx 0.0167}\)</p>
+<h3 id="round-to-seven-significant-digits">Round to seven significant digits</h3>
+<h4 id="front">Front</h4>
+<p><b>Round to seven significant digits</b></p>
+<p>\(\num{76.34999981}\)</p>
+<h4 id="back">Back</h4>
+<p>\(\num{76.34999981} \approx \num{76.35000}\)</p>
+<h3 id="round-to-one-significant-digit">Round to one significant digit</h3>
+<h4 id="front">Front</h4>
+<p><b>Round to one significant digit</b></p>
+<p>\(0.44\overline{9}\)</p>
+<h4 id="back">Back</h4>
+<p>\(0.44\overline{9} \approx 0.5\)</p>
+<h3 id="how-many-significant-figures-has-this-number">How many significant figures has this number?</h3>
+<h4 id="front">Front</h4>
+<p><b>How many significant figures has this number?</b></p>
+<p>\(\num{0.00103}\)</p>
+<h4 id="back">Back</h4>
+<p>It has three significant figures</p>
+<h3 id="what-is-the-number-of-significant-figures-in-the-result-of-multiplication-or-division">What is the number of significant figures in the result of multiplication or division?</h3>
+<h4 id="front">Front</h4>
+<p><b>What is the number of significant figures in the result of multiplication or division?</b></p>
+<h4 id="back">Back</h4>
+<p>Is no greater than the least number of significant figures in any of the factors</p>
+<h3 id="what-is-the-correct-number-of-significant-figures-for-this-result">What is the correct number of significant figures for this result?</h3>
+<h4 id="front">Front</h4>
+<p><b>What is the correct number of significant figures for this result?</b></p>
+<p>\(1.58 * 0.03\)</p>
+<h4 id="back">Back</h4>
+<p>\(1.58 * 0.03 = 0.05\)</p>
+<p>Only 1 significant figure</p>
+<h3 id="what-is-the-area-of-this-circle-with-this-radius">What is the area of this circle with this radius?</h3>
+<h4 id="front">Front</h4>
+<p><b>What is the area of this circle with this radius?</b></p>
+<p>\(r = \SI{8 +- 0.5}{m}\) (measure by pacing)</p>
+<p>Give the result with the correct precision</p>
+<h4 id="back">Back</h4>
+<p>\(A = \pi r^2 = \pi (8)^2 = \SI{201.061929}{m^2}\)</p>
+<p>As the least significant figure is \(1\), the result must be giving with \(1\) significant figure</p>
+<p>\(A = \SI{200}{m^2}\) with a precision \(\SI{+-50}{m^2}\)</p>
+<h3 id="what-is-the-number-of-significant-figures-in-the-result-of-the-addition-or-subtraction">What is the number of significant figures in the result of the addition or subtraction?</h3>
+<h4 id="front">Front</h4>
+<p><b>What is the number of significant figures in the result of the addition or subtraction?</b></p>
+<h4 id="back">Back</h4>
+<p>The precision of the sum or difference of two measurements is only as good as
+the precision of the least precise of the two measurements.</p>
+<p>Has no significant figures beyond the last decimal place where both of the
+original numbers had significant figures. Only the last decimal place of the
+last significant figure in each of the terms matters</p>
+<p>\(1.040 + 0.2134 = 1.253\)</p>
+<ul>
+<li>\(1.040\) has only 3 significant figures beyond the decimal point</li>
+<li>\(0.2134\) has 4</li>
+</ul>
+<p>The result can not have more than \(3\) significant figures beyond the decimal
+point</p>
+<p>\(1.4 + 2.53 = 3.9\)</p>
+<h3 id="what-s-the-number-of-significant-figures-of-this-operation">What&rsquo;s the number of significant figures of this operation?</h3>
+<h4 id="front">Front</h4>
+<p><b>What&rsquo;s the number of significant figures of this operation?</b></p>
+<p>\(1.4 + 2.53\)</p>
+<h4 id="back">Back</h4>
+<p>The result cannot has more than \(1\) significant figures beyond decimal point</p>
+<p>\(1.4 + 2.53 = 3.9\)</p>
+<h3 id="write-1300-with-four-significant-figures-and-scientific-notation">Write 1300 with four significant figures and scientific notation</h3>
+<h4 id="front">Front</h4>
+<p><b>Write 1300 with four significant figures and scientific notation</b></p>
+<p>\(\SI{1300}{g}\)</p>
+<p>Also in \(\si{kg}\)</p>
+<h4 id="back">Back</h4>
+<p>\(\SI{1.300e3}{g} = \SI{1.300}{kg}\)</p>
+<h3 id="what-s-the-difference-between-significant-figures-and-decimal-places">What&rsquo;s the difference between significant figures and decimal places?</h3>
+<h4 id="front">Front</h4>
+<p><b>What&rsquo;s the difference between significant figures and decimal places?</b></p>
+<h4 id="back">Back</h4>
+<p>Both are methods of precision, but they are different</p>
+<p>For the number 12.345</p>
+<table>
+<thead>
+<tr>
+<th>Precision</th>
+<th>Round to significant figures</th>
+<th>Rounded to decimal places</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6</td>
+<td>12.3450</td>
+<td>12.345000</td>
+</tr>
+<tr>
+<td>5</td>
+<td>12.345</td>
+<td>12.34500</td>
+</tr>
+<tr>
+<td>4</td>
+<td>12.34 or 12.35</td>
+<td>12.3450</td>
+</tr>
+<tr>
+<td>3</td>
+<td>12.3</td>
+<td>12.345</td>
+</tr>
+<tr>
+<td>2</td>
+<td>12</td>
+<td>12.34 or 12.35</td>
+</tr>
+<tr>
+<td>1</td>
+<td>10</td>
+<td>12.3</td>
+</tr>
+<tr>
+<td>0</td>
+<td>N/A</td>
+<td>12</td>
+</tr>
+</tbody>
+</table>
+<p>For the number 0.012345</p>
+<table>
+<thead>
+<tr>
+<th>Precision</th>
+<th>Round to significant figures</th>
+<th>Round to decimal places</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>7</td>
+<td>0.01234500</td>
+<td>0.0123450</td>
+</tr>
+<tr>
+<td>6</td>
+<td>0.0123450</td>
+<td>0.012345</td>
+</tr>
+<tr>
+<td>5</td>
+<td>0.012345</td>
+<td>0.01234</td>
+</tr>
+<tr>
+<td>4</td>
+<td>0.01234 or 0.01235</td>
+<td>0.0123</td>
+</tr>
+<tr>
+<td>3</td>
+<td>0.0123</td>
+<td>0.012</td>
+</tr>
+<tr>
+<td>2</td>
+<td>0.012</td>
+<td>0.01</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0.01</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>N/A</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<h3 id="do-i-have-to-apply-the-significant-rounding-rules-to-intermediate-calculations">Do I have to apply the significant rounding rules to intermediate calculations?</h3>
+<h4 id="front">Front</h4>
+<p><b>Do I have to apply the significant rounding rules to intermediate calculations?</b></p>
+<h4 id="back">Back</h4>
+<p>No, keep as many digits as you can, at least 1 more than implied by the
+precision of the final result.</p>
+<p>Avoid cumulative rounding error</p>
+<h2 id="futher-reading">Futher Reading</h2>
+<ul>
+<li>Chapter 1 of <sup id="cff9cc89946db51d6c324fd262d6f374"><a href="#tipler1991physics" title="Tipler, Physics for scientists and engineers, Worth Publishers (1991).">tipler1991physics</a></sup></li>
+<li><a href=""></a></li>
+<li><a href="https://en.wikipedia.org/wiki/Significant%5Ffigures">Significant figures - Wikipedia</a></li>
+</ul>
+<h1 id="bibliography">Bibliography</h1>
+<p><a id="tipler1991physics"></a>[tipler1991physics] Tipler, Physics for scientists and engineers, Worth Publishers (1991). <a href="#cff9cc89946db51d6c324fd262d6f374">↩</a></p>
+<h2 id="backlinks">Backlinks</h2>
+<ul>
+<li><a href="">Rounding</a></li>
+</ul>
+
+</div>
+
+
+            <footer>
+    
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fppalazon.github.io%2fzk%2f20200421183300-significant_figures%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Significant%20Figures&amp;url=https%3a%2f%2fppalazon.github.io%2fzk%2f20200421183300-significant_figures%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fppalazon.github.io%2fzk%2f20200421183300-significant_figures%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fppalazon.github.io%2fzk%2f20200421183300-significant_figures%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fppalazon.github.io%2fzk%2f20200421183300-significant_figures%2f&amp;title=Significant%20Figures" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Significant%20Figures&amp;body=Check out this site https%3a%2f%2fppalazon.github.io%2fzk%2f20200421183300-significant_figures%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+
+
+
+</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//ppalazon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+        </div>
+    </div>
+</div>
+    
+<footer class="footer hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol  class="nav navbar-nav navbar-nav-dark">
+    
+
+
+
+
+
+<li>
+    <a href="https://ppalazon.github.io/">Human being living on Earth</a>
+</li>
+
+
+<li>
+    <a href="https://ppalazon.github.io/zk/">Zks</a>
+</li>
+
+
+<li class="active">
+    <a href="https://ppalazon.github.io/zk/20200421183300-significant_figures/">Significant Figures</a>
+</li>
+
+</ol>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">Back to Top</a>
+</div>
+<div class="pull-right">
+
+<a href="https://ppalazon.github.io/categories">Categories</a> 
+
+<a href="https://ppalazon.github.io/tags">Tags</a> 
+
+</div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i> and a lot of <i class='fa fa-coffee'></i>
+
+</small>
+</div>
+
+
+
+<div class="container copyright">
+    <small>
+  CC BY-NC-ND 4.0
+
+  </small>
+</div>
+
+
+
+<div class="container footline">
+    <small>
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/ppalazon">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/ppalazon">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+<a id="contact-link-linkedin" class="contact_link" href="fr.linkedin.com/in/ppalazon">
+  <span class="fa fa-linkedin-square"></span><span>linkedin</span></a>
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/ppalazon">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://www.reddit.com/user/ppalazon">
+    <span class="fa fa-reddit-square"></span><span>reddit</span></a>
+
+
+
+<a id="contact-link-reddit" class="contact_link" href="https://stackoverflow.com/users/707605/pablo-palazon">
+    <span class="fa fa-stack-overflow"></span><span>stackoverflow</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+    <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+</small>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var ENABLE_POPOVER =  null , 
+     EXPIRE_COOKIE =  null , 
+     SHOW_MODAL_TIMEOUT =  null , 
+     MOUSE_LEAVE =  null , 
+     MODAL_SIZE =  null , 
+     POST_URL =  null , 
+     SIGNUP_HEADER =  null ,
+     HEADER_IMAGE =  null ,
+     IMG_DESCRIPTION =  null ,
+     SIGNUP_TEXT =  null ,
+     INPUT_PLACEHOLDER =  null ,
+     SUBMIT_BUTTON =  null ,
+     SUCCESS_MESSAGE =  null ,
+     ERROR_MESSAGE =  null ,
+     OPTIN =  null ,
+     COOKIE_NAME =  null ,
+     CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://ppalazon.github.io/js/bundle.min.0c5a00bf8379ee3487727de2b4958bec0be2f285f55b47817cb92c41f885980aa186b84ce8df0fff6b15096e79775bd4ab508c39922072d3c8c5d4da2db5c6ab.js" ></script>
+
+
+
+
+
+
+
+<script>
+ window.MathJax = {
+     options: {
+         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+     },
+     svg: {
+         fontCache: 'global'
+     },
+     loader: {load: ['[tex]/physics', '[tex]/colorV2', '[tex]/ams']},
+     tex: {packages: {'[+]': ['physics', 'color', 'ams']}}
+ };
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+</script>
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+
+
+
+  </body>
+</html>
+

@@ -1,840 +1,506 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://ppalazon.github.io/18.03/unit-1/</loc>
     <lastmod>2019-09-17T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.03/unit-1/session-1/</loc>
     <lastmod>2019-09-17T16:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.03/unit-1/session-2/</loc>
     <lastmod>2019-09-17T16:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.03/unit-1/session-4/</loc>
     <lastmod>2019-09-12T13:40:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.03/unit-1/session-6/</loc>
     <lastmod>2019-09-26T15:47:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.03/unit-1/session-7/</loc>
     <lastmod>2019-09-27T18:57:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.03/unit-1/session-8/</loc>
     <lastmod>2019-10-01T12:22:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.03/unit-1/session-9/</loc>
     <lastmod>2019-10-02T13:05:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.03/unit-1/session-10/</loc>
     <lastmod>2019-10-05T18:18:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.03/unit-1/session-11/</loc>
     <lastmod>2019-10-08T09:24:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.03/unit-2/</loc>
     <lastmod>2019-10-11T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.03/unit-2/session-12/</loc>
     <lastmod>2019-10-11T16:58:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.03/unit-2/session-13/</loc>
     <lastmod>2019-10-16T11:34:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.03/unit-2/session-14/</loc>
     <lastmod>2019-10-11T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.03/unit-2/session-15/</loc>
     <lastmod>2019-10-11T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.03/unit-2/session-16/</loc>
     <lastmod>2019-10-11T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.03/unit-2/session-17/</loc>
     <lastmod>2019-10-11T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.03/unit-2/session-18/</loc>
     <lastmod>2019-10-11T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.03/unit-2/session-19/</loc>
     <lastmod>2019-10-11T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.03/unit-2/session-20/</loc>
     <lastmod>2019-10-11T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.03/unit-3/</loc>
     <lastmod>2019-11-26T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.03/unit-3/session-21/</loc>
     <lastmod>2019-11-26T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.03/unit-3/session-22/</loc>
     <lastmod>2019-11-26T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.03/unit-3/session-23/</loc>
     <lastmod>2019-11-26T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.03/unit-3/session-24/</loc>
     <lastmod>2019-11-26T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.03/unit-3/session-25/</loc>
     <lastmod>2019-11-26T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.03/unit-3/session-26/</loc>
     <lastmod>2019-11-26T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.03/unit-3/session-27/</loc>
     <lastmod>2019-11-26T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.03/unit-3/session-28/</loc>
     <lastmod>2019-11-26T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.03/unit-3/session-29/</loc>
     <lastmod>2019-11-26T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.03/unit-3/session-30/</loc>
     <lastmod>2019-11-26T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.03/unit-3/session-31/</loc>
     <lastmod>2019-11-26T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.03/unit-4/</loc>
     <lastmod>2020-01-18T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.03/unit-4/session-32/</loc>
     <lastmod>2020-01-18T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.03/unit-4/session-33/</loc>
     <lastmod>2020-01-18T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.03/unit-4/session-34/</loc>
     <lastmod>2020-01-18T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.03/unit-4/session-35/</loc>
     <lastmod>2020-01-18T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.03/unit-4/session-36/</loc>
     <lastmod>2020-01-18T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.03/unit-4/session-37/</loc>
     <lastmod>2020-01-18T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.03/unit-4/session-38/</loc>
     <lastmod>2020-01-18T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.03/working-table/</loc>
     <lastmod>2020-09-17T11:18:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.03/</loc>
     <lastmod>2020-09-16T23:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/</loc>
     <lastmod>2018-04-11T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/about/</loc>
     <lastmod>2018-04-11T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/post/</loc>
     <lastmod>2018-04-11T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/zk/20200421183300-significant_figures/</loc>
     <lastmod>2020-04-23T13:36:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/zk/</loc>
     <lastmod>2020-04-23T13:36:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/</loc>
     <lastmod>2020-01-18T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/tags/calculus/</loc>
     <lastmod>2020-01-18T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/tags/math/</loc>
     <lastmod>2020-01-18T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/tags/maths/</loc>
     <lastmod>2020-01-18T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/tags/ode/</loc>
     <lastmod>2020-01-18T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/tags/</loc>
     <lastmod>2020-01-18T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-1a/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-1b/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-1c/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-2a/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-2a/_index_/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-2b/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-2c/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-3a/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-3b/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-3c/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-4a/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-4b/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-4c/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/tags/attach/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/physics/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/review/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-1b/session-10/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-1b/session-11/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-1b/session-12/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-1b/session-13/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-1b/session-14/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-1c/session-15/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-1c/session-16/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-1c/session-17/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-1c/session-18/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-1c/session-19/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-1a/session-1/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-1c/session-20/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-1c/session-21/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/review/session-22/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-2a/session-24/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-2a/session-25/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-2a/session-26/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-2a/session-27/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-2a/session-28/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-2a/session-29/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-1a/session-2/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-2a/session-30/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-2b/session-32/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-2b/session-34/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-2b/session-35/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-2b/session-36/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-2b/session-37/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-2b/session-38/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-2c/session-39/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-1a/session-3/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-2c/session-40/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-2c/session-41/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-2c/session-42/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-2c/session-43/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-2c/session-44/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/review/session-45/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-3a/session-47/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-3a/session-48/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-3a/session-49/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-1a/session-4/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-3a/session-50/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-3a/session-51/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-3a/session-52/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-3a/session-53/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-3a/session-54/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-3a/session-55/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-3b/session-56/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-3b/session-57/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-3b/session-58/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-3b/session-59/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-1a/session-5/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-3b/session-60/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-3b/session-61/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-3b/session-62/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-3b/session-63/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-3b/session-64/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-3c/session-65/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-3c/session-66/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-3c/session-67/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-3c/session-68/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-3c/session-69/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-1a/session-6/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-3c/session-70/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-3c/session-71/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-3c/session-72/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/review/session-73/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-4a/session-74/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-4a/session-75/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-4a/session-76/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-4a/session-77/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-4a/session-78/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-4b/session-79/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-1a/session-7/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-4b/session-80/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-4b/session-81/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-4b/session-82/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-4b/session-83/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-4b/session-84/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-4b/session_85/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-4b/session-86/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-4b/session-87/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-4c/session-88/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-4c/session-89/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-1a/session-8/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-4c/session-90/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-4c/session-91/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-4c/session-92/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-4c/session-93/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-4c/session-94/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-4c/session-95/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/review/session-96/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/physics/session-97/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/physics/session-98/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/18.02/part-1b/session-9/</loc>
     <lastmod>2019-04-18T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/categories/about/</loc>
     <lastmod>2018-04-11T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/categories/</loc>
     <lastmod>2018-04-11T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/tags/me/</loc>
     <lastmod>2018-04-11T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ppalazon.github.io/tags/ppalazon/</loc>
     <lastmod>2018-04-11T00:00:00+02:00</lastmod>
   </url>
-  
 </urlset>
